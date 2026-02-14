@@ -16,10 +16,13 @@ export function WaitlistNoteStrip({ compact = false }: WaitlistNoteStripProps) {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    // Capture the form element synchronously. In async handlers, React's event
+    // object can be cleared before awaited code resumes.
+    const form = event.currentTarget;
     setSubmitState("submitting");
     setErrorMessage("");
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const company = String(formData.get("company") ?? "");
 
     try {
@@ -43,7 +46,7 @@ export function WaitlistNoteStrip({ compact = false }: WaitlistNoteStripProps) {
       setSubmitState("success");
       setEmail("");
       setIntent("");
-      event.currentTarget.reset();
+      form.reset();
     } catch (error) {
       setSubmitState("error");
       setErrorMessage(error instanceof Error ? error.message : "Submission failed.");
