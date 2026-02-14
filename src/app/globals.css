@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #101418;
+  --color-paper: #faf7f1;
+  --color-surface: #ffffff;
+  --color-border-warm: #e9e2d7;
+  --color-muted: #5b626a;
+  --color-primary: #f05a3b;
+  --color-primary-hover: #d94b30;
+  --color-primary-tint: #ffe3dc;
+  --color-secondary: #2e6f62;
+  --color-secondary-tint: #d9efea;
+  --radius-card: 16px;
+  --shadow-card: 0 8px 24px rgba(16, 20, 24, 0.06);
+  --texture-lines: repeating-linear-gradient(
+    to bottom,
+    rgba(16, 20, 24, 0.012),
+    rgba(16, 20, 24, 0.012) 1px,
+    rgba(255, 255, 255, 0.01) 1px,
+    rgba(255, 255, 255, 0.01) 4px
+  );
+}
+
+@theme inline {
+  --color-background: var(--color-paper);
+  --color-foreground: var(--color-ink);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #faf7f1 0%, #ffffff 40%, #faf7f1 100%);
+  color: var(--color-ink);
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 4px var(--color-primary-tint);
+}
+
+.paper-card {
+  background-color: var(--color-surface);
+  background-image: var(--texture-lines);
+  border: 1px solid var(--color-border-warm);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.card-fold {
+  position: relative;
+}
+
+.card-fold::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border-left: 1px solid var(--color-border-warm);
+  border-bottom: 1px solid var(--color-border-warm);
+  border-top-right-radius: calc(var(--radius-card) - 1px);
+  background: linear-gradient(
+    135deg,
+    rgba(16, 20, 24, 0.04),
+    rgba(255, 255, 255, 0.85) 62%
+  );
+}

@@ -1,0 +1,16 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="480" rx="28" fill="#FAF7F1"/>
+  <rect x="74" y="130" width="430" height="260" rx="20" transform="rotate(-4 74 130)" fill="#FFFFFF" stroke="#E9E2D7"/>
+  <rect x="138" y="84" width="430" height="260" rx="20" transform="rotate(3 138 84)" fill="#FFFFFF" stroke="#E9E2D7"/>
+  <circle cx="206" cy="157" r="22" fill="#D9EFEA"/>
+  <rect x="242" y="143" width="152" height="11" rx="5.5" fill="#101418"/>
+  <rect x="242" y="162" width="120" height="9" rx="4.5" fill="#5B626A"/>
+  <rect x="178" y="206" width="338" height="37" rx="12" fill="#FAF7F1" stroke="#E9E2D7"/>
+  <rect x="178" y="254" width="338" height="37" rx="12" fill="#FAF7F1" stroke="#E9E2D7"/>
+  <rect x="178" y="302" width="338" height="37" rx="12" fill="#FAF7F1" stroke="#E9E2D7"/>
+  <text x="196" y="230" fill="#101418" font-size="15" font-family="Arial, sans-serif">met at: coffee chat</text>
+  <text x="196" y="278" fill="#101418" font-size="15" font-family="Arial, sans-serif">asked about: grad school</text>
+  <text x="196" y="326" fill="#101418" font-size="15" font-family="Arial, sans-serif">follow up: next friday</text>
+  <rect x="388" y="111" width="158" height="34" rx="17" fill="#FFE3DC"/>
+  <text x="408" y="133" fill="#D94B30" font-size="13" font-family="Arial, sans-serif">upcoming call</text>
+</svg>
