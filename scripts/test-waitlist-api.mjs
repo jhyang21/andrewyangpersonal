@@ -3,6 +3,7 @@
 const BASE_URL = process.env.WAITLIST_API_BASE_URL ?? "http://localhost:3000";
 const ENDPOINT = `${BASE_URL.replace(/\/$/, "")}/api/waitlist`;
 const MODE = process.argv[2] ?? "--all";
+const MAX_IDENTITY_OTHER_LENGTH = 120;
 
 const validPayloadBase = {
   identity: "Founder or executive",
@@ -18,13 +19,17 @@ function makeUniqueEmail(prefix) {
 }
 
 async function submit(email) {
+  return submitPayload({
+    ...validPayloadBase,
+    email,
+  });
+}
+
+async function submitPayload(payload) {
   const response = await fetch(ENDPOINT, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      ...validPayloadBase,
-      email,
-    }),
+    body: JSON.stringify(payload),
   });
 
   let body;
@@ -86,6 +91,50 @@ async function runRateLimitTest() {
   console.log("[RateLimit] PASS");
 }
 
+async function runIdentityOtherTest() {
+  const missingOtherEmail = makeUniqueEmail("waitlist-other-missing");
+  console.log(`\n[IdentityOther] Testing validation when identity is Other (${missingOtherEmail})`);
+
+  const missingOther = await submitPayload({
+    ...validPayloadBase,
+    email: missingOtherEmail,
+    identity: "Other",
+    identityOther: "",
+  });
+  console.log(`[IdentityOther] Missing custom text -> status ${missingOther.status}`);
+  assert(missingOther.status === 400, "Expected missing identityOther for Other to return 400.");
+
+  const tooLongOtherEmail = makeUniqueEmail("waitlist-other-long");
+  const tooLongOther = await submitPayload({
+    ...validPayloadBase,
+    email: tooLongOtherEmail,
+    identity: "Other",
+    identityOther: "x".repeat(MAX_IDENTITY_OTHER_LENGTH + 1),
+  });
+  console.log(`[IdentityOther] Too long custom text -> status ${tooLongOther.status}`);
+  assert(tooLongOther.status === 400, "Expected too-long identityOther to return 400.");
+
+  const validOtherEmail = makeUniqueEmail("waitlist-other-valid");
+  const validOtherPayload = {
+    ...validPayloadBase,
+    email: validOtherEmail,
+    identity: "Other",
+    identityOther: "Independent consultant",
+  };
+
+  const created = await submitPayload(validOtherPayload);
+  console.log(`[IdentityOther] Valid custom text (first submit) -> status ${created.status}, code: ${created.body?.code ?? "n/a"}`);
+  assert(created.status === 200, "Expected valid identityOther submit to return 200.");
+  assert(created.body?.code === "created", "Expected first valid identityOther submit code to be 'created'.");
+
+  const updated = await submitPayload(validOtherPayload);
+  console.log(`[IdentityOther] Valid custom text (second submit) -> status ${updated.status}, code: ${updated.body?.code ?? "n/a"}`);
+  assert(updated.status === 200, "Expected second valid identityOther submit to return 200.");
+  assert(updated.body?.code === "updated", "Expected second valid identityOther submit code to be 'updated'.");
+
+  console.log("[IdentityOther] PASS");
+}
+
 async function main() {
   console.log(`Running waitlist API checks against: ${ENDPOINT}`);
   console.log("Tip: start your app first with `npm run dev`.");
@@ -100,7 +149,13 @@ async function main() {
     return;
   }
 
+  if (MODE === "--identity-other") {
+    await runIdentityOtherTest();
+    return;
+  }
+
   await runBasicFlowTest();
+  await runIdentityOtherTest();
   await runRateLimitTest();
 }
 
