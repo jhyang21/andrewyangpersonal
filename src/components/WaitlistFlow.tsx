@@ -170,7 +170,7 @@ export function WaitlistFlow({ compact = false }: WaitlistFlowProps) {
             : "Thanks for sharing this with us. Your answers help shape Relora."}
         </p>
         <a
-          href="https://x.com/intent/post?text=I%20just%20joined%20the%20Relora%20waitlist%20for%20better%20relationship%20memory."
+          href="https://x.com/intent/post?text=I%20just%20joined%20the%20Relora%20waitlist%20for%20better%20personal%20relationship%20memory%2C%20developed%20by%20%40andrewyang_X.%20Join%20the%20waitlist%20with%20me%20at%20www.andrewyangpersonal.com"
           target="_blank"
           rel="noreferrer"
           className="mt-4 inline-block text-sm font-semibold text-[var(--color-secondary)] underline-offset-4 hover:underline"

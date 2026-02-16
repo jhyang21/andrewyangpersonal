@@ -124,10 +124,7 @@ export default function HomePage() {
           <div className="flex flex-col justify-between gap-3 md:flex-row md:items-center">
             <p>Contact: andrew@immform.com</p>
             <div className="flex gap-4">
-              <a className="hover:text-[var(--color-ink)]" href="https://github.com" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-              <a className="hover:text-[var(--color-ink)]" href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <a className="hover:text-[var(--color-ink)]" href="https://www.linkedin.com/in/junhyeok-andrew-yang/" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
               {showPages ? (
