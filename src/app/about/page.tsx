@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { Card } from "@/components/Card";
 import { SiteNav } from "@/components/SiteNav";
+import { showUnderConstructionPages } from "@/lib/underConstruction";
 
 export const metadata: Metadata = {
   title: "About Andrew",
@@ -8,6 +10,12 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const showPages = showUnderConstructionPages();
+
+  if (!showPages) {
+    notFound();
+  }
+
   return (
     <div className="min-h-screen">
       <SiteNav current="about" />
@@ -50,7 +58,7 @@ export default function AboutPage() {
             <Card>
               <p className="text-xs uppercase tracking-[0.12em] text-[var(--color-secondary)]">Reach me</p>
               <div className="mt-3 flex flex-wrap gap-4 text-sm">
-                <a className="font-semibold text-[var(--color-primary)] hover:text-[var(--color-primary-hover)]" href="mailto:andrew@relora.app">
+                <a className="font-semibold text-[var(--color-primary)] hover:text-[var(--color-primary-hover)]" href="mailto:andrew@immform.com">
                   Email
                 </a>
                 <a className="font-semibold text-[var(--color-ink)] hover:text-[var(--color-muted)]" href="https://github.com" target="_blank" rel="noreferrer">

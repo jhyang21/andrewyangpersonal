@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:api:waitlist": "node scripts/test-waitlist-api.mjs",
+    "test:api:waitlist:basic": "node scripts/test-waitlist-api.mjs --basic",
+    "test:api:waitlist:rate-limit": "node scripts/test-waitlist-api.mjs --rate-limit"
   },
   "dependencies": {
     "next": "16.1.6",

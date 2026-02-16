@@ -1,10 +1,11 @@
 import { Card } from "@/components/Card";
 
 const memoryItems = [
-  "met at: coffee chat",
-  "asked about: grad school",
+  "met at community service event in Jan 2026",
+  "was interested in buying a new house",
+  "has 2 children: Zach (6) and Anna (3)",
+  "loves to play board games, esp Catan",
   "follow up: next friday",
-  "gift idea: matcha whisk",
 ];
 
 export function MemoryCardStack() {
@@ -18,8 +19,8 @@ export function MemoryCardStack() {
         <div className="mb-3 flex items-center gap-2">
           <div className="size-9 rounded-full bg-[var(--color-secondary-tint)]" />
           <div>
-            <p className="text-sm font-semibold text-[var(--color-ink)]">Maya Chen</p>
-            <p className="text-xs text-[var(--color-muted)]">Product coffee chat</p>
+            <p className="text-sm font-semibold text-[var(--color-ink)]">Maya Smith</p>
+            <p className="text-xs text-[var(--color-muted)]">Doctor at Mayo Clinic, Volunteer at Local Food Bank</p>
           </div>
         </div>
         <ul className="space-y-2">

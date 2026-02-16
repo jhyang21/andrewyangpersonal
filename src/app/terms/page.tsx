@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { SiteNav } from "@/components/SiteNav";
+import { showUnderConstructionPages } from "@/lib/underConstruction";
 
 export const metadata: Metadata = {
   title: "Terms",
@@ -7,6 +9,12 @@ export const metadata: Metadata = {
 };
 
 export default function TermsPage() {
+  const showPages = showUnderConstructionPages();
+
+  if (!showPages) {
+    notFound();
+  }
+
   return (
     <div className="min-h-screen">
       <SiteNav current="home" />

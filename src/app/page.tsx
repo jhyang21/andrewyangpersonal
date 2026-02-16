@@ -3,13 +3,13 @@ import Image from "next/image";
 import { Card } from "@/components/Card";
 import { MemoryCardStack } from "@/components/MemoryCardStack";
 import { SiteNav } from "@/components/SiteNav";
-import { Stamp } from "@/components/Stamp";
-import { WaitlistNoteStrip } from "@/components/WaitlistNoteStrip";
+import { WaitlistFlow } from "@/components/WaitlistFlow";
+import { showUnderConstructionPages } from "@/lib/underConstruction";
 
 const howItWorks = [
   {
     title: "Capture",
-    body: "Record a quick voice note after a call, meeting, or hangout.",
+    body: "Record a quick voice note after meeting or talking to someone.",
   },
   {
     title: "Organize",
@@ -22,18 +22,20 @@ const howItWorks = [
 ];
 
 const useCases = [
-  "Sales and relationship-heavy work",
-  "Recruiting and networking",
+  "Real estate agents and brokers",
+  "Lawyers and legal professionals",
+  "Financial advisors",
   "Friends and family",
-  "Tutoring and student support",
 ];
 
 export const metadata: Metadata = {
   title: "Relora waitlist",
-  description: "Remember the details that make relationships feel easy.",
+  description: "Remember the small details that build relationships.",
 };
 
 export default function HomePage() {
+  const showPages = showUnderConstructionPages();
+
   return (
     <div className="min-h-screen">
       <SiteNav current="home" />
@@ -44,20 +46,24 @@ export default function HomePage() {
               Relora waitlist
             </p>
             <h1 className="mt-4 max-w-[14ch] font-serif text-5xl leading-[1.05] text-[var(--color-ink)] md:text-6xl">
-              Remember the details that make relationships feel easy.
+              Remember the small details that build relationships.
             </h1>
             <p className="mt-5 max-w-[56ch] text-lg leading-8 text-[var(--color-muted)]">
-              Relora turns quick voice notes into structured context tied to contacts, so you can
-              show up prepared before every important conversation.
+              Relora turns quick voice notes into structured context tied to contacts, so you are ready for every conversation.
             </p>
-            <a
-              href="#how-it-works"
-              className="mt-4 inline-block rounded-full border border-[var(--color-ink)] px-4 py-2 text-sm font-medium text-[var(--color-ink)] transition hover:bg-[var(--color-primary-tint)]"
-            >
-              See how it works
-            </a>
-            <div className="mt-8">
-              <WaitlistNoteStrip />
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <a
+                href="#waitlist"
+                className="inline-block rounded-full bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold text-[var(--color-paper)] transition hover:bg-[var(--color-primary-hover)]"
+              >
+                Join the waitlist
+              </a>
+              <a
+                href="#how-it-works"
+                className="inline-block rounded-full border border-[var(--color-ink)] px-4 py-2 text-sm font-medium text-[var(--color-ink)] transition hover:bg-[var(--color-primary-tint)]"
+              >
+                See how it works
+              </a>
             </div>
           </div>
           <MemoryCardStack />
@@ -83,8 +89,8 @@ export default function HomePage() {
                 Contact card plus memory timeline
               </h2>
               <p className="mt-3 text-sm leading-6 text-[var(--color-muted)]">
-                A single place to see who the person is, what mattered last time, and what you want
-                to follow up on next.
+                A single place to see who the person is, what mattered last time, and what you may want
+                to talk about next.
               </p>
             </div>
             <Image
@@ -108,31 +114,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="mt-20 grid gap-6 md:grid-cols-[1.2fr_0.8fr]">
-          <Card className="space-y-4" fold>
-            <h2 className="font-serif text-3xl text-[var(--color-ink)]">Private by default</h2>
-            <ul className="space-y-2 text-sm text-[var(--color-muted)]">
-              <li>You control what is saved.</li>
-              <li>Export and delete anytime.</li>
-              <li>No selling data.</li>
-            </ul>
-          </Card>
-          <div className="flex flex-wrap content-start gap-3 py-2">
-            <Stamp label="private by default" rotate="-2" />
-            <Stamp label="voice first" rotate="1" />
-            <Stamp label="context before you call" rotate="-1" />
-            <Stamp label="built by andrew" rotate="2" />
-          </div>
-        </section>
-
-        <section className="mt-20">
+        <section id="waitlist" className="mt-20">
           <h2 className="mb-4 font-serif text-3xl text-[var(--color-ink)]">Join early users shaping Relora</h2>
-          <WaitlistNoteStrip compact />
+          <WaitlistFlow />
         </section>
 
         <footer className="mt-20 border-t border-[var(--color-border-warm)] py-8 text-sm text-[var(--color-muted)]">
           <div className="flex flex-col justify-between gap-3 md:flex-row md:items-center">
-            <p>Contact: andrew@relora.app</p>
+            <p>Contact: andrew@immform.com</p>
             <div className="flex gap-4">
               <a className="hover:text-[var(--color-ink)]" href="https://github.com" target="_blank" rel="noreferrer">
                 GitHub
@@ -140,12 +129,16 @@ export default function HomePage() {
               <a className="hover:text-[var(--color-ink)]" href="https://linkedin.com" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
-              <a className="hover:text-[var(--color-ink)]" href="/privacy">
-                Privacy
-              </a>
-              <a className="hover:text-[var(--color-ink)]" href="/terms">
-                Terms
-              </a>
+              {showPages ? (
+                <>
+                  <a className="hover:text-[var(--color-ink)]" href="/privacy">
+                    Privacy
+                  </a>
+                  <a className="hover:text-[var(--color-ink)]" href="/terms">
+                    Terms
+                  </a>
+                </>
+              ) : null}
             </div>
           </div>
         </footer>
