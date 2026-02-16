@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Card } from "@/components/Card";
 import { MemoryCardStack } from "@/components/MemoryCardStack";
 import { SiteNav } from "@/components/SiteNav";
+import { SmoothScrollLink } from "@/components/SmoothScrollLink";
 import { WaitlistFlow } from "@/components/WaitlistFlow";
 import { showUnderConstructionPages } from "@/lib/underConstruction";
 
@@ -52,18 +53,18 @@ export default function HomePage() {
               Relora turns quick voice notes into structured context tied to contacts, so you are ready for every conversation.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <a
+              <SmoothScrollLink
                 href="#waitlist"
                 className="inline-block rounded-full bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold text-[var(--color-paper)] transition hover:bg-[var(--color-primary-hover)]"
               >
                 Join the waitlist
-              </a>
-              <a
+              </SmoothScrollLink>
+              <SmoothScrollLink
                 href="#how-it-works"
                 className="inline-block rounded-full border border-[var(--color-ink)] px-4 py-2 text-sm font-medium text-[var(--color-ink)] transition hover:bg-[var(--color-primary-tint)]"
               >
                 See how it works
-              </a>
+              </SmoothScrollLink>
             </div>
           </div>
           <MemoryCardStack />

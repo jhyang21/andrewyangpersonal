@@ -16,6 +16,8 @@ type SubmitState = "idle" | "submitting" | "success" | "error";
 type SuccessCode = "created" | "updated";
 
 const TOTAL_STEPS = 6;
+const OTHER_IDENTITY_OPTION = "Other";
+const MAX_IDENTITY_OTHER_LENGTH = 120;
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
@@ -25,6 +27,7 @@ export function WaitlistFlow({ compact = false }: WaitlistFlowProps) {
   const [step, setStep] = useState(1);
   const [email, setEmail] = useState("");
   const [identity, setIdentity] = useState("");
+  const [identityOther, setIdentityOther] = useState("");
   const [emotionalHook, setEmotionalHook] = useState("");
   const [goldInsight, setGoldInsight] = useState("");
   const [featureSignals, setFeatureSignals] = useState<string[]>([]);
@@ -51,6 +54,7 @@ export function WaitlistFlow({ compact = false }: WaitlistFlowProps) {
         body: JSON.stringify({
           email,
           identity,
+          identityOther: identity === OTHER_IDENTITY_OPTION ? identityOther.trim() : "",
           emotionalHook,
           goldInsight,
           featureSignal: featureSignals,
@@ -106,6 +110,31 @@ export function WaitlistFlow({ compact = false }: WaitlistFlowProps) {
     }
     setErrorMessage("");
     setStep(5);
+  }
+
+  function handleIdentitySelect(option: string) {
+    setIdentity(option);
+    if (option !== OTHER_IDENTITY_OPTION) {
+      setIdentityOther("");
+    }
+    setErrorMessage("");
+  }
+
+  function handleIdentityContinue(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    if (!identity) {
+      setErrorMessage("Please choose what best describes you.");
+      return;
+    }
+
+    if (identity === OTHER_IDENTITY_OPTION && !identityOther.trim()) {
+      setErrorMessage("Please share what best describes you.");
+      return;
+    }
+
+    setErrorMessage("");
+    setStep(3);
   }
 
   function toggleFeatureSignal(option: string) {
@@ -189,7 +218,7 @@ export function WaitlistFlow({ compact = false }: WaitlistFlowProps) {
               type="email"
               required
               name="email"
-              placeholder="you@company.com"
+              placeholder="you@gmail.com"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               className="w-full rounded-full border border-[var(--color-border-warm)] bg-[var(--color-paper)] px-4 py-3 text-[var(--color-ink)] placeholder:text-[var(--color-muted)]"
@@ -205,32 +234,70 @@ export function WaitlistFlow({ compact = false }: WaitlistFlowProps) {
       ) : null}
 
       {step === 2 ? (
-        <section>
+        <form onSubmit={handleIdentityContinue}>
           <p className="text-sm uppercase tracking-[0.12em] text-[var(--color-secondary)]">Identity</p>
           <h3 className="mt-1 font-serif text-2xl text-[var(--color-ink)]">What best describes you?</h3>
-          <div className="mt-4 grid gap-3">
+          <div className="mt-4 grid gap-3" role="radiogroup" aria-label="Identity options">
             {identityOptions.map((option) => (
               <button
                 key={option}
                 type="button"
-                onClick={() => {
-                  setIdentity(option);
-                  setStep(3);
-                }}
-                className="rounded-2xl border border-[var(--color-border-warm)] bg-[var(--color-paper)] px-4 py-4 text-left text-sm font-medium text-[var(--color-ink)] transition hover:-translate-y-0.5 hover:border-[var(--color-secondary)]"
+                role="radio"
+                aria-checked={identity === option}
+                onClick={() => handleIdentitySelect(option)}
+                className={`rounded-2xl border px-4 py-4 text-left text-sm font-medium transition ${
+                  identity === option
+                    ? "border-[var(--color-secondary)] bg-[var(--color-secondary)]/10 text-[var(--color-ink)]"
+                    : "border-[var(--color-border-warm)] bg-[var(--color-paper)] text-[var(--color-ink)] hover:-translate-y-0.5 hover:border-[var(--color-secondary)]"
+                }`}
               >
                 {option}
               </button>
             ))}
           </div>
-        </section>
+
+          {identity === OTHER_IDENTITY_OPTION ? (
+            <div className="mt-4 space-y-2">
+              <label className="text-xs uppercase tracking-[0.12em] text-[var(--color-secondary)]" htmlFor="identity-other">
+                Tell us your role
+              </label>
+              <input
+                id="identity-other"
+                type="text"
+                autoFocus
+                value={identityOther}
+                maxLength={MAX_IDENTITY_OTHER_LENGTH}
+                onChange={(event) => {
+                  setIdentityOther(event.target.value);
+                  if (errorMessage) {
+                    setErrorMessage("");
+                  }
+                }}
+                placeholder="e.g. Student, Creator, Consultant"
+                className="w-full rounded-2xl border border-[var(--color-border-warm)] bg-[var(--color-paper)] px-4 py-3 text-sm text-[var(--color-ink)] placeholder:text-[var(--color-muted)]"
+              />
+              <p className="text-xs text-[var(--color-muted)]">
+                {identityOther.length}/{MAX_IDENTITY_OTHER_LENGTH}
+              </p>
+            </div>
+          ) : null}
+
+          <div className="mt-4">
+            <button
+              type="submit"
+              className="rounded-full bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold text-[var(--color-paper)] transition hover:bg-[var(--color-primary-hover)]"
+            >
+              Continue
+            </button>
+          </div>
+        </form>
       ) : null}
 
       {step === 3 ? (
         <section>
           <p className="text-sm uppercase tracking-[0.12em] text-[var(--color-secondary)]">Emotional hook</p>
           <h3 className="mt-1 font-serif text-2xl text-[var(--color-ink)]">
-            Be honest - how often do you forget small details about people?
+            Be honest, how often do you forget small details about people?
           </h3>
           <div className="mt-4 grid gap-3">
             {emotionalHookOptions.map((option) => (
@@ -261,7 +328,7 @@ export function WaitlistFlow({ compact = false }: WaitlistFlowProps) {
             rows={compact ? 3 : 4}
             value={goldInsight}
             onChange={(event) => setGoldInsight(event.target.value)}
-            placeholder="Example: I forgot their daughter's name before our call."
+            placeholder="Example: I forgot they were on vacation when I gave them a call."
             className="w-full rounded-2xl border border-[var(--color-border-warm)] bg-[var(--color-paper)] px-4 py-3 text-sm text-[var(--color-ink)] placeholder:text-[var(--color-muted)]"
           />
           <button
@@ -277,7 +344,7 @@ export function WaitlistFlow({ compact = false }: WaitlistFlowProps) {
         <section>
           <p className="text-sm uppercase tracking-[0.12em] text-[var(--color-secondary)]">Feature signal</p>
           <h3 className="mt-1 font-serif text-2xl text-[var(--color-ink)]">
-            What would make this indispensable for you? (Pick up to 2)
+            What would make this valuable for you? (Pick up to 2)
           </h3>
           <div className="mt-4 grid gap-3">
             {featureSignalOptions.map((option) => {

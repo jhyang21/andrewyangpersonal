@@ -9,6 +9,8 @@ import {
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_GOLD_INSIGHT_LENGTH = 500;
+const MAX_IDENTITY_OTHER_LENGTH = 120;
+const OTHER_IDENTITY_OPTION = "Other";
 const RATE_LIMIT_WINDOW_SECONDS = 10 * 60;
 const RATE_LIMIT_MAX_REQUESTS_PER_IP = 20;
 const RATE_LIMIT_MAX_REQUESTS_PER_EMAIL = 5;
@@ -113,6 +115,11 @@ async function ensureWaitlistSchema(sql: Sql) {
 
   await sql`
     ALTER TABLE waitlist_signups
+    ADD COLUMN IF NOT EXISTS identity_other TEXT
+  `;
+
+  await sql`
+    ALTER TABLE waitlist_signups
     ADD COLUMN IF NOT EXISTS created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
   `;
 
@@ -201,6 +208,7 @@ export async function POST(request: Request) {
     const email = normalizeEmail(normalizeText(body.email));
     const company = normalizeText(body.company);
     const identity = normalizeText(body.identity);
+    const identityOther = normalizeText(body.identityOther);
     const emotionalHook = normalizeText(body.emotionalHook);
     const goldInsight = normalizeText(body.goldInsight);
     const commitment = normalizeText(body.commitment);
@@ -219,6 +227,17 @@ export async function POST(request: Request) {
 
     if (!IDENTITY_OPTIONS.has(identity)) {
       return NextResponse.json({ ok: false, message: "Please choose what best describes you." }, { status: 400 });
+    }
+
+    if (identity === OTHER_IDENTITY_OPTION && identityOther.length === 0) {
+      return NextResponse.json({ ok: false, message: "Please share what best describes you." }, { status: 400 });
+    }
+
+    if (identityOther.length > MAX_IDENTITY_OTHER_LENGTH) {
+      return NextResponse.json(
+        { ok: false, message: "Please keep your custom identity under 120 characters." },
+        { status: 400 },
+      );
     }
 
     if (!EMOTIONAL_HOOK_OPTIONS.has(emotionalHook)) {
@@ -256,6 +275,8 @@ export async function POST(request: Request) {
       );
     }
 
+    const identityOtherValue = identity === OTHER_IDENTITY_OPTION ? identityOther : null;
+
     const sql = getSqlClient();
     await ensureSchemas(sql);
     await pruneRateLimitRows(sql);
@@ -282,6 +303,7 @@ export async function POST(request: Request) {
       INSERT INTO waitlist_signups (
         email,
         identity,
+        identity_other,
         emotional_hook,
         gold_insight,
         feature_signal,
@@ -290,6 +312,7 @@ export async function POST(request: Request) {
       VALUES (
         ${email},
         ${identity},
+        ${identityOtherValue},
         ${emotionalHook},
         ${goldInsight},
         ${featureSignals.join(", ")},
@@ -311,6 +334,7 @@ export async function POST(request: Request) {
       UPDATE waitlist_signups
       SET
         identity = ${identity},
+        identity_other = ${identityOtherValue},
         emotional_hook = ${emotionalHook},
         gold_insight = ${goldInsight},
         feature_signal = ${featureSignals.join(", ")},
