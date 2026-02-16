@@ -18,7 +18,7 @@ const howItWorks = [
   },
   {
     title: "Surface",
-    body: "Get context before calls, meetings, or events so you show up prepared.",
+    body: "Get context before calls, meetings, or events so you are prepared.",
   },
 ];
 
