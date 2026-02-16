@@ -72,7 +72,15 @@ export default function HomePage() {
 
         <section id="how-it-works" className="mt-14 grid gap-5 md:grid-cols-3">
           {howItWorks.map((item, index) => (
-            <Card key={item.title} className={`${index % 2 === 0 ? "md:-translate-y-2" : ""}`} fold={index === 1}>
+            <Card
+              key={item.title}
+              className={
+                index === 1
+                  ? "md:-translate-y-3 bg-[var(--color-primary-tint)] border-[var(--color-primary)] shadow-[0_14px_34px_rgba(16,20,24,0.10)]"
+                  : ""
+              }
+              fold={index === 1}
+            >
               <p className="text-xs uppercase tracking-[0.12em] text-[var(--color-secondary)]">
                 Step {index + 1}
               </p>
@@ -107,8 +115,8 @@ export default function HomePage() {
         <section className="mt-20">
           <h2 className="font-serif text-3xl text-[var(--color-ink)]">Built for everyday relationships</h2>
           <div className="mt-6 grid gap-5 md:grid-cols-2">
-            {useCases.map((useCase, index) => (
-              <Card key={useCase} className={index === 2 ? "md:-translate-y-2" : ""}>
+            {useCases.map((useCase) => (
+              <Card key={useCase}>
                 <p className="text-base font-medium text-[var(--color-ink)]">{useCase}</p>
               </Card>
             ))}
