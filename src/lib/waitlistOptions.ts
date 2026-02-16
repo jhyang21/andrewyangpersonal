@@ -1,9 +1,10 @@
 export const identityOptions = [
   "Real estate professional",
+  "Legal professional",
+  "Financial professional",
   "Sales or business development",
   "Founder or executive",
   "Investor",
-  "Recruiter",
   "Other",
 ] as const;
 
@@ -12,9 +13,9 @@ export const emotionalHookOptions = ["Rarely", "Sometimes", "Often", "Too often"
 export const featureSignalOptions = [
   "One-tap voice capture",
   "Smart follow-up reminders",
-  "Calendar and call context",
+  "Context popping up on calendar and calls",
   "Search across people",
-  "AI suggestions before meetings",
+  "AI call prep before meetings",
 ] as const;
 
 export const commitmentOptions = [
