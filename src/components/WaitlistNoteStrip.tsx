@@ -38,9 +38,23 @@ export function WaitlistNoteStrip({ compact = false }: WaitlistNoteStripProps) {
         }),
       });
 
-      const payload = (await response.json()) as { message?: string };
+      let payloadMessage: string | undefined;
+      const contentType = response.headers.get("content-type") ?? "";
+      try {
+        if (contentType.includes("application/json")) {
+          const payload = (await response.json()) as { message?: string };
+          payloadMessage = payload.message;
+        } else {
+          const fallbackText = (await response.text()).trim();
+          payloadMessage = fallbackText || undefined;
+        }
+      } catch {
+        // Ignore body parsing issues and rely on the HTTP status.
+        payloadMessage = undefined;
+      }
+
       if (!response.ok) {
-        throw new Error(payload.message ?? "Could not submit your waitlist request.");
+        throw new Error(payloadMessage ?? "Could not submit your waitlist request.");
       }
 
       setSubmitState("success");
