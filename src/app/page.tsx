@@ -1,153 +1,135 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import { Card } from "@/components/Card";
-import { MemoryCardStack } from "@/components/MemoryCardStack";
+import Link from "next/link";
 import { SiteNav } from "@/components/SiteNav";
-import { SmoothScrollLink } from "@/components/SmoothScrollLink";
-import { WaitlistFlow } from "@/components/WaitlistFlow";
-import { showUnderConstructionPages } from "@/lib/underConstruction";
-
-const howItWorks = [
-  {
-    title: "Capture",
-    body: "Record a quick voice note after meeting or talking to someone.",
-  },
-  {
-    title: "Organize",
-    body: "Relora turns it into clean memories, tags, and reminders tied to contacts.",
-  },
-  {
-    title: "Surface",
-    body: "Get context before calls, meetings, or events so you are prepared.",
-  },
-];
-
-const useCases = [
-  "Real estate agents and brokers",
-  "Lawyers and legal professionals",
-  "Financial advisors",
-  "Friends and family",
-];
-
-export const metadata: Metadata = {
-  title: "Relora waitlist",
-  description: "Remember the small details that build relationships.",
-};
+import { getRecentManifestos } from "@/lib/manifestos";
 
 export default function HomePage() {
-  const showPages = showUnderConstructionPages();
+  const recentManifestos = getRecentManifestos(3);
 
   return (
     <div className="min-h-screen">
       <SiteNav current="home" />
-      <main className="mx-auto w-full max-w-6xl px-6 pb-20 md:px-10">
-        <section className="grid items-center gap-10 py-10 md:grid-cols-[1.1fr_0.9fr] md:py-16">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)]">
-              Relora waitlist
-            </p>
-            <h1 className="mt-4 max-w-[14ch] font-serif text-5xl leading-[1.05] text-[var(--color-ink)] md:text-6xl">
-              Remember the small details that build relationships.
-            </h1>
-            <p className="mt-5 max-w-[56ch] text-lg leading-8 text-[var(--color-muted)]">
-              Relora turns quick voice notes into structured context tied to contacts, so you are ready for every conversation.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <SmoothScrollLink
-                href="#waitlist"
-                className="inline-block rounded-full bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold text-[var(--color-paper)] transition hover:bg-[var(--color-primary-hover)]"
+      <main className="mx-auto w-full max-w-2xl px-6 pb-20">
+        {/* Intro */}
+        <section className="py-12">
+          <h1 className="font-serif text-4xl leading-tight text-[var(--color-ink)]">
+            Hey, I&apos;m Andrew.
+          </h1>
+          <div className="mt-6 space-y-4 text-base leading-7 text-[var(--color-muted)]">
+            <p>
+              I&apos;m a founder currently building{" "}
+              <a
+                href="https://relora.app"
+                className="text-[var(--color-accent)] underline underline-offset-2 hover:text-[var(--color-ink)]"
+                target="_blank"
+                rel="noreferrer"
               >
-                Join the waitlist
-              </SmoothScrollLink>
-              <SmoothScrollLink
-                href="#how-it-works"
-                className="inline-block rounded-full border border-[var(--color-ink)] px-4 py-2 text-sm font-medium text-[var(--color-ink)] transition hover:bg-[var(--color-primary-tint)]"
-              >
-                See how it works
-              </SmoothScrollLink>
-            </div>
-          </div>
-          <MemoryCardStack />
-        </section>
-
-        <section id="how-it-works" className="mt-14 grid gap-5 md:grid-cols-3">
-          {howItWorks.map((item, index) => (
-            <Card
-              key={item.title}
-              className={
-                index === 1
-                  ? "md:-translate-y-3 bg-[var(--color-primary-tint)] border-[var(--color-primary)] shadow-[0_14px_34px_rgba(16,20,24,0.10)]"
-                  : ""
-              }
-              fold={index === 1}
-            >
-              <p className="text-xs uppercase tracking-[0.12em] text-[var(--color-secondary)]">
-                Step {index + 1}
-              </p>
-              <h2 className="mt-2 font-serif text-2xl text-[var(--color-ink)]">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-[var(--color-muted)]">{item.body}</p>
-            </Card>
-          ))}
-        </section>
-
-        <section className="mt-20">
-          <Card className="grid items-center gap-6 p-6 md:grid-cols-[1fr_1.2fr]" fold>
-            <div>
-              <p className="text-xs uppercase tracking-[0.12em] text-[var(--color-secondary)]">Demo concept</p>
-              <h2 className="mt-2 font-serif text-3xl text-[var(--color-ink)]">
-                Contact card plus memory timeline
-              </h2>
-              <p className="mt-3 text-sm leading-6 text-[var(--color-muted)]">
-                A single place to see who the person is, what mattered last time, and what you may want
-                to talk about next.
-              </p>
-            </div>
-            <Image
-              src="/hero-memory-cards.svg"
-              alt="Relora memory card concept"
-              width={640}
-              height={480}
-              className="h-auto w-full rounded-2xl border border-[var(--color-border-warm)]"
-            />
-          </Card>
-        </section>
-
-        <section className="mt-20">
-          <h2 className="font-serif text-3xl text-[var(--color-ink)]">Built for everyday relationships</h2>
-          <div className="mt-6 grid gap-5 md:grid-cols-2">
-            {useCases.map((useCase) => (
-              <Card key={useCase}>
-                <p className="text-base font-medium text-[var(--color-ink)]">{useCase}</p>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        <section id="waitlist" className="mt-20">
-          <h2 className="mb-4 font-serif text-3xl text-[var(--color-ink)]">Join early users shaping Relora</h2>
-          <WaitlistFlow />
-        </section>
-
-        <footer className="mt-20 border-t border-[var(--color-border-warm)] py-8 text-sm text-[var(--color-muted)]">
-          <div className="flex flex-col justify-between gap-3 md:flex-row md:items-center">
-            <p>Contact: andrew@immform.com</p>
-            <div className="flex gap-4">
-              <a className="hover:text-[var(--color-ink)]" href="https://www.linkedin.com/in/junhyeok-andrew-yang/" target="_blank" rel="noreferrer">
-                LinkedIn
+                Relora
               </a>
-              {showPages ? (
-                <>
-                  <a className="hover:text-[var(--color-ink)]" href="/privacy">
-                    Privacy
-                  </a>
-                  <a className="hover:text-[var(--color-ink)]" href="/terms">
-                    Terms
-                  </a>
-                </>
-              ) : null}
-            </div>
+              , a personal CRM that helps you remember the small details about people.
+              Press a button, leave a voice note, and Relora organizes it all so you show up
+              to every conversation like you actually care (because you do).
+            </p>
+            <p>
+              Before this, I co-founded{" "}
+              <span className="text-[var(--color-ink)] font-medium">immForm</span>, where
+              we built AI to automate admin work for immigration lawyers. We went deep on
+              document processing, conversational form-filling, and the unglamorous side of
+              legal tech.
+            </p>
+            <p>
+              I&apos;ve also spent time on the investing side as a VC scout at LvlUp
+              Ventures and IgniteXL, sourcing early-stage deals across AI, SaaS, and
+              healthtech. It gave me a good eye for what makes a founding team tick.
+            </p>
+            <p>
+              Right now I&apos;m on a year-long{" "}
+              <span className="text-[var(--color-ink)] font-medium">sidequest</span>: building
+              Relora, working as a barista at Ape Coffee (a dream part-time job), tutoring
+              for essay competitions, and competing in hackathons whenever I can. I&apos;ve built
+              everything from prediction market bots to a voice-native cooking assistant.
+            </p>
+            <p>
+              I studied at Emory, where I did metacognition research at the Cognition &amp;
+              Visualization Lab. Before all of this, I interned at the International Vaccine
+              Institute in Seoul and a law firm called Yulchon.
+            </p>
+            <p>
+              I care about building things people trust in their daily lives. That&apos;s the
+              thread through everything I do.
+            </p>
           </div>
-        </footer>
+          <div className="mt-8 flex flex-wrap gap-4 text-sm">
+            <a
+              href="mailto:andrew@immform.com"
+              className="text-[var(--color-muted)] underline underline-offset-2 hover:text-[var(--color-ink)]"
+            >
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/junhyeok-andrew-yang/"
+              className="text-[var(--color-muted)] underline underline-offset-2 hover:text-[var(--color-ink)]"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/jhyang21"
+              className="text-[var(--color-muted)] underline underline-offset-2 hover:text-[var(--color-ink)]"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://x.com/"
+              className="text-[var(--color-muted)] underline underline-offset-2 hover:text-[var(--color-ink)]"
+              target="_blank"
+              rel="noreferrer"
+            >
+              X
+            </a>
+          </div>
+        </section>
+
+        {/* Recent manifestos */}
+        {recentManifestos.length > 0 && (
+          <section className="border-t border-[var(--color-border-warm)] pt-10">
+            <div className="flex items-baseline justify-between">
+              <h2 className="font-serif text-2xl text-[var(--color-ink)]">
+                Recent manifestos
+              </h2>
+              <Link
+                href="/manifestos"
+                className="text-sm text-[var(--color-muted)] underline underline-offset-2 hover:text-[var(--color-ink)]"
+              >
+                See all
+              </Link>
+            </div>
+            <ul className="mt-6 space-y-6">
+              {recentManifestos.map((m) => (
+                <li key={m.slug}>
+                  <Link
+                    href={`/manifestos/${m.slug}`}
+                    className="group block"
+                  >
+                    <p className="text-xs text-[var(--color-muted)]">
+                      {m.date}
+                    </p>
+                    <h3 className="mt-1 text-base font-medium text-[var(--color-ink)] group-hover:text-[var(--color-accent)]">
+                      {m.title}
+                    </h3>
+                    {m.summary && (
+                      <p className="mt-1 text-sm text-[var(--color-muted)]">
+                        {m.summary}
+                      </p>
+                    )}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </main>
     </div>
   );
