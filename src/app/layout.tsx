@@ -13,12 +13,12 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Relora | Personal relationship memory app",
-  description: "Join the Relora waitlist and remember the small details that build relationships.",
+  title: "Andrew Yang",
+  description: "Startup founder, builder, barista. Writing about startups, life, and the things in between.",
   metadataBase: new URL("https://andrewyangpersonal.vercel.app"),
   openGraph: {
-    title: "Relora waitlist",
-    description: "Remember the small details that build relationships.",
+    title: "Andrew Yang",
+    description: "Startup founder, builder, barista. Writing about startups, life, and the things in between.",
     type: "website",
   },
 };

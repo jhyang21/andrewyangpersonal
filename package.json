@@ -6,15 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "test:api:waitlist": "node scripts/test-waitlist-api.mjs",
-    "test:api:waitlist:basic": "node scripts/test-waitlist-api.mjs --basic",
-    "test:api:waitlist:identity-other": "node scripts/test-waitlist-api.mjs --identity-other",
-    "test:api:waitlist:rate-limit": "node scripts/test-waitlist-api.mjs --rate-limit"
+    "lint": "eslint"
   },
   "dependencies": {
     "next": "16.1.6",
-    "postgres": "^3.4.8",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
