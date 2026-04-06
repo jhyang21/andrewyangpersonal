@@ -18,7 +18,7 @@ export default function HomePage() {
             <p>
               I&apos;m a founder currently building{" "}
               <a
-                href="https://relora.app"
+                href="https://reloraapp.com"
                 className="text-[var(--color-accent)] underline underline-offset-2 hover:text-[var(--color-ink)]"
                 target="_blank"
                 rel="noreferrer"
