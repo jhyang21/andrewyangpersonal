@@ -30,6 +30,12 @@ export function SiteNav({ current = "home" }: SiteNavProps) {
         >
           Manifestos
         </Link>
+        <Link
+          href="/cinematic"
+          className="text-xs font-medium text-[var(--color-accent)] transition-colors hover:text-[var(--color-ink)]"
+        >
+          Cinematic
+        </Link>
       </nav>
     </header>
   );

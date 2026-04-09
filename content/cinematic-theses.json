@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "the-magical-moment",
+    "title": "The magical moment",
+    "category": "Building",
+    "state": "stable",
+    "versions": [
+      {
+        "version": 1,
+        "date": "2026-01-15",
+        "body": "Great products have one moment that feels like magic. You use it and something just clicks. That feeling is rare and worth chasing.",
+        "changeReason": "Initial conviction from early product experiments"
+      },
+      {
+        "version": 2,
+        "date": "2026-02-20",
+        "body": "The best products have one interaction that feels magical. One moment where it just works and you feel it. Not a feature list, not a design flourish — a single moment of clarity.",
+        "changeReason": "Refined after watching Relora user testing sessions"
+      },
+      {
+        "version": 3,
+        "date": "2026-03-23",
+        "body": "The best products have one interaction that feels magical. One moment where it just works and you feel it. That feeling is what makes people tell their friends without being asked.",
+        "changeReason": "Added the viral loop insight after seeing organic referrals"
+      }
+    ],
+    "contradictions": [],
+    "relatedTheses": ["trust-is-the-only-moat"],
+    "essaySlug": "the-magical-moment"
+  },
+  {
+    "slug": "sidequests-are-underrated",
+    "title": "Sidequests are underrated",
+    "category": "Life",
+    "state": "evolving",
+    "versions": [
+      {
+        "version": 1,
+        "date": "2025-09-10",
+        "body": "Following curiosity without a clear payoff is one of the best things you can do for your career. Every interesting opportunity I've had came from something I did for fun.",
+        "changeReason": "Reflection after leaving VC scouting to work as a barista"
+      },
+      {
+        "version": 2,
+        "date": "2026-01-05",
+        "body": "The most interesting things in my life came from following curiosity with no clear payoff. Working as a barista, competing in hackathons, doing metacognition research. None of these were strategic career moves.",
+        "changeReason": "Expanded with specific examples after a year of sidequests"
+      },
+      {
+        "version": 3,
+        "date": "2026-03-23",
+        "body": "The most interesting things in my life came from following curiosity with no clear payoff. Working as a barista, competing in hackathons, doing metacognition research. None of these were strategic career moves. All of them shaped how I think. But I've also learned that sidequests need a home base — without something anchoring you, curiosity becomes drift.",
+        "changeReason": "Added nuance after realizing Relora became the anchor"
+      }
+    ],
+    "contradictions": [
+      {
+        "date": "2025-12-01",
+        "description": "I briefly believed focus was everything. After reading about founder discipline, I thought sidequests were distractions disguised as exploration. A month of pure focus felt productive but hollow — I wasn't learning anything new.",
+        "resolvedVersion": 3
+      }
+    ],
+    "relatedTheses": ["build-for-the-people-who-stay"],
+    "essaySlug": "sidequests-are-underrated"
+  },
+  {
+    "slug": "trust-is-the-only-moat",
+    "title": "Trust is the only moat",
+    "category": "Building",
+    "state": "emerging",
+    "versions": [
+      {
+        "version": 1,
+        "date": "2026-02-10",
+        "body": "In daily-use products, the only real defensibility is trust. Features can be copied. Integrations can be replicated. But once someone trusts your product with their personal data and daily habits, switching costs become emotional, not rational.",
+        "changeReason": "Crystallized after seeing how Relora users talked about the app"
+      },
+      {
+        "version": 2,
+        "date": "2026-03-15",
+        "body": "In daily-use products, the only real defensibility is trust. Features get copied in weeks. Integrations get replicated in months. But trust compounds quietly. Once someone trusts your product with their personal data and daily habits, they don't compare feature lists anymore. They just stay. The moat isn't what you build — it's what people believe about what you build.",
+        "changeReason": "Deepened after a competitor launched similar features and no users left"
+      }
+    ],
+    "contradictions": [],
+    "relatedTheses": ["the-magical-moment"],
+    "essaySlug": "trust-is-the-only-moat"
+  },
+  {
+    "slug": "build-for-the-people-who-stay",
+    "title": "Build for the people who stay",
+    "category": "Building",
+    "state": "contradicted",
+    "versions": [
+      {
+        "version": 1,
+        "date": "2025-08-20",
+        "body": "Build for power users. They're the ones who push your product forward, give the best feedback, and become your evangelists. Casual users come and go.",
+        "changeReason": "Initial belief from immForm days — power users drove most feedback"
+      },
+      {
+        "version": 2,
+        "date": "2025-11-15",
+        "body": "Build for power users, but listen to everyone. Power users know what's broken, but casual users reveal what's confusing. Both signals matter.",
+        "changeReason": "Softened after Relora beta — new users found UX issues power users had adapted to"
+      },
+      {
+        "version": 3,
+        "date": "2026-01-28",
+        "body": "I was wrong about power users being the center of gravity. Relora's growth came from casual users who recorded one note a week. They weren't power users. They were the people who stayed. Retention wasn't about depth of usage — it was about consistency of trust.",
+        "changeReason": "Contradicted by Relora retention data — casual weekly users had highest LTV"
+      },
+      {
+        "version": 4,
+        "date": "2026-03-10",
+        "body": "Build for the people who stay, regardless of how they use your product. Power users are loud and helpful, but the quiet ones who keep coming back once a week — they're your real foundation. Retention isn't about depth of usage. It's about whether someone trusts you enough to come back.",
+        "changeReason": "Resolved into a broader principle connecting retention to trust"
+      }
+    ],
+    "contradictions": [
+      {
+        "date": "2025-11-15",
+        "description": "Casual users in the Relora beta found critical UX issues that power users had simply worked around. The 'build for power users' thesis started cracking."
+      },
+      {
+        "date": "2026-01-28",
+        "description": "Retention data showed casual weekly users had the highest lifetime value. The entire 'power user' framework collapsed. Growth came from people I had been ignoring.",
+        "resolvedVersion": 4
+      }
+    ],
+    "relatedTheses": ["trust-is-the-only-moat", "sidequests-are-underrated"],
+    "essaySlug": "build-for-the-people-who-stay"
+  }
+]
