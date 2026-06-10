@@ -1,11 +1,35 @@
-/** Minimal markdown-to-HTML converter. No dependencies. */
+import katex from "katex";
+
+/** Minimal markdown-to-HTML converter with KaTeX math support. */
 export function markdownToHtml(md: string): string {
+  const mathBlocks: string[] = [];
+
+  function renderMath(tex: string, displayMode: boolean): string {
+    try {
+      return katex.renderToString(tex.trim(), { displayMode, throwOnError: false });
+    } catch {
+      return `<code>${escapeHtml(tex)}</code>`;
+    }
+  }
+
+  function stashMath(tex: string, displayMode: boolean): string {
+    const index = mathBlocks.length;
+    mathBlocks.push(renderMath(tex, displayMode));
+    return `%%MATH_${index}%%`;
+  }
+
   let html = md;
+
+  // Display math ($$ ... $$)
+  html = html.replace(/\$\$([\s\S]+?)\$\$/g, (_m, tex) => stashMath(tex, true));
 
   // Code blocks (``` ... ```)
   html = html.replace(/```(\w*)\n([\s\S]*?)```/g, (_m, _lang, code) => {
     return `<pre><code>${escapeHtml(code.trimEnd())}</code></pre>`;
   });
+
+  // Inline math ($ ... $)
+  html = html.replace(/\$([^\$\n]+?)\$/g, (_m, tex) => stashMath(tex, false));
 
   // Inline code
   html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
@@ -59,9 +83,13 @@ export function markdownToHtml(md: string): string {
       const trimmed = block.trim();
       if (!trimmed) return "";
       if (/^<(h[1-6]|ul|ol|blockquote|pre|hr)/.test(trimmed)) return trimmed;
+      if (/^%%MATH_\d+%%$/.test(trimmed)) return trimmed;
       return `<p>${trimmed.replace(/\n/g, "<br />")}</p>`;
     })
     .join("\n\n");
+
+  // Restore math placeholders
+  html = html.replace(/%%MATH_(\d+)%%/g, (_m, index) => mathBlocks[Number(index)]);
 
   return html;
 }

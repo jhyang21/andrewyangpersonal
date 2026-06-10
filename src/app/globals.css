@@ -141,3 +141,9 @@ textarea:focus-visible {
   border-radius: 8px;
   margin: 1.5rem 0;
 }
+
+.prose-post .katex-display {
+  margin: 1.25rem 0;
+  overflow-x: auto;
+  text-align: center;
+}
