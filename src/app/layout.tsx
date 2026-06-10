@@ -16,11 +16,10 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Andrew Yang",
   description: "Startup founder, builder, barista. Writing about startups, life, and the things in between.",
-  metadataBase: new URL("https://andrewyangpersonal.vercel.app"),
+  metadataBase: new URL("https://www.andrewyangpersonal.com"),
   openGraph: {
-    title: "Andrew Yang",
-    description: "Startup founder, builder, barista. Writing about startups, life, and the things in between.",
     type: "website",
+    siteName: "Andrew Yang",
   },
 };
 

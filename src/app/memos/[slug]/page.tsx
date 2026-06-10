@@ -16,9 +16,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const memo = getMemo(slug);
   if (!memo) return {};
+  const description = memo.summary || "";
   return {
     title: `${memo.title} | Andrew Yang`,
-    description: memo.summary || "",
+    description,
+    openGraph: {
+      title: memo.title,
+      description,
+      type: "article",
+      publishedTime: memo.date,
+      url: `/memos/${slug}`,
+    },
+    twitter: {
+      card: "summary",
+      title: memo.title,
+      description,
+    },
   };
 }
 
