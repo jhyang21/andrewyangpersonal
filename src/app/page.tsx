@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { SiteNav } from "@/components/SiteNav";
-import { getRecentManifestos } from "@/lib/manifestos";
+import { getRecentMemos } from "@/lib/memos";
 
 export default function HomePage() {
-  const recentManifestos = getRecentManifestos(3);
+  const recentMemos = getRecentMemos(3);
 
   return (
     <div className="min-h-screen">
@@ -88,25 +88,25 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Recent manifestos */}
-        {recentManifestos.length > 0 && (
+        {/* Recent memos */}
+        {recentMemos.length > 0 && (
           <section className="border-t border-[var(--color-border-warm)] pt-10">
             <div className="flex items-baseline justify-between">
               <h2 className="font-serif text-2xl text-[var(--color-ink)]">
-                Recent manifestos
+                Recent memos
               </h2>
               <Link
-                href="/manifestos"
+                href="/memos"
                 className="text-sm text-[var(--color-muted)] underline underline-offset-2 hover:text-[var(--color-ink)]"
               >
                 See all
               </Link>
             </div>
             <ul className="mt-6 space-y-6">
-              {recentManifestos.map((m) => (
+              {recentMemos.map((m) => (
                 <li key={m.slug}>
                   <Link
-                    href={`/manifestos/${m.slug}`}
+                    href={`/memos/${m.slug}`}
                     className="group block"
                   >
                     <p className="text-xs text-[var(--color-muted)]">

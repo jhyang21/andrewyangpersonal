@@ -2,50 +2,50 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { SiteNav } from "@/components/SiteNav";
-import { getManifesto, getAllManifestoSlugs } from "@/lib/manifestos";
+import { getMemo, getAllMemoSlugs } from "@/lib/memos";
 import { getThesisBySlug } from "@/lib/theses";
 import { markdownToHtml } from "@/lib/markdown";
 
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return getAllManifestoSlugs().map((slug) => ({ slug }));
+  return getAllMemoSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const manifesto = getManifesto(slug);
-  if (!manifesto) return {};
+  const memo = getMemo(slug);
+  if (!memo) return {};
   return {
-    title: `${manifesto.title} | Andrew Yang`,
-    description: manifesto.summary || "",
+    title: `${memo.title} | Andrew Yang`,
+    description: memo.summary || "",
   };
 }
 
-export default async function ManifestoPage({ params }: Props) {
+export default async function MemoPage({ params }: Props) {
   const { slug } = await params;
-  const manifesto = getManifesto(slug);
-  if (!manifesto) notFound();
+  const memo = getMemo(slug);
+  if (!memo) notFound();
 
-  const html = markdownToHtml(manifesto.content);
-  const linkedThesis = manifesto.thesisSlug
-    ? getThesisBySlug(manifesto.thesisSlug)
+  const html = markdownToHtml(memo.content);
+  const linkedThesis = memo.thesisSlug
+    ? getThesisBySlug(memo.thesisSlug)
     : null;
 
   return (
     <div className="min-h-screen">
-      <SiteNav current="manifestos" />
+      <SiteNav current="memos" />
       <main className="mx-auto w-full max-w-2xl px-6 pb-20">
         <Link
-          href="/manifestos"
+          href="/memos"
           className="text-sm text-[var(--color-muted)] hover:text-[var(--color-ink)]"
         >
-          &larr; Back to manifestos
+          &larr; Back to memos
         </Link>
         <article className="mt-8">
-          <p className="text-xs text-[var(--color-muted)]">{manifesto.date}</p>
+          <p className="text-xs text-[var(--color-muted)]">{memo.date}</p>
           <h1 className="mt-2 font-serif text-4xl leading-tight text-[var(--color-ink)]">
-            {manifesto.title}
+            {memo.title}
           </h1>
 
           {linkedThesis && (
@@ -65,13 +65,13 @@ export default async function ManifestoPage({ params }: Props) {
           />
 
           {/* Revision history */}
-          {manifesto.revisions.length > 1 && (
+          {memo.revisions.length > 1 && (
             <div className="mt-12 border-t border-[var(--color-border-warm)] pt-6">
               <p className="text-xs uppercase tracking-wide text-[var(--color-accent)]">
                 Changelog
               </p>
               <ul className="mt-3 space-y-2">
-                {manifesto.revisions.map((rev, i) => (
+                {memo.revisions.map((rev, i) => (
                   <li key={i} className="text-xs text-[var(--color-muted)]">
                     <span className="font-medium">{rev.date}</span>
                     {rev.note && <span> &mdash; {rev.note}</span>}

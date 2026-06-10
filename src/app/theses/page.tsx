@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SiteNav } from "@/components/SiteNav";
 import { getAllTheses } from "@/lib/theses";
-import { getAllManifestos } from "@/lib/manifestos";
+import { getAllMemos } from "@/lib/memos";
 
 export const metadata = {
   title: "Theses | Andrew Yang",
@@ -10,11 +10,11 @@ export const metadata = {
 
 export default function ThesesPage() {
   const theses = getAllTheses();
-  const manifestos = getAllManifestos();
+  const memos = getAllMemos();
 
-  // Map thesis slugs to manifesto slugs for linking
-  const manifestoByThesis = new Map(
-    manifestos
+  // Map thesis slugs to memo slugs for linking
+  const memoByThesis = new Map(
+    memos
       .filter((m) => m.thesisSlug)
       .map((m) => [m.thesisSlug, m.slug])
   );
@@ -35,7 +35,7 @@ export default function ThesesPage() {
         ) : (
           <ul className="mt-10 space-y-10">
             {theses.map((thesis) => {
-              const manifestoSlug = manifestoByThesis.get(thesis.slug);
+              const memoSlug = memoByThesis.get(thesis.slug);
 
               return (
                 <li
@@ -55,12 +55,12 @@ export default function ThesesPage() {
                   </div>
 
                   <div className="mt-4 flex items-center gap-4">
-                    {manifestoSlug && (
+                    {memoSlug && (
                       <Link
-                        href={`/manifestos/${manifestoSlug}`}
+                        href={`/memos/${memoSlug}`}
                         className="text-xs text-[var(--color-accent)] underline underline-offset-2 hover:text-[var(--color-ink)]"
                       >
-                        Read the full manifesto &rarr;
+                        Read the full memo &rarr;
                       </Link>
                     )}
                   </div>

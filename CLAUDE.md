@@ -1,6 +1,6 @@
 # CLAUDE.md — Andrew Yang Personal Site
 
-Personal portfolio/blog with manifestos and theses. Next.js 16 App Router, Tailwind v4, filesystem-based content. No database, no API routes.
+Personal portfolio/blog with memos and theses. Next.js 16 App Router, Tailwind v4, filesystem-based content. No database, no API routes.
 
 ---
 
@@ -33,11 +33,11 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 
 | Type | Source | Format |
 |---|---|---|
-| Manifestos | `content/manifestos/*.md` | Markdown with YAML frontmatter |
+| Memos | `content/memos/*.md` | Markdown with YAML frontmatter |
 | Theses | `content/theses.json` | JSON array |
 
-- Manifestos link to theses via `thesis` frontmatter field → thesis `slug`
-- Manifesto detail pages are statically generated (`generateStaticParams`)
+- Memos link to theses via `thesis` frontmatter field → thesis `slug`
+- Memo detail pages are statically generated (`generateStaticParams`)
 - **Adding/editing content requires a redeploy**
 
 ---
@@ -45,10 +45,10 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 ## Key Patterns
 
 - **Custom markdown renderer** (`src/lib/markdown.ts`) — hand-rolled regex, no remark/rehype/marked. Supports headings, bold, italic, links, images, code blocks, blockquotes, lists. No tables or nested lists.
-- **Custom frontmatter parser** (`src/lib/manifestos.ts`) — regex-based, not `gray-matter`. Revision history uses flat keys (`revision_1_date`, `revision_1_note`, etc.)
+- **Custom frontmatter parser** (`src/lib/memos.ts`) — regex-based, not `gray-matter`. Revision history uses flat keys (`revision_1_date`, `revision_1_note`, etc.)
 - Fonts: Inter (sans) + Fraunces (serif headings) via `next/font/google`
 - Design tokens as CSS custom properties, mapped to Tailwind via `@theme inline`
-- Manifesto body rendered via `dangerouslySetInnerHTML`
+- Memo body rendered via `dangerouslySetInnerHTML`
 - Deployed on Vercel (no `vercel.json`)
 
 ---

@@ -1,25 +1,25 @@
 import fs from "fs";
 import path from "path";
 
-export type ManifestoRevision = {
+export type MemoRevision = {
   date: string;
   note: string;
 };
 
-export type ManifestoMeta = {
+export type MemoMeta = {
   slug: string;
   title: string;
   date: string;
   summary?: string;
   thesisSlug?: string;
-  revisions: ManifestoRevision[];
+  revisions: MemoRevision[];
 };
 
-type ManifestoData = ManifestoMeta & {
+type MemoData = MemoMeta & {
   content: string;
 };
 
-const MANIFESTOS_DIR = path.join(process.cwd(), "content", "manifestos");
+const MEMOS_DIR = path.join(process.cwd(), "content", "memos");
 
 function parseFrontmatter(raw: string): { meta: Record<string, string>; content: string } {
   const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
@@ -36,9 +36,9 @@ function parseFrontmatter(raw: string): { meta: Record<string, string>; content:
   return { meta, content: match[2].trim() };
 }
 
-function parseRevisions(raw: string): ManifestoRevision[] {
+function parseRevisions(raw: string): MemoRevision[] {
   // Revisions stored in frontmatter as revision_N_date / revision_N_note
-  const revisions: ManifestoRevision[] = [];
+  const revisions: MemoRevision[] = [];
   const { meta } = parseFrontmatter(raw);
   let i = 1;
   while (meta[`revision_${i}_date`]) {
@@ -54,15 +54,15 @@ function parseRevisions(raw: string): ManifestoRevision[] {
   return revisions;
 }
 
-function getManifestoFiles(): string[] {
-  if (!fs.existsSync(MANIFESTOS_DIR)) return [];
-  return fs.readdirSync(MANIFESTOS_DIR).filter((f) => f.endsWith(".md"));
+function getMemoFiles(): string[] {
+  if (!fs.existsSync(MEMOS_DIR)) return [];
+  return fs.readdirSync(MEMOS_DIR).filter((f) => f.endsWith(".md"));
 }
 
-export function getAllManifestos(): ManifestoMeta[] {
-  return getManifestoFiles()
+export function getAllMemos(): MemoMeta[] {
+  return getMemoFiles()
     .map((file) => {
-      const raw = fs.readFileSync(path.join(MANIFESTOS_DIR, file), "utf-8");
+      const raw = fs.readFileSync(path.join(MEMOS_DIR, file), "utf-8");
       const { meta } = parseFrontmatter(raw);
       return {
         slug: file.replace(/\.md$/, ""),
@@ -76,12 +76,12 @@ export function getAllManifestos(): ManifestoMeta[] {
     .sort((a, b) => (a.date > b.date ? -1 : 1));
 }
 
-export function getRecentManifestos(count: number): ManifestoMeta[] {
-  return getAllManifestos().slice(0, count);
+export function getRecentMemos(count: number): MemoMeta[] {
+  return getAllMemos().slice(0, count);
 }
 
-export function getManifesto(slug: string): ManifestoData | null {
-  const filePath = path.join(MANIFESTOS_DIR, `${slug}.md`);
+export function getMemo(slug: string): MemoData | null {
+  const filePath = path.join(MEMOS_DIR, `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
 
   const raw = fs.readFileSync(filePath, "utf-8");
@@ -97,6 +97,6 @@ export function getManifesto(slug: string): ManifestoData | null {
   };
 }
 
-export function getAllManifestoSlugs(): string[] {
-  return getManifestoFiles().map((f) => f.replace(/\.md$/, ""));
+export function getAllMemoSlugs(): string[] {
+  return getMemoFiles().map((f) => f.replace(/\.md$/, ""));
 }
