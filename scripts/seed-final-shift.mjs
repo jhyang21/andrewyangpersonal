@@ -44,13 +44,20 @@ function loadEnvFile(name) {
   }
 }
 
-// Next loads .env.local itself; a plain node script has to do it by hand.
+/*
+ * Next loads these itself; a plain node script has to do it by hand.
+ *
+ * Both files, in Next's own precedence — `.env.local` wins over `.env`, because `loadEnvFile` skips
+ * a key that is already set. Reading only one of them is how the script ends up reporting a missing
+ * variable that is plainly sitting in a file on disk.
+ */
 loadEnvFile(".env.local");
+loadEnvFile(".env");
 
 function requireEnv(name) {
   const value = process.env[name];
   if (!value) {
-    console.error(`Missing ${name}. Put it in .env.local (and in Vercel for Production + Preview).`);
+    console.error(`Missing ${name}. Put it in .env or .env.local (and in Vercel for Production + Preview).`);
     process.exit(1);
   }
   return value;
