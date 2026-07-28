@@ -30,7 +30,6 @@ function headers(): Record<string, string> {
   return {
     apikey: key,
     Authorization: `Bearer ${key}`,
-    "Content-Type": "application/json",
   };
 }
 
@@ -43,10 +42,23 @@ export class StorageError extends Error {
   }
 }
 
+/*
+ * `Content-Type: application/json` goes on only when there is a body to describe.
+ *
+ * Storage runs on Fastify, which rejects the pair "content-type says JSON" and "body is empty" with
+ * a 400 — `Body cannot be empty when content-type is set to 'application/json'`. Two of the four
+ * calls here are bodyless, and setting the header unconditionally broke both: signing an upload
+ * returned a 500 to the guest, and deleting the previous photo failed silently inside `deleteObject`'s
+ * best-effort catch, orphaning an object on every retake with nothing in the logs to say so.
+ */
 async function call(path: string, init: RequestInit): Promise<Response> {
   const response = await fetch(`${base()}/storage/v1/${path}`, {
     ...init,
-    headers: { ...headers(), ...(init.headers ?? {}) },
+    headers: {
+      ...headers(),
+      ...(init.body === undefined ? {} : { "Content-Type": "application/json" }),
+      ...(init.headers ?? {}),
+    },
     cache: "no-store",
   });
   return response;
@@ -154,11 +166,21 @@ export async function headObject(path: string): Promise<ObjectFacts | null> {
   };
 }
 
-/** Best effort. A failed delete leaves an orphan, which is untidy; a thrown one loses the RSVP. */
+/**
+ * Best effort. A failed delete leaves an orphan, which is untidy; a thrown one loses the RSVP.
+ *
+ * Best effort still means saying so. This swallowed a 400 on every single call for a while and the
+ * only evidence was orphaned objects nobody was counting — so a failure now costs one log line,
+ * which is the difference between "untidy" and "invisible".
+ */
 export async function deleteObject(path: string): Promise<void> {
   try {
-    await call(`object/${BUCKET}/${path}`, { method: "DELETE" });
-  } catch {
+    const response = await call(`object/${BUCKET}/${path}`, { method: "DELETE" });
+    if (!response.ok) {
+      console.warn(`[final-shift] could not delete ${path}: ${response.status}`);
+    }
+  } catch (error) {
     // Nothing the guest can do about it, and nothing worth failing their submission over.
+    console.warn(`[final-shift] could not delete ${path}:`, error);
   }
 }

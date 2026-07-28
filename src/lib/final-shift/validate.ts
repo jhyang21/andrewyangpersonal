@@ -16,17 +16,25 @@ export function normalizeText(value: unknown): string {
   return typeof value === "string" ? value.trim() : "";
 }
 
-function normalizeIds(value: unknown, allowed: Set<string>): string[] {
+/**
+ * Keeps the ids the event knows about, in the order the *event* lists them.
+ *
+ * Walking `allowed` rather than the incoming array is what makes the stored order canonical. Take
+ * the input order instead and a guest who ticks August 22, then September 5, then goes back for
+ * August 29 has their answer saved as `[d1, d3, d2]` — and every screen that reads it, the review
+ * step and Andrew's dashboard both, lists the last Saturday in the middle. Sorting at each render
+ * would fix the display and leave the data crooked; sorting here fixes both, once.
+ *
+ * Unknown ids are dropped rather than rejected: Andrew removing a date must not turn every stored
+ * answer into an error the guest cannot fix.
+ */
+function normalizeIds(value: unknown, allowed: readonly string[]): string[] {
   if (!Array.isArray(value)) return [];
-  const unique = new Set<string>();
+  const asked = new Set<string>();
   for (const item of value) {
-    if (typeof item !== "string") continue;
-    const trimmed = item.trim();
-    // Unknown ids are dropped rather than rejected: Andrew removing a date must not turn every
-    // stored answer into an error the guest cannot fix.
-    if (allowed.has(trimmed)) unique.add(trimmed);
+    if (typeof item === "string") asked.add(item.trim());
   }
-  return [...unique];
+  return allowed.filter((id) => asked.has(id));
 }
 
 /**
@@ -52,12 +60,12 @@ export function parseDraftPatch(
   if ("availableDates" in input) {
     patch.availableDates = normalizeIds(
       input.availableDates,
-      new Set(event.dateOptions.map((option) => option.id)),
+      event.dateOptions.map((option) => option.id),
     );
   }
 
   if ("dietaryTags" in input) {
-    patch.dietaryTags = normalizeIds(input.dietaryTags, new Set(event.dietaryChips));
+    patch.dietaryTags = normalizeIds(input.dietaryTags, event.dietaryChips);
   }
 
   if ("dietaryNote" in input) {
