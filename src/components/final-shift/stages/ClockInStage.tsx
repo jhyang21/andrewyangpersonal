@@ -1,79 +1,104 @@
 "use client";
 
 import { useState } from "react";
+import { CODE_LENGTH, DigitSlots } from "@/components/final-shift/DigitSlots";
+import { ErrorNote } from "@/components/final-shift/ErrorNote";
+import { Numpad } from "@/components/final-shift/Numpad";
 import { StageFrame } from "@/components/final-shift/StageFrame";
 import type { StageProps } from "@/components/final-shift/stageProps";
 import { COPY } from "@/lib/final-shift/copy";
 import { mockClockIn } from "@/lib/final-shift/mock";
+import { useReducedMotion } from "@/lib/final-shift/useMediaQuery";
+
+const PUNCH_MS = 180;
 
 /**
  * Stage 1 — the timeclock.
  *
- * Phase 1 stub: a plain field standing in for the numpad and the four rendered slots. What is already
- * real is the failure behaviour — one message for every kind of rejection, so the shape that keeps
- * the code from being enumerable is in place before the pretty version lands on top of it.
+ * The punch is the one animation in the flow that sits between the guest and the next screen, so
+ * it's held to 180ms and skipped outright under reduced motion. When Phase 5 puts a real request
+ * here, the hold overlaps the round trip rather than adding to it.
  */
 export function ClockInStage({ onIdentified }: StageProps) {
   const [code, setCode] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [punching, setPunching] = useState(false);
+  const reducedMotion = useReducedMotion();
 
   const submit = () => {
-    const digits = code.replace(/\D/g, "");
-    if (digits.length !== 4) {
+    if (punching) return;
+
+    if (code.length !== CODE_LENGTH) {
       setError(COPY.clockIn.errors.incomplete);
       return;
     }
 
-    const session = mockClockIn(digits);
+    const session = mockClockIn(code);
     if (!session) {
-      // One message, whatever the reason. Phase 5 moves this decision to the server.
+      /*
+       * One message for every kind of rejection — unknown number, deactivated guest, tripped
+       * honeypot. Phase 5 moves the decision to the server, which returns this string byte for byte
+       * in all of those cases and pads the response to a fixed time floor, so nothing in the reply
+       * tells an attacker which four-digit codes are real.
+       */
       setError(COPY.clockIn.errors.unknown);
       return;
     }
 
     setError(null);
-    onIdentified(session);
+
+    if (reducedMotion) {
+      onIdentified(session);
+      return;
+    }
+
+    setPunching(true);
+    window.setTimeout(() => onIdentified(session), PUNCH_MS);
   };
 
   return (
     <StageFrame
       stage="clockIn"
+      eyebrow={COPY.clockIn.eyebrow}
       heading={COPY.clockIn.headline}
       support={COPY.clockIn.instruction}
       action={
         <button
           type="button"
           onClick={submit}
-          className="fs-label h-14 w-full rounded-[var(--fs-radius)] bg-[var(--fs-red)] text-[var(--fs-cream)]"
+          className="fs-label h-14 w-full rounded-[var(--fs-radius)] bg-[var(--fs-red)] text-[var(--fs-cream)] active:translate-y-px"
         >
           {COPY.clockIn.cta}
         </button>
       }
     >
-      <label htmlFor="fs-code" className="fs-label block text-[var(--fs-oat)]">
-        {COPY.clockIn.slotsLabel}
-      </label>
-      <input
-        id="fs-code"
+      <DigitSlots
         value={code}
-        onChange={(event) => setCode(event.target.value)}
-        inputMode="numeric"
-        pattern="\d*"
-        autoComplete="off"
-        aria-invalid={error !== null}
-        aria-describedby={error ? "fs-code-error" : undefined}
-        className="fs-digit mt-2 w-full rounded-[var(--fs-radius)] border border-[var(--fs-line)] bg-[var(--fs-ink)] px-4 py-3 text-center tracking-[0.4em] text-[var(--fs-cream)]"
+        onChange={(next) => {
+          setCode(next);
+          if (error) setError(null);
+        }}
+        label={COPY.clockIn.slotsLabel}
+        invalid={error !== null}
+        describedBy={error ? "fs-code-error" : undefined}
+        punching={punching}
       />
-      {error ? (
-        <p
-          id="fs-code-error"
-          role="alert"
-          className="fs-body mt-3 text-[var(--fs-red)]"
-        >
-          {error}
-        </p>
-      ) : null}
-      <p className="fs-meta mt-6 text-[var(--fs-muted-on-espresso)]">
+
+      {error ? <ErrorNote id="fs-code-error">{error}</ErrorNote> : null}
+
+      {/* Functional updates so fast consecutive taps queue instead of overwriting each other. */}
+      <Numpad
+        value={code}
+        onDigit={(digit) => {
+          setCode((current) =>
+            current.length >= CODE_LENGTH ? current : current + digit,
+          );
+          setError(null);
+        }}
+        onBackspace={() => setCode((current) => current.slice(0, -1))}
+      />
+
+      <p className="fs-meta pt-6 text-[var(--fs-muted-on-espresso)]">
         Stub roster: 0001, 0002, 0003, 0004.
       </p>
     </StageFrame>

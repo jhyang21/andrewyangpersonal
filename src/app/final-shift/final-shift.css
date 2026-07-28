@@ -14,7 +14,15 @@
   --fs-cream: #f7f0e3;
   --fs-ink: #29231f;
   --fs-red: #b83a31;
+
+  /*
+   * Clock green is specified against cream (5.6:1 there) and is only 2.8:1 on espresso — under even
+   * the 3:1 non-text bar, let alone 4.5:1 for the "SHIFT COMPLETE" stamp. Same two-surface problem as
+   * the muted greys above. Use --fs-green on paper-coloured chips, --fs-green-on-espresso (4.9:1)
+   * anywhere the dark background shows through.
+   */
   --fs-green: #4b6747;
+  --fs-green-on-espresso: #6e8f68;
   --fs-blue: #9cc5d5;
   --fs-oat: #dccdb7;
 

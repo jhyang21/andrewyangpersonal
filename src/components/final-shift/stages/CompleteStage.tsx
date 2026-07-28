@@ -28,7 +28,14 @@ export function CompleteStage({ session, goTo }: StageProps) {
         </a>
       }
     >
-      <p className="fs-label text-[var(--fs-green)]">{COPY.complete.stamp}</p>
+      {/*
+       * The stamp sits on a cream chip rather than straight on the espresso. It's truer to the
+       * metaphor — ink goes on paper — and it's the only way clock green reads at all here, since on
+       * the dark background it measures 2.8:1.
+       */}
+      <p className="fs-anim-stamp fs-label inline-block rotate-[var(--fs-stamp-rotate)] rounded-[var(--fs-radius)] border-2 border-[var(--fs-green)] bg-[var(--fs-cream)] px-3 py-2 text-[var(--fs-green)]">
+        {COPY.complete.stamp}
+      </p>
 
       <div className="mt-5">
         <StubBody note="The stamp motion, the private note dialog, and the My note and Edit my RSVP controls." />

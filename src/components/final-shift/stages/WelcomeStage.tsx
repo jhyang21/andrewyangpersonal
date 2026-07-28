@@ -24,7 +24,8 @@ export function WelcomeStage({ session, goTo, onSignOut }: StageProps) {
         </button>
       }
     >
-      <div className="rounded-[var(--fs-radius)] border border-[var(--fs-line)] bg-[var(--fs-ink)] p-5">
+      {/* The punched card settles into place — the one motion that carries the recognition beat. */}
+      <div className="fs-anim-card-settle rounded-[var(--fs-radius)] border border-[var(--fs-line)] bg-[var(--fs-ink)] p-5">
         <p className="fs-label text-[var(--fs-muted-on-espresso)]">
           {COPY.welcome.badgeLabel}
         </p>

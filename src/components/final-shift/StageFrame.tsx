@@ -11,6 +11,8 @@ import {
 
 type StageFrameProps = {
   stage: StageId;
+  /** Small mono line above the heading, e.g. "Timeclock / 01". */
+  eyebrow?: string;
   heading: string;
   /** Rendered under the heading, before the stage body. */
   support?: React.ReactNode;
@@ -38,6 +40,7 @@ function progressIndex(stage: StageId): number | null {
  */
 export function StageFrame({
   stage,
+  eyebrow,
   heading,
   support,
   onBack,
@@ -84,10 +87,15 @@ export function StageFrame({
           <button
             type="button"
             onClick={onBack}
-            className="fs-label -ml-1 mb-4 self-start rounded-[var(--fs-radius)] px-1 py-2 text-[var(--fs-oat)] underline underline-offset-4 transition-colors hover:text-[var(--fs-cream)]"
+            /* min-h-11 = 44px. A 12px mono label lands at ~33px on its own padding. */
+            className="fs-label -ml-2 mb-2 flex min-h-11 items-center self-start rounded-[var(--fs-radius)] px-2 text-[var(--fs-oat)] underline underline-offset-4 transition-colors hover:text-[var(--fs-cream)]"
           >
             &larr; {COPY.frame.back}
           </button>
+        ) : null}
+
+        {eyebrow ? (
+          <p className="fs-label mb-3 text-[var(--fs-muted-on-espresso)]">{eyebrow}</p>
         ) : null}
 
         <h1
@@ -103,7 +111,12 @@ export function StageFrame({
           <p className="fs-body mt-3 text-[var(--fs-oat)]">{support}</p>
         ) : null}
 
-        <div className="mt-7">{children}</div>
+        {/*
+         * flex-1 so a stage can push part of itself to the bottom of the available space with
+         * `mt-auto` — which is the whole of the numpad's thumb-reach requirement, in one property on
+         * the child rather than a measured layout here.
+         */}
+        <div className="mt-7 flex flex-1 flex-col">{children}</div>
       </div>
 
       <div className="mx-auto w-full max-w-md pt-2">{action}</div>
