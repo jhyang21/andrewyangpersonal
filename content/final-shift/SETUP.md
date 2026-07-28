@@ -89,6 +89,19 @@ To remove someone, set `"isActive": false` — never delete the row. The submiss
 guest by foreign key with `ON DELETE CASCADE`, so deleting a guest destroys their photo and their
 words along with them.
 
+## Your screen
+
+`/final-shift/admin`, behind `FINAL_SHIFT_ADMIN_PASSPHRASE`. Read-only, and it opens with the one
+thing you actually have to decide: which day works, ranked, with names. Below that, who still needs
+chasing, everyone's answers, the food notes, and every photo.
+
+Each photo is labelled with whether that guest agreed to the wall. **A photo marked private stays
+private** — not printed, not projected, not posted. It is on your screen because you need to know it
+arrived, not because it is yours to use.
+
+Edits happen in Supabase Studio, not here. There are no write routes behind that passphrase, which
+is the point: one password should not be able to rewrite the roster.
+
 ## Editing later, without a deploy
 
 Everything guest-facing is read at request time, so these are live on the next page load straight
