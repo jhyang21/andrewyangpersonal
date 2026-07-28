@@ -71,27 +71,32 @@ export function ReviewStage({
     },
   ];
 
+  // Dates and food are only shown to a guest who's coming, mirroring the receipt screen exactly. A
+  // summary that lists answers the guest was never asked for reads as though the form kept a record
+  // of a version of them that no longer applies.
   if (values.attending) {
-    rows.push({
-      label: COPY.review.sections.dates,
-      value: dateLabels.length ? dateLabels : COPY.review.values.none,
-      editStage: "receipt",
-      editLabel: `Edit ${COPY.review.sections.dates}`,
-    });
+    rows.push(
+      {
+        label: COPY.review.sections.dates,
+        value: dateLabels.length ? dateLabels : COPY.review.values.none,
+        editStage: "receipt",
+        editLabel: `Edit ${COPY.review.sections.dates}`,
+      },
+      {
+        label: COPY.review.sections.dietary,
+        value:
+          [values.dietaryTags.join(", "), values.dietaryNote]
+            .filter(Boolean)
+            .join(" — ") || COPY.review.values.none,
+        editStage: "receipt",
+        editLabel: `Edit ${COPY.review.sections.dietary}`,
+      },
+    );
   }
 
   const photo = session.submission.photo;
 
   rows.push(
-    {
-      label: COPY.review.sections.dietary,
-      value:
-        [values.dietaryTags.join(", "), values.dietaryNote]
-          .filter(Boolean)
-          .join(" — ") || COPY.review.values.none,
-      editStage: "receipt",
-      editLabel: `Edit ${COPY.review.sections.dietary}`,
-    },
     {
       label: COPY.review.sections.photo,
       value: photo ? undefined : COPY.review.values.none,

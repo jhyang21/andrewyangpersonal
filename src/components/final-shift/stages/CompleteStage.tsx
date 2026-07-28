@@ -14,7 +14,14 @@ import { fetchNote } from "@/lib/final-shift/net";
  * one moment the whole flow is built around; editing is a forward move from this screen instead.
  */
 export function CompleteStage({ session, note, setNote, goTo }: StageProps) {
-  const returning = session?.submission.status === "submitted" && note === null;
+  const submitted = session?.submission.status === "submitted";
+  const returning = submitted && note === null;
+  /*
+   * The one case where this screen isn't a farewell: edits are frozen and this guest never clocked
+   * out. There is no stamp to show, no note to read — /note refuses an unsubmitted guest, and
+   * rightly — and nothing to edit. What's left is the truth and Andrew's phone number.
+   */
+  const shutOut = Boolean(session?.event.editsLocked) && !submitted;
 
   /*
    * Opens on arrival when the note came back with the submit — that is the beat the ceremony has
@@ -54,8 +61,20 @@ export function CompleteStage({ session, note, setNote, goTo }: StageProps) {
   return (
     <StageFrame
       stage="complete"
-      heading={returning ? COPY.complete.backHeadline : COPY.complete.headline}
-      support={returning ? COPY.complete.backSupport : COPY.complete.support}
+      heading={
+        shutOut
+          ? COPY.locked.heading
+          : returning
+            ? COPY.complete.backHeadline
+            : COPY.complete.headline
+      }
+      support={
+        shutOut
+          ? COPY.locked.support
+          : returning
+            ? COPY.complete.backSupport
+            : COPY.complete.support
+      }
       action={
         <a
           href="/final-shift/wall"
@@ -65,32 +84,38 @@ export function CompleteStage({ session, note, setNote, goTo }: StageProps) {
         </a>
       }
     >
-      {/*
-       * The stamp sits on a cream chip rather than straight on the espresso. It's truer to the
-       * metaphor — ink goes on paper — and it's the only way clock green reads at all here, since on
-       * the dark background it measures 2.8:1.
-       */}
-      <p className="fs-anim-stamp fs-label inline-block rotate-[var(--fs-stamp-rotate)] rounded-[var(--fs-radius)] border-2 border-[var(--fs-green)] bg-[var(--fs-cream)] px-3 py-2 text-[var(--fs-green)]">
-        {COPY.complete.stamp}
-      </p>
+      {shutOut ? null : (
+        /*
+         * The stamp sits on a cream chip rather than straight on the espresso. It's truer to the
+         * metaphor — ink goes on paper — and it's the only way clock green reads at all here, since
+         * on the dark background it measures 2.8:1.
+         */
+        <p className="fs-anim-stamp fs-label inline-block rotate-[var(--fs-stamp-rotate)] rounded-[var(--fs-radius)] border-2 border-[var(--fs-green)] bg-[var(--fs-cream)] px-3 py-2 text-[var(--fs-green)]">
+          {COPY.complete.stamp}
+        </p>
+      )}
 
-      <div className="mt-8 flex flex-wrap gap-3">
-        <button type="button" onClick={openNote} className={ghost}>
-          {COPY.complete.myNote}
-        </button>
-        {locked ? null : (
-          <button type="button" onClick={() => goTo("receipt")} className={ghost}>
-            {COPY.complete.edit}
+      {shutOut ? null : (
+        <div className="mt-8 flex flex-wrap gap-3">
+          <button type="button" onClick={openNote} className={ghost}>
+            {COPY.complete.myNote}
           </button>
-        )}
-      </div>
+          {locked ? null : (
+            <button type="button" onClick={() => goTo("receipt")} className={ghost}>
+              {COPY.complete.edit}
+            </button>
+          )}
+        </div>
+      )}
 
       {locked ? (
         <p className="fs-body mt-6 border-l-2 border-[var(--fs-line)] pl-4 text-[var(--fs-oat)]">
           <span className="fs-label block text-[var(--fs-muted-on-espresso)]">
             {COPY.locked.badge}
           </span>
-          <span className="mt-2 block">{COPY.locked.body}</span>
+          <span className="mt-2 block">
+            {shutOut ? session.event.contactLine : COPY.locked.body}
+          </span>
         </p>
       ) : null}
 

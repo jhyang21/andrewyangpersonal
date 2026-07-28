@@ -34,8 +34,16 @@ const KEYS = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
  */
 export function Numpad({ value, onDigit, onBackspace }: NumpadProps) {
   const full = value.length >= CODE_LENGTH;
+  /*
+   * The type class is not in here.
+   *
+   * `fs-digit` and `fs-label` both set font-size, and stacking them on one element leaves the
+   * winner to source order in the stylesheet rather than to intent — which is how the backspace key
+   * ended up drawing its glyph at the digit size and overflowing its own 44px key at 200% zoom.
+   */
   const keyClass =
-    "fs-digit flex h-[3.5rem] items-center justify-center rounded-[var(--fs-radius)] border border-[var(--fs-line)] bg-[var(--fs-ink)] text-[var(--fs-cream)] [touch-action:manipulation] select-none active:translate-y-px active:bg-[var(--fs-line)] disabled:opacity-40";
+    "flex h-[3.5rem] items-center justify-center rounded-[var(--fs-radius)] border border-[var(--fs-line)] bg-[var(--fs-ink)] text-[var(--fs-cream)] [touch-action:manipulation] select-none active:translate-y-px active:bg-[var(--fs-line)] disabled:opacity-40";
+  const digitClass = `${keyClass} fs-digit`;
 
   return (
     /*
@@ -52,7 +60,7 @@ export function Numpad({ value, onDigit, onBackspace }: NumpadProps) {
           tabIndex={-1}
           onClick={() => onDigit(digit)}
           disabled={full}
-          className={keyClass}
+          className={digitClass}
         >
           {digit}
         </button>
@@ -65,7 +73,7 @@ export function Numpad({ value, onDigit, onBackspace }: NumpadProps) {
         tabIndex={-1}
         onClick={() => onDigit("0")}
         disabled={full}
-        className={keyClass}
+        className={digitClass}
       >
         0
       </button>

@@ -32,7 +32,10 @@ export function ReceiptStage({ session, values, update, goTo, goBack }: StagePro
   const { event } = session;
   const attending = values.attending;
   const needsDate = attending === true && values.availableDates.length === 0;
-  const dietaryTooLong = values.dietaryNote.length > LIMITS.dietaryNote;
+  // Scoped to a guest who's coming, because the field itself is. An over-long note left behind by
+  // someone who has since changed their answer must not block a screen that no longer shows it.
+  const dietaryTooLong =
+    attending === true && values.dietaryNote.length > LIMITS.dietaryNote;
 
   const toggleDate = (id: string) => {
     const next = values.availableDates.includes(id)
@@ -136,24 +139,34 @@ export function ReceiptStage({ session, values, update, goTo, goBack }: StagePro
           </fieldset>
         ) : null}
 
-        <div className="space-y-4">
-          <ChipGroup
-            legend={COPY.receipt.dietaryLabel}
-            support={COPY.receipt.dietarySupport}
-            options={event.dietaryChips}
-            selected={values.dietaryTags}
-            onToggle={toggleTag}
-          />
-          <CharCountField
-            label={COPY.review.sections.dietary}
-            value={values.dietaryNote}
-            onChange={(dietaryNote) => update({ dietaryNote })}
-            limit={LIMITS.dietaryNote}
-            rows={2}
-            placeholder={COPY.receipt.dietaryPlaceholder}
-            error={showErrors && dietaryTooLong ? COPY.receipt.errors.longDietary : null}
-          />
-        </div>
+        {/*
+         * Food is only asked of someone who is coming — the same rule as the dates, and for the
+         * same reason. Asking a guest who has just said they can't make it what they'd like to eat
+         * is the form not listening. Their answers survive in machine state if they change their
+         * mind, and the server ignores them while attending is false.
+         */}
+        {attending === true ? (
+          <div className="space-y-4">
+            <ChipGroup
+              legend={COPY.receipt.dietaryLabel}
+              support={COPY.receipt.dietarySupport}
+              options={event.dietaryChips}
+              selected={values.dietaryTags}
+              onToggle={toggleTag}
+            />
+            <CharCountField
+              label={COPY.review.sections.dietary}
+              value={values.dietaryNote}
+              onChange={(dietaryNote) => update({ dietaryNote })}
+              limit={LIMITS.dietaryNote}
+              rows={2}
+              placeholder={COPY.receipt.dietaryPlaceholder}
+              error={
+                showErrors && dietaryTooLong ? COPY.receipt.errors.longDietary : null
+              }
+            />
+          </div>
+        ) : null}
 
         {event.wallEnabled ? (
           <div className="border-t border-[var(--fs-line)] pt-6">

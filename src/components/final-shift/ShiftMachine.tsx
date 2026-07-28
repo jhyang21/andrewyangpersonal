@@ -92,7 +92,18 @@ function clampStage(
   requested: StageId,
   values: DraftValues,
   submission: Submission,
+  editsLocked: boolean,
 ): StageId {
+  /*
+   * A frozen event has no editable stages.
+   *
+   * Every write route refuses while `edits_locked` is set, so letting a guest into the RSVP would be
+   * letting them fill in a form that cannot be saved — the worst version of this, since they would
+   * find out at the end. Sending them to the last stage puts the explanation and the way to reach
+   * Andrew in front of them instead.
+   */
+  if (editsLocked) return requested === "clockIn" ? requested : "complete";
+
   // The identity stages are always available; they're behind the session, not behind progress.
   if (requested === "clockIn" || requested === "welcome") return requested;
 
@@ -124,6 +135,7 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
   );
   const [stage, setStage] = useState<StageId>(() => {
     if (!initialSession) return "clockIn";
+    if (initialSession.event.editsLocked) return "complete";
     return initialSession.submission.status === "submitted" ? "complete" : "welcome";
   });
 
@@ -148,7 +160,7 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
     const fromHash = stageFromHash(window.location.hash);
     const initial = fromHash ?? stage;
     const clamped = session
-      ? clampStage(initial, values, session.submission)
+      ? clampStage(initial, values, session.submission, session.event.editsLocked)
       : "clockIn";
 
     if (clamped !== stage) setStage(clamped);
@@ -181,7 +193,7 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
        */
       const allowed = fromEntry
         ? target
-        : clampStage(target, values, session.submission);
+        : clampStage(target, values, session.submission, session.event.editsLocked);
 
       setStage(allowed);
 
@@ -316,7 +328,11 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
       setSession(payload);
       setValues(valuesFrom(payload.submission));
       setNote(null);
-      goTo(payload.submission.status === "submitted" ? "complete" : "welcome");
+      goTo(
+        payload.event.editsLocked || payload.submission.status === "submitted"
+          ? "complete"
+          : "welcome",
+      );
     },
     [goTo],
   );

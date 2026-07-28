@@ -216,8 +216,41 @@ export const COPY = {
       `Step ${step} of ${total}, ${label}`,
   },
 
+  // Andrew's screen, not a guest's. Plain and unceremonious on purpose — this one is a tool.
+  admin: {
+    heading: "Back of house",
+    lockHeading: "Manager's key",
+    lockSupport: "This screen shows everyone's answers. It needs the passphrase.",
+    passphraseLabel: "Passphrase",
+    unlock: "Unlock",
+    errors: {
+      bad: "That's not the passphrase.",
+      rateLimited: "Too many tries. Give it a few minutes.",
+      temporary: "Couldn't check that just now. Try again.",
+    },
+    dates: "Which day works",
+    datesEmpty: "No dates are set on the event config yet.",
+    responses: "Everyone",
+    dietary: "Food notes",
+    dietaryEmpty: "Nothing to work around so far.",
+    photos: "Photos",
+    photosEmpty: "No photos yet.",
+    coverage: "Before the party",
+    coverageClear: "Every active guest has clocked out and has a note written.",
+    noNote: "No private note written — they'll get the fallback line.",
+    noClockIn: "Hasn't clocked in yet.",
+    started: "Started but hasn't clocked out.",
+    consentYes: "On the wall",
+    consentNo: "Private — not on the wall",
+    votes: (count: number) => (count === 1 ? "1 person" : `${count} people`),
+  },
+
   locked: {
     badge: "Edits are closed",
     body: "This RSVP is locked in. If something needs changing, reach out and Andrew will sort it.",
+    // For a guest who arrives after the freeze without ever having clocked out. They can't fill
+    // anything in, so they're told that plainly rather than shown a form that would refuse to save.
+    heading: "The clipboard's put away.",
+    support: "Andrew has closed the RSVP. It's not too late to be there, though.",
   },
 } as const;

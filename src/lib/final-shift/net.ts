@@ -188,3 +188,17 @@ export async function commitPhoto(input: {
   });
   return body.photo;
 }
+
+/**
+ * Andrew's passphrase, exchanged for the admin cookie.
+ *
+ * Nothing comes back but `ok`. The dashboard is rendered on the server behind the same cookie, so
+ * there is no payload to hand to a browser that has not proved anything yet.
+ */
+export async function adminLogin(passphrase: string): Promise<void> {
+  await request<{ ok: true }>("/admin", {
+    method: "POST",
+    body: JSON.stringify({ passphrase }),
+    fallbackMessage: COPY.admin.errors.temporary,
+  });
+}

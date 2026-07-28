@@ -1,4 +1,5 @@
 import { cookies } from "next/headers";
+import { loadAdminPayload } from "@/lib/final-shift/admin";
 import { holdUntil, isAdmin, json } from "@/lib/final-shift/api";
 import { hmac, timingSafeEqual } from "@/lib/final-shift/crypto";
 import { requireEnv } from "@/lib/final-shift/env";
@@ -8,9 +9,7 @@ import {
   hitRateLimit,
   RATE_LIMITS,
 } from "@/lib/final-shift/ratelimit";
-import { getAdminRows, getEventConfig } from "@/lib/final-shift/repository";
 import { adminCookie, signAdminSession } from "@/lib/final-shift/session";
-import { createSignedUrls } from "@/lib/final-shift/storage";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -78,29 +77,5 @@ export async function GET(): Promise<Response> {
     return json({ ok: false, code: "no_admin" }, { status: 401 });
   }
 
-  const [rows, event] = await Promise.all([getAdminRows(), getEventConfig()]);
-
-  const paths = rows
-    .map((row) => row.photoPath)
-    .filter((path): path is string => Boolean(path));
-  const signed = await createSignedUrls(paths);
-
-  const guests = rows.map((row) => ({
-    guestId: row.guestId,
-    firstName: row.firstName,
-    crewRole: row.crewRole,
-    hasPrivateNote: row.hasPrivateNote,
-    status: row.status,
-    attending: row.attending,
-    availableDates: row.availableDates ?? [],
-    dietaryTags: row.dietaryTags ?? [],
-    dietaryNote: row.dietaryNote ?? "",
-    caption: row.caption ?? "",
-    memory: row.memory ?? "",
-    wallConsent: row.wallConsent ?? false,
-    submittedAt: row.submittedAt ? row.submittedAt.toISOString() : null,
-    photoUrl: row.photoPath ? (signed.get(row.photoPath) ?? null) : null,
-  }));
-
-  return json({ ok: true, event, guests });
+  return json({ ok: true, ...(await loadAdminPayload()) });
 }
