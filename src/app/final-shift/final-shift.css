@@ -20,11 +20,21 @@
 
   /*
    * The handoff assigns Steel to "secondary copy", but #817B73 on cream is ~3.7:1 — under the 4.5:1
-   * the same document requires. Steel is kept for rules and non-text machine details (3:1 bar);
-   * --fs-steel-text (~4.6:1) is the one to use at body size.
+   * the same document requires. Steel is kept for rules and non-text machine details (3:1 bar).
+   *
+   * Muted text needs two values, not one, because this feature runs on two surfaces. A single
+   * "secondary copy" colour cannot pass on both: anything dark enough to read on cream is too dark
+   * to read on espresso, and vice versa. Picking by surface is not optional here.
+   *
+   *   --fs-muted-on-cream     #6B655C   4.6:1 on cream
+   *   --fs-muted-on-espresso  #979089   5.6:1 on espresso, 4.9:1 on the Ink card
+   *
+   * Espresso is the dominant surface, so -on-espresso is the one most call sites want. Using the
+   * wrong one is a real 3:1 failure that looks merely "a bit dim" in a screenshot.
    */
   --fs-steel: #817b73;
-  --fs-steel-text: #6b655c;
+  --fs-muted-on-cream: #6b655c;
+  --fs-muted-on-espresso: #979089;
 
   /*
    * Likewise Oat is assigned to "borders, dividers" but is ~1.4:1 on cream — fine for a decorative
