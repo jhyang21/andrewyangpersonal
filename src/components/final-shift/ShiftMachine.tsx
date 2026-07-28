@@ -12,6 +12,7 @@ import { WelcomeStage } from "@/components/final-shift/stages/WelcomeStage";
 import {
   STAGE_ORDER,
   type DraftValues,
+  type PhotoRef,
   type SessionPayload,
   type StageId,
   type Submission,
@@ -228,6 +229,28 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
     setValues((current) => ({ ...current, ...patch }));
   }, []);
 
+  /**
+   * Records the approved photo, and releases the one it replaces.
+   *
+   * The photo lives up here rather than in PhotoStage because every stage is keyed on `stage` and
+   * remounts on each transition — a photo held inside the stage would not survive a trip back to the
+   * receipt. The revoke matters on retakes: each prepared photo holds an object URL over a few
+   * hundred KB of decoded JPEG, and a guest who retakes five times would otherwise pin all five for
+   * the life of the document.
+   */
+  const setPhoto = useCallback(
+    (photo: PhotoRef | null) => {
+      const previous = session?.submission.photo ?? null;
+      if (previous && previous.url !== photo?.url && previous.url.startsWith("blob:")) {
+        URL.revokeObjectURL(previous.url);
+      }
+      setSession((current) =>
+        current ? { ...current, submission: { ...current.submission, photo } } : current,
+      );
+    },
+    [session],
+  );
+
   const onIdentified = useCallback(
     (payload: SessionPayload) => {
       setSession(payload);
@@ -248,6 +271,7 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
     session,
     values,
     update,
+    setPhoto,
     goTo,
     goBack,
     onIdentified,

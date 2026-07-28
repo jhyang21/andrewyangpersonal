@@ -16,7 +16,9 @@ type Row = {
    * September 5", where the separator is indistinguishable from the commas inside each date — and a
    * screen reader reads it as one run-on string.
    */
-  value: string | string[];
+  value?: string | string[];
+  /** Rendered instead of `value`. The shift photo reads back as the photo, not as prose about it. */
+  preview?: React.ReactNode;
   editStage: StageId;
   /** Read out with the Edit button so "Edit" alone isn't the whole accessible name. */
   editLabel: string;
@@ -63,6 +65,8 @@ export function ReviewStage({ session, values, goTo, goBack }: StageProps) {
     });
   }
 
+  const photo = session.submission.photo;
+
   rows.push(
     {
       label: COPY.review.sections.dietary,
@@ -72,6 +76,24 @@ export function ReviewStage({ session, values, goTo, goBack }: StageProps) {
           .join(" — ") || COPY.review.values.none,
       editStage: "receipt",
       editLabel: `Edit ${COPY.review.sections.dietary}`,
+    },
+    {
+      label: COPY.review.sections.photo,
+      value: photo ? undefined : COPY.review.values.none,
+      preview: photo ? (
+        <div className="w-24 bg-[#fffdf8] p-1.5 pb-3">
+          {/* eslint-disable-next-line @next/next/no-img-element -- expiring signed URL */}
+          <img
+            src={photo.url}
+            alt="Your shift photo"
+            width={photo.width}
+            height={photo.height}
+            className="aspect-[4/5] w-full object-cover"
+          />
+        </div>
+      ) : undefined,
+      editStage: "photo",
+      editLabel: `Edit ${COPY.review.sections.photo}`,
     },
     {
       label: COPY.review.sections.caption,
@@ -134,7 +156,9 @@ export function ReviewStage({ session, values, goTo, goBack }: StageProps) {
             <div className="min-w-0 flex-1">
               <dt className="fs-label text-[var(--fs-muted-on-espresso)]">{row.label}</dt>
               <dd className="fs-body mt-1 break-words text-[var(--fs-cream)]">
-                {Array.isArray(row.value) ? (
+                {row.preview ? (
+                  row.preview
+                ) : Array.isArray(row.value) ? (
                   <ul className="space-y-1">
                     {row.value.map((item) => (
                       <li key={item}>{item}</li>
