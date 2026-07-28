@@ -1,59 +1,69 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { CODE_LENGTH, DigitSlots } from "@/components/final-shift/DigitSlots";
 import { ErrorNote } from "@/components/final-shift/ErrorNote";
 import { Numpad } from "@/components/final-shift/Numpad";
 import { StageFrame } from "@/components/final-shift/StageFrame";
 import type { StageProps } from "@/components/final-shift/stageProps";
 import { COPY } from "@/lib/final-shift/copy";
-import { mockClockIn } from "@/lib/final-shift/mock";
+import { ApiError, clockIn } from "@/lib/final-shift/net";
 import { useReducedMotion } from "@/lib/final-shift/useMediaQuery";
 
 const PUNCH_MS = 180;
 
+function wait(ms: number): Promise<void> {
+  return new Promise((resolve) => window.setTimeout(resolve, ms));
+}
+
 /**
  * Stage 1 — the timeclock.
  *
- * The punch is the one animation in the flow that sits between the guest and the next screen, so
- * it's held to 180ms and skipped outright under reduced motion. When Phase 5 puts a real request
- * here, the hold overlaps the round trip rather than adding to it.
+ * The punch runs alongside the request rather than before it, so the animation costs nothing: by the
+ * time the ink has landed the server has usually answered. Under reduced motion it is skipped and
+ * the guest simply waits for the reply.
  */
 export function ClockInStage({ onIdentified }: StageProps) {
   const [code, setCode] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
   const [punching, setPunching] = useState(false);
+  const honeypot = useRef<HTMLInputElement>(null);
   const reducedMotion = useReducedMotion();
 
-  const submit = () => {
-    if (punching) return;
+  const submit = async () => {
+    if (busy) return;
 
     if (code.length !== CODE_LENGTH) {
       setError(COPY.clockIn.errors.incomplete);
       return;
     }
 
-    const session = mockClockIn(code);
-    if (!session) {
-      /*
-       * One message for every kind of rejection — unknown number, deactivated guest, tripped
-       * honeypot. Phase 5 moves the decision to the server, which returns this string byte for byte
-       * in all of those cases and pads the response to a fixed time floor, so nothing in the reply
-       * tells an attacker which four-digit codes are real.
-       */
-      setError(COPY.clockIn.errors.unknown);
-      return;
-    }
-
     setError(null);
+    setBusy(true);
+    if (!reducedMotion) setPunching(true);
 
-    if (reducedMotion) {
+    try {
+      const [session] = await Promise.all([
+        clockIn(code, honeypot.current?.value ?? ""),
+        reducedMotion ? Promise.resolve() : wait(PUNCH_MS),
+      ]);
+      // Unmounts this stage. Nothing after this line runs on the success path.
       onIdentified(session);
-      return;
+    } catch (failure) {
+      setPunching(false);
+      setBusy(false);
+      /*
+       * Whatever came back, it is one of two strings. The server answers an unknown number, a
+       * deactivated guest, and a tripped honeypot with the identical body after an identical delay,
+       * so there is nothing here to branch on — which is the point.
+       */
+      setError(
+        failure instanceof ApiError
+          ? failure.message
+          : COPY.clockIn.errors.temporary,
+      );
     }
-
-    setPunching(true);
-    window.setTimeout(() => onIdentified(session), PUNCH_MS);
   };
 
   return (
@@ -66,7 +76,8 @@ export function ClockInStage({ onIdentified }: StageProps) {
         <button
           type="button"
           onClick={submit}
-          className="fs-label h-14 w-full rounded-[var(--fs-radius)] bg-[var(--fs-red)] text-[var(--fs-cream)] active:translate-y-px"
+          disabled={busy}
+          className="fs-label h-14 w-full rounded-[var(--fs-radius)] bg-[var(--fs-red)] text-[var(--fs-cream)] active:translate-y-px disabled:opacity-70"
         >
           {COPY.clockIn.cta}
         </button>
@@ -86,6 +97,23 @@ export function ClockInStage({ onIdentified }: StageProps) {
 
       {error ? <ErrorNote id="fs-code-error">{error}</ErrorNote> : null}
 
+      {/*
+       * Honeypot. A guest never sees it and never fills it; a form-filling bot fills everything it
+       * finds. `aria-hidden` and `tabIndex={-1}` keep it out of the accessibility tree and the tab
+       * order, so it is invisible to assistive technology as well as to the eye — a hidden field a
+       * screen-reader user could land on would be a trap, not a defence.
+       */}
+      <input
+        ref={honeypot}
+        type="text"
+        name="company"
+        tabIndex={-1}
+        aria-hidden="true"
+        autoComplete="off"
+        defaultValue=""
+        className="pointer-events-none absolute h-0 w-0 opacity-0"
+      />
+
       {/* Functional updates so fast consecutive taps queue instead of overwriting each other. */}
       <Numpad
         value={code}
@@ -99,7 +127,7 @@ export function ClockInStage({ onIdentified }: StageProps) {
       />
 
       <p className="fs-meta pt-6 text-[var(--fs-muted-on-espresso)]">
-        Stub roster: 0001, 0002, 0003, 0004.
+        {COPY.clockIn.help}
       </p>
     </StageFrame>
   );

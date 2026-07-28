@@ -29,7 +29,17 @@ export function WelcomeStage({ session, goTo, onSignOut }: StageProps) {
         <p className="fs-label text-[var(--fs-muted-on-espresso)]">
           {COPY.welcome.badgeLabel}
         </p>
-        <p className="fs-digit mt-1 text-[var(--fs-cream)]">{guest.code}</p>
+        {/*
+         * Blank on a resumed session, and masked rather than missing.
+         *
+         * The code comes back only in the clock-in response, in the same breath the guest typed it.
+         * A resumed session never gets it again: these are real Ape Coffee clock-in credentials, and
+         * a stolen cookie should not hand someone the ability to punch in at a real job. It already
+         * grants everything this site holds — that's not a reason to add something it doesn't.
+         */}
+        <p className="fs-digit mt-1 text-[var(--fs-cream)]">
+          {guest.code || <span aria-label="Hidden">••••</span>}
+        </p>
         <p className="fs-body mt-4 text-[var(--fs-oat)]">{guest.crewRole}</p>
       </div>
 

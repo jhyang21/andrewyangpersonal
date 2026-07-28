@@ -1,13 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import { ErrorNote } from "@/components/final-shift/ErrorNote";
 import { StageFrame } from "@/components/final-shift/StageFrame";
 import type { StageProps } from "@/components/final-shift/stageProps";
 import { COPY } from "@/lib/final-shift/copy";
+import { ApiError, submitShift } from "@/lib/final-shift/net";
 import type { StageId } from "@/lib/final-shift/types";
 import { useReducedMotion } from "@/lib/final-shift/useMediaQuery";
 
 const STAMP_MS = 300;
+
+function wait(ms: number): Promise<void> {
+  return new Promise((resolve) => window.setTimeout(resolve, ms));
+}
 
 type Row = {
   label: string;
@@ -31,8 +37,17 @@ type Row = {
  * them as small links, and they're the single densest cluster of controls in the flow; a miss here
  * sends the guest to the wrong stage right before they commit.
  */
-export function ReviewStage({ session, values, goTo, goBack }: StageProps) {
+export function ReviewStage({
+  session,
+  values,
+  setSubmission,
+  setNote,
+  goTo,
+  goBack,
+}: StageProps) {
   const [stamping, setStamping] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [failure, setFailure] = useState<string | null>(null);
   const reducedMotion = useReducedMotion();
   if (!session) return null;
 
@@ -117,14 +132,53 @@ export function ReviewStage({ session, values, goTo, goBack }: StageProps) {
     },
   );
 
-  const clockOut = () => {
-    if (stamping) return;
-    if (reducedMotion) {
+  /**
+   * The punch-out.
+   *
+   * The values go up with the request rather than being trusted to have arrived by autosave. The
+   * last debounced save can still be in flight when the guest taps this, and being told the RSVP is
+   * incomplete because of a keystroke that hadn't landed yet would be the flow arguing with
+   * something the guest can plainly see on the screen in front of them.
+   *
+   * The stamp runs alongside the request, so the animation costs nothing.
+   */
+  const clockOut = async () => {
+    if (submitting) return;
+
+    setSubmitting(true);
+    setFailure(null);
+    if (!reducedMotion) setStamping(true);
+
+    try {
+      const [result] = await Promise.all([
+        submitShift(values),
+        reducedMotion ? Promise.resolve() : wait(STAMP_MS),
+      ]);
+      setSubmission(result.submission);
+      setNote(result.note);
       goTo("complete");
-      return;
+    } catch (error) {
+      setStamping(false);
+      setSubmitting(false);
+
+      if (error instanceof ApiError && error.code === "incomplete") {
+        // The server names the stage each missing answer belongs to, so the guest is taken to the
+        // first one rather than left to work out what "something's missing" refers to.
+        const first = error.missing[0];
+        setFailure(COPY.review.errors.incomplete);
+        if (first) goTo(first.stage);
+        return;
+      }
+
+      if (error instanceof ApiError && error.code === "edits_locked") {
+        setFailure(COPY.locked.body);
+        return;
+      }
+
+      setFailure(
+        error instanceof ApiError ? error.message : COPY.review.errors.failed,
+      );
     }
-    setStamping(true);
-    window.setTimeout(() => goTo("complete"), STAMP_MS);
   };
 
   return (
@@ -135,17 +189,24 @@ export function ReviewStage({ session, values, goTo, goBack }: StageProps) {
       onBack={goBack}
       action={
         <div>
+          {failure ? (
+            <div className="mb-3">
+              <ErrorNote id="fs-review-error">{failure}</ErrorNote>
+            </div>
+          ) : null}
           <p className="fs-meta mb-3 text-[var(--fs-muted-on-espresso)]">
             {locked ? COPY.review.confirmationLocked : COPY.review.confirmation}
           </p>
           <button
             type="button"
             onClick={clockOut}
-            className={`fs-label h-14 w-full rounded-[var(--fs-radius)] bg-[var(--fs-red)] text-[var(--fs-cream)] active:translate-y-px ${
+            disabled={submitting}
+            aria-describedby={failure ? "fs-review-error" : undefined}
+            className={`fs-label h-14 w-full rounded-[var(--fs-radius)] bg-[var(--fs-red)] text-[var(--fs-cream)] active:translate-y-px disabled:opacity-70 ${
               stamping ? "fs-anim-stamp" : ""
             }`}
           >
-            {stamping ? COPY.review.submitting : COPY.review.cta}
+            {submitting ? COPY.review.submitting : COPY.review.cta}
           </button>
         </div>
       }

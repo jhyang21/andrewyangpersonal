@@ -54,13 +54,29 @@ walkable before your real roster exists. It's idempotent — run it again any ti
 npm run seed:final-shift -- --check    # print what's in there, change nothing
 ```
 
-## 5. Vercel
+## 5. Check the API
+
+With `npm run dev` running in another terminal:
+
+```bash
+npm run test:api:final-shift
+```
+
+Plain node against the live server. It checks that every clock-in rejection is byte-identical, that
+the timing floor holds, that the wall payload carries no code, no private field, and no count, and
+that a partial draft save leaves the other answers alone.
+
+**It writes to guest 0001's draft**, so run it against the sample roster, not after your crew has
+started replying. `-- --rate-limit` runs the limiter suite, which is left out of the default run
+because it deliberately locks clock-ins from your IP for ten minutes.
+
+## 6. Vercel
 
 Set all six variables for **Production and Preview**. Preview matters: the iOS camera, HEIC,
 `<dialog>`, and the safe-area insets only behave truthfully over real HTTPS in real Safari, so the
 phone testing happens on a preview URL. Vercel previews are noindexed by default.
 
-## 6. When the real roster arrives
+## 7. When the real roster arrives
 
 Copy `roster.sample.json` to `roster.local.json`, replace the contents, and re-run the seed. That
 file is gitignored and must stay that way — it holds real Ape Coffee clock-in codes and personal

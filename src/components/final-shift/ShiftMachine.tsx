@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { StageProps } from "@/components/final-shift/stageProps";
 import { ClockInStage } from "@/components/final-shift/stages/ClockInStage";
 import { CompleteStage } from "@/components/final-shift/stages/CompleteStage";
@@ -9,10 +9,12 @@ import { PhotoStage } from "@/components/final-shift/stages/PhotoStage";
 import { ReceiptStage } from "@/components/final-shift/stages/ReceiptStage";
 import { ReviewStage } from "@/components/final-shift/stages/ReviewStage";
 import { WelcomeStage } from "@/components/final-shift/stages/WelcomeStage";
+import { saveDraft, signOut } from "@/lib/final-shift/net";
 import {
   STAGE_ORDER,
   type DraftValues,
   type PhotoRef,
+  type PrivateNote,
   type SessionPayload,
   type StageId,
   type Submission,
@@ -20,6 +22,15 @@ import {
 
 const DRAFT_KEY = "fs:draft:v1";
 const HASH_PREFIX = "#";
+
+/**
+ * How long the guest has to stop typing before the draft goes to the server.
+ *
+ * Long enough that a sentence is one write rather than forty, short enough that closing the tab
+ * mid-thought loses nothing worth having. The submit carries the final values regardless, so this
+ * only ever protects against abandonment.
+ */
+const AUTOSAVE_MS = 800;
 
 type ShiftMachineProps = {
   /** Present when the cookie identified a guest server-side, so the keypad never flashes. */
@@ -117,6 +128,18 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
   });
 
   /*
+   * The private note lives here, not in a stage, and it is never written to localStorage.
+   *
+   * It is a personal message to one named person, and this link gets opened on borrowed and shared
+   * phones. Holding it in memory means closing the tab is enough to be rid of it; the /note route
+   * hands it back on the next visit, behind the cookie.
+   */
+  const [note, setNote] = useState<PrivateNote | null>(null);
+
+  /** The last values known to be on the server, so an idle autosave doesn't write them again. */
+  const lastSaved = useRef<string | null>(null);
+
+  /*
    * Seed the first history entry with a stage so the very first Back has something to return to,
    * and so a refresh mid-flow lands on the right screen. replaceState, not pushState: we're
    * labelling the entry the guest is already on, not creating a new one.
@@ -212,6 +235,35 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
     }
   }, [session, stage, values]);
 
+  /*
+   * Autosave, debounced.
+   *
+   * The first pass after a session appears records a baseline and writes nothing — those values came
+   * *from* the server, and echoing them straight back is a round trip that can only lose. After that
+   * every settled change goes up.
+   *
+   * Failures are swallowed inside saveDraft. This is a background save the guest never asked for, so
+   * interrupting them to report one would be the feature complaining about its own housekeeping; the
+   * values stay in memory and in the localStorage mirror, and the submit carries them regardless.
+   */
+  useEffect(() => {
+    if (!session || session.event.editsLocked) return;
+
+    const serialised = JSON.stringify(values);
+    if (lastSaved.current === null) {
+      lastSaved.current = serialised;
+      return;
+    }
+    if (lastSaved.current === serialised) return;
+
+    const timer = window.setTimeout(() => {
+      lastSaved.current = serialised;
+      void saveDraft(values);
+    }, AUTOSAVE_MS);
+
+    return () => window.clearTimeout(timer);
+  }, [session, values]);
+
   const clearLocalDraft = useCallback(() => {
     try {
       window.localStorage.removeItem(DRAFT_KEY);
@@ -251,18 +303,32 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
     [session],
   );
 
+  /** Replaces the stored submission wholesale — used by the submit, which returns the saved row. */
+  const setSubmission = useCallback((submission: Submission) => {
+    setSession((current) => (current ? { ...current, submission } : current));
+  }, []);
+
   const onIdentified = useCallback(
     (payload: SessionPayload) => {
+      // Cleared so the autosave takes a fresh baseline from this guest's own row rather than
+      // treating the previous occupant's answers as unsaved changes.
+      lastSaved.current = null;
       setSession(payload);
       setValues(valuesFrom(payload.submission));
+      setNote(null);
       goTo(payload.submission.status === "submitted" ? "complete" : "welcome");
     },
     [goTo],
   );
 
   const onSignOut = useCallback(() => {
+    // Fire and forget: the cookie is expired server-side, but the guest must not wait on a round
+    // trip to stop seeing someone else's name.
+    void signOut();
+    lastSaved.current = null;
     setSession(null);
     setValues(emptyValues());
+    setNote(null);
     clearLocalDraft();
     goTo("clockIn", { replace: true });
   }, [clearLocalDraft, goTo]);
@@ -270,8 +336,11 @@ export function ShiftMachine({ initialSession }: ShiftMachineProps) {
   const stageProps: StageProps = {
     session,
     values,
+    note,
     update,
     setPhoto,
+    setSubmission,
+    setNote,
     goTo,
     goBack,
     onIdentified,

@@ -8,6 +8,7 @@ import { StageFrame } from "@/components/final-shift/StageFrame";
 import type { StageProps } from "@/components/final-shift/stageProps";
 import { COPY } from "@/lib/final-shift/copy";
 import { PhotoError, preparePhoto, type PreparedPhoto } from "@/lib/final-shift/image";
+import { ApiError } from "@/lib/final-shift/net";
 import { LIMITS } from "@/lib/final-shift/types";
 import { uploadPhoto } from "@/lib/final-shift/upload";
 import { useReducedMotion } from "@/lib/final-shift/useMediaQuery";
@@ -26,6 +27,22 @@ function messageFor(error: unknown): string {
       : COPY.photo.errors.decodeFailed;
   }
   return COPY.photo.errors.decodeFailed;
+}
+
+/**
+ * Upload failures the guest can act on differently.
+ *
+ * "Try again" is right for a dropped connection and wrong for a photo the bucket refused on size or
+ * for a locked event, where trying again produces the same answer. Anything else falls through to
+ * the generic copy, which promises the caption is safe — and it is, because it never lived here.
+ */
+function uploadMessageFor(error: unknown): string {
+  if (error instanceof ApiError) {
+    if (error.code === "too_large") return COPY.photo.errors.tooLarge;
+    if (error.code === "rate_limited") return COPY.clockIn.errors.rateLimited;
+    if (error.code === "edits_locked") return COPY.locked.body;
+  }
+  return COPY.photo.errors.uploadFailed;
 }
 
 /**
@@ -99,8 +116,8 @@ export function PhotoStage({ session, values, update, setPhoto, goTo, goBack }: 
       // The machine owns the object URL from here; dropping `pending` must not revoke it.
       setPending(null);
       if (!reducedMotion) setDeveloping(true);
-    } catch {
-      setFailure({ message: COPY.photo.errors.uploadFailed, kind: "upload" });
+    } catch (error) {
+      setFailure({ message: uploadMessageFor(error), kind: "upload" });
     } finally {
       setBusy(null);
     }
@@ -138,6 +155,12 @@ export function PhotoStage({ session, values, update, setPhoto, goTo, goBack }: 
               <button type="button" onClick={onContinue} className={primaryButton}>
                 {COPY.photo.cta}
               </button>
+              {/*
+               * Retake clears the photo here, not on the server. The stored one stays until a new
+               * one is committed, so a guest who taps Retake and then wanders off still has the
+               * photo they took — it comes back on the next load rather than leaving them with
+               * nothing because they changed their mind and didn't follow through.
+               */}
               <button
                 type="button"
                 onClick={() => setPhoto(null)}
