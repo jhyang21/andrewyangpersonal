@@ -1,0 +1,379 @@
+/*
+ * Andrew's Final Shift — scoped design system.
+ *
+ * Everything here is namespaced under `.fs-root`. These tokens are deliberately NOT registered in
+ * `@theme inline` in globals.css: that block is global, so the variables would be emitted on every
+ * page of the site and a one-off party feature would end up coupled to the permanent design system.
+ * Tailwind arbitrary values (`bg-[var(--fs-espresso)]`) work regardless of `@theme`, so nothing is
+ * lost, and the whole feature deletes with one import.
+ */
+
+.fs-root {
+  /* Palette — from the UI/UX handoff §05, with two accessibility corrections noted below. */
+  --fs-espresso: #1c1714;
+  --fs-cream: #f7f0e3;
+  --fs-ink: #29231f;
+  --fs-red: #b83a31;
+  --fs-green: #4b6747;
+  --fs-blue: #9cc5d5;
+  --fs-oat: #dccdb7;
+
+  /*
+   * The handoff assigns Steel to "secondary copy", but #817B73 on cream is ~3.7:1 — under the 4.5:1
+   * the same document requires. Steel is kept for rules and non-text machine details (3:1 bar);
+   * --fs-steel-text (~4.6:1) is the one to use at body size.
+   */
+  --fs-steel: #817b73;
+  --fs-steel-text: #6b655c;
+
+  /*
+   * Likewise Oat is assigned to "borders, dividers" but is ~1.4:1 on cream — fine for a decorative
+   * rule, not acceptable as the only visible boundary of a control (WCAG 1.4.11 wants 3:1).
+   */
+  --fs-line: #4a423a;
+
+  --fs-radius: 2px;
+  --fs-stamp-rotate: -4deg;
+
+  min-height: 100dvh;
+  background: var(--fs-espresso);
+  color: var(--fs-cream);
+  font-family: var(--font-ibm-plex-sans), system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+@supports not (height: 100dvh) {
+  .fs-root {
+    min-height: 100vh;
+  }
+}
+
+/*
+ * globals.css hardcodes `body { background: var(--color-paper) }`. Without this the iOS overscroll
+ * rubber-band flashes cream above and below the espresso stage.
+ */
+body:has(.fs-root) {
+  background: var(--fs-espresso);
+}
+
+/* ---------------------------------------------------------------- type scale */
+/*
+ * One place to enforce the handoff's readability rule: the display serif is for heroes and titles
+ * only — never field labels, errors, dietary copy, or guest memories.
+ */
+
+.fs-display {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 9vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.fs-title {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 7vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+.fs-section {
+  font-family: var(--font-ibm-plex-sans), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.375rem, 4.5vw, 2rem);
+  line-height: 1.25;
+}
+
+.fs-body {
+  font-family: var(--font-ibm-plex-sans), system-ui, sans-serif;
+  font-size: clamp(1rem, 3.6vw, 1.1875rem);
+  line-height: 1.6;
+}
+
+.fs-label {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.fs-meta {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.fs-digit {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-weight: 500;
+  font-size: clamp(1.875rem, 7vw, 2.5rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------------------------------------------------------------- base */
+
+/*
+ * iOS Safari auto-zooms any focused control under 16px. The widely-copied "fix" is
+ * `maximum-scale=1` in the viewport, which breaks pinch-zoom and fails WCAG 1.4.4 — so we set the
+ * font size instead and leave zoom alone.
+ */
+.fs-root :is(input, textarea, select) {
+  font-size: 16px;
+  font-family: inherit;
+}
+
+/*
+ * globals.css sets a global focus ring of `box-shadow: 0 0 0 4px var(--color-primary-tint)`, and
+ * that tint (#f0ede8) is invisible against espresso. Two-tone so it reads on cream and dark alike.
+ */
+.fs-root :is(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 3px solid var(--fs-blue);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(28, 23, 20, 0.9);
+}
+
+/* The stage heading is focused programmatically on every transition; don't paint a ring for that. */
+.fs-root [data-stage-heading]:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.fs-root ::selection {
+  background: var(--fs-blue);
+  color: var(--fs-espresso);
+}
+
+.fs-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
+ * Every stage is a three-row grid: frame, content, action. Putting the primary action in the last
+ * row — in normal flow, after the content — is what the handoff asks for, and it also makes the
+ * entire iOS "keyboard covers the fixed button" problem disappear without touching visualViewport.
+ */
+.fs-stage {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  gap: 1rem;
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+}
+
+@supports not (height: 100dvh) {
+  .fs-stage {
+    min-height: 100vh;
+  }
+}
+
+/* ---------------------------------------------------------------- motion */
+/*
+ * All seven signature motions from handoff §05 are plain keyframes — no gestures, no layout
+ * animation, no orchestration — so there is no case for pulling in an animation library.
+ */
+
+@keyframes fs-stage-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Stage 1 — the timecard takes the punch. */
+@keyframes fs-punch {
+  0% {
+    transform: none;
+  }
+  35% {
+    transform: translateY(6px) scale(0.985);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+/* Stage 1 + 6 — ink stamp landing on the card. */
+@keyframes fs-stamp {
+  0% {
+    opacity: 0;
+    transform: scale(1.4) rotate(var(--fs-stamp-rotate));
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.96) rotate(var(--fs-stamp-rotate));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(var(--fs-stamp-rotate));
+  }
+}
+
+/* Stage 2 — the punched card gives way and the name card settles. */
+@keyframes fs-card-settle {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) rotate(1.2deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-3px) rotate(-0.3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Stage 3 — the receipt unfurls once. */
+@keyframes fs-unfurl {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Stage 4 — shutter flash, then the Polaroid develops. */
+@keyframes fs-flash {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fs-develop {
+  from {
+    filter: contrast(0.35) saturate(0.15) brightness(1.35);
+  }
+  to {
+    filter: none;
+  }
+}
+
+@keyframes fs-develop-veil {
+  from {
+    opacity: 0.85;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Stage 5 — the ticket feeds up out of the machine, and the caret blinks. */
+@keyframes fs-ticket-feed {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fs-caret {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Stage 7 — wall cards arrive in small groups. */
+@keyframes fs-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fs-anim-stage-in {
+  animation: fs-stage-in 220ms ease-out both;
+}
+.fs-anim-punch {
+  animation: fs-punch 180ms ease-in-out both;
+}
+.fs-anim-stamp {
+  animation: fs-stamp 300ms cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+.fs-anim-card-settle {
+  animation: fs-card-settle 500ms cubic-bezier(0.2, 0.9, 0.3, 1) both;
+}
+.fs-anim-unfurl {
+  animation: fs-unfurl 500ms cubic-bezier(0.25, 0.9, 0.3, 1) both;
+}
+.fs-anim-flash {
+  animation: fs-flash 320ms ease-out both;
+}
+.fs-anim-develop {
+  animation: fs-develop 1400ms ease-out both;
+}
+.fs-anim-develop-veil {
+  animation: fs-develop-veil 1400ms ease-out both;
+}
+.fs-anim-ticket-feed {
+  animation: fs-ticket-feed 420ms cubic-bezier(0.2, 0.9, 0.3, 1) both;
+}
+.fs-anim-caret {
+  animation: fs-caret 1.1s steps(1, end) infinite;
+}
+
+/* Wall cards stagger off an index custom property, capped so the last card is never far behind. */
+.fs-anim-card-in {
+  animation: fs-card-in 420ms ease-out both;
+  animation-delay: calc(var(--fs-i, 0) * 60ms);
+}
+
+/*
+ * Reduced motion: belt and braces. This collapses the CSS side, and `useReducedMotion()` handles
+ * the JS side so the develop *hold* is skipped too — otherwise the 1400ms gate would still be
+ * there, invisibly, and the handoff is explicit that navigation must never wait on decoration.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .fs-root *,
+  .fs-root *::before,
+  .fs-root *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}
