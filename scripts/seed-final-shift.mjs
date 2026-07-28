@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 /*
- * Creates the fs_* schema and loads the roster.
+ * Creates the `final_shift` schema and loads the roster.
  *
  *   npm run seed:final-shift                 roster.local.json if it exists, else the sample
  *   npm run seed:final-shift -- --sample     force the sample roster
  *   npm run seed:final-shift -- --check      print what's in the database, change nothing
+ *
+ * To remove the whole thing afterwards: `DROP SCHEMA final_shift CASCADE;` in the SQL editor, then
+ * delete the storage bucket. Nothing this feature made lives anywhere else.
  *
  * This script owns the DDL. relora-website creates its tables inline on every request so its
  * environments self-heal; here we always seed before deploying, so the routes skip five round trips
@@ -100,8 +103,24 @@ function validateRoster(data) {
 async function createSchema(sql) {
   await sql`CREATE EXTENSION IF NOT EXISTS pgcrypto`;
 
+  /*
+   * Everything lives in its own schema, and that is the point.
+   *
+   * This feature shares a Supabase project with the rest of the site, so it has to be removable
+   * without a checklist. One schema means teardown is one statement that cannot miss a table:
+   *
+   *   DROP SCHEMA final_shift CASCADE;
+   *
+   * It also settles the name collision: `api_rate_limits` is a table relora-website already owns,
+   * and the party sharing a project with it must not share that table. Two other things fall out of
+   * this for free — PostgREST only exposes `public` unless a schema is added to its list, so none of
+   * these tables are reachable through the auto-generated REST API at all; and nothing here can
+   * shadow or be shadowed by a table the site adds later.
+   */
+  await sql`CREATE SCHEMA IF NOT EXISTS final_shift`;
+
   await sql`
-    CREATE TABLE IF NOT EXISTS fs_guests (
+    CREATE TABLE IF NOT EXISTS final_shift.guests (
       id           uuid PRIMARY KEY DEFAULT gen_random_uuid(),
       code_hash    text NOT NULL UNIQUE,
       first_name   text NOT NULL,
@@ -114,9 +133,9 @@ async function createSchema(sql) {
   `;
 
   await sql`
-    CREATE TABLE IF NOT EXISTS fs_submissions (
+    CREATE TABLE IF NOT EXISTS final_shift.submissions (
       id               uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-      guest_id         uuid NOT NULL UNIQUE REFERENCES fs_guests(id) ON DELETE CASCADE,
+      guest_id         uuid NOT NULL UNIQUE REFERENCES final_shift.guests(id) ON DELETE CASCADE,
       status           text NOT NULL DEFAULT 'draft' CHECK (status IN ('draft','submitted')),
       attending        boolean,
       available_dates  text[] NOT NULL DEFAULT '{}',
@@ -137,13 +156,13 @@ async function createSchema(sql) {
 
   // Partial index: the wall query is the only hot read, and it only ever wants these rows.
   await sql`
-    CREATE INDEX IF NOT EXISTS fs_submissions_wall_idx
-    ON fs_submissions (submitted_at DESC)
+    CREATE INDEX IF NOT EXISTS submissions_wall_idx
+    ON final_shift.submissions (submitted_at DESC)
     WHERE status = 'submitted' AND wall_consent = true
   `;
 
   await sql`
-    CREATE TABLE IF NOT EXISTS fs_event_config (
+    CREATE TABLE IF NOT EXISTS final_shift.event_config (
       id            smallint PRIMARY KEY DEFAULT 1 CHECK (id = 1),
       event_name    text NOT NULL,
       subtitle      text NOT NULL,
@@ -157,7 +176,7 @@ async function createSchema(sql) {
   `;
 
   await sql`
-    CREATE TABLE IF NOT EXISTS api_rate_limits (
+    CREATE TABLE IF NOT EXISTS final_shift.rate_limits (
       key          text PRIMARY KEY,
       window_start timestamptz NOT NULL,
       count        integer NOT NULL
@@ -167,7 +186,7 @@ async function createSchema(sql) {
 
 async function seedEvent(sql, event) {
   await sql`
-    INSERT INTO fs_event_config
+    INSERT INTO final_shift.event_config
       (id, event_name, subtitle, contact_line, date_options, dietary_chips, wall_enabled, edits_locked, updated_at)
     VALUES
       (1, ${event.eventName}, ${event.subtitle}, ${event.contactLine},
@@ -188,7 +207,7 @@ async function seedEvent(sql, event) {
 async function seedGuests(sql, guests) {
   for (const guest of guests) {
     await sql`
-      INSERT INTO fs_guests (code_hash, first_name, crew_role, private_note, is_active, updated_at)
+      INSERT INTO final_shift.guests (code_hash, first_name, crew_role, private_note, is_active, updated_at)
       VALUES (${hashCode(guest.code)}, ${guest.firstName}, ${guest.crewRole},
               ${guest.privateNote ?? null}, ${guest.isActive ?? true}, NOW())
       ON CONFLICT (code_hash) DO UPDATE SET
@@ -209,13 +228,13 @@ async function seedGuests(sql, guests) {
 }
 
 async function report(sql) {
-  const [config] = await sql`SELECT event_name, edits_locked, wall_enabled FROM fs_event_config WHERE id = 1`;
+  const [config] = await sql`SELECT event_name, edits_locked, wall_enabled FROM final_shift.event_config WHERE id = 1`;
   const rows = await sql`
     SELECT g.first_name, g.crew_role, g.is_active,
            (g.private_note IS NOT NULL AND g.private_note <> '') AS has_note,
            s.status, s.attending, s.photo_path IS NOT NULL AS has_photo
-    FROM fs_guests g
-    LEFT JOIN fs_submissions s ON s.guest_id = g.id
+    FROM final_shift.guests g
+    LEFT JOIN final_shift.submissions s ON s.guest_id = g.id
     ORDER BY g.first_name
   `;
 

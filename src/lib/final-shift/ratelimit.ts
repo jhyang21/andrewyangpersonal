@@ -55,7 +55,9 @@ export function getClientIp(request: Request): string {
  * requests can't both read "count = 7" and both write 8, which is exactly the hole a
  * SELECT-then-UPDATE version would have.
  *
- * Ported from relora-website's waitlist route, where it has been the standing pattern.
+ * Ported from relora-website's waitlist route, where it has been the standing pattern — but into our
+ * own schema, not the `api_rate_limits` table that lives there. Sharing a Supabase project is not a
+ * reason to share a table: this one has to be droppable with the rest of the party.
  */
 export async function hitRateLimit(
   rule: RateLimitRule,
@@ -67,7 +69,7 @@ export async function hitRateLimit(
 
   const [row] = await sql<Row[]>`
     WITH upserted AS (
-      INSERT INTO api_rate_limits AS rl (key, window_start, count)
+      INSERT INTO final_shift.rate_limits AS rl (key, window_start, count)
       VALUES (${key}, NOW(), 1)
       ON CONFLICT (key)
       DO UPDATE SET
@@ -98,7 +100,7 @@ export async function hitRateLimit(
 export async function pruneRateLimits(): Promise<void> {
   const sql = getSql();
   await sql`
-    DELETE FROM api_rate_limits
+    DELETE FROM final_shift.rate_limits
     WHERE window_start <= NOW() - INTERVAL '48 hours'
   `;
 }

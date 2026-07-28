@@ -3,10 +3,24 @@
 Everything below needs an Andrew-only login, which is why it isn't scripted. Fifteen minutes, once.
 The secrets that don't need an account are already generated and sitting in `.env.local`.
 
-## 1. Make the Supabase project
+## 1. Pick the Supabase project
 
-New project, any region close to you, and **write the database password down** — the connection
-string needs it and Supabase will not show it again.
+**Use your existing personal-site project.** Nothing here needs a project of its own, and a spare
+project is one more thing to remember to delete.
+
+Everything this feature creates lives in a **`final_shift` schema**, not in `public`. That is what
+makes it removable in one line when the party is over:
+
+```sql
+DROP SCHEMA final_shift CASCADE;
+```
+
+No table list to keep in sync, nothing left behind, and nothing of yours touched. Two other things
+fall out of it: the tables can't collide with anything the site adds later, and Supabase's
+auto-generated REST API only exposes `public`, so none of them are reachable through it at all.
+
+To browse the rows in Studio, use the **schema dropdown** above the table list and switch from
+`public` to `final_shift` — otherwise the Table Editor will look empty.
 
 Free tier is fine on volume: ten photos is about 3 MB against a 1 GB allowance. The catch is
 different. **A free project pauses after 7 days idle**, and that is a likely shape here — invite
@@ -15,6 +29,12 @@ keep it on a paid plan for the few weeks this runs, or open the dashboard once b
 you send.
 
 ## 2. Make the photo bucket
+
+**Same project, Storage tab.** Buckets aren't part of any schema — Storage is its own thing — so the
+bucket can't hide inside `final_shift`. It stands on its own next to any other buckets you have,
+which is fine: it's a separate object with a separate name, and deleting it touches nothing else.
+When you tear down, **empty it first, then delete it** — Supabase won't delete a bucket with objects
+still in it.
 
 Storage → New bucket:
 
@@ -47,8 +67,9 @@ It must be the **transaction pooler** string, not the direct connection — the 
 npm run seed:final-shift
 ```
 
-That creates the `fs_*` tables and loads four invented guests (`0001`–`0004`) so the whole flow is
-walkable before your real roster exists. It's idempotent — run it again any time.
+That creates the `final_shift` schema and its four tables, then loads four invented guests
+(`0001`–`0004`) so the whole flow is walkable before your real roster exists. It's idempotent — run
+it again any time.
 
 ```bash
 npm run seed:final-shift -- --check    # print what's in there, change nothing
@@ -111,3 +132,17 @@ from Supabase Studio:
 `wall_enabled` · `edits_locked`
 
 Only `src/lib/final-shift/copy.ts` needs a deploy, which is right — that's design, not data.
+
+## Taking it down afterwards
+
+Three steps, in this order:
+
+1. **Save anything you want to keep first.** The photos and the memories are the point of the whole
+   thing, and step 2 destroys them. Download them from the admin screen or the Storage browser —
+   remembering that a photo marked private stays private.
+2. `DROP SCHEMA final_shift CASCADE;` in the SQL editor. One statement, everything.
+3. Storage → `final-shift-photos` → empty it, then delete the bucket.
+
+Then delete `src/app/final-shift/`, `src/components/final-shift/`, `src/lib/final-shift/`,
+`content/final-shift/`, both scripts, the `/final-shift` block in `next.config.ts`, the six env vars
+in Vercel, and `postgres` from `package.json`. Nothing else in the site imports any of it.

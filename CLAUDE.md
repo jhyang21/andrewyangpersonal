@@ -4,8 +4,9 @@ Personal portfolio/blog with memos and theses. Next.js 16 App Router, Tailwind v
 
 The site is static except for one feature: **Final Shift** (`/final-shift`), the RSVP for Andrew's
 leaving party at Ape Coffee. It is the only part of the codebase with a database, API routes, client
-components, or secrets. Everything about it is namespaced — `final-shift` in paths, `fs_` in SQL,
-`fs-` in CSS — so it stays a thing you can delete rather than something braided into the site.
+components, or secrets. Everything about it is namespaced — `final-shift` in paths, a `final_shift`
+Postgres schema, `fs-` in CSS — so it stays a thing you can delete rather than something braided
+into the site.
 
 ---
 
@@ -17,7 +18,7 @@ npm run dev    # localhost:3000
 npm run build
 npm run lint
 
-npm run seed:final-shift      # creates the fs_* schema and upserts the roster. Idempotent.
+npm run seed:final-shift      # creates the final_shift schema and upserts the roster. Idempotent.
 npm run test:api:final-shift  # hits a running dev server; see the flags below
 ```
 
@@ -96,9 +97,17 @@ Andrew's private notes and is gitignored (`content/final-shift/*.local.json`). O
 `roster.sample.json` is committed, and it is entirely fictional. Committing the real one would put
 personal messages to named coworkers in git history permanently.
 
-Tables are `fs_guests`, `fs_submissions`, `fs_event_config`, and `api_rate_limits`. **The DDL lives
-in `scripts/seed-final-shift.mjs`**, deliberately unlike `relora-website`'s inline
+**Everything lives in a `final_shift` Postgres schema**, not in `public`: `guests`, `submissions`,
+`event_config`, `rate_limits`. The feature shares a Supabase project with the rest of Andrew's
+things, so teardown has to be one statement that cannot miss a table — `DROP SCHEMA final_shift
+CASCADE;` — rather than a checklist. It also keeps `rate_limits` from colliding with the
+`api_rate_limits` table `relora-website` owns, and PostgREST exposes only `public` by default, so
+none of these tables are reachable through the auto-generated REST API.
+
+**The DDL lives in `scripts/seed-final-shift.mjs`**, deliberately unlike `relora-website`'s inline
 `CREATE TABLE IF NOT EXISTS` — we always seed before deploying, so the routes skip the round trips.
+Every query names its schema explicitly; don't rely on `search_path`, which the transaction pooler
+is not guaranteed to carry.
 
 Env vars, all server-only, none `NEXT_PUBLIC_`: `POSTGRES_URL`, `SUPABASE_URL`,
 `SUPABASE_SERVICE_ROLE_KEY`, `FINAL_SHIFT_SESSION_SECRET`, `FINAL_SHIFT_CODE_PEPPER`,

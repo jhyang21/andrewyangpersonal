@@ -59,11 +59,11 @@ export async function getEventConfig(): Promise<EventConfig> {
   >`
     SELECT event_name, subtitle, contact_line, date_options, dietary_chips,
            wall_enabled, edits_locked
-    FROM fs_event_config
+    FROM final_shift.event_config
     WHERE id = 1
   `;
 
-  if (!row) throw new Error("fs_event_config row 1 is missing. Run the seed script.");
+  if (!row) throw new Error("final_shift.event_config row 1 is missing. Run the seed script.");
 
   return {
     eventName: row.event_name,
@@ -83,7 +83,7 @@ export async function findGuestByCodeHash(codeHash: string): Promise<GuestRow | 
     { id: string; first_name: string; crew_role: string; is_active: boolean }[]
   >`
     SELECT id, first_name, crew_role, is_active
-    FROM fs_guests
+    FROM final_shift.guests
     WHERE code_hash = ${codeHash}
   `;
   return row
@@ -102,7 +102,7 @@ export async function getGuestById(guestId: string): Promise<GuestRow | null> {
     { id: string; first_name: string; crew_role: string; is_active: boolean }[]
   >`
     SELECT id, first_name, crew_role, is_active
-    FROM fs_guests
+    FROM final_shift.guests
     WHERE id = ${guestId}
   `;
   return row
@@ -125,7 +125,7 @@ export async function getGuestById(guestId: string): Promise<GuestRow | null> {
 export async function getPrivateNote(guestId: string): Promise<string | null> {
   const sql = getSql();
   const [row] = await sql<{ private_note: string | null }[]>`
-    SELECT private_note FROM fs_guests WHERE id = ${guestId}
+    SELECT private_note FROM final_shift.guests WHERE id = ${guestId}
   `;
   return row?.private_note ?? null;
 }
@@ -182,7 +182,7 @@ function toSubmission(row: SubmissionRow): StoredSubmission {
 export async function ensureSubmission(guestId: string): Promise<StoredSubmission> {
   const sql = getSql();
   const [row] = await sql<SubmissionRow[]>`
-    INSERT INTO fs_submissions (guest_id)
+    INSERT INTO final_shift.submissions (guest_id)
     VALUES (${guestId})
     ON CONFLICT (guest_id) DO UPDATE SET guest_id = EXCLUDED.guest_id
     RETURNING status, attending, available_dates, dietary_tags, dietary_note,
@@ -205,7 +205,7 @@ export async function patchDraft(
 ): Promise<StoredSubmission> {
   const sql = getSql();
   const [row] = await sql<SubmissionRow[]>`
-    UPDATE fs_submissions SET
+    UPDATE final_shift.submissions SET
       attending       = ${patch.attending === undefined ? sql`attending` : patch.attending},
       available_dates = ${patch.availableDates ?? sql`available_dates`},
       dietary_tags    = ${patch.dietaryTags ?? sql`dietary_tags`},
@@ -240,11 +240,11 @@ export async function setPhoto(
   const sql = getSql();
 
   const [existing] = await sql<{ photo_path: string | null }[]>`
-    SELECT photo_path FROM fs_submissions WHERE guest_id = ${guestId}
+    SELECT photo_path FROM final_shift.submissions WHERE guest_id = ${guestId}
   `;
 
   const [row] = await sql<SubmissionRow[]>`
-    UPDATE fs_submissions SET
+    UPDATE final_shift.submissions SET
       photo_path   = ${photo.path},
       photo_width  = ${photo.width},
       photo_height = ${photo.height},
@@ -269,7 +269,7 @@ export async function setPhoto(
 export async function markSubmitted(guestId: string): Promise<StoredSubmission> {
   const sql = getSql();
   const [row] = await sql<SubmissionRow[]>`
-    UPDATE fs_submissions SET
+    UPDATE final_shift.submissions SET
       status       = 'submitted',
       submitted_at = COALESCE(submitted_at, NOW()),
       updated_at   = NOW()
@@ -305,8 +305,8 @@ export async function getWallCards(): Promise<WallRow[]> {
            s.photo_path AS "photoPath",
            s.photo_width AS "photoWidth",
            s.photo_height AS "photoHeight"
-    FROM fs_submissions s
-    JOIN fs_guests g ON g.id = s.guest_id
+    FROM final_shift.submissions s
+    JOIN final_shift.guests g ON g.id = s.guest_id
     WHERE s.status = 'submitted'
       AND s.wall_consent = true
       AND (s.photo_path IS NOT NULL OR s.memory IS NOT NULL)
@@ -355,8 +355,8 @@ export async function getAdminRows(): Promise<AdminRow[]> {
            s.memory AS "memory",
            s.wall_consent AS "wallConsent",
            s.submitted_at AS "submittedAt"
-    FROM fs_guests g
-    LEFT JOIN fs_submissions s ON s.guest_id = g.id
+    FROM final_shift.guests g
+    LEFT JOIN final_shift.submissions s ON s.guest_id = g.id
     WHERE g.is_active = true
     ORDER BY g.first_name ASC
   `;

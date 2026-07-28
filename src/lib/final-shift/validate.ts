@@ -5,7 +5,7 @@ import { LIMITS, type DraftValues, type EventConfig } from "@/lib/final-shift/ty
  *
  * Zod would be a dependency to describe payloads that are seven flat fields, and it would not do
  * the part that actually matters here: the real check is membership against sets the server owns —
- * date-option ids and dietary chips read out of fs_event_config — not shape. A schema library would
+ * date-option ids and dietary chips read out of `event_config` — not shape. A schema library would
  * validate that `availableDates` is an array of strings and happily accept `["d99"]`.
  *
  * Every rule below is also enforced in the UI. That is not redundancy: the client rules exist to be
