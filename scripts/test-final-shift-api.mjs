@@ -19,6 +19,27 @@
  * IP for ten minutes. It is excluded from the default run for that reason; ask for it by name.
  */
 
+import { readFileSync, existsSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import postgres from "postgres";
+
+const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+
+function loadEnvFile(name) {
+  const path = resolve(root, name);
+  if (!existsSync(path)) return;
+  for (const line of readFileSync(path, "utf8").split(/\r?\n/)) {
+    const match = /^\s*([A-Z0-9_]+)\s*=\s*(.*)$/.exec(line);
+    if (!match) continue;
+    const [, key, raw] = match;
+    if (process.env[key]) continue;
+    process.env[key] = raw.replace(/^["']|["']$/g, "").trim();
+  }
+}
+loadEnvFile(".env.local");
+loadEnvFile(".env");
+
 const BASE = process.env.FS_TEST_BASE ?? "http://localhost:3000";
 const API = `${BASE}/api/final-shift`;
 
@@ -60,6 +81,28 @@ async function call(path, init = {}) {
     body = null;
   }
   return { status: response.status, headers: response.headers, body, text };
+}
+
+/**
+ * Wipes the clock-in limiter so a suite can keep making requests.
+ *
+ * --timing needs forty clock-ins to get a median worth reading, and the per-IP window allows eight
+ * in ten minutes. Without this the suite tripped the limiter on request nine and skipped itself,
+ * every single run — which is the worst possible state for a security check, because a permanent
+ * SKIP reads like a pass in a wall of PASS lines. Clearing the rows is honest here: the limiter has
+ * its own suite (--rate-limit) that proves it works, and what --timing measures is a different
+ * defence entirely.
+ */
+async function clearRateLimits() {
+  const url = process.env.POSTGRES_URL;
+  if (!url) return false;
+  const sql = postgres(url, { prepare: false, max: 1 });
+  try {
+    await sql`DELETE FROM final_shift.rate_limits WHERE key LIKE 'fs:ip%' OR key LIKE 'fs:global%'`;
+    return true;
+  } finally {
+    await sql.end();
+  }
 }
 
 /** Clock in and keep the cookie, so the authenticated suites have a session. */
@@ -185,7 +228,16 @@ async function suiteTiming() {
 
   const samples = { valid: [], invalid: [] };
 
+  if (!(await clearRateLimits())) {
+    console.log("  SKIP  no POSTGRES_URL, so the limiter can't be cleared for a clean sample");
+    return;
+  }
+
   for (let round = 0; round < 20; round += 1) {
+    // Two requests a round against an eight-per-window limit, so reset every third round and stay
+    // clear of it. A tripped limiter answers from a different code path and would poison the median.
+    if (round % 3 === 0 && round > 0) await clearRateLimits();
+
     for (const kind of ["valid", "invalid"]) {
       const started = performance.now();
       const response = await call("/session", {
@@ -195,14 +247,15 @@ async function suiteTiming() {
           company: "",
         }),
       });
-      // A tripped limiter would poison the sample with a different code path.
       if (response.status === 429) {
-        console.log("  SKIP  rate limited mid-run; wait ten minutes and retry");
+        bad("timing sample stayed clear of the limiter", `429 on round ${round}`);
         return;
       }
       samples[kind].push(performance.now() - started);
     }
   }
+
+  await clearRateLimits();
 
   const median = (values) => {
     const sorted = [...values].sort((a, b) => a - b);

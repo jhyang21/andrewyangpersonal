@@ -121,8 +121,18 @@ export async function sessionPayload(
  * second query — a difference of tens of milliseconds, stable enough across a few hundred samples
  * to sort ten thousand codes into "real" and "not". Identical response bodies are worthless if the
  * clock still answers the question.
+ *
+ * A floor only hides the difference while it sits ABOVE both paths, and that is the part it is easy
+ * to get wrong. At 300 ms this leaked in the open: measured against the Supabase pooler over the
+ * public internet, a valid code answered in ~483 ms and an unknown one in ~386 ms, both clear of the
+ * floor, and the whole 97 ms gap showed through. 900 ms sits roughly twice the slowest path measured,
+ * which is the margin that survives a bad round trip rather than the one that fits the good case.
+ *
+ * The cost is about half a second on clock-in, once per guest, on the one request that stands
+ * between a stranger and ten people's real workplace codes. `--timing` is what holds this honest —
+ * if the query count on either path ever grows past the floor, that suite fails.
  */
-export async function holdUntil(startedAt: number, floorMs = 300): Promise<void> {
+export async function holdUntil(startedAt: number, floorMs = 900): Promise<void> {
   const remaining = floorMs - (Date.now() - startedAt);
   if (remaining > 0) await new Promise((resolve) => setTimeout(resolve, remaining));
 }

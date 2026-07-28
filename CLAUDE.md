@@ -88,9 +88,18 @@ knowing before touching anything:
 - The code is returned exactly once, in the clock-in response. A resumed session gets `code: ""` and
   the UI masks it to `••••`.
 - Every failure from `POST /api/final-shift/session` — bad format, unknown code, inactive guest,
-  honeypot — returns a **byte-identical** body, padded to a `max(elapsed, 300ms)` floor. That pair
+  honeypot — returns a **byte-identical** body, padded to a `max(elapsed, 900ms)` floor. That pair
   closes the enumeration oracle on a four-digit space. `npm run test:api:final-shift -- --auth
   --timing` asserts both; don't "tidy" either one away.
+- **The floor only works while it sits above both code paths, and 300 ms did not.** Measured against
+  the Supabase pooler over the public internet, a valid code answered in ~483 ms and an unknown one
+  in ~386 ms — both past the floor, so the whole 97 ms gap was readable. It is 900 ms now, about
+  twice the slowest path measured. If you ever add a query to the clock-in route, `--timing` is the
+  thing that tells you the floor no longer covers it. Don't lower it to make clock-in feel snappier.
+- **`--timing` used to skip itself on every run** — forty clock-ins against a limit of eight — which
+  is how the leak above stayed invisible under a screen of PASS lines. It now clears the limiter rows
+  as it goes, which is why the test script reads `POSTGRES_URL`. A security check that always skips
+  is worse than one that fails.
 
 **The roster never goes in git.** `content/final-shift/roster.local.json` holds the real codes and
 Andrew's private notes and is gitignored (`content/final-shift/*.local.json`). Only

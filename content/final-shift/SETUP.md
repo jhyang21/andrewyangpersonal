@@ -30,6 +30,10 @@ you send.
 
 ## 2. Make the photo bucket
 
+> **Already done** (28 July 2026) — `final-shift-photos` exists on the personal-site project, private,
+> 3 MB, `image/jpeg` only, and photos have been uploaded through it end to end. The rest of this
+> section is here for the rebuild, not for you today.
+
 **Same project, Storage tab.** Buckets aren't part of any schema — Storage is its own thing — so the
 bucket can't hide inside `final_shift`. It stands on its own next to any other buckets you have,
 which is fine: it's a separate object with a separate name, and deleting it touches nothing else.
@@ -90,6 +94,10 @@ that a partial draft save leaves the other answers alone.
 **It writes to guest 0001's draft**, so run it against the sample roster, not after your crew has
 started replying. `-- --rate-limit` runs the limiter suite, which is left out of the default run
 because it deliberately locks clock-ins from your IP for ten minutes.
+
+The timing suite also **deletes the clock-in limiter rows** as it goes — it needs forty clock-ins for
+a usable median and the window allows eight, so without that it skipped itself on every run. One more
+reason not to point this script at production.
 
 ## 6. Vercel
 
