@@ -189,6 +189,14 @@ body:has(.fs-root) {
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
   gap: 1rem;
+  /*
+   * The layout is built for a phone, but it gets opened on laptops too, and without a measure the
+   * whole ceremony sits jammed against the left edge of a 2560px window. Centring a phone-width
+   * column is the honest desktop treatment here: this is a thing you hold, not a page you browse.
+   */
+  width: 100%;
+  max-width: 34rem;
+  margin-inline: auto;
   padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
   padding-left: max(1.25rem, env(safe-area-inset-left));
   padding-right: max(1.25rem, env(safe-area-inset-right));
@@ -198,6 +206,77 @@ body:has(.fs-root) {
 @supports not (height: 100dvh) {
   .fs-stage {
     min-height: 100vh;
+  }
+}
+
+/* The wall is the one screen that wants the extra room — it has columns to fill. */
+.fs-stage-wide {
+  max-width: 64rem;
+}
+
+/* ---------------------------------------------------------------- dialog */
+/*
+ * Native <dialog>, so the top layer, the focus trap, Esc, and focus restoration are the platform's
+ * job. Only the paint is ours.
+ *
+ * The backdrop colour is written out rather than taken from --fs-espresso: ::backdrop inherits from
+ * the originating element only in newer engines, and a variable that resolves to nothing here would
+ * give a transparent backdrop — the one failure mode that makes a modal unreadable.
+ */
+.fs-root dialog.fs-dialog {
+  margin: auto;
+  max-width: min(32rem, calc(100vw - 2rem));
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--fs-cream);
+  overflow: visible;
+}
+
+.fs-root dialog.fs-dialog::backdrop {
+  background: rgba(16, 13, 11, 0.82);
+}
+
+.fs-dialog-panel {
+  max-height: calc(100dvh - 3rem);
+  overflow-y: auto;
+  border: 1px solid var(--fs-line);
+  border-radius: var(--fs-radius);
+  background: var(--fs-ink);
+  padding: 1.5rem;
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+@supports not (height: 100dvh) {
+  .fs-dialog-panel {
+    max-height: calc(100vh - 3rem);
+  }
+}
+
+/* ---------------------------------------------------------------- wall */
+
+/*
+ * CSS columns, not masonry.
+ *
+ * True masonry needs JS row-span measurement and a resize observer, for a payoff that does not exist
+ * at fewer than ten cards. The one accepted tradeoff: with columns the visual order differs from the
+ * DOM reading order, which is harmless at one or two columns and the reason the card count is small.
+ */
+.fs-wall-grid {
+  columns: 1;
+  column-gap: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .fs-wall-grid {
+    columns: 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .fs-wall-grid {
+    columns: 3;
   }
 }
 
