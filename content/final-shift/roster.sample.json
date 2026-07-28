@@ -1,0 +1,77 @@
+{
+  "_comment": [
+    "Committed sample roster. Every name, code, and note below is invented — nothing here is a real",
+    "person and nothing here is a real Ape Coffee clock-in code.",
+    "",
+    "The real roster lives beside this file as roster.local.json, which .gitignore covers and which",
+    "must never be committed. It holds coworkers' actual workplace credentials and Andrew's private",
+    "messages to named people; git history is forever and recoverable after deletion, so a single",
+    "accidental commit is a permanent disclosure with no undo.",
+    "",
+    "  npm run seed:final-shift                 seeds from roster.local.json if present, else this",
+    "  npm run seed:final-shift -- --sample     forces this file"
+  ],
+
+  "event": {
+    "eventName": "Andrew's Final Shift",
+    "subtitle": "Clock in. One last time.",
+    "contactLine": "Forgot your employee number? Text Andrew and he'll sort you out.",
+    "wallEnabled": true,
+    "editsLocked": false,
+    "dateOptions": [
+      {
+        "id": "d1",
+        "startsAt": "2026-08-22T19:00:00-07:00",
+        "label": "Saturday, August 22",
+        "sublabel": "7–11 PM"
+      },
+      {
+        "id": "d2",
+        "startsAt": "2026-08-29T19:00:00-07:00",
+        "label": "Saturday, August 29",
+        "sublabel": "7–11 PM"
+      },
+      {
+        "id": "d3",
+        "startsAt": "2026-09-05T19:00:00-07:00",
+        "label": "Saturday, September 5",
+        "sublabel": "7–11 PM"
+      }
+    ],
+    "dietaryChips": [
+      "Vegetarian",
+      "Vegan",
+      "Gluten-free",
+      "Dairy-free",
+      "Nut allergy",
+      "No alcohol"
+    ]
+  },
+
+  "guests": [
+    {
+      "code": "0001",
+      "firstName": "Mina",
+      "crewRole": "Opened with him more times than anyone",
+      "privateNote": "Mina — you taught me the grinder before you taught me your name. Thank you for that."
+    },
+    {
+      "code": "0002",
+      "firstName": "Dev",
+      "crewRole": "Kept the espresso machine alive",
+      "privateNote": "Dev, you fixed things nobody else noticed were broken. That's a whole skill."
+    },
+    {
+      "code": "0003",
+      "firstName": "Sofía",
+      "crewRole": "Never once let a rush rattle her",
+      "privateNote": null
+    },
+    {
+      "code": "0004",
+      "firstName": "박지훈",
+      "crewRole": "Closing shift, every Sunday",
+      "privateNote": "지훈아, 마지막 마감까지 같이 해줘서 고마워."
+    }
+  ]
+}
