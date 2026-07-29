@@ -46,3 +46,4 @@ content/final-shift/*.local.json
 next-env.d.ts
 
 PROGRESS.md
+.vercel
