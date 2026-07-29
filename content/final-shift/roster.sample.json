@@ -16,6 +16,9 @@
     "eventName": "Andrew's Final Shift",
     "subtitle": "Clock in. One last time.",
     "contactLine": "Forgot your employee number? Text Andrew and he'll sort you out.",
+    "venueName": "The Example Tavern",
+    "venueAddress": "100 Sample Street, Anytown",
+    "venueMapUrl": "https://maps.google.com/?q=100+Sample+Street",
     "wallEnabled": true,
     "editsLocked": false,
     "dateOptions": [

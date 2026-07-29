@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { PrivateNoteDialog } from "@/components/final-shift/PrivateNoteDialog";
 import { StageFrame } from "@/components/final-shift/StageFrame";
+import { VenueBlock } from "@/components/final-shift/VenueBlock";
 import type { StageProps } from "@/components/final-shift/stageProps";
 import { COPY } from "@/lib/final-shift/copy";
 import { fetchNote } from "@/lib/final-shift/net";
@@ -94,6 +95,14 @@ export function CompleteStage({ session, note, setNote, goTo }: StageProps) {
           {COPY.complete.stamp}
         </p>
       )}
+
+      {/*
+       * Outside the shutOut guard, unlike everything else on this screen. Edits being frozen is not
+       * the same as not being invited — the copy that branch shows says "it's not too late to be
+       * there" — and inviting someone while withholding the address would be the screen arguing
+       * with itself. This is also the screen a guest reopens the night of the party.
+       */}
+      <VenueBlock event={session.event} className="mt-8" />
 
       {shutOut ? null : (
         <div className="mt-8 flex flex-wrap gap-3">

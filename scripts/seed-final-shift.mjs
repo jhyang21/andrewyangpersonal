@@ -97,6 +97,20 @@ function validateRoster(data) {
     if (!data.event?.[key]?.trim?.()) problems.push(`event is missing \`${key}\``);
   }
 
+  /*
+   * The map link is rendered straight into an href, and this is the only place it gets looked at.
+   * A missing scheme resolves against the site's own origin, so `maps.app.goo.gl/xyz` becomes
+   * /final-shift/maps.app.goo.gl/xyz and lands the guest on a 404 the night of the party. Fail the
+   * seed instead. The venue fields are otherwise optional and stay unchecked.
+   */
+  const mapUrl = data.event?.venueMapUrl;
+  if (mapUrl && !mapUrl.startsWith("https://")) {
+    problems.push("event.venueMapUrl must start with https://");
+  }
+  if (data.event?.venueAddress && !data.event?.venueName) {
+    problems.push("event has a venueAddress but no venueName — the address would never render");
+  }
+
   const seen = new Set();
   for (const guest of data.guests ?? []) {
     if (!/^\d{4}$/.test(guest.code ?? "")) {
@@ -195,6 +209,21 @@ async function createSchema(sql) {
     )
   `;
 
+  /*
+   * The venue, added after the table already existed in production.
+   *
+   * ADD COLUMN IF NOT EXISTS rather than editing the CREATE above: the CREATE is guarded by IF NOT
+   * EXISTS, so on a database that already has this table it is a no-op and a new column written
+   * inside it would never appear. Anything added to event_config from here on needs its own line
+   * here for the same reason.
+   *
+   * All three are nullable. An event without a venue is a legitimate state — the party had one for
+   * three weeks before the room was booked — and the UI renders nothing when venue_name is null.
+   */
+  await sql`ALTER TABLE final_shift.event_config ADD COLUMN IF NOT EXISTS venue_name    text`;
+  await sql`ALTER TABLE final_shift.event_config ADD COLUMN IF NOT EXISTS venue_address text`;
+  await sql`ALTER TABLE final_shift.event_config ADD COLUMN IF NOT EXISTS venue_map_url text`;
+
   await sql`
     CREATE TABLE IF NOT EXISTS final_shift.rate_limits (
       key          text PRIMARY KEY,
@@ -204,18 +233,33 @@ async function createSchema(sql) {
   `;
 }
 
+/*
+ * The venue fields bind as `?? null` and never bare. postgres.js rejects `undefined` outright with
+ * UNDEFINED_VALUE and a stack trace pointing at its own internals, naming neither the missing field
+ * nor the file to fix — and these three are optional, so a roster without them is normal rather than
+ * a mistake. Same reason `validateRoster` checks the required text fields by hand.
+ *
+ * Note for anyone adding a comment inside the template below: SQL `--` comments are fine, but a
+ * backtick inside a template literal ends the literal. One in a comment here silently shifted every
+ * bind parameter after it.
+ */
 async function seedEvent(sql, event) {
   await sql`
     INSERT INTO final_shift.event_config
-      (id, event_name, subtitle, contact_line, date_options, dietary_chips, wall_enabled, edits_locked, updated_at)
+      (id, event_name, subtitle, contact_line, venue_name, venue_address, venue_map_url,
+       date_options, dietary_chips, wall_enabled, edits_locked, updated_at)
     VALUES
       (1, ${event.eventName}, ${event.subtitle}, ${event.contactLine},
+       ${event.venueName ?? null}, ${event.venueAddress ?? null}, ${event.venueMapUrl ?? null},
        ${sql.json(event.dateOptions ?? [])}, ${sql.json(event.dietaryChips ?? [])},
        ${event.wallEnabled ?? true}, ${event.editsLocked ?? false}, NOW())
     ON CONFLICT (id) DO UPDATE SET
       event_name    = EXCLUDED.event_name,
       subtitle      = EXCLUDED.subtitle,
       contact_line  = EXCLUDED.contact_line,
+      venue_name    = EXCLUDED.venue_name,
+      venue_address = EXCLUDED.venue_address,
+      venue_map_url = EXCLUDED.venue_map_url,
       date_options  = EXCLUDED.date_options,
       dietary_chips = EXCLUDED.dietary_chips,
       wall_enabled  = EXCLUDED.wall_enabled,

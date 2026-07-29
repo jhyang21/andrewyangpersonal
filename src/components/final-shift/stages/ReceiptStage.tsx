@@ -7,6 +7,7 @@ import { ChipGroup } from "@/components/final-shift/ChipGroup";
 import { ErrorNote } from "@/components/final-shift/ErrorNote";
 import { RadioCard } from "@/components/final-shift/RadioCard";
 import { StageFrame } from "@/components/final-shift/StageFrame";
+import { VenueBlock } from "@/components/final-shift/VenueBlock";
 import type { StageProps } from "@/components/final-shift/stageProps";
 import { COPY } from "@/lib/final-shift/copy";
 import { LIMITS } from "@/lib/final-shift/types";
@@ -75,6 +76,13 @@ export function ReceiptStage({ session, values, update, goTo, goBack }: StagePro
       }
     >
       <div className="fs-anim-unfurl space-y-8">
+        {/*
+         * Above the question, not inside the attending branch. A guest can't honestly answer "can
+         * you come" without knowing where — so the decliner sees this too, unlike the dates and the
+         * dietary note below.
+         */}
+        <VenueBlock event={event} />
+
         <fieldset>
           <legend className="fs-sr-only">{COPY.receipt.heading}</legend>
           <div className="space-y-3">

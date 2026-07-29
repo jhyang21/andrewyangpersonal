@@ -59,6 +59,15 @@ export type EventConfig = {
   eventName: string;
   subtitle: string;
   contactLine: string;
+  /*
+   * Where the party is. Nullable, and the three travel together: no name means no venue block at
+   * all, so an address without a name would never reach a screen. One venue for every date — this
+   * is event-level and deliberately not a field on DateOption, because repeating it on five cards
+   * would imply it varies.
+   */
+  venueName: string | null;
+  venueAddress: string | null;
+  venueMapUrl: string | null;
   dateOptions: DateOption[];
   dietaryChips: string[];
   wallEnabled: boolean;

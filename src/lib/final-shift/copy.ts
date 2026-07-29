@@ -56,7 +56,11 @@ export const COPY = {
     // Shown once the guest declines. Warmth here is the point: declining must never read as an
     // error state.
     declineNote:
-      "You may be off the party schedule, but you still have one final shift photo to take for Andrew.",
+      "You may be off the party schedule, but you still have one final shift photo to take.",
+    // The venue label and its link text. Only the words live here — the venue itself is a row in
+    // event_config, so a wrong address is a Supabase edit rather than a deploy.
+    venueLabel: "Where",
+    venueMapCta: "Open in Maps",
     datePrompt: "Which dates can you work?",
     dateSupport: "Select every date that works.",
     dietaryLabel: "Anything the kitchen should know?",
@@ -65,7 +69,7 @@ export const COPY = {
     consentLabel:
       "I'm okay with my photo, caption, and memory appearing on the invite-only farewell wall.",
     consentSupport:
-      "If you leave this unchecked, your photo and words go only to Andrew.",
+      "If you leave this unchecked, your photo and words will only be shown to Andrew.",
     cta: "Continue to shift photo",
     errors: {
       noAttendance: "Choose whether you can clock in for the party.",
@@ -91,7 +95,7 @@ export const COPY = {
     captionLabel: "Write on your Polaroid",
     captionPlaceholder: "Proof we survived the rush.",
     consentPublic: "This will appear on the invite-only farewell wall.",
-    consentPrivate: "This goes only to Andrew.",
+    consentPrivate: "This will only be shown to Andrew.",
     cta: "Continue",
     errors: {
       permissionDenied:
@@ -108,8 +112,8 @@ export const COPY = {
 
   lastWords: {
     heading: "One line for Andrew",
-    support: "Anything you want him to have.",
-    placeholder: "Andrew, never forget...",
+    support: "Anything you want to tell him.",
+    placeholder: "Remember when...",
     label: "Your line",
     cta: "Review my timecard",
     skip: "Skip this line",

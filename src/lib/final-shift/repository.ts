@@ -51,13 +51,18 @@ export async function getEventConfig(): Promise<EventConfig> {
       event_name: string;
       subtitle: string;
       contact_line: string;
+      venue_name: string | null;
+      venue_address: string | null;
+      venue_map_url: string | null;
       date_options: DateOption[];
       dietary_chips: string[];
       wall_enabled: boolean;
       edits_locked: boolean;
     }[]
   >`
-    SELECT event_name, subtitle, contact_line, date_options, dietary_chips,
+    SELECT event_name, subtitle, contact_line,
+           venue_name, venue_address, venue_map_url,
+           date_options, dietary_chips,
            wall_enabled, edits_locked
     FROM final_shift.event_config
     WHERE id = 1
@@ -69,6 +74,9 @@ export async function getEventConfig(): Promise<EventConfig> {
     eventName: row.event_name,
     subtitle: row.subtitle,
     contactLine: row.contact_line,
+    venueName: row.venue_name,
+    venueAddress: row.venue_address,
+    venueMapUrl: row.venue_map_url,
     // Ordering lives on the ISO timestamp, never on the prose label.
     dateOptions: [...row.date_options].sort((a, b) => a.startsAt.localeCompare(b.startsAt)),
     dietaryChips: row.dietary_chips,
