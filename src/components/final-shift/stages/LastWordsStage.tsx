@@ -10,19 +10,15 @@ import { LIMITS } from "@/lib/final-shift/types";
 /**
  * Stage 5 — one line for Andrew. Optional, and the skip is a real, visible option.
  *
- * The prompt chips change the placeholder and nothing else. Inserting their text into the field is
- * the obvious alternative and it's wrong twice over: it overwrites whatever the guest already typed,
- * and it turns a personal note into a form Andrew can tell was autofilled. A placeholder suggests;
- * inserted text puts words in someone's mouth.
+ * A row of prompt chips used to sit above the field — Memory, Thank-you, Classic Andrew, Next
+ * chapter — each swapping the placeholder. They were cut: four categories to read and choose between
+ * is more work than writing the sentence, and the stage that asks the least is the one people
+ * actually answer. One field, one prompt, and a skip that means it.
  */
 export function LastWordsStage({ values, update, goTo, goBack }: StageProps) {
-  const [prompt, setPrompt] = useState<string | null>(null);
   const [showErrors, setShowErrors] = useState(false);
 
   const tooLong = values.memory.length > LIMITS.memory;
-  const placeholder =
-    COPY.lastWords.prompts.find((p) => p.id === prompt)?.placeholder ??
-    COPY.lastWords.placeholder;
 
   const advance = () => {
     if (tooLong) {
@@ -60,50 +56,14 @@ export function LastWordsStage({ values, update, goTo, goBack }: StageProps) {
         </div>
       }
     >
-      <div className="fs-anim-ticket-feed space-y-5">
-        <div>
-          <p id="fs-prompt-label" className="fs-label text-[var(--fs-oat)]">
-            Need a starting point?
-          </p>
-          {/*
-           * Radios, not buttons: picking a prompt is choosing one of a set, and a radio group says
-           * so — including which one is currently active, which a row of buttons would have to
-           * describe with aria-pressed and usually gets wrong.
-           */}
-          <div
-            role="radiogroup"
-            aria-labelledby="fs-prompt-label"
-            className="mt-3 flex flex-wrap gap-2"
-          >
-            {COPY.lastWords.prompts.map((option) => {
-              const isOn = prompt === option.id;
-              return (
-                <button
-                  key={option.id}
-                  type="button"
-                  role="radio"
-                  aria-checked={isOn}
-                  onClick={() => setPrompt(isOn ? null : option.id)}
-                  className={`fs-meta flex min-h-11 items-center rounded-full border px-4 transition-colors ${
-                    isOn
-                      ? "border-2 border-[var(--fs-cream)] bg-[var(--fs-cream)] text-[var(--fs-espresso)]"
-                      : "border-[var(--fs-line)] text-[var(--fs-cream)] hover:border-[var(--fs-oat)]"
-                  }`}
-                >
-                  {option.chip}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
+      <div className="fs-anim-ticket-feed">
         <CharCountField
           label={COPY.lastWords.label}
           value={values.memory}
           onChange={(memory) => update({ memory })}
           limit={LIMITS.memory}
           rows={4}
-          placeholder={placeholder}
+          placeholder={COPY.lastWords.placeholder}
           error={showErrors && tooLong ? COPY.lastWords.errors.longMemory : null}
         />
       </div>

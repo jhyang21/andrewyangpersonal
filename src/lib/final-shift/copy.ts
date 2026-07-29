@@ -108,24 +108,9 @@ export const COPY = {
 
   lastWords: {
     heading: "One line for Andrew",
-    support: "Leave a memory, thank-you, or prediction for his next chapter.",
+    support: "Anything you want him to have.",
     placeholder: "Andrew, never forget...",
     label: "Your line",
-    // Selecting a chip swaps the placeholder only — it never inserts text into the field.
-    prompts: [
-      { id: "memory", chip: "Memory", placeholder: "A shift I'll never forget..." },
-      { id: "thanks", chip: "Thank-you", placeholder: "Andrew, thank you for..." },
-      {
-        id: "classic",
-        chip: "Classic Andrew",
-        placeholder: "You always knew how to...",
-      },
-      {
-        id: "next",
-        chip: "Next chapter",
-        placeholder: "My order for your next chapter is...",
-      },
-    ],
     cta: "Review my timecard",
     skip: "Skip this line",
     errors: {
