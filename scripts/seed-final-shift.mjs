@@ -84,6 +84,19 @@ function validateRoster(data) {
   if (!data.event) problems.push("no `event` object");
   if (!Array.isArray(data.guests) || data.guests.length === 0) problems.push("no `guests`");
 
+  /*
+   * The event's own text fields, checked here because postgres checks them far too late.
+   *
+   * `seedEvent` interpolates these straight into the INSERT, and postgres.js rejects `undefined`
+   * with `UNDEFINED_VALUE: Undefined values are not allowed` and a stack trace pointing at its own
+   * internals — which says nothing about which field is missing or which file to fix. Dropping
+   * `contactLine` while editing the roster is an easy thing to do and cost a debugging session once
+   * already. Three lines here turn that into a sentence naming the key.
+   */
+  for (const key of ["eventName", "subtitle", "contactLine"]) {
+    if (!data.event?.[key]?.trim?.()) problems.push(`event is missing \`${key}\``);
+  }
+
   const seen = new Set();
   for (const guest of data.guests ?? []) {
     if (!/^\d{4}$/.test(guest.code ?? "")) {
