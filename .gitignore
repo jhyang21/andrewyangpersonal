@@ -33,6 +33,11 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# The real Final Shift roster: coworkers' actual Ape Coffee clock-in codes and Andrew's private
+# notes to named people. Git history is forever and recoverable after deletion, so one accidental
+# commit is a permanent disclosure. Only roster.sample.json — entirely invented — is committed.
+content/final-shift/*.local.json
+
 # vercel
 .vercel
 
@@ -41,3 +46,4 @@ yarn-error.log*
 next-env.d.ts
 
 PROGRESS.md
+.vercel

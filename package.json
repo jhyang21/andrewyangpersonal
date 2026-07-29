@@ -6,11 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed:final-shift": "node scripts/seed-final-shift.mjs",
+    "test:api:final-shift": "node scripts/test-final-shift-api.mjs"
   },
   "dependencies": {
     "katex": "^0.17.0",
     "next": "16.1.6",
+    "postgres": "^3.4.9",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
