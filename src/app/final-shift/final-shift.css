@@ -51,7 +51,15 @@
   --fs-line: #4a423a;
 
   --fs-radius: 2px;
-  --fs-stamp-rotate: -4deg;
+
+  /*
+   * The stamp sits straight. It was -4deg, borrowed from the handoff's "hand-stamped, not printed"
+   * note, and on the wide cream chip that tilt reads as crooked rather than casual — the longer the
+   * chip, the further its corners travel for the same angle. The stamp still lands: the keyframes
+   * punch it from scale(1.4) through an overshoot, which is the part that carries the gesture. Keep
+   * this at 0 unless the chip gets narrower.
+   */
+  --fs-stamp-rotate: 0deg;
 
   min-height: 100dvh;
   background: var(--fs-espresso);
