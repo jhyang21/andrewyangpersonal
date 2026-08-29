@@ -166,12 +166,13 @@ export function ShapeLab() {
   /*
    * Candidates are scored at a low arc resolution in chunks between timeouts, so a two-thousand-seed
    * sweep never blocks a keystroke. Only the winner is rebuilt at full resolution, by the ordinary
-   * generation effect once its seed lands in state.
+   * generation effect once its seed lands in state. The window starts one past the current seed, so
+   * the current shape never competes in its own search and every click lands on a new shape.
    */
   const runSearch = useCallback(() => {
     if (searchTimer.current !== null) return;
     const total = Math.max(1, Math.round(debouncedSettings.searchCandidates));
-    const baseSeed = seed;
+    const baseSeed = seed + 1;
     const locks = locksFor(shapeRef.current, lockPoints, lockPath);
     let best = { bestSeed: baseSeed, bestScore: -Infinity };
     let index = 0;

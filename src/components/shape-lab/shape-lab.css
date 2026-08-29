@@ -197,6 +197,20 @@
     break-inside: avoid;
   }
 
+  /*
+   * Two-up means a row is half the list wide, and a tip anchored to the right of the left column
+   * would reach off the left of the screen. Half the viewport is the widest that never does.
+   */
+  .sl-stat .sl-tip {
+    max-width: min(260px, calc(50vw - 24px));
+  }
+
+  /* A part's tip opens rightward from an icon that follows the label, and the longest label puts
+     that icon about 150px in — so this is the widest that still clears the right edge. */
+  .sl-part .sl-tip {
+    max-width: min(260px, calc(100vw - 170px));
+  }
+
   /* Numeral left, note + export actions right — halves the score block's vertical cost. */
   .sl-score {
     display: grid;
@@ -256,6 +270,16 @@
   .sl-section > summary,
   .sl-subsection > summary {
     padding-block: 12px;
+  }
+
+  /*
+   * A 28px target on a 16px circle. The pad is a pseudo-element rather than padding so the icon
+   * keeps its size and the row keeps its height — only the area a thumb can hit grows.
+   */
+  .sl-root .sl-info::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
   }
 
   /* 16px is Safari's no-zoom threshold — smaller triggers an input-focus zoom. */
@@ -632,10 +656,18 @@
 
 .sl-control-head {
   display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.sl-control-head-text {
+  display: flex;
+  flex: 1;
   justify-content: space-between;
   align-items: baseline;
   gap: 8px;
-  font-size: 12px;
+  min-width: 0;
   cursor: pointer;
 }
 
@@ -670,6 +702,82 @@
   border: 1px solid var(--sl-line);
   border-radius: 3px;
   cursor: pointer;
+}
+
+/* ---- hover descriptions --------------------------------------------------------------------- */
+
+/*
+ * One pattern for every description in the lab. The tip is ordinary markup that CSS hides, so the
+ * server and the client render the same tree and nothing has to be measured or placed at runtime.
+ * It opens on `:focus` rather than `:focus-visible`, because a tap focuses a button without ever
+ * matching `:focus-visible` — the narrower selector would leave phones with no way in.
+ */
+.sl-root .sl-info {
+  position: relative;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  font: inherit;
+  font-size: 9px;
+  line-height: 1;
+  color: var(--sl-muted);
+  background: transparent;
+  border: 1px solid var(--sl-line);
+  border-radius: 50%;
+  cursor: help;
+}
+
+.sl-root .sl-info:hover,
+.sl-root .sl-info:focus {
+  color: var(--sl-accent);
+  border-color: var(--sl-accent);
+}
+
+.sl-tip {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  /* Right-anchored so a tip opens back into the 320px panel instead of off its edge. */
+  right: 0;
+  z-index: 5;
+  width: max-content;
+  max-width: min(260px, 78vw);
+  padding: 8px 10px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: none;
+  white-space: normal;
+  color: var(--sl-ink);
+  background: var(--sl-bg);
+  border: 1px solid var(--sl-line);
+  border-radius: 3px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  /* The tip must never take the pointer off the row that opened it. */
+  pointer-events: none;
+}
+
+/*
+ * A score part's icon sits just after a short label, near the left edge of a wide column, so a
+ * right-anchored tip would hang off that edge. This one opens the other way instead.
+ */
+.sl-part .sl-tip {
+  right: auto;
+  left: 0;
+}
+
+.sl-info:hover .sl-tip,
+.sl-info:focus .sl-tip,
+.sl-stat:hover .sl-tip,
+.sl-stat:focus-within .sl-tip {
+  display: block;
 }
 
 /* ---- stats ---------------------------------------------------------------------------------- */
@@ -719,6 +827,14 @@
   font-size: 11px;
 }
 
+/* Label and info icon in one grid cell, so the bar underneath still spans both columns. */
+.sl-part-head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+}
+
 .sl-part-label {
   color: var(--sl-muted);
 }
@@ -753,6 +869,7 @@
 }
 
 .sl-stat {
+  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 12px;
