@@ -86,6 +86,15 @@ export function Viewport({ shape, viz }: Props) {
     }
   }
 
+  if (pose && viz.boundingBox) {
+    // The box is drawn inside the turned group, so it is the turned corners that must fit. The
+    // unposed path needs nothing: the box is the starting extent.
+    extend(rotateAbout({ x: box.minX, y: box.minY }, pivot, angle));
+    extend(rotateAbout({ x: box.maxX, y: box.minY }, pivot, angle));
+    extend(rotateAbout({ x: box.maxX, y: box.maxY }, pivot, angle));
+    extend(rotateAbout({ x: box.minX, y: box.maxY }, pivot, angle));
+  }
+
   // The bar hangs below the shape, so the room for it is measured against the extent so far.
   const reach = Math.max(maxX - minX, maxY - minY, 1e-6);
   const contactY = contact.y + CONTACT_DROP * reach;
