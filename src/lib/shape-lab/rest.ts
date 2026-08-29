@@ -16,9 +16,7 @@ import type { Vec } from "./types";
 export type RestPose = {
   /** Turn about the centroid that stands the shape on its resting edge, in degrees, (-180, 180]. */
   angleDeg: number;
-  edgeA: Vec;
-  edgeB: Vec;
-  /** Perpendicular drop from the centroid to that edge — the height of the ground below it. */
+  /** Perpendicular drop from the centroid to the resting edge — the height of the ground below it. */
   height: number;
 };
 
@@ -30,7 +28,7 @@ function cross(o: Vec, a: Vec, b: Vec): number {
  * Monotone chain, O(n log n). Exact duplicates are dropped on the way in so the collinearity test
  * never sees a zero-length edge.
  */
-export function convexHull(points: Vec[]): Vec[] {
+function convexHull(points: Vec[]): Vec[] {
   const sorted = [...points].sort((a, b) => (a.x === b.x ? a.y - b.y : a.x - b.x));
   const unique: Vec[] = [];
   for (const p of sorted) {
@@ -121,5 +119,5 @@ export function restPose(silhouette: Vec[], c: Vec): RestPose | null {
   let angleDeg = (angle * 180) / Math.PI;
   if (angleDeg > 180) angleDeg -= 360;
 
-  return { angleDeg, edgeA, edgeB, height };
+  return { angleDeg, height };
 }
