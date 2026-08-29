@@ -147,6 +147,26 @@ export function geometricTension(
   );
 }
 
+/**
+ * Hover copy for the score breakdown, keyed by the exact labels the `parts` array below writes.
+ * It lives here so a renamed part and its description move together.
+ */
+export const PART_DESCRIPTIONS: Record<string, string> = {
+  "Centroid offset":
+    "How far the centre of area leans from the middle of the ground contact. It carries the most weight of any term: lean far enough and the shape falls.",
+  "Contact narrowness":
+    "How little of the shape's width rests on the ground. A broad base scores near 0, a shape balanced on one point near 1.",
+  "Top heavy": "The share of the area sitting above the halfway line. Weight held high reads as ready to drop.",
+  Slenderness:
+    "How tall the shape stands for its width. It starts at 0 for a square shape and tops out at three times as tall as wide.",
+  Asymmetry: "How unevenly the area splits either side of the centre. Matching halves score 0.",
+  Overhang: "How far the shape juts out past its own footing, taken on whichever side reaches further.",
+  "Dramatic bulges":
+    "The share of edges that swell out further than their own length. It looks alarming rather than being unstable, so it counts for little.",
+  "Geometric tension":
+    "How hard the solver had to work: tight gaps, curves pressed against their limit, bulges cut short, and narrow necks all read as strain.",
+};
+
 export function computeBalance(
   silhouette: Vec[],
   arcs: ArcProps[],

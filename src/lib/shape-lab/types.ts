@@ -229,6 +229,8 @@ export type ParamGroup =
 export type NumericParamMeta = {
   kind: "number";
   label: string;
+  /** What the dial does to the shape, in the words a first-time visitor would use. */
+  description: string;
   group: ParamGroup;
   min: number;
   max: number;
@@ -240,6 +242,7 @@ export type NumericParamMeta = {
 export type EnumParamMeta<T extends string> = {
   kind: "enum";
   label: string;
+  description: string;
   group: ParamGroup;
   options: readonly T[];
   /** Override for an option whose display text `humanize` can't derive (accents, extra words). */
@@ -253,27 +256,60 @@ export type ParamMeta<K extends keyof Settings> = Settings[K] extends number
     ? EnumParamMeta<Settings[K]>
     : never;
 
-/** One source of truth for the sliders, randomize, and mutate. */
+/** One source of truth for the sliders, randomize, mutate, and the hover descriptions. */
 export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
-  pointCount: { kind: "number", label: "Points", group: "points", min: 3, max: 24, step: 1 },
+  pointCount: {
+    kind: "number",
+    label: "Points",
+    description:
+      "How many scattered points the outline has to visit. More points cut the shape into more, shorter edges.",
+    group: "points",
+    min: 3,
+    max: 24,
+    step: 1,
+  },
   pointDistribution: {
     kind: "enum",
     label: "Distribution",
+    description:
+      "Where the points fall in the square. Center piles them in the middle, Edge pushes them out to the rim, Clustered gathers them into knots.",
     group: "points",
     options: ["uniform", "center", "edge", "clustered"],
   },
-  margin: { kind: "number", label: "Margin", group: "points", min: 0, max: 0.3, step: 0.01 },
-  clusterCount: { kind: "number", label: "Clusters", group: "points", min: 1, max: 6, step: 1 },
+  margin: {
+    kind: "number",
+    label: "Margin",
+    description:
+      "Blank space kept clear around the rim of the square. Larger values pull the points inward and make a smaller shape.",
+    group: "points",
+    min: 0,
+    max: 0.3,
+    step: 0.01,
+  },
+  clusterCount: {
+    kind: "number",
+    label: "Clusters",
+    description:
+      "How many knots the points gather into. A few clusters give dense lumps joined by long runs.",
+    group: "points",
+    min: 1,
+    max: 6,
+    step: 1,
+  },
 
   startMode: {
     kind: "enum",
     label: "Start point",
+    description:
+      "Which point the tour sets off from. The walk is greedy, so a different start joins the points in a different order.",
     group: "path",
     options: ["lowest", "highest", "leftmost", "rightmost", "random"],
   },
   closingEdgeWeight: {
     kind: "number",
     label: "Closing pull",
+    description:
+      "Pulls the end of the tour back toward its start. Higher values close the loop tidily instead of leaving one long edge to reach home.",
     group: "path",
     min: 0,
     max: 1,
@@ -283,6 +319,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   curveStyle: {
     kind: "enum",
     label: "Edge curve",
+    description:
+      "The curve each edge bulges into. A half ellipse swells evenly along the edge; a Bézier reaches the same peak but leaves the two ends flatter.",
     group: "curves",
     options: ["ellipse", "bezier"],
     optionLabels: { ellipse: "Half ellipse", bezier: "Bézier" },
@@ -290,31 +328,81 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   radiusMode: {
     kind: "enum",
     label: "Bulge distribution",
+    description:
+      "How each edge draws its bulge. Fixed gives every edge the same one, Uniform spreads them evenly between the bounds, Gaussian clusters them near a mean, and Heavy tail keeps most of them small and lets a few run large.",
     group: "curves",
     options: ["fixed", "uniform", "gaussian", "heavyTail"],
   },
-  radiusScale: { kind: "number", label: "Bulge", group: "curves", min: 0.02, max: 2.5, step: 0.01 },
-  radiusMin: { kind: "number", label: "Bulge min", group: "curves", min: 0.02, max: 2.5, step: 0.01 },
-  radiusMax: { kind: "number", label: "Bulge max", group: "curves", min: 0.02, max: 2.5, step: 0.01 },
-  radiusMean: { kind: "number", label: "Bulge mean", group: "curves", min: 0.02, max: 2.5, step: 0.01 },
+  radiusScale: {
+    kind: "number",
+    label: "Bulge",
+    description:
+      "The single bulge every edge takes in Fixed mode. It is measured against the edge, so 1 swells out as far as the edge is long.",
+    group: "curves",
+    min: 0.02,
+    max: 2.5,
+    step: 0.01,
+  },
+  radiusMin: {
+    kind: "number",
+    label: "Bulge min",
+    description: "The smallest bulge an edge can draw. Raise it to stop any edge going near flat.",
+    group: "curves",
+    min: 0.02,
+    max: 2.5,
+    step: 0.01,
+  },
+  radiusMax: {
+    kind: "number",
+    label: "Bulge max",
+    description: "The largest bulge an edge can draw. Raise it for wilder, more balloon-like swells.",
+    group: "curves",
+    min: 0.02,
+    max: 2.5,
+    step: 0.01,
+  },
+  radiusMean: {
+    kind: "number",
+    label: "Bulge mean",
+    description: "The bulge most edges land near in Gaussian mode.",
+    group: "curves",
+    min: 0.02,
+    max: 2.5,
+    step: 0.01,
+  },
   radiusVariation: {
     kind: "number",
     label: "Bulge spread",
+    description:
+      "How far edges wander from the mean in Gaussian mode. At 0 every edge swells by the same amount.",
     group: "curves",
     min: 0,
     max: 1,
     step: 0.01,
   },
-  radiusTailPower: { kind: "number", label: "Tail power", group: "curves", min: 1, max: 8, step: 0.1 },
+  radiusTailPower: {
+    kind: "number",
+    label: "Tail power",
+    description:
+      "How rare a big bulge is in Heavy tail mode. Higher values hold most edges near the minimum and save the swell for one or two.",
+    group: "curves",
+    min: 1,
+    max: 8,
+    step: 0.1,
+  },
   arcSideMode: {
     kind: "enum",
     label: "Bulge side",
+    description:
+      "How each edge picks which way to bulge: all one way, strictly alternating, at random, on a switch chance, or leaning toward a direction.",
     group: "curves",
     options: ["same", "alternate", "random", "switchProbability", "spatialBias"],
   },
   switchProbability: {
     kind: "number",
     label: "Switch chance",
+    description:
+      "The chance each edge flips to the other side of the line. Near 0 the outline runs in long smooth sweeps; near 1 it zigzags in and out.",
     group: "curves",
     min: 0,
     max: 1,
@@ -323,13 +411,26 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   biasDirection: {
     kind: "enum",
     label: "Bias direction",
+    description:
+      "The way the bulges lean. Outward swells away from the middle of the square and inward swells toward it.",
     group: "curves",
     options: ["up", "down", "left", "right", "outward", "inward"],
   },
-  biasStrength: { kind: "number", label: "Bias strength", group: "curves", min: 0, max: 1, step: 0.05 },
+  biasStrength: {
+    kind: "number",
+    label: "Bias strength",
+    description:
+      "How strongly that lean wins. At 0 each side is a coin toss; at 1 almost every edge follows the direction.",
+    group: "curves",
+    min: 0,
+    max: 1,
+    step: 0.05,
+  },
   arcResolution: {
     kind: "number",
     label: "Resolution",
+    description:
+      "How many straight steps stand in for each curve. Higher looks smoother and takes longer to draw.",
     group: "curves",
     min: 4,
     max: 64,
@@ -340,6 +441,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   minimumClearance: {
     kind: "number",
     label: "Min clearance",
+    description:
+      "The gap the outline must keep from itself. Larger values push the curves apart, so the shape loses its tightest pinches.",
     group: "constraints",
     min: 0,
     max: 0.1,
@@ -348,6 +451,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   safeRadiusFactor: {
     kind: "number",
     label: "Safe radius factor",
+    description:
+      "How near its limit a curve may grow. Lower values keep a wider margin of safety and give tamer curves.",
     group: "constraints",
     min: 0.5,
     max: 1,
@@ -357,6 +462,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   bulgeAggressiveness: {
     kind: "number",
     label: "Bulge aggressiveness",
+    description:
+      "How hard the curves push into the room they have. Higher values fill the space, even past the bulge the edge first drew.",
     group: "constraints",
     min: 0,
     max: 1,
@@ -365,6 +472,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   sideSpaceBias: {
     kind: "number",
     label: "Side space bias",
+    description:
+      "Which side a curve takes when one has more room. Negative sends it to the roomy side; positive makes it squeeze into the tight one and form necks.",
     group: "constraints",
     min: -1,
     max: 1,
@@ -373,6 +482,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   curveGrowthPasses: {
     kind: "number",
     label: "Growth passes",
+    description:
+      "How many rounds the curves grow in. More rounds let neighbours make room for each other, so the bulges end up larger and more even. It costs time.",
     group: "constraints",
     min: 1,
     max: 12,
@@ -381,6 +492,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   maxUntangleIterations: {
     kind: "number",
     label: "Max untangle iterations",
+    description:
+      "How long to keep pulling crossings out of the tour before giving up on it. Raise it only for very crowded point sets; it buys reliability, not looks.",
     group: "constraints",
     min: 50,
     max: 5000,
@@ -390,6 +503,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   safeRadiusSearchIterations: {
     kind: "number",
     label: "Safe radius search",
+    description:
+      "How finely to hunt for the biggest bulge that still fits. More steps find a slightly fuller curve and take slightly longer.",
     group: "constraints",
     min: 4,
     max: 20,
@@ -399,6 +514,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   maxArcRepairAttempts: {
     kind: "number",
     label: "Max arc repairs",
+    description:
+      "How many fixes the solver may make when two curves collide. More attempts rescue a difficult shape instead of shrinking every curve at once.",
     group: "constraints",
     min: 4,
     max: 64,
@@ -409,6 +526,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   contactTolerance: {
     kind: "number",
     label: "Contact tolerance",
+    description:
+      "How near the lowest point still counts as touching the ground. Wider values find more of a foot, so the shape reads as better supported.",
     group: "balance",
     min: 0.002,
     max: 0.2,
@@ -419,6 +538,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   mutationAmount: {
     kind: "number",
     label: "Mutation amount",
+    description:
+      "How far Mutate nudges the settings. Small values tweak what you have; large ones throw the shape somewhere new.",
     group: "exploration",
     min: 0.01,
     max: 1,
@@ -428,6 +549,8 @@ export const PARAM_RANGES: { readonly [K in keyof Settings]: ParamMeta<K> } = {
   searchCandidates: {
     kind: "number",
     label: "Search candidates",
+    description:
+      "How many seeds Find precarious tries before it picks a winner. More candidates find a more unstable shape and take longer.",
     group: "exploration",
     min: 20,
     max: 2000,

@@ -13,8 +13,32 @@ function decimalsFor(step: number): number {
   return fraction ? Math.min(3, fraction.length) : 2;
 }
 
+type InfoProps = {
+  /** Names the button ("About Bulge"); the description itself is the button's accessible hint. */
+  label: string;
+  description: string;
+};
+
+/**
+ * The one hover-description control. It is a button rather than a bare span so a touch or a Tab
+ * can open the tip too, and the tip is plain hidden markup — the server and the client render the
+ * same thing, and nothing measures or positions it at runtime.
+ */
+export function Info({ label, description }: InfoProps) {
+  const id = useId();
+  return (
+    <button type="button" className="sl-info" aria-label={`About ${label}`} aria-describedby={id}>
+      i
+      <span id={id} role="tooltip" className="sl-tip">
+        {description}
+      </span>
+    </button>
+  );
+}
+
 type SliderProps = {
   label: string;
+  description: string;
   value: number;
   min: number;
   max: number;
@@ -22,14 +46,21 @@ type SliderProps = {
   onChange: (value: number) => void;
 };
 
-export function Slider({ label, value, min, max, step, onChange }: SliderProps) {
+export function Slider({ label, description, value, min, max, step, onChange }: SliderProps) {
   const id = useId();
   return (
     <div className="sl-control">
-      <label className="sl-control-head" htmlFor={id}>
-        <span className="sl-control-label">{label}</span>
-        <span className="sl-readout">{value.toFixed(decimalsFor(step))}</span>
-      </label>
+      {/*
+        The head is a div, not the label: a button inside a label is activated by every tap on that
+        label, so opening the tip would also grab the slider.
+      */}
+      <div className="sl-control-head">
+        <label className="sl-control-head-text" htmlFor={id}>
+          <span className="sl-control-label">{label}</span>
+          <span className="sl-readout">{value.toFixed(decimalsFor(step))}</span>
+        </label>
+        <Info label={label} description={description} />
+      </div>
       <input
         id={id}
         className="sl-range"
@@ -46,6 +77,7 @@ export function Slider({ label, value, min, max, step, onChange }: SliderProps) 
 
 type SelectProps<T extends string> = {
   label: string;
+  description: string;
   value: T;
   options: readonly T[];
   /** Override for an option whose display text `humanize` can't derive (accents, extra words). */
@@ -55,6 +87,7 @@ type SelectProps<T extends string> = {
 
 export function Select<T extends string>({
   label,
+  description,
   value,
   options,
   optionLabels,
@@ -63,9 +96,12 @@ export function Select<T extends string>({
   const id = useId();
   return (
     <div className="sl-control">
-      <label className="sl-control-head" htmlFor={id}>
-        <span className="sl-control-label">{label}</span>
-      </label>
+      <div className="sl-control-head">
+        <label className="sl-control-head-text" htmlFor={id}>
+          <span className="sl-control-label">{label}</span>
+        </label>
+        <Info label={label} description={description} />
+      </div>
       <select
         id={id}
         className="sl-select"

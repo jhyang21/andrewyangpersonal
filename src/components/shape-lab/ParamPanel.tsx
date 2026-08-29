@@ -39,6 +39,7 @@ export function ParamPanel({ settings, onChange, viz, onVizChange }: Props) {
       <Slider
         key={key}
         label={meta.label}
+        description={meta.description}
         value={settings[key]}
         min={meta.min}
         max={meta.max}
@@ -54,6 +55,7 @@ export function ParamPanel({ settings, onChange, viz, onVizChange }: Props) {
       <Select
         key={key}
         label={meta.label}
+        description={meta.description}
         value={settings[key]}
         options={meta.options}
         optionLabels={meta.optionLabels}
