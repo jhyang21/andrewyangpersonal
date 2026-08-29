@@ -25,7 +25,6 @@ function skeletonLength(shape: Shape): number {
 
 const dec = (value: number, places = 4) => value.toFixed(places);
 
-/** One measurement row: `warn` styling is reserved for the two crossing counts. */
 type Row = { label: string; value: string; tip: string; warn?: boolean };
 
 export function StatsPanel({ shape, onExport, onCopy, copied }: Props) {
@@ -171,7 +170,6 @@ export function StatsPanel({ shape, onExport, onCopy, copied }: Props) {
         <span className="sl-field-label">Score components</span>
         {m.precariousnessParts.map((part) => (
           <div className="sl-part" key={part.label}>
-            {/* Label and icon share one grid cell, so the bar below still spans both columns. */}
             <span className="sl-part-head">
               <span className="sl-part-label">{part.label}</span>
               <Info label={part.label} description={PART_DESCRIPTIONS[part.label]} />

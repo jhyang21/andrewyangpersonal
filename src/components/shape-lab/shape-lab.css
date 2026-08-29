@@ -654,11 +654,6 @@
   content: "−";
 }
 
-/*
- * The head is a row of two: the label, which still owns the whole width it used to, and the info
- * button beside it. The old space-between layout now lives on the label itself, so the row looks
- * exactly as it did before the button arrived.
- */
 .sl-control-head {
   display: flex;
   align-items: center;
