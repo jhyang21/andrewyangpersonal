@@ -1,0 +1,776 @@
+/*
+ * Unconventional Shape Lab — scoped styles.
+ *
+ * Everything is namespaced under `.sl-root`, the same reasoning as `.fs-root` and `.bw-root`: this
+ * is a dark instrument panel bolted to a warm-paper site, and none of its colours belong in
+ * `globals.css`'s `@theme inline` block, which is emitted on every page. Nothing here reads a site
+ * token, because none of them survive the change of ground.
+ *
+ * SVG presentation lives in CSS rather than on attributes for the same reason it does in the
+ * Brent–WTI chart: a layer is a group of elements sharing one look, and repeating the colour on
+ * every node is how the two drift apart.
+ */
+
+.sl-root {
+  --sl-bg: #111114;
+  --sl-surface: #1a1a1f;
+  --sl-ink: #e8e6e1;
+  --sl-muted: #8a8894;
+  --sl-line: #2c2c33;
+  --sl-accent: #ffd23e;
+  --sl-construction: #4a5568;
+  --sl-shape-fill: rgba(232, 230, 225, 0.08);
+  /*
+   * Self-intersection markers are the one thing on the page that means "wrong", and the yellow
+   * accent is already spoken for by the balance readouts.
+   */
+  --sl-warn: #ff6b5c;
+
+  min-height: 100dvh;
+  background: var(--sl-bg);
+  color: var(--sl-ink);
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Mandatory. The global `:focus-visible` rule paints a near-white 4px `--color-primary-tint` ring,
+ * which is the paper background — invisible here, exactly the trap `.fs-root` documents. Don't
+ * remove this.
+ */
+.sl-root :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--sl-accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(255, 210, 62, 0.18);
+}
+
+.sl-root ::selection {
+  background: var(--sl-accent);
+  color: var(--sl-bg);
+}
+
+/* ---- shell ---------------------------------------------------------------------------------- */
+
+.sl-shell {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 18px 20px 48px;
+}
+
+/* The only chrome on the page. No nav, no footer — the shape is the subject. */
+.sl-wordmark {
+  margin-bottom: 16px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sl-muted);
+}
+
+.sl-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.sl-stage {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+@media (min-width: 900px) {
+  .sl-grid {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    align-items: start;
+  }
+
+  /* The panel scrolls inside itself so a long parameter list never pushes the shape off screen. */
+  .sl-side {
+    position: sticky;
+    top: 18px;
+    max-height: calc(100dvh - 36px);
+    overflow-y: auto;
+    padding-right: 4px;
+  }
+}
+
+/* ---- viewport ------------------------------------------------------------------------------- */
+
+.sl-canvas {
+  padding: 8px;
+  background: var(--sl-surface);
+  border: 1px solid var(--sl-line);
+  border-radius: 4px;
+}
+
+/*
+ * A fixed frame with `xMidYMid meet` inside it: the drawing letterboxes rather than the panel
+ * resizing under the cursor every time a parameter changes the shape's aspect ratio.
+ */
+.sl-viewport {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
+
+/*
+ * Mobile: one interleaved scroll column instead of the two-pane grid. `.sl-stage` and `.sl-side`
+ * go `display: contents` so their children become direct flex items of `.sl-grid` — DOM and focus
+ * order stay exactly as authored; only paint order (`order`) moves the canvas to the top and folds
+ * the score readout in among the controls.
+ */
+@media (max-width: 899px) {
+  .sl-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sl-stage,
+  .sl-side {
+    display: contents;
+  }
+
+  .sl-stage > .sl-canvas {
+    order: 0;
+  }
+
+  .sl-side > .sl-block:nth-of-type(1) {
+    order: 1;
+  }
+
+  .sl-side > .sl-block:nth-of-type(2) {
+    order: 2;
+  }
+
+  .sl-side > .sl-block:nth-of-type(3) {
+    order: 3;
+  }
+
+  .sl-stage > .sl-stats {
+    order: 4;
+  }
+
+  .sl-side > .sl-block:nth-of-type(4) {
+    order: 5;
+  }
+
+  .sl-side > .sl-panel {
+    order: 6;
+  }
+
+  .sl-side > .sl-block {
+    margin-bottom: 0;
+  }
+
+  .sl-canvas {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid var(--sl-line);
+  }
+
+  .sl-viewport {
+    aspect-ratio: auto;
+    height: min(44dvh, calc(100vw - 40px));
+  }
+
+  .sl-shell {
+    padding: 12px 12px 40px;
+    /* Overrides the line above wherever env() resolves; falls back to it where it doesn't. */
+    padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right))
+      max(40px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  }
+
+  /* Two-up so the twenty-two-row measurement list doesn't own the whole scroll column. */
+  .sl-statlist {
+    columns: 2;
+    column-gap: 16px;
+  }
+
+  .sl-stat {
+    break-inside: avoid;
+  }
+
+  /* Numeral left, note + export actions right — halves the score block's vertical cost. */
+  .sl-score {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 12px;
+    row-gap: 2px;
+  }
+
+  .sl-score > .sl-field-label {
+    grid-column: 1 / -1;
+  }
+
+  .sl-score > .sl-score-value {
+    grid-row: 2 / 4;
+    align-self: center;
+  }
+
+  .sl-score > .sl-score-note {
+    grid-column: 2;
+    margin-top: 0;
+  }
+
+  .sl-score > .sl-score-actions {
+    grid-column: 2;
+    margin-top: 4px;
+  }
+}
+
+/*
+ * Touch targets: the 44px minimum hit area applies only under a coarse pointer, so mouse users on a
+ * narrow window keep the tighter desktop sizing.
+ */
+@media (pointer: coarse) {
+  .sl-root .sl-btn,
+  .sl-root .sl-seed-input,
+  .sl-root .sl-select {
+    min-height: 44px;
+  }
+
+  .sl-chip {
+    padding: 10px 14px;
+  }
+
+  .sl-toggle {
+    padding: 8px 0;
+  }
+
+  .sl-toggle input {
+    width: 18px;
+    height: 18px;
+  }
+
+  .sl-range {
+    height: 32px;
+  }
+
+  .sl-section > summary,
+  .sl-subsection > summary {
+    padding-block: 12px;
+  }
+
+  /* 16px is Safari's no-zoom threshold — smaller triggers an input-focus zoom. */
+  .sl-seed-input,
+  .sl-select {
+    font-size: 16px;
+  }
+}
+
+/* Line weights are screen weights, not shape weights — they must not thicken as the shape shrinks. */
+.sl-scene :is(path, line, polygon, circle, rect) {
+  vector-effect: non-scaling-stroke;
+}
+
+/*
+ * The only motion in the lab, and it is opacity alone: geometry that interpolates would suggest the
+ * two shapes are related, and successive seeds are not.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .sl-scene {
+    animation: sl-fade-in 120ms ease-out;
+  }
+}
+
+@keyframes sl-fade-in {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sl-layer-domain rect {
+  fill: none;
+  stroke: var(--sl-construction);
+  stroke-width: 1;
+  stroke-dasharray: 5 5;
+}
+
+.sl-layer-bbox rect {
+  fill: none;
+  stroke: var(--sl-line);
+  stroke-width: 1;
+  stroke-dasharray: 2 4;
+}
+
+.sl-layer-axes line {
+  stroke: var(--sl-construction);
+  stroke-width: 1;
+}
+
+.sl-layer-axes .sl-axis-minor {
+  stroke-dasharray: 3 3;
+}
+
+.sl-layer-construction .sl-safe-envelope {
+  fill: none;
+  stroke: var(--sl-construction);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+  opacity: 0.7;
+}
+
+.sl-layer-construction .sl-desired {
+  stroke: var(--sl-muted);
+  stroke-width: 1;
+  stroke-dasharray: 4 3;
+}
+
+.sl-layer-construction .sl-actual {
+  stroke: var(--sl-accent);
+  stroke-width: 1.25;
+}
+
+/* Desired-peak markers are plain, unclassed circles — open, so they read as a target, not a mark. */
+.sl-layer-construction circle {
+  fill: none;
+  stroke: var(--sl-muted);
+  stroke-width: 1;
+}
+
+.sl-layer-construction .sl-actual-dot {
+  fill: var(--sl-accent);
+  stroke: none;
+}
+
+.sl-layer-construction .is-saturated :is(line, circle) {
+  stroke: var(--sl-warn);
+}
+
+.sl-layer-construction .is-saturated .sl-actual-dot {
+  fill: var(--sl-warn);
+}
+
+.sl-layer-skeleton polygon {
+  fill: none;
+  stroke: var(--sl-construction);
+  stroke-width: 1.25;
+  stroke-linejoin: round;
+}
+
+.sl-layer-fill path {
+  fill: var(--sl-shape-fill);
+  stroke: none;
+}
+
+.sl-layer-outline path {
+  fill: none;
+  stroke: var(--sl-ink);
+  stroke-width: 1.75;
+  stroke-linejoin: round;
+}
+
+.sl-layer-contact line {
+  stroke: var(--sl-accent);
+  stroke-width: 2;
+}
+
+.sl-layer-centroid line,
+.sl-layer-centroid circle {
+  fill: none;
+  stroke: var(--sl-accent);
+  stroke-width: 1.25;
+}
+
+.sl-layer-points circle {
+  fill: var(--sl-bg);
+  stroke: var(--sl-ink);
+  stroke-width: 1.25;
+}
+
+.sl-layer-points text {
+  fill: var(--sl-muted);
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+}
+
+.sl-layer-hits circle {
+  fill: none;
+  stroke: var(--sl-warn);
+  stroke-width: 1.25;
+}
+
+/* ---- side panel ----------------------------------------------------------------------------- */
+
+.sl-block {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: var(--sl-surface);
+  border: 1px solid var(--sl-line);
+  border-radius: 4px;
+}
+
+.sl-field-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sl-muted);
+}
+
+.sl-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.sl-btn-wide {
+  grid-column: 1 / -1;
+}
+
+.sl-btn {
+  appearance: none;
+  min-height: 32px;
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 12px;
+  color: var(--sl-ink);
+  background: transparent;
+  border: 1px solid var(--sl-line);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sl-btn:hover:not(:disabled) {
+  border-color: var(--sl-muted);
+}
+
+.sl-btn:disabled {
+  color: var(--sl-muted);
+  cursor: default;
+}
+
+.sl-btn-primary {
+  color: var(--sl-accent);
+  border-color: rgba(255, 210, 62, 0.5);
+}
+
+.sl-btn-primary:hover:not(:disabled) {
+  border-color: var(--sl-accent);
+}
+
+.sl-btn-icon {
+  flex: none;
+  width: 32px;
+  padding: 0;
+  text-align: center;
+}
+
+.sl-seed-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.sl-seed-input {
+  flex: 1;
+  min-width: 0;
+  min-height: 32px;
+  padding: 6px 8px;
+  font-size: 12px;
+  color: var(--sl-ink);
+  background: var(--sl-bg);
+  border: 1px solid var(--sl-line);
+  border-radius: 3px;
+}
+
+.sl-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sl-chip {
+  appearance: none;
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  color: var(--sl-muted);
+  background: transparent;
+  border: 1px solid var(--sl-line);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.sl-chip:hover {
+  color: var(--sl-ink);
+  border-color: var(--sl-muted);
+}
+
+.sl-toggle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sl-toggle input {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  accent-color: var(--sl-accent);
+}
+
+.sl-toggle.is-disabled {
+  color: var(--sl-muted);
+  cursor: default;
+}
+
+/* ---- parameter sections --------------------------------------------------------------------- */
+
+.sl-panel {
+  padding: 0 10px;
+  background: var(--sl-surface);
+  border: 1px solid var(--sl-line);
+  border-radius: 4px;
+}
+
+.sl-section + .sl-section {
+  border-top: 1px solid var(--sl-line);
+}
+
+.sl-section > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sl-muted);
+  list-style: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.sl-section > summary::-webkit-details-marker {
+  display: none;
+}
+
+.sl-section > summary::after {
+  content: "+";
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.sl-section[open] > summary {
+  color: var(--sl-ink);
+}
+
+.sl-section[open] > summary::after {
+  content: "−";
+}
+
+.sl-section-body {
+  display: grid;
+  gap: 11px;
+  padding: 2px 2px 14px;
+}
+
+.sl-viz-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 0 10px;
+}
+
+.sl-note {
+  margin: 0;
+  font-size: 11px;
+  color: var(--sl-muted);
+}
+
+/* Secondary details nested inside a constraints section — a left rule instead of a full border. */
+.sl-subsection {
+  padding-left: 10px;
+  border-left: 1px solid var(--sl-line);
+}
+
+.sl-subsection > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 2px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sl-muted);
+  list-style: none;
+  cursor: pointer;
+}
+
+.sl-subsection > summary::-webkit-details-marker {
+  display: none;
+}
+
+.sl-subsection > summary::after {
+  content: "+";
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.sl-subsection[open] > summary {
+  color: var(--sl-ink);
+}
+
+.sl-subsection[open] > summary::after {
+  content: "−";
+}
+
+.sl-control-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sl-control-label {
+  color: var(--sl-muted);
+}
+
+.sl-readout {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--sl-ink);
+}
+
+.sl-range {
+  width: 100%;
+  height: 18px;
+  margin-top: 5px;
+  background: transparent;
+  accent-color: var(--sl-accent);
+  cursor: pointer;
+}
+
+.sl-select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 6px 8px;
+  font: inherit;
+  font-size: 12px;
+  color: var(--sl-ink);
+  background: var(--sl-bg);
+  border: 1px solid var(--sl-line);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* ---- stats ---------------------------------------------------------------------------------- */
+
+.sl-stats {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 14px;
+  background: var(--sl-surface);
+  border: 1px solid var(--sl-line);
+  border-radius: 4px;
+}
+
+@media (min-width: 760px) {
+  .sl-stats {
+    grid-template-columns: 180px minmax(200px, 1fr) minmax(200px, 1fr);
+  }
+}
+
+.sl-score-value {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-size: 52px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--sl-accent);
+}
+
+.sl-score-note {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--sl-muted);
+}
+
+.sl-score-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.sl-part {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1px 8px;
+  margin-bottom: 9px;
+  font-size: 11px;
+}
+
+.sl-part-label {
+  color: var(--sl-muted);
+}
+
+.sl-part-value {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.sl-bar {
+  grid-column: 1 / -1;
+  height: 5px;
+  margin-top: 2px;
+}
+
+/* Track length is the weight this term carries; fill is how much of it the shape earned. */
+.sl-bar-track {
+  height: 100%;
+  background: rgba(232, 230, 225, 0.08);
+  border-radius: 2px;
+}
+
+.sl-bar-fill {
+  height: 100%;
+  background: var(--sl-accent);
+  border-radius: 2px;
+}
+
+.sl-statlist {
+  margin: 0;
+  font-size: 11px;
+}
+
+.sl-stat {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 2px 0;
+  border-bottom: 1px solid rgba(44, 44, 51, 0.6);
+}
+
+.sl-stat dt {
+  color: var(--sl-muted);
+}
+
+.sl-stat dd {
+  margin: 0;
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  color: var(--sl-ink);
+}
+
+.sl-stat.is-warn dd {
+  color: var(--sl-warn);
+}
