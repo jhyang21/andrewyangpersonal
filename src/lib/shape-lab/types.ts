@@ -199,6 +199,7 @@ export type VizToggles = {
   domainSquare: boolean;
   centroid: boolean;
   contactRegion: boolean;
+  balancedPose: boolean;
   intersections: boolean;
   boundingBox: boolean;
 };
@@ -214,6 +215,7 @@ export const DEFAULT_VIZ: VizToggles = {
   domainSquare: false,
   centroid: true,
   contactRegion: true,
+  balancedPose: false,
   intersections: false,
   boundingBox: false,
 };

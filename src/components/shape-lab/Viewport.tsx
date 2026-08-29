@@ -1,4 +1,5 @@
 import { toPolylinePathD, toSvgPathD } from "@/lib/shape-lab/engine";
+import { restPose, rotateAbout } from "@/lib/shape-lab/rest";
 import { sampleArc } from "@/lib/shape-lab/silhouette";
 import type { Shape, Vec, VizToggles } from "@/lib/shape-lab/types";
 
@@ -8,6 +9,8 @@ type Props = { shape: Shape; viz: VizToggles };
 const PAD = 0.08;
 /** How far below the lowest silhouette point the contact bar is drawn. */
 const CONTACT_DROP = 0.04;
+/** How far past the drawing each end of the ground line runs. Kept under PAD so it never clips. */
+const GROUND_OVERHANG = 0.05;
 
 /*
  * A knotted silhouette can self-cross in the hundreds, and every hit is one more circle in the DOM
@@ -15,6 +18,14 @@ const CONTACT_DROP = 0.04;
  * capped.
  */
 const MAX_HIT_MARKERS = 400;
+
+/** The corners of the domain square, needed as points once the drawing can be turned. */
+const UNIT_SQUARE: Vec[] = [
+  { x: 0, y: 0 },
+  { x: 1, y: 0 },
+  { x: 1, y: 1 },
+  { x: 0, y: 1 },
+];
 
 function midpoint(a: Vec, b: Vec): Vec {
   return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
@@ -33,23 +44,67 @@ function f(value: number): number {
 export function Viewport({ shape, viz }: Props) {
   const box = shape.metrics.bbox;
   const contact = shape.metrics.contact;
+  const pivot = shape.metrics.centroid;
+
+  /*
+   * The resting pose turns the whole drawing about the centroid, so every extent below has to be
+   * measured on the turned copy rather than on the stored bounding box. The angle is rounded up
+   * front because the markup carries the rounded one: measure against the angle actually drawn.
+   */
+  const pose = viz.balancedPose ? restPose(shape.silhouette, pivot) : null;
+  const angle = pose ? f(pose.angleDeg) : 0;
 
   let minX = box.minX;
   let minY = box.minY;
   let maxX = box.maxX;
   let maxY = box.maxY;
 
+  const extend = (p: Vec) => {
+    if (p.x < minX) minX = p.x;
+    if (p.y < minY) minY = p.y;
+    if (p.x > maxX) maxX = p.x;
+    if (p.y > maxY) maxY = p.y;
+  };
+
+  if (pose) {
+    minX = Infinity;
+    minY = Infinity;
+    maxX = -Infinity;
+    maxY = -Infinity;
+    for (const p of shape.silhouette) extend(rotateAbout(p, pivot, angle));
+  }
+
   if (viz.domainSquare) {
-    minX = Math.min(minX, 0);
-    minY = Math.min(minY, 0);
-    maxX = Math.max(maxX, 1);
-    maxY = Math.max(maxY, 1);
+    if (pose) {
+      // The square is drawn inside the turned group, so it is the turned corners that must fit.
+      for (const corner of UNIT_SQUARE) extend(rotateAbout(corner, pivot, angle));
+    } else {
+      minX = Math.min(minX, 0);
+      minY = Math.min(minY, 0);
+      maxX = Math.max(maxX, 1);
+      maxY = Math.max(maxY, 1);
+    }
   }
 
   // The bar hangs below the shape, so the room for it is measured against the extent so far.
   const reach = Math.max(maxX - minX, maxY - minY, 1e-6);
   const contactY = contact.y + CONTACT_DROP * reach;
-  if (viz.contactRegion) maxY = Math.max(maxY, contactY);
+  if (viz.contactRegion) {
+    if (pose) {
+      // The bar turns with the scene, so room under the shape is room on the wrong side.
+      extend(rotateAbout({ x: contact.minX, y: contactY }, pivot, angle));
+      extend(rotateAbout({ x: contact.maxX, y: contactY }, pivot, angle));
+    } else {
+      maxY = Math.max(maxY, contactY);
+    }
+  }
+
+  /*
+   * The ground sits the same drop below the centroid at any angle: the turn is about the centroid,
+   * which moves neither it nor its distance to the resting edge.
+   */
+  const groundY = pose ? pivot.y + pose.height : 0;
+  if (pose) maxY = Math.max(maxY, groundY);
 
   const width = Math.max(maxX - minX, 1e-6);
   const height = Math.max(maxY - minY, 1e-6);
@@ -121,8 +176,150 @@ export function Viewport({ shape, viz }: Props) {
     };
   });
 
-  const centroid = { x: f(shape.metrics.centroid.x), y: f(shape.metrics.centroid.y) };
+  const centroid = { x: f(pivot.x), y: f(pivot.y) };
   const hits = shape.silhouetteIntersections.slice(0, MAX_HIT_MARKERS);
+
+  // The overhang stays inside the pad, so the line always ends short of the viewBox edge.
+  const ground = pose
+    ? {
+        y: f(groundY),
+        x1: f(minX - GROUND_OVERHANG * unit),
+        x2: f(maxX + GROUND_OVERHANG * unit),
+      }
+    : null;
+  const poseTransform = pose ? `rotate(${angle} ${centroid.x} ${centroid.y})` : undefined;
+
+  const scene = (
+    <>
+      {viz.domainSquare && (
+        <g className="sl-layer-domain">
+          <rect x={0} y={0} width={1} height={1} />
+        </g>
+      )}
+
+      {viz.boundingBox && (
+        <g className="sl-layer-bbox">
+          <rect x={f(box.minX)} y={f(box.minY)} width={f(box.width)} height={f(box.height)} />
+        </g>
+      )}
+
+      {viz.ellipseAxes && (
+        <g className="sl-layer-axes">
+          {axes.map((axis) => (
+            <g key={axis.key}>
+              <line
+                className="sl-axis-major"
+                x1={axis.a.x}
+                y1={axis.a.y}
+                x2={axis.b.x}
+                y2={axis.b.y}
+              />
+              <line
+                className="sl-axis-minor"
+                x1={axis.centre.x}
+                y1={axis.centre.y}
+                x2={axis.tip.x}
+                y2={axis.tip.y}
+              />
+            </g>
+          ))}
+        </g>
+      )}
+
+      {viz.construction && (
+        <g className="sl-layer-construction">
+          {construction.map((c) => (
+            <g key={c.key} className={c.saturated ? "is-saturated" : undefined}>
+              <path className="sl-safe-envelope" d={c.envelope} />
+              <line
+                className="sl-desired"
+                x1={c.centre.x}
+                y1={c.centre.y}
+                x2={c.desiredTip.x}
+                y2={c.desiredTip.y}
+              />
+              <circle cx={c.desiredTip.x} cy={c.desiredTip.y} r={dot} />
+              <line
+                className="sl-actual"
+                x1={c.centre.x}
+                y1={c.centre.y}
+                x2={c.actualTip.x}
+                y2={c.actualTip.y}
+              />
+              <circle className="sl-actual-dot" cx={c.actualTip.x} cy={c.actualTip.y} r={dot} />
+            </g>
+          ))}
+        </g>
+      )}
+
+      {viz.skeleton && (
+        <g className="sl-layer-skeleton">
+          <polygon points={skeleton} />
+        </g>
+      )}
+
+      {viz.fillSilhouette && (
+        <g className="sl-layer-fill">
+          <path d={pathD} fillRule="evenodd" />
+        </g>
+      )}
+
+      {viz.silhouette && (
+        <g className="sl-layer-outline">
+          <path d={pathD} />
+        </g>
+      )}
+
+      {viz.contactRegion && (
+        <g className="sl-layer-contact">
+          <line x1={f(contact.minX)} y1={f(contactY)} x2={f(contact.maxX)} y2={f(contactY)} />
+          <line
+            x1={f(contact.minX)}
+            y1={f(contactY - tick)}
+            x2={f(contact.minX)}
+            y2={f(contactY + tick)}
+          />
+          <line
+            x1={f(contact.maxX)}
+            y1={f(contactY - tick)}
+            x2={f(contact.maxX)}
+            y2={f(contactY + tick)}
+          />
+        </g>
+      )}
+
+      {viz.centroid && (
+        <g className="sl-layer-centroid">
+          <line x1={f(centroid.x - arm)} y1={centroid.y} x2={f(centroid.x + arm)} y2={centroid.y} />
+          <line x1={centroid.x} y1={f(centroid.y - arm)} x2={centroid.x} y2={f(centroid.y + arm)} />
+          <circle cx={centroid.x} cy={centroid.y} r={dot} />
+        </g>
+      )}
+
+      {viz.points && (
+        <g className="sl-layer-points">
+          {shape.points.map((point, index) => (
+            <g key={index}>
+              <circle cx={f(point.x)} cy={f(point.y)} r={dot} />
+              {viz.pointLabels && (
+                <text x={f(point.x + dot * 1.8)} y={f(point.y - dot * 1.4)} fontSize={labelSize}>
+                  {index}
+                </text>
+              )}
+            </g>
+          ))}
+        </g>
+      )}
+
+      {viz.intersections && hits.length > 0 && (
+        <g className="sl-layer-hits">
+          {hits.map((point, index) => (
+            <circle key={index} cx={f(point.x)} cy={f(point.y)} r={hit} />
+          ))}
+        </g>
+      )}
+    </>
+  );
 
   return (
     <svg
@@ -136,131 +333,11 @@ export function Viewport({ shape, viz }: Props) {
     >
       {/* Remounted on every new shape, which is what restarts the fade. Geometry never interpolates. */}
       <g className="sl-scene">
-        {viz.domainSquare && (
-          <g className="sl-layer-domain">
-            <rect x={0} y={0} width={1} height={1} />
-          </g>
-        )}
+        {poseTransform ? <g transform={poseTransform}>{scene}</g> : scene}
 
-        {viz.boundingBox && (
-          <g className="sl-layer-bbox">
-            <rect x={f(box.minX)} y={f(box.minY)} width={f(box.width)} height={f(box.height)} />
-          </g>
-        )}
-
-        {viz.ellipseAxes && (
-          <g className="sl-layer-axes">
-            {axes.map((axis) => (
-              <g key={axis.key}>
-                <line
-                  className="sl-axis-major"
-                  x1={axis.a.x}
-                  y1={axis.a.y}
-                  x2={axis.b.x}
-                  y2={axis.b.y}
-                />
-                <line
-                  className="sl-axis-minor"
-                  x1={axis.centre.x}
-                  y1={axis.centre.y}
-                  x2={axis.tip.x}
-                  y2={axis.tip.y}
-                />
-              </g>
-            ))}
-          </g>
-        )}
-
-        {viz.construction && (
-          <g className="sl-layer-construction">
-            {construction.map((c) => (
-              <g key={c.key} className={c.saturated ? "is-saturated" : undefined}>
-                <path className="sl-safe-envelope" d={c.envelope} />
-                <line
-                  className="sl-desired"
-                  x1={c.centre.x}
-                  y1={c.centre.y}
-                  x2={c.desiredTip.x}
-                  y2={c.desiredTip.y}
-                />
-                <circle cx={c.desiredTip.x} cy={c.desiredTip.y} r={dot} />
-                <line
-                  className="sl-actual"
-                  x1={c.centre.x}
-                  y1={c.centre.y}
-                  x2={c.actualTip.x}
-                  y2={c.actualTip.y}
-                />
-                <circle className="sl-actual-dot" cx={c.actualTip.x} cy={c.actualTip.y} r={dot} />
-              </g>
-            ))}
-          </g>
-        )}
-
-        {viz.skeleton && (
-          <g className="sl-layer-skeleton">
-            <polygon points={skeleton} />
-          </g>
-        )}
-
-        {viz.fillSilhouette && (
-          <g className="sl-layer-fill">
-            <path d={pathD} fillRule="evenodd" />
-          </g>
-        )}
-
-        {viz.silhouette && (
-          <g className="sl-layer-outline">
-            <path d={pathD} />
-          </g>
-        )}
-
-        {viz.contactRegion && (
-          <g className="sl-layer-contact">
-            <line x1={f(contact.minX)} y1={f(contactY)} x2={f(contact.maxX)} y2={f(contactY)} />
-            <line
-              x1={f(contact.minX)}
-              y1={f(contactY - tick)}
-              x2={f(contact.minX)}
-              y2={f(contactY + tick)}
-            />
-            <line
-              x1={f(contact.maxX)}
-              y1={f(contactY - tick)}
-              x2={f(contact.maxX)}
-              y2={f(contactY + tick)}
-            />
-          </g>
-        )}
-
-        {viz.centroid && (
-          <g className="sl-layer-centroid">
-            <line x1={f(centroid.x - arm)} y1={centroid.y} x2={f(centroid.x + arm)} y2={centroid.y} />
-            <line x1={centroid.x} y1={f(centroid.y - arm)} x2={centroid.x} y2={f(centroid.y + arm)} />
-            <circle cx={centroid.x} cy={centroid.y} r={dot} />
-          </g>
-        )}
-
-        {viz.points && (
-          <g className="sl-layer-points">
-            {shape.points.map((point, index) => (
-              <g key={index}>
-                <circle cx={f(point.x)} cy={f(point.y)} r={dot} />
-                {viz.pointLabels && (
-                  <text x={f(point.x + dot * 1.8)} y={f(point.y - dot * 1.4)} fontSize={labelSize}>
-                    {index}
-                  </text>
-                )}
-              </g>
-            ))}
-          </g>
-        )}
-
-        {viz.intersections && hits.length > 0 && (
-          <g className="sl-layer-hits">
-            {hits.map((point, index) => (
-              <circle key={index} cx={f(point.x)} cy={f(point.y)} r={hit} />
-            ))}
+        {ground && (
+          <g className="sl-layer-ground">
+            <line x1={ground.x1} y1={ground.y} x2={ground.x2} y2={ground.y} />
           </g>
         )}
       </g>
