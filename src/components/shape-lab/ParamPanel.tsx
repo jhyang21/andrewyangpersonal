@@ -27,6 +27,7 @@ const VIZ_LABELS: { key: keyof VizToggles; label: string }[] = [
   { key: "construction", label: "Construction" },
   { key: "centroid", label: "Centroid" },
   { key: "contactRegion", label: "Contact region" },
+  { key: "balancedPose", label: "Balanced pose" },
   { key: "intersections", label: "Intersections" },
   { key: "boundingBox", label: "Bounding box" },
   { key: "domainSquare", label: "Domain square" },

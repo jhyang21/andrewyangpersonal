@@ -399,6 +399,16 @@
   stroke-width: 2;
 }
 
+/*
+ * The ground the balanced pose stands on. It runs unbroken past both ends of the shape, which is
+ * what separates it from the bracketed contact bar: that one measures a span, this one is a floor.
+ */
+.sl-layer-ground line {
+  stroke: var(--sl-accent);
+  stroke-width: 1.25;
+  opacity: 0.7;
+}
+
 .sl-layer-centroid line,
 .sl-layer-centroid circle {
   fill: none;

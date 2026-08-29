@@ -1,5 +1,6 @@
 import { useId } from "react";
 import { PART_DESCRIPTIONS } from "@/lib/shape-lab/balance";
+import { restPose } from "@/lib/shape-lab/rest";
 import type { Shape } from "@/lib/shape-lab/types";
 import { Info } from "./controls";
 
@@ -33,6 +34,8 @@ export function StatsPanel({ shape, onExport, onCopy, copied }: Props) {
   const tipId = useId();
   const maxWeight = m.precariousnessParts.reduce((best, part) => Math.max(best, part.weight), 1);
   const aspect = m.bbox.height / Math.max(m.bbox.width, 1e-9);
+  // The turn reads the same either way round, so the two directions fold onto one 0–180 reading.
+  const pose = restPose(shape.silhouette, m.centroid);
 
   // The two crossing counts should always read zero; a non-zero value there means the solver's
   // hard guarantee didn't hold, which is what the warn styling says out loud.
@@ -130,6 +133,11 @@ export function StatsPanel({ shape, onExport, onCopy, copied }: Props) {
       label: "Contact width",
       value: dec(m.contact.width),
       tip: "The span the shape stands on. A small number is a small foot.",
+    },
+    {
+      label: "Rest tilt",
+      value: pose ? `${dec(Math.abs(pose.angleDeg), 1)}°` : "—",
+      tip: "How far the shape is turned from the way it would settle if you set it down on flat ground. 0 means it already stands balanced.",
     },
     {
       label: "Centroid offset",
