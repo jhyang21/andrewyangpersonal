@@ -195,25 +195,6 @@ export function scoreCandidateRange(
   return { bestSeed, bestScore };
 }
 
-export function findPrecarious(
-  baseSeed: number,
-  settings: Settings,
-  locks: Locks,
-  candidateCount: number,
-  onProgress?: (done: number, total: number) => void,
-): SearchResult {
-  const total = Math.max(1, Math.round(candidateCount));
-  const chunk = 100;
-  let best: SearchResult = { bestSeed: baseSeed, bestScore: -Infinity };
-  for (let start = 0; start < total; start += chunk) {
-    const end = Math.min(total, start + chunk);
-    const result = scoreCandidateRange(baseSeed, settings, locks, start, end);
-    if (result.bestScore > best.bestScore) best = result;
-    onProgress?.(end, total);
-  }
-  return best;
-}
-
 /** Open path — the construction layer draws arcs that must not close. */
 export function toPolylinePathD(silhouette: Vec[], decimals = 4): string {
   if (silhouette.length === 0) return "";

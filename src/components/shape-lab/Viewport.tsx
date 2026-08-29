@@ -56,9 +56,7 @@ export function Viewport({ shape, viz }: Props) {
   // One length that every marker and label is sized against, so they stay proportionate at any zoom.
   const unit = Math.max(width, height);
   const pad = PAD * unit;
-  const viewBox = [minX - pad, minY - pad, width + 2 * pad, height + 2 * pad]
-    .map((value) => Number(value.toFixed(4)))
-    .join(" ");
+  const viewBox = [minX - pad, minY - pad, width + 2 * pad, height + 2 * pad].map(f).join(" ");
 
   const dot = f(0.009 * unit);
   const hit = f(0.014 * unit);

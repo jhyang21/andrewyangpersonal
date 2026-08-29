@@ -173,7 +173,6 @@ type Arc = {
 
 type Ctx = {
   n: number;
-  order: number[];
   vertices: Vec[];
   arcs: Arc[];
   clearance: number;
@@ -701,7 +700,6 @@ export type SolveResult = {
   arcs: ArcProps[];
   report: ConstraintReport;
   hits: Vec[];
-  attempts: number;
 };
 
 export function solveArcs(
@@ -762,7 +760,6 @@ export function solveArcs(
 
   const ctx: Ctx = {
     n,
-    order,
     vertices,
     arcs,
     clearance,
@@ -777,7 +774,6 @@ export function solveArcs(
   let validation = validateArcs(ctx, renderResolution);
   let fallbackLevel = 0;
   let repairs = 0;
-  let attempts = 1;
   let usedResolution = solveResolution;
 
   if (!validation.ok) {
@@ -791,7 +787,6 @@ export function solveArcs(
     // D6: an invalid result is a sampling artifact, so re-solve against a finer
     // polyline rather than re-drawing the proposals.
     fallbackLevel = 2;
-    attempts = 2;
     usedResolution = Math.min(REFINE_FACTOR * renderResolution, REFINE_RES_MAX);
     ctx.resolution = usedResolution;
     grow(ctx, seed, settings, passes, sideJitter, growthJitter);
@@ -861,7 +856,6 @@ export function solveArcs(
   return {
     arcs: arcs.map((arc) => ({ k: arc.k, side: arc.side })),
     hits: validation.hits,
-    attempts,
     report: {
       arcs: reports,
       effectiveClearance: clearance,
