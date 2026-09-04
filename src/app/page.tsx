@@ -45,9 +45,16 @@ export default function HomePage() {
               everything from prediction market bots to a voice-native cooking assistant.
             </p>
             <p>
-              I majored in Psychology and minored in Artificial Intelligence at Emory, where I published
-              a paper on metacognition  at the Cognition &amp;
-              Visualization Lab.
+              I majored in Psychology and minored in Artificial Intelligence at Emory, where I published{" "}
+              <a
+                href="https://dl.acm.org/doi/abs/10.1145/3706598.3714400"
+                className="text-[var(--color-accent)] underline underline-offset-2 hover:text-[var(--color-ink)]"
+                target="_blank"
+                rel="noreferrer"
+              >
+                a paper on metacognition
+              </a>{" "}
+              at the Cognition &amp; Visualization Lab.
             </p>
             <p>
               I care about building things that truly help people, making their day or their life better. 

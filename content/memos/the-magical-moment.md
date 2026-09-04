@@ -2,7 +2,6 @@
 title: "The magical moment"
 date: "2026-03-23"
 summary: "Why the best products feel like magic, and how I think about it with Relora."
-thesis: "the-magical-moment"
 revision_1_date: "2026-03-23"
 revision_1_note: "First version"
 ---

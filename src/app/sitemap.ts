@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: SITE_URL },
-    { url: `${SITE_URL}/theses` },
     { url: `${SITE_URL}/memos` },
     ...memos,
   ];

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 type SiteNavProps = {
-  current?: "home" | "memos" | "theses";
+  current?: "home" | "memos";
 };
 
 export function SiteNav({ current = "home" }: SiteNavProps) {
@@ -18,12 +18,6 @@ export function SiteNav({ current = "home" }: SiteNavProps) {
         Andrew Yang
       </Link>
       <nav className="flex items-center gap-6">
-        <Link
-          href="/theses"
-          className={`${linkClass} ${current === "theses" ? activeClass : ""}`}
-        >
-          Theses
-        </Link>
         <Link
           href="/memos"
           className={`${linkClass} ${current === "memos" ? activeClass : ""}`}

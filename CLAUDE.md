@@ -1,6 +1,6 @@
 # CLAUDE.md — Andrew Yang Personal Site
 
-Personal portfolio/blog with memos and theses. Next.js 16 App Router, Tailwind v4, filesystem-based content.
+Personal portfolio/blog with memos. Next.js 16 App Router, Tailwind v4, filesystem-based content.
 
 The site is static except for one feature: **Final Shift** (`/final-shift`), the RSVP for Andrew's
 leaving party at Ape Coffee. It is the only part of the codebase with a database, API routes, client
@@ -53,9 +53,7 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 | Type | Source | Format |
 |---|---|---|
 | Memos | `content/memos/*.md` | Markdown with YAML frontmatter |
-| Theses | `content/theses.json` | JSON array |
 
-- Memos link to theses via `thesis` frontmatter field → thesis `slug`
 - Memo detail pages are statically generated (`generateStaticParams`)
 - **Adding/editing content requires a redeploy**
 

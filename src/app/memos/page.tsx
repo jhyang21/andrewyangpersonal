@@ -16,7 +16,7 @@ export default function MemosPage() {
       <main className="mx-auto w-full max-w-2xl px-6 pb-20">
         <h1 className="font-serif text-4xl text-[var(--color-ink)]">Memos</h1>
         <p className="mt-3 text-base text-[var(--color-muted)]">
-          Long-form versions of what I believe. Each one ties back to a thesis.
+          Long-form versions of what I believe.
         </p>
 
         {memos.length === 0 ? (
