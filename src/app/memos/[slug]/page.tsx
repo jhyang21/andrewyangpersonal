@@ -3,7 +3,6 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { SiteNav } from "@/components/SiteNav";
 import { getMemo, getAllMemoSlugs } from "@/lib/memos";
-import { getThesisBySlug } from "@/lib/theses";
 import { markdownToHtml } from "@/lib/markdown";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -41,9 +40,6 @@ export default async function MemoPage({ params }: Props) {
   if (!memo) notFound();
 
   const html = markdownToHtml(memo.content);
-  const linkedThesis = memo.thesisSlug
-    ? getThesisBySlug(memo.thesisSlug)
-    : null;
 
   return (
     <div className="min-h-screen">
@@ -60,17 +56,6 @@ export default async function MemoPage({ params }: Props) {
           <h1 className="mt-2 font-serif text-4xl leading-tight text-[var(--color-ink)]">
             {memo.title}
           </h1>
-
-          {linkedThesis && (
-            <div className="mt-4 rounded border border-[var(--color-border-warm)] bg-[var(--color-paper)] px-4 py-3">
-              <p className="text-xs uppercase tracking-wide text-[var(--color-accent)]">
-                Thesis
-              </p>
-              <p className="mt-1 text-sm text-[var(--color-muted)]">
-                {linkedThesis.body.split("\n\n")[0]}
-              </p>
-            </div>
-          )}
 
           <div
             className="prose-post mt-8"

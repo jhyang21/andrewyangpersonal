@@ -2,7 +2,6 @@
 title: "I Biked Across Korea So I'd Have Something to Tell VCs"
 date: "2026-06-08"
 summary: "633 km from Seoul to Busan in 6 days — as a not-so-fit beginner biker who needed a story for startup interviews."
-thesis: "sidequests-are-underrated"
 revision_1_date: "2026-06-08"
 revision_1_note: "First version"
 ---

@@ -3,8 +3,8 @@ import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
 
 /*
  * Fonts are scoped to this subtree, the same arrangement `/final-shift` uses. `next/font/google` can
- * be called from any server file, so the root layout's Inter + Fraunces stay untouched and `/`,
- * `/memos`, and `/theses` never load or preload either family below.
+ * be called from any server file, so the root layout's Inter + Fraunces stay untouched and `/` and
+ * `/memos` never load or preload either family below.
  *
  * Space Grotesk carries the interface; IBM Plex Mono carries every number, because the readouts
  * update while a slider is dragged and proportional digits make the value jitter sideways.

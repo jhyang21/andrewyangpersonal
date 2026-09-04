@@ -11,7 +11,6 @@ export type MemoMeta = {
   title: string;
   date: string;
   summary?: string;
-  thesisSlug?: string;
   revisions: MemoRevision[];
 };
 
@@ -69,7 +68,6 @@ export function getAllMemos(): MemoMeta[] {
         title: meta.title || file.replace(/\.md$/, ""),
         date: meta.date || "",
         summary: meta.summary || undefined,
-        thesisSlug: meta.thesis || undefined,
         revisions: parseRevisions(raw),
       };
     })
@@ -91,7 +89,6 @@ export function getMemo(slug: string): MemoData | null {
     title: meta.title || slug,
     date: meta.date || "",
     summary: meta.summary || undefined,
-    thesisSlug: meta.thesis || undefined,
     revisions: parseRevisions(raw),
     content,
   };

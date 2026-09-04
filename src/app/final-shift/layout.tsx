@@ -4,8 +4,8 @@ import "./final-shift.css";
 
 /*
  * Fonts are scoped to this subtree. `next/font/google` can be called from any server file, so the
- * root layout's Inter + Fraunces stay exactly as they are on `/`, `/memos`, and `/theses` — those
- * pages never load or preload these three families.
+ * root layout's Inter + Fraunces stay exactly as they are on `/` and `/memos` — those pages never
+ * load or preload these three families.
  *
  * Neither family ships as a variable font on Google Fonts, so every weight is a separate file.
  * Keep this list minimal; don't add italics without a reason.
