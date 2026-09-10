@@ -2,7 +2,7 @@
 
 Personal portfolio/blog with memos. Next.js 16 App Router, Tailwind v4, filesystem-based content.
 
-The site is static. It has no database, no API routes, no client components, and no secrets.
+The site is static. It has no database, no API routes and no secrets. The only client components are the Shape Lab (`src/components/shape-lab/`) and the projects chart.
 
 ---
 
@@ -23,7 +23,7 @@ npm run lint
 - **Next.js 16** App Router (`src/app/`)
 - **Tailwind v4** — CSS-first config in `globals.css` (`@theme inline`), no `tailwind.config.*`
 - **TypeScript** strict, path alias `@/*` → `src/*`
-- **Zero runtime dependencies** beyond Next/React — no markdown libraries, no CMS.
+- **One runtime dependency** beyond Next/React: `katex`, for math in memos. No markdown libraries, no CMS.
 
 ---
 
@@ -53,9 +53,6 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 
 ## Gotchas
 
-- **This file used to warn about a `.env` holding a live Relora `POSTGRES_URL`. There is no such
-  file.** Checked in July 2026: no `.env` on disk and none in git history — `.gitignore` has always
-  covered `.env*`. Nothing was ever exposed and there is nothing to rotate. Secrets now live in
-  `.env.local` and in Vercel (Production **and** Preview — real-phone testing happens on previews).
+- **There is no `.env` and no secrets.** `.env.local` holds only Vercel's OIDC token from `vercel env pull`. `.gitignore` covers `.env*`.
 - **README and PROGRESS.md are stale** — they describe the old Relora waitlist site, not the current personal portfolio
 - `next/font/google` params use `Promise<{ slug: string }>` async pattern (Next.js 15+ requirement)
