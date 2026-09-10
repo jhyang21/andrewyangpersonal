@@ -1,7 +1,7 @@
 /*
  * Unconventional Shape Lab — scoped styles.
  *
- * Everything is namespaced under `.sl-root`, the same reasoning as `.fs-root` and `.bw-root`: this
+ * Everything is namespaced under `.sl-root`, the same reasoning as `.bw-root`: this
  * is a dark instrument panel bolted to a warm-paper site, and none of its colours belong in
  * `globals.css`'s `@theme inline` block, which is emitted on every page. Nothing here reads a site
  * token, because none of them survive the change of ground.
@@ -37,8 +37,7 @@
 
 /*
  * Mandatory. The global `:focus-visible` rule paints a near-white 4px `--color-primary-tint` ring,
- * which is the paper background — invisible here, exactly the trap `.fs-root` documents. Don't
- * remove this.
+ * which is the paper background — invisible here. Don't remove this.
  */
 .sl-root :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
   outline: 2px solid var(--sl-accent);
