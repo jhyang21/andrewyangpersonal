@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllMemos } from "@/lib/memos";
+import { getAllProjects } from "@/lib/projects";
 
 const SITE_URL = "https://www.andrewyangpersonal.com";
 
@@ -13,9 +14,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: memo.date ? new Date(memo.date) : undefined,
   }));
 
+  const projects = getAllProjects().map((project) => ({
+    url: `${SITE_URL}/projects/${project.slug}`,
+    lastModified: project.date ? new Date(project.date) : undefined,
+  }));
+
   return [
     { url: SITE_URL },
     { url: `${SITE_URL}/memos` },
     ...memos,
+    { url: `${SITE_URL}/projects` },
+    ...projects,
   ];
 }

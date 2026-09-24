@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 type SiteNavProps = {
-  current?: "home" | "memos";
+  current?: "home" | "memos" | "projects";
 };
 
 export function SiteNav({ current = "home" }: SiteNavProps) {
@@ -23,6 +23,12 @@ export function SiteNav({ current = "home" }: SiteNavProps) {
           className={`${linkClass} ${current === "memos" ? activeClass : ""}`}
         >
           Memos
+        </Link>
+        <Link
+          href="/projects"
+          className={`${linkClass} ${current === "projects" ? activeClass : ""}`}
+        >
+          Projects
         </Link>
       </nav>
     </header>

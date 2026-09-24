@@ -1,0 +1,348 @@
+/*
+ * Brent–WTI chart — scoped styles.
+ *
+ * Everything is namespaced under `.bw-root`, the same reasoning as `.fs-root`: the terracotta the
+ * WTI line needs is a chart colour, not a site colour, so it has no business in `globals.css`'s
+ * `@theme inline` block, which is emitted on every page. Site tokens are read here, never redefined.
+ *
+ * SVG presentation lives in CSS rather than on attributes because several rules are stateful
+ * (`:hover`, `:focus-visible`, `.is-hot`) and a couple are descendant selectors — neither expresses
+ * as a React prop without repeating the colour on every node.
+ */
+
+.bw-root {
+  /*
+   * WTI is terracotta, not a second green. Against the teal Brent line it sits at about ΔE 8, the
+   * boundary where a red-green colour vision deficiency starts to merge the two, so the pair is
+   * never asked to carry meaning alone: both lines are labelled directly at their right end and
+   * again in the legend and the tooltip.
+   */
+  --bw-wti: #c76a45;
+  --bw-brent: var(--color-accent);
+  --bw-spread: var(--color-ink);
+}
+
+/*
+ * The global `:focus-visible` rule paints a 4px `--color-primary-tint` ring, which is near-white and
+ * therefore invisible on this card's white surface — the same trap `.fs-root` documents. Scope a
+ * visible accent ring for everything focusable in here, including `summary` and the SVG chips, which
+ * the global rule does not cover at all.
+ */
+.bw-root :focus-visible,
+.bw-root .bw-seg:has(input:focus-visible) {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--color-accent-tint);
+}
+
+/* ---- controls ------------------------------------------------------------------------------ */
+
+.bw-seg-legend {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-bottom: 6px;
+}
+
+.bw-seg-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 3px;
+  background: var(--color-primary-tint);
+  border-radius: 10px;
+}
+
+/*
+ * 44px tall, not the 32 a segmented control usually gets. These sit in a row on a phone where the
+ * targets are already narrow, and a near miss silently redraws the whole chart.
+ */
+.bw-seg {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--color-muted);
+  cursor: pointer;
+}
+
+.bw-seg:hover {
+  color: var(--color-ink);
+}
+
+.bw-seg-on {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(16, 20, 24, 0.08);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bw-seg {
+    transition:
+      background 120ms ease,
+      color 120ms ease;
+  }
+}
+
+/* ---- chart --------------------------------------------------------------------------------- */
+
+.bw-plot {
+  position: relative;
+}
+
+.bw-plot svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.bw-gridline,
+.bw-axisline {
+  stroke: var(--color-border-warm);
+  stroke-width: 1;
+}
+
+.bw-tick {
+  fill: var(--color-muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.bw-series {
+  fill: none;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.bw-series-brent {
+  stroke: var(--bw-brent);
+}
+
+.bw-series-wti {
+  stroke: var(--bw-wti);
+}
+
+.bw-series-spread {
+  stroke: var(--bw-spread);
+}
+
+.bw-fill-spread {
+  fill: var(--color-accent);
+  opacity: 0.09;
+}
+
+.bw-baseline {
+  fill: none;
+  stroke: var(--color-muted);
+  stroke-width: 1.25;
+}
+
+.bw-endlabel {
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--color-ink);
+}
+
+.bw-endlabel-muted {
+  font-size: 10.5px;
+  fill: var(--color-muted);
+}
+
+.bw-event-line {
+  stroke: var(--color-border-warm);
+  stroke-width: 1;
+}
+
+.bw-event-line.is-hot {
+  stroke: var(--color-muted);
+}
+
+.bw-chip circle {
+  fill: var(--color-primary-tint);
+  stroke: var(--color-border-warm);
+  stroke-width: 1;
+}
+
+.bw-chip text {
+  fill: var(--color-muted);
+  font-size: 9.5px;
+  font-weight: 600;
+  text-anchor: middle;
+}
+
+.bw-chip:hover circle,
+.bw-chip.is-hot circle {
+  fill: var(--color-accent-tint);
+  stroke: var(--color-accent);
+}
+
+.bw-chip:hover text,
+.bw-chip.is-hot text {
+  fill: var(--color-ink);
+}
+
+.bw-crosshair {
+  stroke: var(--color-muted);
+  stroke-width: 1;
+}
+
+/* ---- tooltip ------------------------------------------------------------------------------- */
+
+.bw-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  pointer-events: none;
+  min-width: 176px;
+  padding: 8px 12px;
+  font-size: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-warm);
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(16, 20, 24, 0.14);
+}
+
+.bw-tt-date {
+  color: var(--color-muted);
+  margin-bottom: 4px;
+}
+
+.bw-tt-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 1px 0;
+}
+
+.bw-tt-key {
+  flex: none;
+  width: 12px;
+  height: 0;
+  border-top: 2.5px solid;
+  border-radius: 2px;
+}
+
+.bw-tt-val {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink);
+}
+
+.bw-tt-name {
+  color: var(--color-muted);
+}
+
+.bw-tt-event {
+  max-width: 210px;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid var(--color-border-warm);
+  color: var(--color-muted);
+}
+
+/* ---- events list --------------------------------------------------------------------------- */
+
+.bw-events {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 6px 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bw-events li {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.bw-events .bw-num {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-primary-tint);
+  border: 1px solid var(--color-border-warm);
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--color-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(3px);
+}
+
+.bw-events li.is-hot .bw-num {
+  background: var(--color-accent-tint);
+  border-color: var(--color-accent);
+  color: var(--color-ink);
+}
+
+.bw-events .bw-ev-date {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* ---- data table ---------------------------------------------------------------------------- */
+
+.bw-table-toggle {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-muted);
+  border-radius: 4px;
+}
+
+.bw-table-toggle:hover {
+  color: var(--color-ink);
+}
+
+.bw-table-wrap {
+  overflow: auto;
+  max-height: 460px;
+  margin-top: 10px;
+  border: 1px solid var(--color-border-warm);
+  border-radius: 10px;
+}
+
+.bw-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.bw-table th,
+.bw-table td {
+  text-align: right;
+  padding: 6px 14px;
+  border-bottom: 1px solid var(--color-border-warm);
+  color: var(--color-ink);
+}
+
+.bw-table th:first-child,
+.bw-table td:first-child {
+  text-align: left;
+}
+
+.bw-table th {
+  position: sticky;
+  top: 0;
+  background: var(--color-surface);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.bw-table tr:last-child td {
+  border-bottom: 0;
+}
