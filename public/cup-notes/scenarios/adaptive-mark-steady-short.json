@@ -1,0 +1,1937 @@
+{
+  "key": "adaptive-mark-steady-short",
+  "levers": {
+    "enforcement": "adaptive",
+    "note": "mark",
+    "traffic": "steady",
+    "staffing": "short"
+  },
+  "outcomes": {
+    "compliance_pct": 37.5,
+    "personal_pct": 13.5,
+    "skip_pct": 62.5,
+    "avg_seconds_added": 2.9,
+    "avg_wait_min": 5.8,
+    "barista_sentiment": 62.3,
+    "barista_stress": 64.5,
+    "customer_satisfaction": 68.4,
+    "connection": 36.1,
+    "noticed_pct": 68.8,
+    "delighted_pct": 6.2,
+    "annoyed_pct": 11.5,
+    "would_mention_pct": 16.7
+  },
+  "has_fallback": false,
+  "managers": [
+    {
+      "store": "drive-thru",
+      "stance": "enforce_offpeak",
+      "intensity": 70,
+      "tracks_compliance": true,
+      "peak_exception": true,
+      "message_to_team": "The memo calls for a mark on every cup off-peak, so please add one when you can. Since we're short-staffed, you may skip it when it gets in the way of covering the floor; six or more waiting is also a reason to skip.",
+      "private_thought": "I’ll check how we’re doing, but I don’t want a note slowing the window or leaving a position uncovered.",
+      "expected_friction": 25
+    },
+    {
+      "store": "office-tower",
+      "stance": "encourage",
+      "intensity": 30,
+      "tracks_compliance": false,
+      "peak_exception": true,
+      "message_to_team": "Corporate wants a mark on cups when it’s off-peak, but we’re down a person today, so keep the line moving and don’t let notes slow service. If it’s easy, add a quick smiley or ‘enjoy’—I’m not checking cups.",
+      "private_thought": "This doesn’t move throughput or labor in the right direction, and with one person out I’m not spending time policing it.",
+      "expected_friction": 12
+    },
+    {
+      "store": "campus",
+      "stance": "encourage",
+      "intensity": 35,
+      "tracks_compliance": false,
+      "peak_exception": true,
+      "message_to_team": "Corporate wants a little handwritten mark on cups when it’s steady, so if you’ve got a moment, make it something easy and yours—no need to add pressure while we’re covering the call-out. If the line builds, focus on getting people served and we’ll let the notes go.",
+      "private_thought": "I can show we’re trying without turning an already stretched shift into another thing the team feels judged on.",
+      "expected_friction": 20
+    },
+    {
+      "store": "mall-kiosk",
+      "stance": "encourage",
+      "intensity": 15,
+      "tracks_compliance": false,
+      "peak_exception": true,
+      "message_to_team": "Corporate wants a little note on cups when we can manage it. We’re short today, so keep the line moving and don’t sweat it if you can’t.",
+      "private_thought": "Nobody checks these here, and we’ve got enough to juggle without making it a thing.",
+      "expected_friction": 5
+    },
+    {
+      "store": "neighborhood",
+      "stance": "enforce_offpeak",
+      "intensity": 68,
+      "tracks_compliance": true,
+      "peak_exception": true,
+      "message_to_team": "Corporate expects a little note on every cup while it’s calm, so please add a smiley or a quick ‘enjoy’ and I’ll check in on it. If we get six waiting or we’re short-staffed, skip it and focus on getting drinks out—we’re already covering an extra spot today.",
+      "private_thought": "I want to show I’m taking the memo seriously, but I don’t want the team thinking I’m making their short-staffed shift harder just to tick a box.",
+      "expected_friction": 38
+    },
+    {
+      "store": "airport",
+      "stance": "encourage",
+      "intensity": 35,
+      "tracks_compliance": false,
+      "peak_exception": true,
+      "message_to_team": "Corporate wants a mark on cups when it’s slow, so if you can add a quick smiley or ‘enjoy’ without slowing the handoff, do it. We’re short today; keep the line moving and don’t sweat the note if it gets busy.",
+      "private_thought": "They’ll count this as compliance if anyone asks, but I’m not going to trade speed or crew bandwidth for a doodle on every airport cup.",
+      "expected_friction": 12
+    }
+  ],
+  "shifts": [
+    {
+      "store": "drive-thru",
+      "barista": "kayla",
+      "stress": 78,
+      "sentiment": 82,
+      "quote": "I wanted to do more little doodles, but that line just kept growing and we were covering for one person. I got to write something nice for my usual at least.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "commuter",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 45,
+            "connection": 10,
+            "wait_annoyance": 65,
+            "would_mention": false,
+            "quote": "Six minutes I didn’t have—hope I still make the train."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "skeptic",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 55,
+            "connection": 20,
+            "wait_annoyance": 58,
+            "would_mention": false,
+            "quote": "Eight minutes for a plain coffee, and my name’s spelled right."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "student",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 76,
+            "connection": 18,
+            "wait_annoyance": 20,
+            "would_mention": false,
+            "quote": "Eight minutes was fine, and the cup’s just got my name on it."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "tourist",
+          "queue": 8,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 8.7,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 78,
+            "connection": 35,
+            "wait_annoyance": 12,
+            "would_mention": true,
+            "quote": "Got my caramel frappuccino after a little wait—another fun stop on the trip."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "parent",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 52,
+            "connection": 35,
+            "wait_annoyance": 65,
+            "would_mention": false,
+            "quote": "Okay, let’s get the hot chocolate to the little one and go."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "elder",
+          "queue": 6,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 86,
+            "connection": 76,
+            "wait_annoyance": 5,
+            "would_mention": false,
+            "quote": "That little smile on the cup was a nice touch, and I didn’t mind the wait."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "mobile",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 65,
+            "connection": 10,
+            "wait_annoyance": 15,
+            "would_mention": false,
+            "quote": "Grabbed my coffee and headed out; nothing much to report."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "regular",
+          "queue": 5,
+          "action": "personal",
+          "note_text": "Hope your weekend was lovely!",
+          "seconds_added": 12,
+          "wait_min": 5.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 82,
+            "connection": 76,
+            "wait_annoyance": 28,
+            "would_mention": false,
+            "quote": "That was sweet of them to write, and six minutes isn’t bad for a mid-morning stop."
+          }
+        }
+      ]
+    },
+    {
+      "store": "drive-thru",
+      "barista": "devon",
+      "stress": 58,
+      "sentiment": 43,
+      "quote": "Six or more in line means I’m not stopping to decorate cups. When it dropped below that, I gave the last one a smiley and kept moving.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "parent",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 58,
+            "connection": 20,
+            "wait_annoyance": 65,
+            "would_mention": false,
+            "quote": "At least we’ve got the drinks—six minutes with a toddler feels like forever."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "elder",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 70,
+            "connection": 45,
+            "wait_annoyance": 15,
+            "would_mention": false,
+            "quote": "A bit of a wait, but I don't mind that; I just like a little conversation when I come in."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "commuter",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": false,
+            "reaction": "annoyed",
+            "satisfaction": 25,
+            "connection": 10,
+            "wait_annoyance": 90,
+            "would_mention": false,
+            "quote": "Eight minutes for a black coffee—I’m going to miss my train."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "regular",
+          "queue": 8,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 8.7,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 62,
+            "connection": 45,
+            "wait_annoyance": 48,
+            "would_mention": false,
+            "quote": "Nine minutes for my usual, and just my name on the cup—could’ve used a little hello."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "tourist",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 82,
+            "connection": 35,
+            "wait_annoyance": 18,
+            "would_mention": true,
+            "quote": "The caramel frappuccino was a fun little stop, though the cup was just my name."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "mobile",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 74,
+            "connection": 8,
+            "wait_annoyance": 12,
+            "would_mention": false,
+            "quote": "Got my Americano and I’m heading to my desk."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "student",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 75,
+            "connection": 20,
+            "wait_annoyance": 15,
+            "would_mention": false,
+            "quote": "Six minutes is fine, and the cup’s just got my name on it."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "skeptic",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 5.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 67,
+            "connection": 18,
+            "wait_annoyance": 34,
+            "would_mention": false,
+            "quote": "It’s a smiley face on a coffee cup—anyway, the coffee’s fine."
+          }
+        }
+      ]
+    },
+    {
+      "store": "office-tower",
+      "barista": "lin",
+      "stress": 72,
+      "sentiment": 49,
+      "quote": "Skipped them while we were short and the line was stacked. Got a smiley on the last one when it finally eased up.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "tourist",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 78,
+            "connection": 35,
+            "wait_annoyance": 12,
+            "would_mention": false,
+            "quote": "Nice little stop, and the caramel frappuccino will look good in my trip photos."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "skeptic",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 52,
+            "connection": 18,
+            "wait_annoyance": 65,
+            "would_mention": false,
+            "quote": "Eight minutes for drip, and all I got was my name—fair enough."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "elder",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 74,
+            "connection": 55,
+            "wait_annoyance": 15,
+            "would_mention": false,
+            "quote": "Nothing special on the cup today, but at least I got my latte."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "commuter",
+          "queue": 8,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 8.7,
+          "reaction": {
+            "noticed": false,
+            "reaction": "annoyed",
+            "satisfaction": 18,
+            "connection": 10,
+            "wait_annoyance": 92,
+            "would_mention": false,
+            "quote": "Nine minutes for a black coffee—I’m going to miss my train."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "student",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 72,
+            "connection": 30,
+            "wait_annoyance": 25,
+            "would_mention": false,
+            "quote": "Eight minutes was fine, and the cup just has my name on it."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "mobile",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "neutral",
+            "satisfaction": 78,
+            "connection": 8,
+            "wait_annoyance": 10,
+            "would_mention": false,
+            "quote": "Got my americano and I’m on my way; nothing much to note."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "regular",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 68,
+            "connection": 42,
+            "wait_annoyance": 24,
+            "would_mention": false,
+            "quote": "My name’s there, but I was hoping for a little something that felt more like us."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "parent",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 5.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 68,
+            "connection": 38,
+            "wait_annoyance": 42,
+            "would_mention": false,
+            "quote": "Oh, that’s a cute little smiley—now let me get this hot chocolate to the toddler."
+          }
+        }
+      ]
+    },
+    {
+      "store": "office-tower",
+      "barista": "andre",
+      "stress": 68,
+      "sentiment": 72,
+      "quote": "We were down a person and the line never really let up, so I kept it moving. Got a quick smiley on the last one when I had a second.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "skeptic",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 63,
+            "connection": 22,
+            "wait_annoyance": 42,
+            "would_mention": false,
+            "quote": "Six minutes for a drip, and my name's spelled right."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "regular",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 66,
+            "connection": 45,
+            "wait_annoyance": 35,
+            "would_mention": false,
+            "quote": "Just my name today—coffee’s good, but the wait was a bit much."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "commuter",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": false,
+            "reaction": "annoyed",
+            "satisfaction": 25,
+            "connection": 15,
+            "wait_annoyance": 85,
+            "would_mention": false,
+            "quote": "Eight minutes for a black coffee—I’m going to miss my train."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "student",
+          "queue": 8,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 8.7,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 72,
+            "connection": 24,
+            "wait_annoyance": 18,
+            "would_mention": false,
+            "quote": "Just my name on the cup, and now I can get to work."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "tourist",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 78,
+            "connection": 45,
+            "wait_annoyance": 12,
+            "would_mention": true,
+            "quote": "Got my caramel frappuccino after a little wait—cute stop for the trip, and the menu was fun to photograph."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "mobile",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 70,
+            "connection": 5,
+            "wait_annoyance": 30,
+            "would_mention": false,
+            "quote": "Six minutes is a bit longer than I wanted, but at least I’ve got my coffee."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "parent",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 52,
+            "connection": 38,
+            "wait_annoyance": 62,
+            "would_mention": false,
+            "quote": "At least we’ve got the drinks; six minutes feels like a lot with a toddler."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "elder",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 5.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 86,
+            "connection": 72,
+            "wait_annoyance": 8,
+            "would_mention": true,
+            "quote": "That little smile on my cup was a nice touch; I’ll keep it."
+          }
+        }
+      ]
+    },
+    {
+      "store": "campus",
+      "barista": "sofia",
+      "stress": 58,
+      "sentiment": 87,
+      "quote": "I was trying to keep the little cup doodles going even with the call-out, but when the line hit six I let the notes go. That tiny cat on the hot chocolate was worth the extra few seconds.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "parent",
+          "queue": 4,
+          "action": "personal",
+          "note_text": "A tiny cat for your little one",
+          "seconds_added": 14,
+          "wait_min": 5.3,
+          "reaction": {
+            "noticed": true,
+            "reaction": "delighted",
+            "satisfaction": 87,
+            "connection": 91,
+            "wait_annoyance": 38,
+            "would_mention": true,
+            "quote": "The wait was a bit much with the toddler, but that tiny cat on their cup is going to make their day."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "student",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": "☆",
+          "seconds_added": 3,
+          "wait_min": 6.1,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 82,
+            "connection": 34,
+            "wait_annoyance": 12,
+            "would_mention": false,
+            "quote": "Nice of them to draw that, though I’m mostly just ready to find a table and get working."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "tourist",
+          "queue": 5,
+          "action": "personal",
+          "note_text": "Enjoy your campus adventure!",
+          "seconds_added": 12,
+          "wait_min": 6.2,
+          "reaction": {
+            "noticed": true,
+            "reaction": "delighted",
+            "satisfaction": 94,
+            "connection": 83,
+            "wait_annoyance": 8,
+            "would_mention": true,
+            "quote": "That little campus adventure note is such a fun touch—definitely going in my photo dump!"
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "mobile",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.2,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 62,
+            "connection": 5,
+            "wait_annoyance": 35,
+            "would_mention": false,
+            "quote": "It was fine, though I did wait longer than I expected."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "skeptic",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 6.0,
+          "reaction": {
+            "noticed": true,
+            "reaction": "annoyed",
+            "satisfaction": 42,
+            "connection": 18,
+            "wait_annoyance": 58,
+            "would_mention": false,
+            "quote": "A smiley doesn't make the wait shorter."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "elder",
+          "queue": 4,
+          "action": "personal",
+          "note_text": "Lovely to see you—hope your day’s good",
+          "seconds_added": 16,
+          "wait_min": 4.9,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 90,
+            "connection": 88,
+            "wait_annoyance": 8,
+            "would_mention": true,
+            "quote": "That was a lovely little thing to write—I'll keep this cup."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "commuter",
+          "queue": 4,
+          "action": "smiley",
+          "note_text": "☆",
+          "seconds_added": 3,
+          "wait_min": 4.8,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 42,
+            "connection": 10,
+            "wait_annoyance": 65,
+            "would_mention": false,
+            "quote": "Five minutes is not what I needed right now; I just have to make the train."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "regular",
+          "queue": 3,
+          "action": "personal",
+          "note_text": "Hope your weekend was as lovely as you!",
+          "seconds_added": 15,
+          "wait_min": 3.7,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 88,
+            "connection": 74,
+            "wait_annoyance": 8,
+            "would_mention": false,
+            "quote": "Aw, that’s nice of them—I'll ask how their weekend went when I see them."
+          }
+        }
+      ]
+    },
+    {
+      "store": "campus",
+      "barista": "noah",
+      "stress": 68,
+      "sentiment": 56,
+      "quote": "I did a few smileys when I could, but we were covering the call-out all morning. I’m glad nobody was checking every cup.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "mobile",
+          "queue": 4,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 4.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 75,
+            "connection": 10,
+            "wait_annoyance": 15,
+            "would_mention": false,
+            "quote": "Got my coffee without much fuss, and I’ll check it properly when I sit down."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "skeptic",
+          "queue": 5,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 5.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 58,
+            "connection": 15,
+            "wait_annoyance": 35,
+            "would_mention": false,
+            "quote": "Six minutes, coffee, my name—nothing to report."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "student",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 5.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 78,
+            "connection": 28,
+            "wait_annoyance": 12,
+            "would_mention": false,
+            "quote": "Six minutes was fine, and the smiley doesn't really mean anything to me."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "elder",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.7,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 68,
+            "connection": 45,
+            "wait_annoyance": 12,
+            "would_mention": false,
+            "quote": "A little wait, but that's all right—just my name on the cup today."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "regular",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 5.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 82,
+            "connection": 76,
+            "wait_annoyance": 28,
+            "would_mention": false,
+            "quote": "A little smiley—nice of them, though I wish they'd written my name or asked how my weekend was."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "tourist",
+          "queue": 4,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 4.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "delighted",
+            "satisfaction": 95,
+            "connection": 82,
+            "wait_annoyance": 5,
+            "would_mention": true,
+            "quote": "That little smiley on my cup is such a cute touch—I’m definitely getting a photo of this."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "commuter",
+          "queue": 4,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 4.4,
+          "reaction": {
+            "noticed": false,
+            "reaction": "annoyed",
+            "satisfaction": 38,
+            "connection": 10,
+            "wait_annoyance": 68,
+            "would_mention": false,
+            "quote": "Four minutes was too long when I’m already late."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "parent",
+          "queue": 3,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 3.3,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 65,
+            "connection": 20,
+            "wait_annoyance": 35,
+            "would_mention": false,
+            "quote": "Glad that was quick; I just need to get the little one settled."
+          }
+        }
+      ]
+    },
+    {
+      "store": "mall-kiosk",
+      "barista": "beth",
+      "stress": 58,
+      "sentiment": 84,
+      "quote": "I still like leaving a little kindness on the cups, even when we're covering an extra spot. The regular made my day, and I kept the notes quick where the line was building.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "tourist",
+          "queue": 3,
+          "action": "personal",
+          "note_text": "Enjoy your visit!",
+          "seconds_added": 15,
+          "wait_min": 4.0,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 88,
+            "connection": 65,
+            "wait_annoyance": 5,
+            "would_mention": true,
+            "quote": "Cute little touch—I’ll snap a photo of my frappuccino while I’m out exploring."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "mobile",
+          "queue": 4,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 4.9,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 75,
+            "connection": 10,
+            "wait_annoyance": 15,
+            "would_mention": false,
+            "quote": "Got my americano, and I’m heading to my desk."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "commuter",
+          "queue": 4,
+          "action": "generic",
+          "note_text": "Have a good one!",
+          "seconds_added": 6,
+          "wait_min": 4.9,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 38,
+            "connection": 12,
+            "wait_annoyance": 78,
+            "would_mention": false,
+            "quote": "Five minutes was too long when I’m already late."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "parent",
+          "queue": 5,
+          "action": "generic",
+          "note_text": "Hope you both enjoy!",
+          "seconds_added": 6,
+          "wait_min": 6.0,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 68,
+            "connection": 72,
+            "wait_annoyance": 58,
+            "would_mention": true,
+            "quote": "That was sweet of them to include my little one, though six minutes with a toddler felt like a lot."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "student",
+          "queue": 4,
+          "action": "generic",
+          "note_text": "Enjoy your study time!",
+          "seconds_added": 6,
+          "wait_min": 4.8,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 78,
+            "connection": 22,
+            "wait_annoyance": 12,
+            "would_mention": false,
+            "quote": "Nice that they wrote something about studying, but it feels like a standard line and I’m just here for my coffee."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "elder",
+          "queue": 3,
+          "action": "personal",
+          "note_text": "Thanks for asking—have a lovely day!",
+          "seconds_added": 20,
+          "wait_min": 3.7,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 91,
+            "connection": 88,
+            "wait_annoyance": 5,
+            "would_mention": true,
+            "quote": "That was kind of them to write that—I'll keep this cup."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "regular",
+          "queue": 3,
+          "action": "personal",
+          "note_text": "Lovely to see you—hope your weekend was",
+          "seconds_added": 22,
+          "wait_min": 3.8,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 78,
+            "connection": 82,
+            "wait_annoyance": 12,
+            "would_mention": true,
+            "quote": "Aw, they thought of me—but my weekend hopes are hanging mid-sentence."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "skeptic",
+          "queue": 2,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 2.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "annoyed",
+            "satisfaction": 68,
+            "connection": 18,
+            "wait_annoyance": 12,
+            "would_mention": false,
+            "quote": "It’s a cup of coffee, not a yearbook."
+          }
+        }
+      ]
+    },
+    {
+      "store": "mall-kiosk",
+      "barista": "tyler",
+      "stress": 54,
+      "sentiment": 38,
+      "quote": "We were short, so I mostly just kept drinks moving. Put a smiley for the regular and a quick note for the older guy—good enough.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "tourist",
+          "queue": 3,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 3.2,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 82,
+            "connection": 35,
+            "wait_annoyance": 5,
+            "would_mention": false,
+            "quote": "That was quick, and this caramel frappuccino is a fun little stop on my trip."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "parent",
+          "queue": 4,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 4.3,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 65,
+            "connection": 25,
+            "wait_annoyance": 50,
+            "would_mention": false,
+            "quote": "Glad we got the drinks without too much fuss; now let’s get moving."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "mobile",
+          "queue": 4,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 4.3,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 75,
+            "connection": 5,
+            "wait_annoyance": 10,
+            "would_mention": false,
+            "quote": "Got my americano without much fuss; I’ll check it properly when I sit down."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "regular",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 5.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 78,
+            "connection": 58,
+            "wait_annoyance": 24,
+            "would_mention": false,
+            "quote": "Aw, nice little smile—though I was hoping for a quick chat with my usual barista too."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "student",
+          "queue": 4,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 4.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 78,
+            "connection": 24,
+            "wait_annoyance": 12,
+            "would_mention": false,
+            "quote": "Got my cold brew, and now I can settle in and work."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "elder",
+          "queue": 3,
+          "action": "generic",
+          "note_text": "Have a good day!",
+          "seconds_added": 6,
+          "wait_min": 3.3,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 82,
+            "connection": 58,
+            "wait_annoyance": 5,
+            "would_mention": false,
+            "quote": "That was a nice little thing to write, and the wait wasn’t a bother."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "skeptic",
+          "queue": 3,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 3.3,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 72,
+            "connection": 25,
+            "wait_annoyance": 14,
+            "would_mention": false,
+            "quote": "Coffee’s fine, and at least nobody held up the line decorating the cup."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "commuter",
+          "queue": 2,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 2.2,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 55,
+            "connection": 20,
+            "wait_annoyance": 40,
+            "would_mention": false,
+            "quote": "Two minutes, fine—just need to make the train."
+          }
+        }
+      ]
+    },
+    {
+      "store": "neighborhood",
+      "barista": "marisol",
+      "stress": 48,
+      "sentiment": 63,
+      "quote": "We were covering an extra spot, so I kept it moving and skipped most of them. The regulars got a little something.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "tourist",
+          "queue": 3,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 3.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "delighted",
+            "satisfaction": 94,
+            "connection": 82,
+            "wait_annoyance": 5,
+            "would_mention": true,
+            "quote": "They drew a little smiley on my cup—such a cute detail for my coffee-stop photo!"
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "skeptic",
+          "queue": 4,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 4.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 72,
+            "connection": 18,
+            "wait_annoyance": 18,
+            "would_mention": false,
+            "quote": "Just my name, which is about right."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "mobile",
+          "queue": 4,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 4.4,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 75,
+            "connection": 5,
+            "wait_annoyance": 10,
+            "would_mention": false,
+            "quote": "Got my americano—now I can get back to work."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "regular",
+          "queue": 5,
+          "action": "personal",
+          "note_text": "Hope your weekend was lovely!",
+          "seconds_added": 10,
+          "wait_min": 5.7,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 82,
+            "connection": 68,
+            "wait_annoyance": 22,
+            "would_mention": false,
+            "quote": "Aw, that’s sweet of them to write—hope they had a nice weekend too."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "commuter",
+          "queue": 4,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 4.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "annoyed",
+            "satisfaction": 35,
+            "connection": 10,
+            "wait_annoyance": 75,
+            "would_mention": false,
+            "quote": "Four minutes I didn’t have—just need to make that train."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "parent",
+          "queue": 3,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 3.4,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 62,
+            "connection": 40,
+            "wait_annoyance": 32,
+            "would_mention": false,
+            "quote": "Glad we got through that without too much fuss—now let’s get these drinks home."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "elder",
+          "queue": 3,
+          "action": "personal",
+          "note_text": "Good to see you—hope you're well!",
+          "seconds_added": 12,
+          "wait_min": 3.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 92,
+            "connection": 88,
+            "wait_annoyance": 0,
+            "would_mention": true,
+            "quote": "That was a thoughtful little thing to write on my cup—I'll keep it."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "student",
+          "queue": 2,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 2.3,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 78,
+            "connection": 45,
+            "wait_annoyance": 5,
+            "would_mention": false,
+            "quote": "Two minutes, cold brew, and a table—works for me."
+          }
+        }
+      ]
+    },
+    {
+      "store": "neighborhood",
+      "barista": "jordan",
+      "stress": 62,
+      "sentiment": 78,
+      "quote": "I got a few nice ones in where it felt right, but covering the extra spot meant I wasn't going to hold up the drinks for every cup. The little notes are fun when I can make them feel like they belong.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "tourist",
+          "queue": 3,
+          "action": "personal",
+          "note_text": "Hope you enjoy Maple & 3rd!",
+          "seconds_added": 14,
+          "wait_min": 4.0,
+          "reaction": {
+            "noticed": true,
+            "reaction": "delighted",
+            "satisfaction": 93,
+            "connection": 78,
+            "wait_annoyance": 5,
+            "would_mention": true,
+            "quote": "That little Maple & 3rd note is such a cute trip detail—I’m definitely getting a photo with my frappuccino."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "elder",
+          "queue": 4,
+          "action": "personal",
+          "note_text": "Good to see you—have a lovely day!",
+          "seconds_added": 18,
+          "wait_min": 5.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 88,
+            "connection": 86,
+            "wait_annoyance": 5,
+            "would_mention": false,
+            "quote": "That was a lovely little thing to find on my cup."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "commuter",
+          "queue": 4,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 5.0,
+          "reaction": {
+            "noticed": false,
+            "reaction": "annoyed",
+            "satisfaction": 40,
+            "connection": 10,
+            "wait_annoyance": 70,
+            "would_mention": false,
+            "quote": "Five minutes for a black coffee when I’m already late—not great."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "parent",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 6.1,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 62,
+            "connection": 38,
+            "wait_annoyance": 55,
+            "would_mention": false,
+            "quote": "Six minutes felt long with the toddler, but at least we’ve got our drinks and that little smiley."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "skeptic",
+          "queue": 4,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 4.8,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 65,
+            "connection": 25,
+            "wait_annoyance": 20,
+            "would_mention": false,
+            "quote": "Coffee’s fine; nothing to report."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "student",
+          "queue": 3,
+          "action": "generic",
+          "note_text": "Enjoy your cold brew!",
+          "seconds_added": 6,
+          "wait_min": 3.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 82,
+            "connection": 18,
+            "wait_annoyance": 8,
+            "would_mention": false,
+            "quote": "Four minutes is fine, and the note feels like part of the routine."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "mobile",
+          "queue": 3,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 3.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "neutral",
+            "satisfaction": 70,
+            "connection": 10,
+            "wait_annoyance": 20,
+            "would_mention": false,
+            "quote": "Four minutes isn’t ideal, but I’ve got my coffee and I’m moving on."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "regular",
+          "queue": 2,
+          "action": "personal",
+          "note_text": "Hope your weekend was lovely!",
+          "seconds_added": 15,
+          "wait_min": 2.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "warm",
+            "satisfaction": 88,
+            "connection": 78,
+            "wait_annoyance": 5,
+            "would_mention": false,
+            "quote": "Aw, that was sweet of them to write—hope they had a lovely weekend too."
+          }
+        }
+      ]
+    },
+    {
+      "store": "airport",
+      "barista": "hassan",
+      "stress": 72,
+      "sentiment": 48,
+      "quote": "We were short all shift, so the notes mostly got skipped. Slowed down for a smiley once the line eased up.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "regular",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 68,
+            "connection": 42,
+            "wait_annoyance": 30,
+            "would_mention": false,
+            "quote": "Just my name today—six minutes wasn’t too bad, but I was hoping for a little more recognition."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "student",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 72,
+            "connection": 25,
+            "wait_annoyance": 24,
+            "would_mention": false,
+            "quote": "Got my cold brew; eight minutes wasn’t ideal, but I’ve got a table and three hours to work."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "mobile",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": false,
+            "reaction": "neutral",
+            "satisfaction": 68,
+            "connection": 10,
+            "wait_annoyance": 28,
+            "would_mention": false,
+            "quote": "At least I’ve got my coffee; that took longer than I expected."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "elder",
+          "queue": 8,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 8.7,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 72,
+            "connection": 55,
+            "wait_annoyance": 15,
+            "would_mention": false,
+            "quote": "A little wait, but that's all right—at least I've got my latte."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "commuter",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": false,
+            "reaction": "annoyed",
+            "satisfaction": 30,
+            "connection": 10,
+            "wait_annoyance": 85,
+            "would_mention": false,
+            "quote": "Eight minutes for a black coffee when I’m already late—great."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "parent",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 58,
+            "connection": 35,
+            "wait_annoyance": 55,
+            "would_mention": false,
+            "quote": "At least we got the drinks, but six minutes with a toddler in line felt longer than it should."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "skeptic",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 60,
+            "connection": 20,
+            "wait_annoyance": 40,
+            "would_mention": false,
+            "quote": "Coffee’s fine; six minutes is six minutes."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "tourist",
+          "queue": 5,
+          "action": "smiley",
+          "note_text": ":)",
+          "seconds_added": 3,
+          "wait_min": 5.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "delighted",
+            "satisfaction": 93,
+            "connection": 78,
+            "wait_annoyance": 5,
+            "would_mention": true,
+            "quote": "They drew a little smiley on my cup—such a fun little airport travel moment!"
+          }
+        }
+      ]
+    },
+    {
+      "store": "airport",
+      "barista": "grace",
+      "stress": 78,
+      "sentiment": 48,
+      "quote": "We were short and the line kept stacking up, so I just focused on getting the drinks out. Ray said not to sweat the notes when it’s busy.",
+      "fallback": false,
+      "cups": [
+        {
+          "slot": 0,
+          "customer": "skeptic",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 58,
+            "connection": 12,
+            "wait_annoyance": 38,
+            "would_mention": false,
+            "quote": "Six minutes for coffee, and at least nobody wrote a slogan on the cup."
+          }
+        },
+        {
+          "slot": 1,
+          "customer": "tourist",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 78,
+            "connection": 38,
+            "wait_annoyance": 15,
+            "would_mention": false,
+            "quote": "Got my caramel frappuccino for the airport wander—nothing unusual on the cup, but it’ll still look good in a photo."
+          }
+        },
+        {
+          "slot": 2,
+          "customer": "mobile",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": false,
+            "reaction": "annoyed",
+            "satisfaction": 55,
+            "connection": 5,
+            "wait_annoyance": 65,
+            "would_mention": false,
+            "quote": "I was hoping it would be ready when the app said."
+          }
+        },
+        {
+          "slot": 3,
+          "customer": "parent",
+          "queue": 8,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 8.7,
+          "reaction": {
+            "noticed": false,
+            "reaction": "indifferent",
+            "satisfaction": 40,
+            "connection": 20,
+            "wait_annoyance": 75,
+            "would_mention": false,
+            "quote": "Glad we finally have the drinks—nine minutes with a toddler in line felt like forever."
+          }
+        },
+        {
+          "slot": 4,
+          "customer": "elder",
+          "queue": 7,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 7.6,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 70,
+            "connection": 55,
+            "wait_annoyance": 20,
+            "would_mention": false,
+            "quote": "Well, it took a little while, but I got my latte and at least we had a moment to ask how each other was doing."
+          }
+        },
+        {
+          "slot": 5,
+          "customer": "commuter",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": false,
+            "reaction": "annoyed",
+            "satisfaction": 35,
+            "connection": 10,
+            "wait_annoyance": 80,
+            "would_mention": false,
+            "quote": "Six minutes I didn’t have, and I still have to make that train."
+          }
+        },
+        {
+          "slot": 6,
+          "customer": "regular",
+          "queue": 6,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 6.5,
+          "reaction": {
+            "noticed": true,
+            "reaction": "neutral",
+            "satisfaction": 68,
+            "connection": 42,
+            "wait_annoyance": 32,
+            "would_mention": false,
+            "quote": "Just my name today—guess everyone’s busy, but I was hoping for a little hello."
+          }
+        },
+        {
+          "slot": 7,
+          "customer": "student",
+          "queue": 5,
+          "action": "skip",
+          "note_text": null,
+          "seconds_added": 0,
+          "wait_min": 5.4,
+          "reaction": {
+            "noticed": true,
+            "reaction": "indifferent",
+            "satisfaction": 75,
+            "connection": 15,
+            "wait_annoyance": 10,
+            "would_mention": false,
+            "quote": "Got my cold brew, and now I can find a table and get to work."
+          }
+        }
+      ]
+    }
+  ]
+}

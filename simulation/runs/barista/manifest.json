@@ -1,0 +1,35 @@
+{
+  "stage": "barista",
+  "model": "gpt-6-luna",
+  "reasoning": "low",
+  "prompt_version": "v1",
+  "endpoint": "/v1/chat/completions",
+  "status": "ingested",
+  "built_at": "2026-10-29T04:31:34Z",
+  "counts": {
+    "total": 288,
+    "built": 288,
+    "already_answered": 0,
+    "responses": 288,
+    "schema_ok": 288,
+    "schema_failures": 0
+  },
+  "est_input_tokens_built": 368406,
+  "updated_at": "2026-10-29T06:15:16Z",
+  "batch_ids": [
+    "batch_6ae2cc280394819093a29bbfb47b55b1"
+  ],
+  "submitted_files": [
+    "359ce2a5a2fff930bef6b0c75ee27cab55eff7b891be643369335207c4b9754a"
+  ],
+  "submitted_at": "2026-10-29T04:31:36Z",
+  "finished_at": "2026-10-29T06:15:00Z",
+  "ingested_batch_ids": [
+    "batch_6ae2cc280394819093a29bbfb47b55b1"
+  ],
+  "tokens": {
+    "input": 318290,
+    "output": 128343
+  },
+  "usd": 0.048
+}

@@ -1,0 +1,1558 @@
+/*
+ * The cup note demo — scoped styles.
+ *
+ * Everything is namespaced under `.cn-root`, the same reasoning as `.bw-root`: the simulation's
+ * colours are chart colours, not site colours, so they stay out of `globals.css`'s `@theme inline`
+ * block, which ships on every page. Site tokens are read here, never redefined.
+ *
+ * The palettes were run through the dataviz validator against the white card surface:
+ *   - Enforcement is the default categorical order's first three slots, which pass all-pairs (the
+ *     scatter puts any two side by side). Aqua sits at 2.8:1, so every use carries a text label.
+ *   - Cup actions are one violet ramp, light to dark as the note takes more effort. Skip is an
+ *     outline, not a fourth step.
+ *   - Reactions diverge blue (pleased) to red (put out) round a grey midpoint, each arm one hue.
+ * None of them carries meaning alone: cups and faces have their own marks, and chips say their state.
+ */
+
+.cn-root {
+  --cn-strict: #2a78d6;
+  --cn-flexible: #eb6834;
+  --cn-adaptive: #1baf7a;
+
+  --cn-cup-smiley: #9d91ec;
+  --cn-cup-generic: #6250d6;
+  --cn-cup-personal: #38298c;
+
+  --cn-r-delighted: #1c5cab;
+  --cn-r-warm: #86b6ef;
+  --cn-r-neutral: #b5b3aa;
+  --cn-r-indifferent: #f0a29b;
+  --cn-r-annoyed: #c43a3a;
+
+  --cn-fixture: #b42318;
+  --cn-warn-ink: #8a3a05;
+
+  color: var(--color-ink);
+}
+
+/*
+ * The global `:focus-visible` ring is near-white, which vanishes on these white cards. The same fix
+ * `.bw-root` makes: a visible accent ring for everything focusable in here, the segmented controls
+ * (whose input is visually hidden) and the `summary` included.
+ */
+.cn-root :focus-visible,
+.cn-root .cn-seg:has(input:focus-visible) {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--color-accent-tint);
+}
+
+.cn-dim {
+  color: var(--color-muted);
+}
+
+.cn-hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.cn-card,
+.cn-panel,
+.cn-strip {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-warm);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+/* ---- header -------------------------------------------------------------------------------- */
+
+.cn-fixture {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--cn-fixture);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.cn-head {
+  margin-bottom: 16px;
+}
+
+.cn-head-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+.cn-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.cn-badge {
+  display: inline-flex;
+  padding: 3px 10px;
+  border: 1px solid var(--color-border-warm);
+  border-radius: 999px;
+  background: var(--color-primary-tint);
+  font-size: 12px;
+  color: var(--color-ink);
+}
+
+.cn-head-scenario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.cn-head-ab .cn-head-scenario {
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.cn-ab {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: 1px;
+}
+
+.cn-ab-a {
+  border: 1.5px solid var(--color-ink);
+  color: var(--color-ink);
+}
+
+.cn-ab-b {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+/* ---- levers -------------------------------------------------------------------------------- */
+
+.cn-panel {
+  padding: 16px;
+}
+
+.cn-levers {
+  display: grid;
+  gap: 14px 16px;
+}
+
+@media (min-width: 640px) {
+  .cn-panel {
+    padding: 20px;
+  }
+
+  .cn-levers {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cn-levers .cn-lever:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cn-levers {
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  }
+
+  .cn-levers .cn-lever:first-child {
+    grid-column: auto;
+  }
+}
+
+.cn-lever {
+  min-width: 0;
+}
+
+.cn-seg-legend {
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.cn-seg-legend-b {
+  font-weight: 400;
+}
+
+.cn-seg-track {
+  display: flex;
+  gap: 4px;
+  padding: 3px;
+  background: var(--color-primary-tint);
+  border-radius: 10px;
+}
+
+/* At least 44px tall: on a phone these are narrow, and a near miss swaps the whole scenario. */
+.cn-seg {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 48px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: var(--color-muted);
+  cursor: pointer;
+}
+
+.cn-seg:hover {
+  color: var(--color-ink);
+}
+
+.cn-seg-label {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.cn-seg-short {
+  margin-top: 1px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.cn-seg-on {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  box-shadow: 0 1px 2px rgba(16, 20, 24, 0.08);
+}
+
+.cn-seg-on .cn-seg-short {
+  color: var(--color-muted);
+}
+
+.cn-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border-warm);
+}
+
+.cn-actions-hint {
+  flex: 1 1 16rem;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.cn-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cn-btn-primary {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.cn-btn-primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.cn-btn-ghost {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-warm);
+  color: var(--color-ink);
+}
+
+.cn-btn-ghost:hover {
+  background: var(--color-primary-tint);
+}
+
+.cn-btn-on {
+  background: var(--color-accent-tint);
+  border-color: var(--color-accent);
+}
+
+.cn-btn-icon {
+  width: 44px;
+  padding: 0;
+}
+
+.cn-compare-line {
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: var(--color-accent-tint);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.cn-compare-line-quiet {
+  background: var(--color-primary-tint);
+  color: var(--color-muted);
+}
+
+/* ---- the chain ----------------------------------------------------------------------------- */
+
+.cn-chain {
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*
+ * A rail down the left joins the five steps, and each step's number lights as the replay reaches
+ * it. The rail is the one place the story's order is drawn rather than written.
+ */
+.cn-step {
+  position: relative;
+  padding: 0 0 32px 40px;
+}
+
+.cn-step::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  bottom: 2px;
+  left: 13px;
+  width: 2px;
+  border-radius: 1px;
+  background: var(--color-border-warm);
+}
+
+.cn-step:last-child::before {
+  display: none;
+}
+
+.cn-step-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 10px;
+  min-height: 28px;
+  margin-bottom: 12px;
+}
+
+.cn-step-n {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-border-warm);
+  background: var(--color-surface);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-muted);
+}
+
+.cn-step-live .cn-step-n {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #ffffff;
+  box-shadow: 0 0 0 4px var(--color-accent-tint);
+}
+
+.cn-step-done .cn-step-n {
+  border-color: var(--color-ink);
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.cn-step-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.cn-step-sub {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+@media (max-width: 639px) {
+  .cn-step {
+    padding-left: 0;
+  }
+
+  .cn-step::before {
+    display: none;
+  }
+
+  .cn-step-head {
+    padding-left: 38px;
+  }
+}
+
+/* ---- policy -------------------------------------------------------------------------------- */
+
+.cn-policy {
+  display: grid;
+  gap: 14px 24px;
+  padding: 16px 18px;
+}
+
+@media (min-width: 640px) {
+  .cn-policy {
+    grid-template-columns: 1.4fr 1fr;
+  }
+}
+
+.cn-policy-tag {
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-muted);
+}
+
+.cn-policy-main {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.cn-policy-cond {
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+/* ---- managers ------------------------------------------------------------------------------ */
+
+.cn-mgr-grid {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .cn-mgr-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cn-mgr-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.cn-mgr {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px 12px;
+}
+
+.cn-mgr-store {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cn-mgr-type {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.cn-mgr-who {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.cn-mgr-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cn-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--color-primary-tint);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+
+.cn-chip-quiet {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--color-border-warm);
+  color: var(--color-muted);
+}
+
+.cn-chip-warn {
+  margin-left: 4px;
+  background: #fdf0d9;
+  color: var(--cn-warn-ink);
+}
+
+/* Stance chips step from solid to open as the manager pushes less. The words carry the meaning. */
+.cn-stance-enforce_all {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.cn-stance-enforce_offpeak {
+  background: var(--color-muted);
+  color: #ffffff;
+}
+
+.cn-stance-encourage {
+  background: var(--color-primary-tint);
+  color: var(--color-ink);
+}
+
+.cn-stance-ignore {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--color-muted);
+  color: var(--color-muted);
+}
+
+.cn-meter {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--color-muted);
+}
+
+.cn-meter-track {
+  position: relative;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-primary-tint);
+  overflow: hidden;
+}
+
+.cn-meter-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 3px;
+  background: var(--color-accent);
+}
+
+.cn-meter-val {
+  min-width: 2ch;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink);
+}
+
+/*
+ * Message and private thought stack in one grid cell (see ManagerCard). Hover or keyboard focus
+ * inside the card swaps which one shows.
+ */
+.cn-mgr-voice {
+  display: grid;
+}
+
+.cn-mgr-voice > * {
+  grid-area: 1 / 1;
+}
+
+.cn-mgr-msg {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.cn-unsaid {
+  color: transparent;
+}
+
+.cn-mgr-thought {
+  visibility: hidden;
+  padding: 8px 10px;
+  border-left: 2px solid var(--color-accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--color-paper);
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-ink);
+}
+
+.cn-mgr-thought-tag {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.cn-mgr:hover .cn-mgr-thought,
+.cn-mgr:focus-within .cn-mgr-thought {
+  visibility: visible;
+}
+
+.cn-mgr:hover .cn-mgr-msg,
+.cn-mgr:focus-within .cn-mgr-msg {
+  visibility: hidden;
+}
+
+.cn-wait-line {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.cn-mgr-open {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 2px;
+  margin-top: auto;
+  padding: 4px 0;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+/* The button stretches over the whole card, so a click anywhere on it opens the store. */
+.cn-mgr-open::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-card);
+}
+
+.cn-mgr-open:disabled {
+  color: var(--color-muted);
+  cursor: default;
+}
+
+.cn-mgr:has(.cn-mgr-open:not(:disabled)):hover {
+  border-color: #d8cfc1;
+}
+
+/* ---- shift strip --------------------------------------------------------------------------- */
+
+.cn-row {
+  display: grid;
+  gap: 6px 16px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--color-border-warm);
+}
+
+.cn-row:last-child {
+  border-bottom: 0;
+}
+
+/* A slightly heavier line between stores; each store has two baristas. */
+.cn-row:nth-child(2n):not(:last-child) {
+  border-bottom-color: #ddd4c6;
+}
+
+@media (min-width: 1024px) {
+  .cn-row {
+    grid-template-columns: 9.5rem auto minmax(0, 1fr);
+    align-items: center;
+  }
+}
+
+.cn-row-who {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 8px;
+  min-width: 0;
+}
+
+@media (min-width: 1024px) {
+  .cn-row-who {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cn-row-who .cn-chip-warn {
+    margin: 2px 0 0;
+  }
+}
+
+.cn-row-name {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.cn-row-store {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.cn-row-cups {
+  display: flex;
+  gap: 3px;
+}
+
+.cn-cup-cell {
+  position: relative;
+}
+
+.cn-cup-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 38px;
+  padding: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cn-cup-btn:hover:not(:disabled) {
+  background: var(--color-primary-tint);
+}
+
+.cn-cup-btn:disabled {
+  cursor: default;
+}
+
+.cn-cup-wrap {
+  display: inline-flex;
+}
+
+.cn-cup {
+  width: 22px;
+  height: 28px;
+  overflow: visible;
+}
+
+.cn-cup-lid,
+.cn-cup-body {
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+}
+
+.cn-cup-empty .cn-cup-lid,
+.cn-cup-empty .cn-cup-body {
+  fill: none;
+  stroke: var(--color-border-warm);
+}
+
+.cn-cup-skip .cn-cup-lid,
+.cn-cup-skip .cn-cup-body {
+  fill: var(--color-surface);
+  stroke: var(--color-muted);
+}
+
+/* The lid keeps a 1px surface seam from the body so the two read as parts of one cup. */
+.cn-cup-smiley .cn-cup-lid,
+.cn-cup-smiley .cn-cup-body {
+  fill: var(--cn-cup-smiley);
+  stroke: var(--color-surface);
+}
+
+.cn-cup-generic .cn-cup-lid,
+.cn-cup-generic .cn-cup-body {
+  fill: var(--cn-cup-generic);
+  stroke: var(--color-surface);
+}
+
+.cn-cup-personal .cn-cup-lid,
+.cn-cup-personal .cn-cup-body {
+  fill: var(--cn-cup-personal);
+  stroke: var(--color-surface);
+}
+
+.cn-cup-mark {
+  stroke-width: 1.3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cn-cup-smiley .cn-cup-mark {
+  fill: var(--color-ink);
+  stroke: var(--color-ink);
+}
+
+.cn-cup-generic .cn-cup-mark,
+.cn-cup-personal .cn-cup-mark {
+  stroke: #ffffff;
+}
+
+/* ---- tooltip ------------------------------------------------------------------------------- */
+
+.cn-tip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 260px;
+  max-width: calc(100vw - 48px);
+  padding: 10px 12px;
+  border: 1px solid var(--color-border-warm);
+  border-radius: 10px;
+  background: var(--color-surface);
+  box-shadow: 0 6px 18px rgba(16, 20, 24, 0.16);
+  font-size: 12px;
+  line-height: 1.45;
+  pointer-events: none;
+}
+
+.cn-tip-l {
+  left: 0;
+}
+
+.cn-tip-r {
+  right: 0;
+}
+
+.cn-tip-head {
+  font-weight: 600;
+}
+
+.cn-tip-meta {
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.cn-tip-react {
+  display: flex;
+  gap: 8px;
+  padding-top: 6px;
+  border-top: 1px solid var(--color-border-warm);
+}
+
+.cn-tip-react .cn-face {
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+
+/* ---- row end ------------------------------------------------------------------------------- */
+
+.cn-row-end {
+  min-width: 0;
+}
+
+.cn-row-quote {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 12.5px;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--color-ink);
+}
+
+.cn-row-stats {
+  display: flex;
+  gap: 12px;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- legends ------------------------------------------------------------------------------- */
+
+.cn-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.cn-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.cn-legend .cn-face {
+  width: 16px;
+  height: 16px;
+}
+
+.cn-legend .cn-cup {
+  width: 14px;
+  height: 18px;
+}
+
+.cn-legend-n {
+  font-weight: 600;
+  color: var(--color-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.cn-swatch {
+  display: inline-block;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.cn-swatch-strict {
+  background: var(--cn-strict);
+}
+
+.cn-swatch-flexible {
+  background: var(--cn-flexible);
+}
+
+.cn-swatch-adaptive {
+  background: var(--cn-adaptive);
+}
+
+/* ---- faces --------------------------------------------------------------------------------- */
+
+.cn-face {
+  width: 22px;
+  height: 22px;
+  overflow: visible;
+}
+
+.cn-face-empty .cn-face-disc {
+  fill: none;
+  stroke: var(--color-border-warm);
+  stroke-width: 1.2;
+}
+
+.cn-face-delighted .cn-face-disc {
+  fill: var(--cn-r-delighted);
+}
+
+.cn-face-warm .cn-face-disc {
+  fill: var(--cn-r-warm);
+}
+
+.cn-face-neutral .cn-face-disc {
+  fill: var(--cn-r-neutral);
+}
+
+.cn-face-indifferent .cn-face-disc {
+  fill: var(--cn-r-indifferent);
+}
+
+.cn-face-annoyed .cn-face-disc {
+  fill: var(--cn-r-annoyed);
+}
+
+.cn-face-mark {
+  fill: var(--color-ink);
+  stroke: var(--color-ink);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.cn-face-mark circle {
+  stroke: none;
+}
+
+/* Features go white on the two dark ends of the scale, ink on the three light steps. */
+.cn-face-delighted .cn-face-mark,
+.cn-face-annoyed .cn-face-mark {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+/* ---- reaction wall ------------------------------------------------------------------------- */
+
+.cn-wall-grid {
+  display: grid;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  .cn-wall-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cn-wall-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.cn-wall-store {
+  padding: 10px 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-warm);
+  border-radius: 12px;
+}
+
+.cn-wall-store-name {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.cn-wall-line {
+  display: flex;
+  gap: 2px;
+}
+
+.cn-face-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cn-face-btn:hover:not(:disabled) {
+  background: var(--color-primary-tint);
+}
+
+.cn-face-btn:disabled {
+  cursor: default;
+}
+
+.cn-face-wrap {
+  display: inline-flex;
+}
+
+.cn-face-picked {
+  box-shadow: inset 0 0 0 1.5px var(--color-ink);
+}
+
+.cn-wall-pick {
+  display: flex;
+  gap: 12px;
+  min-height: 76px;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--color-primary-tint);
+}
+
+.cn-wall-pick .cn-face {
+  flex: none;
+  width: 28px;
+  height: 28px;
+}
+
+.cn-wall-pick .cn-hint {
+  margin: 0;
+  align-self: center;
+}
+
+.cn-wall-pick-head {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.cn-wall-pick-quote {
+  margin-top: 2px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cn-wall-pick-meta {
+  margin-top: 4px;
+  font-size: 11.5px;
+  color: var(--color-muted);
+}
+
+/* ---- outcome tiles ------------------------------------------------------------------------- */
+
+.cn-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  .cn-tiles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cn-tiles {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.cn-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding: 14px 14px 12px;
+}
+
+.cn-tile-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+/* Below the five-across layout a label can wrap; keep the big numbers on one baseline anyway. */
+@media (max-width: 1023px) {
+  .cn-tile-label {
+    min-height: 2.6em;
+    line-height: 1.3;
+  }
+}
+
+.cn-tile-a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+/* Proportional figures on the big number: tabular digits look loose at this size. */
+.cn-tile-value {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.cn-tile-delta {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.cn-tile-note {
+  margin-top: 4px;
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: var(--color-muted);
+}
+
+.cn-card-wait {
+  box-shadow: none;
+}
+
+/* ---- missing / stale ----------------------------------------------------------------------- */
+
+.cn-missing {
+  margin-top: 28px;
+  padding: 40px 24px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.cn-missing-title {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* A fetch in flight holds the last scenario at half strength rather than flashing to empty. */
+.cn-stale {
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cn-stale {
+    transition: opacity 160ms ease;
+  }
+
+  .cn-seg,
+  .cn-btn,
+  .cn-step-n {
+    transition:
+      background 140ms ease,
+      color 140ms ease,
+      border-color 140ms ease,
+      box-shadow 140ms ease;
+  }
+}
+
+.cn-fallback-note {
+  margin-top: 16px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #fdf0d9;
+  font-size: 12.5px;
+  color: var(--cn-warn-ink);
+}
+
+/* ---- tradeoff chart ------------------------------------------------------------------------ */
+
+.cn-section {
+  margin-top: 12px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border-warm);
+}
+
+.cn-section-title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cn-chart-grid {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 1024px) {
+  .cn-chart-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cn-chart-card {
+  min-width: 0;
+  margin: 0;
+  padding: 14px 14px 12px;
+}
+
+.cn-chart-title {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cn-chart-scope {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.cn-chart-foot {
+  margin-top: 6px;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--color-muted);
+}
+
+.cn-chart-label {
+  fill: var(--color-ink);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cn-chart-tag {
+  fill: var(--color-ink);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cn-chart-tip {
+  min-width: 170px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border-warm);
+  border-radius: 8px;
+  background: var(--color-surface);
+  box-shadow: 0 4px 14px rgba(16, 20, 24, 0.14);
+  font-size: 12px;
+}
+
+.cn-chart-tip-head {
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.cn-chart-tip-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-muted);
+}
+
+.cn-chart-tip-row strong {
+  margin-left: auto;
+  padding-left: 12px;
+  color: var(--color-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.cn-details {
+  margin-top: 16px;
+}
+
+.cn-table-toggle {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-muted);
+  border-radius: 4px;
+}
+
+.cn-table-toggle:hover {
+  color: var(--color-ink);
+}
+
+.cn-table-wrap {
+  overflow: auto;
+  max-height: 460px;
+  margin-top: 10px;
+  border: 1px solid var(--color-border-warm);
+  border-radius: 10px;
+}
+
+.cn-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cn-table th,
+.cn-table td {
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--color-border-warm);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cn-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+.cn-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--color-surface);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.cn-table tr:last-child th,
+.cn-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.cn-table-now th,
+.cn-table-now td {
+  background: var(--color-accent-tint);
+}
+
+/* ---- store drill-down ---------------------------------------------------------------------- */
+
+.cn-dialog {
+  width: min(46rem, calc(100vw - 24px));
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--color-border-warm);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  box-shadow: 0 18px 48px rgba(16, 20, 24, 0.22);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.cn-dialog::backdrop {
+  background: rgba(16, 20, 24, 0.38);
+}
+
+.cn-dialog-body {
+  padding: 0 20px 24px;
+}
+
+@media (min-width: 640px) {
+  .cn-dialog-body {
+    padding: 0 28px 28px;
+  }
+}
+
+.cn-dialog-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 0 12px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border-warm);
+}
+
+.cn-dialog-title {
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cn-dialog-setting {
+  margin-top: 14px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.cn-dialog-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border-warm);
+  font-size: 13.5px;
+}
+
+.cn-dialog-section h4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cn-said {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--color-paper);
+  line-height: 1.55;
+}
+
+.cn-said-private {
+  border-left: 2px solid var(--color-accent);
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+}
+
+.cn-said-private .cn-policy-tag {
+  font-style: normal;
+}
+
+.cn-dialog-quote {
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.cn-cuplist {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cn-cuplist li {
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  align-items: center;
+  gap: 2px 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--color-border-warm);
+  font-size: 12.5px;
+}
+
+.cn-cuplist li:last-child {
+  border-bottom: 0;
+}
+
+.cn-cuplist .cn-cup {
+  width: 16px;
+  height: 20px;
+  grid-row: span 2;
+}
+
+.cn-cuplist-note {
+  grid-column: 2 / -1;
+  min-width: 0;
+}
+
+.cn-cuplist-num {
+  font-variant-numeric: tabular-nums;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .cn-cuplist li {
+    grid-template-columns: 18px 11rem 1fr auto;
+  }
+
+  .cn-cuplist .cn-cup {
+    grid-row: auto;
+  }
+
+  .cn-cuplist-note {
+    grid-column: auto;
+  }
+}
+
+.cn-react-group + .cn-react-group {
+  margin-top: 10px;
+}
+
+.cn-react-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.cn-react-head .cn-face {
+  width: 18px;
+  height: 18px;
+}
+
+.cn-react-group ul {
+  margin: 4px 0 0 26px;
+  padding: 0;
+  list-style: none;
+}
+
+.cn-react-group li {
+  padding: 3px 0;
+  line-height: 1.5;
+}

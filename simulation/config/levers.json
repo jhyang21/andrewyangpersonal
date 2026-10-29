@@ -1,0 +1,44 @@
+{
+  "enforcement": [
+    {
+      "key": "strict",
+      "label": "Strict",
+      "short": "Every cup, tracked",
+      "policy_text": "Every handoff cup carries a handwritten note, every shift, every daypart. Store managers check compliance daily and coach any partner who misses. Compliance counts toward the store's audit score."
+    },
+    {
+      "key": "flexible",
+      "label": "Flexible",
+      "short": "Encouraged, manager's call",
+      "policy_text": "Partners are encouraged to write a note on cups whenever they can. Store managers decide what works for their store. Nothing is tracked."
+    },
+    {
+      "key": "adaptive",
+      "label": "Adaptive",
+      "short": "Required off-peak, waived in a rush",
+      "policy_text": "Notes are expected on every cup during off-peak periods. When six or more customers are waiting, or the shift is running short-staffed, partners may skip the note. Store managers check off-peak compliance only."
+    }
+  ],
+  "note": [
+    {
+      "key": "mark",
+      "label": "Any mark",
+      "short": "A smiley counts",
+      "policy_text": "Any mark counts: a smiley, a heart, a word like 'enjoy'."
+    },
+    {
+      "key": "personal",
+      "label": "Personal note",
+      "short": "Speak to this customer",
+      "policy_text": "The note should speak to that customer: their name, their order, something they said. A smiley alone does not count."
+    }
+  ],
+  "traffic": [
+    { "key": "steady", "label": "Steady", "short": "A quiet mid-morning", "description": "A steady mid-morning. The line stays short: one to four people waiting." },
+    { "key": "rush", "label": "Morning rush", "short": "A 7 to 9 am peak", "description": "The 7 to 9 am rush. The line builds to eight to twelve people for about an hour, then falls off." }
+  ],
+  "staffing": [
+    { "key": "full", "label": "Full staff", "short": "Planned headcount", "description": "The shift is at planned headcount." },
+    { "key": "short", "label": "Short-staffed", "short": "One partner down", "description": "One partner called out. Everyone on the floor is covering an extra position." }
+  ]
+}

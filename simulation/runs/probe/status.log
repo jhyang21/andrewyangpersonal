@@ -1,0 +1,30 @@
+2026-10-29T00:50:48Z built 2 manager requests with reasoning_effort -> C:\Users\1025y\Documents\projects\andrewyangpersonal\simulation\runs\probe\requests.jsonl
+2026-10-29T00:52:33Z built 2 manager requests with reasoning_effort -> C:\Users\1025y\Documents\projects\andrewyangpersonal\simulation\runs\probe\requests.jsonl
+2026-10-29T00:53:45Z built 2 manager requests with reasoning_effort -> C:\Users\1025y\Documents\projects\andrewyangpersonal\simulation\runs\probe\requests.jsonl
+2026-10-29T01:04:57Z submitted requests.jsonl as batch_6ae29bb85d088190aaf8d89ef06dfab4 (validating)
+2026-10-29T01:05:07Z batch_6ae29bb85d088190aaf8d89ef06dfab4 validating 0/0 done, 0 failed
+2026-10-29T01:06:07Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:07:07Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:08:08Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:09:08Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:10:08Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:11:08Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:12:09Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:13:09Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:14:09Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:15:09Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:16:09Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:17:09Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:18:10Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:19:10Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:20:10Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:21:10Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:22:10Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:23:11Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:24:11Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:25:11Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:26:11Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:27:11Z batch_6ae29bb85d088190aaf8d89ef06dfab4 in_progress 0/2 done, 0 failed
+2026-10-29T01:28:12Z batch_6ae29bb85d088190aaf8d89ef06dfab4 completed 2/2 done, 0 failed
+2026-10-29T01:28:21Z ingested batch_6ae29bb85d088190aaf8d89ef06dfab4: {'ingested': 2, 'schema_ok': 2, 'failed': 0}
+2026-10-29T01:28:21Z probe passed with reasoning_effort; later builds use it

@@ -4,15 +4,19 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run check:dataset && next build",
+    "check:dataset": "node scripts/check-dataset.mjs",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "katex": "^0.17.0",
+    "lucide-react": "1.56.0",
+    "motion": "12.43.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "recharts": "3.10.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -1,0 +1,31 @@
+{
+  "stage": "probe",
+  "model": "gpt-6-luna",
+  "reasoning_param": "reasoning_effort",
+  "status": "ingested",
+  "built_at": "2026-10-29T00:53:45Z",
+  "counts": {
+    "total": 2,
+    "built": 2,
+    "responses": 2,
+    "schema_ok": 2,
+    "schema_failures": 0
+  },
+  "updated_at": "2026-10-29T01:28:21Z",
+  "batch_ids": [
+    "batch_6ae29bb85d088190aaf8d89ef06dfab4"
+  ],
+  "submitted_files": [
+    "fecbe36af550d6b22a1a8663471cffa2106135e29165d7d89ef788d888493fd6"
+  ],
+  "submitted_at": "2026-10-29T01:04:57Z",
+  "finished_at": "2026-10-29T01:28:12Z",
+  "ingested_batch_ids": [
+    "batch_6ae29bb85d088190aaf8d89ef06dfab4"
+  ],
+  "tokens": {
+    "input": 1330,
+    "output": 361
+  },
+  "usd": 0.0002
+}
