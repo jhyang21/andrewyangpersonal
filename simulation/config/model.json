@@ -1,0 +1,19 @@
+{
+  "model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "max_completion_tokens": {
+    "manager": 1200,
+    "barista": 3000,
+    "customer": 800,
+    "note": "Hidden reasoning counts against the cap. The barista answers eight cups at once, so it gets the most room."
+  },
+  "completion_window": "24h",
+  "endpoint": "/v1/chat/completions",
+  "pricing_usd_per_million": {
+    "input": 0.05,
+    "output": 0.25,
+    "note": "Batch rate, OpenAI pricing page 2026-10-28. Re-check before quoting."
+  },
+  "prompt_version": "v1",
+  "seed": 20261028
+}

@@ -2,7 +2,7 @@
 
 Personal portfolio/blog with memos. Next.js 16 App Router, Tailwind v4, filesystem-based content.
 
-The site is static. It has no database, no API routes and no secrets. The only client components are the Shape Lab (`src/components/shape-lab/`) and the projects chart.
+The site is static. It has no database, no API routes and no secrets. The only client components are the Shape Lab (`src/components/shape-lab/`), the projects chart and the cup-notes demo (`src/components/projects/cup-notes/`).
 
 ---
 
@@ -23,7 +23,7 @@ npm run lint
 - **Next.js 16** App Router (`src/app/`)
 - **Tailwind v4** — CSS-first config in `globals.css` (`@theme inline`), no `tailwind.config.*`
 - **TypeScript** strict, path alias `@/*` → `src/*`
-- **One runtime dependency** beyond Next/React: `katex`, for math in memos. No markdown libraries, no CMS.
+- **Runtime dependencies** beyond Next/React: `katex`, for math in memos, and `motion`, `recharts` and `lucide-react`, imported only by the cup-notes demo. No markdown libraries, no CMS.
 
 ---
 
@@ -37,6 +37,12 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 
 - Memo detail pages are statically generated (`generateStaticParams`)
 - **Adding/editing content requires a redeploy**
+
+### Cup-notes dataset
+
+- `/projects/cup-notes` replays a precomputed simulation. `simulation/` is the Python generator; `simulation/SPEC.md` is the contract, mirrored in `src/lib/cup-notes/types.ts`.
+- `content/cup-notes/index.json` is read at build time; the 24 `public/cup-notes/scenarios/<key>.json` files are fetched by the demo on demand.
+- `npm run build` runs `npm run check:dataset` first, which fails unless the index exists, came from the OpenAI batch run (not the fixture) and every scenario has a file. Use `npx next build` to build against fixture data locally.
 
 ---
 
@@ -55,4 +61,4 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 
 - **There is no `.env` and no secrets.** `.env.local` holds only Vercel's OIDC token from `vercel env pull`. `.gitignore` covers `.env*`.
 - **README and PROGRESS.md are stale** — they describe the old Relora waitlist site, not the current personal portfolio
-- `next/font/google` params use `Promise<{ slug: string }>` async pattern (Next.js 15+ requirement)
+- Dynamic route `params` are `Promise<{ slug: string }>` — `await` them (Next.js 15+)

@@ -1,0 +1,35 @@
+{
+  "stage": "manager",
+  "model": "gpt-6-luna",
+  "reasoning": "low",
+  "prompt_version": "v1",
+  "endpoint": "/v1/chat/completions",
+  "status": "ingested",
+  "built_at": "2026-10-29T00:53:45Z",
+  "counts": {
+    "total": 144,
+    "built": 144,
+    "already_answered": 0,
+    "responses": 144,
+    "schema_ok": 144,
+    "schema_failures": 0
+  },
+  "est_input_tokens_built": 121674,
+  "updated_at": "2026-10-29T04:31:26Z",
+  "batch_ids": [
+    "batch_6ae2a13fa8d4819085ee487473b189e0"
+  ],
+  "submitted_files": [
+    "a8cfb903d93e0f0e9e9c1453d130a7693c72f1f58352161d7176d94f575374ec"
+  ],
+  "submitted_at": "2026-10-29T01:28:31Z",
+  "finished_at": "2026-10-29T04:31:14Z",
+  "ingested_batch_ids": [
+    "batch_6ae2a13fa8d4819085ee487473b189e0"
+  ],
+  "tokens": {
+    "input": 96840,
+    "output": 22447
+  },
+  "usd": 0.0105
+}

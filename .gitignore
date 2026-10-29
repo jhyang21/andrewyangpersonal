@@ -42,3 +42,12 @@ next-env.d.ts
 
 PROGRESS.md
 .vercel
+
+# simulation (Python)
+simulation/.venv/
+simulation/**/__pycache__/
+simulation/.pytest_cache/
+simulation/.ruff_cache/
+!simulation/.env.example
+# request files are rebuilt from config + earlier responses; the customer one is ~6 MB
+simulation/runs/*/batch_inputs/

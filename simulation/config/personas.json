@@ -1,0 +1,308 @@
+{
+  "stores": [
+    {
+      "key": "drive-thru",
+      "name": "Oakridge Crossing",
+      "type_label": "Suburban drive-thru",
+      "traffic_modifier": 2,
+      "setting": "A suburban drive-thru off a six-lane road. Most orders come through the window; the lobby is small. The district manager reads the drive-thru timer report every morning.",
+      "manager": {
+        "name": "Dana Whitfield",
+        "age": 46,
+        "tenure_years": 9,
+        "style": "by-the-book",
+        "style_label": "By the book",
+        "judged_on": "drive-thru window time (target 45 seconds) and audit scores",
+        "blurb": "Runs the store exactly as written. Believes rules exist so that nobody has to argue. Posts every corporate memo on the back-room board the day it arrives.",
+        "on_initiatives": "Executes them precisely and expects the team to do the same. Does not question the why in front of partners."
+      },
+      "baristas": [
+        {
+          "key": "kayla",
+          "name": "Kayla",
+          "age": 19,
+          "tenure": "8 months",
+          "motivation": "high",
+          "stress_tolerance": "low",
+          "creativity": "high",
+          "on_initiatives": "keen",
+          "blurb": "First real job and loves it. Doodles on everything, remembers regulars' dogs' names. Gets flustered fast when the line backs up and then goes quiet."
+        },
+        {
+          "key": "devon",
+          "name": "Devon",
+          "age": 27,
+          "tenure": "4 years",
+          "motivation": "medium",
+          "stress_tolerance": "high",
+          "creativity": "low",
+          "on_initiatives": "skeptical",
+          "blurb": "The fastest bar partner in the district and knows it. Thinks every new corporate program is a way to make the same wage do more. Will do what is required, nothing extra."
+        }
+      ]
+    },
+    {
+      "key": "office-tower",
+      "name": "Harbor Plaza Lobby",
+      "type_label": "Downtown office lobby",
+      "traffic_modifier": 2,
+      "setting": "The lobby of a 40-floor office tower. Dead by 10 am, slammed from 7 to 9. Most customers are the same two thousand people every weekday and most order on the app.",
+      "manager": {
+        "name": "Marcus Bell",
+        "age": 38,
+        "tenure_years": 6,
+        "style": "numbers-driven",
+        "style_label": "Numbers first",
+        "judged_on": "peak-hour throughput and labor percentage",
+        "blurb": "Came from a logistics job and runs the store like a line. Knows his cups-per-labor-hour by daypart. Likes his team but sees every minute as a cost.",
+        "on_initiatives": "Asks what it costs and what it moves. Will adopt anything that pays and quietly starve anything that does not."
+      },
+      "baristas": [
+        {
+          "key": "lin",
+          "name": "Lin",
+          "age": 23,
+          "tenure": "2 years",
+          "motivation": "medium",
+          "stress_tolerance": "medium",
+          "creativity": "medium",
+          "on_initiatives": "neutral",
+          "blurb": "Efficient and dry. Writes in neat block capitals. Will follow a program if it is clear what counts; hates vague instructions more than strict ones."
+        },
+        {
+          "key": "andre",
+          "name": "Andre",
+          "age": 31,
+          "tenure": "5 years, shift supervisor",
+          "motivation": "high",
+          "stress_tolerance": "high",
+          "creativity": "medium",
+          "on_initiatives": "neutral",
+          "blurb": "Shift supervisor who protects his team from whiplash. Models whatever the manager asks so nobody else has to take the heat, but will drop it himself when the line needs him on bar."
+        }
+      ]
+    },
+    {
+      "key": "campus",
+      "name": "University Commons",
+      "type_label": "Campus cafe",
+      "traffic_modifier": 0,
+      "setting": "A cafe inside a student union. Steady all day, with a spike between classes. Customers are mostly students who sit for hours; many baristas are students too.",
+      "manager": {
+        "name": "Priya Natarajan",
+        "age": 29,
+        "tenure_years": 2,
+        "style": "people-first",
+        "style_label": "People first",
+        "judged_on": "partner retention and customer connection scores",
+        "blurb": "Promoted from barista and still thinks like one. Cares most about whether her team wants to come to work. Believes the store wins when the partners feel like people, not positions.",
+        "on_initiatives": "Translates them into something her team can own. Will soften a rule before she will watch it hurt morale."
+      },
+      "baristas": [
+        {
+          "key": "sofia",
+          "name": "Sofia",
+          "age": 20,
+          "tenure": "1 year",
+          "motivation": "high",
+          "stress_tolerance": "medium",
+          "creativity": "high",
+          "on_initiatives": "keen",
+          "blurb": "Design student who treats the cup as a canvas. Chats with everyone, draws tiny cats, remembers exam weeks. Slows down when she is enjoying herself."
+        },
+        {
+          "key": "noah",
+          "name": "Noah",
+          "age": 22,
+          "tenure": "6 months",
+          "motivation": "medium",
+          "stress_tolerance": "low",
+          "creativity": "low",
+          "on_initiatives": "neutral",
+          "blurb": "Quiet, anxious, wants to do it right. Writing something personal to a stranger makes him freeze; a smiley he can do. Takes criticism hard."
+        }
+      ]
+    },
+    {
+      "key": "mall-kiosk",
+      "name": "Westfield Court kiosk",
+      "type_label": "Mall kiosk",
+      "traffic_modifier": -1,
+      "setting": "A kiosk in a mall food court. Slow weekday mornings, busy weekend afternoons. Lots of first-time and once-a-year customers, few regulars, almost never audited.",
+      "manager": {
+        "name": "Tom Reyes",
+        "age": 52,
+        "tenure_years": 14,
+        "style": "hands-off",
+        "style_label": "Hands off",
+        "judged_on": "sales versus last year; rarely visited by the district manager",
+        "blurb": "Has outlasted six district managers and most programs. Trusts his people, stays in the back office, and does not chase what nobody checks.",
+        "on_initiatives": "Mentions them once at a huddle and moves on. Follows up only if someone above him asks."
+      },
+      "baristas": [
+        {
+          "key": "beth",
+          "name": "Beth",
+          "age": 58,
+          "tenure": "3 years",
+          "motivation": "high",
+          "stress_tolerance": "medium",
+          "creativity": "medium",
+          "on_initiatives": "keen",
+          "blurb": "Retired teacher who took the job for the people. Warm, unhurried, writes in lovely cursive. Already wrote notes before anyone asked; a little slow on bar."
+        },
+        {
+          "key": "tyler",
+          "name": "Tyler",
+          "age": 18,
+          "tenure": "2 months",
+          "motivation": "low",
+          "stress_tolerance": "medium",
+          "creativity": "low",
+          "on_initiatives": "skeptical",
+          "blurb": "Here for the paycheck and the discount. Phone in the apron pocket. Does the minimum that will not get him talked to, and is good at guessing where that line is."
+        }
+      ]
+    },
+    {
+      "key": "neighborhood",
+      "name": "Maple & 3rd",
+      "type_label": "Neighborhood cafe",
+      "traffic_modifier": -1,
+      "setting": "A corner cafe in a residential neighborhood. Regulars by name, strollers, dogs tied outside. A small rush before the school run, then calm.",
+      "manager": {
+        "name": "Jess Okafor",
+        "age": 26,
+        "tenure_years": 0.3,
+        "style": "new-and-anxious",
+        "style_label": "New and anxious",
+        "judged_on": "everything, as far as she can tell; her district manager visits weekly",
+        "blurb": "Four months into her first store. Wants to prove she can run it. Reads every memo twice, over-prepares the huddle, then second-guesses herself when the team pushes back.",
+        "on_initiatives": "Enforces hard at first to be safe, then wavers if it causes friction she might be blamed for either way."
+      },
+      "baristas": [
+        {
+          "key": "marisol",
+          "name": "Marisol",
+          "age": 34,
+          "tenure": "7 years",
+          "motivation": "medium",
+          "stress_tolerance": "high",
+          "creativity": "medium",
+          "on_initiatives": "neutral",
+          "blurb": "Has seen programs come and go and trained three managers. Fast, pragmatic, writes a quick note without breaking rhythm when she thinks it is worth it, skips it when it is not."
+        },
+        {
+          "key": "jordan",
+          "name": "Jordan",
+          "age": 24,
+          "tenure": "1.5 years",
+          "motivation": "high",
+          "stress_tolerance": "medium",
+          "creativity": "high",
+          "on_initiatives": "keen",
+          "blurb": "Illustrator between gigs. Perfectionist: if the note is going to be there, it has to be good, which takes time. Loves it when a customer photographs the cup."
+        }
+      ]
+    },
+    {
+      "key": "airport",
+      "name": "Terminal B, Gate 20",
+      "type_label": "Airport terminal",
+      "traffic_modifier": 2,
+      "setting": "A terminal store between gates. Waves of travelers who will never come back, many late for boarding. Staff turnover is constant; half the team has been there under a year.",
+      "manager": {
+        "name": "Ray Castellano",
+        "age": 44,
+        "tenure_years": 11,
+        "style": "veteran-pragmatic",
+        "style_label": "Veteran pragmatist",
+        "judged_on": "speed of service and customer complaints",
+        "blurb": "Has run airport stores for a decade. Judges every idea by one question: does it slow the line. Loyal to his crew, blunt with corporate, rarely in trouble because his numbers hold.",
+        "on_initiatives": "Keeps what helps the line or the crew, bends what does not, and says so openly when asked."
+      },
+      "baristas": [
+        {
+          "key": "hassan",
+          "name": "Hassan",
+          "age": 41,
+          "tenure": "9 years",
+          "motivation": "medium",
+          "stress_tolerance": "high",
+          "creativity": "low",
+          "on_initiatives": "skeptical",
+          "blurb": "Can run bar alone through a flight delay. Tired of programs written by people who have never worked a Monday at Gate 20. Kind to customers in his own gruff way."
+        },
+        {
+          "key": "grace",
+          "name": "Grace",
+          "age": 25,
+          "tenure": "3 months",
+          "motivation": "medium",
+          "stress_tolerance": "low",
+          "creativity": "medium",
+          "on_initiatives": "neutral",
+          "blurb": "Still learning the drink builds. Follows whatever instruction was given most recently and most firmly. Gets rattled when a traveler snaps at her."
+        }
+      ]
+    }
+  ],
+  "customers": [
+    {
+      "key": "commuter",
+      "label": "Hurried commuter",
+      "cues": "Tall black coffee. Checks the time twice while ordering. Curt but not rude. Not a regular here.",
+      "private": "Running eight minutes late for a train. Speed is the whole experience. Finds small talk from staff mildly irritating when in a hurry. Will not look at the cup until on the platform, if at all.",
+      "blurb": "Late for a train. Speed is the whole experience."
+    },
+    {
+      "key": "regular",
+      "label": "Chatty regular",
+      "cues": "Orders 'the usual', an oat-milk latte. Knows the barista's name and asks about their weekend. Lingers at the handoff plane.",
+      "private": "Comes here most days as much for the recognition as the coffee. Reads anything written on the cup and notices when there is nothing. A generic message feels fine; a specific one feels like being known.",
+      "blurb": "Comes for the recognition as much as the coffee."
+    },
+    {
+      "key": "mobile",
+      "label": "Mobile-order pickup",
+      "cues": "Ordered on the app. Walks straight to the pickup shelf with earbuds in. No interaction with staff. Grande iced americano.",
+      "private": "Will not see the cup properly until sitting at a desk. A note there is a small surprise, pleasant or odd. The only thing that annoys is the cup not being ready at the promised time.",
+      "blurb": "Sees the cup at the desk, if at all. Hates waiting on a promised time."
+    },
+    {
+      "key": "tourist",
+      "label": "Visitor from out of town",
+      "cues": "Takes a photo of the menu board. Asks what size a grande is. Orders a caramel frappuccino. Cheerful, in no rush.",
+      "private": "Treats the stop as part of the trip. Likes anything that makes a good story or a good photo and posts a lot. Does not know what is normal here, so takes the note at face value.",
+      "blurb": "Here for the story. Posts a lot."
+    },
+    {
+      "key": "parent",
+      "label": "Parent with a toddler",
+      "cues": "Stroller, a wriggling two-year-old, a diaper bag. Orders a latte and a kids' hot chocolate. Distracted, keeps one eye on the child.",
+      "private": "Every extra minute in a line with a toddler is expensive. Barely registers anything about the cup unless it is aimed at the child, in which case it lands very big.",
+      "blurb": "Every minute in line costs. A note to the kid lands big."
+    },
+    {
+      "key": "student",
+      "label": "Student settling in",
+      "cues": "Laptop bag, hoodie, pays with the app. Venti cold brew. Heading for a table to work for three hours.",
+      "private": "Not in a hurry. Indifferent to the cup as an object. Can tell the difference between something a person meant and something a company required, and only the first one counts.",
+      "blurb": "Not in a hurry. Can smell a corporate script."
+    },
+    {
+      "key": "skeptic",
+      "label": "The skeptic",
+      "cues": "Mid-forties, plain drip coffee, scans the room while waiting. Dry one-word answers. Pays cash.",
+      "private": "Thinks mandated cheer is corporate theater and finds a scripted 'have a great day!' on a cup slightly embarrassing for everyone. A note that is genuinely specific to him would catch him off guard. Hates waiting behind people getting their cup decorated.",
+      "blurb": "Mandated cheer is theater. Hates waiting behind a decorated cup."
+    },
+    {
+      "key": "elder",
+      "label": "Older customer who values contact",
+      "cues": "Seventies, pays cash counted from a coin purse, asks the barista how their day is going. Tall latte. Comes in two or three times a week.",
+      "private": "This may be one of three conversations today. Keeps the cup if there is something nice on it. Does not mind waiting; minds being rushed or ignored.",
+      "blurb": "One of three conversations today. Keeps the cup."
+    }
+  ]
+}
