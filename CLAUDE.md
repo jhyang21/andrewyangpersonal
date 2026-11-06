@@ -23,7 +23,7 @@ npm run lint
 - **Next.js 16** App Router (`src/app/`)
 - **Tailwind v4** — CSS-first config in `globals.css` (`@theme inline`), no `tailwind.config.*`
 - **TypeScript** strict, path alias `@/*` → `src/*`
-- **Runtime dependencies** beyond Next/React: `katex`, for math in memos, and `motion`, `recharts` and `lucide-react`, imported only by the cup-notes demo. No markdown libraries, no CMS.
+- **Runtime dependencies** beyond Next/React: `katex`, for math in memos; `@vercel/analytics`, whose `<Analytics />` in the root layout counts page views; and `motion`, `recharts` and `lucide-react`, imported only by the cup-notes demo. No markdown libraries, no CMS.
 
 ---
 
