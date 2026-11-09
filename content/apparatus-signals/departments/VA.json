@@ -253,7 +253,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-01",
    "to": "2026-07",
@@ -323,7 +323,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-02",
    "to": "2026-08",

@@ -868,7 +868,7 @@
    "year_how": null,
    "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-10",
    "to": "2027-04",
@@ -1047,7 +1047,7 @@
    "year_how": null,
    "type_how": "named in the record"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-03",
    "to": "2026-09",
@@ -1335,7 +1335,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-03",
    "to": "2026-09",
@@ -2425,7 +2425,7 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2025-07",
    "to": "2026-01",
@@ -2573,7 +2573,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2025-09",
    "to": "2026-03",
@@ -2612,7 +2612,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2025-11",
    "to": "2026-05",

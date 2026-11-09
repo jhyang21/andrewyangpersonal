@@ -214,7 +214,7 @@
    "year_how": null,
    "type_how": "the new trucks are two RIV pumpers; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-06",
    "to": "2026-12",
@@ -284,7 +284,7 @@
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-11",
    "to": "2027-05",
@@ -354,7 +354,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-11",
    "to": "2027-05",
@@ -463,7 +463,7 @@
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-09",
    "to": "2027-03",
@@ -790,7 +790,7 @@
    "year_how": null,
    "type_how": "the new trucks are three pumpers; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-09",
    "to": "2027-03",
@@ -977,7 +977,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-11",
    "to": "2027-05",
@@ -1086,7 +1086,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-11",
    "to": "2027-05",
@@ -1794,7 +1794,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-07",
    "to": "2027-01",
@@ -3342,7 +3342,7 @@
    "year_how": null,
    "type_how": "the new truck is a quick-attack unit; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-08",
    "to": "2027-02",
@@ -3412,7 +3412,7 @@
    "year_how": null,
    "type_how": "the new trucks are two pumpers; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-06",
    "to": "2026-12",

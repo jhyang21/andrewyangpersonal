@@ -323,7 +323,7 @@
    "year_how": null,
    "type_how": "the new truck is an aerial; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-07",
    "to": "2027-01",
@@ -393,7 +393,7 @@
    "year_how": null,
    "type_how": "the new truck is a Danko pumper-tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-06",
    "to": "2026-12",

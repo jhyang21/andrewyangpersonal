@@ -206,7 +206,7 @@
    "year_how": null,
    "type_how": "the new truck is a walk-in hazmat unit; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-10",
    "to": "2027-04",
@@ -284,7 +284,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-10",
    "to": "2027-04",
@@ -1630,7 +1630,7 @@
    "year_how": null,
    "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-08",
    "to": "2027-02",
@@ -1848,7 +1848,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-05",
    "to": "2026-11",

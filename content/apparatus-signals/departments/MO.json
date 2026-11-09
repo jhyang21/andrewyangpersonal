@@ -27,7 +27,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-11",
    "to": "2027-05",
@@ -97,7 +97,7 @@
    "year_how": null,
    "type_how": "the new truck is a rescue; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-09",
    "to": "2027-03",
@@ -167,7 +167,7 @@
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2027-12",
    "to": "2028-06",
@@ -237,7 +237,7 @@
    "year_how": null,
    "type_how": "the new truck is a 78-foot Viper aerial ladder quint; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-04",
    "to": "2026-10",
@@ -346,7 +346,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-09",
    "to": "2027-03",
@@ -416,7 +416,7 @@
    "year_how": null,
    "type_how": "the new truck is a top-mount pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-10",
    "to": "2027-04",
@@ -634,7 +634,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-09",
    "to": "2027-03",
@@ -704,7 +704,7 @@
    "year_how": null,
    "type_how": "the new truck is a 100-foot aerial ladder quint; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-09",
    "to": "2027-03",
@@ -813,7 +813,7 @@
    "year_how": null,
    "type_how": "the new trucks are two pumpers; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-09",
    "to": "2027-03",
@@ -883,7 +883,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-05",
    "to": "2026-11",
@@ -1653,7 +1653,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-02",
    "to": "2026-08",
@@ -1723,7 +1723,7 @@
    "year_how": null,
    "type_how": "the new truck is a wildland unit; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-05",
    "to": "2026-11",
@@ -3061,7 +3061,7 @@
    "year_how": null,
    "type_how": "the new truck is a 78-foot Viper aerial ladder quint; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2025-06",
    "to": "2025-12",

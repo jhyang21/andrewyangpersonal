@@ -97,7 +97,7 @@
    "year_how": null,
    "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-09",
    "to": "2027-03",
@@ -245,7 +245,7 @@
    "year_how": null,
    "type_how": "the new truck is a Ft. Walton Beach SL75 aerial ladder quint; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-10",
    "to": "2027-04",
@@ -743,7 +743,7 @@
    "year_how": null,
    "type_how": "the new trucks are two pumpers; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2025-12",
    "to": "2026-06",
@@ -813,7 +813,7 @@
    "year_how": null,
    "type_how": "the new truck is a light rescue; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2025-02",
    "to": "2025-08",

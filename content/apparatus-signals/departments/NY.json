@@ -1030,7 +1030,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-02",
    "to": "2027-08",
@@ -1649,7 +1649,7 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-08",
    "to": "2027-02",
@@ -1789,7 +1789,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-10",
    "to": "2027-04",
@@ -2124,7 +2124,7 @@
    "year_how": null,
    "type_how": "the new truck is a Star Series pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-10",
    "to": "2027-04",
@@ -2529,7 +2529,7 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-10",
    "to": "2027-04",
@@ -2747,7 +2747,7 @@
    "year_how": null,
    "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-09",
    "to": "2027-03",
@@ -3035,7 +3035,7 @@
    "year_how": null,
    "type_how": "the new truck is a RIV pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
    "from": "2026-08",
    "to": "2027-02",

@@ -172,8 +172,9 @@ export interface Department {
 }
 
 /**
- * Where the old truck is now. "surplus": a vote or plan to sell, not listed yet. "replacing":
- * a new truck is coming or here. "listed": at auction now. "sold": sold since May.
+ * Where the old truck is now. "surplus": the old truck is free but not listed: a vote or plan
+ * to sell, or a new truck seen in service. "replacing": money, an order or a due date only;
+ * nothing seen yet. "listed": at auction now. "sold": sold since May.
  */
 export type Stage = "sold" | "listed" | "surplus" | "replacing";
 
