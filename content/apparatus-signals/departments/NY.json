@@ -1425,9 +1425,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-10",
-   "to": "2027-10",
-   "how": "ordered Oct 2025; builds take a year or more"
+   "from": "2027-06",
+   "to": "2028-02",
+   "how": "new truck due Summer 2027; old trucks usually list within six months of delivery"
   },
   "rank": 25,
   "tier": "2 Call this month",
@@ -1900,9 +1900,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-10",
-   "to": "2028-10",
-   "how": "ordered Oct 2026; builds take a year or more"
+   "from": "2029-03",
+   "to": "2029-11",
+   "how": "new truck due Spring 2029; old trucks usually list within six months of delivery"
   },
   "rank": 34,
   "tier": "2 Call this month",

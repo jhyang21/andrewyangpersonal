@@ -8,7 +8,17 @@
    "from_months": 0,
    "to_months": 6,
    "how_template": "new truck due {month}; old trucks usually list within six months of delivery",
-   "n_cases": 0
+   "n_cases": 0,
+   "widen": {
+    "season": [
+     -1,
+     1
+    ],
+    "year": [
+     -6,
+     5
+    ]
+   }
   },
   {
    "kinds": [
@@ -61,7 +71,17 @@
    "to_months": 6,
    "how_template": "new truck was due {month}; the old one usually lists within six months",
    "n_cases": 0,
-   "how_past_template": "new truck was due {month}; the old one may already have sold quietly"
+   "how_past_template": "new truck was due {month}; the old one may already have sold quietly",
+   "widen": {
+    "season": [
+     -1,
+     1
+    ],
+    "year": [
+     -6,
+     5
+    ]
+   }
   },
   {
    "kinds": [

@@ -722,9 +722,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-09",
-   "to": "2028-09",
-   "how": "ordered Sep 2026; builds take a year or more"
+   "from": "2030-01",
+   "to": "2031-06",
+   "how": "new truck due in 2030; old trucks usually list within six months of delivery"
   },
   "rank": 14,
   "tier": "2 Call this month",

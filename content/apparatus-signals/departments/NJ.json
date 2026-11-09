@@ -722,9 +722,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-09",
-   "to": "2028-09",
-   "how": "ordered Sep 2026; builds take a year or more"
+   "from": "2028-06",
+   "to": "2029-02",
+   "how": "new truck due Summer 2028; old trucks usually list within six months of delivery"
   },
   "rank": 14,
   "tier": "2 Call this month",
@@ -979,9 +979,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-10",
-   "to": "2028-10",
-   "how": "ordered Oct 2026; builds take a year or more"
+   "from": "2027-09",
+   "to": "2028-05",
+   "how": "new truck due Fall 2027; old trucks usually list within six months of delivery"
   },
   "rank": 19,
   "tier": "2 Call this month",
@@ -1487,76 +1487,6 @@
   }
  },
  {
-  "checked": "trade_press",
-  "score": 3.0,
-  "department": "Franklin Fire Company #1",
-  "registry_name": "Franklin Fire Company #1",
-  "city": "Columbus",
-  "county": "Burlington",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Fouts Fire four quick-attack trucks on order (2025-11), delivery Fourth Quarter 2025",
-  "signal_date": "2025-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
-  "proof_quote": "FOUTS FIRE—Franklin Fire Department four quick-attack trucks. Delivery in Fourth Quarter 2025.",
-  "other_signals": "",
-  "named_in_source": "Franklin Fire Department",
-  "name_match": "exact, ambiguous (3 same-name rows)",
-  "fdid": "03331",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "mini pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new trucks are four quick-attack trucks; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-11",
-   "how": "ordered Nov 2025; builds take a year or more"
-  },
-  "rank": 28,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "mini pumper",
-   "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
-   "p75": 12300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1992 Ford F350 Mini Pumper Truck",
-     "price": 10500.0,
-     "date": "2026-03-09",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46229/item/lot-0001-1992-ford-f350-mini-pumper-truck-288762/"
-    },
-    {
-     "item": "1995 Ford SD KME Mini Pumper 4x4 Truck",
-     "price": 12300.0,
-     "date": "2025-11-25",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/44510/item/lot-0003-1995-ford-sd-kme-mini-pumper-4x4-truck-281113/"
-    },
-    {
-     "item": "(Brush Truck) 1985 Chevy C/K30 Mini Pumper Truck",
-     "price": 7000.0,
-     "date": "2025-06-19",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
-    }
-   ]
-  }
- },
- {
   "checked": "corrected",
   "score": 3.0,
   "department": "Gibbsboro Fire Company #1",
@@ -1590,7 +1520,7 @@
    "to": "2028-03",
    "how": "money approved Mar 2026; order, build, then sale"
   },
-  "rank": 29,
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1629,7 +1559,7 @@
    "to": "2028-02",
    "how": "money approved Feb 2026; order, build, then sale"
   },
-  "rank": 30,
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1699,7 +1629,7 @@
    "to": "2028-06",
    "how": "money approved Jun 2026; order, build, then sale"
   },
-  "rank": 31,
+  "rank": 30,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1738,7 +1668,7 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; old trucks usually list within six months of delivery"
   },
-  "rank": 32,
+  "rank": 31,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1808,7 +1738,7 @@
    "to": "2028-02",
    "how": "money approved Feb 2026; order, build, then sale"
   },
-  "rank": 33,
+  "rank": 32,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1847,7 +1777,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
   },
-  "rank": 34,
+  "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1917,7 +1847,7 @@
    "to": "2025-11",
    "how": "new truck arrived May 2025; the old one may already have sold quietly"
   },
-  "rank": 35,
+  "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1987,7 +1917,7 @@
    "to": "2027-05",
    "how": "money approved May 2025; order, build, then sale"
   },
-  "rank": 36,
+  "rank": 35,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2026,7 +1956,7 @@
    "to": "2027-07",
    "how": "ordered Jul 2025; builds take a year or more"
   },
-  "rank": 37,
+  "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2096,7 +2026,7 @@
    "to": "2028-02",
    "how": "ordered Feb 2026; builds take a year or more"
   },
-  "rank": 38,
+  "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2135,7 +2065,7 @@
    "to": "2028-07",
    "how": "money approved Jul 2026; order, build, then sale"
   },
-  "rank": 39,
+  "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2174,7 +2104,7 @@
    "to": "2027-11",
    "how": "new truck due May 2027; old trucks usually list within six months of delivery"
   },
-  "rank": 40,
+  "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2244,7 +2174,7 @@
    "to": "2026-02",
    "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
   },
-  "rank": 41,
+  "rank": 40,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2314,7 +2244,7 @@
    "to": "2026-08",
    "how": "grant awarded Aug 2023; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 42,
+  "rank": 41,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2353,7 +2283,7 @@
    "to": "2028-07",
    "how": "money approved Jul 2026; order, build, then sale"
   },
-  "rank": 43,
+  "rank": 42,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2392,7 +2322,7 @@
    "to": "2028-06",
    "how": "money approved Jun 2026; order, build, then sale"
   },
-  "rank": 44,
+  "rank": 43,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2431,7 +2361,7 @@
    "to": "2026-01",
    "how": "new truck was due Jul 2025; the old one may already have sold quietly"
   },
-  "rank": 45,
+  "rank": 44,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2501,7 +2431,7 @@
    "to": "2028-07",
    "how": "money approved Jul 2026; order, build, then sale"
   },
-  "rank": 46,
+  "rank": 45,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2540,10 +2470,80 @@
    "to": "2028-12",
    "how": "grant awarded Dec 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 47,
+  "rank": 46,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Franklin Fire Company #1",
+  "registry_name": "Franklin Fire Company #1",
+  "city": "Columbus",
+  "county": "Burlington",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Fouts Fire four quick-attack trucks due Fourth Quarter 2025 (ordered 2025-11)",
+  "signal_date": "2025-11-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
+  "proof_quote": "FOUTS FIRE—Franklin Fire Department four quick-attack trucks. Delivery in Fourth Quarter 2025.",
+  "other_signals": "",
+  "named_in_source": "Franklin Fire Department",
+  "name_match": "exact, ambiguous (3 same-name rows)",
+  "fdid": "03331",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "mini pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new trucks are four quick-attack trucks; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-10",
+   "to": "2026-06",
+   "how": "new truck was due Fourth Quarter 2025; the old one may already have sold quietly"
+  },
+  "rank": 47,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "mini pumper",
+   "band": "all ages",
+   "n": 16,
+   "median": 8600,
+   "p25": 6675,
+   "p75": 12300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Ford F350 Mini Pumper Truck",
+     "price": 10500.0,
+     "date": "2026-03-09",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46229/item/lot-0001-1992-ford-f350-mini-pumper-truck-288762/"
+    },
+    {
+     "item": "1995 Ford SD KME Mini Pumper 4x4 Truck",
+     "price": 12300.0,
+     "date": "2025-11-25",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/44510/item/lot-0003-1995-ford-sd-kme-mini-pumper-4x4-truck-281113/"
+    },
+    {
+     "item": "(Brush Truck) 1985 Chevy C/K30 Mini Pumper Truck",
+     "price": 7000.0,
+     "date": "2025-06-19",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed",

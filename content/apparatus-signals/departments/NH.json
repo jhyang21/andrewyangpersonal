@@ -140,6 +140,76 @@
   }
  },
  {
+  "checked": "trade_press",
+  "score": 4.5,
+  "department": "Moultonborough Fire/Rescue Department",
+  "registry_name": "Moultonborough Fire/Rescue Department",
+  "city": "Moultonborough",
+  "county": "Carroll",
+  "type": "Mostly volunteer",
+  "website": "https://www.moultonboroughnh.gov/fire-emergency-services-department",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Alexis pumper-tanker due Match 2026 (ordered 2025-03)",
+  "signal_date": "2026-03-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2025/",
+  "proof_quote": "ALEXIS—Town of Moultonborough Fire Rescue pumper-tanker. Delivery in Match 2026.",
+  "other_signals": "New truck on order: New Alexis pumper on order (2025-09), delivery December 2026",
+  "named_in_source": "Town of Moultonborough Fire Rescue",
+  "name_match": "exact",
+  "fdid": "11305",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-03",
+   "to": "2026-09",
+   "how": "new truck was due Mar 2026; the old one may already have sold quietly"
+  },
+  "rank": 3,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
   "checked": "fema_table",
   "score": 4.0,
   "department": "Hancock Fire Departmetn",
@@ -173,7 +243,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -212,7 +282,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -251,79 +321,9 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
-  "department": "Moultonborough Fire/Rescue Department",
-  "registry_name": "Moultonborough Fire/Rescue Department",
-  "city": "Moultonborough",
-  "county": "Carroll",
-  "type": "Mostly volunteer",
-  "website": "https://www.moultonboroughnh.gov/fire-emergency-services-department",
-  "why_call": "New truck on order",
-  "detail": "New Alexis pumper-tanker on order (2025-03), delivery Match 2026",
-  "signal_date": "2025-03-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2025/",
-  "proof_quote": "ALEXIS—Town of Moultonborough Fire Rescue pumper-tanker. Delivery in Match 2026.",
-  "other_signals": "",
-  "named_in_source": "Town of Moultonborough Fire Rescue",
-  "name_match": "exact",
-  "fdid": "11305",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-03",
-   "to": "2027-03",
-   "how": "ordered Mar 2025; builds take a year or more"
-  },
   "rank": 6,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
+  "guide": null
  }
 ]

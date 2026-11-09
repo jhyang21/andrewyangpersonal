@@ -823,14 +823,14 @@
   "departments": 211,
   "leads": {
    "week": 0,
-   "month": 4,
-   "watch": 2,
+   "month": 5,
+   "watch": 1,
    "total": 6
   },
   "by_kind": {
    "grant": 3,
    "new_truck_arrived": 2,
-   "new_truck_ordered": 1
+   "delivery_due": 1
   },
   "coverage": "national",
   "layers": [
@@ -855,11 +855,11 @@
    "total": 49
   },
   "by_kind": {
-   "new_truck_ordered": 11,
    "bond_or_referendum": 10,
+   "new_truck_ordered": 10,
    "grant": 8,
    "new_truck_arrived": 7,
-   "delivery_due": 6,
+   "delivery_due": 7,
    "council_approval": 4,
    "surplus_declared": 2,
    "sale_planned": 1

@@ -204,6 +204,8 @@
   "url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-oct-2025/",
   "new_truck_type": "walk-around rescue",
   "expected": "2027-02",
+  "expected_precision": "month",
+  "expected_words": "February 2027",
   "points": 3,
   "read_by": "feed",
   "source_name": "Surprise Fire Medical Department",

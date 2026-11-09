@@ -123,6 +123,8 @@
   "url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2026/",
   "new_truck_type": "brush truck",
   "expected": "2026-05",
+  "expected_precision": "month",
+  "expected_words": "May 2026",
   "points": 3,
   "read_by": "feed",
   "source_name": "North Lincoln Fire & Rescue No. 1",
