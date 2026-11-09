@@ -20,6 +20,14 @@
   --color-foreground: var(--color-ink);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-fraunces);
+  --color-as-bg: var(--as-bg);
+  --color-as-bg-2: var(--as-bg-2);
+  --color-as-ink: var(--as-ink);
+  --color-as-ink-2: var(--as-ink-2);
+  --color-as-muted: var(--as-muted);
+  --color-as-rule: var(--as-rule);
+  --color-as-axis: var(--as-axis);
+  --color-as-link: var(--as-link);
 }
 
 body {

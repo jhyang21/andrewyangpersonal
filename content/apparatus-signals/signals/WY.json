@@ -1,0 +1,18 @@
+[
+ {
+  "kind": "new_truck_ordered",
+  "date": "2026-10-01",
+  "detail": "New SVI heavy rescue on order (2026-10), delivery May 2027",
+  "old_truck": null,
+  "where": "trade press",
+  "quote": "SVI—Wyoming Office of Homeland Security, Laramie, heavy rescue. Delivery in May 2027.",
+  "url": "https://www.fireapparatusmagazine.com/fire-apparatus/october-2026-recent-apparatus-orders/",
+  "points": 4,
+  "read_by": "feed",
+  "source_name": "Wyoming Office of Homeland Security",
+  "source_city": "Laramie",
+  "source_county": "",
+  "match": "not in registry",
+  "fdid": ""
+ }
+]

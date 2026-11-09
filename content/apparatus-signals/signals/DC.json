@@ -1,0 +1,18 @@
+[
+ {
+  "kind": "new_truck_arrived",
+  "date": "2026-02-01",
+  "detail": "New Oshkosh Airport Products airport rescue and firefighting vehicle (stryker, 6x6) 3 units delivered (2026-02)",
+  "old_truck": null,
+  "where": "trade press",
+  "quote": "Department: METROPOLITAN WASHINGTON AIRPORTS AUTHORITY (PROTECTS DULLES AND REAGAN INTERNATIONAL AIRPORTS); Type: AIRPORT RESCUE AND FIREFIGHTING VEHICLE (STRYKER, 6X6) 3 UNITS; Built by: OSHKOSH AIRPORT PRODUCTS",
+  "url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-february-2026/",
+  "points": 5,
+  "read_by": "feed",
+  "source_name": "Metropolitan Washington Airports Authority",
+  "source_city": "",
+  "source_county": "",
+  "match": "exact",
+  "fdid": "92002"
+ }
+]

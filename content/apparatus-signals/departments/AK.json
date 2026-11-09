@@ -1,0 +1,28 @@
+[
+ {
+  "checked": "from FEMA's awards table",
+  "score": 4.0,
+  "department": "City of Gustavus",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $668,095, awarded 8/16/24 (FY2023)",
+  "signal_date": "2024-08-16",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Gustavus, Vehicle Acquisition, $668,095",
+  "other_signals": "",
+  "named_in_source": "City of Gustavus",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck_for_sale": "",
+  "rank": 1,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale"
+ }
+]

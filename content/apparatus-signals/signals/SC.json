@@ -1,0 +1,50 @@
+[
+ {
+  "kind": "grant",
+  "date": "2023-08-18",
+  "detail": "FEMA vehicle grant $690,909, awarded 8/18/23 (FY2022)",
+  "old_truck": null,
+  "where": "FEMA awards table",
+  "quote": "City of Gaffney, Vehicle Acquisition, $690,909",
+  "url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "points": 3,
+  "read_by": "feed",
+  "source_name": "City of Gaffney",
+  "source_city": "",
+  "source_county": "",
+  "match": "exact",
+  "fdid": "11106"
+ },
+ {
+  "kind": "delivery_due",
+  "date": "2026-08-01",
+  "detail": "New Midwest Fire pumper-tanker due August 2026 (ordered 2025-02)",
+  "old_truck": null,
+  "where": "trade press",
+  "quote": "MIDWEST FIRE—Corinth Volunteer Fire Department, Gaffney, pumper-tanker. Delivery in August 2026.",
+  "url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
+  "points": 3,
+  "read_by": "feed",
+  "source_name": "Corinth Volunteer Fire Department",
+  "source_city": "Gaffney",
+  "source_county": "",
+  "match": "exact",
+  "fdid": "11205"
+ },
+ {
+  "kind": "delivery_due",
+  "date": "2026-06-01",
+  "detail": "New Toyne pumper due June 2026 (ordered 2025-04)",
+  "old_truck": null,
+  "where": "trade press",
+  "quote": "TOYNE—Sumter City/County Fire Department pumper. Delivery in June 2026.",
+  "url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
+  "points": 3,
+  "read_by": "feed",
+  "source_name": "Sumter City/County Fire Department",
+  "source_city": "",
+  "source_county": "",
+  "match": "exact, ambiguous (2 same-name rows)",
+  "fdid": "43501"
+ }
+]

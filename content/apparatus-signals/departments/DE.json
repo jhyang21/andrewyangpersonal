@@ -1,0 +1,28 @@
+[
+ {
+  "checked": "listed in a trade-press delivery column",
+  "score": 3.0,
+  "department": "Tri Township Fire Department",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Sutphen pumper on order (2025-09), delivery July 2028",
+  "signal_date": "2025-09-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-sept-2025/",
+  "proof_quote": "SUTPHEN—Tri Township Fire Department, Delaware, pumper. Delivery in July 2028.",
+  "other_signals": "",
+  "named_in_source": "Tri Township Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck_for_sale": "",
+  "rank": 1,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president"
+ }
+]
