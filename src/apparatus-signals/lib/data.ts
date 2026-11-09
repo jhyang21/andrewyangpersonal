@@ -29,10 +29,6 @@ export interface Meta {
     hand_read_leads: number;
     /** Leads with at least one seen signal. */
     observed_leads: number;
-    /** Stage counts. Optional: when missing, stageTotals() counts the rows. */
-    not_listed_soon?: number;
-    listed?: number;
-    sold?: number;
     signals: number;
     deep_states: string[];
     auction_states: string[];
@@ -514,13 +510,30 @@ export function getDepartments(code: string): DepartmentWithId[] {
       );
     }
     seen.set(id, row.department);
-    return { ...row, id };
+    return { ...row, id, openRank: null as number | null };
   });
+  // Rank only the leads not yet listed, in the home Top 10's order.
+  out
+    .filter((d) => isOpenStage(d.stage))
+    .sort(compareLeads)
+    .forEach((d, i) => {
+      d.openRank = i + 1;
+    });
   cache.set(key, out);
   return out;
 }
 
-export type DepartmentWithId = Department & { id: string };
+/**
+ * openRank: place among the state's leads not yet listed (stage surplus or
+ * replacing), by compareLeads. Null for listed and sold leads. The site shows
+ * this, not the export's `rank`, which counts every stage.
+ */
+export type DepartmentWithId = Department & { id: string; openRank: number | null };
+
+/** Not yet at auction or sold: the leads worth a call. */
+export function isOpenStage(stage: Stage): boolean {
+  return stage === "surplus" || stage === "replacing";
+}
 
 export function getDepartment(code: string, id: string): DepartmentWithId | undefined {
   return getDepartments(code).find((d) => d.id === id);
@@ -568,20 +581,14 @@ export function allLeads(): LeadAcrossStates[] {
 }
 
 /**
- * Headline stage counts. not_listed_soon is tier 1 or 2 at stage surplus or
- * replacing: the ones to call before they list. Uses meta.totals when the
- * export carries them, else counts the department rows.
+ * Headline stage counts, counted from the department rows (the only source).
+ * not_listed_soon is tier 1 or 2 at stage surplus or replacing: the ones to
+ * call before they list.
  */
 export function stageTotals(): { not_listed_soon: number; listed: number; sold: number } {
-  const t = getMeta().totals;
-  if (t.not_listed_soon !== undefined && t.listed !== undefined && t.sold !== undefined) {
-    return { not_listed_soon: t.not_listed_soon, listed: t.listed, sold: t.sold };
-  }
   const leads = allLeads();
   return {
-    not_listed_soon: leads.filter(
-      (d) => (d.stage === "surplus" || d.stage === "replacing") && /^[12]\b/.test(d.tier),
-    ).length,
+    not_listed_soon: leads.filter((d) => isOpenStage(d.stage) && /^[12]\b/.test(d.tier)).length,
     listed: leads.filter((d) => d.stage === "listed").length,
     sold: leads.filter((d) => d.stage === "sold").length,
   };

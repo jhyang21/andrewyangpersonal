@@ -22,6 +22,7 @@ import {
   READ_BY_LABEL,
   STAGE_LABEL,
   STAGE_ORDER,
+  STAGE_WHEN,
   checkedLabel,
 } from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
@@ -30,7 +31,8 @@ import Ext from "@/apparatus-signals/ui/Ext";
 export interface LeadRow {
   id: string;
   href: string;
-  rank: number;
+  /** Place among the state's leads not yet listed; null for listed and sold. */
+  rank: number | null;
   tier: string;
   score: number;
   department: string;
@@ -65,8 +67,10 @@ type SortKey = "score" | "date";
 
 const COLUMNS = 10;
 
-/** The When cell for leads already on a channel; the rest show their tier. */
-const STAGE_WHEN: Partial<Record<Stage, string>> = { sold: "Sold", listed: "At auction" };
+/** Unranked rows (listed, sold) sort after ranked ones and keep their order. */
+function byRank(a: LeadRow, b: LeadRow): number {
+  return (a.rank ?? Number.MAX_SAFE_INTEGER) - (b.rank ?? Number.MAX_SAFE_INTEGER);
+}
 
 function place(row: LeadRow): string {
   const county = row.county ? `${row.county} County` : "";
@@ -97,11 +101,11 @@ export default function LeadTable({
       (r) => (tier === "all" || r.tier === tier) && (kind === "all" || r.kinds.includes(kind)),
     );
     if (sort === "score") {
-      out.sort((a, b) => b.score - a.score || a.rank - b.rank);
+      out.sort((a, b) => b.score - a.score || byRank(a, b));
     } else {
       out.sort((a, b) => {
         if (!a.signal_date !== !b.signal_date) return a.signal_date ? -1 : 1;
-        return b.signal_date.localeCompare(a.signal_date) || a.rank - b.rank;
+        return b.signal_date.localeCompare(a.signal_date) || byRank(a, b);
       });
     }
     return out;
@@ -252,7 +256,7 @@ function GroupTable({
             <Fragment key={r.id}>
               <tr>
                 <td className="r text-as-muted" data-label="Rank">
-                  {r.rank}
+                  {r.rank ?? "—"}
                 </td>
                 <td>
                   <Link href={r.href} className="font-semibold">

@@ -63,6 +63,9 @@ export const STAGE_LABEL: Record<Stage, string> = {
 /** Stages whose truck has already reached a buyer or an auction. */
 export const DONE_STAGES: Stage[] = ["listed", "sold"];
 
+/** Shown where the tier label sits, for leads already on a channel. */
+export const STAGE_WHEN: Partial<Record<Stage, string>> = { sold: "Sold", listed: "At auction" };
+
 export const DONE_NOTE = "Already on a channel. Here as proof the earlier signs were right.";
 
 export const CHECKED_LABEL: Record<Checked, string> = {

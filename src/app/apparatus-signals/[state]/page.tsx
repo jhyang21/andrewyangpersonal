@@ -45,7 +45,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
   const rows: LeadRow[] = departments.map((d) => ({
     id: d.id,
     href: departmentHref(state.code, d),
-    rank: d.rank,
+    rank: d.openRank,
     tier: d.tier,
     score: d.score,
     department: d.department,

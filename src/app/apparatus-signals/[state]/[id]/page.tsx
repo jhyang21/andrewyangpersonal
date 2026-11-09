@@ -27,6 +27,7 @@ import { NAMED, bandLabel, typePlural } from "@/apparatus-signals/lib/trucks";
 import {
   BASIS_LEGEND,
   READ_BY_LABEL,
+  STAGE_WHEN,
   VERDICT_LABELS,
   checkedLabel,
   hitRatesFor,
@@ -220,12 +221,13 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
           The lead
         </h2>
         <p className="mt-1 text-lg font-semibold">
-          {tierLabel(dept.tier)}: {dept.why_call} <BasisBadge basis={dept.basis} />
+          {STAGE_WHEN[dept.stage] ?? tierLabel(dept.tier)}: {dept.why_call}{" "}
+          <BasisBadge basis={dept.basis} />
         </p>
         {dept.detail ? <p>{dept.detail}</p> : null}
         <p className="mt-1 text-sm text-as-ink-2">
-          Score <span className="num">{formatScore(dept.score)}</span> · rank {dept.rank} in{" "}
-          {state.name}
+          Score <span className="num">{formatScore(dept.score)}</span>
+          {dept.openRank !== null ? ` · rank ${dept.openRank} in ${state.name}` : ""}
           {dept.signal_date ? ` · ${formatDate(dept.signal_date)}` : ""} ·{" "}
           {READ_BY_LABEL[dept.read_by].toLowerCase()}
           {dept.checked ? ` · ${lowerFirst(checkedLabel(dept.checked))}` : ""}
