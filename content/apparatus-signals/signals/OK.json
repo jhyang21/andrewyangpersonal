@@ -103,6 +103,7 @@
   "where": "trade press",
   "quote": "Department: OAKRIDGE (OK) FIRE DEPARTMENT; Type: PUMPER/TANKER; Built by: MIDWEST FIRE TANKER",
   "url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-may-2026/",
+  "new_truck_type": "pumper/tanker",
   "points": 5,
   "read_by": "feed",
   "source_name": "Oakridge Fire Department",

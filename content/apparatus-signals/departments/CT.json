@@ -20,10 +20,48 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2004 Ferrara pumper (49,981 miles)",
+  "truck": {
+   "description": "2004 Ferrara pumper (49,981 miles)",
+   "type": "pumper",
+   "year": 2004,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 1,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "21-25",
+   "n": 77,
+   "median": 5100,
+   "p25": 3550,
+   "p75": 8000,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    },
+    {
+     "item": "2004 HME Fire Pumper Truck",
+     "price": 4800.0,
+     "date": "2026-01-24",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0002-2004-hme-fire-pumper-truck-286256/"
+    },
+    {
+     "item": "2003 Pierce Sabre Fire Pumper Truck",
+     "price": 1850.0,
+     "date": "2025-12-02",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45162/item/lot-0101-2003-pierce-sabre-fire-pumper-truck-282488/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -46,10 +84,48 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "Mack CF pumper, about 74,000 miles (retired about eight months earlier)",
+  "truck": {
+   "description": "Mack CF pumper, about 74,000 miles (retired about eight months earlier)",
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
   "rank": 2,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3300.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0013-1993-mack-mr688p-pumper-132705/"
+    },
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3050.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0014-1993-mack-mr688p-pumper-132704/"
+    },
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -72,10 +148,48 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "Engine 4",
+  "truck": {
+   "description": "Engine 4",
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
   "rank": 3,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3300.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0013-1993-mack-mr688p-pumper-132705/"
+    },
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3050.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0014-1993-mack-mr688p-pumper-132704/"
+    },
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -98,10 +212,17 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "other",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an airport rescue amd firefighting vehicle (stryker 6×6); departments usually replace like with like"
+  },
   "rank": 4,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader; quote or link corrected",
@@ -124,10 +245,48 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "Engine 205 (1991 pumper)",
+  "truck": {
+   "description": "Engine 205 (1991 pumper)",
+   "type": "pumper",
+   "year": 1991,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 5,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "31+",
+   "n": 191,
+   "median": 3600,
+   "p25": 2438,
+   "p75": 5200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    },
+    {
+     "item": "1984 Sutphen Deluge Pumper",
+     "price": 2500.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0020-1984-sutphen-deluge-pumper-132711/"
+    },
+    {
+     "item": "1991 International 4900 Pumper Fire Truck",
+     "price": 5500.0,
+     "date": "2026-02-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46119/item/lot-0001-1991-international-4900-pumper-fire-truck-288169/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -150,10 +309,48 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "pumper, 31 years old",
+  "truck": {
+   "description": "pumper, 31 years old",
+   "type": "pumper",
+   "year": 1995,
+   "year_how": "from age",
+   "type_how": "named in the record"
+  },
   "rank": 6,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "31+",
+   "n": 191,
+   "median": 3600,
+   "p25": 2438,
+   "p75": 5200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1995 Spartan Gladiator Pumper Truck",
+     "price": 3250.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0014-14-1995-spartan-gladiator-pumper-truck-310067/"
+    },
+    {
+     "item": "1995 Pierce Saber Fire Pumper Truck",
+     "price": 12300.0,
+     "date": "2026-03-24",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46295/item/lot-0001-1995-pierce-saber-fire-pumper-truck-289212/"
+    },
+    {
+     "item": "1994 Pierce Pumper",
+     "price": 2750.0,
+     "date": "2025-11-14",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/44675/item/lot-0001-e-193-1994-pierce-pumper-280637/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -176,10 +373,17 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2007 Ford F350 Super Duty 4x4 (fire department utility truck, obsolete, not operable)",
+  "truck": {
+   "description": "2007 Ford F350 Super Duty 4x4 (fire department utility truck, obsolete, not operable)",
+   "type": "other",
+   "year": 2007,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 7,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "partly confirmed: name: Town of Montville -- Truck, $5,000 opening bid, no title and online auction are confirmed (CT Insider via Yahoo, Oct. 16, 2025; the quote is a verbatim remark by the auction site's CEO). No page names a fire department or company: Yahoo/CT Insider, Fire Apparatus Magazine (Oct. 14, 2025: 'a 1991 pumper truck owned by the town of Montville') and a ride-ct.com post (Oct. 13, 2025) all name only the town. The town says it replaced the truck with a new engine last year. A search summary says the auction closed Oct. 17 with the reserve not met; I did not confirm that on a page I opened.",
@@ -202,10 +406,48 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "1991 KME Spartan engine (no title)",
+  "truck": {
+   "description": "1991 KME Spartan engine (no title)",
+   "type": "pumper",
+   "year": 1991,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 8,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "31+",
+   "n": 191,
+   "median": 3600,
+   "p25": 2438,
+   "p75": 5200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    },
+    {
+     "item": "1984 Sutphen Deluge Pumper",
+     "price": 2500.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0020-1984-sutphen-deluge-pumper-132711/"
+    },
+    {
+     "item": "1991 International 4900 Pumper Fire Truck",
+     "price": 5500.0,
+     "date": "2026-02-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46119/item/lot-0001-1991-international-4900-pumper-fire-truck-288169/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -228,10 +470,48 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 9,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1984 Pierce 6V-92TA 1500 Gallon Tanker with Pumper",
+     "price": 2550.0,
+     "date": "2018-03-31",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/13474/item/lot-0001-1984-pierce-6v-92ta-1500-gallon-tanker-with-pumper-82396/"
+    },
+    {
+     "item": "1977 Ford L800 Fire Tanker",
+     "price": 2025.0,
+     "date": "2017-01-31",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/9723/item/lot-0006-1977-ford-l800-fire-tanker-59072/"
+    },
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -254,10 +534,17 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 10,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -280,10 +567,48 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "Rescue 5 (1997)",
+  "truck": {
+   "description": "Rescue 5 (1997)",
+   "type": "rescue",
+   "year": 1997,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 11,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "rescue",
+   "band": "26-30",
+   "n": 27,
+   "median": 6000,
+   "p25": 3962,
+   "p75": 9650,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1990 Mack MC688FC Rescue",
+     "price": 4400.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0016-1990-mack-mc688fc-rescue-132707/"
+    },
+    {
+     "item": "1995 International 4700 Rescue Truck",
+     "price": 9100.0,
+     "date": "2024-03-05",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/35403/item/lot-0002-1995-international-4700-rescue-truck-227416/"
+    },
+    {
+     "item": "1992 Pierce Arrow Fire Pumper Rescue Truck",
+     "price": 6000.0,
+     "date": "2021-03-17",
+     "state": null,
+     "url": "https://www.auctionsinternational.com/auction/24145/item/lot-0001-1992-pierce-arrow-fire-pumper-rescue-truck-148424/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -306,10 +631,17 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 12,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -332,10 +664,17 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 13,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -358,10 +697,48 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "current Engine 3",
+  "truck": {
+   "description": "current Engine 3",
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
   "rank": 14,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3300.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0013-1993-mack-mr688p-pumper-132705/"
+    },
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3050.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0014-1993-mack-mr688p-pumper-132704/"
+    },
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -384,10 +761,48 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "Engine 4 (deemed unsafe and taken out of service)",
+  "truck": {
+   "description": "Engine 4 (deemed unsafe and taken out of service)",
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
   "rank": 15,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3300.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0013-1993-mack-mr688p-pumper-132705/"
+    },
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3050.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0014-1993-mack-mr688p-pumper-132704/"
+    },
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -410,10 +825,17 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 16,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -436,10 +858,48 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tractor-drawn aerial; departments usually replace like with like"
+  },
   "rank": 17,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 104,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8600,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2008 HME 1871 Spector Quint 75' Ladder Truck",
+     "price": 6200.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0018-2008-hme-1871-spector-quint-75-ladder-truck-132709/"
+    },
+    {
+     "item": "1997 Sutphen MT-75 75' Ladder Quint Truck",
+     "price": 4750.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0021-1997-sutphen-mt-75-75-ladder-quint-truck-132712/"
+    },
+    {
+     "item": "1996 Sutphen TS-100 100' Quint Tower Truck",
+     "price": 3750.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0022-1996-sutphen-ts-100-100-quint-tower-truck-132713/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -462,10 +922,17 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 18,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -488,10 +955,17 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 19,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -514,10 +988,48 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 20,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3300.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0013-1993-mack-mr688p-pumper-132705/"
+    },
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3050.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0014-1993-mack-mr688p-pumper-132704/"
+    },
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -540,10 +1052,48 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 21,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1984 Pierce 6V-92TA 1500 Gallon Tanker with Pumper",
+     "price": 2550.0,
+     "date": "2018-03-31",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/13474/item/lot-0001-1984-pierce-6v-92ta-1500-gallon-tanker-with-pumper-82396/"
+    },
+    {
+     "item": "1977 Ford L800 Fire Tanker",
+     "price": 2025.0,
+     "date": "2017-01-31",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/9723/item/lot-0006-1977-ford-l800-fire-tanker-59072/"
+    },
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -566,10 +1116,48 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "Engine 5 and Rescue 15 (20 years old); Engine 10 (14 years old)",
+  "truck": {
+   "description": "Engine 5 and Rescue 15 (20 years old); Engine 10 (14 years old)",
+   "type": "pumper",
+   "year": 2004,
+   "year_how": "from age",
+   "type_how": "named in the record"
+  },
   "rank": 22,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "21-25",
+   "n": 77,
+   "median": 5100,
+   "p25": 3550,
+   "p75": 8000,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    },
+    {
+     "item": "2004 HME Fire Pumper Truck",
+     "price": 4800.0,
+     "date": "2026-01-24",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0002-2004-hme-fire-pumper-truck-286256/"
+    },
+    {
+     "item": "2003 Pierce Sabre Fire Pumper Truck",
+     "price": 1850.0,
+     "date": "2025-12-02",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45162/item/lot-0101-2003-pierce-sabre-fire-pumper-truck-282488/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -592,10 +1180,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 23,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -618,10 +1213,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 24,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -644,10 +1246,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 25,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -670,10 +1279,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 26,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader; quote or link corrected",
@@ -696,10 +1312,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 27,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -722,10 +1345,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 28,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -748,10 +1378,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 29,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -774,10 +1411,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 30,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -800,10 +1444,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 31,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -826,10 +1477,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 32,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -852,10 +1510,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 33,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader; quote or link corrected",
@@ -878,10 +1543,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 34,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -904,10 +1576,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 35,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -930,10 +1609,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 36,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -956,10 +1642,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 37,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader; quote or link corrected",
@@ -982,10 +1675,17 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 38,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader; quote or link corrected",
@@ -1008,9 +1708,16 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 39,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  }
 ]

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Fragment, useMemo, useState } from "react";
 import {
   formatDate,
+  formatMoney,
   formatNumber,
   formatScore,
   tierLabel,
@@ -11,7 +12,8 @@ import {
   websiteHref,
   websiteText,
 } from "@/apparatus-signals/lib/format";
-import type { Basis, ReadBy } from "@/apparatus-signals/lib/data";
+import type { Basis, Guide, ReadBy, Truck } from "@/apparatus-signals/lib/data";
+import { guideTitle, truckLabel } from "@/apparatus-signals/lib/trucks";
 import { BASIS_LEGEND, READ_BY_LABEL } from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
 import Ext from "@/apparatus-signals/ui/Ext";
@@ -28,7 +30,9 @@ export interface LeadRow {
   type: string;
   why_call: string;
   detail: string;
-  truck_for_sale: string;
+  truck: Truck;
+  /** The guide price and its closest sales; null when the truck type is unknown. */
+  guide: Guide | null;
   signal_date: string;
   other_signals: string;
   proof_url: string;
@@ -148,6 +152,10 @@ export default function LeadTable({
             </th>
             <th scope="col">Department</th>
             <th scope="col">Why call</th>
+            <th scope="col">Truck</th>
+            <th scope="col" className="r">
+              Guide price
+            </th>
             <th scope="col">When</th>
             <th scope="col" className="r">
               Score
@@ -178,6 +186,19 @@ export default function LeadTable({
                     {r.why_call}
                     {r.detail ? <div className="text-sm text-as-ink-2">{r.detail}</div> : null}
                   </td>
+                  <td data-label="Truck" className="text-sm">
+                    {truckLabel(r.truck)}
+                  </td>
+                  <td className="r whitespace-nowrap" data-label="Guide price">
+                    {r.guide ? (
+                      <span title={guideTitle(r.guide)}>
+                        {formatMoney(r.guide.median)}
+                        {r.guide.thin ? <span className="block text-xs text-as-muted">few sales</span> : null}
+                      </span>
+                    ) : (
+                      "—"
+                    )}
+                  </td>
                   <td data-label="When" className={r.tier.startsWith("1") ? "font-semibold" : ""}>
                     {tierLabel(r.tier)} <BasisBadge basis={r.basis} />
                   </td>
@@ -201,7 +222,7 @@ export default function LeadTable({
                   </td>
                 </tr>
                 <tr id={panelId} hidden={!isOpen}>
-                  <td colSpan={7} className="bg-as-bg-2">
+                  <td colSpan={9} className="bg-as-bg-2">
                     {isOpen ? <LeadDetail row={r} /> : null}
                   </td>
                 </tr>
@@ -222,11 +243,18 @@ function LeadDetail({ row }: { row: LeadRow }) {
   return (
     <div className="grid gap-3 p-3 text-sm sm:grid-cols-2">
       <div className="space-y-2">
-        {row.truck_for_sale ? (
-          <p>
-            <span className="text-as-muted">Truck: </span>
-            {row.truck_for_sale}
-          </p>
+        {row.guide?.comps.length ? (
+          <div>
+            <p className="text-as-muted">Closest sales:</p>
+            <ul className="list-disc pl-5">
+              {row.guide.comps.map((c, i) => (
+                <li key={`${i}-${c.url}`}>
+                  <Ext href={c.url}>{c.item}</Ext>: {formatMoney(c.price)}, {formatDate(c.date)}
+                  {c.state ? `, ${c.state}` : ""}
+                </li>
+              ))}
+            </ul>
+          </div>
         ) : null}
         {row.proof_quote ? <blockquote className="quote">{row.proof_quote}</blockquote> : null}
         {row.proof_url ? (

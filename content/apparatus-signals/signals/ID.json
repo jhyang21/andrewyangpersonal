@@ -23,6 +23,7 @@
   "where": "trade press",
   "quote": "Department: BONNEVILLE COUNTY (ID) FIRE PROTECTION DISTRICT; Type: PUMPER; Built by: TOYNE FIRE APPARATUS",
   "url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-january-2026/",
+  "new_truck_type": "pumper",
   "points": 5,
   "read_by": "feed",
   "source_name": "Bonneville County Fire Protection District",

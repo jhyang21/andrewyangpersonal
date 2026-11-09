@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BASE } from "@/apparatus-signals/lib/site";
 import { getMeta, getMethod, getSales, getState, getStates } from "@/apparatus-signals/lib/data";
 import { formatDate, formatMoney, formatNumber, plural, tierLabel } from "@/apparatus-signals/lib/format";
+import { bandLabel, typePlural } from "@/apparatus-signals/lib/trucks";
 import { ageBuckets, lotsByState, medianPrice, splitSales } from "@/apparatus-signals/lib/sales";
 import { BASIS_LABEL, VERDICT_LABELS, WEEK_RULE, kindLabel, modifierLabel } from "@/apparatus-signals/lib/words";
 import { LeadTimeChart, PriceByAgeChart } from "@/apparatus-signals/ui/charts";
@@ -28,6 +29,7 @@ export default function MethodPage() {
     (a, b) => method.points[b] - method.points[a] || a.localeCompare(b),
   );
   const tiers = [...method.tiers].sort((a, b) => b.floor - a.floor);
+  const guide = method.price_guide;
 
   return (
     <div className="space-y-12">
@@ -69,6 +71,68 @@ export default function MethodPage() {
       </section>
 
       <DoesItWork method={method} />
+
+      <section aria-labelledby="price-guide" className="space-y-4">
+        <h2 id="price-guide" className="text-xl font-semibold">
+          The price guide
+        </h2>
+        <p className="max-w-3xl">
+          Each lead with a known truck type gets a guide price: the median sale price of trucks of
+          that type and age at auction. It uses {formatNumber(guide.meta.lots_used)} of{" "}
+          {formatNumber(guide.meta.lots_sold)} sold lots and leaves out{" "}
+          {formatNumber(guide.meta.lots_dropped)} as {guide.meta.dropped_why}. Age is the{" "}
+          {guide.meta.age}. Source: {guide.meta.source}; built {formatDate(guide.meta.built)}.
+        </p>
+        <p className="max-w-3xl">
+          The truck type comes from the record in one of two ways. Some records name the old truck,
+          such as a 1998 pumper put up for sale; then the type, and the model year when given, are
+          read from those words. Grant, order and delivery records name only the new truck; then the
+          old truck is taken to be the same type, since departments usually replace like with like.
+          A guide price is shown only when the type is known. When the model year is not known, the
+          price covers all ages.
+        </p>
+        <table className="data-table">
+          <caption className="sr-only">Auction sale prices by truck type and age</caption>
+          <thead>
+            <tr>
+              <th scope="col">Truck type</th>
+              <th scope="col">Age</th>
+              <th scope="col" className="r">
+                Sales
+              </th>
+              <th scope="col" className="r">
+                Median
+              </th>
+              <th scope="col" className="r">
+                Middle half
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {guide.table.map((r) => (
+              <tr key={`${r.type}-${r.band}`} className={r.thin ? "text-as-muted" : ""}>
+                <td className={r.band === "all ages" ? "font-semibold" : ""}>{typePlural(r.type)}</td>
+                <td data-label="Age">{bandLabel(r.band)}</td>
+                <td className="r" data-label="Sales">
+                  {formatNumber(r.n)}
+                  {r.thin ? <span className="block text-xs">few sales</span> : null}
+                </td>
+                <td className="r" data-label="Median">
+                  {formatMoney(r.median)}
+                </td>
+                <td className="r whitespace-nowrap" data-label="Middle half">
+                  {formatMoney(r.p25)} to {formatMoney(r.p75)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <ul className="max-w-3xl list-disc space-y-1 pl-5 text-sm text-as-ink-2">
+          {guide.meta.caveats.map((c) => (
+            <li key={c}>{c}</li>
+          ))}
+        </ul>
+      </section>
 
       <section aria-labelledby="scoring" className="space-y-6">
         <h2 id="scoring" className="text-xl font-semibold">
