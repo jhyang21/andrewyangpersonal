@@ -55,18 +55,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     why_call: d.why_call,
     detail: d.detail,
     truck: d.truck,
-    // The table needs the price, not the close sales; those are on the department page.
-    guide: d.guide
-      ? {
-          type: d.guide.type,
-          band: d.guide.band,
-          n: d.guide.n,
-          median: d.guide.median,
-          p25: d.guide.p25,
-          p75: d.guide.p75,
-          thin: d.guide.thin,
-        }
-      : null,
+    guide: d.guide,
     signal_date: d.signal_date,
     other_signals: d.other_signals,
     proof_url: d.proof_url,

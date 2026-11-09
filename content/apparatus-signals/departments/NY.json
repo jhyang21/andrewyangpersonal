@@ -20,7 +20,6 @@
   "top_kind": "auction_open",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2009 GMC TopKick C4500 Ambulance",
   "truck": {
    "description": "2009 GMC TopKick C4500 Ambulance",
    "type": "ambulance",
@@ -85,7 +84,6 @@
   "top_kind": "auction_open",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2001 HME Central States Fire Truck",
   "truck": {
    "description": "2001 HME Central States Fire Truck",
    "type": "pumper",
@@ -150,7 +148,6 @@
   "top_kind": "auction_open",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "1998 Freightliner ALF/American LaFrance Eagle Fire Pumper",
   "truck": {
    "description": "1998 Freightliner ALF/American LaFrance Eagle Fire Pumper",
    "type": "pumper",
@@ -215,7 +212,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -249,7 +245,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2001 Spartan Advantage / Emergency-One engine",
   "truck": {
    "description": "2001 Spartan Advantage / Emergency-One engine",
    "type": "pumper",
@@ -314,7 +309,6 @@
   "top_kind": "auction_open",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "1992 Pierce Arrow Crew Cab Fire Truck",
   "truck": {
    "description": "1992 Pierce Arrow Crew Cab Fire Truck",
    "type": "pumper",
@@ -379,7 +373,6 @@
   "top_kind": "auction_open",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2008 Ferrara Inferno Rear Mount Aerial Truck",
   "truck": {
    "description": "2008 Ferrara Inferno Rear Mount Aerial Truck",
    "type": "aerial",
@@ -444,7 +437,6 @@
   "top_kind": "auction_open",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2002 Spartan Gladiator 95 Foot Tower Ladder Truck",
   "truck": {
    "description": "2002 Spartan Gladiator 95 Foot Tower Ladder Truck",
    "type": "aerial",
@@ -509,7 +501,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -543,7 +534,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -577,7 +567,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2009 ambulance",
   "truck": {
    "description": "2009 ambulance",
    "type": "ambulance",
@@ -642,7 +631,6 @@
   "top_kind": "surplus_declared",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2003 E-One/Saulsbury pumper",
   "truck": {
    "description": "2003 E-One/Saulsbury pumper",
    "type": "pumper",
@@ -707,7 +695,6 @@
   "top_kind": "surplus_declared",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2002 KME fire apparatus (Engine 270)",
   "truck": {
    "description": "2002 KME fire apparatus (Engine 270)",
    "type": "pumper",
@@ -772,7 +759,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "Ladder truck for Medina Fire Department (about $1.7M, too large for firehouse)",
   "truck": {
    "description": "Ladder truck for Medina Fire Department (about $1.7M, too large for firehouse)",
    "type": "aerial",
@@ -837,7 +823,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -871,7 +856,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -905,7 +889,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -939,7 +922,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -1004,7 +986,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1038,7 +1019,6 @@
   "top_kind": "auction_support",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1072,7 +1052,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "aerial",
@@ -1137,7 +1116,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1171,7 +1149,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -1236,7 +1213,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -1301,7 +1277,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1335,7 +1310,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1369,7 +1343,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1403,7 +1376,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1437,7 +1409,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "1998 American LaFrance pumper and 2008 American LaFrance rescue",
   "truck": {
    "description": "1998 American LaFrance pumper and 2008 American LaFrance rescue",
    "type": "pumper",
@@ -1502,7 +1473,6 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "Current village ambulance (model not stated)",
   "truck": {
    "description": "Current village ambulance (model not stated)",
    "type": "ambulance",
@@ -1567,7 +1537,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -1632,7 +1601,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1666,7 +1634,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "aerial",
@@ -1731,7 +1698,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1765,7 +1731,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1799,7 +1764,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1833,7 +1797,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1867,7 +1830,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -1932,7 +1894,6 @@
   "top_kind": "surplus_declared",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2004 KME-Ford mini pumper",
   "truck": {
    "description": "2004 KME-Ford mini pumper",
    "type": "mini pumper",
@@ -1997,7 +1958,6 @@
   "top_kind": "surplus_declared",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "Engine 8756 (year/make not stated)",
   "truck": {
    "description": "Engine 8756 (year/make not stated)",
    "type": "pumper",
@@ -2062,7 +2022,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2096,7 +2055,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2130,7 +2088,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2164,7 +2121,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2198,7 +2154,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2232,7 +2187,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2297,7 +2251,6 @@
   "top_kind": "surplus_declared",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "1999 Pierce pumper",
   "truck": {
    "description": "1999 Pierce pumper",
    "type": "pumper",
@@ -2362,7 +2315,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2396,7 +2348,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2430,7 +2381,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -2495,7 +2445,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2529,7 +2478,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2594,7 +2542,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2628,7 +2575,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2662,7 +2608,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2696,7 +2641,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2761,7 +2705,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2826,7 +2769,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2860,7 +2802,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2894,7 +2835,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2928,7 +2868,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2993,7 +2932,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -3058,7 +2996,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3092,7 +3029,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3126,7 +3062,6 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3160,7 +3095,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -3225,7 +3159,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -3290,7 +3223,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3324,7 +3256,6 @@
   "top_kind": "auction_equipment",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3358,7 +3289,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3392,7 +3322,6 @@
   "top_kind": "auction_equipment",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3426,7 +3355,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3460,7 +3388,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3494,7 +3421,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3528,7 +3454,6 @@
   "top_kind": "auction_equipment",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3562,7 +3487,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3596,7 +3520,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3630,7 +3553,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -3695,7 +3617,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3729,7 +3650,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3763,7 +3683,6 @@
   "top_kind": "auction_equipment",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3797,7 +3716,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3831,7 +3749,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3865,7 +3782,6 @@
   "top_kind": "auction_equipment",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3899,7 +3815,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -3964,7 +3879,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3998,7 +3912,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -4063,7 +3976,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4097,7 +4009,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4131,7 +4042,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4165,7 +4075,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4199,7 +4108,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4233,7 +4141,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -4298,7 +4205,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4332,7 +4238,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4366,7 +4271,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4400,7 +4304,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4434,7 +4337,6 @@
   "top_kind": "auction_equipment",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4468,7 +4370,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -4533,7 +4434,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4567,7 +4467,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4601,7 +4500,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4635,7 +4533,6 @@
   "top_kind": "auction_equipment",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4669,7 +4566,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4703,7 +4599,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4737,7 +4632,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4771,7 +4665,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4805,7 +4698,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4839,7 +4731,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4873,7 +4764,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4907,7 +4797,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4941,7 +4830,6 @@
   "top_kind": "auction_closed",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -4975,7 +4863,6 @@
   "top_kind": "already_sold",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,

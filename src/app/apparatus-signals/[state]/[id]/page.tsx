@@ -88,9 +88,14 @@ function TruckSection({ dept }: { dept: Department }) {
               `${/^[aeiou]/i.test(truck.type ?? "") ? "An" : "A"} ${truck.type}, judged from the new truck`}
           </p>
           <p className="mt-1 max-w-3xl text-sm text-as-ink-2">
-            {truck.type_how === NAMED
-              ? "The record names this truck."
-              : `${capitalize(truck.type_how ?? "")}.`}
+            {truck.description
+              ? truck.type_how === NAMED
+                ? "The record names this truck."
+                : "The record names this truck but not its type."
+              : ""}
+            {truck.type_how && truck.type_how !== NAMED
+              ? `${truck.description ? " " : ""}${capitalize(truck.type_how)}.`
+              : ""}
             {year}
           </p>
           {guide ? (
@@ -120,8 +125,11 @@ function TruckSection({ dept }: { dept: Department }) {
             </>
           ) : (
             <p className="mt-3 max-w-3xl text-as-ink-2">
-              There is no guide price for this kind of truck. The guide covers pumpers, aerials,
-              tankers, rescue trucks, brush trucks, mini pumpers and ambulances.
+              {truck.type
+                ? "There is no guide price for this kind of truck."
+                : "There is no guide price, because the type of truck is not known."}{" "}
+              The guide covers pumpers, aerials, tankers, rescue trucks, brush trucks, mini pumpers
+              and ambulances.
             </p>
           )}
         </>

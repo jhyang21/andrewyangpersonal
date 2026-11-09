@@ -20,7 +20,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2013 Spartan pumper, 42,972 miles, Hale pump, 1,000 gal tank",
   "truck": {
    "description": "2013 Spartan pumper, 42,972 miles, Hale pump, 1,000 gal tank",
    "type": "pumper",
@@ -85,7 +84,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "1997 Seagrave pumper",
   "truck": {
    "description": "1997 Seagrave pumper",
    "type": "pumper",
@@ -150,7 +148,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2001 KME fire pumper",
   "truck": {
    "description": "2001 KME fire pumper",
    "type": "pumper",
@@ -215,7 +212,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "two current fire trucks",
   "truck": {
    "description": "two current fire trucks",
    "type": "pumper",
@@ -280,7 +276,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "borough-owned brush truck",
   "truck": {
    "description": "borough-owned brush truck",
    "type": "brush",
@@ -345,7 +340,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -379,7 +373,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "1998 Spartan/RD Murray pumper, Engine 45",
   "truck": {
    "description": "1998 Spartan/RD Murray pumper, Engine 45",
    "type": "pumper",
@@ -444,7 +437,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "1981 Chevrolet CK30 mini pumper (1980s)",
   "truck": {
    "description": "1981 Chevrolet CK30 mini pumper (1980s)",
    "type": "mini pumper",
@@ -509,7 +501,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "1999 Dodge Ram 2500 Cummins diesel, 82,121 miles, optional skid unit with 150-gal tank",
   "truck": {
    "description": "1999 Dodge Ram 2500 Cummins diesel, 82,121 miles, optional skid unit with 150-gal tank",
    "type": "other",
@@ -543,7 +534,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -608,7 +598,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -673,7 +662,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "mini pumper",
@@ -738,7 +726,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "1993 Pierce engine, bought in 2017 from a neighboring company",
   "truck": {
    "description": "1993 Pierce engine, bought in 2017 from a neighboring company",
    "type": "pumper",
@@ -803,7 +790,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -868,7 +854,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -902,7 +887,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -936,7 +920,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -970,7 +953,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1004,7 +986,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1038,7 +1019,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "24-year-old aerial ladder truck",
   "truck": {
    "description": "24-year-old aerial ladder truck",
    "type": "aerial",
@@ -1103,7 +1083,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -1168,7 +1147,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1202,7 +1180,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "21-year-old pumper",
   "truck": {
    "description": "21-year-old pumper",
    "type": "pumper",
@@ -1267,7 +1244,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1301,7 +1277,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "2001 ladder truck",
   "truck": {
    "description": "2001 ladder truck",
    "type": "aerial",
@@ -1366,13 +1341,12 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "borough-owned truck damaged in a wreck on the way to a fire",
   "truck": {
    "description": "borough-owned truck damaged in a wreck on the way to a fire",
    "type": null,
    "year": null,
    "year_how": null,
-   "type_how": "named in the record"
+   "type_how": null
   },
   "rank": 26,
   "tier": "2 Call this month",
@@ -1400,7 +1374,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1434,7 +1407,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -1499,7 +1471,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "2003 pumper and 1997 rescue truck",
   "truck": {
    "description": "2003 pumper and 1997 rescue truck",
    "type": "pumper",
@@ -1564,7 +1535,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1598,7 +1568,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1632,7 +1601,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1666,7 +1634,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1700,7 +1667,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1734,7 +1700,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1768,7 +1733,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1802,7 +1766,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1836,7 +1799,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1870,7 +1832,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1904,7 +1865,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1938,7 +1898,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2003,7 +1962,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -2068,7 +2026,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2133,7 +2090,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "1963 ladder truck",
   "truck": {
    "description": "1963 ladder truck",
    "type": "aerial",
@@ -2198,7 +2154,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2232,7 +2187,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2266,7 +2220,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -2331,7 +2284,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "mini pumper",
@@ -2396,13 +2348,12 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "2017 Pierce Enforcer",
   "truck": {
    "description": "2017 Pierce Enforcer",
    "type": null,
    "year": 2017,
    "year_how": "stated",
-   "type_how": "named in the record"
+   "type_how": null
   },
   "rank": 49,
   "tier": "3 Watch",
@@ -2430,7 +2381,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "aerial",
@@ -2495,13 +2445,12 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "1998 E-One Freightliner",
   "truck": {
    "description": "1998 E-One Freightliner",
    "type": null,
    "year": 1998,
    "year_how": "stated",
-   "type_how": "named in the record"
+   "type_how": null
   },
   "rank": 51,
   "tier": "3 Watch",
@@ -2529,7 +2478,6 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "2010 pumper and 2008 ladder truck",
   "truck": {
    "description": "2010 pumper and 2008 ladder truck",
    "type": "pumper",
@@ -2594,7 +2542,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2659,7 +2606,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "Tanker 7 (tank problems, cannot be repaired)",
   "truck": {
    "description": "Tanker 7 (tank problems, cannot be repaired)",
    "type": "tanker",
@@ -2724,7 +2670,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2758,7 +2703,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -2823,7 +2767,6 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2857,7 +2800,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2922,7 +2864,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -2987,7 +2928,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -3052,7 +2992,6 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3086,7 +3025,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "aerial",
@@ -3151,7 +3089,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -3216,13 +3153,12 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "1990 Pemfab/E-One 1500/1000",
   "truck": {
    "description": "1990 Pemfab/E-One 1500/1000",
    "type": null,
    "year": 1990,
    "year_how": "stated",
-   "type_how": "named in the record"
+   "type_how": null
   },
   "rank": 64,
   "tier": "3 Watch",
@@ -3250,7 +3186,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -3315,7 +3250,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -3380,7 +3314,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3414,7 +3347,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3448,7 +3380,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3482,7 +3413,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3516,7 +3446,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3550,7 +3479,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3584,7 +3512,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3618,7 +3545,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -3652,7 +3578,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,

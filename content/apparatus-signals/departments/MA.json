@@ -20,7 +20,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -85,7 +84,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -119,7 +117,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -153,7 +150,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -187,7 +183,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -221,7 +216,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -255,7 +249,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -289,7 +282,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -354,7 +346,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -388,7 +379,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -422,7 +412,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -456,7 +445,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -490,7 +478,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -524,7 +511,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -558,7 +544,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -592,7 +577,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -626,7 +610,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -691,7 +674,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -725,7 +707,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -759,7 +740,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -824,7 +804,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -858,7 +837,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,

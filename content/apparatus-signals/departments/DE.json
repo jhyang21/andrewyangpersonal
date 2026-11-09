@@ -20,7 +20,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",

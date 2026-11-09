@@ -20,7 +20,6 @@
   "top_kind": "surplus_declared",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "ambulance(s) no longer needed for municipal purposes",
   "truck": {
    "description": "ambulance(s) no longer needed for municipal purposes",
    "type": "ambulance",
@@ -85,7 +84,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "other",
@@ -119,7 +117,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "aerial",
@@ -184,7 +181,6 @@
   "top_kind": "surplus_declared",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2012 Freightliner/Crimson Foam Tender",
   "truck": {
    "description": "2012 Freightliner/Crimson Foam Tender",
    "type": "tanker",
@@ -249,7 +245,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -283,7 +278,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "24-year-old foam pumper",
   "truck": {
    "description": "24-year-old foam pumper",
    "type": "pumper",
@@ -348,7 +342,6 @@
   "top_kind": "sale_planned",
   "basis": "observed",
   "read_by": "person",
-  "truck_for_sale": "2013 KME pumper",
   "truck": {
    "description": "2013 KME pumper",
    "type": "pumper",
@@ -413,7 +406,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -478,7 +470,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -512,7 +503,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -546,7 +536,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -580,7 +569,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -614,7 +602,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -648,7 +635,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -713,7 +699,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -747,7 +732,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -781,7 +765,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -846,7 +829,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -880,7 +862,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -945,7 +926,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "tanker out of service since 2021",
   "truck": {
    "description": "tanker out of service since 2021",
    "type": "tanker",
@@ -1010,7 +990,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "aerial",
@@ -1075,7 +1054,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1109,7 +1087,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "tanker",
@@ -1174,7 +1151,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1208,7 +1184,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1242,7 +1217,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -1307,7 +1281,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -1372,7 +1345,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "mini pumper",
@@ -1437,7 +1409,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1471,7 +1442,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "2007 pumper",
   "truck": {
    "description": "2007 pumper",
    "type": "pumper",
@@ -1536,7 +1506,6 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1570,7 +1539,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -1635,7 +1603,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1669,7 +1636,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -1734,7 +1700,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "aerial",
@@ -1799,7 +1764,6 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1833,7 +1797,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -1898,7 +1861,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1932,7 +1894,6 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -1966,7 +1927,6 @@
   "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "rescue",
@@ -2031,7 +1991,6 @@
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",
@@ -2096,7 +2055,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2130,7 +2088,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2164,7 +2121,6 @@
   "top_kind": "bond_or_referendum",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2198,7 +2154,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "1992 Pierce Lance engine",
   "truck": {
    "description": "1992 Pierce Lance engine",
    "type": "pumper",
@@ -2263,7 +2218,6 @@
   "top_kind": "council_approval",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2297,7 +2251,6 @@
   "top_kind": "grant",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2331,7 +2284,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "person",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": null,
@@ -2365,7 +2317,6 @@
   "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
-  "truck_for_sale": "",
   "truck": {
    "description": null,
    "type": "pumper",

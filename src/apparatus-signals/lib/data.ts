@@ -40,9 +40,10 @@ export interface Meta {
 }
 
 /**
- * The truck likely to leave, as far as the records say. type_how is "named in the record"
- * when a record names the old truck; otherwise a sentence saying the type is read from
- * the new truck's type; null when nothing is known.
+ * The truck likely to leave, as far as the records say. description is the record's words
+ * for the old truck, when one names it. type_how is "named in the record" when the type was
+ * read from those words; a sentence when it was read from the new truck; null when the type
+ * is not known (the description may still be there).
  */
 export interface Truck {
   description: string | null;
@@ -146,7 +147,6 @@ export interface Department {
   county: string;
   why_call: string;
   detail: string;
-  truck_for_sale: string;
   signal_date: string;
   other_signals: string;
   proof_url: string;

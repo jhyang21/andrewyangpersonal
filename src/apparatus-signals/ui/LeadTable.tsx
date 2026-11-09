@@ -12,7 +12,7 @@ import {
   websiteHref,
   websiteText,
 } from "@/apparatus-signals/lib/format";
-import type { Basis, PriceGuideRow, ReadBy, Truck } from "@/apparatus-signals/lib/data";
+import type { Basis, Guide, ReadBy, Truck } from "@/apparatus-signals/lib/data";
 import { guideTitle, truckLabel } from "@/apparatus-signals/lib/trucks";
 import { BASIS_LEGEND, READ_BY_LABEL } from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
@@ -31,8 +31,8 @@ export interface LeadRow {
   why_call: string;
   detail: string;
   truck: Truck;
-  /** The guide price without its close sales; null when the truck type is unknown. */
-  guide: PriceGuideRow | null;
+  /** The guide price and its closest sales; null when the truck type is unknown. */
+  guide: Guide | null;
   signal_date: string;
   other_signals: string;
   proof_url: string;
@@ -243,12 +243,18 @@ function LeadDetail({ row }: { row: LeadRow }) {
   return (
     <div className="grid gap-3 p-3 text-sm sm:grid-cols-2">
       <div className="space-y-2">
-        {row.guide ? (
-          <p>
-            <span className="text-as-muted">Guide price: </span>
-            {formatMoney(row.guide.median)} ({guideTitle(row.guide)}
-            {row.guide.thin ? "; few sales" : ""})
-          </p>
+        {row.guide?.comps.length ? (
+          <div>
+            <p className="text-as-muted">Closest sales:</p>
+            <ul className="list-disc pl-5">
+              {row.guide.comps.map((c, i) => (
+                <li key={`${i}-${c.url}`}>
+                  <Ext href={c.url}>{c.item}</Ext>: {formatMoney(c.price)}, {formatDate(c.date)}
+                  {c.state ? `, ${c.state}` : ""}
+                </li>
+              ))}
+            </ul>
+          </div>
         ) : null}
         {row.proof_quote ? <blockquote className="quote">{row.proof_quote}</blockquote> : null}
         {row.proof_url ? (
