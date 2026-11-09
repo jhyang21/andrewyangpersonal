@@ -1,0 +1,255 @@
+import Link from "next/link";
+import {
+  allLeads,
+  compareLeads,
+  departmentHref,
+  getMeta,
+  getMethod,
+  getStates,
+  leadsPer100,
+} from "@/apparatus-signals/lib/data";
+import { formatDate, formatNumber, formatScore, joinPlain, tierLabel } from "@/apparatus-signals/lib/format";
+import { binLabel, buildScale } from "@/apparatus-signals/lib/scale";
+import { BASE, SITE_QUESTION } from "@/apparatus-signals/lib/site";
+import { COVERAGE, COVERAGE_ORDER, WEEK_RULE } from "@/apparatus-signals/lib/words";
+import BasisBadge from "@/apparatus-signals/ui/Basis";
+import { testSummary } from "@/apparatus-signals/ui/DoesItWork";
+import UsMap, { type MapState } from "@/apparatus-signals/ui/UsMap";
+
+export default function HomePage() {
+  const meta = getMeta();
+  const summary = testSummary(getMethod());
+  const states = getStates();
+  const scale = buildScale(states.map(leadsPer100));
+  const deepNames = states.filter((s) => s.coverage === "deep").map((s) => s.name);
+  const mapStates: MapState[] = states.map((s) => ({
+    code: s.code,
+    name: s.name,
+    leads: s.leads.total,
+    rate: leadsPer100(s),
+    bin: scale.binFor(leadsPer100(s)),
+    deep: s.coverage === "deep",
+    coverageName: COVERAGE[s.coverage].name,
+  }));
+  const top = allLeads().sort(compareLeads).slice(0, 10);
+  const coverageCounts = COVERAGE_ORDER.map((c) => ({
+    coverage: c,
+    count: states.filter((s) => s.coverage === c).length,
+  }));
+
+  const { totals } = meta;
+  const headline = [
+    { value: totals.leads_week, label: "to call this week" },
+    { value: totals.hand_read_leads, label: "read by a person" },
+    { value: totals.states, label: "states" },
+  ];
+  const stats = [
+    {
+      label: "Leads in all",
+      value: formatNumber(totals.leads),
+      note: `${formatNumber(totals.leads - totals.observed_leads)} rest only on guesses: grants, orders, votes to buy or due dates`,
+    },
+    { label: "Leads with a signal someone saw", value: formatNumber(totals.observed_leads) },
+    { label: "Fire departments covered", value: formatNumber(totals.departments_in_registry) },
+    {
+      label: "States read in depth",
+      value: formatNumber(totals.deep_states.length),
+      note: joinPlain(deepNames),
+    },
+  ];
+
+  return (
+    <div className="space-y-10">
+      <section aria-labelledby="page-title">
+        <h1 id="page-title" className="text-3xl font-semibold sm:text-4xl">
+          {SITE_QUESTION}
+        </h1>
+        <p className="mt-3 max-w-3xl text-lg text-as-ink-2">
+          A department that has won a grant, ordered a new truck or voted to sell an old one will
+          soon have a used truck to sell. This site lists those departments, state by state, with
+          the public record behind each one.
+        </p>
+        {summary ? (
+          <p className="mt-2 max-w-3xl">
+            {summary} <Link href={`${BASE}/method#does-it-work`}>How we checked.</Link>
+          </p>
+        ) : null}
+        <p className="mt-2 text-sm text-as-muted">Last updated {formatDate(meta.updated)}.</p>
+      </section>
+
+      <section aria-label="Headline numbers" className="space-y-4 border-y border-as-rule py-4">
+        <p className="text-2xl font-semibold sm:text-3xl">
+          {headline.map((h, i) => (
+            <span key={h.label}>
+              {i > 0 ? <span className="text-as-muted" aria-hidden="true"> · </span> : null}
+              <span className="num">{formatNumber(h.value)}</span> {h.label}
+            </span>
+          ))}
+        </p>
+        <p className="text-sm text-as-ink-2">
+          {WEEK_RULE} &ldquo;Read by a person&rdquo; means the lead&rsquo;s strongest signal came
+          from an auction page or a notice someone opened, not from a grant or trade-press feed.
+        </p>
+        <dl className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4">
+          {stats.map((s) => (
+            <div key={s.label}>
+              <dt className="text-sm text-as-ink-2">{s.label}</dt>
+              <dd className="text-xl font-semibold">{s.value}</dd>
+              {s.note ? <dd className="text-sm text-as-muted">{s.note}</dd> : null}
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section aria-labelledby="map-title" className="space-y-4">
+        <div>
+          <h2 id="map-title" className="text-xl font-semibold">
+            Leads per 100 fire departments
+          </h2>
+          <p className="text-sm text-as-ink-2">
+            Darker means more leads for the number of departments in the federal registry. A thick
+            outline marks a state read in depth by hand. Pick a state to see its list.
+          </p>
+        </div>
+        <UsMap states={mapStates} />
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div>
+            <h3 className="mb-2 text-sm font-semibold">Leads per 100 departments</h3>
+            <ul className="space-y-1 text-sm">
+              <li className="flex items-center gap-2">
+                <span className="bg-fill-0 inline-block h-3 w-6 rounded-sm" aria-hidden="true" />
+                None found
+              </li>
+              {scale.bins.map((b) => (
+                <li key={b.index} className="flex items-center gap-2">
+                  <span
+                    className={`bg-fill-${b.index} inline-block h-3 w-6 rounded-sm`}
+                    aria-hidden="true"
+                  />
+                  <span className="num">{binLabel(b)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="mb-2 text-sm font-semibold">How closely each state is read</h3>
+            <ul className="space-y-2 text-sm">
+              {coverageCounts.map(({ coverage, count }) => (
+                <li key={coverage}>
+                  <span className="font-semibold">{COVERAGE[coverage].name}</span>{" "}
+                  <span className="text-as-muted">
+                    ({count} {count === 1 ? "state" : "states"})
+                  </span>
+                  {coverage === "deep" ? (
+                    <span className="ml-1 inline-block h-3 w-5 rounded-sm border-2 border-as-ink align-middle" aria-hidden="true" />
+                  ) : null}
+                  <br />
+                  <span className="text-as-ink-2">{COVERAGE[coverage].long}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <details className="text-sm">
+          <summary className="cursor-pointer text-as-link">All states as a table</summary>
+          <table className="data-table mt-2">
+            <caption className="sr-only">Leads and coverage by state</caption>
+            <thead>
+              <tr>
+                <th scope="col">State</th>
+                <th scope="col" className="r">
+                  Leads
+                </th>
+                <th scope="col" className="r">
+                  Departments
+                </th>
+                <th scope="col" className="r">
+                  Per 100
+                </th>
+                <th scope="col">Coverage</th>
+              </tr>
+            </thead>
+            <tbody>
+              {states.map((s) => (
+                <tr key={s.code}>
+                  <td>
+                    <Link href={`${BASE}/${s.code.toLowerCase()}`}>{s.name}</Link>
+                  </td>
+                  <td className="r" data-label="Leads">
+                    {formatNumber(s.leads.total)}
+                  </td>
+                  <td className="r" data-label="Departments">
+                    {formatNumber(s.departments)}
+                  </td>
+                  <td className="r" data-label="Per 100">
+                    {leadsPer100(s).toFixed(1)}
+                  </td>
+                  <td data-label="Coverage">{COVERAGE[s.coverage].name}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </details>
+      </section>
+
+      <section aria-labelledby="top-title">
+        <h2 id="top-title" className="text-xl font-semibold">
+          Top 10 leads in all states
+        </h2>
+        <p className="mb-3 text-sm text-as-ink-2">
+          Ranked by score.
+          {deepNames.length
+            ? ` ${joinPlain(deepNames)} ${deepNames.length === 1 ? "is" : "are"} read in depth, so ${deepNames.length === 1 ? "its" : "their"} leads rest on more kinds of proof.`
+            : ""}
+        </p>
+        <table className="data-table">
+          <caption className="sr-only">Top 10 leads in all states</caption>
+          <thead>
+            <tr>
+              <th scope="col" className="r">
+                #
+              </th>
+              <th scope="col">Department</th>
+              <th scope="col">Why call</th>
+              <th scope="col">When</th>
+              <th scope="col" className="r">
+                Score
+              </th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {top.map((d, i) => (
+              <tr key={`${d.stateCode}-${d.id}`}>
+                <td className="r text-as-muted" data-label="Rank">
+                  {i + 1}
+                </td>
+                <td>
+                  <Link href={departmentHref(d.stateCode, d)} className="font-semibold">
+                    {d.department}
+                  </Link>
+                  <div className="text-sm text-as-muted">
+                    {[d.city, d.stateName].filter(Boolean).join(", ")}
+                  </div>
+                </td>
+                <td data-label="Why call">
+                  {d.why_call}
+                  {d.detail ? <div className="text-sm text-as-ink-2">{d.detail}</div> : null}
+                </td>
+                <td data-label="When">
+                  {tierLabel(d.tier)} <BasisBadge basis={d.basis} />
+                </td>
+                <td className="r" data-label="Score">
+                  {formatScore(d.score)}
+                </td>
+                <td className="num whitespace-nowrap" data-label="Date">
+                  {formatDate(d.signal_date) || "Not known"}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    </div>
+  );
+}

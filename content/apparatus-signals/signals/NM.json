@@ -1,0 +1,50 @@
+[
+ {
+  "kind": "delivery_due",
+  "date": "2025-06-01",
+  "detail": "New Midwest Fire pumper-tanker due June 2025 (ordered 2025-05)",
+  "old_truck": null,
+  "where": "trade press",
+  "quote": "MIDWEST FIRE—El Morro Valley Fire District 21, Grants, pumper-tanker. Delivery in June 2025.",
+  "url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-may-2025/",
+  "points": 1,
+  "read_by": "feed",
+  "source_name": "El Morro Valley Fire District 21",
+  "source_city": "Grants",
+  "source_county": "",
+  "match": "exact",
+  "fdid": "06040"
+ },
+ {
+  "kind": "delivery_due",
+  "date": "2026-09-01",
+  "detail": "New Alexis wildland pumper due September 2026 (ordered 2025-09)",
+  "old_truck": null,
+  "where": "trade press",
+  "quote": "ALEXIS—Upper Mimbres Volunteer Fire and Rescue wildland pumper. Delivery in September 2026.",
+  "url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-sept-2025/",
+  "points": 4,
+  "read_by": "feed",
+  "source_name": "Upper Mimbres Volunteer Fire and Rescue",
+  "source_city": "",
+  "source_county": "",
+  "match": "exact",
+  "fdid": "17061"
+ },
+ {
+  "kind": "new_truck_ordered",
+  "date": "2026-04-01",
+  "detail": "New SVI heavy rescue on order (2026-04), delivery February 2027",
+  "old_truck": null,
+  "where": "trade press",
+  "quote": "SVI—Farmington Fire Department heavy rescue. Delivery in February 2027.",
+  "url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
+  "points": 3,
+  "read_by": "feed",
+  "source_name": "Farmington Fire Department",
+  "source_city": "",
+  "source_county": "",
+  "match": "exact",
+  "fdid": "45037"
+ }
+]

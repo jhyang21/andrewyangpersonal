@@ -1,0 +1,34 @@
+[
+ {
+  "kind": "grant",
+  "date": "2026-09-22",
+  "detail": "FEMA vehicle grant $741,282, awarded 9/22/26 (FY2025)",
+  "old_truck": null,
+  "where": "FEMA awards table",
+  "quote": "KANAB FIRE, Vehicle Acquisition, $741,282",
+  "url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "points": 4,
+  "read_by": "feed",
+  "source_name": "KANAB FIRE",
+  "source_city": "",
+  "source_county": "",
+  "match": "exact",
+  "fdid": "25004"
+ },
+ {
+  "kind": "new_truck_ordered",
+  "date": "2026-05-01",
+  "detail": "New Toyne wildland pumper on order (2026-05), delivery February 2028",
+  "old_truck": null,
+  "where": "trade press",
+  "quote": "TOYNE—Cedar Mountain Service District wildland pumper. Delivery in February 2028.",
+  "url": "https://www.fireapparatusmagazine.com/fire-apparatus/may-2026-recent-apparatus-orders/",
+  "points": 3,
+  "read_by": "feed",
+  "source_name": "Cedar Mountain Service District",
+  "source_city": "",
+  "source_county": "",
+  "match": "exact",
+  "fdid": "25007"
+ }
+]

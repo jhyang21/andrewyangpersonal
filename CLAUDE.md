@@ -2,7 +2,7 @@
 
 Personal portfolio/blog with memos. Next.js 16 App Router, Tailwind v4, filesystem-based content.
 
-The site is static. It has no database, no API routes and no secrets. The only client components are the Shape Lab (`src/components/shape-lab/`), the projects chart and the cup-notes demo (`src/components/projects/cup-notes/`).
+The site is static. It has no database, no API routes and no secrets. The only client components are the Shape Lab (`src/components/shape-lab/`), the projects chart, the cup-notes demo (`src/components/projects/cup-notes/`) and the Apparatus Signals map and lead table (`src/apparatus-signals/ui/`).
 
 ---
 
@@ -43,6 +43,12 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 - `/projects/cup-notes` replays a precomputed simulation. `simulation/` is the Python generator; `simulation/SPEC.md` is the contract, mirrored in `src/lib/cup-notes/types.ts`.
 - `content/cup-notes/index.json` is read at build time; the 24 `public/cup-notes/scenarios/<key>.json` files are fetched by the demo on demand.
 - `npm run build` runs `npm run check:dataset` first, which fails unless the index exists, came from the OpenAI batch run (not the fixture) and every scenario has a file. Use `npx next build` to build against fixture data locally.
+
+### Apparatus Signals microsite
+
+- `/apparatus-signals` is a self-contained microsite: routes in `src/app/apparatus-signals/`, code in `src/apparatus-signals/` (`lib/`, `ui/`, `styles.css`), data in `content/apparatus-signals/`. Every internal link starts with `BASE` from `src/apparatus-signals/lib/site.ts`.
+- Its data comes from the pipeline in `~/Documents/projects/apparatus-signals/`. To refresh it, rerun `python export_site.py` in that repo's `pipeline/` (it writes straight into `content/apparatus-signals/`), then build and commit here. The build fails if the data carries a phone, an outreach field or a forbidden word (`lib/data.ts`).
+- It has its own tokens, font (Geist) and nav on purpose; it does not use `SiteNav` and is not in `content/projects.json`. Its tokens are scoped to the `.apparatus-signals` wrapper and prefixed `--as-*`; the only trace in `globals.css` is the `--color-as-*` lines in `@theme inline`, which give it utilities like `text-as-muted`.
 
 ---
 

@@ -1,0 +1,721 @@
+{
+ "backtest": {
+  "meta": {
+   "as_of": "2026-11-09",
+   "lots_total": 1624,
+   "lots_no_state": 295,
+   "lots_used": 1031,
+   "lots_used_apparatus": 730,
+   "lots_used_ambulance": 301,
+   "sellers": 672,
+   "sellers_matched": 492,
+   "seller_match_rate": 0.7321,
+   "lots_by_match": {
+    "exact": 701,
+    "ambiguous": 30,
+    "county government": 88,
+    "hand-checked alias": 3,
+    "not in registry": 134,
+    "not a fire seller": 65,
+    "fuzzy match refused": 10
+   },
+   "sale_events_apparatus": 646,
+   "sale_events_ambulance": 252,
+   "windows": {
+    "grant": "award date in [D-60mo, D-3mo]",
+    "order": "order month in [D-30mo, D]",
+    "delivery": "delivery column month in [D-30mo, D+1mo]",
+    "precision_follow_up_days": 730,
+    "precision_signal_before": "2024-11-01",
+    "grant_all_years_from": "2018-01-01",
+    "coverage": {
+     "grant": [
+      "2015-04-24",
+      "2026-09-29"
+     ],
+     "order": [
+      "2025-01-01",
+      "2026-10-31"
+     ],
+     "delivery": [
+      "2025-02-01",
+      "2026-10-31"
+     ]
+    },
+    "precision_states": [
+     "MA",
+     "ME",
+     "NY"
+    ]
+   },
+   "sold_statuses": [
+    "sold"
+   ],
+   "apparatus_kinds": [
+    "aerial",
+    "brush",
+    "engine",
+    "ladder",
+    "mini pumper",
+    "pumper",
+    "rescue",
+    "tanker"
+   ],
+   "caveats": [
+    "One auction channel only: sales through dealers, GovDeals, Municibid or direct are not seen, so every rate here is a lower bound.",
+    "Sold means status 'sold' (Approved on the Past Prices page). Countered, declined, pending and unknown lots are left out of the headline; the any_listing block counts them.",
+    "295 lots have no state and are left out. The source script already tried the registry match; their auction numbers share no stated lots, so nothing cheap was left to infer from.",
+    "Sellers that are police, sheriffs, resellers, authorities or county governments are not matched to a fire department. Town DPW and highway sellers are matched to the town's fire department.",
+    "Seller matches are exact place words or a hand-checked alias only. Near-spelling matches were refused: with no county to check, all ten were wrong (Wolcott to Olcott, Harrison to Garrison).",
+    "Hits bunch up in a few cities: Lynn (MA) and Auburn (NY) give 7 of the 19 apparatus grant hits, so the recall rate rests on few departments.",
+    "A 'Town of X' seller matches the registry row with place words X. When several rows share those words, all of them count as the department.",
+    "Orders cover 2025-01 to 2026-10 and deliveries 2025-02 to 2026-10 (missing 2025-10, 2025-11). Most sales fall outside those spans, and sales early in 2025 see only a sliver of their window.",
+    "Trade press starts in 2025, so no order or delivery is old enough for 24 months of follow-up: precision for those kinds is empty by construction.",
+    "The pipeline scores grants from FY2022 on. grant_all_years adds FY2014 to FY2021 awards dated from 2018, when the NY lot count reaches about 100 a year.",
+    "Lead time is days from the nearest in-window signal at or before the sale (a delivery printed after the sale gives a negative lead).",
+    "Base rate: for each signal's own 24-month window, the share of all registry departments in the state with a matched sale in that window, averaged over signals. Lift = rate / base rate.",
+    "Deliveries may count up to one month after the sale, because the column prints after the truck arrives. That is the only window that reaches past the sale date.",
+    "Ambulances are reported apart; many are sold by ambulance corps, which the fire registry does not list."
+   ]
+  },
+  "recall": {
+   "grant": {
+    "sales_coverable": 472,
+    "sales_with_signal": 19,
+    "rate": 0.0403,
+    "raw_sales": 646,
+    "raw_with_signal": 19,
+    "raw_rate": 0.0294,
+    "matched_sales": 486,
+    "mean_window_covered": 0.906,
+    "median_lead_days": 859,
+    "p25": 446,
+    "p75": 1150
+   },
+   "order": {
+    "sales_coverable": 115,
+    "sales_with_signal": 3,
+    "rate": 0.0261,
+    "raw_sales": 646,
+    "raw_with_signal": 3,
+    "raw_rate": 0.0046,
+    "matched_sales": 486,
+    "mean_window_covered": 0.372,
+    "median_lead_days": 207,
+    "p25": 130,
+    "p75": 332
+   },
+   "delivery": {
+    "sales_coverable": 115,
+    "sales_with_signal": 0,
+    "rate": 0.0,
+    "raw_sales": 646,
+    "raw_with_signal": 0,
+    "raw_rate": 0.0,
+    "matched_sales": 486,
+    "mean_window_covered": 0.318,
+    "median_lead_days": null,
+    "p25": null,
+    "p75": null
+   }
+  },
+  "precision": {
+   "MA": {
+    "grant": {
+     "departments": 10,
+     "events": 10,
+     "sold_within_24m": 0,
+     "rate": 0.0,
+     "base_rate": 0.035,
+     "lift": 0.0,
+     "registry_departments": 363
+    },
+    "grant_all_years": {
+     "departments": 50,
+     "events": 56,
+     "sold_within_24m": 3,
+     "rate": 0.0536,
+     "base_rate": 0.0307,
+     "lift": 1.74,
+     "registry_departments": 363
+    },
+    "order": {
+     "departments": 0,
+     "events": 0,
+     "sold_within_24m": 0,
+     "rate": null,
+     "base_rate": null,
+     "lift": null,
+     "registry_departments": 363
+    },
+    "delivery": {
+     "departments": 0,
+     "events": 0,
+     "sold_within_24m": 0,
+     "rate": null,
+     "base_rate": null,
+     "lift": null,
+     "registry_departments": 363
+    }
+   },
+   "ME": {
+    "grant": {
+     "departments": 4,
+     "events": 4,
+     "sold_within_24m": 0,
+     "rate": 0.0,
+     "base_rate": 0.0103,
+     "lift": 0.0,
+     "registry_departments": 341
+    },
+    "grant_all_years": {
+     "departments": 15,
+     "events": 16,
+     "sold_within_24m": 0,
+     "rate": 0.0,
+     "base_rate": 0.0104,
+     "lift": 0.0,
+     "registry_departments": 341
+    },
+    "order": {
+     "departments": 0,
+     "events": 0,
+     "sold_within_24m": 0,
+     "rate": null,
+     "base_rate": null,
+     "lift": null,
+     "registry_departments": 341
+    },
+    "delivery": {
+     "departments": 0,
+     "events": 0,
+     "sold_within_24m": 0,
+     "rate": null,
+     "base_rate": null,
+     "lift": null,
+     "registry_departments": 341
+    }
+   },
+   "NY": {
+    "grant": {
+     "departments": 8,
+     "events": 8,
+     "sold_within_24m": 1,
+     "rate": 0.125,
+     "base_rate": 0.0397,
+     "lift": 3.15,
+     "registry_departments": 1649
+    },
+    "grant_all_years": {
+     "departments": 28,
+     "events": 28,
+     "sold_within_24m": 3,
+     "rate": 0.1071,
+     "base_rate": 0.0405,
+     "lift": 2.65,
+     "registry_departments": 1649
+    },
+    "order": {
+     "departments": 0,
+     "events": 0,
+     "sold_within_24m": 0,
+     "rate": null,
+     "base_rate": null,
+     "lift": null,
+     "registry_departments": 1649
+    },
+    "delivery": {
+     "departments": 0,
+     "events": 0,
+     "sold_within_24m": 0,
+     "rate": null,
+     "base_rate": null,
+     "lift": null,
+     "registry_departments": 1649
+    }
+   }
+  }
+ },
+ "blind_read": {
+  "meta": {
+   "as_of": "2026-11-09",
+   "state": "NY",
+   "design": "40 departments that sold a fire truck or ambulance at Auctions International between December 2025 and October 2026, mixed with 20 registry departments with no sale there. Readers saw only the department and a reference date (30 days before the sale, or a matching date for controls) and searched minutes, notices and local news for a sign of a sale or replacement dated before it. A second reader opened every hit and rejected 5 of 29.",
+   "caveats": [
+    "Small numbers: 13 against 3 could still be chance.",
+    "One auction channel: controls may have sold through a dealer or another site; three control hits are live leads, not errors.",
+    "Controls skew to small volunteer companies, which publish less than the city and town sellers.",
+    "Reader effort moves the result: the thorough reader found 54% of sellers in batch 1; a first pass with 2 to 4 searches found none in batch 2 and a re-read with 6 to 8 found a third.",
+    "Two departments' minutes sit behind a portal that refuses readers (citizenportal.ai)."
+   ],
+   "readers": "three first readers (batch 2 re-read after an under-searched pass), two second readers; all blind to the key"
+  },
+  "groups": {
+   "sold": {
+    "departments": 40,
+    "sign_within_18_months": 13,
+    "sign_any_age": 16,
+    "median_lead_days": 313,
+    "lead_days": [
+     121,
+     161,
+     171,
+     228,
+     241,
+     290,
+     313,
+     320,
+     336,
+     379,
+     468,
+     504,
+     505
+    ],
+    "kinds": {
+     "bond_or_referendum": 4,
+     "new_truck_arrived": 4,
+     "new_truck_ordered": 1,
+     "sale_planned": 1,
+     "surplus_declared": 2,
+     "council_approval": 1
+    }
+   },
+   "control": {
+    "departments": 20,
+    "sign_within_18_months": 3,
+    "sign_any_age": 6,
+    "median_lead_days": 276,
+    "lead_days": [
+     140,
+     276,
+     314
+    ],
+    "kinds": {
+     "grant": 1,
+     "new_truck_ordered": 2
+    }
+   }
+  },
+  "hits": [
+   {
+    "group": "sold",
+    "department": "Fly Creek Volunteer Fire Company",
+    "county": "Otsego",
+    "kind": "bond_or_referendum",
+    "signal_date": "2024-08-01",
+    "lead_days": 504,
+    "url": "https://allotsego.com/?p=276149",
+    "quote": "the fire district needs to prepare to purchase a new fire truck to complement the existing fleet."
+   },
+   {
+    "group": "sold",
+    "department": "Montour Falls Fire Department",
+    "county": "Schuyler",
+    "kind": "new_truck_arrived",
+    "signal_date": "2024-09",
+    "lead_days": 468,
+    "url": "https://digital-release.mytwintiers.com/?p=1879600",
+    "quote": "In September, the department saw the addition of a new fire engine, replacing a pumper truck from 2001, with a price of $828,641.99."
+   },
+   {
+    "group": "sold",
+    "department": "Medina Fire Department",
+    "county": "Orleans",
+    "kind": "new_truck_ordered",
+    "signal_date": "2025-08-13",
+    "lead_days": 161,
+    "url": "https://orleanshub.com/?p=229420",
+    "quote": "The board back on June 26, 2023 voted to accept the bid for $1,698,995 from Pierce Manufacturing"
+   },
+   {
+    "group": "sold",
+    "department": "Cohoes Fire Department",
+    "county": "Albany",
+    "kind": "new_truck_arrived",
+    "signal_date": "2025-11-26",
+    "lead_days": 320,
+    "url": "https://ground.news/article/snapshot-cohoes-fire-department-adds-new-state-of-the-art-ladder-truck",
+    "quote": "The Cohoes Fire Department added a new truck to its emergency response fleet"
+   },
+   {
+    "group": "sold",
+    "department": "Hopewell Volunteer Fire Department, Inc.",
+    "county": "Ontario",
+    "kind": "bond_or_referendum",
+    "signal_date": "2026-02-10",
+    "lead_days": 121,
+    "url": "https://www.noticeregistry.com/new-york/notice/new-york-ontario-county-legal-notice-3393-county-road-4-canandaigua-new-york-ab49d59696a0c4131fd89ef40c4d224c",
+    "quote": "finance the acquisition of a pumper\\rescue truck"
+   },
+   {
+    "group": "sold",
+    "department": "Attica Fire Department",
+    "county": "Wyoming",
+    "kind": "new_truck_arrived",
+    "signal_date": "2025-12-16",
+    "lead_days": 241,
+    "url": "https://villageofatticany.gov/documents/310/2025.12.16_Minutes.pdf",
+    "quote": "Chief Robert Willard spoke about the new truck to be in service next Monday evening."
+   },
+   {
+    "group": "sold",
+    "department": "Ellenburg Depot Volunteer Fire Department",
+    "county": "Clinton",
+    "kind": "sale_planned",
+    "signal_date": "2025-11-18",
+    "lead_days": 171,
+    "url": "https://townofellenburgny.gov/uploads/9/7/9/1/97914392/minutes_-_regular_meeting_-_11-18-25.docx",
+    "quote": "DJ reported the fire departments are quiet right now- the Depot was accepting bids on their old brush truck and they will open the bids on those this evening."
+   },
+   {
+    "group": "sold",
+    "department": "Belgium Cold Springs Fire Department",
+    "county": "Onondaga",
+    "kind": "surplus_declared",
+    "signal_date": "2025-06-16",
+    "lead_days": 290,
+    "url": "https://lysanderny.gov/sites/default/files/2025-07/notice_of_special_election_-_l1_.pdf",
+    "quote": "TO SELL OR OTHERWISE DISPOSE OF PERSONAL PROPERTY OF THE FIRE DISTRICT CONSISTING OF A 2015 AERIAL TRUCK, WHICH VEHICLE IS NO LONGER NECESSARY"
+   },
+   {
+    "group": "sold",
+    "department": "Pine Plains Fire District",
+    "county": "Dutchess",
+    "kind": "surplus_declared",
+    "signal_date": "2025-03-18",
+    "lead_days": 336,
+    "url": "https://millertonnews.com/legal-notices-3-27-25",
+    "quote": "2004 E-450 Ambulance (55-72)"
+   },
+   {
+    "group": "sold",
+    "department": "Tupper Lake Volunteer Fire Department, Inc.",
+    "county": "Franklin",
+    "kind": "bond_or_referendum",
+    "signal_date": "2026-01-20",
+    "lead_days": 228,
+    "url": "https://www.tupperlakeny.gov/vertical/sites/%7BE08972AB-854D-4CB7-B840-09015FB2A25A%7D/uploads/Agenda_01-20-26.pdf",
+    "quote": "Authorize Village treasurer to establish a NYCLASS account for the Tupper Lake Fire Department, Fire Truck Reserve Account"
+   },
+   {
+    "group": "sold",
+    "department": "Yonkers Fire Department",
+    "county": "Westchester",
+    "kind": "new_truck_arrived",
+    "signal_date": "2025-05-27",
+    "lead_days": 505,
+    "url": "https://www.fireapparatusmagazine.com/?p=190867",
+    "quote": "joined the Yonkers Fire Department Tuesday, May 27, 2025, for the blessing of six brand new pumper trucks"
+   },
+   {
+    "group": "sold",
+    "department": "Auburn NY Fire Department",
+    "county": "Cayuga",
+    "kind": "council_approval",
+    "signal_date": "2025-09-04",
+    "lead_days": 313,
+    "url": "https://www.fingerlakes1.com/2025/09/07/auburn-council-oks-park-bid-fire-truck-lease-75k-planters-grant",
+    "quote": "Council authorized a seven-year lease-purchase with Real Lease for a 2025 KME Panther pumper"
+   },
+   {
+    "group": "sold",
+    "department": "Riverhead Fire Department",
+    "county": "Suffolk",
+    "kind": "bond_or_referendum",
+    "signal_date": "2025-05-13",
+    "lead_days": 379,
+    "url": "http://riverheadlocal.com/2025/05/14/fire-district-bond-measures-get-thumbs-up/",
+    "quote": "Riverhead Fire District voters approved both propositions on the ballot in Tuesday's special election."
+   },
+   {
+    "group": "control",
+    "department": "Bellerose Fire Department",
+    "county": "Nassau",
+    "kind": "grant",
+    "signal_date": "2025-11-25",
+    "lead_days": 140,
+    "url": "https://gillen.house.gov/media/press-releases/rep-gillen-secures-938000-federal-funding-replace-bellerose-village-fire",
+    "quote": "replace their aging fleet of fire trucks"
+   },
+   {
+    "group": "control",
+    "department": "Millbrook Fire Department",
+    "county": "Dutchess",
+    "kind": "new_truck_ordered",
+    "signal_date": "2025-03-10",
+    "lead_days": 276,
+    "url": "https://villageofmillbrookny.gov/news-and-notices/bid-notice-fire-department-pumper-apparatus",
+    "quote": "the Village of Millbrook, Millbrook, NY hereby invites the submission of sealed bids for the following item. ... One Fire Dept Pumper Apparatus"
+   },
+   {
+    "group": "control",
+    "department": "Clintondale Fire Department",
+    "county": "Ulster",
+    "kind": "new_truck_ordered",
+    "signal_date": "2025-02-19",
+    "lead_days": 314,
+    "url": "https://www.timeshudsonvalley.com/southern-ulster-times/southern-ulster-times/stories/clintondale-fire-department-prepares-for-100th-anniversary,158155",
+    "quote": "scheduled to get a new tanker that may take up to four years to receive"
+   }
+  ]
+ },
+ "points": {
+  "auction_open": 6,
+  "surplus_declared": 6,
+  "sale_planned": 6,
+  "new_truck_arrived": 5,
+  "auction_closed": 2,
+  "auction_support": 4,
+  "delivery_due": 3,
+  "new_truck_ordered": 3,
+  "bond_or_referendum": 3,
+  "council_approval": 3,
+  "grant": 3,
+  "already_sold": 2,
+  "auction_equipment": 2,
+  "afg_large": 1
+ },
+ "labels": {
+  "auction_open": "Fire truck at auction now",
+  "surplus_declared": "Board voted to sell a truck",
+  "sale_planned": "Plans to sell a truck",
+  "new_truck_arrived": "New truck in service",
+  "auction_closed": "Sold or took bids on a truck since May",
+  "auction_support": "Support vehicle at auction now",
+  "delivery_due": "New truck was due; delivery not confirmed",
+  "new_truck_ordered": "New truck on order",
+  "bond_or_referendum": "Money approved for a new truck",
+  "council_approval": "Board approved buying a new truck",
+  "grant": "Won a grant for a new truck",
+  "already_sold": "Sold its old truck direct",
+  "auction_equipment": "Gear at auction now (no truck)",
+  "afg_large": "Large federal fire grant (purpose to confirm)"
+ },
+ "modifiers": {
+  "old_truck_named": 1,
+  "recent": 1,
+  "repeat_seller": 2,
+  "stale": -2,
+  "grant_due": 1,
+  "snippet_only": -1,
+  "arrived_last_year": -2,
+  "arrived_long_ago": -4
+ },
+ "observed": [
+  "auction_open",
+  "surplus_declared",
+  "sale_planned",
+  "new_truck_arrived",
+  "auction_closed",
+  "auction_support",
+  "already_sold",
+  "auction_equipment"
+ ],
+ "tiers": [
+  {
+   "floor": 6,
+   "label": "1 Call this week"
+  },
+  {
+   "floor": 4,
+   "label": "2 Call this month"
+  },
+  {
+   "floor": 0,
+   "label": "3 Watch"
+  }
+ ],
+ "lead_time_cases": [
+  {
+   "state": "NY",
+   "seller": "City of Long Beach Fire Department",
+   "truck": "2008 Ferrara Inferno rear-mount aerial",
+   "auction_close": "2026-11-10",
+   "verdict": "weak_trace",
+   "months_before_listing": null,
+   "trace_date": null,
+   "trace_kind": "grant",
+   "trace": "FY2026 House community-project (earmark) request of $850,000 for a tower ladder truck for Long Beach Fire Department; status blank, request only",
+   "url": "https://www.cagw.org/earmark-single/?id=140085",
+   "note": "The earmark page gives fiscal year 2026 only, not a month, and does not say the request was funded; so no date or lead time is claimed. Out of window (before 2023): Long Island Herald, 2022-02-03 and 2022-05-19, council approved a $2.1M new ladder truck (HGAC buy) to replace a ladder truck damaged in Superstorm Sandy; the articles do not name the 2008 Ferrara, so it may be a different truck. Council proceedings of 2024-12-17 (opened) show only a $600,000 county grant for a new ambulance. No surplus resolution found."
+  },
+  {
+   "state": "NY",
+   "seller": "Laurens Fire District",
+   "truck": "2009 GMC TopKick C4500 ambulance",
+   "auction_close": "2026-11-10",
+   "verdict": "trace_found",
+   "months_before_listing": 7.0,
+   "trace_date": "2026-04-09",
+   "trace_kind": "bond_or_referendum",
+   "trace": "Legal notice: fire commissioners adopted resolutions 2026-04-08 for a special election 2026-05-19 on a new 2026 ambulance (installment purchase up to 4 years) and a new 2026 pumper",
+   "url": "https://www.noticeregistry.com/new-york/notice/public-hearing-laurens-cf5b749e2c5d10f3e3f72754e6cd3ced",
+   "note": "Dollar amounts are blank on the page and the vote result was not found. The page is a third-party notice site; the notice says the Board adopted the resolution on 2026-04-08. No surplus resolution found. Link to the 2009 ambulance is by type only (the district has one ambulance on record)."
+  },
+  {
+   "state": "NY",
+   "seller": "Village of Oxford, Oxford Fire Department",
+   "truck": "2001 HME Central States fire truck",
+   "auction_close": "2026-11-13",
+   "verdict": "weak_trace",
+   "months_before_listing": 15.5,
+   "trace_date": "2025-07-29",
+   "trace_kind": "council_approval",
+   "trace": "Village board minutes (seen only as a search-result summary): reallocate $600,000 to buy a new 2025 pumper/tanker to replace an older unit (#262), subject to permissive referendum; financing via NY Fire Fighter Revolving Loan",
+   "url": "https://www.villageofoxfordny.gov/assets/minutes-2025/7-29-25-Minutes.pdf",
+   "note": "villageofoxfordny.gov returned HTTP 403 to every fetch, so no minutes were opened and no verbatim quote is possible; details come from search summaries. Unit #262 is not tied to the 2001 HME. Out of window: Evening Sun 2021-02-26 (opened) says the department proposed to replace its 2002 HME Rescue Pumper with a $750,000 2021-22 model; year differs by one from the lot (2001), so it may be the same truck. Note: oxfordeagle.com hits are Oxford, Mississippi and were discarded."
+  },
+  {
+   "state": "NY",
+   "seller": "Roosevelt Fire District (Nassau County)",
+   "truck": "2002 Spartan Gladiator 95-foot tower ladder",
+   "auction_close": "2026-11-13",
+   "verdict": "no_trace",
+   "months_before_listing": null,
+   "trace_date": null,
+   "trace_kind": null,
+   "trace": null,
+   "url": null,
+   "note": "Every hit was for the Roosevelt Fire District in Hyde Park, Dutchess County (its own E-ONE tower ladder and AFG grant); these were discarded as a different district. Searched the Nassau district by name, ZIP 11575, tower ladder, bid, resolution, Fire News Long Island. The district's own site and Newsday were not reachable through search results."
+  },
+  {
+   "state": "NY",
+   "seller": "Village of Sea Cliff, Sea Cliff Fire Department",
+   "truck": "1998 Freightliner / American LaFrance Eagle pumper",
+   "auction_close": "2026-11-17",
+   "verdict": "trace_found",
+   "months_before_listing": 3.8,
+   "trace_date": "2026-07-23",
+   "trace_kind": "bond_or_referendum",
+   "trace": "Board agenda: declare intent to buy a Fire Department vehicle at est. $1,298,994, reimbursed via bond not above that sum (confirms the known item)",
+   "url": "https://www.seacliff-ny.gov/AgendaCenter/ViewFile/ArchivedAgenda/_07232026-67",
+   "note": "Confirmed the 2026-07-23 item; found nothing earlier. Pages are PDFs whose text I read locally from the saved download. The agenda says 'vehicle' / 'fire truck', not 'pumper', and does not name the 1998 truck; the 'same type' call rests on your note. Search summaries claimed a 'Spartan Sidemount Pumper from Hendrickson' item in early July; I could not find that wording in any file I opened (July 6 minutes, June 24 agenda and minutes, July 23 agendas), so I did not use it. Related but unproven: 2026-06-24 board authorized an application for a $400,000 FY2025 Assistance to Firefighters grant (purpose not stated). Sept 8 agenda also lists 'New Fire Truck' and 'Chief's truck' under old business. No surplus resolution found."
+  },
+  {
+   "state": "NY",
+   "seller": "Village of Larchmont, Larchmont Fire Department",
+   "truck": "1992 Pierce Arrow fire truck",
+   "auction_close": "2026-11-18",
+   "verdict": "trace_found",
+   "months_before_listing": 3.7,
+   "trace_date": "2026-07-27",
+   "trace_kind": "surplus_declared",
+   "trace": "Board of Trustees declared a 1992 fire engine surplus property for sale (meeting of 2026-07-27, per procurement-tracking page)",
+   "url": "https://starbridge.ai/buyer/larchmont-village-of",
+   "note": "The source is a third-party aggregator, not the village's own minutes; the village's minutes redirected and were not read. It names a 1992 engine, not the make, but the year matches the lot. No replacement-truck purchase, bond or grant found for Larchmont Village (hits about new engines were Town of Mamaroneck and were discarded)."
+  }
+ ],
+ "hit_rates": [
+  {
+   "signal": "Truck at auction now",
+   "found": 6,
+   "state": "NY",
+   "as_of": "2026-11-06",
+   "next": "Certain. Bidding ends 10 to 18 November 2026."
+  },
+  {
+   "signal": "Board voted to sell",
+   "found": 8,
+   "state": "NY",
+   "as_of": "2026-11-06",
+   "next": "2 traced to a sale (Windham took bids 26 days later; Ballston Spa sold direct to a buyer in Illinois, per a news summary). 6 open."
+  },
+  {
+   "signal": "New truck in service",
+   "found": 9,
+   "state": "NY",
+   "as_of": "2026-11-06",
+   "next": "Yonkers took six engines in January 2026 and sold four old ones from May to October."
+  },
+  {
+   "signal": "Money approved or truck ordered",
+   "found": 33,
+   "state": "NY",
+   "as_of": "2026-11-06",
+   "next": "Sea Cliff and Laurens listed the old truck 3.8 and 7 months later. Most orders deliver in 2027 to 2029."
+  },
+  {
+   "signal": "Federal vehicle grant",
+   "found": 16,
+   "state": "NY",
+   "as_of": "2026-11-06",
+   "next": "West Nyack won one in August 2024; its new pumper is due in fall 2027."
+  }
+ ],
+ "layers": {
+  "grants": "FEMA vehicle grants",
+  "trade_press": "Trade-press orders and deliveries",
+  "auctions": "Auction site read by hand",
+  "notices": "Legal notices, board minutes and news read by hand"
+ },
+ "rules": {
+  "CT": {
+   "who_decides": "No Connecticut statute sets a sale procedure for a town's surplus fire truck. Conn. Gen. Stat. 7-148(c)(3)(A) gives every municipality the power to 'hold, condemn, lease, sell, manage, transfer, release and convey such real and personal property as the purposes of the municipality ... require.' It names no approving body, no voter approval, and no bid rule, so each town's charter or ordinance decides. In the local rules read, the owning department or board declares the item surplus, a town official or board approves, and the purchasing agent runs the sale: East Hartford needs Town Council approval (Sec. 10-3); Waterford's owning agency, board or commission declares surplus and the purchasing agent disposes, under the board of selectmen's authority (Code 3.08.020(B), Ch. 2.112); Montville's Finance Director and Mayor declare surplus and approve the disposal method. A few towns send even a $1 transfer to a town meeting (Portland, 2024). Fire districts formed under 7-324 to 7-329 are run by a board of directors, but the statute says nothing about selling property; it requires a district vote for any contract over $10,000 (grand list up to $20 million) or $20,000 (larger grand list) a year, which governs buying a new truck, not selling the old one. Volunteer companies that own their trucks as nonprofits decide sales under their own bylaws.",
+   "law": "Conn. Gen. Stat. 7-148(c)(3)(A) (municipal power to sell and convey real and personal property); Conn. Gen. Stat. 7-326 to 7-328 (district purposes, meetings, and the 7-328(a) district-vote rule for contracts of $10,000 or $20,000 and up); town charters and ordinances (East Hartford Code Sec. 10-3; Waterford Code 3.08.020(B) and Ch. 2.112; Montville surplus personal property ordinance).",
+   "url": "https://prdext3.cga.ct.gov/current/pub/chap_098.htm",
+   "thresholds": [
+    {
+     "below": null,
+     "rule": "State law sets no dollar line, approving body or bid rule for a town selling a truck (7-148(c)(3)(A)); the town charter or ordinance decides. For example, East Hartford needs Town Council approval for any sale other than a trade-in; Waterford's purchasing agent runs the disposal once the owning board declares the item surplus; Montville's Mayor gives final approval after the Finance Director is told. Most towns then sell at online auction, so the council or board vote is the earliest public signal."
+    }
+   ],
+   "note": "The earliest public signal is a council or selectmen agenda line declaring a vehicle surplus, or a town meeting or referendum notice funding the new truck, often one to three years before delivery. An auction listing is a late signal. Towns may also sell through the state DAS auction contract (22PSX0014)."
+  },
+  "NJ": {
+   "who_decides": "The governing body votes by resolution: the township committee or borough or city council for a municipal fire department, and the Board of Fire Commissioners (five elected commissioners) for a fire district. A fire district sells as a body corporate. A volunteer fire company that owns its own truck sells it by its own vote. No voter referendum is needed to sell; voters decide only on buying (the February fire district election).",
+   "law": "N.J.S.A. 40A:11-36 (Local Public Contracts Law, sale of personal property not needed for public use); N.J.S.A. 40A:14-70(b) (fire district power to sell, subject to 40A:12-13 or 40A:12-14); N.J.S.A. 40A:12-21.1 (sale to a volunteer fire company for nominal sum)",
+   "url": "https://codes.findlaw.com/nj/title-40a-municipalities-and-counties/nj-st-sect-40a-11-36/",
+   "thresholds": [
+    {
+     "below": 7950,
+     "rule": "Fair value at or under 15% of the bid threshold: $7,950 for a unit with a qualified purchasing agent (bid threshold $53,000), $2,625 without one (bid threshold $17,500), the figures in force since 1 July 2025. No public sale is needed; the unit may sell privately by resolution. Few trucks fall here except scrap."
+    },
+    {
+     "below": null,
+     "rule": "Above 15% of the bid threshold, 40A:11-36(1) requires a public sale to the highest bidder, by sealed bid or public auction, at any higher value. Notice runs in the official newspaper and the sale is held 7 to 14 days after the last notice. Units without a purchasing agent reach this rule at $2,625. The unit may reject all bids and re-advertise; after a second rejection it may sell privately, but not below the highest rejected bid. If no bids come, it may sell privately at no less than fair value. No advertising is needed when the buyer is the U.S., New Jersey or another government, and under 40A:12-21.1 a town may give a truck to a volunteer fire company for a nominal sum."
+    }
+   ],
+   "note": "Most New Jersey units sell at public online auction, so the resolution that authorizes the sale is the earliest public signal. The dollar lines are those in force since 1 July 2025 (DCA Local Finance Notice 2025-08). A bill introduced in February 2026 (S3437) would redraw the bands; it is not law."
+  },
+  "NY": {
+   "who_decides": "In a fire district the Board of Fire Commissioners sells the truck, not the chief. In a village or city the board or council votes and the clerk handles the sale.",
+   "law": "New York Town Law §176(23)",
+   "url": "https://www.nysenate.gov/legislation/laws/TWN/176",
+   "thresholds": [
+    {
+     "below": 20000,
+     "rule": "The board can sell on its own vote."
+    },
+    {
+     "below": 100000,
+     "rule": "The sale waits on a permissive referendum: voters can force a vote within 30 days."
+    },
+    {
+     "below": null,
+     "rule": "The sale needs a vote of the district."
+    }
+   ],
+   "note": "A better price can mean a slower sale. Know which side of $20,000 a truck sits on before the call."
+  },
+  "PA": {
+   "who_decides": "Borough: borough council, by resolution (8 Pa.C.S. 1201.2(a)). Second-class township: board of supervisors approves any sale of township personal property (53 P.S. 66504(a), Second Class Township Code section 1504). First-class township: board of commissioners (73 Pa.C.S. 4303(a); the First Class Township Code of 1931 was repealed and moved into Title 73 by Act 7 of 2026, in force about April 12, 2026). Third-class city: city council, by resolution (11 Pa.C.S. 12402.1(c)(1)). Voters do not vote on a truck sale. A volunteer fire company that owns its truck is a private nonprofit: its own board or members decide under its bylaws, and none of the municipal codes bind it. Where the municipality owns the truck (common in boroughs and cities, and some townships), the governing body must act, and its sale to a volunteer fire company or another government skips advertising and highest-bidder rules.",
+   "law": "Borough Code, 8 Pa.C.S. 1201.2 (personal property, as amended by Act 150 of 2018) and 1201.3 (exceptions). Second Class Township Code, Act of May 1, 1933, P.L. 103, No. 69, section 1504, 53 P.S. 66504 (section amended by Act 30 of 2012; subsections (a) and (b) amended by Act 21 of 2017, P.L. 302, which set the $2,000 figure). First-class townships: 73 Pa.C.S. 4303 (personal property) and 4304 (exceptions), added by Act 7 of 2026 (Feb. 11, 2026, P.L. 19), which repealed the First Class Township Code (Act 331 of 1931, 53 P.S. 55101 et seq.) and says the new text continues the old code without change of meaning. Third Class City Code, 11 Pa.C.S. 12402.1(c)-(f) (subsection (c) amended by Act 150 of 2018). Companion act for no-bid sales: Act of Oct. 27, 1979, P.L. 241, No. 78. Cities of other classes (Philadelphia, Pittsburgh, Scranton) and home-rule municipalities follow their own charters.",
+   "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=08&div=0&chapter=12&section=1&subsctn=2",
+   "thresholds": [
+    {
+     "below": 2000,
+     "rule": "All four codes use $2,000. Borough (8 Pa.C.S. 1201.2(b)), first-class township (73 Pa.C.S. 4303(d)) and second-class township (53 P.S. 66504(b)): for items or lots with estimated fair market value under $2,000, the governing body adopts a resolution setting a sale procedure, and sales under it need no further vote. Third-class city (11 Pa.C.S. 12402.1(c)(3)): under $2,000, council may sell in whole or in part for the best price obtainable, after approving the disposal by resolution."
+    },
+    {
+     "below": null,
+     "rule": "At or above $2,000 (all four codes): the governing body approves the sale (borough and city by resolution), estimates the value of the whole lot, and advertises it once in a newspaper of general circulation at least 10 days before bids open or the auction runs. Online auctions are allowed; the ad gives the web address, date, time and duration. Award goes to the best responsible bidder (borough, city) or highest bidder (townships). The body may reject bids it thinks are under fair market value. If no bids come, the 1979 no-bid act applies (second-class townships may also adopt a sale procedure after two failed attempts)."
+    },
+    {
+     "below": null,
+     "rule": "Exceptions (any value): no advertising or highest-bidder rule applies to a sale to the federal or state government, a county, city, borough, town, township, school district, institution district, authority or council of governments, or to a volunteer fire company, volunteer ambulance service or rescue squad. Location limits differ: borough (1201.3(a)(1)) and first-class township (4304(a)(1)) list them with 'located within the borough/township'; second-class township (1504(c)(2)(ix)) lists 'a volunteer fire company' with no location limit and limits only ambulance and rescue squads to those within the township; third-class city (12402.1(e)(2)) allows one 'located within the city or providing emergency services in the city'. A trade-in or exchange for replacement property is also exempt in all four codes (borough 1201.2(c) and first-class township 4303(e) still need a resolution)."
+    }
+   ],
+   "note": "A sale to a volunteer fire company or another government skips bidding, so a municipal truck often moves quietly (Harrisburg to Highspire, 2025). At $2,000 and up the sale must be advertised, so the first public signal is usually a council or supervisors minute authorizing the sale, then an ad or online listing 10 or more days before the close. Companies that own their trucks often post the sale on their own site or Facebook first. Second-class townships moved from $1,000 to $2,000 in 2017; older resolutions that cite $1,000 are out of date."
+  }
+ }
+}

@@ -1,0 +1,1249 @@
+[
+ {
+  "code": "AK",
+  "name": "Alaska",
+  "departments": 155,
+  "leads": {
+   "week": 0,
+   "month": 1,
+   "watch": 0,
+   "total": 1
+  },
+  "by_kind": {
+   "grant": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "AL",
+  "name": "Alabama",
+  "departments": 821,
+  "leads": {
+   "week": 0,
+   "month": 27,
+   "watch": 9,
+   "total": 36
+  },
+  "by_kind": {
+   "grant": 35,
+   "new_truck_ordered": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "AR",
+  "name": "Arkansas",
+  "departments": 696,
+  "leads": {
+   "week": 0,
+   "month": 5,
+   "watch": 2,
+   "total": 7
+  },
+  "by_kind": {
+   "grant": 4,
+   "delivery_due": 2,
+   "new_truck_ordered": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "AZ",
+  "name": "Arizona",
+  "departments": 238,
+  "leads": {
+   "week": 1,
+   "month": 7,
+   "watch": 4,
+   "total": 12
+  },
+  "by_kind": {
+   "grant": 9,
+   "new_truck_arrived": 3
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "CA",
+  "name": "California",
+  "departments": 853,
+  "leads": {
+   "week": 0,
+   "month": 14,
+   "watch": 16,
+   "total": 30
+  },
+  "by_kind": {
+   "grant": 10,
+   "delivery_due": 8,
+   "new_truck_arrived": 6,
+   "new_truck_ordered": 6
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "CO",
+  "name": "Colorado",
+  "departments": 310,
+  "leads": {
+   "week": 2,
+   "month": 4,
+   "watch": 1,
+   "total": 7
+  },
+  "by_kind": {
+   "new_truck_arrived": 3,
+   "delivery_due": 3,
+   "grant": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "CT",
+  "name": "Connecticut",
+  "departments": 246,
+  "leads": {
+   "week": 2,
+   "month": 14,
+   "watch": 23,
+   "total": 39
+  },
+  "by_kind": {
+   "new_truck_ordered": 23,
+   "sale_planned": 6,
+   "grant": 5,
+   "bond_or_referendum": 2,
+   "council_approval": 2,
+   "new_truck_arrived": 1
+  },
+  "coverage": "deep",
+  "layers": [
+   "grants",
+   "trade_press",
+   "notices"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": {
+   "who_decides": "No Connecticut statute sets a sale procedure for a town's surplus fire truck. Conn. Gen. Stat. 7-148(c)(3)(A) gives every municipality the power to 'hold, condemn, lease, sell, manage, transfer, release and convey such real and personal property as the purposes of the municipality ... require.' It names no approving body, no voter approval, and no bid rule, so each town's charter or ordinance decides. In the local rules read, the owning department or board declares the item surplus, a town official or board approves, and the purchasing agent runs the sale: East Hartford needs Town Council approval (Sec. 10-3); Waterford's owning agency, board or commission declares surplus and the purchasing agent disposes, under the board of selectmen's authority (Code 3.08.020(B), Ch. 2.112); Montville's Finance Director and Mayor declare surplus and approve the disposal method. A few towns send even a $1 transfer to a town meeting (Portland, 2024). Fire districts formed under 7-324 to 7-329 are run by a board of directors, but the statute says nothing about selling property; it requires a district vote for any contract over $10,000 (grand list up to $20 million) or $20,000 (larger grand list) a year, which governs buying a new truck, not selling the old one. Volunteer companies that own their trucks as nonprofits decide sales under their own bylaws.",
+   "law": "Conn. Gen. Stat. 7-148(c)(3)(A) (municipal power to sell and convey real and personal property); Conn. Gen. Stat. 7-326 to 7-328 (district purposes, meetings, and the 7-328(a) district-vote rule for contracts of $10,000 or $20,000 and up); town charters and ordinances (East Hartford Code Sec. 10-3; Waterford Code 3.08.020(B) and Ch. 2.112; Montville surplus personal property ordinance).",
+   "url": "https://prdext3.cga.ct.gov/current/pub/chap_098.htm",
+   "thresholds": [
+    {
+     "below": null,
+     "rule": "State law sets no dollar line, approving body or bid rule for a town selling a truck (7-148(c)(3)(A)); the town charter or ordinance decides. For example, East Hartford needs Town Council approval for any sale other than a trade-in; Waterford's purchasing agent runs the disposal once the owning board declares the item surplus; Montville's Mayor gives final approval after the Finance Director is told. Most towns then sell at online auction, so the council or board vote is the earliest public signal."
+    }
+   ],
+   "note": "The earliest public signal is a council or selectmen agenda line declaring a vehicle surplus, or a town meeting or referendum notice funding the new truck, often one to three years before delivery. An auction listing is a late signal. Towns may also sell through the state DAS auction contract (22PSX0014)."
+  }
+ },
+ {
+  "code": "DC",
+  "name": "District of Columbia",
+  "departments": 3,
+  "leads": {
+   "week": 0,
+   "month": 1,
+   "watch": 0,
+   "total": 1
+  },
+  "by_kind": {
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "DE",
+  "name": "Delaware",
+  "departments": 59,
+  "leads": {
+   "week": 0,
+   "month": 0,
+   "watch": 1,
+   "total": 1
+  },
+  "by_kind": {
+   "new_truck_ordered": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "FL",
+  "name": "Florida",
+  "departments": 389,
+  "leads": {
+   "week": 0,
+   "month": 5,
+   "watch": 9,
+   "total": 14
+  },
+  "by_kind": {
+   "new_truck_ordered": 5,
+   "delivery_due": 4,
+   "grant": 4,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "GA",
+  "name": "Georgia",
+  "departments": 461,
+  "leads": {
+   "week": 1,
+   "month": 15,
+   "watch": 6,
+   "total": 22
+  },
+  "by_kind": {
+   "grant": 20,
+   "new_truck_arrived": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "HI",
+  "name": "Hawaii",
+  "departments": 12,
+  "leads": {
+   "week": 0,
+   "month": 1,
+   "watch": 0,
+   "total": 1
+  },
+  "by_kind": {
+   "grant": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "IA",
+  "name": "Iowa",
+  "departments": 739,
+  "leads": {
+   "week": 0,
+   "month": 11,
+   "watch": 32,
+   "total": 43
+  },
+  "by_kind": {
+   "new_truck_ordered": 30,
+   "delivery_due": 10,
+   "grant": 3
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "ID",
+  "name": "Idaho",
+  "departments": 198,
+  "leads": {
+   "week": 0,
+   "month": 2,
+   "watch": 0,
+   "total": 2
+  },
+  "by_kind": {
+   "new_truck_arrived": 1,
+   "grant": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "IL",
+  "name": "Illinois",
+  "departments": 1107,
+  "leads": {
+   "week": 1,
+   "month": 26,
+   "watch": 77,
+   "total": 104
+  },
+  "by_kind": {
+   "new_truck_ordered": 74,
+   "delivery_due": 16,
+   "grant": 11,
+   "new_truck_arrived": 3
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "IN",
+  "name": "Indiana",
+  "departments": 766,
+  "leads": {
+   "week": 0,
+   "month": 15,
+   "watch": 41,
+   "total": 56
+  },
+  "by_kind": {
+   "new_truck_ordered": 39,
+   "grant": 9,
+   "delivery_due": 6,
+   "new_truck_arrived": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "KS",
+  "name": "Kansas",
+  "departments": 499,
+  "leads": {
+   "week": 0,
+   "month": 3,
+   "watch": 3,
+   "total": 6
+  },
+  "by_kind": {
+   "new_truck_ordered": 3,
+   "grant": 2,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "KY",
+  "name": "Kentucky",
+  "departments": 688,
+  "leads": {
+   "week": 0,
+   "month": 8,
+   "watch": 7,
+   "total": 15
+  },
+  "by_kind": {
+   "grant": 12,
+   "new_truck_ordered": 2,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "LA",
+  "name": "Louisiana",
+  "departments": 427,
+  "leads": {
+   "week": 0,
+   "month": 5,
+   "watch": 3,
+   "total": 8
+  },
+  "by_kind": {
+   "grant": 4,
+   "delivery_due": 2,
+   "new_truck_ordered": 1,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "MA",
+  "name": "Massachusetts",
+  "departments": 363,
+  "leads": {
+   "week": 0,
+   "month": 16,
+   "watch": 6,
+   "total": 22
+  },
+  "by_kind": {
+   "grant": 18,
+   "new_truck_ordered": 3,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "MD",
+  "name": "Maryland",
+  "departments": 263,
+  "leads": {
+   "week": 0,
+   "month": 6,
+   "watch": 7,
+   "total": 13
+  },
+  "by_kind": {
+   "new_truck_ordered": 7,
+   "grant": 4,
+   "delivery_due": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "ME",
+  "name": "Maine",
+  "departments": 341,
+  "leads": {
+   "week": 0,
+   "month": 11,
+   "watch": 4,
+   "total": 15
+  },
+  "by_kind": {
+   "grant": 13,
+   "delivery_due": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "MI",
+  "name": "Michigan",
+  "departments": 976,
+  "leads": {
+   "week": 0,
+   "month": 13,
+   "watch": 18,
+   "total": 31
+  },
+  "by_kind": {
+   "new_truck_ordered": 13,
+   "grant": 12,
+   "delivery_due": 5,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "MN",
+  "name": "Minnesota",
+  "departments": 725,
+  "leads": {
+   "week": 0,
+   "month": 23,
+   "watch": 35,
+   "total": 58
+  },
+  "by_kind": {
+   "new_truck_ordered": 31,
+   "grant": 15,
+   "delivery_due": 10,
+   "new_truck_arrived": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "MO",
+  "name": "Missouri",
+  "departments": 755,
+  "leads": {
+   "week": 0,
+   "month": 14,
+   "watch": 33,
+   "total": 47
+  },
+  "by_kind": {
+   "new_truck_ordered": 27,
+   "delivery_due": 12,
+   "grant": 6,
+   "new_truck_arrived": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "MS",
+  "name": "Mississippi",
+  "departments": 419,
+  "leads": {
+   "week": 0,
+   "month": 0,
+   "watch": 2,
+   "total": 2
+  },
+  "by_kind": {
+   "delivery_due": 1,
+   "grant": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "MT",
+  "name": "Montana",
+  "departments": 285,
+  "leads": {
+   "week": 0,
+   "month": 0,
+   "watch": 0,
+   "total": 0
+  },
+  "by_kind": {},
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "NC",
+  "name": "North Carolina",
+  "departments": 1089,
+  "leads": {
+   "week": 0,
+   "month": 13,
+   "watch": 12,
+   "total": 25
+  },
+  "by_kind": {
+   "new_truck_ordered": 13,
+   "delivery_due": 6,
+   "grant": 4,
+   "new_truck_arrived": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "ND",
+  "name": "North Dakota",
+  "departments": 327,
+  "leads": {
+   "week": 1,
+   "month": 7,
+   "watch": 4,
+   "total": 12
+  },
+  "by_kind": {
+   "grant": 5,
+   "new_truck_ordered": 4,
+   "new_truck_arrived": 2,
+   "delivery_due": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "NE",
+  "name": "Nebraska",
+  "departments": 389,
+  "leads": {
+   "week": 0,
+   "month": 4,
+   "watch": 22,
+   "total": 26
+  },
+  "by_kind": {
+   "new_truck_ordered": 20,
+   "delivery_due": 4,
+   "grant": 1,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "NH",
+  "name": "New Hampshire",
+  "departments": 211,
+  "leads": {
+   "week": 0,
+   "month": 4,
+   "watch": 2,
+   "total": 6
+  },
+  "by_kind": {
+   "grant": 3,
+   "new_truck_arrived": 2,
+   "new_truck_ordered": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "NJ",
+  "name": "New Jersey",
+  "departments": 713,
+  "leads": {
+   "week": 3,
+   "month": 17,
+   "watch": 29,
+   "total": 49
+  },
+  "by_kind": {
+   "new_truck_ordered": 11,
+   "bond_or_referendum": 10,
+   "grant": 8,
+   "new_truck_arrived": 7,
+   "delivery_due": 6,
+   "council_approval": 4,
+   "surplus_declared": 2,
+   "sale_planned": 1
+  },
+  "coverage": "deep",
+  "layers": [
+   "grants",
+   "trade_press",
+   "notices"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": {
+   "who_decides": "The governing body votes by resolution: the township committee or borough or city council for a municipal fire department, and the Board of Fire Commissioners (five elected commissioners) for a fire district. A fire district sells as a body corporate. A volunteer fire company that owns its own truck sells it by its own vote. No voter referendum is needed to sell; voters decide only on buying (the February fire district election).",
+   "law": "N.J.S.A. 40A:11-36 (Local Public Contracts Law, sale of personal property not needed for public use); N.J.S.A. 40A:14-70(b) (fire district power to sell, subject to 40A:12-13 or 40A:12-14); N.J.S.A. 40A:12-21.1 (sale to a volunteer fire company for nominal sum)",
+   "url": "https://codes.findlaw.com/nj/title-40a-municipalities-and-counties/nj-st-sect-40a-11-36/",
+   "thresholds": [
+    {
+     "below": 7950,
+     "rule": "Fair value at or under 15% of the bid threshold: $7,950 for a unit with a qualified purchasing agent (bid threshold $53,000), $2,625 without one (bid threshold $17,500), the figures in force since 1 July 2025. No public sale is needed; the unit may sell privately by resolution. Few trucks fall here except scrap."
+    },
+    {
+     "below": null,
+     "rule": "Above 15% of the bid threshold, 40A:11-36(1) requires a public sale to the highest bidder, by sealed bid or public auction, at any higher value. Notice runs in the official newspaper and the sale is held 7 to 14 days after the last notice. Units without a purchasing agent reach this rule at $2,625. The unit may reject all bids and re-advertise; after a second rejection it may sell privately, but not below the highest rejected bid. If no bids come, it may sell privately at no less than fair value. No advertising is needed when the buyer is the U.S., New Jersey or another government, and under 40A:12-21.1 a town may give a truck to a volunteer fire company for a nominal sum."
+    }
+   ],
+   "note": "Most New Jersey units sell at public online auction, so the resolution that authorizes the sale is the earliest public signal. The dollar lines are those in force since 1 July 2025 (DCA Local Finance Notice 2025-08). A bill introduced in February 2026 (S3437) would redraw the bands; it is not law."
+  }
+ },
+ {
+  "code": "NM",
+  "name": "New Mexico",
+  "departments": 249,
+  "leads": {
+   "week": 0,
+   "month": 1,
+   "watch": 2,
+   "total": 3
+  },
+  "by_kind": {
+   "delivery_due": 2,
+   "new_truck_ordered": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "NV",
+  "name": "Nevada",
+  "departments": 88,
+  "leads": {
+   "week": 0,
+   "month": 0,
+   "watch": 0,
+   "total": 0
+  },
+  "by_kind": {},
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "NY",
+  "name": "New York",
+  "departments": 1649,
+  "leads": {
+   "week": 14,
+   "month": 37,
+   "watch": 62,
+   "total": 113
+  },
+  "by_kind": {
+   "new_truck_ordered": 31,
+   "auction_closed": 22,
+   "grant": 15,
+   "new_truck_arrived": 9,
+   "bond_or_referendum": 7,
+   "auction_equipment": 7,
+   "auction_open": 6,
+   "delivery_due": 6,
+   "surplus_declared": 5,
+   "council_approval": 2,
+   "sale_planned": 1,
+   "auction_support": 1,
+   "already_sold": 1
+  },
+  "coverage": "deep",
+  "layers": [
+   "grants",
+   "trade_press",
+   "auctions",
+   "notices"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": {
+   "who_decides": "In a fire district the Board of Fire Commissioners sells the truck, not the chief. In a village or city the board or council votes and the clerk handles the sale.",
+   "law": "New York Town Law §176(23)",
+   "url": "https://www.nysenate.gov/legislation/laws/TWN/176",
+   "thresholds": [
+    {
+     "below": 20000,
+     "rule": "The board can sell on its own vote."
+    },
+    {
+     "below": 100000,
+     "rule": "The sale waits on a permissive referendum: voters can force a vote within 30 days."
+    },
+    {
+     "below": null,
+     "rule": "The sale needs a vote of the district."
+    }
+   ],
+   "note": "A better price can mean a slower sale. Know which side of $20,000 a truck sits on before the call."
+  }
+ },
+ {
+  "code": "OH",
+  "name": "Ohio",
+  "departments": 1148,
+  "leads": {
+   "week": 1,
+   "month": 25,
+   "watch": 32,
+   "total": 58
+  },
+  "by_kind": {
+   "grant": 35,
+   "new_truck_ordered": 17,
+   "delivery_due": 5,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "OK",
+  "name": "Oklahoma",
+  "departments": 749,
+  "leads": {
+   "week": 0,
+   "month": 5,
+   "watch": 2,
+   "total": 7
+  },
+  "by_kind": {
+   "grant": 6,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "OR",
+  "name": "Oregon",
+  "departments": 289,
+  "leads": {
+   "week": 0,
+   "month": 5,
+   "watch": 3,
+   "total": 8
+  },
+  "by_kind": {
+   "grant": 5,
+   "new_truck_arrived": 2,
+   "delivery_due": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "PA",
+  "name": "Pennsylvania",
+  "departments": 1771,
+  "leads": {
+   "week": 5,
+   "month": 35,
+   "watch": 35,
+   "total": 75
+  },
+  "by_kind": {
+   "new_truck_ordered": 28,
+   "grant": 27,
+   "sale_planned": 8,
+   "new_truck_arrived": 4,
+   "delivery_due": 4,
+   "council_approval": 4
+  },
+  "coverage": "deep",
+  "layers": [
+   "grants",
+   "trade_press",
+   "notices"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": {
+   "who_decides": "Borough: borough council, by resolution (8 Pa.C.S. 1201.2(a)). Second-class township: board of supervisors approves any sale of township personal property (53 P.S. 66504(a), Second Class Township Code section 1504). First-class township: board of commissioners (73 Pa.C.S. 4303(a); the First Class Township Code of 1931 was repealed and moved into Title 73 by Act 7 of 2026, in force about April 12, 2026). Third-class city: city council, by resolution (11 Pa.C.S. 12402.1(c)(1)). Voters do not vote on a truck sale. A volunteer fire company that owns its truck is a private nonprofit: its own board or members decide under its bylaws, and none of the municipal codes bind it. Where the municipality owns the truck (common in boroughs and cities, and some townships), the governing body must act, and its sale to a volunteer fire company or another government skips advertising and highest-bidder rules.",
+   "law": "Borough Code, 8 Pa.C.S. 1201.2 (personal property, as amended by Act 150 of 2018) and 1201.3 (exceptions). Second Class Township Code, Act of May 1, 1933, P.L. 103, No. 69, section 1504, 53 P.S. 66504 (section amended by Act 30 of 2012; subsections (a) and (b) amended by Act 21 of 2017, P.L. 302, which set the $2,000 figure). First-class townships: 73 Pa.C.S. 4303 (personal property) and 4304 (exceptions), added by Act 7 of 2026 (Feb. 11, 2026, P.L. 19), which repealed the First Class Township Code (Act 331 of 1931, 53 P.S. 55101 et seq.) and says the new text continues the old code without change of meaning. Third Class City Code, 11 Pa.C.S. 12402.1(c)-(f) (subsection (c) amended by Act 150 of 2018). Companion act for no-bid sales: Act of Oct. 27, 1979, P.L. 241, No. 78. Cities of other classes (Philadelphia, Pittsburgh, Scranton) and home-rule municipalities follow their own charters.",
+   "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=08&div=0&chapter=12&section=1&subsctn=2",
+   "thresholds": [
+    {
+     "below": 2000,
+     "rule": "All four codes use $2,000. Borough (8 Pa.C.S. 1201.2(b)), first-class township (73 Pa.C.S. 4303(d)) and second-class township (53 P.S. 66504(b)): for items or lots with estimated fair market value under $2,000, the governing body adopts a resolution setting a sale procedure, and sales under it need no further vote. Third-class city (11 Pa.C.S. 12402.1(c)(3)): under $2,000, council may sell in whole or in part for the best price obtainable, after approving the disposal by resolution."
+    },
+    {
+     "below": null,
+     "rule": "At or above $2,000 (all four codes): the governing body approves the sale (borough and city by resolution), estimates the value of the whole lot, and advertises it once in a newspaper of general circulation at least 10 days before bids open or the auction runs. Online auctions are allowed; the ad gives the web address, date, time and duration. Award goes to the best responsible bidder (borough, city) or highest bidder (townships). The body may reject bids it thinks are under fair market value. If no bids come, the 1979 no-bid act applies (second-class townships may also adopt a sale procedure after two failed attempts)."
+    },
+    {
+     "below": null,
+     "rule": "Exceptions (any value): no advertising or highest-bidder rule applies to a sale to the federal or state government, a county, city, borough, town, township, school district, institution district, authority or council of governments, or to a volunteer fire company, volunteer ambulance service or rescue squad. Location limits differ: borough (1201.3(a)(1)) and first-class township (4304(a)(1)) list them with 'located within the borough/township'; second-class township (1504(c)(2)(ix)) lists 'a volunteer fire company' with no location limit and limits only ambulance and rescue squads to those within the township; third-class city (12402.1(e)(2)) allows one 'located within the city or providing emergency services in the city'. A trade-in or exchange for replacement property is also exempt in all four codes (borough 1201.2(c) and first-class township 4303(e) still need a resolution)."
+    }
+   ],
+   "note": "A sale to a volunteer fire company or another government skips bidding, so a municipal truck often moves quietly (Harrisburg to Highspire, 2025). At $2,000 and up the sale must be advertised, so the first public signal is usually a council or supervisors minute authorizing the sale, then an ad or online listing 10 or more days before the close. Companies that own their trucks often post the sale on their own site or Facebook first. Second-class townships moved from $1,000 to $2,000 in 2017; older resolutions that cite $1,000 are out of date."
+  }
+ },
+ {
+  "code": "RI",
+  "name": "Rhode Island",
+  "departments": 68,
+  "leads": {
+   "week": 0,
+   "month": 8,
+   "watch": 2,
+   "total": 10
+  },
+  "by_kind": {
+   "grant": 8,
+   "new_truck_ordered": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "SC",
+  "name": "South Carolina",
+  "departments": 442,
+  "leads": {
+   "week": 0,
+   "month": 0,
+   "watch": 3,
+   "total": 3
+  },
+  "by_kind": {
+   "delivery_due": 2,
+   "grant": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "SD",
+  "name": "South Dakota",
+  "departments": 294,
+  "leads": {
+   "week": 0,
+   "month": 3,
+   "watch": 7,
+   "total": 10
+  },
+  "by_kind": {
+   "new_truck_ordered": 6,
+   "delivery_due": 2,
+   "grant": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "TN",
+  "name": "Tennessee",
+  "departments": 638,
+  "leads": {
+   "week": 0,
+   "month": 19,
+   "watch": 7,
+   "total": 26
+  },
+  "by_kind": {
+   "grant": 20,
+   "new_truck_ordered": 4,
+   "delivery_due": 1,
+   "new_truck_arrived": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "TX",
+  "name": "Texas",
+  "departments": 1530,
+  "leads": {
+   "week": 0,
+   "month": 10,
+   "watch": 27,
+   "total": 37
+  },
+  "by_kind": {
+   "new_truck_ordered": 22,
+   "grant": 7,
+   "new_truck_arrived": 4,
+   "delivery_due": 4
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "UT",
+  "name": "Utah",
+  "departments": 190,
+  "leads": {
+   "week": 0,
+   "month": 1,
+   "watch": 1,
+   "total": 2
+  },
+  "by_kind": {
+   "grant": 1,
+   "new_truck_ordered": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "VA",
+  "name": "Virginia",
+  "departments": 558,
+  "leads": {
+   "week": 0,
+   "month": 5,
+   "watch": 3,
+   "total": 8
+  },
+  "by_kind": {
+   "grant": 4,
+   "new_truck_ordered": 2,
+   "delivery_due": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "VT",
+  "name": "Vermont",
+  "departments": 206,
+  "leads": {
+   "week": 0,
+   "month": 2,
+   "watch": 1,
+   "total": 3
+  },
+  "by_kind": {
+   "grant": 2,
+   "new_truck_ordered": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "WA",
+  "name": "Washington",
+  "departments": 405,
+  "leads": {
+   "week": 0,
+   "month": 4,
+   "watch": 3,
+   "total": 7
+  },
+  "by_kind": {
+   "grant": 4,
+   "new_truck_ordered": 2,
+   "delivery_due": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "WI",
+  "name": "Wisconsin",
+  "departments": 762,
+  "leads": {
+   "week": 0,
+   "month": 12,
+   "watch": 7,
+   "total": 19
+  },
+  "by_kind": {
+   "grant": 9,
+   "delivery_due": 5,
+   "new_truck_ordered": 5
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "WV",
+  "name": "West Virginia",
+  "departments": 428,
+  "leads": {
+   "week": 0,
+   "month": 7,
+   "watch": 4,
+   "total": 11
+  },
+  "by_kind": {
+   "grant": 6,
+   "new_truck_ordered": 3,
+   "new_truck_arrived": 2
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ },
+ {
+  "code": "WY",
+  "name": "Wyoming",
+  "departments": 115,
+  "leads": {
+   "week": 0,
+   "month": 1,
+   "watch": 0,
+   "total": 1
+  },
+  "by_kind": {
+   "new_truck_ordered": 1
+  },
+  "coverage": "national",
+  "layers": [
+   "grants",
+   "trade_press"
+  ],
+  "registry_fetched": "2026-11-08",
+  "rule": null
+ }
+]

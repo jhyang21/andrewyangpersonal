@@ -1,0 +1,47 @@
+{
+ "updated": "2026-11-09",
+ "generated_at": "2026-11-09T10:19:54Z",
+ "totals": {
+  "states": 51,
+  "departments_in_registry": 27102,
+  "leads": 1112,
+  "leads_week": 31,
+  "hand_read_leads": 163,
+  "observed_leads": 133,
+  "signals": 1262,
+  "deep_states": [
+   "CT",
+   "NJ",
+   "NY",
+   "PA"
+  ],
+  "auction_states": [],
+  "sales": 1272
+ },
+ "sources": [
+  {
+   "name": "USFA National Fire Department Registry",
+   "url": "https://apps.usfa.fema.gov/registry/",
+   "read": "2026-11-08",
+   "note": "Public federal database of fire departments: name, type, office address and website. The office phone is kept off the site; website only."
+  },
+  {
+   "name": "FEMA Assistance to Firefighters Grant awards",
+   "url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+   "read": "2026-11-08",
+   "note": "Names every vehicle grant. Downloaded by hand in a browser; the site refuses scripts."
+  },
+  {
+   "name": "Trade-press apparatus orders and deliveries",
+   "url": "https://www.fireapparatusmagazine.com/",
+   "read": "2026-11-09",
+   "note": "Monthly columns in Fire Apparatus Magazine and Fire Engineering."
+  },
+  {
+   "name": "Auctions International",
+   "url": "https://www.auctionsinternational.com/",
+   "read": "2026-11-09",
+   "note": "Live fire-truck lots and the Past Prices search, read by hand in a browser."
+  }
+ ]
+}

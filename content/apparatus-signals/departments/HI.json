@@ -1,0 +1,28 @@
+[
+ {
+  "checked": "from FEMA's awards table",
+  "score": 4.0,
+  "department": "Kauai Fire Department",
+  "registry_name": "Kauai Fire Department",
+  "city": "Lihue",
+  "county": "Kauai",
+  "type": "Career",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $352,727, awarded 8/23/24 (FY2023)",
+  "signal_date": "2024-08-23",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Kauai, County of, Vehicle Acquisition, $352,727",
+  "other_signals": "",
+  "named_in_source": "Kauai, County of",
+  "name_match": "exact",
+  "fdid": "53000",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck_for_sale": "",
+  "rank": 1,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale"
+ }
+]

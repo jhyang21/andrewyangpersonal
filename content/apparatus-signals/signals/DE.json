@@ -1,0 +1,18 @@
+[
+ {
+  "kind": "new_truck_ordered",
+  "date": "2025-09-01",
+  "detail": "New Sutphen pumper on order (2025-09), delivery July 2028",
+  "old_truck": null,
+  "where": "trade press",
+  "quote": "SUTPHEN—Tri Township Fire Department, Delaware, pumper. Delivery in July 2028.",
+  "url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-sept-2025/",
+  "points": 3,
+  "read_by": "feed",
+  "source_name": "Tri Township Fire Department",
+  "source_city": "",
+  "source_county": "",
+  "match": "not in registry",
+  "fdid": ""
+ }
+]

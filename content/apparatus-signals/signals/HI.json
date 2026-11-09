@@ -1,0 +1,18 @@
+[
+ {
+  "kind": "grant",
+  "date": "2024-08-23",
+  "detail": "FEMA vehicle grant $352,727, awarded 8/23/24 (FY2023)",
+  "old_truck": null,
+  "where": "FEMA awards table",
+  "quote": "Kauai, County of, Vehicle Acquisition, $352,727",
+  "url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "points": 4,
+  "read_by": "feed",
+  "source_name": "Kauai, County of",
+  "source_city": "",
+  "source_county": "",
+  "match": "exact",
+  "fdid": "53000"
+ }
+]

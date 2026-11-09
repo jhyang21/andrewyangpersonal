@@ -1,0 +1,274 @@
+/*
+ * Apparatus Signals microsite styles. Imported only by src/app/apparatus-signals/layout.tsx.
+ * Every token and selector is scoped to the .apparatus-signals wrapper so the personal site's
+ * pages are not touched. Tailwind is loaded once by the root globals.css, which also maps the
+ * --color-as-* theme entries (text-as-ink, border-as-rule, ...) to these variables.
+ */
+
+/* ---------- tokens ---------- */
+.apparatus-signals {
+  color-scheme: light;
+  --as-bg: #fcfcfb;
+  --as-bg-2: #f3f2ee;
+  --as-ink: #0b0b0b;
+  --as-ink-2: #52514e;
+  --as-muted: #67665f;
+  --as-rule: #e1e0d9;
+  --as-axis: #c3c2b7;
+  --as-link: #1c5cab;
+  --as-focus: #1c5cab;
+  --as-series-1: #2a78d6;
+  /* map: sequential blue, validated (ordinal, light surface) */
+  --as-seq-0: #e4e3dc;
+  --as-seq-1: #86b6ef;
+  --as-seq-2: #5598e7;
+  --as-seq-3: #2a78d6;
+  --as-seq-4: #1c5cab;
+  --as-seq-5: #0d366b;
+  --as-deep-outline: #0b0b0b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .apparatus-signals {
+    color-scheme: dark;
+    --as-bg: #1a1a19;
+    --as-bg-2: #242422;
+    --as-ink: #f0efec;
+    --as-ink-2: #c3c2b7;
+    --as-muted: #a3a29b;
+    --as-rule: #2f2f2c;
+    --as-axis: #45453f;
+    --as-link: #86b6ef;
+    --as-focus: #86b6ef;
+    --as-series-1: #3987e5;
+    /* dark steps from the same ramp, validated against the dark surface */
+    --as-seq-0: #3a3a37;
+    --as-seq-1: #184f95;
+    --as-seq-2: #256abf;
+    --as-seq-3: #3987e5;
+    --as-seq-4: #6da7ec;
+    --as-seq-5: #b7d3f6;
+    --as-deep-outline: #f0efec;
+  }
+}
+
+/* ---------- base ---------- */
+@layer base {
+.apparatus-signals {
+  background: var(--as-bg);
+  color: var(--as-ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 16px;
+}
+
+.apparatus-signals a {
+  color: var(--as-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.apparatus-signals a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.apparatus-signals h1,
+.apparatus-signals h2,
+.apparatus-signals h3 {
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.apparatus-signals .num {
+  font-variant-numeric: tabular-nums;
+}
+
+.apparatus-signals .sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.apparatus-signals .eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--as-muted);
+}
+
+.apparatus-signals .prose-plain p + p {
+  margin-top: 0.75rem;
+}
+
+.apparatus-signals blockquote.quote {
+  border-left: 2px solid var(--as-axis);
+  padding-left: 0.75rem;
+  color: var(--as-ink-2);
+}
+
+}
+
+/*
+ * Focus ring. Left outside the layers on purpose: the root globals.css has an unlayered
+ * `a:focus-visible` rule (transparent outline, faint box-shadow) that would beat any layered rule.
+ */
+.apparatus-signals :focus-visible {
+  outline: 2px solid var(--as-focus);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+@layer components {
+/* ---------- data tables ---------- */
+.apparatus-signals .data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+.apparatus-signals .data-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+.apparatus-signals .data-table th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--as-ink-2);
+  border-bottom: 1px solid var(--as-axis);
+  padding: 0.375rem 0.75rem 0.375rem 0;
+  vertical-align: bottom;
+}
+.apparatus-signals .data-table td {
+  border-bottom: 1px solid var(--as-rule);
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  vertical-align: top;
+}
+.apparatus-signals .data-table .r {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Under 640px every row becomes a stacked card; cells show their column name. */
+@media (max-width: 639.98px) {
+  .apparatus-signals .data-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .apparatus-signals .data-table,
+  .apparatus-signals .data-table tbody,
+  .apparatus-signals .data-table tr,
+  .apparatus-signals .data-table td {
+    display: block;
+    width: 100%;
+  }
+  .apparatus-signals .data-table tr {
+    border-bottom: 1px solid var(--as-axis);
+    padding: 0.5rem 0;
+  }
+  .apparatus-signals .data-table td {
+    border: 0;
+    padding: 0.125rem 0;
+    text-align: left;
+  }
+  .apparatus-signals .data-table td[data-label]::before {
+    content: attr(data-label) ": ";
+    color: var(--as-muted);
+    font-size: 0.8125rem;
+  }
+  .apparatus-signals .data-table .r {
+    text-align: left;
+  }
+}
+
+/* ---------- charts ---------- */
+.apparatus-signals .chart text {
+  fill: var(--as-ink-2);
+  font-size: 12px;
+  font-family: inherit;
+}
+.apparatus-signals .chart .grid {
+  stroke: var(--as-rule);
+  stroke-width: 1;
+}
+.apparatus-signals .chart .bar,
+.apparatus-signals .chart .dot {
+  fill: var(--as-series-1);
+}
+.apparatus-signals .chart .ring {
+  stroke: var(--as-bg);
+  stroke-width: 2;
+}
+.apparatus-signals .chart .line {
+  stroke: var(--as-ink-2);
+  stroke-width: 2;
+  fill: none;
+}
+.apparatus-signals .chart .whisker {
+  stroke: var(--as-ink-2);
+  stroke-width: 1.5;
+}
+.apparatus-signals .chart .mark {
+  fill: var(--as-ink);
+}
+/* Narrow screens: label every other tick so the labels do not collide. */
+@media (max-width: 639.98px) {
+  .apparatus-signals .chart text.minor {
+    display: none;
+  }
+}
+
+/* ---------- map ---------- */
+.apparatus-signals .us-map .state {
+  stroke: var(--as-bg);
+  stroke-width: 1;
+  stroke-linejoin: round;
+  cursor: pointer;
+  transition: opacity 120ms;
+}
+.apparatus-signals .us-map .state.deep {
+  stroke: var(--as-deep-outline);
+  stroke-width: 2.5;
+}
+.apparatus-signals .us-map a:hover .state,
+.apparatus-signals .us-map a:focus-visible .state {
+  opacity: 0.8;
+  stroke: var(--as-ink);
+  stroke-width: 2;
+}
+.apparatus-signals .us-map a:focus-visible {
+  outline: none;
+}
+.apparatus-signals .us-map .sep {
+  stroke: var(--as-axis);
+  stroke-width: 1;
+  fill: none;
+}
+.apparatus-signals .fill-0 { fill: var(--as-seq-0); }
+.apparatus-signals .fill-1 { fill: var(--as-seq-1); }
+.apparatus-signals .fill-2 { fill: var(--as-seq-2); }
+.apparatus-signals .fill-3 { fill: var(--as-seq-3); }
+.apparatus-signals .fill-4 { fill: var(--as-seq-4); }
+.apparatus-signals .fill-5 { fill: var(--as-seq-5); }
+.apparatus-signals .bg-fill-0 { background: var(--as-seq-0); }
+.apparatus-signals .bg-fill-1 { background: var(--as-seq-1); }
+.apparatus-signals .bg-fill-2 { background: var(--as-seq-2); }
+.apparatus-signals .bg-fill-3 { background: var(--as-seq-3); }
+.apparatus-signals .bg-fill-4 { background: var(--as-seq-4); }
+.apparatus-signals .bg-fill-5 { background: var(--as-seq-5); }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .apparatus-signals,
+  .apparatus-signals * {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,28 @@
+[
+ {
+  "checked": "listed in a trade-press delivery column",
+  "score": 5.0,
+  "department": "Metropolitan Washington Airports Authority Fire & Rescue Department",
+  "registry_name": "Metropolitan Washington Airports Authority Fire & Rescue Department",
+  "city": "Dulles",
+  "county": "District of Columbia",
+  "type": "Career",
+  "website": "https://www.mwaa.com",
+  "why_call": "New truck in service",
+  "detail": "New Oshkosh Airport Products airport rescue and firefighting vehicle (stryker, 6x6) 3 units delivered (2026-02)",
+  "signal_date": "2026-02-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-february-2026/",
+  "proof_quote": "Department: METROPOLITAN WASHINGTON AIRPORTS AUTHORITY (PROTECTS DULLES AND REAGAN INTERNATIONAL AIRPORTS); Type: AIRPORT RESCUE AND FIREFIGHTING VEHICLE (STRYKER, 6X6) 3 UNITS; Built by: OSHKOSH AIRPORT PRODUCTS",
+  "other_signals": "",
+  "named_in_source": "Metropolitan Washington Airports Authority",
+  "name_match": "exact",
+  "fdid": "92002",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck_for_sale": "",
+  "rank": 1,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale"
+ }
+]

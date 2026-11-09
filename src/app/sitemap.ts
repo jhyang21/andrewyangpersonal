@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { getAllMemos } from "@/lib/memos";
 import { getAllProjects } from "@/lib/projects";
+import { departmentHref, getDepartments, getMeta, getStates } from "@/apparatus-signals/lib/data";
+import { BASE } from "@/apparatus-signals/lib/site";
 
 const SITE_URL = "https://www.andrewyangpersonal.com";
 
@@ -25,5 +27,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...memos,
     { url: `${SITE_URL}/projects` },
     ...projects,
+    ...apparatusSignals(),
   ];
+}
+
+/** The Apparatus Signals microsite: map, method, changelog, every state and every department. */
+function apparatusSignals(): MetadataRoute.Sitemap {
+  const lastModified = new Date(getMeta().updated);
+  const paths = [BASE, `${BASE}/method`, `${BASE}/changelog`];
+  for (const s of getStates()) {
+    paths.push(`${BASE}/${s.code.toLowerCase()}`);
+    for (const d of getDepartments(s.code)) paths.push(departmentHref(s.code, d));
+  }
+  return paths.map((p) => ({ url: `${SITE_URL}${p}`, lastModified }));
 }
