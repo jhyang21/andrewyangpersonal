@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { BASE } from "./site";
+import { isOpenStage } from "./words";
 
 const DATA_DIR = path.join(process.cwd(), "content", "apparatus-signals");
 
@@ -529,11 +530,6 @@ export function getDepartments(code: string): DepartmentWithId[] {
  * this, not the export's `rank`, which counts every stage.
  */
 export type DepartmentWithId = Department & { id: string; openRank: number | null };
-
-/** Not yet at auction or sold: the leads worth a call. */
-export function isOpenStage(stage: Stage): boolean {
-  return stage === "surplus" || stage === "replacing";
-}
 
 export function getDepartment(code: string, id: string): DepartmentWithId | undefined {
   return getDepartments(code).find((d) => d.id === id);

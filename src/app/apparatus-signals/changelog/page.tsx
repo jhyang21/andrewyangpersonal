@@ -8,7 +8,7 @@ import {
   type ChangelogRun,
   type Method,
 } from "@/apparatus-signals/lib/data";
-import { formatDate, formatNumber, plural } from "@/apparatus-signals/lib/format";
+import { formatDate, formatNumber, lowerFirst, plural } from "@/apparatus-signals/lib/format";
 import { kindLabel } from "@/apparatus-signals/lib/words";
 
 export const metadata: Metadata = {
@@ -86,10 +86,6 @@ function NewLeads({ run, method }: { run: ChangelogRun; method: Method }) {
       ) : null}
     </div>
   );
-}
-
-function lowerFirst(text: string): string {
-  return /^[A-Z][a-z]/.test(text) ? text[0].toLowerCase() + text.slice(1) : text;
 }
 
 export default function ChangelogPage() {

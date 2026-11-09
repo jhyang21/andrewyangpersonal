@@ -18,6 +18,7 @@ import {
   formatMoney,
   formatScore,
   formatWindow,
+  lowerFirst,
   plural,
   tierLabel,
   websiteHref,
@@ -61,11 +62,6 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
     title: `${found.dept.department}, ${found.state.name}`,
     description: `${found.dept.why_call}. ${found.dept.detail}`.slice(0, 200),
   };
-}
-
-/** "From FEMA’s table" -> "from FEMA’s table": keeps acronyms. */
-function lowerFirst(s: string): string {
-  return s && !/^[A-Z]{2}/.test(s) ? s[0].toLowerCase() + s.slice(1) : s;
 }
 
 /** The heading above already says like for like, so the type_how tail would repeat it. */

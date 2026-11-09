@@ -18,12 +18,12 @@ import { guideTitle, truckLabel } from "@/apparatus-signals/lib/trucks";
 import {
   BASIS_LEGEND,
   DONE_NOTE,
-  DONE_STAGES,
   READ_BY_LABEL,
   STAGE_LABEL,
   STAGE_ORDER,
   STAGE_WHEN,
   checkedLabel,
+  isOpenStage,
 } from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
 import Ext from "@/apparatus-signals/ui/Ext";
@@ -185,7 +185,7 @@ export default function LeadTable({
           ) : (
             <p className="text-as-ink-2">No leads here match these filters.</p>
           );
-          if (DONE_STAGES.includes(stage)) {
+          if (!isOpenStage(stage)) {
             return (
               <details key={stage}>
                 <summary className="cursor-pointer">

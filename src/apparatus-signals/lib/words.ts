@@ -60,15 +60,17 @@ export const STAGE_LABEL: Record<Stage, string> = {
   sold: "Sold recently",
 };
 
-/** Stages whose truck has already reached a buyer or an auction. */
-export const DONE_STAGES: Stage[] = ["listed", "sold"];
+/** Not yet at auction or sold: the leads worth a call. */
+export function isOpenStage(stage: Stage): boolean {
+  return stage === "surplus" || stage === "replacing";
+}
 
 /** Shown where the tier label sits, for leads already on a channel. */
 export const STAGE_WHEN: Partial<Record<Stage, string>> = { sold: "Sold", listed: "At auction" };
 
 export const DONE_NOTE = "Already on a channel. Here as proof the earlier signs were right.";
 
-export const CHECKED_LABEL: Record<Checked, string> = {
+const CHECKED_LABEL: Record<Checked, string> = {
   confirmed: "Checked by a second reader",
   corrected: "Checked; link or quote fixed",
   partly: "Partly checked",
@@ -88,7 +90,7 @@ export function checkedLabel(value: string | null | undefined): string {
 }
 
 /** How a source's name was matched to the USFA registry. */
-export const MATCH_LABEL: Record<string, string> = {
+const MATCH_LABEL: Record<string, string> = {
   exact: "exact name match",
   fuzzy: "close name match",
   "by town (only department there)": "the only department in its town",

@@ -23,9 +23,9 @@ import { guideTotalLine } from "@/apparatus-signals/lib/trucks";
 import {
   COVERAGE,
   COVERAGE_ORDER,
-  DONE_STAGES,
   READ_BY_LABEL,
   WEEK_RULE,
+  isOpenStage,
 } from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
 import { testSummary } from "@/apparatus-signals/ui/DoesItWork";
@@ -50,7 +50,7 @@ export default function HomePage() {
   }));
   // The Top 10 is for trucks not yet on a channel; listed and sold leads stay on the state pages.
   const top = allLeads()
-    .filter((d) => !DONE_STAGES.includes(d.stage))
+    .filter((d) => isOpenStage(d.stage))
     .sort(compareLeads)
     .slice(0, 10);
   const topDeep = top.filter((d) => totals.deep_states.includes(d.stateCode)).length;

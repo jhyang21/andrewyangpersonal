@@ -39,7 +39,12 @@ export function capitalize(s: string): string {
   return s ? s[0].toUpperCase() + s.slice(1) : s;
 }
 
-const intFmt =new Intl.NumberFormat("en-US");
+/** "From FEMA’s table" -> "from FEMA’s table": lowers only a capital followed by a small letter. */
+export function lowerFirst(s: string): string {
+  return /^[A-Z][a-z]/.test(s) ? s[0].toLowerCase() + s.slice(1) : s;
+}
+
+const intFmt = new Intl.NumberFormat("en-US");
 const moneyFmt = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD",
