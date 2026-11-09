@@ -1493,7 +1493,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "sold",
+  "stage": "replacing",
   "window": {
    "from": "2027-01",
    "to": "2028-01",
@@ -1859,7 +1859,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "sold",
+  "stage": "replacing",
   "window": {
    "from": "2027-05",
    "to": "2028-05",
