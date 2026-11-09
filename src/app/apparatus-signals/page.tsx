@@ -11,6 +11,7 @@ import {
 import { formatDate, formatNumber, formatScore, joinPlain, tierLabel } from "@/apparatus-signals/lib/format";
 import { binLabel, buildScale } from "@/apparatus-signals/lib/scale";
 import { BASE, SITE_QUESTION } from "@/apparatus-signals/lib/site";
+import { guideTotalLine } from "@/apparatus-signals/lib/trucks";
 import { COVERAGE, COVERAGE_ORDER, WEEK_RULE } from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
 import { testSummary } from "@/apparatus-signals/ui/DoesItWork";
@@ -99,6 +100,10 @@ export default function HomePage() {
             </div>
           ))}
         </dl>
+        <p className="text-sm text-as-ink-2">
+          {guideTotalLine(totals.guide_total, "on the lists in all states")}{" "}
+          <Link href={`${BASE}/method#price-guide`}>How the guide works</Link>
+        </p>
       </section>
 
       <section aria-labelledby="map-title" className="space-y-4">

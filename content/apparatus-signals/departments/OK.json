@@ -21,9 +21,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
+  },
   "rank": 1,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -47,9 +86,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 2,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -73,9 +120,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 3,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -99,9 +154,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 4,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -125,9 +188,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 5,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -151,9 +222,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 6,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -177,8 +256,16 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 7,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  }
 ]

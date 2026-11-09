@@ -21,8 +21,16 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "other",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new trucks are airport rescue and firefighting vehicle (stryker, 6x6) 3 units; departments usually replace like with like"
+  },
   "rank": 1,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  }
 ]

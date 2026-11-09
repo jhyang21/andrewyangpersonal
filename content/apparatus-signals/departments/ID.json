@@ -21,9 +21,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 1,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -47,8 +86,16 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 2,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  }
 ]

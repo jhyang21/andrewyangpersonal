@@ -12,6 +12,7 @@ import {
   signalsFor,
 } from "@/apparatus-signals/lib/data";
 import { formatNumber, plural } from "@/apparatus-signals/lib/format";
+import { guideTotalLine } from "@/apparatus-signals/lib/trucks";
 import { COVERAGE, kindLabel } from "@/apparatus-signals/lib/words";
 import KindBars from "@/apparatus-signals/ui/KindBars";
 import LeadTable, { type KindOption, type LeadRow } from "@/apparatus-signals/ui/LeadTable";
@@ -53,7 +54,19 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     type: d.type,
     why_call: d.why_call,
     detail: d.detail,
-    truck_for_sale: d.truck_for_sale,
+    truck: d.truck,
+    // The table needs the price, not the close sales; those are on the department page.
+    guide: d.guide
+      ? {
+          type: d.guide.type,
+          band: d.guide.band,
+          n: d.guide.n,
+          median: d.guide.median,
+          p25: d.guide.p25,
+          p75: d.guide.p75,
+          thin: d.guide.thin,
+        }
+      : null,
     signal_date: d.signal_date,
     other_signals: d.other_signals,
     proof_url: d.proof_url,
@@ -99,7 +112,15 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
         </p>
       </header>
 
-      <CoverageCard state={state} method={method} />
+      <div className="space-y-2">
+        <CoverageCard state={state} method={method} />
+        {total > 0 ? (
+          <p className="max-w-3xl text-sm text-as-ink-2">
+            {guideTotalLine(state.guide_total, "on this list")}{" "}
+            <Link href={`${BASE}/method#price-guide`}>How the guide works</Link>
+          </p>
+        ) : null}
+      </div>
 
       {total === 0 ? (
         <section aria-labelledby="none-title">

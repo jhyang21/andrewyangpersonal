@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-09",
- "generated_at": "2026-11-09T10:19:54Z",
+ "generated_at": "2026-11-09T21:23:20Z",
  "totals": {
   "states": 51,
   "departments_in_registry": 27102,
@@ -16,7 +16,11 @@
    "PA"
   ],
   "auction_states": [],
-  "sales": 1272
+  "sales": 1272,
+  "guide_total": {
+   "trucks": 617,
+   "median_sum": 3656275
+  }
  },
  "sources": [
   {

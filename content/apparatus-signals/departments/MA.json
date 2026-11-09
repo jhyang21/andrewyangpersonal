@@ -21,9 +21,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a k-180 pumper; departments usually replace like with like"
+  },
   "rank": 1,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 E One Pumper Truck",
+     "price": 4800.0,
+     "date": "2026-01-24",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0001-1992-e-one-pumper-truck-286255/"
+    },
+    {
+     "item": "2004 HME Fire Pumper Truck",
+     "price": 4800.0,
+     "date": "2026-01-24",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0002-2004-hme-fire-pumper-truck-286256/"
+    },
+    {
+     "item": "1987 Pierce Arrow Fire Pumper Truck",
+     "price": 1675.0,
+     "date": "2025-12-18",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45404/item/lot-0010-1987-pierce-arrow-fire-pumper-truck-283960/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -47,9 +86,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 2,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -73,9 +120,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 3,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -99,9 +154,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 4,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -125,9 +188,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 5,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -151,9 +222,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 6,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -177,9 +256,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 7,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -203,9 +290,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 8,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1970 Kaiser Jeep M51A2 6X6 Tanker",
+     "price": 4000.0,
+     "date": "2021-03-12",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/24010/item/lot-0060-1970-kaiser-jeep-m51a2-6x6-tanker-147880/"
+    },
+    {
+     "item": "1980 GMC/E-One Brigadeer Fire Engine/Tanker",
+     "price": 8000.0,
+     "date": "2020-05-29",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/21310/item/lot-0100-1980-gmce-one-brigadeer-fire-enginetanker-129467/"
+    },
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -229,9 +355,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 9,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -255,9 +389,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 10,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -281,9 +423,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 11,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -307,9 +457,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 12,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -333,9 +491,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 13,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -359,9 +525,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 14,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -385,9 +559,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 15,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -411,9 +593,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 16,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -437,9 +627,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 17,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1970 Kaiser Jeep M51A2 6X6 Tanker",
+     "price": 4000.0,
+     "date": "2021-03-12",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/24010/item/lot-0060-1970-kaiser-jeep-m51a2-6x6-tanker-147880/"
+    },
+    {
+     "item": "1980 GMC/E-One Brigadeer Fire Engine/Tanker",
+     "price": 8000.0,
+     "date": "2020-05-29",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/21310/item/lot-0100-1980-gmce-one-brigadeer-fire-enginetanker-129467/"
+    },
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -463,9 +692,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 18,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -489,9 +726,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 19,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -515,9 +760,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 20,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 E One Pumper Truck",
+     "price": 4800.0,
+     "date": "2026-01-24",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0001-1992-e-one-pumper-truck-286255/"
+    },
+    {
+     "item": "2004 HME Fire Pumper Truck",
+     "price": 4800.0,
+     "date": "2026-01-24",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0002-2004-hme-fire-pumper-truck-286256/"
+    },
+    {
+     "item": "1987 Pierce Arrow Fire Pumper Truck",
+     "price": 1675.0,
+     "date": "2025-12-18",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45404/item/lot-0010-1987-pierce-arrow-fire-pumper-truck-283960/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -541,9 +825,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 21,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -567,8 +859,16 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 22,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  }
 ]

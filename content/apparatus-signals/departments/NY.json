@@ -21,9 +21,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "2009 GMC TopKick C4500 Ambulance",
+  "truck": {
+   "description": "2009 GMC TopKick C4500 Ambulance",
+   "type": "ambulance",
+   "year": 2009,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 1,
   "tier": "1 Call this week",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "ambulance",
+   "band": "16-20",
+   "n": 70,
+   "median": 3825,
+   "p25": 2369,
+   "p75": 5625,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2009 Ford E450 Ambulance",
+     "price": 6200.0,
+     "date": "2026-01-06",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45665/item/lot-0001-2009-ford-e450-ambulance-285381/"
+    },
+    {
+     "item": "2001 Ford E450 Ambulance",
+     "price": 5100.0,
+     "date": "2018-06-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/14026/item/lot-0002-2001-ford-e450-ambulance-85500/"
+    },
+    {
+     "item": "2001 Ford E450 Type III Ambulance",
+     "price": 5300.0,
+     "date": "2018-04-13",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/13728/item/lot-0001-2001-ford-e450-type-iii-ambulance-83793/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -47,9 +86,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "2001 HME Central States Fire Truck",
+  "truck": {
+   "description": "2001 HME Central States Fire Truck",
+   "type": "pumper",
+   "year": 2001,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 2,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "21-25",
+   "n": 77,
+   "median": 5100,
+   "p25": 3550,
+   "p75": 8000,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2001 Pierce Quantum Tilt Cab Super Crew Fire Pumper",
+     "price": 9800.0,
+     "date": "2026-02-18",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46086/item/lot-0001-2001-pierce-quantum-tilt-cab-super-crew-fire-pumper-287937/"
+    },
+    {
+     "item": "2000 Emergency One Saulsbury Pumper Truck",
+     "price": 14100.0,
+     "date": "2025-12-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45530/item/lot-0001-2000-emergency-one-saulsbury-pumper-truck-284746/"
+    },
+    {
+     "item": "2000 Spartan R.D. Murray Metro Star Pumper Truck",
+     "price": 4850.0,
+     "date": "2025-01-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/40716/item/lot-0001-2000-spartan-rd-murray-metro-star-pumper-truck-253691/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -73,9 +151,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "1998 Freightliner ALF/American LaFrance Eagle Fire Pumper",
+  "truck": {
+   "description": "1998 Freightliner ALF/American LaFrance Eagle Fire Pumper",
+   "type": "pumper",
+   "year": 1998,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 3,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "26-30",
+   "n": 109,
+   "median": 5100,
+   "p25": 3050,
+   "p75": 6700,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1998 HME Smeal 1871 Fire Truck",
+     "price": 5700.0,
+     "date": "2026-10-14",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49473/item/lot-0001-4485-1998-hme-smeal-1871-fire-truck-311921/"
+    },
+    {
+     "item": "1998 Freightliner FL80 Pierce Saber Pumper",
+     "price": 10900.0,
+     "date": "2026-06-11",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47509/item/lot-0001-1998-freightliner-fl80-pierce-saber-pumper-298556/"
+    },
+    {
+     "item": "1996 Pierce Saber Custom Pumper Truck",
+     "price": 5100.0,
+     "date": "2024-08-06",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/38453/item/lot-0001-1996-pierce-saber-custom-pumper-truck-238588/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -99,9 +216,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 4,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -125,9 +250,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "2001 Spartan Advantage / Emergency-One engine",
+  "truck": {
+   "description": "2001 Spartan Advantage / Emergency-One engine",
+   "type": "pumper",
+   "year": 2001,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 5,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "21-25",
+   "n": 77,
+   "median": 5100,
+   "p25": 3550,
+   "p75": 8000,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2001 Pierce Quantum Tilt Cab Super Crew Fire Pumper",
+     "price": 9800.0,
+     "date": "2026-02-18",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46086/item/lot-0001-2001-pierce-quantum-tilt-cab-super-crew-fire-pumper-287937/"
+    },
+    {
+     "item": "2000 Emergency One Saulsbury Pumper Truck",
+     "price": 14100.0,
+     "date": "2025-12-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45530/item/lot-0001-2000-emergency-one-saulsbury-pumper-truck-284746/"
+    },
+    {
+     "item": "2000 Spartan R.D. Murray Metro Star Pumper Truck",
+     "price": 4850.0,
+     "date": "2025-01-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/40716/item/lot-0001-2000-spartan-rd-murray-metro-star-pumper-truck-253691/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -151,9 +315,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "1992 Pierce Arrow Crew Cab Fire Truck",
+  "truck": {
+   "description": "1992 Pierce Arrow Crew Cab Fire Truck",
+   "type": "pumper",
+   "year": 1992,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 6,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "31+",
+   "n": 191,
+   "median": 3600,
+   "p25": 2438,
+   "p75": 5200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Pierce Pumper",
+     "price": 4350.0,
+     "date": "2026-05-08",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47028/item/lot-0001-1992-pierce-pumper-295314/"
+    },
+    {
+     "item": "1992 Pierce Pumper",
+     "price": 3050.0,
+     "date": "2026-04-11",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46754/item/lot-0001-1992-pierce-pumper-292113/"
+    },
+    {
+     "item": "1991 Pierce Lance Pumper Truck",
+     "price": 4550.0,
+     "date": "2025-07-01",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/42962/item/lot-0001-1991-pierce-lance-pumper-truck-267424/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -177,9 +380,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "2008 Ferrara Inferno Rear Mount Aerial Truck",
+  "truck": {
+   "description": "2008 Ferrara Inferno Rear Mount Aerial Truck",
+   "type": "aerial",
+   "year": 2008,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 7,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "16-20",
+   "n": 16,
+   "median": 6250,
+   "p25": 5500,
+   "p75": 11575,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2002 American LaFrance Tower Ladder Truck",
+     "price": 2550.0,
+     "date": "2020-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/22594/item/lot-0009-4025-2002-american-lafrance-tower-ladder-truck-139334/"
+    },
+    {
+     "item": "1999 American LaFrance Towerladder Fire Truck",
+     "price": 6500.0,
+     "date": "2017-10-04",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/12056/item/lot-0006-1999-american-lafrance-towerladder-fire-truck-73766/"
+    },
+    {
+     "item": "2002 KME TRK Tiller Aerial Fire Truck",
+     "price": 5900.0,
+     "date": "2021-04-16",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/24483/item/lot-0001-2002-kme-trk-tiller-aerial-fire-truck-150462/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -203,9 +445,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "2002 Spartan Gladiator 95 Foot Tower Ladder Truck",
+  "truck": {
+   "description": "2002 Spartan Gladiator 95 Foot Tower Ladder Truck",
+   "type": "aerial",
+   "year": 2002,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 8,
   "tier": "1 Call this week",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "aerial",
+   "band": "21-25",
+   "n": 21,
+   "median": 5200,
+   "p25": 3550,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2002 Seagrave LP56DA Ladder Truck",
+     "price": 5200.0,
+     "date": "2025-05-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/42307/item/lot-0001-2002-seagrave-lp56da-ladder-truck-263331/"
+    },
+    {
+     "item": "1999 Spartan Gladiator LTI 93' Tower Ladder",
+     "price": 11500.0,
+     "date": "2022-08-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/29529/item/lot-0002-1999-spartan-gladiator-lti-93-tower-ladder-183032/"
+    },
+    {
+     "item": "1995 Sutphen Midmount TS-4DR 95 ft Tower Ladder",
+     "price": 18600.0,
+     "date": "2018-06-28",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/14438/item/lot-0001-1995-sutphen-midmount-ts-4dr-95-ft-tower-ladder-88307/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -229,9 +510,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 9,
   "tier": "1 Call this week",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -255,9 +544,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 10,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "partly confirmed: Page supports $283,000, 2009 replaced, Feb 10 2026, but it is an AMBULANCE, not a fire truck; paid from sale of the Rutman Road fire hall.",
@@ -281,9 +578,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "2009 ambulance",
+  "truck": {
+   "description": "2009 ambulance",
+   "type": "ambulance",
+   "year": 2009,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 11,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "ambulance",
+   "band": "16-20",
+   "n": 70,
+   "median": 3825,
+   "p25": 2369,
+   "p75": 5625,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2009 Ford E450 Ambulance",
+     "price": 6200.0,
+     "date": "2026-01-06",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45665/item/lot-0001-2009-ford-e450-ambulance-285381/"
+    },
+    {
+     "item": "2001 Ford E450 Ambulance",
+     "price": 5100.0,
+     "date": "2018-06-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/14026/item/lot-0002-2001-ford-e450-ambulance-85500/"
+    },
+    {
+     "item": "2001 Ford E450 Type III Ambulance",
+     "price": 5300.0,
+     "date": "2018-04-13",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/13728/item/lot-0001-2001-ford-e450-type-iii-ambulance-83793/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -307,9 +643,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "2003 E-One/Saulsbury pumper",
+  "truck": {
+   "description": "2003 E-One/Saulsbury pumper",
+   "type": "pumper",
+   "year": 2003,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 12,
   "tier": "1 Call this week",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "21-25",
+   "n": 77,
+   "median": 5100,
+   "p25": 3550,
+   "p75": 8000,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2000 Sterling L70 Pumper/Tank Fire Truck",
+     "price": 19400.0,
+     "date": "2023-07-11",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/33501/item/lot-0001-2000-sterling-l70-pumpertank-fire-truck-207585/"
+    },
+    {
+     "item": "2000 Saulsbury Spartan Pumper Truck",
+     "price": 9700.0,
+     "date": "2023-01-24",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/31407/item/lot-0001-2000-saulsbury-spartan-pumper-truck-194688/"
+    },
+    {
+     "item": "1997 Freightliner FL80 Fire Truck",
+     "price": 3450.0,
+     "date": "2020-10-13",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/22555/item/lot-0002-1997-freightliner-fl80-fire-truck-138682/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -333,9 +708,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "2002 KME fire apparatus (Engine 270)",
+  "truck": {
+   "description": "2002 KME fire apparatus (Engine 270)",
+   "type": "pumper",
+   "year": 2002,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 13,
   "tier": "1 Call this week",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "21-25",
+   "n": 77,
+   "median": 5100,
+   "p25": 3550,
+   "p75": 8000,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1997 Freightliner FL180/E-One Pumper Truck",
+     "price": 9800.0,
+     "date": "2021-06-18",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/25132/item/lot-0001-1997-freightliner-fl180e-one-pumper-truck-154193/"
+    },
+    {
+     "item": "1997 Simon-Duplex Saulsbury Pumper Truck",
+     "price": 2950.0,
+     "date": "2021-05-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/24739/item/lot-0001-1997-simon-duplex-saulsbury-pumper-truck-151983/"
+    },
+    {
+     "item": "1996 Spartan Gladiator Pumper",
+     "price": 4450.0,
+     "date": "2020-09-02",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/22008/item/lot-0024-1996-spartan-gladiator-pumper-135970/"
+    }
+   ]
+  }
  },
  {
   "checked": "page opened by researcher",
@@ -359,9 +773,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "Ladder truck for Medina Fire Department (about $1.7M, too large for firehouse)",
+  "truck": {
+   "description": "Ladder truck for Medina Fire Department (about $1.7M, too large for firehouse)",
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
   "rank": 14,
   "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 104,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8600,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1996 AH-75 75' Simon-LTI Ladder Truck",
+     "price": 8700.0,
+     "date": "2026-01-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -385,9 +838,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 15,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -411,9 +872,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 16,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "page opened by researcher",
@@ -437,9 +906,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 17,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -463,9 +940,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 18,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -489,9 +1005,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 19,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -515,9 +1039,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 20,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -541,9 +1073,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
+  },
   "rank": 21,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 104,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8600,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1996 AH-75 75' Simon-LTI Ladder Truck",
+     "price": 8700.0,
+     "date": "2026-01-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -567,9 +1138,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 22,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -593,9 +1172,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rescue truck; departments usually replace like with like"
+  },
   "rank": 23,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 141,
+   "median": 7400,
+   "p25": 4400,
+   "p75": 15100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    },
+    {
+     "item": "1991 GMC Topkick E-One Rescue 7-Crew Truck",
+     "price": 4700.0,
+     "date": "2026-08-04",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48216/item/lot-0001-1991-gmc-topkick-e-one-rescue-7-crew-truck-304148/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -619,9 +1237,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a MVP rescue-pumper; departments usually replace like with like"
+  },
   "rank": 24,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 141,
+   "median": 7400,
+   "p25": 4400,
+   "p75": 15100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    },
+    {
+     "item": "1991 GMC Topkick E-One Rescue 7-Crew Truck",
+     "price": 4700.0,
+     "date": "2026-08-04",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48216/item/lot-0001-1991-gmc-topkick-e-one-rescue-7-crew-truck-304148/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -645,9 +1302,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 25,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -671,9 +1336,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 26,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -697,9 +1370,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 27,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -723,9 +1404,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 28,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "partly confirmed: Aug 5 2026 approval and quote confirmed, but $950,000 is the bond ceiling; total truck cost is about $1,350,000. Delivery expected Oct 2026.",
@@ -749,9 +1438,48 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "1998 American LaFrance pumper and 2008 American LaFrance rescue",
+  "truck": {
+   "description": "1998 American LaFrance pumper and 2008 American LaFrance rescue",
+   "type": "pumper",
+   "year": 1998,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 29,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "26-30",
+   "n": 109,
+   "median": 5100,
+   "p25": 3050,
+   "p75": 6700,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1998 HME Smeal 1871 Fire Truck",
+     "price": 5700.0,
+     "date": "2026-10-14",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49473/item/lot-0001-4485-1998-hme-smeal-1871-fire-truck-311921/"
+    },
+    {
+     "item": "1998 Freightliner FL80 Pierce Saber Pumper",
+     "price": 10900.0,
+     "date": "2026-06-11",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47509/item/lot-0001-1998-freightliner-fl80-pierce-saber-pumper-298556/"
+    },
+    {
+     "item": "1996 Pierce Saber Custom Pumper Truck",
+     "price": 5100.0,
+     "date": "2024-08-06",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/38453/item/lot-0001-1996-pierce-saber-custom-pumper-truck-238588/"
+    }
+   ]
+  }
  },
  {
   "checked": "partly confirmed: Board approved buying an AMBULANCE from Kolaja (article dated Nov 7 2025), delivery Feb 2027; not a fire truck. Old ambulance to be sold.",
@@ -775,9 +1503,48 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "Current village ambulance (model not stated)",
+  "truck": {
+   "description": "Current village ambulance (model not stated)",
+   "type": "ambulance",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
   "rank": 30,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "ambulance",
+   "band": "all ages",
+   "n": 367,
+   "median": 3600,
+   "p25": 1900,
+   "p75": 6500,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2010 Ford E-350 Ambulance",
+     "price": 880.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49450/item/lot-0002-2-2010-ford-e-350-ambulance-311765/"
+    },
+    {
+     "item": "2021 Chevy Express G3500 Ambulance",
+     "price": 27000.0,
+     "date": "2026-10-13",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49316/item/lot-0001-2021-chevy-express-g3500-ambulance-310988/"
+    },
+    {
+     "item": "2002 Ford E450 Ambulance",
+     "price": 5900.0,
+     "date": "2026-10-06",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49204/item/lot-0001-2002-ford-e450-ambulance-310210/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -801,9 +1568,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 31,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    },
+    {
+     "item": "2000 Freightliner FL80 Pierce Water Tender/Tanker",
+     "price": 32500.0,
+     "date": "2026-04-14",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46703/item/lot-0001-2000-freightliner-fl80-pierce-water-tendertanker-291744/"
+    },
+    {
+     "item": "2006 Freightliner M2 106 Tanker",
+     "price": 79900.0,
+     "date": "2026-04-09",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -827,9 +1633,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 32,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -853,9 +1667,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an aerial quint; departments usually replace like with like"
+  },
   "rank": 33,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 104,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8600,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1996 AH-75 75' Simon-LTI Ladder Truck",
+     "price": 8700.0,
+     "date": "2026-01-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -879,9 +1732,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 34,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -905,9 +1766,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 35,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -931,9 +1800,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 36,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -957,9 +1834,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 37,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -983,9 +1868,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a Star Series pumper; departments usually replace like with like"
+  },
   "rank": 38,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -1009,9 +1933,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "2004 KME-Ford mini pumper",
+  "truck": {
+   "description": "2004 KME-Ford mini pumper",
+   "type": "mini pumper",
+   "year": 2004,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 39,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "mini pumper",
+   "band": "21-25",
+   "n": 2,
+   "median": 13700,
+   "p25": 11950,
+   "p75": 15450,
+   "thin": true,
+   "comps": [
+    {
+     "item": "1997 Ford F477 Pierce Super Duty Mini Pumper",
+     "price": 17200.0,
+     "date": "2021-06-29",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/25268/item/lot-0001-1997-ford-f477-pierce-super-duty-mini-pumper-154853/"
+    },
+    {
+     "item": "2004 Chevy 3500 Silverado Mini Pumper",
+     "price": 25400.0,
+     "date": "2023-01-05",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/31305/item/lot-0001-2004-chevy-3500-silverado-mini-pumper-194175/"
+    },
+    {
+     "item": "1996 Ford F450 Super Duty Mini Pumper Truck",
+     "price": 19100.0,
+     "date": "2023-12-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/35754/item/lot-0001-1996-ford-f450-super-duty-mini-pumper-truck-222582/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -1035,9 +1998,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "Engine 8756 (year/make not stated)",
+  "truck": {
+   "description": "Engine 8756 (year/make not stated)",
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
   "rank": 40,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -1061,9 +2063,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 41,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -1087,9 +2097,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 42,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -1113,9 +2131,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 43,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -1139,9 +2165,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 44,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "partly confirmed: Civic IQ page blocked fetch (403); search snippets show $985,000 bond, 2025 Pierce pumper/rescue, loan resolution Apr 6 2026, USDA loan finalized May 11 2026. Truck is already delivered; April agenda calls it 'Pierce Aerial 100 LSL', so truck type is unclear.",
@@ -1165,9 +2199,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 45,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -1191,9 +2233,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 46,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -1217,9 +2298,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "1999 Pierce pumper",
+  "truck": {
+   "description": "1999 Pierce pumper",
+   "type": "pumper",
+   "year": 1999,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
   "rank": 47,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "26-30",
+   "n": 109,
+   "median": 5100,
+   "p25": 3050,
+   "p75": 6700,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1998 Spartan/Saulsbury Gladiator Pumper",
+     "price": 14800.0,
+     "date": "2025-10-10",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/44467/item/lot-0001-1998-spartansaulsbury-gladiator-pumper-277444/"
+    },
+    {
+     "item": "1996 Pierce FT Pumper Fire Truck",
+     "price": 6200.0,
+     "date": "2023-07-19",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/33541/item/lot-0018-1996-pierce-ft-pumper-fire-truck-208019/"
+    },
+    {
+     "item": "1995 Saulsbury Spartan Pumper Truck",
+     "price": 5400.0,
+     "date": "2022-10-02",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/30069/item/lot-0002-1995-saulsbury-spartan-pumper-truck-186820/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -1243,9 +2363,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 48,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1269,9 +2397,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 49,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -1295,9 +2431,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
+  },
   "rank": 50,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 141,
+   "median": 7400,
+   "p25": 4400,
+   "p75": 15100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    },
+    {
+     "item": "1991 GMC Topkick E-One Rescue 7-Crew Truck",
+     "price": 4700.0,
+     "date": "2026-08-04",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48216/item/lot-0001-1991-gmc-topkick-e-one-rescue-7-crew-truck-304148/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -1321,9 +2496,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 51,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -1347,9 +2530,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 52,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -1373,9 +2595,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 53,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -1399,9 +2629,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 54,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -1425,9 +2663,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 55,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -1451,9 +2697,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 56,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -1477,9 +2762,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a RIV pumper; departments usually replace like with like"
+  },
   "rank": 57,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -1503,9 +2827,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 58,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1529,9 +2861,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 59,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1555,9 +2895,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 60,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -1581,9 +2929,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 61,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -1607,9 +2994,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 62,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    },
+    {
+     "item": "2000 Freightliner FL80 Pierce Water Tender/Tanker",
+     "price": 32500.0,
+     "date": "2026-04-14",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46703/item/lot-0001-2000-freightliner-fl80-pierce-water-tendertanker-291744/"
+    },
+    {
+     "item": "2006 Freightliner M2 106 Tanker",
+     "price": 79900.0,
+     "date": "2026-04-09",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -1633,9 +3059,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 63,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1659,9 +3093,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 64,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1685,9 +3127,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 65,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -1711,9 +3161,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 66,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    },
+    {
+     "item": "2000 Freightliner FL80 Pierce Water Tender/Tanker",
+     "price": 32500.0,
+     "date": "2026-04-14",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46703/item/lot-0001-2000-freightliner-fl80-pierce-water-tendertanker-291744/"
+    },
+    {
+     "item": "2006 Freightliner M2 106 Tanker",
+     "price": 79900.0,
+     "date": "2026-04-09",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -1737,9 +3226,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a top-mount pumper-tanker; departments usually replace like with like"
+  },
   "rank": 67,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    },
+    {
+     "item": "2000 Freightliner FL80 Pierce Water Tender/Tanker",
+     "price": 32500.0,
+     "date": "2026-04-14",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46703/item/lot-0001-2000-freightliner-fl80-pierce-water-tendertanker-291744/"
+    },
+    {
+     "item": "2006 Freightliner M2 106 Tanker",
+     "price": 79900.0,
+     "date": "2026-04-09",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -1763,9 +3291,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 68,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -1789,9 +3325,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 69,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "partly confirmed: Page fetch now returns 404; search snippet shows 3 public informational meetings (Sep 2, 17, 30 2026) on a fire apparatus bond for Gates FD (Gates + part of Chili, Monroe Co). Record date 2026-08-24 and truck type not verified; no amount or vote date.",
@@ -1815,9 +3359,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 70,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -1841,9 +3393,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 71,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1867,9 +3427,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 72,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1893,9 +3461,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 73,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1919,9 +3495,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 74,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -1945,9 +3529,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 75,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1971,9 +3563,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 76,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -1997,9 +3597,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 77,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -2023,9 +3631,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 78,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -2049,9 +3696,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 79,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -2075,9 +3730,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 80,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2101,9 +3764,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 81,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -2127,9 +3798,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 82,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -2153,9 +3832,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 83,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2179,9 +3866,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 84,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -2205,9 +3900,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 85,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -2231,9 +3965,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 86,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -2257,9 +3999,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 87,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    },
+    {
+     "item": "2000 Freightliner FL80 Pierce Water Tender/Tanker",
+     "price": 32500.0,
+     "date": "2026-04-14",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46703/item/lot-0001-2000-freightliner-fl80-pierce-water-tendertanker-291744/"
+    },
+    {
+     "item": "2006 Freightliner M2 106 Tanker",
+     "price": 79900.0,
+     "date": "2026-04-09",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -2283,9 +4064,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 88,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2309,9 +4098,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 89,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -2335,9 +4132,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 90,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -2361,9 +4166,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 91,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -2387,9 +4200,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 92,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -2413,9 +4234,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a topmount pumper; departments usually replace like with like"
+  },
   "rank": 93,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "read on the auction site",
@@ -2439,9 +4299,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 94,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -2465,9 +4333,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 95,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2491,9 +4367,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 96,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2517,9 +4401,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 97,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2543,9 +4435,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 98,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -2569,9 +4469,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
+  },
   "rank": 99,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 141,
+   "median": 7400,
+   "p25": 4400,
+   "p75": 15100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    },
+    {
+     "item": "1991 GMC Topkick E-One Rescue 7-Crew Truck",
+     "price": 4700.0,
+     "date": "2026-08-04",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48216/item/lot-0001-1991-gmc-topkick-e-one-rescue-7-crew-truck-304148/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed by a second reader",
@@ -2595,9 +4534,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 100,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -2621,9 +4568,17 @@
   "basis": "expected",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 101,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2647,9 +4602,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 102,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2673,9 +4636,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 103,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2699,9 +4670,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 104,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2725,9 +4704,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 105,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2751,9 +4738,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 106,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2777,9 +4772,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 107,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2803,9 +4806,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 108,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2829,9 +4840,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 109,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2855,9 +4874,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 110,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2881,9 +4908,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 111,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "read on the auction site",
@@ -2907,9 +4942,17 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 112,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "confirmed by a second reader",
@@ -2933,8 +4976,16 @@
   "basis": "observed",
   "read_by": "person",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 113,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  }
 ]

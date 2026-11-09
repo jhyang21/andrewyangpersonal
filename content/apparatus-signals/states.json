@@ -18,7 +18,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 0,
+   "median_sum": 0
+  }
  },
  {
   "code": "AL",
@@ -40,7 +44,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 1,
+   "median_sum": 7850
+  }
  },
  {
   "code": "AR",
@@ -63,7 +71,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 3,
+   "median_sum": 23550
+  }
  },
  {
   "code": "AZ",
@@ -85,7 +97,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 2,
+   "median_sum": 12950
+  }
  },
  {
   "code": "CA",
@@ -109,7 +125,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 19,
+   "median_sum": 120975
+  }
  },
  {
   "code": "CO",
@@ -132,7 +152,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 6,
+   "median_sum": 46825
+  }
  },
  {
   "code": "CT",
@@ -170,6 +194,10 @@
     }
    ],
    "note": "The earliest public signal is a council or selectmen agenda line declaring a vehicle surplus, or a town meeting or referendum notice funding the new truck, often one to three years before delivery. An auction listing is a late signal. Towns may also sell through the state DAS auction contract (22PSX0014)."
+  },
+  "guide_total": {
+   "trucks": 14,
+   "median_sum": 70650
   }
  },
  {
@@ -191,7 +219,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 0,
+   "median_sum": 0
+  }
  },
  {
   "code": "DE",
@@ -212,7 +244,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 1,
+   "median_sum": 4350
+  }
  },
  {
   "code": "FL",
@@ -236,7 +272,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 10,
+   "median_sum": 60050
+  }
  },
  {
   "code": "GA",
@@ -258,7 +298,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 2,
+   "median_sum": 12950
+  }
  },
  {
   "code": "HI",
@@ -279,7 +323,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 0,
+   "median_sum": 0
+  }
  },
  {
   "code": "IA",
@@ -302,7 +350,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 40,
+   "median_sum": 259950
+  }
  },
  {
   "code": "ID",
@@ -324,7 +376,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 1,
+   "median_sum": 4350
+  }
  },
  {
   "code": "IL",
@@ -348,7 +404,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 92,
+   "median_sum": 489825
+  }
  },
  {
   "code": "IN",
@@ -372,7 +432,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 46,
+   "median_sum": 267800
+  }
  },
  {
   "code": "KS",
@@ -395,7 +459,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 4,
+   "median_sum": 24400
+  }
  },
  {
   "code": "KY",
@@ -418,7 +486,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 2,
+   "median_sum": 12200
+  }
  },
  {
   "code": "LA",
@@ -442,7 +514,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 4,
+   "median_sum": 22750
+  }
  },
  {
   "code": "MA",
@@ -465,7 +541,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 4,
+   "median_sum": 24400
+  }
  },
  {
   "code": "MD",
@@ -488,7 +568,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 6,
+   "median_sum": 38625
+  }
  },
  {
   "code": "ME",
@@ -510,7 +594,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 2,
+   "median_sum": 15700
+  }
  },
  {
   "code": "MI",
@@ -534,7 +622,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 19,
+   "median_sum": 120900
+  }
  },
  {
   "code": "MN",
@@ -558,7 +650,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 43,
+   "median_sum": 219225
+  }
  },
  {
   "code": "MO",
@@ -582,7 +678,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 41,
+   "median_sum": 243975
+  }
  },
  {
   "code": "MS",
@@ -604,7 +704,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 1,
+   "median_sum": 6825
+  }
  },
  {
   "code": "MT",
@@ -623,7 +727,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 0,
+   "median_sum": 0
+  }
  },
  {
   "code": "NC",
@@ -647,7 +755,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 21,
+   "median_sum": 140050
+  }
  },
  {
   "code": "ND",
@@ -671,7 +783,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 7,
+   "median_sum": 47800
+  }
  },
  {
   "code": "NE",
@@ -695,7 +811,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 25,
+   "median_sum": 142500
+  }
  },
  {
   "code": "NH",
@@ -718,7 +838,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 3,
+   "median_sum": 18400
+  }
  },
  {
   "code": "NJ",
@@ -762,6 +886,10 @@
     }
    ],
    "note": "Most New Jersey units sell at public online auction, so the resolution that authorizes the sale is the earliest public signal. The dollar lines are those in force since 1 July 2025 (DCA Local Finance Notice 2025-08). A bill introduced in February 2026 (S3437) would redraw the bands; it is not law."
+  },
+  "guide_total": {
+   "trucks": 24,
+   "median_sum": 149450
   }
  },
  {
@@ -784,7 +912,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 3,
+   "median_sum": 22075
+  }
  },
  {
   "code": "NV",
@@ -803,7 +935,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 0,
+   "median_sum": 0
+  }
  },
  {
   "code": "NY",
@@ -857,6 +993,10 @@
     }
    ],
    "note": "A better price can mean a slower sale. Know which side of $20,000 a truck sits on before the call."
+  },
+  "guide_total": {
+   "trucks": 37,
+   "median_sum": 211000
   }
  },
  {
@@ -881,7 +1021,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 23,
+   "median_sum": 137850
+  }
  },
  {
   "code": "OK",
@@ -903,7 +1047,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 1,
+   "median_sum": 7850
+  }
  },
  {
   "code": "OR",
@@ -926,7 +1074,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 3,
+   "median_sum": 19225
+  }
  },
  {
   "code": "PA",
@@ -972,6 +1124,10 @@
     }
    ],
    "note": "A sale to a volunteer fire company or another government skips bidding, so a municipal truck often moves quietly (Harrisburg to Highspire, 2025). At $2,000 and up the sale must be advertised, so the first public signal is usually a council or supervisors minute authorizing the sale, then an ad or online listing 10 or more days before the close. Companies that own their trucks often post the sale on their own site or Facebook first. Second-class townships moved from $1,000 to $2,000 in 2017; older resolutions that cite $1,000 are out of date."
+  },
+  "guide_total": {
+   "trucks": 36,
+   "median_sum": 214875
   }
  },
  {
@@ -994,7 +1150,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 2,
+   "median_sum": 15700
+  }
  },
  {
   "code": "SC",
@@ -1016,7 +1176,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 2,
+   "median_sum": 12200
+  }
  },
  {
   "code": "SD",
@@ -1039,7 +1203,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 8,
+   "median_sum": 40775
+  }
  },
  {
   "code": "TN",
@@ -1063,7 +1231,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 6,
+   "median_sum": 38000
+  }
  },
  {
   "code": "TX",
@@ -1087,7 +1259,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 28,
+   "median_sum": 175375
+  }
  },
  {
   "code": "UT",
@@ -1109,7 +1285,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 1,
+   "median_sum": 6825
+  }
  },
  {
   "code": "VA",
@@ -1132,7 +1312,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 4,
+   "median_sum": 23950
+  }
  },
  {
   "code": "VT",
@@ -1154,7 +1338,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 1,
+   "median_sum": 6200
+  }
  },
  {
   "code": "WA",
@@ -1177,7 +1365,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 3,
+   "median_sum": 14900
+  }
  },
  {
   "code": "WI",
@@ -1200,7 +1392,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 10,
+   "median_sum": 60550
+  }
  },
  {
   "code": "WV",
@@ -1223,7 +1419,11 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 5,
+   "median_sum": 32250
+  }
  },
  {
   "code": "WY",
@@ -1244,6 +1444,10 @@
    "trade_press"
   ],
   "registry_fetched": "2026-11-08",
-  "rule": null
+  "rule": null,
+  "guide_total": {
+   "trucks": 1,
+   "median_sum": 7400
+  }
  }
 ]

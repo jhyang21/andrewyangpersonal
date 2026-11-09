@@ -9,14 +9,18 @@ import {
   getState,
   getStates,
   signalsFor,
+  type Department,
 } from "@/apparatus-signals/lib/data";
 import {
   formatDate,
+  formatMoney,
   formatScore,
+  plural,
   tierLabel,
   websiteHref,
   websiteText,
 } from "@/apparatus-signals/lib/format";
+import { NAMED, bandLabel, typePlural } from "@/apparatus-signals/lib/trucks";
 import {
   BASIS_LEGEND,
   COVERAGE,
@@ -53,6 +57,80 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
     title: `${found.dept.department}, ${found.state.name}`,
     description: `${found.dept.why_call}. ${found.dept.detail}`.slice(0, 200),
   };
+}
+
+function capitalize(s: string): string {
+  return s ? s[0].toUpperCase() + s.slice(1) : s;
+}
+
+function TruckSection({ dept }: { dept: Department }) {
+  const { truck, guide } = dept;
+  const known = Boolean(truck.description || truck.type);
+  let year = "";
+  if (truck.year && truck.year_how === "stated") year = ` Model year ${truck.year}.`;
+  if (truck.year && truck.year_how === "from age") {
+    year = ` Model year about ${truck.year}, worked out from the age the record gives.`;
+  }
+  return (
+    <section aria-labelledby="truck-title" className="rounded border border-as-rule p-4">
+      <h2 id="truck-title" className="eyebrow">
+        The truck
+      </h2>
+      {!known ? (
+        <p className="mt-1 max-w-3xl text-as-ink-2">
+          The record does not say which truck. Grant and order records name the new truck only when
+          the trade press prints it.
+        </p>
+      ) : (
+        <>
+          <p className="mt-1 text-lg font-semibold">
+            {truck.description ||
+              `${/^[aeiou]/i.test(truck.type ?? "") ? "An" : "A"} ${truck.type}, judged from the new truck`}
+          </p>
+          <p className="mt-1 max-w-3xl text-sm text-as-ink-2">
+            {truck.type_how === NAMED
+              ? "The record names this truck."
+              : `${capitalize(truck.type_how ?? "")}.`}
+            {year}
+          </p>
+          {guide ? (
+            <>
+              <p className="mt-3 max-w-3xl">
+                Trucks like it sold at auction for{" "}
+                <span className="num font-semibold">{formatMoney(guide.median)}</span> (
+                {plural(guide.n, "sale")} of {typePlural(guide.type)}, {bandLabel(guide.band)}; half
+                sold between <span className="num">{formatMoney(guide.p25)}</span> and{" "}
+                <span className="num">{formatMoney(guide.p75)}</span>).
+                {guide.thin ? " Few sales back this price, so treat it as a hint." : ""}
+              </p>
+              {guide.comps.length ? (
+                <div className="mt-3">
+                  <p className="text-sm text-as-muted">Closest sales:</p>
+                  <ul className="mt-1 space-y-1 text-sm">
+                    {guide.comps.map((c, i) => (
+                      <li key={`${i}-${c.url}`}>
+                        <Ext href={c.url}>{c.item}</Ext>:{" "}
+                        <span className="num">{formatMoney(c.price)}</span>, {formatDate(c.date)}
+                        {c.state ? `, ${c.state}` : ""}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </>
+          ) : (
+            <p className="mt-3 max-w-3xl text-as-ink-2">
+              There is no guide price for this kind of truck. The guide covers pumpers, aerials,
+              tankers, rescue trucks, brush trucks, mini pumpers and ambulances.
+            </p>
+          )}
+        </>
+      )}
+      <p className="mt-3 text-sm">
+        <Link href={`${BASE}/method#price-guide`}>How the guide works</Link>
+      </p>
+    </section>
+  );
 }
 
 export default async function DepartmentPage({ params }: { params: Promise<{ state: string; id: string }> }) {
@@ -135,6 +213,8 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
         </p>
         <p className="mt-1 text-sm text-as-muted">{BASIS_LEGEND}</p>
       </section>
+
+      <TruckSection dept={dept} />
 
       <section aria-labelledby="timeline-title">
         <h2 id="timeline-title" className="mb-3 text-xl font-semibold">

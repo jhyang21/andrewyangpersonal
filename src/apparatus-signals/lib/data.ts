@@ -33,8 +33,75 @@ export interface Meta {
     deep_states: string[];
     auction_states: string[];
     sales: number;
+    /** Leads with a guide price in every state, and the sum of their medians. */
+    guide_total: GuideTotal;
   };
   sources: Source[];
+}
+
+/**
+ * The truck likely to leave, as far as the records say. type_how is "named in the record"
+ * when a record names the old truck; otherwise a sentence saying the type is read from
+ * the new truck's type; null when nothing is known.
+ */
+export interface Truck {
+  description: string | null;
+  /** pumper, aerial, tanker, rescue, brush, mini pumper, ambulance or other. */
+  type: string | null;
+  year: number | null;
+  /** "stated": the year is in the text; "from age": worked out from "20 years old". */
+  year_how: "stated" | "from age" | null;
+  type_how: string | null;
+}
+
+/** One sold auction lot shown as a close sale. */
+export interface GuideComp {
+  item: string;
+  price: number;
+  date: string;
+  state: string | null;
+  url: string;
+}
+
+/** One row of the price guide: sold lots of one type in one age band. */
+export interface PriceGuideRow {
+  type: string;
+  /** "<=15", "16-20", "21-25", "26-30", "31+" or "all ages". */
+  band: string;
+  n: number;
+  median: number;
+  p25: number;
+  p75: number;
+  /** Fewer sales than meta.thin_below. */
+  thin: boolean;
+}
+
+/** A lead's guide price: its price-guide row plus up to three close sales. */
+export interface Guide extends PriceGuideRow {
+  comps: GuideComp[];
+}
+
+export interface GuideTotal {
+  /** Leads with a guide price. */
+  trucks: number;
+  median_sum: number;
+}
+
+export interface PriceGuide {
+  meta: {
+    as_of: string;
+    built: string;
+    source: string;
+    lots_sold: number;
+    lots_used: number;
+    lots_dropped: number;
+    dropped_why: string;
+    bands: string[];
+    age: string;
+    thin_below: number;
+    caveats: string[];
+  };
+  table: PriceGuideRow[];
 }
 
 export interface Threshold {
@@ -67,6 +134,7 @@ export interface StateRow {
   layers: string[];
   registry_fetched: string | null;
   rule: SaleRule | null;
+  guide_total: GuideTotal;
 }
 
 export interface Department {
@@ -94,6 +162,9 @@ export interface Department {
   top_kind: string;
   basis: Basis;
   read_by: ReadBy;
+  truck: Truck;
+  /** Null when the truck's type is unknown or not a fire truck or ambulance. */
+  guide: Guide | null;
 }
 
 /** "observed": someone saw a signal happen. "expected": every signal is a prediction. */
@@ -247,6 +318,8 @@ export interface BlindRead {
 }
 
 export interface Method {
+  /** What used fire trucks sold for at auction, by type and age. */
+  price_guide: PriceGuide;
   /** Feeds checked against closed auction sales. Null until the back-test has run. */
   backtest: Backtest | null;
   /** Hand-read public records, blind test. Null until it has run. */

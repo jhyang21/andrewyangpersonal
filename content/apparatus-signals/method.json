@@ -1,4 +1,375 @@
 {
+ "price_guide": {
+  "meta": {
+   "as_of": "2026-11-09",
+   "built": "2026-11-09",
+   "source": "Auctions International Past Prices, status sold",
+   "lots_sold": 1257,
+   "lots_used": 1174,
+   "lots_dropped": 83,
+   "dropped_why": "not a fire truck (road, fuel or vacuum tankers, trailers, bodies, pickups and cars)",
+   "bands": [
+    "<=15",
+    "16-20",
+    "21-25",
+    "26-30",
+    "31+",
+    "all ages"
+   ],
+   "age": "sale year minus model year",
+   "thin_below": 5,
+   "caveats": [
+    "Hammer prices: the winning bid, before the auction house adds its fees.",
+    "One auction site. Departments that sold through a dealer, a broker or another auction site are not seen.",
+    "These are prices sellers accepted, not what the trucks are worth elsewhere.",
+    "Rows with fewer than 5 sales are marked thin; read them as a hint, not a price."
+   ]
+  },
+  "table": [
+   {
+    "type": "pumper",
+    "band": "<=15",
+    "n": 9,
+    "median": 4650,
+    "p25": 3300,
+    "p75": 5100,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "16-20",
+    "n": 60,
+    "median": 4550,
+    "p25": 3500,
+    "p75": 6625,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "21-25",
+    "n": 77,
+    "median": 5100,
+    "p25": 3550,
+    "p75": 8000,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "26-30",
+    "n": 109,
+    "median": 5100,
+    "p25": 3050,
+    "p75": 6700,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "31+",
+    "n": 191,
+    "median": 3600,
+    "p25": 2438,
+    "p75": 5200,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "all ages",
+    "n": 446,
+    "median": 4350,
+    "p25": 2800,
+    "p75": 6300,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "<=15",
+    "n": 4,
+    "median": 6250,
+    "p25": 6050,
+    "p75": 11200,
+    "thin": true
+   },
+   {
+    "type": "aerial",
+    "band": "16-20",
+    "n": 16,
+    "median": 6250,
+    "p25": 5500,
+    "p75": 11575,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "21-25",
+    "n": 21,
+    "median": 5200,
+    "p25": 3550,
+    "p75": 6300,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "26-30",
+    "n": 29,
+    "median": 7500,
+    "p25": 5100,
+    "p75": 8600,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "31+",
+    "n": 34,
+    "median": 6000,
+    "p25": 4175,
+    "p75": 8575,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "all ages",
+    "n": 104,
+    "median": 6200,
+    "p25": 4550,
+    "p75": 8600,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "<=15",
+    "n": 1,
+    "median": 17600,
+    "p25": 17600,
+    "p75": 17600,
+    "thin": true
+   },
+   {
+    "type": "tanker",
+    "band": "16-20",
+    "n": 2,
+    "median": 51500,
+    "p25": 37300,
+    "p75": 65700,
+    "thin": true
+   },
+   {
+    "type": "tanker",
+    "band": "21-25",
+    "n": 10,
+    "median": 11500,
+    "p25": 7175,
+    "p75": 19950,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "26-30",
+    "n": 20,
+    "median": 12600,
+    "p25": 7489,
+    "p75": 16975,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "31+",
+    "n": 53,
+    "median": 5300,
+    "p25": 2650,
+    "p75": 12400,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "all ages",
+    "n": 86,
+    "median": 7850,
+    "p25": 4525,
+    "p75": 16075,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "<=15",
+    "n": 19,
+    "median": 12600,
+    "p25": 7400,
+    "p75": 25700,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "16-20",
+    "n": 22,
+    "median": 16100,
+    "p25": 8050,
+    "p75": 24450,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "21-25",
+    "n": 29,
+    "median": 8800,
+    "p25": 5500,
+    "p75": 13000,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "26-30",
+    "n": 27,
+    "median": 6000,
+    "p25": 3962,
+    "p75": 9650,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "31+",
+    "n": 44,
+    "median": 4900,
+    "p25": 3412,
+    "p75": 7525,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "all ages",
+    "n": 141,
+    "median": 7400,
+    "p25": 4400,
+    "p75": 15100,
+    "thin": false
+   },
+   {
+    "type": "brush",
+    "band": "16-20",
+    "n": 4,
+    "median": 14425,
+    "p25": 6488,
+    "p75": 24900,
+    "thin": true
+   },
+   {
+    "type": "brush",
+    "band": "31+",
+    "n": 10,
+    "median": 6350,
+    "p25": 4738,
+    "p75": 9850,
+    "thin": false
+   },
+   {
+    "type": "brush",
+    "band": "all ages",
+    "n": 14,
+    "median": 6825,
+    "p25": 5175,
+    "p75": 10350,
+    "thin": false
+   },
+   {
+    "type": "mini pumper",
+    "band": "16-20",
+    "n": 1,
+    "median": 25400,
+    "p25": 25400,
+    "p75": 25400,
+    "thin": true
+   },
+   {
+    "type": "mini pumper",
+    "band": "21-25",
+    "n": 2,
+    "median": 13700,
+    "p25": 11950,
+    "p75": 15450,
+    "thin": true
+   },
+   {
+    "type": "mini pumper",
+    "band": "26-30",
+    "n": 2,
+    "median": 15700,
+    "p25": 14000,
+    "p75": 17400,
+    "thin": true
+   },
+   {
+    "type": "mini pumper",
+    "band": "31+",
+    "n": 11,
+    "median": 7000,
+    "p25": 6350,
+    "p75": 8600,
+    "thin": false
+   },
+   {
+    "type": "mini pumper",
+    "band": "all ages",
+    "n": 16,
+    "median": 8600,
+    "p25": 6675,
+    "p75": 12300,
+    "thin": false
+   },
+   {
+    "type": "ambulance",
+    "band": "<=15",
+    "n": 198,
+    "median": 3925,
+    "p25": 1925,
+    "p75": 7650,
+    "thin": false
+   },
+   {
+    "type": "ambulance",
+    "band": "16-20",
+    "n": 70,
+    "median": 3825,
+    "p25": 2369,
+    "p75": 5625,
+    "thin": false
+   },
+   {
+    "type": "ambulance",
+    "band": "21-25",
+    "n": 53,
+    "median": 3550,
+    "p25": 1925,
+    "p75": 5900,
+    "thin": false
+   },
+   {
+    "type": "ambulance",
+    "band": "26-30",
+    "n": 32,
+    "median": 2538,
+    "p25": 1744,
+    "p75": 5200,
+    "thin": false
+   },
+   {
+    "type": "ambulance",
+    "band": "31+",
+    "n": 14,
+    "median": 2375,
+    "p25": 1356,
+    "p75": 4050,
+    "thin": false
+   },
+   {
+    "type": "ambulance",
+    "band": "all ages",
+    "n": 367,
+    "median": 3600,
+    "p25": 1900,
+    "p75": 6500,
+    "thin": false
+   }
+  ]
+ },
  "backtest": {
   "meta": {
    "as_of": "2026-11-09",

@@ -21,9 +21,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a volterra electric pumper; departments usually replace like with like"
+  },
   "rank": 1,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -47,9 +86,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a walk-in heavy rescue; departments usually replace like with like"
+  },
   "rank": 2,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 141,
+   "median": 7400,
+   "p25": 4400,
+   "p75": 15100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Pierce Rescue Fire Truck",
+     "price": 3600.0,
+     "date": "2026-05-20",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47337/item/lot-0004-1996-pierce-rescue-fire-truck-297303/"
+    },
+    {
+     "item": "2001 Spartan Advantage Rescue Truck",
+     "price": 5500.0,
+     "date": "2025-07-10",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/43095/item/lot-0003-2001-spartan-advantage-rescue-truck-268522/"
+    },
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -73,9 +151,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a custom pumper; departments usually replace like with like"
+  },
   "rank": 3,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -99,9 +216,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 4,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -125,9 +281,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 5,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -151,9 +315,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 6,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -177,9 +380,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
+  },
   "rank": 7,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -203,9 +445,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 8,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -229,9 +479,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 9,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -255,9 +513,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 10,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -281,9 +578,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 11,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  },
  {
   "checked": "from FEMA's awards table",
@@ -307,9 +643,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 12,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -333,9 +677,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
+  },
   "rank": 13,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 141,
+   "median": 7400,
+   "p25": 4400,
+   "p75": 15100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Pierce Rescue Fire Truck",
+     "price": 3600.0,
+     "date": "2026-05-20",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47337/item/lot-0004-1996-pierce-rescue-fire-truck-297303/"
+    },
+    {
+     "item": "2001 Spartan Advantage Rescue Truck",
+     "price": 5500.0,
+     "date": "2025-07-10",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/43095/item/lot-0003-2001-spartan-advantage-rescue-truck-268522/"
+    },
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -359,9 +742,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 14,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -385,9 +807,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 15,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -411,9 +872,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 16,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -437,9 +937,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
+  },
   "rank": 17,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 141,
+   "median": 7400,
+   "p25": 4400,
+   "p75": 15100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Pierce Rescue Fire Truck",
+     "price": 3600.0,
+     "date": "2026-05-20",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47337/item/lot-0004-1996-pierce-rescue-fire-truck-297303/"
+    },
+    {
+     "item": "2001 Spartan Advantage Rescue Truck",
+     "price": 5500.0,
+     "date": "2025-07-10",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/43095/item/lot-0003-2001-spartan-advantage-rescue-truck-268522/"
+    },
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -463,9 +1002,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 18,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -489,9 +1067,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
   "rank": 19,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -515,9 +1132,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "mini pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a mini pumper; departments usually replace like with like"
+  },
   "rank": 20,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "mini pumper",
+   "band": "all ages",
+   "n": 16,
+   "median": 8600,
+   "p25": 6675,
+   "p75": 12300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Ford F350 Mini Pumper Truck",
+     "price": 10500.0,
+     "date": "2026-03-09",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46229/item/lot-0001-1992-ford-f350-mini-pumper-truck-288762/"
+    },
+    {
+     "item": "1995 Ford SD KME Mini Pumper 4x4 Truck",
+     "price": 12300.0,
+     "date": "2025-11-25",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/44510/item/lot-0003-1995-ford-sd-kme-mini-pumper-4x4-truck-281113/"
+    },
+    {
+     "item": "(Brush Truck) 1985 Chevy C/K30 Mini Pumper Truck",
+     "price": 7000.0,
+     "date": "2025-06-19",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -541,9 +1197,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a Banner Elk pumper; departments usually replace like with like"
+  },
   "rank": 21,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -567,9 +1262,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tanker; departments usually replace like with like"
+  },
   "rank": 22,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -593,9 +1327,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
+  },
   "rank": 23,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 141,
+   "median": 7400,
+   "p25": 4400,
+   "p75": 15100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Pierce Rescue Fire Truck",
+     "price": 3600.0,
+     "date": "2026-05-20",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47337/item/lot-0004-1996-pierce-rescue-fire-truck-297303/"
+    },
+    {
+     "item": "2001 Spartan Advantage Rescue Truck",
+     "price": 5500.0,
+     "date": "2025-07-10",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/43095/item/lot-0003-2001-spartan-advantage-rescue-truck-268522/"
+    },
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -619,9 +1392,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a custom pumper; departments usually replace like with like"
+  },
   "rank": 24,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 446,
+   "median": 4350,
+   "p25": 2800,
+   "p75": 6300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -645,8 +1457,47 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "mini pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a mini pumper; departments usually replace like with like"
+  },
   "rank": 25,
   "tier": "3 Watch",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "mini pumper",
+   "band": "all ages",
+   "n": 16,
+   "median": 8600,
+   "p25": 6675,
+   "p75": 12300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Ford F350 Mini Pumper Truck",
+     "price": 10500.0,
+     "date": "2026-03-09",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46229/item/lot-0001-1992-ford-f350-mini-pumper-truck-288762/"
+    },
+    {
+     "item": "1995 Ford SD KME Mini Pumper 4x4 Truck",
+     "price": 12300.0,
+     "date": "2025-11-25",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/44510/item/lot-0003-1995-ford-sd-kme-mini-pumper-4x4-truck-281113/"
+    },
+    {
+     "item": "(Brush Truck) 1985 Chevy C/K30 Mini Pumper Truck",
+     "price": 7000.0,
+     "date": "2025-06-19",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
+    }
+   ]
+  }
  }
 ]

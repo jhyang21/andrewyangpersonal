@@ -21,9 +21,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 1,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -47,8 +55,47 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "brush",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a wildland pumper; departments usually replace like with like"
+  },
   "rank": 2,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "brush",
+   "band": "all ages",
+   "n": 14,
+   "median": 6825,
+   "p25": 5175,
+   "p75": 10350,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
+     "price": 3150.0,
+     "date": "2026-07-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48054/item/lot-0001-listing-updated-1986-ford-f-350-brush-fire-truck-302769/"
+    },
+    {
+     "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
+     "price": 33300.0,
+     "date": "2026-06-24",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47593/item/lot-0001-2006-ford-f550-crew-cab-dually-rescue-brush-fire-truck-299118/"
+    },
+    {
+     "item": "1963 Mercedes Unimog-S Fire/Brush Truck",
+     "price": 9900.0,
+     "date": "2026-02-20",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
+    }
+   ]
+  }
  }
 ]

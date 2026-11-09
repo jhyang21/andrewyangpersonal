@@ -21,9 +21,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "brush",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a wildland pumper; departments usually replace like with like"
+  },
   "rank": 1,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "brush",
+   "band": "all ages",
+   "n": 14,
+   "median": 6825,
+   "p25": 5175,
+   "p75": 10350,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
+     "price": 3150.0,
+     "date": "2026-07-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48054/item/lot-0001-listing-updated-1986-ford-f-350-brush-fire-truck-302769/"
+    },
+    {
+     "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
+     "price": 33300.0,
+     "date": "2026-06-24",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47593/item/lot-0001-2006-ford-f550-crew-cab-dually-rescue-brush-fire-truck-299118/"
+    },
+    {
+     "item": "1963 Mercedes Unimog-S Fire/Brush Truck",
+     "price": 9900.0,
+     "date": "2026-02-20",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -47,9 +86,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
+  },
   "rank": 2,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 141,
+   "median": 7400,
+   "p25": 4400,
+   "p75": 15100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    },
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -73,8 +151,47 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
   "rank": 3,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 86,
+   "median": 7850,
+   "p25": 4525,
+   "p75": 16075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
  }
 ]

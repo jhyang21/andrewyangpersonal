@@ -21,9 +21,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 1,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -47,9 +55,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 2,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -73,9 +89,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 3,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president"
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -99,9 +123,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 4,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "from FEMA's awards table",
@@ -125,9 +157,17 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
   "rank": 5,
   "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -151,9 +191,48 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an aerial ladder; departments usually replace like with like"
+  },
   "rank": 6,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 104,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8600,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -177,9 +256,48 @@
   "basis": "expected",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "brush",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a brush truck; departments usually replace like with like"
+  },
   "rank": 7,
   "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners"
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "brush",
+   "band": "all ages",
+   "n": 14,
+   "median": 6825,
+   "p25": 5175,
+   "p75": 10350,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
+     "price": 3150.0,
+     "date": "2026-07-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48054/item/lot-0001-listing-updated-1986-ford-f-350-brush-fire-truck-302769/"
+    },
+    {
+     "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
+     "price": 33300.0,
+     "date": "2026-06-24",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47593/item/lot-0001-2006-ford-f550-crew-cab-dually-rescue-brush-fire-truck-299118/"
+    },
+    {
+     "item": "1963 Mercedes Unimog-S Fire/Brush Truck",
+     "price": 9900.0,
+     "date": "2026-02-20",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
+    }
+   ]
+  }
  },
  {
   "checked": "listed in a trade-press delivery column",
@@ -203,8 +321,47 @@
   "basis": "observed",
   "read_by": "feed",
   "truck_for_sale": "",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an aerial platform; departments usually replace like with like"
+  },
   "rank": 8,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale"
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 104,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8600,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
  }
 ]
