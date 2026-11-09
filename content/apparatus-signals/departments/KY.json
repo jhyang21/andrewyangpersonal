@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Beechmont Volunteer Fire Department",
   "registry_name": "Beechmont Volunteer Fire Department",
@@ -27,13 +27,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Eli Volunteer Fire & Rescue Department",
   "registry_name": "Eli Volunteer Fire & Rescue Department",
@@ -60,13 +66,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Pembroke Fire Department",
   "registry_name": "Pembroke Fire Department",
@@ -93,13 +105,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Russell Springs Volunteer Fire Department",
   "registry_name": "",
@@ -126,13 +144,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Square Deal Volunteer Fire Department",
   "registry_name": "",
@@ -159,13 +183,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "W. R. Castle Volunteer Fire & Rescue, Inc.",
   "registry_name": "W. R. Castle Volunteer Fire & Rescue, Inc.",
@@ -192,13 +222,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Water Valley Volunteer Fire Department",
   "registry_name": "Water Valley Volunteer Fire Department",
@@ -225,13 +261,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Wingo Fire Department",
   "registry_name": "Wingo Fire Department",
@@ -258,13 +300,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Campbell County Emergency Management of Alexandria",
   "registry_name": "",
@@ -291,13 +339,19 @@
    "year_how": null,
    "type_how": "the new truck is a hazmat/weapons of mass destruction response vehicle; departments usually replace like with like"
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-04",
+   "to": "2025-10",
+   "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
+  },
   "rank": 9,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Carter City Volunteer Fire Department",
   "registry_name": "Carter City Volunteer Fire Department",
@@ -324,13 +378,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-03",
+   "to": "2026-09",
+   "how": "grant awarded Sep 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 10,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Daviess County Fiscal Court/Airport Sorgho",
   "registry_name": "",
@@ -356,6 +416,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a top-mount pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2027-09",
+   "how": "new truck due Mar 2027; old trucks usually list within six months of delivery"
   },
   "rank": 11,
   "tier": "3 Watch",
@@ -394,7 +460,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "East Marshall Fire Department",
   "registry_name": "East Marshall Fire Department",
@@ -420,6 +486,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a dry-side pumper tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; old trucks usually list within six months of delivery"
   },
   "rank": 12,
   "tier": "3 Watch",
@@ -458,7 +530,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Gracey Fire Department",
   "registry_name": "Gracey Fire Department",
@@ -485,13 +557,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 13,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Haywood Volunteer Fire Department",
   "registry_name": "Haywood Volunteer Fire Department",
@@ -518,13 +596,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-03",
+   "to": "2026-09",
+   "how": "grant awarded Sep 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 14,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Laurel County Fire Department",
   "registry_name": "Laurel County Fire Department",
@@ -550,6 +634,12 @@
    "year": null,
    "year_how": null,
    "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; in the back-test the median gap from award to sale was 28 months"
   },
   "rank": 15,
   "tier": "3 Watch",

@@ -1,6 +1,6 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 6.5,
   "department": "Surprise Fire Medical Department",
   "registry_name": "",
@@ -27,13 +27,19 @@
    "year_how": null,
    "type_how": "the new truck is an air & light truck; departments usually replace like with like"
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-01",
+   "how": "new truck in service Jul 2026; the old one usually lists within six months"
+  },
   "rank": 1,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "Mormon Lake Fire District",
   "registry_name": "Mormon Lake Fire District",
@@ -59,6 +65,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a mini pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-05",
+   "to": "2026-11",
+   "how": "new truck in service May 2026; the old one usually lists within six months"
   },
   "rank": 2,
   "tier": "2 Call this month",
@@ -97,7 +109,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Bullhead City Fire Department",
   "registry_name": "Bullhead City Fire Department",
@@ -124,13 +136,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "City of Scottsdale Fire Department",
   "registry_name": "City of Scottsdale Fire Department",
@@ -157,13 +175,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Hualapai Tribal Council",
   "registry_name": "",
@@ -190,13 +214,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Rio Rico Fire District",
   "registry_name": "",
@@ -223,13 +253,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "San Simon Volunteer Fire Department",
   "registry_name": "San Simon Volunteer Fire Department",
@@ -256,13 +292,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Williams Fire Department",
   "registry_name": "Williams Fire Department",
@@ -289,13 +331,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Chandler Fire Department",
   "registry_name": "Chandler Fire Department",
@@ -321,6 +369,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-02",
+   "to": "2025-08",
+   "how": "new truck arrived Feb 2025; the old one may already have sold quietly"
   },
   "rank": 9,
   "tier": "3 Watch",
@@ -359,7 +413,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Mohave Valley Fire Department",
   "registry_name": "Mohave Valley Fire Department",
@@ -386,13 +440,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 10,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Picture Rocks Fire District",
   "registry_name": "Picture Rocks Fire District",
@@ -419,13 +479,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 11,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Tubac Fire District",
   "registry_name": "Tubac Fire District",
@@ -451,6 +517,12 @@
    "year": null,
    "year_how": null,
    "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
   },
   "rank": 12,
   "tier": "3 Watch",

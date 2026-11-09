@@ -62,12 +62,13 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     proof_quote: d.proof_quote,
     checked: d.checked,
     ask_for: d.ask_for,
-    // Only registry websites reach the site; hand-found contacts stay in the pipeline.
+    // Only registry websites reach the site; contacts found by hand stay private.
     website: d.fdid ? d.website : "",
-    registered: Boolean(d.fdid),
     basis: d.basis,
     read_by: d.read_by,
     kinds: [...new Set([d.top_kind, ...signalsFor(state.code, d).map((s) => s.kind)])],
+    stage: d.stage,
+    window: d.window,
   }));
 
   const kindSet = new Set(rows.flatMap((r) => r.kinds));
@@ -95,7 +96,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
         <h1 className="text-3xl font-semibold">{state.name}</h1>
         <p className="mt-2 text-lg text-as-ink-2">
           {total === 0
-            ? "No leads found in this run."
+            ? "No leads this refresh."
             : `${plural(total, "lead")}: ${formatNumber(week)} to call this week, ${formatNumber(month)} this month, ${formatNumber(watch)} to watch.`}{" "}
           <span className="num">{leadsPer100(state).toFixed(1)}</span> per 100 departments.
         </p>
@@ -117,8 +118,8 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
             No leads yet
           </h2>
           <p className="mt-1 max-w-3xl">
-            None of the sources read for {state.name} named a fire department here in this run. That
-            does not mean no truck is for sale; it means the layers above found nothing.
+            Nothing turned up for {state.name} this refresh. We have not read its minutes, so read
+            nothing into that.
           </p>
         </section>
       ) : (

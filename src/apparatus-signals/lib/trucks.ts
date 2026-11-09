@@ -39,12 +39,13 @@ export function guideTitle(g: PriceGuideRow): string {
   return `${plural(g.n, "sale")}, ${g.type}, ${bandLabel(g.band)}`;
 }
 
-/** One line on the guide value of a list of leads. */
-export function guideTotalLine(total: GuideTotal, where: string): string {
-  if (total.trucks === 0) {
-    return `No lead ${where} names a truck of a known type, so there is no guide value.`;
-  }
+/** One line on the guide value of a list of leads. `where` is e.g. "on this list", or "" for all. */
+export function guideTotalLine(total: GuideTotal, where = ""): string {
+  const on = where ? ` ${where}` : "";
+  if (total.trucks === 0) return `No truck${on} has a known type, so there is no guide value.`;
   // "About" a sum of medians: round to the nearest thousand.
   const about = total.median_sum >= 10000 ? Math.round(total.median_sum / 1000) * 1000 : total.median_sum;
-  return `Guide value of the trucks ${where}: about ${formatMoney(about)} across ${plural(total.trucks, "truck")} with a known type; the rest are unknown.`;
+  const verb = total.trucks === 1 ? "has" : "have";
+  const they = total.trucks === 1 ? "it" : "they";
+  return `${plural(total.trucks, "truck")}${on} ${verb} a known type. At auction ${they} would hammer for about ${formatMoney(about)}${total.trucks === 1 ? "" : " together"}.`;
 }

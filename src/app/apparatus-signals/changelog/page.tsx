@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BASE } from "@/apparatus-signals/lib/site";
-import { getChangelog, getState } from "@/apparatus-signals/lib/data";
+import {
+  getChangelog,
+  getMethod,
+  getState,
+  type ChangelogRun,
+  type Method,
+} from "@/apparatus-signals/lib/data";
 import { formatDate, formatNumber, plural } from "@/apparatus-signals/lib/format";
+import { kindLabel } from "@/apparatus-signals/lib/words";
 
 export const metadata: Metadata = {
   title: "Changelog",
-  description: "What each run of the pipeline added and dropped.",
+  description: "What each refresh added and dropped.",
 };
 
 /** Lines look like "NY: Name (why)". Group them by state code. */
@@ -54,14 +61,46 @@ function LeadList({ lines, total, verb }: { lines: string[]; total: number; verb
   );
 }
 
+/** Feed adds show as counts; hand-read adds are named. */
+function NewLeads({ run, method }: { run: ChangelogRun; method: Method }) {
+  const feeds = run.new_from_feeds ?? [];
+  const feedTotal = feeds.reduce((n, f) => n + f.count, 0);
+  const handTotal = Math.max(run.new_leads.length, run.new_lead_count - feedTotal);
+  return (
+    <div className="space-y-2">
+      <h3 className="font-semibold">New</h3>
+      {feeds.length ? (
+        <ul className="list-disc pl-5">
+          {feeds.map((f) => (
+            <li key={`${f.kind}-${f.source}`}>
+              {plural(f.count, "lead")} from the {f.source}:{" "}
+              {lowerFirst(kindLabel(f.kind, method))}.
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {handTotal > 0 ? (
+        <LeadList lines={run.new_leads} total={handTotal} verb="read by hand" />
+      ) : feeds.length === 0 ? (
+        <p className="text-as-ink-2">None added.</p>
+      ) : null}
+    </div>
+  );
+}
+
+function lowerFirst(text: string): string {
+  return /^[A-Z][a-z]/.test(text) ? text[0].toLowerCase() + text.slice(1) : text;
+}
+
 export default function ChangelogPage() {
+  const method = getMethod();
   const runs = [...getChangelog()].sort((a, b) => b.date.localeCompare(a.date));
   return (
     <div className="space-y-8">
       <header>
         <h1 className="text-3xl font-semibold">Changelog</h1>
         <p className="mt-2 max-w-3xl text-lg text-as-ink-2">
-          One entry per run of the pipeline, newest first.
+          One entry per refresh, newest first.
         </p>
       </header>
       {runs.length === 0 ? <p>No runs yet.</p> : null}
@@ -78,7 +117,7 @@ export default function ChangelogPage() {
             {(
               [
                 ["Call this week", run.leads_week],
-                ["Read by a person", run.hand_read_leads],
+                ["Read by hand", run.hand_read_leads],
                 ["With a seen signal", run.observed_leads],
                 ["Leads", run.leads],
                 ["States", run.states],
@@ -93,10 +132,7 @@ export default function ChangelogPage() {
               </div>
             ))}
           </dl>
-          <div className="space-y-2">
-            <h3 className="font-semibold">New</h3>
-            <LeadList lines={run.new_leads} total={run.new_lead_count} verb="added" />
-          </div>
+          <NewLeads run={run} method={method} />
           <div className="space-y-2">
             <h3 className="font-semibold">Dropped</h3>
             <LeadList lines={run.dropped} total={run.dropped_count} verb="dropped" />

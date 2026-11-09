@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Danvers Fire Department",
   "registry_name": "Danvers Fire Department",
@@ -27,13 +27,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Prinsburg Volunteer Fire Department",
   "registry_name": "Prinsburg Volunteer Fire Department",
@@ -60,13 +66,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Virginia Fire Department",
   "registry_name": "Virginia Fire Department",
@@ -93,13 +105,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "North Saint Paul Fire Department",
   "registry_name": "North Saint Paul Fire Department",
@@ -125,6 +143,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
   },
   "rank": 4,
   "tier": "2 Call this month",
@@ -163,7 +187,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "Moorhead Fire Department",
   "registry_name": "Moorhead Fire Department",
@@ -189,6 +213,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two RIV pumpers; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "new truck was due Jun 2026; the old one usually lists within six months"
   },
   "rank": 5,
   "tier": "2 Call this month",
@@ -227,7 +257,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Battle Lake Area Fire Association",
   "registry_name": "Battle Lake Area Fire Association",
@@ -253,6 +283,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck was due Nov 2026; the old one usually lists within six months"
   },
   "rank": 6,
   "tier": "2 Call this month",
@@ -291,7 +327,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Braham Fire Department",
   "registry_name": "Braham Fire Department",
@@ -317,6 +353,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck was due Nov 2026; the old one usually lists within six months"
   },
   "rank": 7,
   "tier": "2 Call this month",
@@ -355,7 +397,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Carsonville Volunteer Fire-Rescue",
   "registry_name": "Carsonville Volunteer Fire-Rescue",
@@ -382,13 +424,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Cass Lake Volunteer Fire Department",
   "registry_name": "Cass Lake Volunteer Fire Department",
@@ -414,6 +462,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; the old one usually lists within six months"
   },
   "rank": 9,
   "tier": "2 Call this month",
@@ -452,7 +506,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "City of Barrett",
   "registry_name": "",
@@ -479,13 +533,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Currie Fire Department",
   "registry_name": "Currie Fire Department",
@@ -512,13 +572,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Golden Valley Fire Department",
   "registry_name": "Golden Valley Fire Department",
@@ -544,6 +610,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-08",
+   "to": "2029-02",
+   "how": "new truck due Aug 2028; old trucks usually list within six months of delivery"
   },
   "rank": 12,
   "tier": "2 Call this month",
@@ -582,7 +654,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Isanti Fire District",
   "registry_name": "Isanti Fire District",
@@ -609,13 +681,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Maple Grove Fire Department",
   "registry_name": "Maple Grove Fire Department",
@@ -641,6 +719,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is an aerial tower; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-09",
+   "how": "ordered Sep 2026; builds take a year or more"
   },
   "rank": 14,
   "tier": "2 Call this month",
@@ -679,7 +763,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Minneapolis Fire Department",
   "registry_name": "Minneapolis Fire Department",
@@ -705,6 +789,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are three pumpers; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; the old one usually lists within six months"
   },
   "rank": 15,
   "tier": "2 Call this month",
@@ -743,7 +833,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Morgan Fire Department and Ambulance Service",
   "registry_name": "Morgan Fire Department and Ambulance Service",
@@ -770,13 +860,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Ortonville Volunteer Fire Department",
   "registry_name": "Ortonville Volunteer Fire Department",
@@ -803,13 +899,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Sanborn Fire Department",
   "registry_name": "Sanborn Fire Department",
@@ -836,13 +938,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "St. Clair Fire Department",
   "registry_name": "St. Clair Fire Department",
@@ -868,6 +976,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck was due Nov 2026; the old one usually lists within six months"
   },
   "rank": 19,
   "tier": "2 Call this month",
@@ -906,7 +1020,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Wheaton Fire Department",
   "registry_name": "Wheaton Fire Department",
@@ -933,13 +1047,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 20,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Wolf Lake Fire Department",
   "registry_name": "Wolf Lake Fire Department",
@@ -965,6 +1085,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck was due Nov 2026; the old one usually lists within six months"
   },
   "rank": 21,
   "tier": "2 Call this month",
@@ -1003,7 +1129,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Wood Lake Fire Department",
   "registry_name": "Wood Lake Fire Department",
@@ -1030,13 +1156,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 22,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Woodstock Fire Department",
   "registry_name": "",
@@ -1063,13 +1195,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 23,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Annandale Fire Department",
   "registry_name": "Annandale Fire Department",
@@ -1095,6 +1233,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-04",
+   "to": "2028-10",
+   "how": "new truck due Apr 2028; old trucks usually list within six months of delivery"
   },
   "rank": 24,
   "tier": "3 Watch",
@@ -1133,7 +1277,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Baldwin Fire Department",
   "registry_name": "",
@@ -1159,6 +1303,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2028-09",
+   "how": "new truck due Mar 2028; old trucks usually list within six months of delivery"
   },
   "rank": 25,
   "tier": "3 Watch",
@@ -1197,7 +1347,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Biwabik Fire Department",
   "registry_name": "Biwabik Fire Department",
@@ -1223,6 +1373,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-09",
+   "to": "2030-03",
+   "how": "new truck due Sep 2029; old trucks usually list within six months of delivery"
   },
   "rank": 26,
   "tier": "3 Watch",
@@ -1261,7 +1417,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Blackduck Fire Department",
   "registry_name": "Blackduck Fire Department",
@@ -1287,6 +1443,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-03",
+   "to": "2029-09",
+   "how": "new truck due Mar 2029; old trucks usually list within six months of delivery"
   },
   "rank": 27,
   "tier": "3 Watch",
@@ -1325,7 +1487,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Brooklyn Park Fire Department",
   "registry_name": "Brooklyn Park Fire Department",
@@ -1351,6 +1513,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two pumpers; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
   },
   "rank": 28,
   "tier": "3 Watch",
@@ -1389,7 +1557,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Burnsville Fire Department",
   "registry_name": "Burnsville Fire Department",
@@ -1415,6 +1583,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-11",
+   "to": "2029-05",
+   "how": "new truck due Nov 2028; old trucks usually list within six months of delivery"
   },
   "rank": 29,
   "tier": "3 Watch",
@@ -1453,7 +1627,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Chatfield Fire Department",
   "registry_name": "Chatfield Fire Department",
@@ -1479,6 +1653,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; old trucks usually list within six months of delivery"
   },
   "rank": 30,
   "tier": "3 Watch",
@@ -1517,7 +1697,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "City of Northfield Volunteer Fire Department",
   "registry_name": "City of Northfield Volunteer Fire Department",
@@ -1543,6 +1723,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is an enclosed top-mount pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-09",
+   "to": "2026-03",
+   "how": "new truck arrived Sep 2025; the old one may already have sold quietly"
   },
   "rank": 31,
   "tier": "3 Watch",
@@ -1581,7 +1767,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cokato Fire Department",
   "registry_name": "Cokato Fire Department",
@@ -1607,6 +1793,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-01",
+   "how": "new truck was due Jul 2026; the old one usually lists within six months"
   },
   "rank": 32,
   "tier": "3 Watch",
@@ -1645,7 +1837,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Darfur Fire Department",
   "registry_name": "Darfur Fire Department",
@@ -1672,13 +1864,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Deer River Fire Department",
   "registry_name": "Deer River Fire Department",
@@ -1704,6 +1902,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
   },
   "rank": 34,
   "tier": "3 Watch",
@@ -1742,7 +1946,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Elk River Fire and Rescue",
   "registry_name": "Elk River Fire and Rescue",
@@ -1768,6 +1972,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; old trucks usually list within six months of delivery"
   },
   "rank": 35,
   "tier": "3 Watch",
@@ -1806,7 +2016,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Excelsior Fire District",
   "registry_name": "Excelsior Fire District",
@@ -1832,6 +2042,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2028-09",
+   "how": "new truck due Mar 2028; old trucks usually list within six months of delivery"
   },
   "rank": 36,
   "tier": "3 Watch",
@@ -1870,7 +2086,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Farmington Fire Department",
   "registry_name": "Farmington Fire Department",
@@ -1896,6 +2112,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wildland urban interface pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-03",
+   "to": "2029-09",
+   "how": "new truck due Mar 2029; old trucks usually list within six months of delivery"
   },
   "rank": 37,
   "tier": "3 Watch",
@@ -1934,7 +2156,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Fulda Fire Department",
   "registry_name": "Fulda Fire Department",
@@ -1961,13 +2183,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Gaylord Fire Department",
   "registry_name": "Gaylord Fire Department",
@@ -1993,6 +2221,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-05",
+   "to": "2028-11",
+   "how": "new truck due May 2028; old trucks usually list within six months of delivery"
   },
   "rank": 39,
   "tier": "3 Watch",
@@ -2031,7 +2265,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Granite Falls Fire Department",
   "registry_name": "Granite Falls Fire Department",
@@ -2057,6 +2291,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-08",
+   "to": "2029-02",
+   "how": "new truck due Aug 2028; old trucks usually list within six months of delivery"
   },
   "rank": 40,
   "tier": "3 Watch",
@@ -2095,7 +2335,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Hopkins Fire Department",
   "registry_name": "Hopkins Fire Department",
@@ -2121,6 +2361,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; old trucks usually list within six months of delivery"
   },
   "rank": 41,
   "tier": "3 Watch",
@@ -2159,7 +2405,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Kiester Fire Department",
   "registry_name": "Kiester Fire Department",
@@ -2185,6 +2431,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; old trucks usually list within six months of delivery"
   },
   "rank": 42,
   "tier": "3 Watch",
@@ -2223,7 +2475,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lake Benton Fire Department",
   "registry_name": "Lake Benton Fire Department",
@@ -2249,6 +2501,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a top-mount pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; old trucks usually list within six months of delivery"
   },
   "rank": 43,
   "tier": "3 Watch",
@@ -2287,7 +2545,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lake City Fire Department",
   "registry_name": "Lake City Fire Department",
@@ -2313,6 +2571,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-03",
+   "to": "2029-09",
+   "how": "new truck due Mar 2029; old trucks usually list within six months of delivery"
   },
   "rank": 44,
   "tier": "3 Watch",
@@ -2351,7 +2615,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Little Canada Fire Department Inc.",
   "registry_name": "Little Canada Fire Department Inc.",
@@ -2377,6 +2641,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2030-02",
+   "to": "2030-08",
+   "how": "new truck due Feb 2030; old trucks usually list within six months of delivery"
   },
   "rank": 45,
   "tier": "3 Watch",
@@ -2415,7 +2685,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lonsdale Fire Department",
   "registry_name": "",
@@ -2441,6 +2711,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
   },
   "rank": 46,
   "tier": "3 Watch",
@@ -2479,7 +2755,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Marathon Refinery Fire Department",
   "registry_name": "",
@@ -2505,6 +2781,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is an industrial pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; old trucks usually list within six months of delivery"
   },
   "rank": 47,
   "tier": "3 Watch",
@@ -2543,7 +2825,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Nashwauk Fire Department",
   "registry_name": "Nashwauk Fire Department",
@@ -2569,6 +2851,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2027-12",
+   "how": "new truck due Jun 2027; old trucks usually list within six months of delivery"
   },
   "rank": 48,
   "tier": "3 Watch",
@@ -2607,7 +2895,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Nicollet Fire Department",
   "registry_name": "Nicollet Fire Department",
@@ -2633,6 +2921,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
   },
   "rank": 49,
   "tier": "3 Watch",
@@ -2671,7 +2965,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Osseo Fire Department Responder",
   "registry_name": "",
@@ -2697,6 +2991,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; old trucks usually list within six months of delivery"
   },
   "rank": 50,
   "tier": "3 Watch",
@@ -2735,7 +3035,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Park Rapids Volunteer Fire Department",
   "registry_name": "Park Rapids Volunteer Fire Department",
@@ -2761,6 +3061,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; old trucks usually list within six months of delivery"
   },
   "rank": 51,
   "tier": "3 Watch",
@@ -2799,7 +3105,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Rice Lake Volunteer Fire Department",
   "registry_name": "Rice Lake Volunteer Fire Department",
@@ -2825,6 +3131,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-05",
+   "to": "2028-11",
+   "how": "new truck due May 2028; old trucks usually list within six months of delivery"
   },
   "rank": 52,
   "tier": "3 Watch",
@@ -2863,7 +3175,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Richfield Fire Department",
   "registry_name": "Richfield Fire Department",
@@ -2889,6 +3201,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-06",
+   "to": "2029-12",
+   "how": "new truck due Jun 2029; old trucks usually list within six months of delivery"
   },
   "rank": 53,
   "tier": "3 Watch",
@@ -2927,7 +3245,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Rochester Fire Department",
   "registry_name": "Rochester Fire Department",
@@ -2953,6 +3271,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2028-09",
+   "how": "new truck due Mar 2028; old trucks usually list within six months of delivery"
   },
   "rank": 54,
   "tier": "3 Watch",
@@ -2991,7 +3315,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Rogers MN Fire Department",
   "registry_name": "Rogers MN Fire Department",
@@ -3017,6 +3341,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a quick-attack unit; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck was due Aug 2026; the old one usually lists within six months"
   },
   "rank": 55,
   "tier": "3 Watch",
@@ -3055,7 +3385,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Shakopee Fire Department",
   "registry_name": "Shakopee Fire Department",
@@ -3081,6 +3411,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two pumpers; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "new truck was due Jun 2026; the old one usually lists within six months"
   },
   "rank": 56,
   "tier": "3 Watch",
@@ -3119,7 +3455,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "West Suburban Fire Department",
   "registry_name": "Loretto Fire Department",
@@ -3145,6 +3481,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-03",
+   "to": "2029-09",
+   "how": "new truck due Mar 2029; old trucks usually list within six months of delivery"
   },
   "rank": 57,
   "tier": "3 Watch",
@@ -3183,7 +3525,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Winona Fire Department",
   "registry_name": "Winona Fire Department",
@@ -3209,6 +3551,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2028-06",
+   "how": "new truck due Dec 2027; old trucks usually list within six months of delivery"
   },
   "rank": 58,
   "tier": "3 Watch",

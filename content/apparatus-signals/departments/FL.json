@@ -1,6 +1,6 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "Edgewater Department of Fire and Rescue Services",
   "registry_name": "Edgewater Department of Fire and Rescue Services",
@@ -26,6 +26,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a SPH 100-foot aerial platform quint; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 1,
   "tier": "2 Call this month",
@@ -64,7 +70,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Deltona Fire & Rescue Department",
   "registry_name": "Deltona Fire & Rescue Department",
@@ -90,6 +96,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; the old one usually lists within six months"
   },
   "rank": 2,
   "tier": "2 Call this month",
@@ -128,7 +140,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Jackson County Fire Rescue",
   "registry_name": "Jackson County Fire Rescue",
@@ -155,13 +167,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Miami-Dade Fire Rescue Department",
   "registry_name": "Miami-Dade Fire Rescue Department",
@@ -188,13 +206,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Ocean City Wright Fire Control District",
   "registry_name": "",
@@ -220,6 +244,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a Ft. Walton Beach SL75 aerial ladder quint; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
   "rank": 5,
   "tier": "2 Call this month",
@@ -258,7 +288,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "County of Jackson office Clerk",
   "registry_name": "",
@@ -285,13 +315,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 6,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Eastpoint Volunteer Fire Department",
   "registry_name": "",
@@ -317,6 +353,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; old trucks usually list within six months of delivery"
   },
   "rank": 7,
   "tier": "3 Watch",
@@ -355,7 +397,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Estero Fire & Rescue",
   "registry_name": "Estero Fire & Rescue",
@@ -381,6 +423,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is an aerial ladder quint; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; old trucks usually list within six months of delivery"
   },
   "rank": 8,
   "tier": "3 Watch",
@@ -419,7 +467,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Financial Services, Florida Department of",
   "registry_name": "",
@@ -446,13 +494,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 9,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Indian River County Fire Rescue",
   "registry_name": "Indian River County Fire Rescue",
@@ -478,6 +532,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two custom F3 pumpers; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; old trucks usually list within six months of delivery"
   },
   "rank": 10,
   "tier": "3 Watch",
@@ -516,7 +576,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Orange City Fire Department",
   "registry_name": "Orange City Fire Department",
@@ -542,6 +602,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a hp 75 aerial quint; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-04",
+   "to": "2025-10",
+   "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
   },
   "rank": 11,
   "tier": "3 Watch",
@@ -580,7 +646,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Orlando Fire Department",
   "registry_name": "Orlando Fire Department",
@@ -606,6 +672,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a walk-through heavy rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; old trucks usually list within six months of delivery"
   },
   "rank": 12,
   "tier": "3 Watch",
@@ -644,7 +716,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Winter Haven Fire Department",
   "registry_name": "Winter Haven Fire Department",
@@ -670,6 +742,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two pumpers; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck was due Dec 2025; the old one may already have sold quietly"
   },
   "rank": 13,
   "tier": "3 Watch",
@@ -708,7 +786,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 1.0,
   "department": "Palm Bay Fire Rescue",
   "registry_name": "Palm Bay Fire Rescue",
@@ -734,6 +812,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a light rescue; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-02",
+   "to": "2025-08",
+   "how": "new truck was due Feb 2025; the old one may already have sold quietly"
   },
   "rank": 14,
   "tier": "3 Watch",

@@ -1,6 +1,6 @@
 import type { Method, Signal } from "@/apparatus-signals/lib/data";
 import { formatDate } from "@/apparatus-signals/lib/format";
-import { READ_BY_LABEL, kindLabel } from "@/apparatus-signals/lib/words";
+import { READ_BY_LABEL, checkedLabel, kindLabel, matchLabel } from "@/apparatus-signals/lib/words";
 import Ext from "@/apparatus-signals/ui/Ext";
 
 export default function Timeline({ signals, method }: { signals: Signal[]; method: Method }) {
@@ -37,7 +37,7 @@ export default function Timeline({ signals, method }: { signals: Signal[]; metho
             {s.checked ? (
               <>
                 <dt className="text-as-muted">Checked</dt>
-                <dd>{s.checked}</dd>
+                <dd>{checkedLabel(s.checked)}</dd>
               </>
             ) : null}
             <dt className="text-as-muted">How read</dt>
@@ -47,7 +47,7 @@ export default function Timeline({ signals, method }: { signals: Signal[]; metho
                 <dt className="text-as-muted">Named as</dt>
                 <dd>
                   {s.source_name}
-                  {s.match ? <span className="text-as-muted"> ({s.match})</span> : null}
+                  {s.match ? <span className="text-as-muted"> ({matchLabel(s.match)})</span> : null}
                 </dd>
               </>
             ) : null}

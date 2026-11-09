@@ -2,7 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BASE } from "@/apparatus-signals/lib/site";
 import { getMeta, getMethod, getSales, getState, getStates } from "@/apparatus-signals/lib/data";
-import { formatDate, formatMoney, formatNumber, plural, tierLabel } from "@/apparatus-signals/lib/format";
+import {
+  formatDate,
+  formatMoney,
+  formatNumber,
+  joinPlain,
+  plural,
+  tierLabel,
+} from "@/apparatus-signals/lib/format";
 import { bandLabel, typePlural } from "@/apparatus-signals/lib/trucks";
 import { ageBuckets, lotsByState, medianPrice, splitSales } from "@/apparatus-signals/lib/sales";
 import { BASIS_LABEL, VERDICT_LABELS, WEEK_RULE, kindLabel, modifierLabel } from "@/apparatus-signals/lib/words";
@@ -36,8 +43,8 @@ export default function MethodPage() {
       <header>
         <h1 className="text-3xl font-semibold">Method</h1>
         <p className="mt-2 max-w-3xl text-lg text-as-ink-2">
-          Each lead is a fire department with a public sign that it will soon sell a truck. Signs
-          are read from the sources below, given points, and summed into a score.
+          A lead is a department with a public record that says it will sell a truck. Each record
+          gets points; we add them up.
         </p>
       </header>
 
@@ -84,12 +91,9 @@ export default function MethodPage() {
           {guide.meta.age}. Source: {guide.meta.source}; built {formatDate(guide.meta.built)}.
         </p>
         <p className="max-w-3xl">
-          The truck type comes from the record in one of two ways. Some records name the old truck,
-          such as a 1998 pumper put up for sale; then the type, and the model year when given, are
-          read from those words. Grant, order and delivery records name only the new truck; then the
-          old truck is taken to be the same type, since departments usually replace like with like.
-          A guide price is shown only when the type is known. When the model year is not known, the
-          price covers all ages.
+          If the record names the old truck, we use that. If it names only the new one, we assume
+          like for like: a department buying a pumper is selling a pumper. With no type, there is
+          no guide price; with no model year, the price covers all ages.
         </p>
         <table className="data-table">
           <caption className="sr-only">Auction sale prices by truck type and age</caption>
@@ -141,9 +145,8 @@ export default function MethodPage() {
         <p className="max-w-3xl">
           Each signal earns points for its kind, plus or minus the modifiers that apply to it. A
           department&rsquo;s score is its strongest signal in full plus half of the best signal of
-          each other kind. The score sets when to call. {WEEK_RULE} A lead built only on guesses
-          (a grant, an order, a due date) stops at &ldquo;Call this month&rdquo;, however high its
-          score.
+          each other kind. The score sets when to call. {WEEK_RULE} A lead with nothing seen yet
+          tops out at &ldquo;Call this month&rdquo;.
         </p>
         <div className="grid gap-8 lg:grid-cols-2">
           <table className="data-table">
@@ -218,14 +221,49 @@ export default function MethodPage() {
         </div>
       </section>
 
+      <section aria-labelledby="listing-window" className="space-y-3">
+        <h2 id="listing-window" className="text-xl font-semibold">
+          How the listing window is set
+        </h2>
+        <table className="data-table">
+          <caption className="sr-only">Listing window by signal</caption>
+          <thead>
+            <tr>
+              <th scope="col">Signal</th>
+              <th scope="col">Lists after</th>
+              <th scope="col">How</th>
+              <th scope="col" className="r">
+                Cases
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {(method.window ?? []).map((w) => (
+              <tr key={w.kinds.join(",")}>
+                <td className="font-semibold">{joinPlain(w.kinds.map((k) => kindLabel(k, method)), "or")}</td>
+                <td className="num whitespace-nowrap" data-label="Lists after">
+                  {w.from_months}–{w.to_months} months
+                </td>
+                <td data-label="How">{w.how_template}</td>
+                <td className="r" data-label="Cases">
+                  {formatNumber(w.n_cases)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <p className="max-w-3xl text-sm text-as-ink-2">
+          A rule of thumb from under 30 measured cases; the method page&rsquo;s{" "}
+          <a href="#lead-time">lead-time cases</a> and <a href="#does-it-work">back-test</a> are the
+          evidence.
+        </p>
+      </section>
+
       <section aria-labelledby="hit-rates" className="space-y-3">
         <h2 id="hit-rates" className="text-xl font-semibold">
           What each signal led to
         </h2>
-        <p className="max-w-3xl">
-          Counted by hand in the states read in depth. Small numbers: read them as stories, not
-          rates.
-        </p>
+        <p className="max-w-3xl">Hand counts, small numbers; cases, not rates.</p>
         <table className="data-table">
           <caption className="sr-only">Hit rates by signal</caption>
           <thead>
@@ -260,8 +298,8 @@ export default function MethodPage() {
           How early the signs show
         </h2>
         <p className="max-w-3xl">
-          For trucks now at auction, a person searched back for the first public sign of the sale
-          and counted the months to the listing.
+          For trucks now at auction, we searched back for the first public mention and counted the
+          months to the listing.
         </p>
         <div className="max-w-3xl">
           <LeadTimeChart cases={method.lead_time_cases} />
@@ -448,12 +486,12 @@ export default function MethodPage() {
           Limits
         </h2>
         <p>
-          Only one auction site, Auctions International, is read, by hand, and only for the
-          Northeast. Trucks listed on other sites are missed.
+          We read one auction site, Auctions International, by hand, and only for the Northeast. We
+          miss trucks listed anywhere else.
         </p>
         <p>
-          Bids and auction dates are as of the run date. A bid shown here has likely gone up, and an
-          auction may have closed.
+          Bids and auction dates are as of the last refresh. A bid shown here has likely gone up,
+          and an auction may have closed.
         </p>
         <p>
           A truck a board voted surplus in the spring may already be sold. The vote is public; the
@@ -476,7 +514,8 @@ export default function MethodPage() {
         <ul className="list-disc space-y-2 pl-5">
           <li>
             <span className="font-semibold">Auction sites.</span> GovDeals, TruckPaper, Municibid and
-            PublicSurplus refuse scripts. Reading them needs their leave, a data deal, or a person.
+            PublicSurplus refuse scripts. Reading them needs permission, a data deal, or someone
+            opening pages by hand.
           </li>
           <li>
             <span className="font-semibold">Legal notices in each state.</span> Sale and bond notices
@@ -488,12 +527,11 @@ export default function MethodPage() {
           </li>
           <li>
             <span className="font-semibold">The yearly FEMA grant file.</span> The awards site refuses
-            scripts, so a person downloads the file by hand each year.
+            scripts, so we download the file by hand each year.
           </li>
           <li>
-            <span className="font-semibold">A person for name matches.</span> Grants and news name
-            towns, districts and companies in many ways; someone has to check each match against the
-            registry.
+            <span className="font-semibold">Name matches checked by hand.</span> Grants and news name
+            towns, districts and companies in many ways; we check each match against the registry.
           </li>
         </ul>
       </section>

@@ -1,6 +1,6 @@
 [
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 8.0,
   "department": "Washington City Bureau of Fire",
   "registry_name": "Washington City Bureau of Fire",
@@ -26,6 +26,12 @@
    "year": 2013,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Apr 2024"
   },
   "rank": 1,
   "tier": "1 Call this week",
@@ -64,7 +70,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 6.0,
   "department": "Harrisburg Bureau of Fire",
   "registry_name": "Harrisburg Bureau of Fire",
@@ -90,6 +96,12 @@
    "year": 1997,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Apr 2025"
   },
   "rank": 2,
   "tier": "1 Call this week",
@@ -128,7 +140,7 @@
   }
  },
  {
-  "checked": "partly confirmed: name: Middletown Fire Department -- ecode360 PDF is over 10 MB (fetch failed twice). The sale holds: the Borough of Middletown council agenda for October 7, 2025 (read directly) lists item 10, 'Sale of KME Pumper Truck'. Not confirmed from an open page: the 2001 model year, the $60,000 price, a volunteer fire department as buyer, Resolution 2024-19 and the pending final inspection; the October 7 minutes are not posted on the borough site, and Press & Journal and PennLive searches found nothing. Use the agenda as the source and keep date 2025-10-07.",
+  "checked": "partly",
   "score": 6.0,
   "department": "Middletown Fire Department",
   "registry_name": "",
@@ -154,6 +166,12 @@
    "year": 2001,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Oct 2025"
   },
   "rank": 3,
   "tier": "1 Call this week",
@@ -192,7 +210,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 6.0,
   "department": "Slatington Volunteer Fire Department",
   "registry_name": "Slatington Volunteer Fire Department",
@@ -218,6 +236,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Jun 2026"
   },
   "rank": 4,
   "tier": "1 Call this week",
@@ -256,7 +280,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 6.0,
   "department": "West Middlesex Volunteer Fire Department",
   "registry_name": "West Middlesex Volunteer Fire Department",
@@ -282,6 +306,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Nov 2024"
   },
   "rank": 5,
   "tier": "1 Call this week",
@@ -320,7 +350,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Darlington Township Volunteer Fire Department",
   "registry_name": "Darlington Township Volunteer Fire Department",
@@ -347,13 +377,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 5.0,
   "department": "Alert Fire Company (Downingtown Borough)",
   "registry_name": "",
@@ -379,6 +415,12 @@
    "year": 1998,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Sep 2025"
   },
   "rank": 7,
   "tier": "2 Call this month",
@@ -417,7 +459,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 5.0,
   "department": "Bessemer Volunteer Fire Company",
   "registry_name": "Bessemer Volunteer Fire Company",
@@ -443,6 +485,12 @@
    "year": 1981,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Mar 2025"
   },
   "rank": 8,
   "tier": "2 Call this month",
@@ -481,7 +529,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 5.0,
   "department": "Chippewa Township Volunteer Fire Department",
   "registry_name": "Chippewa Township Volunteer Fire Department",
@@ -508,13 +556,19 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Jul 2026"
+  },
   "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "Meyersdale Volunteer Fire Department",
   "registry_name": "",
@@ -540,6 +594,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck in service Aug 2026; the old one usually lists within six months"
   },
   "rank": 10,
   "tier": "2 Call this month",
@@ -578,7 +638,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "White Deer Township Fire Company",
   "registry_name": "White Deer Township Fire Company",
@@ -604,6 +664,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-05",
+   "to": "2026-11",
+   "how": "new truck in service May 2026; the old one usually lists within six months"
   },
   "rank": 11,
   "tier": "2 Call this month",
@@ -642,7 +708,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "West Granville Fire Company",
   "registry_name": "West Granville Fire Company",
@@ -668,6 +734,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a mini pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-01",
+   "how": "new truck was due Jul 2026; the old one usually lists within six months"
   },
   "rank": 12,
   "tier": "2 Call this month",
@@ -706,7 +778,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 4.0,
   "department": "Ambridge Fire Department",
   "registry_name": "Ambridge Fire Department",
@@ -732,6 +804,12 @@
    "year": 1993,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2028-02",
+   "how": "ordered Feb 2026; builds take a year or more"
   },
   "rank": 13,
   "tier": "2 Call this month",
@@ -770,7 +848,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Biglerville Hose & Truck Company #1",
   "registry_name": "Biglerville Hose & Truck Company #1",
@@ -796,6 +874,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 14,
   "tier": "2 Call this month",
@@ -834,7 +918,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Boswell Volunteer Fire Department",
   "registry_name": "Boswell Volunteer Fire Department",
@@ -861,13 +945,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Cranesville Volunteer Fire Department",
   "registry_name": "Cranesville Volunteer Fire Department",
@@ -894,13 +984,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Creekside Fire Company",
   "registry_name": "Creekside Fire Company",
@@ -927,13 +1023,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Donora Fire Company",
   "registry_name": "Donora Fire Company",
@@ -960,13 +1062,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Dorrance Township Volunteer Fire Department",
   "registry_name": "Dorrance Township Volunteer Fire Department",
@@ -993,13 +1101,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 19,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Dushore Fire Company No. 1",
   "registry_name": "Dushore Fire Company No. 1",
@@ -1025,6 +1139,12 @@
    "year": 2002,
    "year_how": "from age",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "ordered Aug 2026; builds take a year or more"
   },
   "rank": 20,
   "tier": "2 Call this month",
@@ -1063,7 +1183,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "East Pennsboro Township Fire Department",
   "registry_name": "",
@@ -1089,6 +1209,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
   "rank": 21,
   "tier": "2 Call this month",
@@ -1127,7 +1253,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Franklin Borough Volunteer Fire Department",
   "registry_name": "Franklin Borough Volunteer Fire Department",
@@ -1154,13 +1280,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 22,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Franklin Fire Company 4",
   "registry_name": "Franklin Fire Company 4",
@@ -1186,6 +1318,12 @@
    "year": 2004,
    "year_how": "from age",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2028-04",
+   "how": "grant awarded Apr 2025; in the back-test the median gap from award to sale was 28 months"
   },
   "rank": 23,
   "tier": "2 Call this month",
@@ -1224,7 +1362,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Irvona Volunteer Fire Company 1, Inc.",
   "registry_name": "Irvona Volunteer Fire Company 1, Inc.",
@@ -1251,13 +1389,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 24,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Kingston-Forty Fort Fire and EMS Department",
   "registry_name": "Kingston Fire Department",
@@ -1283,6 +1427,12 @@
    "year": 2001,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-01",
+   "to": "2027-07",
+   "how": "grant awarded Jul 2024; in the back-test the median gap from award to sale was 28 months"
   },
   "rank": 25,
   "tier": "2 Call this month",
@@ -1321,7 +1471,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 4.0,
   "department": "Koppel Volunteer Fire Company",
   "registry_name": "Koppel Volunteer Fire Company",
@@ -1348,13 +1498,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-03",
+   "to": "2027-03",
+   "how": "money approved Mar 2025; order, build, then sale"
+  },
   "rank": 26,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Lawrence Township Volunteer Fire Company 1",
   "registry_name": "Lawrence Township Volunteer Fire Company #1",
@@ -1381,13 +1537,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 27,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Lehighton Fire Department",
   "registry_name": "Lehighton Fire Department",
@@ -1413,6 +1575,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-09",
+   "how": "ordered Sep 2026; builds take a year or more"
   },
   "rank": 28,
   "tier": "2 Call this month",
@@ -1451,7 +1619,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Lingohocken Fire Company",
   "registry_name": "Lingohocken Fire Company",
@@ -1477,6 +1645,12 @@
    "year": 2003,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-10",
+   "how": "grant awarded Oct 2025; in the back-test the median gap from award to sale was 28 months"
   },
   "rank": 29,
   "tier": "2 Call this month",
@@ -1515,7 +1689,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "McClellandtown Volunteer Fire Company",
   "registry_name": "McClellandtown Volunteer Fire Company",
@@ -1542,13 +1716,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 30,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Mifflintown Hose Company NO 1",
   "registry_name": "Mifflintown Hose Company NO 1",
@@ -1575,13 +1755,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 31,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Mildred Volunteer Fire Company",
   "registry_name": "Mildred Volunteer Fire Company",
@@ -1608,13 +1794,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 32,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Murrysville Medic One",
   "registry_name": "",
@@ -1641,13 +1833,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 33,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "New Brighton Volunteer Fire Department",
   "registry_name": "New Brighton Volunteer Fire Department",
@@ -1674,13 +1872,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 34,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "North Irwin Volunteer Fire Department",
   "registry_name": "North Irwin Volunteer Fire Department",
@@ -1707,13 +1911,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 35,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Ross/West View Emergency Medical Service Authority",
   "registry_name": "",
@@ -1740,13 +1950,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 36,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Smock Volunteer Fire Company",
   "registry_name": "Smock Volunteer Fire Company",
@@ -1773,13 +1989,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 37,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Sugarcreek Township Volunteer Fire Department",
   "registry_name": "Sugarcreek Township Volunteer Fire Department",
@@ -1806,13 +2028,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-03",
+   "to": "2027-09",
+   "how": "grant awarded Sep 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 38,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Uwchlan Ambulance Corps",
   "registry_name": "",
@@ -1839,13 +2067,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 39,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "West Hills Regional Fire Department, Inc.",
   "registry_name": "West Hills Regional Fire Department, Inc.",
@@ -1872,13 +2106,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 40,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Bridgeville Volunteer Fire Company",
   "registry_name": "Bridgeville Volunteer Fire Company",
@@ -1904,6 +2144,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "ordered Apr 2026; builds take a year or more"
   },
   "rank": 41,
   "tier": "3 Watch",
@@ -1942,7 +2188,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Buckhorn Community Volunteer Fire Company #1",
   "registry_name": "Buckhorn Community Volunteer Fire Company #1",
@@ -1968,6 +2214,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
   },
   "rank": 42,
   "tier": "3 Watch",
@@ -2006,7 +2258,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Catasauqua Fire Department",
   "registry_name": "Catasauqua Fire Department",
@@ -2032,6 +2284,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a Star Series pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 43,
   "tier": "3 Watch",
@@ -2070,7 +2328,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Dauntless Hook and Ladder Company",
   "registry_name": "Dauntless Hook and Ladder Company",
@@ -2096,6 +2354,12 @@
    "year": 1963,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-06",
+   "to": "2026-06",
+   "how": "ordered Jun 2024; builds take a year or more"
   },
   "rank": 44,
   "tier": "3 Watch",
@@ -2134,7 +2398,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Export Volunteer Fire Department",
   "registry_name": "Export Volunteer Fire Department",
@@ -2161,13 +2425,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 45,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Fredonia Volunteer Fire Dep",
   "registry_name": "",
@@ -2194,13 +2464,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 46,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Great Bend Hose Company #1, Inc.",
   "registry_name": "Great Bend Hose Company #1, Inc.",
@@ -2226,6 +2502,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper- tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
   },
   "rank": 47,
   "tier": "3 Watch",
@@ -2264,7 +2546,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Hobbie Volunteer Fire Department",
   "registry_name": "",
@@ -2290,6 +2572,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a mini pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-09",
+   "to": "2026-03",
+   "how": "new truck arrived Sep 2025; the old one may already have sold quietly"
   },
   "rank": 48,
   "tier": "3 Watch",
@@ -2328,7 +2616,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Lancaster City Bureau of Fire",
   "registry_name": "Lancaster City Bureau of Fire",
@@ -2355,13 +2643,19 @@
    "year_how": "stated",
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-12",
+   "how": "ordered Dec 2024; builds take a year or more"
+  },
   "rank": 49,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Limerick Fire Department",
   "registry_name": "Limerick Fire Department",
@@ -2387,6 +2681,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a NXT 110-foot aerial ladder quint; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-10",
+   "to": "2029-04",
+   "how": "new truck due Oct 2028; old trucks usually list within six months of delivery"
   },
   "rank": 50,
   "tier": "3 Watch",
@@ -2425,7 +2725,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 3.0,
   "department": "Miles Township Fire Company",
   "registry_name": "Miles Township Fire Company",
@@ -2452,13 +2752,19 @@
    "year_how": "stated",
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-06",
+   "to": "2026-06",
+   "how": "ordered Jun 2024; builds take a year or more"
+  },
   "rank": 51,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Newtown Emergency Services Department",
   "registry_name": "Newtown Emergency Services Department",
@@ -2484,6 +2790,12 @@
    "year": 2010,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-10",
+   "to": "2026-10",
+   "how": "money approved Oct 2024; order, build, then sale"
   },
   "rank": 52,
   "tier": "3 Watch",
@@ -2522,7 +2834,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Newtown Square Fire Company",
   "registry_name": "Newtown Square Fire Company",
@@ -2548,6 +2860,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-02",
+   "to": "2026-08",
+   "how": "new truck was due Feb 2026; the old one may already have sold quietly"
   },
   "rank": 53,
   "tier": "3 Watch",
@@ -2586,7 +2904,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "North Annville Township Fire Company #1",
   "registry_name": "",
@@ -2612,6 +2930,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2028-05",
+   "how": "ordered May 2026; builds take a year or more"
   },
   "rank": 54,
   "tier": "3 Watch",
@@ -2650,7 +2974,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Orbisonia Rockhill Volunteer Fire Department",
   "registry_name": "Orbisonia Rockhill Volunteer Fire Department",
@@ -2677,13 +3001,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Palmerton Fire Department",
   "registry_name": "",
@@ -2709,6 +3039,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a rescue pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 56,
   "tier": "3 Watch",
@@ -2747,7 +3083,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Penn Forest Township Volunteer Fire Company 1",
   "registry_name": "Penn Forest Township Volunteer Fire Company 1",
@@ -2774,13 +3110,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-09",
+   "how": "money approved Sep 2026; order, build, then sale"
+  },
   "rank": 57,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Philadelphia Fire Department",
   "registry_name": "Philadelphia Fire Department",
@@ -2806,6 +3148,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are four Spartan ER pumpers; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2028-06",
+   "how": "ordered Jun 2026; builds take a year or more"
   },
   "rank": 58,
   "tier": "3 Watch",
@@ -2844,7 +3192,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Pocono Summit Volunteer Fire Company",
   "registry_name": "",
@@ -2870,6 +3218,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 59,
   "tier": "3 Watch",
@@ -2908,7 +3262,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Pocono Summit Volunteer Fire Department",
   "registry_name": "",
@@ -2934,6 +3288,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; old trucks usually list within six months of delivery"
   },
   "rank": 60,
   "tier": "3 Watch",
@@ -2972,7 +3332,7 @@
   }
  },
  {
-  "checked": "partly confirmed: civiciq.com returned HTTP 403 on two tries. The purchase holds: Ridgway Borough minutes of April 20, 2026 (read directly) say the 'Ridgway Volunteer Fire Department Board of Directors requests the Borough to approach Ridgway Township and Spring Creek Township to seek funding support for the new mini pump'. Not confirmed from an open page: the January 19, 2026 vote, the $150,000 down payment, the about $500,000 total, Glick as vendor and the 2028 delivery (all seen only in search snippets of civiciq and a River 989 post that now returns 404). The January 19 minutes are not posted on the borough site; the February 16 minutes only approve them. Keep date 2026-01-19 as unconfirmed.",
+  "checked": "partly",
   "score": 3.0,
   "department": "Ridgway Fire Department, Inc.",
   "registry_name": "Ridgway Fire Department, Inc.",
@@ -2999,13 +3359,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2028-01",
+   "how": "money approved Jan 2026; order, build, then sale"
+  },
   "rank": 61,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Rose Fire Company #1",
   "registry_name": "Rose Fire Company #1",
@@ -3031,6 +3397,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a HP100 rear-mount platform; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-10",
+   "to": "2029-04",
+   "how": "new truck due Oct 2028; old trucks usually list within six months of delivery"
   },
   "rank": 62,
   "tier": "3 Watch",
@@ -3069,7 +3441,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Smithfield Fire Company No. 1, Volunteer Fire Department",
   "registry_name": "Smithfield Fire Company No. 1, Volunteer Fire Department",
@@ -3095,6 +3467,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-05",
+   "to": "2025-11",
+   "how": "new truck arrived May 2025; the old one may already have sold quietly"
   },
   "rank": 63,
   "tier": "3 Watch",
@@ -3133,7 +3511,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Trevorton Fire Company #1",
   "registry_name": "Trevorton Fire Company #1",
@@ -3160,13 +3538,19 @@
    "year_how": "stated",
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-06",
+   "to": "2026-06",
+   "how": "ordered Jun 2024; builds take a year or more"
+  },
   "rank": 64,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Wellsboro Fire Department",
   "registry_name": "Wellsboro Fire Department",
@@ -3192,6 +3576,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck was due Aug 2026; the old one usually lists within six months"
   },
   "rank": 65,
   "tier": "3 Watch",
@@ -3230,7 +3620,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Westfall Township Volunteer Fire Department, Inc.",
   "registry_name": "Westfall Township Volunteer Fire Department, Inc.",
@@ -3256,6 +3646,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2027-10",
+   "how": "new truck due Apr 2027; old trucks usually list within six months of delivery"
   },
   "rank": 66,
   "tier": "3 Watch",
@@ -3294,7 +3690,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Austin Volunteer Fire Department",
   "registry_name": "Austin Volunteer Fire Department",
@@ -3321,13 +3717,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "ordered Aug 2026; builds take a year or more"
+  },
   "rank": 67,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Buchanan Valley Fire Department, Inc.",
   "registry_name": "Buchanan Valley Fire Department, Inc.",
@@ -3354,13 +3756,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-11",
+   "how": "ordered Nov 2025; builds take a year or more"
+  },
   "rank": 68,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Bunker Hill Fire Company",
   "registry_name": "",
@@ -3387,13 +3795,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "ordered Mar 2026; builds take a year or more"
+  },
   "rank": 69,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 2.0,
   "department": "Granville Fire Company",
   "registry_name": "",
@@ -3420,13 +3834,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "ordered Mar 2026; builds take a year or more"
+  },
   "rank": 70,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Lower Swatara Volunteer Fire Department",
   "registry_name": "Lower Swatara Volunteer Fire Department",
@@ -3453,13 +3873,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "ordered Apr 2026; builds take a year or more"
+  },
   "rank": 71,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "McConnellsburg Volunteer Fire Department",
   "registry_name": "McConnellsburg Volunteer Fire Department",
@@ -3486,13 +3912,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2028-02",
+   "how": "ordered Feb 2026; builds take a year or more"
+  },
   "rank": 72,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Perkiomen Township Fire Company #1",
   "registry_name": "Perkiomen Township Fire Company #1",
@@ -3519,13 +3951,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2028-05",
+   "how": "ordered May 2026; builds take a year or more"
+  },
   "rank": 73,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Plumsteadville Volunteer Fire Company",
   "registry_name": "Plumsteadville Volunteer Fire Company",
@@ -3552,13 +3990,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2029-06",
+   "how": "grant awarded Jun 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 74,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Prospect-Franklin Township Volunteer Fire Department",
   "registry_name": "",
@@ -3584,6 +4028,12 @@
    "year": null,
    "year_how": null,
    "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "ordered Mar 2026; builds take a year or more"
   },
   "rank": 75,
   "tier": "3 Watch",

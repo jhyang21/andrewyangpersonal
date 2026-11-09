@@ -60,32 +60,6 @@
   "site": "Auctions International"
  },
  {
-  "state": "NY",
-  "seller": "City of Watertown",
-  "item": "1996 Ferrara Pumper",
-  "price": 4500,
-  "date": "2026-10-29",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 1996,
-  "status": "sold",
-  "price_kind": "sold",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "seller": "City of Watertown",
-  "item": "1986 E-One 95FT Aerial Ladder Truck",
-  "price": 5700,
-  "date": "2026-10-29",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 1986,
-  "status": "sold",
-  "price_kind": "sold",
-  "site": "Auctions International"
- },
- {
   "state": "MA",
   "state_how": "stated",
   "seller": "Town of Hingham Fire",
@@ -208,7 +182,7 @@
  {
   "state": "NY",
   "seller": "Village of Elbridge Fire",
-  "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+  "item": "1998 Freightliner FL70 Rescue Truck",
   "price": 10200,
   "date": "2026-10-14",
   "url": "https://www.auctionsinternational.com/pastsales/",
@@ -276,19 +250,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/49204/item/lot-0001-2002-ford-e450-ambulance-310210/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "seller": "Aurora-Ledyard Fire District",
-  "item": "2002 Ford E450 Ambulance",
-  "price": 5900,
-  "date": "2026-10-05",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 2002,
-  "status": "sold",
-  "price_kind": "sold",
   "site": "Auctions International"
  },
  {
@@ -455,19 +416,6 @@
   "site": "Auctions International"
  },
  {
-  "state": "NY",
-  "seller": "Smyrna FD",
-  "item": "1987 GMC 7000 Rescue Truck",
-  "price": 1575,
-  "date": "2026-08-26",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 1987,
-  "status": "sold",
-  "price_kind": "sold",
-  "site": "Auctions International"
- },
- {
   "state": "ME",
   "state_how": "stated",
   "seller": "City of Auburn FD",
@@ -495,19 +443,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/48427/item/lot-0001-1993-international-conventional-cab-pumper-305737/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "seller": "Village of Attica",
-  "item": "1993 International Conventional Cab Pumper",
-  "price": 4700,
-  "date": "2026-08-13",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 1993,
-  "status": "sold",
-  "price_kind": "sold",
   "site": "Auctions International"
  },
  {
@@ -736,7 +671,7 @@
  {
   "state": "NY",
   "seller": "Richford Fire District",
-  "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
+  "item": "1986 Ford F-350 Brush Fire Truck",
   "price": 3150,
   "date": "2026-07-16",
   "url": "https://www.auctionsinternational.com/pastsales/",
@@ -942,19 +877,6 @@
   "site": "Auctions International"
  },
  {
-  "state": "NY",
-  "seller": "Corning Joint Fire District",
-  "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
-  "price": 33300,
-  "date": "2026-06-23",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 2006,
-  "status": "sold",
-  "price_kind": "sold",
-  "site": "Auctions International"
- },
- {
   "state": "NC",
   "state_how": "stated",
   "seller": "Forsyth County",
@@ -1106,32 +1028,6 @@
  },
  {
   "state": "NY",
-  "seller": "City of Yonkers",
-  "item": "(#4073) 2007 American LaFrance Eagle Fire Truck",
-  "price": 1725,
-  "date": "2026-05-28",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 2007,
-  "status": "sold",
-  "price_kind": "sold",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "seller": "City of Yonkers",
-  "item": "(#4101) 2009 Spartan Gladiator Fire Truck",
-  "price": 2125,
-  "date": "2026-05-28",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 2009,
-  "status": "sold",
-  "price_kind": "sold",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
   "state_how": "stated",
   "seller": "Town of Riverhead, Long Island",
   "item": "1989 Unknown Tanker",
@@ -1278,45 +1174,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/46993/item/lot-0002-4101-2009-spartan-gladiator-fire-truck-294662/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "seller": "Village of Hudson Falls DPW",
-  "item": "1990 Pierce Fire Truck",
-  "price": 3500,
-  "date": "2026-05-01",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 1990,
-  "status": "sold",
-  "price_kind": "sold",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "seller": "City of Yonkers",
-  "item": "(#4073) 2007 American LaFrance Eagle Fire Truck",
-  "price": 4850,
-  "date": "2026-05-01",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 2007,
-  "status": "sold",
-  "price_kind": "sold",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "seller": "City of Yonkers",
-  "item": "(#4101) 2009 Spartan Gladiator Fire Truck",
-  "price": 4850,
-  "date": "2026-05-01",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 2009,
-  "status": "sold",
-  "price_kind": "sold",
   "site": "Auctions International"
  },
  {

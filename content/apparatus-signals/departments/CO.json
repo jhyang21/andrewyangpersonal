@@ -1,6 +1,6 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 6.0,
   "department": "Franktown Fire Protection District",
   "registry_name": "Franktown Fire Protection District",
@@ -26,6 +26,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a brush truck; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck in service Sep 2026; the old one usually lists within six months"
   },
   "rank": 1,
   "tier": "1 Call this week",
@@ -64,7 +70,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 6.0,
   "department": "Platte Canyon Fire Protection District",
   "registry_name": "Platte Canyon Fire Protection District",
@@ -90,6 +96,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck in service Oct 2026; the old one usually lists within six months"
   },
   "rank": 2,
   "tier": "1 Call this week",
@@ -128,7 +140,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "Pueblo Fire Department",
   "registry_name": "Pueblo Fire Department",
@@ -154,6 +166,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
   },
   "rank": 3,
   "tier": "2 Call this month",
@@ -192,7 +210,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "Stratmoor Hills Fire Protection District",
   "registry_name": "Stratmoor Hills Fire Protection District",
@@ -218,6 +236,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a Danko tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck was due Apr 2026; the old one may already have sold quietly"
   },
   "rank": 4,
   "tier": "2 Call this month",
@@ -256,7 +280,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Colorado Department of Public Safety",
   "registry_name": "",
@@ -283,13 +307,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Elbert Fire Protection District",
   "registry_name": "Elbert Fire Protection District",
@@ -315,6 +345,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two pumper-tankers; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
   "rank": 6,
   "tier": "2 Call this month",
@@ -353,7 +389,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Colorado River Fire Rescue",
   "registry_name": "Colorado River Fire Rescue",
@@ -379,6 +415,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a quick-attack unit; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-02",
+   "to": "2026-08",
+   "how": "new truck was due Feb 2026; the old one may already have sold quietly"
   },
   "rank": 7,
   "tier": "3 Watch",

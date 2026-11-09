@@ -1,6 +1,6 @@
 [
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 10.0,
   "department": "Laurens Fire District",
   "registry_name": "Laurens Fire District, Mount Vision Volunteer Fire Department",
@@ -27,6 +27,8 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
+  "stage": "listed",
+  "window": null,
   "rank": 1,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
@@ -64,7 +66,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 8.5,
   "department": "Oxford Fire Department",
   "registry_name": "Oxford Fire Department",
@@ -91,6 +93,8 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
+  "stage": "listed",
+  "window": null,
   "rank": 2,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
@@ -128,7 +132,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 8.0,
   "department": "Sea Cliff Fire Department",
   "registry_name": "Sea Cliff Fire Department",
@@ -155,6 +159,8 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
+  "stage": "listed",
+  "window": null,
   "rank": 3,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
@@ -192,7 +198,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 7.5,
   "department": "Yonkers Fire Department",
   "registry_name": "Yonkers Fire Department",
@@ -205,7 +211,7 @@
   "signal_date": "2026-01",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/yonkers-ny-fire-department-receives-six-engines/",
   "proof_quote": "The Yonkers Fire Department tries to order two new pieces of apparatus each year,",
-  "other_signals": "Sold or took bids on a truck since May: 1998 HME Smeal 1871 Fire Truck (sold $5,700) (and 5 more sold since May)",
+  "other_signals": "Sold a truck at auction since May: 1998 HME Smeal 1871 Fire Truck (sold $5,700) (and 3 more sold since May)",
   "named_in_source": "Yonkers Fire Department",
   "name_match": "exact",
   "fdid": "60061",
@@ -219,13 +225,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": {
+   "from": "2026-01",
+   "to": "2026-07",
+   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
+  },
   "rank": 4,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 7.0,
   "department": "Holbrook Fire Department",
   "registry_name": "Holbrook Fire Department",
@@ -251,6 +263,12 @@
    "year": 2001,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck in service Sep 2026; the old one usually lists within six months"
   },
   "rank": 5,
   "tier": "1 Call this week",
@@ -289,7 +307,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 7.0,
   "department": "Larchmont Fire Department",
   "registry_name": "Larchmont Fire Department",
@@ -316,6 +334,8 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
+  "stage": "listed",
+  "window": null,
   "rank": 6,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
@@ -353,7 +373,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 7.0,
   "department": "Long Beach Fire Department",
   "registry_name": "Long Beach Fire Department",
@@ -380,6 +400,8 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
+  "stage": "listed",
+  "window": null,
   "rank": 7,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
@@ -417,7 +439,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 7.0,
   "department": "Roosevelt Fire Department",
   "registry_name": "Roosevelt Fire Department",
@@ -444,6 +466,8 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
+  "stage": "listed",
+  "window": null,
   "rank": 8,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
@@ -481,7 +505,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 6.5,
   "department": "Pine Hill Hose Company 5",
   "registry_name": "Pine Hill Hose Company 5",
@@ -508,13 +532,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-01",
+   "to": "2026-07",
+   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
+  },
   "rank": 9,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 6.0,
   "department": "Montauk Fire Department",
   "registry_name": "Montauk Fire Department",
@@ -541,13 +571,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck in service Sep 2026; the old one usually lists within six months"
+  },
   "rank": 10,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "partly confirmed: Page supports $283,000, 2009 replaced, Feb 10 2026, but it is an AMBULANCE, not a fire truck; paid from sale of the Rutman Road fire hall.",
+  "checked": "partly",
   "score": 6.0,
   "department": "Parishville Volunteer Fire Company",
   "registry_name": "Parishville Volunteer Fire Company",
@@ -573,6 +609,12 @@
    "year": 2009,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-02",
+   "to": "2026-08",
+   "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
   },
   "rank": 11,
   "tier": "1 Call this week",
@@ -611,7 +653,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 6.0,
   "department": "Spafford Fire District",
   "registry_name": "",
@@ -637,6 +679,12 @@
    "year": 2003,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "voted to sell Apr 2026"
   },
   "rank": 12,
   "tier": "1 Call this week",
@@ -675,7 +723,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 6.0,
   "department": "Yorktown Heights Fire Department",
   "registry_name": "Yorktown Heights Fire Department",
@@ -701,6 +749,12 @@
    "year": 2002,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "voted to sell Jul 2026"
   },
   "rank": 13,
   "tier": "1 Call this week",
@@ -739,7 +793,7 @@
   }
  },
  {
-  "checked": "page opened by researcher",
+  "checked": "opened",
   "score": 6.0,
   "department": "Medina Fire Department",
   "registry_name": "Medina Fire Department",
@@ -765,6 +819,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced"
   },
   "rank": 14,
   "tier": "1 Call this week",
@@ -803,7 +863,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Stratford Volunteer Fire Company",
   "registry_name": "Stratford Volunteer Fire Company",
@@ -830,13 +890,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "West Nyack Fire Engine Company #1",
   "registry_name": "West Nyack Fire Engine Company #1",
@@ -863,13 +929,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "page opened by researcher",
+  "checked": "opened",
   "score": 5.5,
   "department": "Windham Fire District #1",
   "registry_name": "Hensonville Hose Company, Inc.",
@@ -877,7 +949,7 @@
   "county": "Greene",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1998 Ford tandem-axle tanker truck, 1,000 GPM Darley pump",
   "signal_date": "2026-09-08",
   "proof_url": "http://townofwindhamny.gov/legal-notice/windham-fire-district-1-accepting-sealed-bids-for-1998-ford-tanker-truck/76284/",
@@ -896,13 +968,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "Canaan Fire Department",
   "registry_name": "",
@@ -928,6 +1002,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-01",
+   "how": "new truck in service Jul 2026; the old one usually lists within six months"
   },
   "rank": 18,
   "tier": "2 Call this month",
@@ -966,7 +1046,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 5.0,
   "department": "Cohoes Fire Department",
   "registry_name": "Cohoes Fire Department",
@@ -974,7 +1054,7 @@
   "county": "Albany",
   "type": "Career",
   "website": "ci.cohoes.ny.us",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1995 Spartan Gladiator Pumper Truck (sold $3,250) (and 1 more sold since May)",
   "signal_date": "2026-10-12",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -993,13 +1073,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 19,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 5.0,
   "department": "Nyack Fire Department",
   "registry_name": "Nyack Fire Department",
@@ -1026,13 +1108,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "surplus",
+  "window": null,
   "rank": 20,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "Stony Brook Volunteer Fire Department",
   "registry_name": "Stony Brook Volunteer Fire Department",
@@ -1058,6 +1142,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-01",
+   "to": "2026-07",
+   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
   },
   "rank": 21,
   "tier": "2 Call this month",
@@ -1096,7 +1186,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 5.0,
   "department": "Watertown Fire Department",
   "registry_name": "Watertown Fire Department",
@@ -1104,7 +1194,7 @@
   "county": "Jefferson",
   "type": "Mostly volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1996 Ferrara Pumper (sold $4,500) (and 1 more sold since May)",
   "signal_date": "2026-10-29",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -1123,13 +1213,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 22,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "Apalachin Fire Department",
   "registry_name": "Apalachin Fire Department",
@@ -1155,6 +1247,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a rescue truck; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-03",
+   "to": "2025-09",
+   "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
   },
   "rank": 23,
   "tier": "2 Call this month",
@@ -1193,7 +1291,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "Malverne Fire Department",
   "registry_name": "Malverne Fire Department",
@@ -1219,6 +1317,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a MVP rescue-pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-10",
+   "how": "ordered Oct 2025; builds take a year or more"
   },
   "rank": 24,
   "tier": "2 Call this month",
@@ -1257,7 +1361,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Alexandria Bay Fire Department",
   "registry_name": "Alexandria Bay Fire Department",
@@ -1270,7 +1374,7 @@
   "signal_date": "2026-01",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
   "proof_quote": "TOYNE—Alexandria Bay Joint Fire District pumper-tanker.",
-  "other_signals": "Sold or took bids on a truck since May: 2005 Ford E-450 Series Custom Ambulance (sold $4,500)",
+  "other_signals": "Sold a truck at auction since May: 2005 Ford E-450 Series Custom Ambulance (sold $4,500)",
   "named_in_source": "Alexandria Bay Joint Fire District",
   "name_match": "exact",
   "fdid": "23003",
@@ -1284,13 +1388,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": {
+   "from": "2027-01",
+   "to": "2028-01",
+   "how": "ordered Jan 2026; builds take a year or more"
+  },
   "rank": 25,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Ancram Fire District",
   "registry_name": "",
@@ -1317,13 +1427,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-09",
+   "how": "money approved Sep 2026; order, build, then sale"
+  },
   "rank": 26,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Bellmore Fire Department",
   "registry_name": "Bellmore Fire Department",
@@ -1350,13 +1466,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 27,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Bravo Volunteer Ambulance Service Inc",
   "registry_name": "",
@@ -1383,13 +1505,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 28,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "partly confirmed: Aug 5 2026 approval and quote confirmed, but $950,000 is the bond ceiling; total truck cost is about $1,350,000. Delivery expected Oct 2026.",
+  "checked": "partly",
   "score": 4.0,
   "department": "Canastota Fire Department",
   "registry_name": "Canastota Fire Department",
@@ -1415,6 +1543,12 @@
    "year": 1998,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck was due Aug 2026; the old one usually lists within six months"
   },
   "rank": 29,
   "tier": "2 Call this month",
@@ -1453,7 +1587,7 @@
   }
  },
  {
-  "checked": "partly confirmed: Board approved buying an AMBULANCE from Kolaja (article dated Nov 7 2025), delivery Feb 2027; not a fire truck. Old ambulance to be sold.",
+  "checked": "partly",
   "score": 4.0,
   "department": "Cassadaga Volunteer Fire Department",
   "registry_name": "Cassadaga Volunteer Fire Department",
@@ -1479,6 +1613,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-11",
+   "how": "money approved Nov 2025; order, build, then sale"
   },
   "rank": 30,
   "tier": "2 Call this month",
@@ -1517,7 +1657,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Cato Fire Department",
   "registry_name": "Cato Fire Department",
@@ -1543,6 +1683,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
   "rank": 31,
   "tier": "2 Call this month",
@@ -1581,7 +1727,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Corning Fire Department",
   "registry_name": "Corning Fire Department",
@@ -1594,7 +1740,7 @@
   "signal_date": "2026-05",
   "proof_url": "https://www.fireapparatusmagazine.com/?p=208526",
   "proof_quote": "Spartan Gladiator MFD cab and chassis with 10-inch raised roof",
-  "other_signals": "Sold or took bids on a truck since May: 2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck (sold $33,300)",
+  "other_signals": "Sold a truck at auction since May: 2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck (sold $33,300)",
   "named_in_source": "Corning Joint Fire District",
   "name_match": "exact",
   "fdid": "51014",
@@ -1608,13 +1754,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": {
+   "from": "2027-05",
+   "to": "2028-05",
+   "how": "ordered May 2026; builds take a year or more"
+  },
   "rank": 32,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "East Marion Fire Department",
   "registry_name": "East Marion Fire Department",
@@ -1640,6 +1792,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is an aerial quint; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-10",
+   "how": "ordered Oct 2026; builds take a year or more"
   },
   "rank": 33,
   "tier": "2 Call this month",
@@ -1678,7 +1836,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Gordon Heights Fire Department",
   "registry_name": "Gordon Heights Fire Department",
@@ -1705,13 +1863,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 34,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Hagaman Volunteer Fire Department",
   "registry_name": "Hagaman Volunteer Fire Department",
@@ -1738,13 +1902,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 35,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "INWOOD FIRE DEPARTMENT OF INWOOD",
   "registry_name": "Inwood Fire Department",
@@ -1771,13 +1941,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 36,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Jamesport Fire Department",
   "registry_name": "Jamesport Fire Department",
@@ -1804,13 +1980,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 37,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Kenilworth Fire Company 1",
   "registry_name": "Kenilworth Fire Company 1",
@@ -1836,6 +2018,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a Star Series pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
   "rank": 38,
   "tier": "2 Call this month",
@@ -1874,7 +2062,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Leicester-Cuylerville Fire District",
   "registry_name": "Leicester Volunteer Fire Company, Inc.",
@@ -1900,6 +2088,12 @@
    "year": 2004,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "voted to sell Mar 2026"
   },
   "rank": 39,
   "tier": "2 Call this month",
@@ -1938,7 +2132,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Manhasset - Lakeville Fire Department",
   "registry_name": "Manhasset - Lakeville Fire Department",
@@ -1964,6 +2158,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "voted to sell Feb 2026"
   },
   "rank": 40,
   "tier": "2 Call this month",
@@ -2002,7 +2202,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "McLean Fire Department",
   "registry_name": "McLean Fire Department",
@@ -2029,13 +2229,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 41,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "North Babylon Volunteer Fire Company",
   "registry_name": "North Babylon Volunteer Fire Company",
@@ -2062,13 +2268,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 42,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "North Bay Volunteer Fire Department",
   "registry_name": "North Bay Volunteer Fire Department",
@@ -2095,13 +2307,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 43,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "North Merrick Fire Department Inc.",
   "registry_name": "",
@@ -2128,13 +2346,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 44,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "partly confirmed: Civic IQ page blocked fetch (403); search snippets show $985,000 bond, 2025 Pierce pumper/rescue, loan resolution Apr 6 2026, USDA loan finalized May 11 2026. Truck is already delivered; April agenda calls it 'Pierce Aerial 100 LSL', so truck type is unclear.",
+  "checked": "partly",
   "score": 4.0,
   "department": "Painted Post Fire Department",
   "registry_name": "Painted Post Fire Department",
@@ -2161,13 +2385,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
+  },
   "rank": 45,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Pultneyville Fire Company, Inc.",
   "registry_name": "Pultneyville Fire Company, Inc.",
@@ -2193,6 +2423,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
   "rank": 46,
   "tier": "2 Call this month",
@@ -2231,7 +2467,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Sayville Fire Department",
   "registry_name": "Sayville Fire Department",
@@ -2257,6 +2493,12 @@
    "year": 1999,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "voted to sell Apr 2026"
   },
   "rank": 47,
   "tier": "2 Call this month",
@@ -2295,7 +2537,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Skenesborough Emergency Squad",
   "registry_name": "",
@@ -2322,13 +2564,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 48,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Slate Hill Fire Department",
   "registry_name": "Slate Hill Fire Department",
@@ -2355,13 +2603,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "money approved Aug 2026; order, build, then sale"
+  },
   "rank": 49,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Village of Angelica Fire Department",
   "registry_name": "Village of Angelica Fire Department",
@@ -2387,6 +2641,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; the old one usually lists within six months"
   },
   "rank": 50,
   "tier": "2 Call this month",
@@ -2425,7 +2685,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Wading River Fire Department",
   "registry_name": "Wading River Fire Department",
@@ -2452,13 +2712,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 51,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.5,
   "department": "Coldenham Fire Company",
   "registry_name": "Coldenham Fire Company",
@@ -2471,7 +2737,7 @@
   "signal_date": "2025-06-01",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
   "proof_quote": "E-ONE—Coldenham Fire Department, Walden, pumper. Delivery in October 2027.",
-  "other_signals": "Sold or took bids on a truck since May: 1975 Diamond Reo/4-Guys fire tanker",
+  "other_signals": "Sold a truck at auction since May: 1975 Diamond Reo/4-Guys fire tanker",
   "named_in_source": "Coldenham Fire Department",
   "name_match": "exact",
   "fdid": "36006",
@@ -2484,6 +2750,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "sold",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 52,
   "tier": "3 Watch",
@@ -2522,7 +2794,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Atlantic Steamer Fire Company 1",
   "registry_name": "Atlantic Steamer Fire Company 1",
@@ -2549,13 +2821,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 53,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Attica Fire Department",
   "registry_name": "Attica Fire Department",
@@ -2563,7 +2841,7 @@
   "county": "Wyoming",
   "type": "Volunteer",
   "website": "www.atticafire.com",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1993 International Conventional Cab Pumper (sold $4,700)",
   "signal_date": "2026-08-13",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -2582,13 +2860,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 54,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Aurora-Ledyard Fire District",
   "registry_name": "Aurora Volunteer Fire Department",
@@ -2596,7 +2876,7 @@
   "county": "Cayuga",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "2002 Ford E450 Ambulance (sold $5,900)",
   "signal_date": "2026-10-05",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -2615,13 +2895,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 55,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Batavia Fire Department, Inc.",
   "registry_name": "Batavia Fire Department, Inc.",
@@ -2647,6 +2929,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-02",
+   "how": "new truck due Aug 2027; old trucks usually list within six months of delivery"
   },
   "rank": 56,
   "tier": "3 Watch",
@@ -2685,7 +2973,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Binghamton Fire Bureau",
   "registry_name": "Binghamton Fire Bureau",
@@ -2711,6 +2999,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a RIV pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck was due Aug 2026; the old one usually lists within six months"
   },
   "rank": 57,
   "tier": "3 Watch",
@@ -2749,7 +3043,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Brushton Volunteer F.D.",
   "registry_name": "Brushton Volunteer Fire Department",
@@ -2757,7 +3051,7 @@
   "county": "Franklin",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1989 Ford F450 Super Duty Ambulance (sold $8,100)",
   "signal_date": "2026-10-04",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -2776,13 +3070,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 58,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Camden Volunteer Fire Department",
   "registry_name": "Camden Volunteer Fire Department",
@@ -2809,13 +3105,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2028-05",
+   "how": "ordered May 2026; builds take a year or more"
+  },
   "rank": 59,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Cape Vincent Fire Department",
   "registry_name": "Cape Vincent Fire Department",
@@ -2842,13 +3144,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-07",
+   "how": "ordered Jul 2026; builds take a year or more"
+  },
   "rank": 60,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Celoron Hose Company Station 1",
   "registry_name": "Celoron Hose Company Station 1",
@@ -2874,6 +3182,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 61,
   "tier": "3 Watch",
@@ -2912,7 +3226,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cincinnatus Fire Department",
   "registry_name": "Cincinnatus Fire Department",
@@ -2938,6 +3252,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-02",
+   "how": "new truck due Aug 2027; old trucks usually list within six months of delivery"
   },
   "rank": 62,
   "tier": "3 Watch",
@@ -2976,7 +3296,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Columbia Litchfield Fire District",
   "registry_name": "",
@@ -3003,13 +3323,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-07",
+   "how": "ordered Jul 2026; builds take a year or more"
+  },
   "rank": 63,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Coram Fire Department",
   "registry_name": "Coram Fire Department",
@@ -3036,13 +3362,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-07",
+   "how": "ordered Jul 2026; builds take a year or more"
+  },
   "rank": 64,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Cortland Fire Department",
   "registry_name": "Cortland Fire Department",
@@ -3069,13 +3401,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "money approved Apr 2026; order, build, then sale"
+  },
   "rank": 65,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Deansboro Fire District",
   "registry_name": "",
@@ -3101,6 +3439,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; old trucks usually list within six months of delivery"
   },
   "rank": 66,
   "tier": "3 Watch",
@@ -3139,7 +3483,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "East Pembroke Fire Department",
   "registry_name": "East Pembroke Fire Department",
@@ -3165,6 +3509,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a top-mount pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-03",
+   "how": "new truck due Sep 2027; old trucks usually list within six months of delivery"
   },
   "rank": 67,
   "tier": "3 Watch",
@@ -3203,7 +3553,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Elbridge Volunteer Fire Department",
   "registry_name": "Elbridge Volunteer Fire Department",
@@ -3211,7 +3561,7 @@
   "county": "Onondaga",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1998 Freightliner FL70 Rescue Truck (sold $10,200)",
   "signal_date": "2026-10-14",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -3230,13 +3580,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 68,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Farmingville Fire Department",
   "registry_name": "Farmingville Fire Department",
@@ -3263,13 +3615,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": null,
   "rank": 69,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "partly confirmed: Page fetch now returns 404; search snippet shows 3 public informational meetings (Sep 2, 17, 30 2026) on a fire apparatus bond for Gates FD (Gates + part of Chili, Monroe Co). Record date 2026-08-24 and truck type not verified; no amount or vote date.",
+  "checked": "partly",
   "score": 3.0,
   "department": "Gates Fire District",
   "registry_name": "Gates Fire District",
@@ -3296,13 +3650,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "money approved Aug 2026; order, build, then sale"
+  },
   "rank": 70,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Greenfield Fire District 1",
   "registry_name": "Greenfield Fire District 1",
@@ -3329,13 +3689,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": null,
   "rank": 71,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Hammond Fire & Rescue",
   "registry_name": "Hammond Fire & Rescue",
@@ -3362,13 +3724,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2028-01",
+   "how": "ordered Jan 2026; builds take a year or more"
+  },
   "rank": 72,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Hartford Volunteer Fire Company, Inc.",
   "registry_name": "Hartford Volunteer Fire Company, Inc.",
@@ -3395,13 +3763,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "ordered Aug 2026; builds take a year or more"
+  },
   "rank": 73,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Hartsdale Fire District",
   "registry_name": "Hartsdale Fire District",
@@ -3428,13 +3802,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "money approved Apr 2026; order, build, then sale"
+  },
   "rank": 74,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Howells Fire District",
   "registry_name": "Howells Fire District",
@@ -3461,13 +3841,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": null,
   "rank": 75,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Inlet Fire Department",
   "registry_name": "Inlet Fire Department",
@@ -3494,13 +3876,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "ordered Mar 2026; builds take a year or more"
+  },
   "rank": 76,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Lake George Volunteer Fire Department",
   "registry_name": "Lake George Volunteer Fire Department",
@@ -3527,13 +3915,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "money approved Apr 2026; order, build, then sale"
+  },
   "rank": 77,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lyncourt Volunteer Fire Department",
   "registry_name": "Lyncourt Volunteer Fire Department",
@@ -3559,6 +3953,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
   },
   "rank": 78,
   "tier": "3 Watch",
@@ -3597,7 +3997,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Munnsville Fire Department",
   "registry_name": "Munnsville Fire Department",
@@ -3624,13 +4024,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-12",
+   "how": "ordered Dec 2025; builds take a year or more"
+  },
   "rank": 79,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "New Castle Fire District No. 1",
   "registry_name": "Chappaqua Volunteer Fire Department",
@@ -3657,13 +4063,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "money approved Apr 2026; order, build, then sale"
+  },
   "rank": 80,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "North Greece Fire District 2",
   "registry_name": "North Greece Fire District 2",
@@ -3690,13 +4102,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": null,
   "rank": 81,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "North West Fire District",
   "registry_name": "",
@@ -3723,13 +4137,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-07",
+   "how": "ordered Jul 2026; builds take a year or more"
+  },
   "rank": 82,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Oswego Fire Department",
   "registry_name": "Oswego Fire Department",
@@ -3756,13 +4176,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "ordered Mar 2026; builds take a year or more"
+  },
   "rank": 83,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Peekskill Fire Department",
   "registry_name": "Peekskill Fire Department",
@@ -3789,13 +4215,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": null,
   "rank": 84,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Rome Fire Department",
   "registry_name": "Rome Fire Department",
@@ -3821,6 +4249,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 85,
   "tier": "3 Watch",
@@ -3859,7 +4293,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Sheridan Park Fire District No. 4",
   "registry_name": "",
@@ -3886,13 +4320,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "ordered Aug 2026; builds take a year or more"
+  },
   "rank": 86,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Smithfield Fire Department",
   "registry_name": "Smithfield Fire Department",
@@ -3918,6 +4358,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
   },
   "rank": 87,
   "tier": "3 Watch",
@@ -3956,7 +4402,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Smyrna Fire Department",
   "registry_name": "Smyrna Fire Department",
@@ -3964,7 +4410,7 @@
   "county": "Chenango",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1987 GMC 7000 Rescue Truck (sold $1,575)",
   "signal_date": "2026-08-26",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -3983,13 +4429,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 88,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "South Butler Fire Department",
   "registry_name": "South Butler Fire Department",
@@ -3997,7 +4445,7 @@
   "county": "Wayne",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1990 GMC Topkick 7000 Pumper Fire Truck (sold $5,400)",
   "signal_date": "2026-09-11",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4016,13 +4464,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 89,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Southwood Fire Department",
   "registry_name": "",
@@ -4049,13 +4499,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2028-05",
+   "how": "ordered May 2026; builds take a year or more"
+  },
   "rank": 90,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Stittville Fire Department",
   "registry_name": "Stittville Fire Department",
@@ -4082,13 +4538,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "ordered Mar 2026; builds take a year or more"
+  },
   "rank": 91,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Strykersville Volunteer Fire Company, Inc.",
   "registry_name": "Strykersville Volunteer Fire Company, Inc.",
@@ -4115,13 +4577,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "ordered Aug 2026; builds take a year or more"
+  },
   "rank": 92,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Taberg Volunteer Fire Company, Inc.",
   "registry_name": "Taberg Volunteer Fire Company, Inc.",
@@ -4147,6 +4615,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a topmount pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; old trucks usually list within six months of delivery"
   },
   "rank": 93,
   "tier": "3 Watch",
@@ -4185,7 +4659,7 @@
   }
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Town of Carlton Fire Co. No. 1 Inc.",
   "registry_name": "Town of Carlton Fire Co. No. 1 Inc.",
@@ -4193,7 +4667,7 @@
   "county": "Orleans",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper (sold $7,000)",
   "signal_date": "2026-10-21",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4212,13 +4686,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 94,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Town of Clayton Volunteer Fire Department",
   "registry_name": "Town of Clayton Volunteer Fire Department",
@@ -4245,13 +4721,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "money approved Mar 2026; order, build, then sale"
+  },
   "rank": 95,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Town of Corinth Hwy",
   "registry_name": "",
@@ -4259,7 +4741,7 @@
   "county": "",
   "type": "",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "2010 Ford E-350 Ambulance (sold $880)",
   "signal_date": "2026-10-21",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4278,13 +4760,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 96,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Tupper Lake Volunteer Fire Department, Inc.",
   "registry_name": "Tupper Lake Volunteer Fire Department, Inc.",
@@ -4292,7 +4776,7 @@
   "county": "Franklin",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1994 Pierce Lance Pumper (sold $10,000)",
   "signal_date": "2026-09-04",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4311,13 +4795,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 97,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Uniondale Fire Department",
   "registry_name": "Uniondale Fire Department",
@@ -4344,13 +4830,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": null,
   "rank": 98,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Verdoy Fire District",
   "registry_name": "Verdoy Fire District",
@@ -4376,6 +4864,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; old trucks usually list within six months of delivery"
   },
   "rank": 99,
   "tier": "3 Watch",
@@ -4414,7 +4908,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Wayne Fire Department",
   "registry_name": "Wayne Fire Department",
@@ -4441,13 +4935,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "ordered Mar 2026; builds take a year or more"
+  },
   "rank": 100,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "West Winfield Fire Department",
   "registry_name": "West Winfield Fire Department",
@@ -4474,13 +4974,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "ordered Apr 2026; builds take a year or more"
+  },
   "rank": 101,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "White Plains Fire Department",
   "registry_name": "White Plains Fire Department",
@@ -4488,7 +4994,7 @@
   "county": "Westchester",
   "type": "Career",
   "website": "https://www.cityofwhiteplains.com",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "2010 Freightliner M2 106 Pumper Fire Truck (sold $10,800)",
   "signal_date": "2026-10-23",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4507,13 +5013,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 102,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 3.0,
   "department": "Wyoming County Fire & Emergency Services",
   "registry_name": "",
@@ -4540,13 +5048,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": null,
   "rank": 103,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 2.0,
   "department": "Auburn NY Fire Department",
   "registry_name": "Auburn NY Fire Department",
@@ -4554,7 +5064,7 @@
   "county": "Cayuga",
   "type": "Career",
   "website": "https://www.auburnny.gov/fire-department",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1993 Spartan Gladiator Saulsbury Pumper Fire Truck (sold $5,800)",
   "signal_date": "2026-07-14",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4573,13 +5083,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 104,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 2.0,
   "department": "Cutchogue Fire Department",
   "registry_name": "Cutchogue Fire Department",
@@ -4587,7 +5099,7 @@
   "county": "Suffolk",
   "type": "Mostly volunteer",
   "website": "https://www.cutchoguefiredept.org/",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "2015 Chevrolet Express Ambulance (sold $12,000)",
   "signal_date": "2026-08-10",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4606,13 +5118,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 105,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 2.0,
   "department": "Ellenburg Depot Volunteer Fire Department",
   "registry_name": "Ellenburg Depot Volunteer Fire Department",
@@ -4620,7 +5134,7 @@
   "county": "Clinton",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1992 Pierce Pumper (sold $4,350)",
   "signal_date": "2026-05-08",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4639,13 +5153,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 106,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 2.0,
   "department": "Hopewell Volunteer Fire Department, Inc.",
   "registry_name": "Hopewell Volunteer Fire Department, Inc.",
@@ -4653,7 +5169,7 @@
   "county": "Ontario",
   "type": "Volunteer",
   "website": "https://www.hopewellfire.org",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1998 Freightliner FL80 Pierce Saber Pumper (sold $10,900)",
   "signal_date": "2026-06-11",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4672,13 +5188,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 107,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 2.0,
   "department": "Pine Bush Fire Department",
   "registry_name": "Pine Bush Fire Department",
@@ -4686,7 +5204,7 @@
   "county": "Orange",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "2006 Ford E350 XL Super Duty Ambulance (sold $6,500)",
   "signal_date": "2026-05-07",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4705,13 +5223,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 108,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 2.0,
   "department": "Richford Fire Department",
   "registry_name": "Richford Fire Department",
@@ -4719,7 +5239,7 @@
   "county": "Tioga",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1986 Ford F-350 Brush Fire Truck (sold $3,150)",
   "signal_date": "2026-07-16",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4738,13 +5258,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 109,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 2.0,
   "department": "Village of Delevan Hwy",
   "registry_name": "",
@@ -4752,7 +5274,7 @@
   "county": "",
   "type": "",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "2008 Ford E450 PL Custom Ambulance (sold $3,800)",
   "signal_date": "2026-05-19",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4771,13 +5293,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 110,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 2.0,
   "department": "Village of Hudson Falls DPW",
   "registry_name": "",
@@ -4785,7 +5309,7 @@
   "county": "",
   "type": "",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "1990 Pierce Fire Truck (sold $3,500)",
   "signal_date": "2026-05-01",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4804,13 +5328,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 111,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "read on the auction site",
+  "checked": "auction_site",
   "score": 2.0,
   "department": "Wilton EMS",
   "registry_name": "",
@@ -4818,7 +5344,7 @@
   "county": "",
   "type": "",
   "website": "",
-  "why_call": "Sold or took bids on a truck since May",
+  "why_call": "Sold a truck at auction since May",
   "detail": "2017 Ford F-450 Super Duty Extended Cab Ambulance (sold $17,200)",
   "signal_date": "2026-07-15",
   "proof_url": "https://www.auctionsinternational.com/pastsales/",
@@ -4837,13 +5363,15 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 112,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 1.0,
   "department": "Ballston Spa Fire Department",
   "registry_name": "Ballston Spa Fire Department",
@@ -4870,6 +5398,8 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "sold",
+  "window": null,
   "rank": 113,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",

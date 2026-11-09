@@ -1,6 +1,6 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "Hayward Fire Department",
   "registry_name": "Hayward Fire Department",
@@ -26,6 +26,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a tractor drawn aerial ladder; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-01",
+   "how": "new truck in service Jul 2026; the old one usually lists within six months"
   },
   "rank": 1,
   "tier": "2 Call this month",
@@ -64,7 +70,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "San Francisco Fire Department",
   "registry_name": "San Francisco Fire Department",
@@ -90,6 +96,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are type 1 pumper (hose tender), three units; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-07",
+   "to": "2026-01",
+   "how": "new truck arrived Jul 2025; the old one may already have sold quietly"
   },
   "rank": 2,
   "tier": "2 Call this month",
@@ -128,7 +140,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Bridgeport Fire Protection Dis",
   "registry_name": "",
@@ -155,13 +167,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Contra Costa County Fire Protection District",
   "registry_name": "Contra Costa County Fire Protection District",
@@ -188,13 +206,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-03",
+   "to": "2027-09",
+   "how": "grant awarded Sep 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Happy Camp Fire Protection District",
   "registry_name": "",
@@ -221,13 +245,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Karuk Tribe",
   "registry_name": "Happy Camp Ranger District, Klamath N.F. USFS",
@@ -253,6 +283,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wildland quick-attack; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
   "rank": 6,
   "tier": "2 Call this month",
@@ -291,7 +327,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Lake County Fire Protection District",
   "registry_name": "Lake County Fire Protection District",
@@ -317,6 +353,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wetside pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-11",
+   "to": "2029-05",
+   "how": "new truck due Nov 2028; old trucks usually list within six months of delivery"
   },
   "rank": 7,
   "tier": "2 Call this month",
@@ -355,7 +397,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Lake Forest Fire Protection District",
   "registry_name": "Lake Forest Fire Protection District",
@@ -382,13 +424,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Orange County Fire Authority 10 Severe Service",
   "registry_name": "",
@@ -414,6 +462,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are pumpers; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
   "rank": 9,
   "tier": "2 Call this month",
@@ -452,7 +506,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Salyer Volunteer Fire Department",
   "registry_name": "Salyer Volunteer Fire Department",
@@ -479,13 +533,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "South Lake County Fire Protection District",
   "registry_name": "",
@@ -512,13 +572,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Vacaville Fire Protection Distrist",
   "registry_name": "",
@@ -545,13 +611,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Ventura City Fire Department",
   "registry_name": "Ventura City Fire Department",
@@ -578,13 +650,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Woodbridge Fire Protection District",
   "registry_name": "Woodbridge Fire Protection District",
@@ -611,13 +689,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Butte County Fire Department",
   "registry_name": "Butte County Fire Department",
@@ -643,6 +727,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-05",
+   "to": "2026-11",
+   "how": "new truck was due May 2026; the old one usually lists within six months"
   },
   "rank": 15,
   "tier": "3 Watch",
@@ -681,7 +771,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "City of San Bernardino Fire Department",
   "registry_name": "City of San Bernardino Fire Department",
@@ -707,6 +797,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are pumpers; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck was due Aug 2026; the old one usually lists within six months"
   },
   "rank": 16,
   "tier": "3 Watch",
@@ -745,7 +841,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Fresno County Fire Protection District",
   "registry_name": "Fresno County Fire Protection District",
@@ -771,6 +867,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two pumper-tankers; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
   },
   "rank": 17,
   "tier": "3 Watch",
@@ -809,7 +911,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Happy Valley Fire Protection District",
   "registry_name": "Happy Valley Fire Protection District",
@@ -835,6 +937,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two quick-attack units; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-05",
+   "to": "2026-11",
+   "how": "new truck was due May 2026; the old one usually lists within six months"
   },
   "rank": 18,
   "tier": "3 Watch",
@@ -873,7 +981,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Junction City Volunteer Fire Department",
   "registry_name": "Junction City Volunteer Fire Department",
@@ -900,13 +1008,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Los Angeles County Fire Department",
   "registry_name": "Los Angeles County Fire Department",
@@ -933,13 +1047,19 @@
    "year_how": null,
    "type_how": "the new truck is an air/light truck; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
+  },
   "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Mountain House Fire Rescue",
   "registry_name": "",
@@ -965,6 +1085,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two pumpers; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-03",
+   "to": "2025-09",
+   "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
   },
   "rank": 21,
   "tier": "3 Watch",
@@ -1003,7 +1129,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Orange County Fire Authority",
   "registry_name": "Orange County Fire Authority",
@@ -1029,6 +1155,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-08",
+   "to": "2026-02",
+   "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
   },
   "rank": 22,
   "tier": "3 Watch",
@@ -1067,7 +1199,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Redondo Beach Fire Department",
   "registry_name": "Redondo Beach Fire Department",
@@ -1093,6 +1225,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-04",
+   "to": "2025-10",
+   "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
   },
   "rank": 23,
   "tier": "3 Watch",
@@ -1131,7 +1269,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "San Jose Fire Department",
   "registry_name": "San Jose Fire Department",
@@ -1157,6 +1295,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a 105-foot, four-section tractor-drawn aerial; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-10",
+   "how": "ordered Oct 2025; builds take a year or more"
   },
   "rank": 24,
   "tier": "3 Watch",
@@ -1195,7 +1339,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "San Luis Obispo City Fire Department",
   "registry_name": "San Luis Obispo City Fire Department",
@@ -1221,6 +1365,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two Danko quick-attack trucks; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-01",
+   "how": "new truck was due Jul 2026; the old one usually lists within six months"
   },
   "rank": 25,
   "tier": "3 Watch",
@@ -1259,7 +1409,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "San Manuel Band of Mission Indians Fire Department",
   "registry_name": "San Manuel Band of Mission Indians Fire Department",
@@ -1285,6 +1435,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wildland quick-attack unit; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-05",
+   "to": "2026-11",
+   "how": "new truck was due May 2026; the old one usually lists within six months"
   },
   "rank": 26,
   "tier": "3 Watch",
@@ -1323,7 +1479,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "South Monterey County Fire Protection District",
   "registry_name": "South Monterey County Fire Protection District",
@@ -1349,6 +1505,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are two wildland quick-attack units; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-05",
+   "to": "2026-11",
+   "how": "new truck was due May 2026; the old one usually lists within six months"
   },
   "rank": 27,
   "tier": "3 Watch",
@@ -1387,7 +1549,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Stockton Fire Department",
   "registry_name": "Stockton Fire Department",
@@ -1413,6 +1575,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a tractor-drawn aerial ladder; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-06",
+   "to": "2025-12",
+   "how": "new truck arrived Jun 2025; the old one may already have sold quietly"
   },
   "rank": 28,
   "tier": "3 Watch",
@@ -1451,7 +1619,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Tehama County Fire Department",
   "registry_name": "Tehama County Fire Department",
@@ -1477,6 +1645,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wildland urban interface pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "ordered Apr 2026; builds take a year or more"
   },
   "rank": 29,
   "tier": "3 Watch",
@@ -1515,7 +1689,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Vallejo Fire Department",
   "registry_name": "Vallejo Fire Department",
@@ -1541,6 +1715,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are three wildland quick-attack trucks; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 30,
   "tier": "3 Watch",

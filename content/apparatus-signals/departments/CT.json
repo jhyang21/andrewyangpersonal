@@ -1,6 +1,6 @@
 [
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 6.0,
   "department": "New Hartford Fire Department",
   "registry_name": "New Hartford Fire Department",
@@ -26,6 +26,12 @@
    "year": 2004,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Aug 2026"
   },
   "rank": 1,
   "tier": "1 Call this week",
@@ -64,7 +70,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 6.0,
   "department": "Noroton Heights Fire Department, Inc.",
   "registry_name": "Noroton Heights Fire Department, Inc.",
@@ -90,6 +96,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Aug 2026"
   },
   "rank": 2,
   "tier": "1 Call this week",
@@ -128,7 +140,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 5.0,
   "department": "Ansonia Fire Department",
   "registry_name": "Ansonia Fire Department",
@@ -154,6 +166,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Apr 2026"
   },
   "rank": 3,
   "tier": "2 Call this month",
@@ -192,7 +210,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "Bradley International Airport Fire Department",
   "registry_name": "Bradley International Airport Fire Department",
@@ -219,13 +237,19 @@
    "year_how": null,
    "type_how": "the new truck is an airport rescue amd firefighting vehicle (stryker 6×6); departments usually replace like with like"
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
+  },
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 5.0,
   "department": "Columbia Volunteer Fire Department, Inc.",
   "registry_name": "Columbia Volunteer Fire Department, Inc.",
@@ -251,6 +275,12 @@
    "year": 1991,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Jan 2026"
   },
   "rank": 5,
   "tier": "2 Call this month",
@@ -289,7 +319,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 5.0,
   "department": "Norfolk Volunteer Fire Department, Inc.",
   "registry_name": "Norfolk Volunteer Fire Department, Inc.",
@@ -315,6 +345,12 @@
    "year": 1995,
    "year_how": "from age",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "money approved Aug 2026; order, build, then sale"
   },
   "rank": 6,
   "tier": "2 Call this month",
@@ -353,7 +389,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 5.0,
   "department": "Tolland Fire Department",
   "registry_name": "Tolland Fire Department",
@@ -380,13 +416,19 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Dec 2024"
+  },
   "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "partly confirmed: name: Town of Montville -- Truck, $5,000 opening bid, no title and online auction are confirmed (CT Insider via Yahoo, Oct. 16, 2025; the quote is a verbatim remark by the auction site's CEO). No page names a fire department or company: Yahoo/CT Insider, Fire Apparatus Magazine (Oct. 14, 2025: 'a 1991 pumper truck owned by the town of Montville') and a ride-ct.com post (Oct. 13, 2025) all name only the town. The town says it replaced the truck with a new engine last year. A search summary says the auction closed Oct. 17 with the reserve not met; I did not confirm that on a page I opened.",
+  "checked": "partly",
   "score": 5.0,
   "department": "Town of Montville Fire Department",
   "registry_name": "Town of Montville Fire Department",
@@ -412,6 +454,12 @@
    "year": 1991,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Oct 2025"
   },
   "rank": 8,
   "tier": "2 Call this month",
@@ -450,7 +498,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Avon Volunteer Fire Department, Inc.",
   "registry_name": "Avon Volunteer Fire Department, Inc.",
@@ -476,6 +524,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-10",
+   "how": "ordered Oct 2026; builds take a year or more"
   },
   "rank": 9,
   "tier": "2 Call this month",
@@ -514,7 +568,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Lisbon Fire Department",
   "registry_name": "Lisbon Fire Department",
@@ -541,13 +595,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Litchfield Fire Company, Inc.",
   "registry_name": "Litchfield Fire Company, Inc.",
@@ -573,6 +633,12 @@
    "year": 1997,
    "year_how": "stated",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-10",
+   "how": "ordered Oct 2025; builds take a year or more"
   },
   "rank": 11,
   "tier": "2 Call this month",
@@ -611,7 +677,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Old Lyme Fire Department",
   "registry_name": "Old Lyme Fire Department",
@@ -638,13 +704,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "SEYMOUR AMBULANCE ASSOCIATION, INC.",
   "registry_name": "",
@@ -671,13 +743,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Simsbury Volunteer Fire Department",
   "registry_name": "Simsbury Volunteer Fire Department",
@@ -703,6 +781,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "ordered Apr 2026; builds take a year or more"
   },
   "rank": 14,
   "tier": "2 Call this month",
@@ -741,7 +825,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Torrington Fire Department",
   "registry_name": "Torrington Fire Department",
@@ -767,6 +851,12 @@
    "year": null,
    "year_how": null,
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "money approved Aug 2026; order, build, then sale"
   },
   "rank": 15,
   "tier": "2 Call this month",
@@ -805,7 +895,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "West Haven Fire Dept 1St Dist",
   "registry_name": "West Haven Fire Department",
@@ -832,13 +922,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "City of Meriden, Department of Fire and Emergency Services",
   "registry_name": "City of Meriden, Department of Fire and Emergency Services",
@@ -864,6 +960,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a tractor-drawn aerial; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2028-06",
+   "how": "ordered Jun 2026; builds take a year or more"
   },
   "rank": 17,
   "tier": "3 Watch",
@@ -902,7 +1004,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Clinton Volunteer Fire Department",
   "registry_name": "Clinton Volunteer Fire Department",
@@ -929,13 +1031,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-05",
+   "to": "2027-05",
+   "how": "money approved May 2025; order, build, then sale"
+  },
   "rank": 18,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Franklin Volunteer Fire Department, Inc.",
   "registry_name": "Franklin Volunteer Fire Department, Inc.",
@@ -962,13 +1070,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2029-01",
+   "how": "grant awarded Jan 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Killingworth Volunteer Fire Company, Inc",
   "registry_name": "Killingworth Volunteer Fire Company, Inc",
@@ -994,6 +1108,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-03",
+   "how": "new truck due Sep 2027; old trucks usually list within six months of delivery"
   },
   "rank": 20,
   "tier": "3 Watch",
@@ -1032,7 +1152,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Plymouth Fire Department",
   "registry_name": "",
@@ -1058,6 +1178,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
   },
   "rank": 21,
   "tier": "3 Watch",
@@ -1096,7 +1222,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Town of Farmington Fire Department",
   "registry_name": "Town of Farmington Fire Department",
@@ -1122,6 +1248,12 @@
    "year": 2004,
    "year_how": "from age",
    "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-12",
+   "how": "money approved Dec 2024; order, build, then sale"
   },
   "rank": 22,
   "tier": "3 Watch",
@@ -1160,7 +1292,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 3.0,
   "department": "Weston Volunteer Fire Department",
   "registry_name": "Weston Volunteer Fire Department",
@@ -1187,13 +1319,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-09",
+   "how": "ordered Sep 2026; builds take a year or more"
+  },
   "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Branford Fire Department",
   "registry_name": "Branford Fire Department",
@@ -1220,13 +1358,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "ordered Mar 2026; builds take a year or more"
+  },
   "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Cornwall Volunteer Fire Department",
   "registry_name": "Cornwall Volunteer Fire Department",
@@ -1253,13 +1397,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2028-05",
+   "how": "ordered May 2026; builds take a year or more"
+  },
   "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "East Haddam Volunteer Fire Department",
   "registry_name": "East Haddam Volunteer Fire Department",
@@ -1286,13 +1436,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-07",
+   "how": "ordered Jul 2026; builds take a year or more"
+  },
   "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 2.0,
   "department": "Guilford Fire Department",
   "registry_name": "Guilford Fire Department",
@@ -1319,13 +1475,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "ordered Apr 2026; builds take a year or more"
+  },
   "rank": 27,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Hawleyville Volunteer Fire Company #1, Inc.",
   "registry_name": "Hawleyville Volunteer Fire Company #1, Inc.",
@@ -1352,13 +1514,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-08",
+   "how": "ordered Aug 2025; builds take a year or more"
+  },
   "rank": 28,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Hazardville Fire Department",
   "registry_name": "Hazardville Fire Department",
@@ -1385,13 +1553,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-12",
+   "how": "ordered Dec 2024; builds take a year or more"
+  },
   "rank": 29,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Mystic Fire Department",
   "registry_name": "Mystic Fire Department",
@@ -1418,13 +1592,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-09",
+   "how": "ordered Sep 2025; builds take a year or more"
+  },
   "rank": 30,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "New Haven Fire Department",
   "registry_name": "New Haven Fire Department",
@@ -1451,13 +1631,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-07",
+   "how": "ordered Jul 2026; builds take a year or more"
+  },
   "rank": 31,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "North Branford Fire Department",
   "registry_name": "North Branford Fire Department",
@@ -1484,13 +1670,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-11",
+   "how": "ordered Nov 2025; builds take a year or more"
+  },
   "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Plainfield Fire Company",
   "registry_name": "Plainfield Fire Company",
@@ -1517,13 +1709,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-09",
+   "how": "ordered Sep 2025; builds take a year or more"
+  },
   "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 2.0,
   "department": "Plainville Fire Department",
   "registry_name": "Plainville Fire Department",
@@ -1550,13 +1748,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "ordered Aug 2026; builds take a year or more"
+  },
   "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Seymour Fire Department",
   "registry_name": "",
@@ -1583,13 +1787,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-12",
+   "how": "ordered Dec 2024; builds take a year or more"
+  },
   "rank": 35,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Southbury Volunteer Firemen's Association",
   "registry_name": "Southbury Volunteer Firemen's Association",
@@ -1616,13 +1826,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "ordered Mar 2026; builds take a year or more"
+  },
   "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 2.0,
   "department": "Stamford Fire Department",
   "registry_name": "Stamford Fire Department",
@@ -1649,13 +1865,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-10",
+   "how": "ordered Oct 2025; builds take a year or more"
+  },
   "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 2.0,
   "department": "Westfield Volunteer Fire Department",
   "registry_name": "Westfield Volunteer Fire Department",
@@ -1682,13 +1904,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2028-02",
+   "how": "ordered Feb 2026; builds take a year or more"
+  },
   "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 2.0,
   "department": "Westport Fire Department",
   "registry_name": "Westport Fire Department",
@@ -1714,6 +1942,12 @@
    "year": null,
    "year_how": null,
    "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2028-02",
+   "how": "ordered Feb 2026; builds take a year or more"
   },
   "rank": 39,
   "tier": "3 Watch",

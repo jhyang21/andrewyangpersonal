@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Community Rescue Service",
   "registry_name": "",
@@ -27,13 +27,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Earleigh Heights Volunteer Fire Company",
   "registry_name": "",
@@ -60,13 +66,19 @@
    "year_how": null,
    "type_how": "the new truck is an air/light unit; departments usually replace like with like"
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; the old one usually lists within six months"
+  },
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Eastport Volunteer Fire Company",
   "registry_name": "",
@@ -92,6 +104,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a custom pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-09",
+   "how": "ordered Sep 2026; builds take a year or more"
   },
   "rank": 3,
   "tier": "2 Call this month",
@@ -130,7 +148,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Fruitland Volunteer Fire Company",
   "registry_name": "Fruitland Volunteer Fire Company",
@@ -157,13 +175,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "St. Michaels Fire Department, Inc.",
   "registry_name": "St. Michaels Fire Department, Inc.",
@@ -189,6 +213,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wildland unit; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2028-06",
+   "how": "new truck due Dec 2027; old trucks usually list within six months of delivery"
   },
   "rank": 5,
   "tier": "2 Call this month",
@@ -227,7 +257,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "The Earleigh Heights Volunteer Fire Company of Anne Arundel County, Maryland.",
   "registry_name": "",
@@ -254,13 +284,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Anne Arundel County Fire Department",
   "registry_name": "Anne Arundel County Fire Department",
@@ -286,6 +322,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are three pumpers; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
   },
   "rank": 7,
   "tier": "3 Watch",
@@ -324,7 +366,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Charles County Department of Emergency Services",
   "registry_name": "La Plata Volunteer Fire Department Inc",
@@ -351,13 +393,19 @@
    "year_how": null,
    "type_how": "the new truck is a hazmat unit; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
+  },
   "rank": 8,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Charles County Emergency Services",
   "registry_name": "",
@@ -384,13 +432,19 @@
    "year_how": null,
    "type_how": "the new truck is a hazmat unit; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
+  },
   "rank": 9,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 3.0,
   "department": "Fire Department Administrators Service",
   "registry_name": "",
@@ -417,13 +471,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 10,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Howard County Fire and Rescue",
   "registry_name": "Howard County Fire and Rescue",
@@ -449,6 +509,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck was due Dec 2025; the old one may already have sold quietly"
   },
   "rank": 11,
   "tier": "3 Watch",
@@ -487,7 +553,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Montgomery County Fire & Rescue Service",
   "registry_name": "Montgomery County Fire & Rescue Service",
@@ -513,6 +579,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a stainless steel heavy walk-in rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-10",
+   "how": "ordered Oct 2025; builds take a year or more"
   },
   "rank": 12,
   "tier": "3 Watch",
@@ -551,7 +623,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Mt. Vernon Volunteer Fire Company",
   "registry_name": "",
@@ -577,6 +649,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a pumpertanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-08",
+   "to": "2029-02",
+   "how": "new truck due Aug 2028; old trucks usually list within six months of delivery"
   },
   "rank": 13,
   "tier": "3 Watch",
