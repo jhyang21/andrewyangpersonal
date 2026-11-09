@@ -946,23 +946,23 @@
   "name": "New York",
   "departments": 1649,
   "leads": {
-   "week": 14,
-   "month": 37,
-   "watch": 62,
+   "week": 16,
+   "month": 36,
+   "watch": 61,
    "total": 113
   },
   "by_kind": {
-   "new_truck_ordered": 31,
-   "auction_closed": 22,
+   "new_truck_ordered": 30,
+   "auction_closed": 21,
    "grant": 15,
    "new_truck_arrived": 9,
    "bond_or_referendum": 7,
    "auction_equipment": 7,
+   "surplus_declared": 6,
    "auction_open": 6,
    "delivery_due": 6,
-   "surplus_declared": 5,
+   "sale_planned": 2,
    "council_approval": 2,
-   "sale_planned": 1,
    "auction_support": 1,
    "already_sold": 1
   },
@@ -995,8 +995,8 @@
    "note": "A better price can mean a slower sale. Know which side of $20,000 a truck sits on before the call."
   },
   "guide_total": {
-   "trucks": 37,
-   "median_sum": 211000
+   "trucks": 38,
+   "median_sum": 224550
   }
  },
  {

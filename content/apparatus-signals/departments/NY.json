@@ -1,5 +1,75 @@
 [
  {
+  "checked": "confirmed",
+  "score": 12.0,
+  "department": "Windham Fire District No. 1",
+  "registry_name": "Hensonville Hose Company, Inc.",
+  "city": "Hensonville",
+  "county": "Greene",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Board voted to sell a truck",
+  "detail": "Selling: 1998 Ford tanker",
+  "signal_date": "2026-08-13",
+  "proof_url": "https://townofwindhamny.gov/legal-notice/notice-of-permissive-referendum-surplus-fire-apparatus-and-equipment/76292/",
+  "proof_quote": "1998 Ford Tanker that is no longer necessary for the uses or purposes of the Fire District",
+  "other_signals": "Plans to sell a truck: 1998 Ford tandem-axle tanker truck, 1,000 GPM Darley pump | Money approved for a new truck: New tanker truck",
+  "named_in_source": "Windham Fire District No. 1",
+  "name_match": "hand-checked alias",
+  "fdid": "20013",
+  "top_kind": "surplus_declared",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": "1998 Ford tanker",
+   "type": "tanker",
+   "year": 1998,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "voted to sell Aug 2026"
+  },
+  "rank": 1,
+  "tier": "1 Call this week",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "tanker",
+   "band": "26-30",
+   "n": 20,
+   "median": 12600,
+   "p25": 7489,
+   "p75": 16975,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1995 International 4900 Tanker Truck",
+     "price": 16200.0,
+     "date": "2023-12-13",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/35571/item/lot-0001-1995-international-4900-tanker-truck-221503/"
+    },
+    {
+     "item": "1991 GMC Top Kick Tanker",
+     "price": 16600.0,
+     "date": "2019-11-05",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/19407/item/lot-0001-1991-gmc-top-kick-tanker-118038/"
+    },
+    {
+     "item": "**Lot Updated** 1991 International 4900 Tanker",
+     "price": 22000.0,
+     "date": "2019-02-19",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/16681/item/lot-0001-lot-updated-1991-international-4900-tanker-102265/"
+    }
+   ]
+  }
+ },
+ {
   "checked": "auction_site",
   "score": 10.0,
   "department": "Laurens Fire District",
@@ -29,7 +99,7 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 1,
+  "rank": 2,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -95,7 +165,7 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 2,
+  "rank": 3,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -161,7 +231,7 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 3,
+  "rank": 4,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -231,7 +301,7 @@
    "to": "2026-07",
    "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
   },
-  "rank": 4,
+  "rank": 5,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -270,7 +340,7 @@
    "to": "2027-03",
    "how": "new truck in service Sep 2026; the old one usually lists within six months"
   },
-  "rank": 5,
+  "rank": 6,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -336,7 +406,7 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 6,
+  "rank": 7,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -402,7 +472,7 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 7,
+  "rank": 8,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -468,7 +538,7 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 8,
+  "rank": 9,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -500,6 +570,76 @@
      "date": "2018-06-28",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/14438/item/lot-0001-1995-sutphen-midmount-ts-4dr-95-ft-tower-ladder-88307/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "opened",
+  "score": 6.5,
+  "department": "Coldenham Fire Company",
+  "registry_name": "Coldenham Fire Company",
+  "city": "Walden",
+  "county": "Orange",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Plans to sell a truck",
+  "detail": "1975 Diamond Reo/4-Guys fire tanker",
+  "signal_date": "2026-08-10",
+  "proof_url": "https://www.townofnewburghny.gov/cn/news/index.cfm?NID=58674&jump2=0",
+  "proof_quote": "BID FOR 1975 Fire Tanker (sealed bids due 7:30 p.m. August 10, 2026)",
+  "other_signals": "New truck on order: New E-One pumper on order (2025-06), delivery October 2027",
+  "named_in_source": "Coldenham Fire District",
+  "name_match": "exact",
+  "fdid": "36006",
+  "top_kind": "sale_planned",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": "1975 Diamond Reo/4-Guys fire tanker",
+   "type": "tanker",
+   "year": 1975,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-02",
+   "how": "sale announced Aug 2026"
+  },
+  "rank": 10,
+  "tier": "1 Call this week",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "tanker",
+   "band": "31+",
+   "n": 53,
+   "median": 5300,
+   "p25": 2650,
+   "p75": 12400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1970 Kaiser Jeep M51A2 6X6 Tanker",
+     "price": 4000.0,
+     "date": "2021-03-12",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/24010/item/lot-0060-1970-kaiser-jeep-m51a2-6x6-tanker-147880/"
+    },
+    {
+     "item": "1963 Jeep 2.5 Ton Tanker",
+     "price": 2300.0,
+     "date": "2014-10-07",
+     "state": null,
+     "url": "https://www.auctionsinternational.com/auction/3869/item/lot-0002-1963-jeep-25-ton-tanker-22462/"
+    },
+    {
+     "item": "1972 Dodge 800 Tanker",
+     "price": 2650.0,
+     "date": "2019-09-18",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/18854/item/lot-0003-1972-dodge-800-tanker-114539/"
     }
    ]
   }
@@ -538,7 +678,7 @@
    "to": "2026-07",
    "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
   },
-  "rank": 9,
+  "rank": 11,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -577,7 +717,7 @@
    "to": "2027-03",
    "how": "new truck in service Sep 2026; the old one usually lists within six months"
   },
-  "rank": 10,
+  "rank": 12,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -616,7 +756,7 @@
    "to": "2026-08",
    "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
   },
-  "rank": 11,
+  "rank": 13,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -686,7 +826,7 @@
    "to": "2027-02",
    "how": "voted to sell Apr 2026"
   },
-  "rank": 12,
+  "rank": 14,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -756,7 +896,7 @@
    "to": "2027-02",
    "how": "voted to sell Jul 2026"
   },
-  "rank": 13,
+  "rank": 15,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -826,7 +966,7 @@
    "to": "2027-02",
    "how": "sale announced"
   },
-  "rank": 14,
+  "rank": 16,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -896,7 +1036,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 15,
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -935,44 +1075,9 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 16,
+  "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "opened",
-  "score": 5.5,
-  "department": "Windham Fire District #1",
-  "registry_name": "Hensonville Hose Company, Inc.",
-  "city": "Hensonville",
-  "county": "Greene",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Sold a truck at auction since May",
-  "detail": "1998 Ford tandem-axle tanker truck, 1,000 GPM Darley pump",
-  "signal_date": "2026-09-08",
-  "proof_url": "http://townofwindhamny.gov/legal-notice/windham-fire-district-1-accepting-sealed-bids-for-1998-ford-tanker-truck/76284/",
-  "proof_quote": "Windham Fire District #1 Accepting Sealed Bids for 1998 Ford Tanker Truck; bids due September 8, 2026, 4:00 p.m.",
-  "other_signals": "Money approved for a new truck: New tanker truck | Sold its old truck direct: Selling: 1998 Ford tanker",
-  "named_in_source": "Windham Fire District #1",
-  "name_match": "hand-checked alias",
-  "fdid": "20013",
-  "top_kind": "auction_closed",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "sold",
-  "window": null,
-  "rank": 17,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
@@ -1009,7 +1114,7 @@
    "to": "2027-01",
    "how": "new truck in service Jul 2026; the old one usually lists within six months"
   },
-  "rank": 18,
+  "rank": 19,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1075,7 +1180,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 19,
+  "rank": 20,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -1110,7 +1215,7 @@
   },
   "stage": "surplus",
   "window": null,
-  "rank": 20,
+  "rank": 21,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1149,7 +1254,7 @@
    "to": "2026-07",
    "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
   },
-  "rank": 21,
+  "rank": 22,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1215,7 +1320,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 22,
+  "rank": 23,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -1254,7 +1359,7 @@
    "to": "2025-09",
    "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
   },
-  "rank": 23,
+  "rank": 24,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1324,7 +1429,7 @@
    "to": "2027-10",
    "how": "ordered Oct 2025; builds take a year or more"
   },
-  "rank": 24,
+  "rank": 25,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1394,7 +1499,7 @@
    "to": "2028-01",
    "how": "ordered Jan 2026; builds take a year or more"
   },
-  "rank": 25,
+  "rank": 26,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1433,7 +1538,7 @@
    "to": "2028-09",
    "how": "money approved Sep 2026; order, build, then sale"
   },
-  "rank": 26,
+  "rank": 27,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1472,7 +1577,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 27,
+  "rank": 28,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1511,7 +1616,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 28,
+  "rank": 29,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1550,7 +1655,7 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; the old one usually lists within six months"
   },
-  "rank": 29,
+  "rank": 30,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1620,7 +1725,7 @@
    "to": "2027-11",
    "how": "money approved Nov 2025; order, build, then sale"
   },
-  "rank": 30,
+  "rank": 31,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1690,7 +1795,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
-  "rank": 31,
+  "rank": 32,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1760,7 +1865,7 @@
    "to": "2028-05",
    "how": "ordered May 2026; builds take a year or more"
   },
-  "rank": 32,
+  "rank": 33,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1799,7 +1904,7 @@
    "to": "2028-10",
    "how": "ordered Oct 2026; builds take a year or more"
   },
-  "rank": 33,
+  "rank": 34,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1869,7 +1974,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 34,
+  "rank": 35,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1908,7 +2013,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 35,
+  "rank": 36,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1947,7 +2052,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 36,
+  "rank": 37,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1986,7 +2091,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 37,
+  "rank": 38,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -2025,7 +2130,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
-  "rank": 38,
+  "rank": 39,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2095,7 +2200,7 @@
    "to": "2027-02",
    "how": "voted to sell Mar 2026"
   },
-  "rank": 39,
+  "rank": 40,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2165,7 +2270,7 @@
    "to": "2027-02",
    "how": "voted to sell Feb 2026"
   },
-  "rank": 40,
+  "rank": 41,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2235,7 +2340,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 41,
+  "rank": 42,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -2274,7 +2379,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 42,
+  "rank": 43,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2313,7 +2418,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 43,
+  "rank": 44,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2352,7 +2457,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 44,
+  "rank": 45,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2391,7 +2496,7 @@
    "to": "2026-10",
    "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
   },
-  "rank": 45,
+  "rank": 46,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2430,7 +2535,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; the old one usually lists within six months"
   },
-  "rank": 46,
+  "rank": 47,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2500,7 +2605,7 @@
    "to": "2027-02",
    "how": "voted to sell Apr 2026"
   },
-  "rank": 47,
+  "rank": 48,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2570,7 +2675,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 48,
+  "rank": 49,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2609,7 +2714,7 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 49,
+  "rank": 50,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -2648,7 +2753,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; the old one usually lists within six months"
   },
-  "rank": 50,
+  "rank": 51,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2718,80 +2823,10 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 51,
+  "rank": 52,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
- },
- {
-  "checked": "trade_press",
-  "score": 3.5,
-  "department": "Coldenham Fire Company",
-  "registry_name": "Coldenham Fire Company",
-  "city": "Walden",
-  "county": "Orange",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New E-One pumper on order (2025-06), delivery October 2027",
-  "signal_date": "2025-06-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
-  "proof_quote": "E-ONE—Coldenham Fire Department, Walden, pumper. Delivery in October 2027.",
-  "other_signals": "Sold a truck at auction since May: 1975 Diamond Reo/4-Guys fire tanker",
-  "named_in_source": "Coldenham Fire Department",
-  "name_match": "exact",
-  "fdid": "36006",
-  "top_kind": "new_truck_ordered",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "stage": "sold",
-  "window": {
-   "from": "2027-10",
-   "to": "2028-04",
-   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
-  },
-  "rank": 52,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    },
-    {
-     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
-     "price": 7000.0,
-     "date": "2026-10-21",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
-    }
-   ]
-  }
  },
  {
   "checked": "fema_table",

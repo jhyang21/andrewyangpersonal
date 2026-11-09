@@ -1,13 +1,13 @@
 [
  {
-  "kind": "auction_closed",
+  "kind": "sale_planned",
   "detail": "1998 Ford tandem-axle tanker truck, 1,000 GPM Darley pump",
   "date": "2026-09-08",
   "url": "http://townofwindhamny.gov/legal-notice/windham-fire-district-1-accepting-sealed-bids-for-1998-ford-tanker-truck/76284/",
   "quote": "Windham Fire District #1 Accepting Sealed Bids for 1998 Ford Tanker Truck; bids due September 8, 2026, 4:00 p.m.",
   "old_truck": "1998 Ford tandem-axle tanker truck, 1,000 GPM Darley pump",
   "where": "own notice (Town of Windham website)",
-  "points": 3,
+  "points": 7,
   "read_by": "person",
   "source_name": "Windham Fire District #1",
   "source_city": "Hensonville",
@@ -32,14 +32,14 @@
   "fdid": "37011"
  },
  {
-  "kind": "auction_closed",
+  "kind": "sale_planned",
   "detail": "1975 Diamond Reo/4-Guys fire tanker",
   "date": "2026-08-10",
   "url": "https://www.townofnewburghny.gov/cn/news/index.cfm?NID=58674&jump2=0",
   "quote": "BID FOR 1975 Fire Tanker (sealed bids due 7:30 p.m. August 10, 2026)",
   "old_truck": "1975 Diamond Reo/4-Guys fire tanker",
   "where": "own notice (Town of Newburgh website)",
-  "points": 1,
+  "points": 5,
   "read_by": "person",
   "source_name": "Coldenham Fire District",
   "source_city": "",
@@ -1309,7 +1309,7 @@
   "fdid": "20013"
  },
  {
-  "kind": "already_sold",
+  "kind": "surplus_declared",
   "detail": "Selling: 1998 Ford tanker",
   "date": "2026-08-13",
   "quote": "1998 Ford Tanker that is no longer necessary for the uses or purposes of the Fire District",
@@ -1317,7 +1317,7 @@
   "where": "public notice or news",
   "url": "https://townofwindhamny.gov/legal-notice/notice-of-permissive-referendum-surplus-fire-apparatus-and-equipment/76292/",
   "checked": "confirmed",
-  "points": 2,
+  "points": 7,
   "read_by": "person",
   "source_name": "Windham Fire District No. 1",
   "source_city": "Windham",
