@@ -55,7 +55,6 @@
 /* ---------- base ---------- */
 @layer base {
 .apparatus-signals {
-  min-height: 100vh;
   background: var(--as-bg);
   color: var(--as-ink);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
