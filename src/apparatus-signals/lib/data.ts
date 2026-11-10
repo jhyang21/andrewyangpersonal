@@ -597,8 +597,9 @@ const SOLD_KINDS = new Set(["auction_closed", "already_sold"]);
 /**
  * Headline stage counts, counted from the department rows (the only source).
  * not_listed_soon is tier 1 or 2 at stage surplus or replacing: the ones to
- * call before they list. sold is a sale we found (not closed bids) dated May
- * 2026 or later; the sold stage also holds older sales and closed bids.
+ * call before they list. sold counts sold-stage leads with any sale signal
+ * (not closed bids) dated May 2026 or later, whatever their top signal; the
+ * sold stage also holds older sales and closed bids.
  */
 export function stageTotals(): { not_listed_soon: number; listed: number; sold: number } {
   const leads = allLeads();
@@ -606,7 +607,11 @@ export function stageTotals(): { not_listed_soon: number; listed: number; sold: 
     not_listed_soon: leads.filter((d) => isOpenStage(d.stage) && /^[12]\b/.test(d.tier)).length,
     listed: leads.filter((d) => d.stage === "listed").length,
     sold: leads.filter(
-      (d) => d.stage === "sold" && SOLD_KINDS.has(d.top_kind) && (d.signal_date ?? "") >= SOLD_SINCE,
+      (d) =>
+        d.stage === "sold" &&
+        signalsFor(d.stateCode, d).some(
+          (s) => SOLD_KINDS.has(s.kind) && (s.date ?? "") >= SOLD_SINCE,
+        ),
     ).length,
   };
 }
