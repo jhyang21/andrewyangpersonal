@@ -175,7 +175,7 @@ export interface Department {
  * Where the old truck is now. "surplus": the old truck is free but not listed: a vote or plan
  * to sell, or a new truck seen in service. "replacing": money, an order or a due date only;
  * nothing seen yet. "gear": sells gear at auction, no truck named. "listed": at auction now.
- * "sold": sold since May, or bids closed with no result found.
+ * "sold": sold (some before May), or bids closed with no result found.
  */
 export type Stage = "sold" | "listed" | "surplus" | "replacing" | "gear";
 
@@ -377,6 +377,8 @@ export interface WindowRule {
   from_months: number;
   to_months: number;
   how_template: string;
+  /** What the months count from: "expected" (promised delivery), "date" (the signal's date) or "today". */
+  anchor?: string;
   /** The wording once a window has passed. */
   how_past_template?: string;
   n_cases: number;
@@ -581,16 +583,31 @@ export function allLeads(): LeadAcrossStates[] {
 }
 
 /**
+ * "YYYY-MM" of the data run. A window that ended before it has passed. Taken
+ * from the data, not the clock, so a rebuild alone never changes the pages.
+ */
+export function runMonth(): string {
+  return getMeta().updated.slice(0, 7);
+}
+
+/** The month the "sold since May" count starts. */
+const SOLD_SINCE = "2026-05";
+const SOLD_KINDS = new Set(["auction_closed", "already_sold"]);
+
+/**
  * Headline stage counts, counted from the department rows (the only source).
  * not_listed_soon is tier 1 or 2 at stage surplus or replacing: the ones to
- * call before they list.
+ * call before they list. sold is a sale we found (not closed bids) dated May
+ * 2026 or later; the sold stage also holds older sales and closed bids.
  */
 export function stageTotals(): { not_listed_soon: number; listed: number; sold: number } {
   const leads = allLeads();
   return {
     not_listed_soon: leads.filter((d) => isOpenStage(d.stage) && /^[12]\b/.test(d.tier)).length,
     listed: leads.filter((d) => d.stage === "listed").length,
-    sold: leads.filter((d) => d.stage === "sold").length,
+    sold: leads.filter(
+      (d) => d.stage === "sold" && SOLD_KINDS.has(d.top_kind) && (d.signal_date ?? "") >= SOLD_SINCE,
+    ).length,
   };
 }
 

@@ -101,7 +101,7 @@ export function shortWhen(stage: Stage, topKind: string): string | null {
 }
 
 /**
- * What the "Likely listed" column shows. `month` is the build month
+ * What the "Likely listed" column shows. `month` is the run month
  * ("YYYY-MM"); a window that ended before it has passed.
  */
 export function likelyListed(
@@ -122,6 +122,22 @@ export function likelyListed(
  */
 export function fillTemplate(template: string): string {
   return template.replace(/\{month\}/g, "that month").replace(/\{season\}/g, "that season");
+}
+
+/** "0–6 months after the promised delivery month": a window rule's span and what it counts from. */
+export function windowSpan(rule: {
+  kinds: string[];
+  anchor?: string;
+  from_months: number;
+  to_months: number;
+}): string {
+  const span = `${rule.from_months}–${rule.to_months} months`;
+  if (rule.anchor === "expected") return `${span} after the promised delivery month`;
+  if (rule.anchor === "today") return `${span} after the notice, or the run date when the notice has none`;
+  if (rule.anchor === "date" && rule.kinds.length === 1 && rule.kinds[0] === "new_truck_ordered") {
+    return `${span} after the order date`;
+  }
+  return `${span} after the signal date`;
 }
 
 /**

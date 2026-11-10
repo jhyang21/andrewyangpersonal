@@ -21,6 +21,7 @@ import {
   kindLabel,
   modifierLabel,
   windowExample,
+  windowSpan,
 } from "@/apparatus-signals/lib/words";
 import { LeadTimeChart, PriceByAgeChart } from "@/apparatus-signals/ui/charts";
 import DoesItWork from "@/apparatus-signals/ui/DoesItWork";
@@ -240,7 +241,7 @@ export default function MethodPage() {
           <thead>
             <tr>
               <th scope="col">Signal</th>
-              <th scope="col">Lists after</th>
+              <th scope="col">Window</th>
               <th scope="col">How</th>
               <th scope="col" className="r">
                 Cases
@@ -248,28 +249,26 @@ export default function MethodPage() {
             </tr>
           </thead>
           <tbody>
-            {(method.window ?? []).map((w) => (
-              <tr key={w.kinds.join(",")}>
-                <td className="font-semibold">{joinPlain(w.kinds.map((k) => kindLabel(k, method)), "or")}</td>
-                <td className="num whitespace-nowrap" data-label="Lists after">
-                  {w.from_months}–{w.to_months} months
-                </td>
-                <td data-label="How">
-                  {capitalize(
-                    windowExample(w, leads) ?? fillTemplate(w.how_template),
-                  )}
-                  .
-                  {w.how_past_template ? (
-                    <div className="text-sm text-as-ink-2">
-                      Once past: {fillTemplate(w.how_past_template)}.
-                    </div>
-                  ) : null}
-                </td>
-                <td className="r" data-label="Cases">
-                  {w.n_cases > 0 ? formatNumber(w.n_cases) : "no measured cases yet"}
-                </td>
-              </tr>
-            ))}
+            {(method.window ?? []).map((w) => {
+              const example = windowExample(w, leads);
+              return (
+                <tr key={`${w.kinds.join(",")}:${w.anchor ?? ""}`}>
+                  <td className="font-semibold">{joinPlain(w.kinds.map((k) => kindLabel(k, method)), "or")}</td>
+                  <td data-label="Window">{windowSpan(w)}</td>
+                  <td data-label="How">
+                    {example ? `e.g. ${example}` : capitalize(fillTemplate(w.how_template))}.
+                    {w.how_past_template ? (
+                      <div className="text-sm text-as-ink-2">
+                        Once past: {fillTemplate(w.how_past_template)}.
+                      </div>
+                    ) : null}
+                  </td>
+                  <td className="r" data-label="Cases">
+                    {w.n_cases > 0 ? formatNumber(w.n_cases) : "no measured cases yet"}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
         <p className="max-w-3xl text-sm text-as-ink-2">

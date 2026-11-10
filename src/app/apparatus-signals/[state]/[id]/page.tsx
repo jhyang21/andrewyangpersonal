@@ -8,13 +8,13 @@ import {
   getMethod,
   getState,
   getStates,
+  runMonth,
   signalsFor,
   type Department,
   type Signal,
 } from "@/apparatus-signals/lib/data";
 import {
   capitalize,
-  currentMonth,
   formatDate,
   formatMoney,
   formatScore,
@@ -68,7 +68,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
 /** The heading above already says like for like, so the type_how tail would repeat it. */
 const LIKE_FOR_LIKE = /;\s*departments usually replace like with like\.?$/;
 
-/** The "When it should list" line, from the lead's stage and window, against the build month. */
+/** The "When it should list" line, from the lead's stage and window, against the run month. */
 function whenLine(dept: Department, signals: Signal[], month: string): string {
   if (dept.stage === "sold") {
     return dept.top_kind === "bids_closed"
@@ -84,7 +84,7 @@ function whenLine(dept: Department, signals: Signal[], month: string): string {
       .pop();
     return closes ? `At auction now; closes ${formatDate(closes)}.` : "At auction now.";
   }
-  if (!dept.window) return "No window set: no rule fits this signal.";
+  if (!dept.window) return "No window: we have no rule for this kind of signal yet.";
   const how = dept.window.how ? ` ${capitalize(dept.window.how.replace(/\.$/, ""))}.` : "";
   const passed = dept.window.to < month;
   return `${passed ? "Was due" : "Likely"} ${formatWindow(dept.window)}.${how}`;
@@ -215,7 +215,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
           ) : null}
         </dl>
         <p>
-          <span className="font-semibold">When it should list:</span> {whenLine(dept, signals, currentMonth())}
+          <span className="font-semibold">When it should list:</span> {whenLine(dept, signals, runMonth())}
         </p>
       </header>
 

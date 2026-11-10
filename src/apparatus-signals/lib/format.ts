@@ -25,14 +25,6 @@ export function formatWindow(w: { from: string; to: string }): string {
   return fy === ty ? `${from}–${to} ${ty}` : `${from} ${fy}–${to} ${ty}`;
 }
 
-/**
- * "YYYY-MM" for now. Pages are static, so this is the build month. Call it on
- * the server only, so the client never renders a different month.
- */
-export function currentMonth(): string {
-  return new Date().toISOString().slice(0, 7);
-}
-
 export function capitalize(s: string): string {
   return s ? s[0].toUpperCase() + s.slice(1) : s;
 }

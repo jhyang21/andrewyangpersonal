@@ -7,10 +7,10 @@ import {
   getMethod,
   getStates,
   leadsPer100,
+  runMonth,
   stageTotals,
 } from "@/apparatus-signals/lib/data";
 import {
-  currentMonth,
   formatDate,
   formatNumber,
   formatScore,
@@ -35,7 +35,7 @@ import UsMap, { type MapState } from "@/apparatus-signals/ui/UsMap";
 export default function HomePage() {
   const meta = getMeta();
   const { totals } = meta;
-  const month = currentMonth();
+  const month = runMonth();
   const stages = stageTotals();
   const summary = testSummary(getMethod());
   const states = getStates();

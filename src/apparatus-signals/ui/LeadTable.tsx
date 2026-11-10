@@ -55,7 +55,7 @@ export interface LeadRow {
   kinds: string[];
   stage: Stage;
   top_kind: string;
-  /** The Likely listed cell, worked out on the server against the build month. */
+  /** The Likely listed cell, worked out on the server against the run month. */
   likely: string;
 }
 

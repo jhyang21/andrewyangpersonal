@@ -9,9 +9,10 @@ import {
   getState,
   getStates,
   leadsPer100,
+  runMonth,
   signalsFor,
 } from "@/apparatus-signals/lib/data";
-import { currentMonth, formatNumber, plural } from "@/apparatus-signals/lib/format";
+import { formatNumber, plural } from "@/apparatus-signals/lib/format";
 import { guideTotalLine } from "@/apparatus-signals/lib/trucks";
 import {
   COVERAGE,
@@ -47,7 +48,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
   const method = getMethod();
   const departments = getDepartments(state.code);
   const rule = state.rule ?? method.rules[state.code] ?? null;
-  const month = currentMonth();
+  const month = runMonth();
 
   const rows: LeadRow[] = departments.map((d) => ({
     id: d.id,
