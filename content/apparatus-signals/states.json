@@ -49,7 +49,7 @@
   "guide_total": {
    "trucks": 1,
    "median_sum": 8000,
-   "ask_sum": 86400
+   "ask_sum": 42250
   }
  },
  {
@@ -77,7 +77,7 @@
   "guide_total": {
    "trucks": 3,
    "median_sum": 24000,
-   "ask_sum": 259200
+   "ask_sum": 126750
   }
  },
  {
@@ -104,7 +104,7 @@
   "guide_total": {
    "trucks": 2,
    "median_sum": 12700,
-   "ask_sum": 99998
+   "ask_sum": 45900
   }
  },
  {
@@ -133,7 +133,7 @@
   "guide_total": {
    "trucks": 19,
    "median_sum": 120625,
-   "ask_sum": 1304796
+   "ask_sum": 901950
   }
  },
  {
@@ -161,7 +161,7 @@
   "guide_total": {
    "trucks": 6,
    "median_sum": 47225,
-   "ask_sum": 460598
+   "ask_sum": 228250
   }
  },
  {
@@ -206,7 +206,7 @@
   "guide_total": {
    "trucks": 12,
    "median_sum": 62000,
-   "ask_sum": 661750
+   "ask_sum": 498700
   }
  },
  {
@@ -258,7 +258,7 @@
   "guide_total": {
    "trucks": 1,
    "median_sum": 4300,
-   "ask_sum": 50000
+   "ask_sum": 39900
   }
  },
  {
@@ -287,7 +287,7 @@
   "guide_total": {
    "trucks": 10,
    "median_sum": 59900,
-   "ask_sum": 727000
+   "ask_sum": 538800
   }
  },
  {
@@ -314,7 +314,7 @@
   "guide_total": {
    "trucks": 2,
    "median_sum": 12700,
-   "ask_sum": 99998
+   "ask_sum": 45900
   }
  },
  {
@@ -368,7 +368,7 @@
   "guide_total": {
    "trucks": 40,
    "median_sum": 262050,
-   "ask_sum": 2866498
+   "ask_sum": 1705800
   }
  },
  {
@@ -395,7 +395,7 @@
   "guide_total": {
    "trucks": 1,
    "median_sum": 4300,
-   "ask_sum": 50000
+   "ask_sum": 39900
   }
  },
  {
@@ -424,7 +424,7 @@
   "guide_total": {
    "trucks": 92,
    "median_sum": 487875,
-   "ask_sum": 5895548
+   "ask_sum": 4359100
   }
  },
  {
@@ -453,7 +453,7 @@
   "guide_total": {
    "trucks": 46,
    "median_sum": 267600,
-   "ask_sum": 3434898
+   "ask_sum": 2446800
   }
  },
  {
@@ -481,7 +481,7 @@
   "guide_total": {
    "trucks": 4,
    "median_sum": 24600,
-   "ask_sum": 272800
+   "ask_sum": 164300
   }
  },
  {
@@ -509,7 +509,7 @@
   "guide_total": {
    "trucks": 2,
    "median_sum": 12300,
-   "ask_sum": 136400
+   "ask_sum": 82150
   }
  },
  {
@@ -538,7 +538,7 @@
   "guide_total": {
    "trucks": 4,
    "median_sum": 22800,
-   "ask_sum": 285650
+   "ask_sum": 197050
   }
  },
  {
@@ -566,7 +566,7 @@
   "guide_total": {
    "trucks": 4,
    "median_sum": 24600,
-   "ask_sum": 272800
+   "ask_sum": 164300
   }
  },
  {
@@ -594,7 +594,7 @@
   "guide_total": {
    "trucks": 6,
    "median_sum": 38825,
-   "ask_sum": 397800
+   "ask_sum": 257250
   }
  },
  {
@@ -621,7 +621,7 @@
   "guide_total": {
    "trucks": 2,
    "median_sum": 16000,
-   "ask_sum": 172800
+   "ask_sum": 84500
   }
  },
  {
@@ -650,7 +650,7 @@
   "guide_total": {
    "trucks": 19,
    "median_sum": 121550,
-   "ask_sum": 1454650
+   "ask_sum": 974200
   }
  },
  {
@@ -679,7 +679,7 @@
   "guide_total": {
    "trucks": 43,
    "median_sum": 218125,
-   "ask_sum": 2416248
+   "ask_sum": 1741600
   }
  },
  {
@@ -708,7 +708,7 @@
   "guide_total": {
    "trucks": 40,
    "median_sum": 237125,
-   "ask_sum": 2793700
+   "ask_sum": 1850300
   }
  },
  {
@@ -735,7 +735,7 @@
   "guide_total": {
    "trucks": 1,
    "median_sum": 6825,
-   "ask_sum": 65000
+   "ask_sum": 53250
   }
  },
  {
@@ -788,7 +788,7 @@
   "guide_total": {
    "trucks": 21,
    "median_sum": 140500,
-   "ask_sum": 1381196
+   "ask_sum": 788100
   }
  },
  {
@@ -817,7 +817,7 @@
   "guide_total": {
    "trucks": 7,
    "median_sum": 47800,
-   "ask_sum": 442798
+   "ask_sum": 249700
   }
  },
  {
@@ -846,7 +846,7 @@
   "guide_total": {
    "trucks": 25,
    "median_sum": 142450,
-   "ask_sum": 1544850
+   "ask_sum": 1121900
   }
  },
  {
@@ -874,7 +874,7 @@
   "guide_total": {
    "trucks": 3,
    "median_sum": 18500,
-   "ask_sum": 235650
+   "ask_sum": 157150
   }
  },
  {
@@ -924,7 +924,7 @@
   "guide_total": {
    "trucks": 23,
    "median_sum": 145500,
-   "ask_sum": 1929448
+   "ask_sum": 1552200
   }
  },
  {
@@ -951,7 +951,7 @@
   "guide_total": {
    "trucks": 3,
    "median_sum": 22225,
-   "ask_sum": 211400
+   "ask_sum": 135200
   }
  },
  {
@@ -1034,7 +1034,7 @@
   "guide_total": {
    "trucks": 39,
    "median_sum": 231150,
-   "ask_sum": 2510950
+   "ask_sum": 2025000
   }
  },
  {
@@ -1063,7 +1063,7 @@
   "guide_total": {
    "trucks": 22,
    "median_sum": 130300,
-   "ask_sum": 1502548
+   "ask_sum": 965650
   }
  },
  {
@@ -1090,7 +1090,7 @@
   "guide_total": {
    "trucks": 1,
    "median_sum": 8000,
-   "ask_sum": 86400
+   "ask_sum": 42250
   }
  },
  {
@@ -1118,7 +1118,7 @@
   "guide_total": {
    "trucks": 3,
    "median_sum": 19225,
-   "ask_sum": 263500
+   "ask_sum": 203250
   }
  },
  {
@@ -1172,7 +1172,7 @@
   "guide_total": {
    "trucks": 34,
    "median_sum": 204775,
-   "ask_sum": 2424496
+   "ask_sum": 1791550
   }
  },
  {
@@ -1199,7 +1199,7 @@
   "guide_total": {
    "trucks": 2,
    "median_sum": 16000,
-   "ask_sum": 172800
+   "ask_sum": 84500
   }
  },
  {
@@ -1226,7 +1226,7 @@
   "guide_total": {
    "trucks": 2,
    "median_sum": 12300,
-   "ask_sum": 136400
+   "ask_sum": 82150
   }
  },
  {
@@ -1254,7 +1254,7 @@
   "guide_total": {
    "trucks": 8,
    "median_sum": 40625,
-   "ask_sum": 451400
+   "ask_sum": 334900
   }
  },
  {
@@ -1282,7 +1282,7 @@
   "guide_total": {
    "trucks": 6,
    "median_sum": 38200,
-   "ask_sum": 432050
+   "ask_sum": 279000
   }
  },
  {
@@ -1311,7 +1311,7 @@
   "guide_total": {
    "trucks": 28,
    "median_sum": 176025,
-   "ask_sum": 2008848
+   "ask_sum": 1292900
   }
  },
  {
@@ -1338,7 +1338,7 @@
   "guide_total": {
    "trucks": 1,
    "median_sum": 6825,
-   "ask_sum": 65000
+   "ask_sum": 53250
   }
  },
  {
@@ -1366,7 +1366,7 @@
   "guide_total": {
    "trucks": 4,
    "median_sum": 24000,
-   "ask_sum": 246400
+   "ask_sum": 161750
   }
  },
  {
@@ -1393,7 +1393,7 @@
   "guide_total": {
    "trucks": 1,
    "median_sum": 6200,
-   "ask_sum": 99250
+   "ask_sum": 75000
   }
  },
  {
@@ -1421,7 +1421,7 @@
   "guide_total": {
    "trucks": 3,
    "median_sum": 14800,
-   "ask_sum": 199250
+   "ask_sum": 154800
   }
  },
  {
@@ -1449,7 +1449,7 @@
   "guide_total": {
    "trucks": 10,
    "median_sum": 60900,
-   "ask_sum": 655600
+   "ask_sum": 408200
   }
  },
  {
@@ -1477,7 +1477,7 @@
   "guide_total": {
    "trucks": 5,
    "median_sum": 32600,
-   "ask_sum": 359200
+   "ask_sum": 206550
   }
  },
  {
@@ -1503,7 +1503,7 @@
   "guide_total": {
    "trucks": 1,
    "median_sum": 7400,
-   "ask_sum": 60000
+   "ask_sum": 39700
   }
  }
 ]

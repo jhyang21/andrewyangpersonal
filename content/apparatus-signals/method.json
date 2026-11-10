@@ -514,7 +514,7 @@
     "brush": 31,
     "mini pumper": 16
    },
-   "skipped_why": "no price shown (call for a quote), no model year, a courtesy listing, or not a type the guide prices (command cars, airport trucks)",
+   "skipped_why": "no price shown (call for a quote), no model year, a courtesy listing (a truck the dealer lists for someone else), or not a type the guide prices (command cars, airport trucks)",
    "bands": [
     "<=15",
     "16-20",
@@ -903,7 +903,16 @@
     "p75": 51000,
     "thin": false
    }
-  ]
+  ],
+  "usual_age": {
+   "rescue": 26,
+   "pumper": 29,
+   "aerial": 27,
+   "ambulance": 15,
+   "tanker": 32,
+   "brush": 40,
+   "mini pumper": 35
+  }
  },
  "backtest": {
   "meta": {

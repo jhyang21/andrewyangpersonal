@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-10",
- "generated_at": "2026-11-10T09:15:05Z",
+ "generated_at": "2026-11-10T09:25:13Z",
  "totals": {
   "states": 51,
   "departments_in_registry": 27102,
@@ -20,7 +20,7 @@
   "guide_total": {
    "trucks": 612,
    "median_sum": 3642325,
-   "ask_sum": 41683966
+   "ask_sum": 28793550
   }
  },
  "sales_source": {
