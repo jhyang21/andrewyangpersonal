@@ -1,6 +1,6 @@
 """Compile stage answers into the page's dataset (SPEC section 7).
 
-Writes content/cup-notes/index.json and public/cup-notes/scenarios/<key>.json.
+Writes content/cup-notes/index.json and content/cup-notes/scenarios/<key>.json.
 With fixture=True every answer comes from fake.py and meta.source is "fixture".
 """
 

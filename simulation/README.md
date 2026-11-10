@@ -57,7 +57,7 @@ every call used its full 1,200 completion tokens, it would cost about $0.92.
 - `runs/<stage>/`: requests sent, custom_id keys, raw responses, manifest with tokens and dollars,
   and a status log.
 - `../content/cup-notes/index.json`: lever copy, people, and the 24 scenario summaries.
-- `../public/cup-notes/scenarios/<key>.json`: every manager, shift, cup and customer reaction for one
+- `../content/cup-notes/scenarios/<key>.json`: every manager, shift, cup and customer reaction for one
   scenario.
 
 An answer that fails validation is kept in `responses.jsonl` with `schema_ok: false`. Compile fills
