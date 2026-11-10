@@ -40,9 +40,10 @@ export interface Meta {
   sources: Source[];
   /**
    * Where the at-auction and sold counts come from. region is a plain state list
-   * ("New York only"). Optional: older exports lack it.
+   * ("New York"); note, when present, is one more sentence for the reader.
+   * Optional: older exports lack it.
    */
-  sales_source?: { name: string; region: string };
+  sales_source?: { name: string; region: string; note?: string };
 }
 
 /**

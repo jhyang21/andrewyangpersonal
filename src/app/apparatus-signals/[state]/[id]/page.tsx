@@ -72,7 +72,7 @@ const LIKE_FOR_LIKE = /;\s*departments usually replace like with like\.?$/;
 function whenLine(dept: Department, signals: Signal[], month: string): string {
   if (dept.stage === "sold") {
     if (dept.top_kind === "bids_closed") return "Bids closed; we have not found the result.";
-    if (dept.top_kind === "direct_sale") return "Going to a named buyer; it will not list.";
+    if (dept.top_kind === "direct_sale") return "Going direct to a buyer; it will not list.";
     return "Already sold.";
   }
   if (dept.stage === "gear") return "No truck to list: it is selling gear.";
@@ -92,7 +92,9 @@ function whenLine(dept: Department, signals: Signal[], month: string): string {
 
 function TruckSection({ dept }: { dept: Department }) {
   const { truck, guide } = dept;
-  const known = Boolean(truck.description || truck.type);
+  // A direct sale has no truck for sale; the pipeline blanks it on purpose.
+  const direct = dept.top_kind === "direct_sale";
+  const known = !direct && Boolean(truck.description || truck.type);
   let year = "";
   if (truck.year && truck.year_how === "stated") year = ` Model year ${truck.year}.`;
   if (truck.year && truck.year_how === "from age") {
@@ -104,7 +106,11 @@ function TruckSection({ dept }: { dept: Department }) {
         The truck
       </h2>
       {!known ? (
-        <p className="mt-1 max-w-3xl text-as-ink-2">The record does not name the old truck.</p>
+        <p className="mt-1 max-w-3xl text-as-ink-2">
+          {direct
+            ? "The truck goes to the buyer; nothing is for sale."
+            : "The record does not name the old truck."}
+        </p>
       ) : (
         <>
           <p className="mt-1 text-lg font-semibold">
@@ -272,7 +278,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
                 <p>{h.next}</p>
                 <p className="text-sm text-as-muted">
                   {h.state === state.code
-                    ? `${capitalize(numberWord(h.found))} ${state.name} ${h.found === 1 ? "department" : "departments"} did this (counted ${formatDate(h.as_of)}).`
+                    ? `${capitalize(numberWord(h.found))} ${state.name} ${h.found === 1 ? "department" : "departments"} had this signal (counted ${formatDate(h.as_of)}).`
                     : `We only have ${getState(h.state)?.name ?? h.state} numbers for this.`}
                 </p>
               </div>

@@ -73,7 +73,7 @@ export const STAGE_LABEL: Record<Stage, string> = {
 };
 
 /**
- * A stage group's heading. The sold group names closed bids and named-buyer
+ * A stage group's heading. The sold group names closed bids and direct
  * sales only when one of its leads (`topKinds`, all of the group, not the
  * filtered view) is one.
  */
@@ -81,7 +81,7 @@ export function stageHeading(stage: Stage, topKinds: string[]): string {
   if (stage !== "sold") return STAGE_LABEL[stage];
   const [first, second] = [
     topKinds.includes("bids_closed") ? "bids closed" : "",
-    topKinds.includes("direct_sale") ? "going to a named buyer" : "",
+    topKinds.includes("direct_sale") ? "going direct to a buyer" : "",
   ].filter(Boolean);
   if (!first) return STAGE_LABEL.sold;
   return second ? `Sold, ${first}, or ${second}` : `Sold, or ${first}`;
@@ -103,7 +103,7 @@ export function shortWhen(stage: Stage, topKind: string): string | null {
   if (stage === "listed") return "At auction";
   if (stage === "sold") {
     if (topKind === "bids_closed") return "Bids closed";
-    return topKind === "direct_sale" ? "Named buyer" : "Sold";
+    return topKind === "direct_sale" ? "Direct sale" : "Sold";
   }
   return null;
 }
@@ -168,7 +168,7 @@ export function windowExample(
   return pick?.window ? pick.window.how.replace(/\.$/, "") : null;
 }
 
-export const DONE_NOTE = "Already listed or sold; kept for the record.";
+export const DONE_NOTE = "Listed, sold, bids closed or going direct; kept for the record.";
 
 const SECOND_READER = "Checked by a second reader";
 

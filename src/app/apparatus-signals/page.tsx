@@ -66,8 +66,14 @@ export default function HomePage() {
     { value: stages.listed, label: "at auction now" },
     { value: stages.sold, label: "sold since May" },
   ];
-  const salesSource = meta.sales_source
-    ? `At-auction and sold counts come from ${meta.sales_source.name}, whose lots we read by hand for ${meta.sales_source.region}.`
+  const source = meta.sales_source;
+  const salesSource = source
+    ? [
+        `At-auction and sold counts come from ${source.name}, whose ${source.region} lots we read by hand.`,
+        source.note,
+      ]
+        .filter(Boolean)
+        .join(" ")
     : null;
   const stats = [
     {
@@ -287,7 +293,6 @@ export default function HomePage() {
           {formatNumber(stages.listed)} more are at auction now and {formatNumber(stages.sold)} sold
           since May; see each state.
         </p>
-        {salesSource ? <p className="mt-1 text-sm text-as-muted">{salesSource}</p> : null}
       </section>
     </div>
   );
