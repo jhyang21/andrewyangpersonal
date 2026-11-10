@@ -1,6 +1,6 @@
 import type { Method, Signal } from "@/apparatus-signals/lib/data";
 import { formatDate } from "@/apparatus-signals/lib/format";
-import { READ_BY_LABEL, checkedLabel, kindLabel, matchLabel } from "@/apparatus-signals/lib/words";
+import { READ_BY_LABEL, checkedLabel, matchLabel, signalLabel } from "@/apparatus-signals/lib/words";
 import Ext from "@/apparatus-signals/ui/Ext";
 
 export default function Timeline({ signals, method }: { signals: Signal[]; method: Method }) {
@@ -20,7 +20,7 @@ export default function Timeline({ signals, method }: { signals: Signal[]; metho
           />
           <p className="num text-sm text-as-muted">{formatDate(s.date) || "Date not known"}</p>
           <h3 className="font-semibold">
-            {kindLabel(s.kind, method)}{" "}
+            {signalLabel(s, method)}{" "}
             <span className="num text-sm font-normal text-as-ink-2">
               +{s.points} {s.points === 1 ? "point" : "points"}
             </span>

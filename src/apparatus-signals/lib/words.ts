@@ -290,3 +290,14 @@ export const VERDICT_LABELS: Record<string, string> = {
 export function kindLabel(kind: string, method: Method): string {
   return method.labels[kind] ?? kind.replace(/_/g, " ");
 }
+
+/**
+ * One signal's label: its kind's, except a trade-press delivery column entry, which says a
+ * new truck came but is not a sighting (the pipeline's label_of). Kind-level counts keep kindLabel.
+ */
+export function signalLabel(sig: { kind: string; where?: string | null }, method: Method): string {
+  if (sig.kind === "new_truck_arrived" && sig.where === "trade press") {
+    return "New truck in a trade-press delivery column";
+  }
+  return kindLabel(sig.kind, method);
+}

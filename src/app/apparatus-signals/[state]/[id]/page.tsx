@@ -35,6 +35,7 @@ import {
   isOpenStage,
   kindLabel,
   leadTimeCasesFor,
+  signalLabel,
 } from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
 import Ext from "@/apparatus-signals/ui/Ext";
@@ -192,6 +193,10 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
   const { state, dept } = found;
   const method = getMethod();
   const signals = signalsFor(state.code, dept);
+  // The lead's top signal: same kind, source and date as the lead's proof.
+  const topSignal =
+    signals.find((s) => s.kind === dept.top_kind && s.url === dept.proof_url && s.date === dept.signal_date) ??
+    signals.find((s) => s.kind === dept.top_kind) ?? { kind: dept.top_kind };
   const rule = state.rule ?? method.rules[state.code] ?? null;
   const hitRates = hitRatesFor(dept.top_kind, method);
   const cases = leadTimeCasesFor(dept.top_kind, method);
@@ -284,7 +289,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
         {hitRates.length === 0 && cases.length === 0 ? (
           <p className="text-as-ink-2">
             We have not tracked what happens after &ldquo;
-            {lowerFirst(kindLabel(dept.top_kind, method))}&rdquo;.
+            {lowerFirst(signalLabel(topSignal, method))}&rdquo;.
           </p>
         ) : (
           <>
