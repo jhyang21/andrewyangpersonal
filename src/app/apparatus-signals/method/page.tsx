@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Fragment } from "react";
 import { BASE } from "@/apparatus-signals/lib/site";
 import { allLeads, getMeta, getMethod, getSales, getState, getStates } from "@/apparatus-signals/lib/data";
+import type { PriceGuideRow } from "@/apparatus-signals/lib/data";
 import {
   capitalize,
   formatDate,
@@ -34,6 +35,58 @@ import { RuleBox } from "@/apparatus-signals/ui/StateBits";
 /** The age band the method page uses to compare auction and dealer prices. */
 const GAP_BAND = "21-25";
 
+/** The auction guide and the dealer asks share one table shape; `count` is "Sales" or "Listings". */
+function PriceTable({
+  caption,
+  rows,
+  count,
+  median,
+}: {
+  caption: string;
+  rows: PriceGuideRow[];
+  count: string;
+  median: string;
+}) {
+  return (
+    <table className="data-table">
+      <caption className="sr-only">{caption}</caption>
+      <thead>
+        <tr>
+          <th scope="col">Truck type</th>
+          <th scope="col">Age</th>
+          <th scope="col" className="r">
+            {count}
+          </th>
+          <th scope="col" className="r">
+            {median}
+          </th>
+          <th scope="col" className="r">
+            Middle half
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr key={`${r.type}-${r.band}`} className={r.thin ? "text-as-muted" : ""}>
+            <td className={r.band === "all ages" ? "font-semibold" : ""}>{typePlural(r.type)}</td>
+            <td data-label="Age">{bandLabel(r.band)}</td>
+            <td className="r" data-label={count}>
+              {formatNumber(r.n)}
+              {r.thin ? <span className="block text-xs">{`few ${count.toLowerCase()}`}</span> : null}
+            </td>
+            <td className="r" data-label={median}>
+              {formatMoney(r.median)}
+            </td>
+            <td className="r whitespace-nowrap" data-label="Middle half">
+              {formatMoney(r.p25)} to {formatMoney(r.p75)}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
 export const metadata: Metadata = {
   title: "Method",
   description: "Where the leads come from, how they are scored, and what the list cannot see.",
@@ -55,7 +108,7 @@ export default function MethodPage() {
   const tiers = [...method.tiers].sort((a, b) => b.floor - a.floor);
   const guide = method.price_guide;
   const asks = method.ask_guide;
-  const pumperRow = (table: { type: string; band: string; median: number }[]) =>
+  const pumperRow = (table: PriceGuideRow[]) =>
     table.find((r) => r.type === "pumper" && r.band === GAP_BAND);
   const auctionPumper = pumperRow(guide.table);
   const dealerPumper = pumperRow(asks.table);
@@ -117,42 +170,12 @@ export default function MethodPage() {
           like for like: a department buying a pumper is selling a pumper. With no type, there is
           no guide price; with no model year, the price covers all ages.
         </p>
-        <table className="data-table">
-          <caption className="sr-only">Auction sale prices by truck type and age</caption>
-          <thead>
-            <tr>
-              <th scope="col">Truck type</th>
-              <th scope="col">Age</th>
-              <th scope="col" className="r">
-                Sales
-              </th>
-              <th scope="col" className="r">
-                Median
-              </th>
-              <th scope="col" className="r">
-                Middle half
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {guide.table.map((r) => (
-              <tr key={`${r.type}-${r.band}`} className={r.thin ? "text-as-muted" : ""}>
-                <td className={r.band === "all ages" ? "font-semibold" : ""}>{typePlural(r.type)}</td>
-                <td data-label="Age">{bandLabel(r.band)}</td>
-                <td className="r" data-label="Sales">
-                  {formatNumber(r.n)}
-                  {r.thin ? <span className="block text-xs">few sales</span> : null}
-                </td>
-                <td className="r" data-label="Median">
-                  {formatMoney(r.median)}
-                </td>
-                <td className="r whitespace-nowrap" data-label="Middle half">
-                  {formatMoney(r.p25)} to {formatMoney(r.p75)}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <PriceTable
+          caption="Auction sale prices by truck type and age"
+          rows={guide.table}
+          count="Sales"
+          median="Median"
+        />
         <ul className="max-w-3xl list-disc space-y-1 pl-5 text-sm text-as-ink-2">
           {guide.meta.caveats.map((c) => (
             <li key={c}>{c}</li>
@@ -188,42 +211,12 @@ export default function MethodPage() {
             and wait for a buyer.
           </p>
         ) : null}
-        <table className="data-table">
-          <caption className="sr-only">Dealer asking prices by truck type and age</caption>
-          <thead>
-            <tr>
-              <th scope="col">Truck type</th>
-              <th scope="col">Age</th>
-              <th scope="col" className="r">
-                Listings
-              </th>
-              <th scope="col" className="r">
-                Asking median
-              </th>
-              <th scope="col" className="r">
-                Middle half
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {asks.table.map((r) => (
-              <tr key={`${r.type}-${r.band}`} className={r.thin ? "text-as-muted" : ""}>
-                <td className={r.band === "all ages" ? "font-semibold" : ""}>{typePlural(r.type)}</td>
-                <td data-label="Age">{bandLabel(r.band)}</td>
-                <td className="r" data-label="Listings">
-                  {formatNumber(r.n)}
-                  {r.thin ? <span className="block text-xs">few listings</span> : null}
-                </td>
-                <td className="r" data-label="Asking median">
-                  {formatMoney(r.median)}
-                </td>
-                <td className="r whitespace-nowrap" data-label="Middle half">
-                  {formatMoney(r.p25)} to {formatMoney(r.p75)}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <PriceTable
+          caption="Dealer asking prices by truck type and age"
+          rows={asks.table}
+          count="Listings"
+          median="Asking median"
+        />
         <ul className="max-w-3xl list-disc space-y-1 pl-5 text-sm text-as-ink-2">
           {asks.meta.caveats.map((c) => (
             <li key={c}>{c}</li>
