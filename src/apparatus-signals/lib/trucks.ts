@@ -55,5 +55,5 @@ export function guideTotalLine(total: GuideTotal, where = "on the lists in all s
   if (total.trucks === 0) return `No truck ${where} has a known type, so there is no guide value.`;
   const guide = `Guide value of the trucks ${where}: about ${aboutMoney(total.median_sum)} across ${plural(total.trucks, "truck")} with a known type.`;
   if (total.ask_sum <= 0) return guide;
-  return `${guide} Dealers list trucks like them for about ${aboutMoney(total.ask_sum)} together, asking.`;
+  return `${guide} Dealers ask about ${aboutMoney(total.ask_sum)} for trucks like them.`;
 }
