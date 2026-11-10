@@ -67,7 +67,7 @@ export default function HomePage() {
     { value: stages.sold, label: "sold since May" },
   ];
   const salesSource = meta.sales_source
-    ? `At-auction and sold counts come from ${meta.sales_source.name}, which covers ${meta.sales_source.region}.`
+    ? `At-auction and sold counts come from ${meta.sales_source.name}, whose lots we read by hand for ${meta.sales_source.region}.`
     : null;
   const stats = [
     {

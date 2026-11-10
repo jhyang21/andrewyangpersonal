@@ -38,7 +38,10 @@ export interface Meta {
     guide_total: GuideTotal;
   };
   sources: Source[];
-  /** Where the at-auction and sold counts come from. Optional: older exports lack it. */
+  /**
+   * Where the at-auction and sold counts come from. region is a plain state list
+   * ("New York only"). Optional: older exports lack it.
+   */
   sales_source?: { name: string; region: string };
 }
 
