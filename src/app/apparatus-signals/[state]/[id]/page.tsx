@@ -20,6 +20,7 @@ import {
   formatScore,
   formatWindow,
   lowerFirst,
+  numberWord,
   plural,
   tierLabel,
   websiteHref,
@@ -27,7 +28,6 @@ import {
 } from "@/apparatus-signals/lib/format";
 import { NAMED, bandLabel, typePlural } from "@/apparatus-signals/lib/trucks";
 import {
-  BASIS_LEGEND,
   READ_BY_LABEL,
   VERDICT_LABELS,
   checkedLabel,
@@ -84,7 +84,7 @@ function whenLine(dept: Department, signals: Signal[], month: string): string {
       .pop();
     return closes ? `At auction now; closes ${formatDate(closes)}.` : "At auction now.";
   }
-  if (!dept.window) return "No window: we have no rule for this kind of signal yet.";
+  if (!dept.window) return "No window for this kind of signal.";
   const how = dept.window.how ? ` ${capitalize(dept.window.how.replace(/\.$/, ""))}.` : "";
   const passed = dept.window.to < month;
   return `${passed ? "Was due" : "Likely"} ${formatWindow(dept.window)}.${how}`;
@@ -237,7 +237,9 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
           {READ_BY_LABEL[dept.read_by].toLowerCase()}
           {dept.checked ? ` · ${lowerFirst(checkedLabel(dept.checked))}` : ""}
         </p>
-        <p className="mt-1 text-sm text-as-muted">{BASIS_LEGEND}</p>
+        <p className="mt-1 text-sm">
+          <Link href={`${BASE}/method#basis`}>What &ldquo;seen&rdquo; and &ldquo;expected&rdquo; mean</Link>
+        </p>
       </section>
 
       <TruckSection dept={dept} />
@@ -259,8 +261,8 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
         </h2>
         {hitRates.length === 0 && cases.length === 0 ? (
           <p className="text-as-ink-2">
-            There is no track record yet for &ldquo;{kindLabel(dept.top_kind, method).toLowerCase()}
-            &rdquo;.
+            We have not tracked what happens after &ldquo;
+            {lowerFirst(kindLabel(dept.top_kind, method))}&rdquo;.
           </p>
         ) : (
           <>
@@ -270,8 +272,8 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
                 <p>{h.next}</p>
                 <p className="text-sm text-as-muted">
                   {h.state === state.code
-                    ? `Found ${h.found} in ${state.name}, as of ${formatDate(h.as_of)}.`
-                    : `Counted in ${getState(h.state)?.name ?? h.state}, where we read by hand; not measured in this state.`}
+                    ? `${capitalize(numberWord(h.found))} ${state.name} ${h.found === 1 ? "department" : "departments"} did this (counted ${formatDate(h.as_of)}).`
+                    : `We only have ${getState(h.state)?.name ?? h.state} numbers for this.`}
                 </p>
               </div>
             ))}

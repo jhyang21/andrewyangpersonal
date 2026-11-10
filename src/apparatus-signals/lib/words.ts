@@ -160,11 +160,13 @@ export function windowExample(
   return pick?.window ? pick.window.how.replace(/\.$/, "") : null;
 }
 
-export const DONE_NOTE = "Already on a channel. Here as proof the earlier signs were right.";
+export const DONE_NOTE = "These listed or sold after we flagged them.";
+
+const SECOND_READER = "Checked by a second reader";
 
 const CHECKED_LABEL: Record<Checked, string> = {
-  confirmed: "Checked by a second reader",
-  corrected: "Checked; link or quote fixed",
+  confirmed: SECOND_READER,
+  corrected: SECOND_READER,
   partly: "Partly checked",
   unreachable: "Page no longer online",
   not_rechecked: "Not yet double-checked",

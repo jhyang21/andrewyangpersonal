@@ -66,6 +66,9 @@ export default function HomePage() {
     { value: stages.listed, label: "at auction now" },
     { value: stages.sold, label: "sold since May" },
   ];
+  const salesSource = meta.sales_source
+    ? `At-auction and sold counts come from ${meta.sales_source.name}, which covers ${meta.sales_source.region}.`
+    : null;
   const stats = [
     {
       label: "Leads in all",
@@ -109,6 +112,7 @@ export default function HomePage() {
             </span>
           ))}
         </p>
+        {salesSource ? <p className="text-sm text-as-muted">{salesSource}</p> : null}
         <p className="text-sm text-as-ink-2">
           {WEEK_RULE} &ldquo;{READ_BY_LABEL.person}&rdquo; means we opened the page; it did not
           come off the grant or trade-press feed.
@@ -283,6 +287,7 @@ export default function HomePage() {
           {formatNumber(stages.listed)} more are at auction now and {formatNumber(stages.sold)} sold
           since May; see each state.
         </p>
+        {salesSource ? <p className="mt-1 text-sm text-as-muted">{salesSource}</p> : null}
       </section>
     </div>
   );

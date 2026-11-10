@@ -85,6 +85,16 @@ export function percent(n: number, of: number, digits = 0): string {
   return `${(Math.floor(((n / of) * 100 + 1e-9) * f) / f).toFixed(digits)}%`;
 }
 
+const NUMBER_WORDS = [
+  "no", "one", "two", "three", "four", "five", "six",
+  "seven", "eight", "nine", "ten", "eleven", "twelve",
+];
+
+/** 0-12 as a word ("nine"), larger numbers as digits ("33"). */
+export function numberWord(n: number): string {
+  return Number.isInteger(n) && n >= 0 && n < NUMBER_WORDS.length ? NUMBER_WORDS[n] : formatNumber(n);
+}
+
 export function plural(n: number, one: string, many = `${one}s`): string {
   return `${formatNumber(n)} ${n === 1 ? one : many}`;
 }

@@ -15,6 +15,7 @@ import { bandLabel, typePlural } from "@/apparatus-signals/lib/trucks";
 import { ageBuckets, lotsByState, medianPrice, splitSales } from "@/apparatus-signals/lib/sales";
 import {
   BASIS_LABEL,
+  BASIS_LEGEND,
   VERDICT_LABELS,
   WEEK_RULE,
   fillTemplate,
@@ -158,6 +159,9 @@ export default function MethodPage() {
           department&rsquo;s score is its strongest signal in full plus half of the best signal of
           each other kind. The score sets when to call. {WEEK_RULE} A lead with nothing seen yet
           tops out at &ldquo;Call this month&rdquo;.
+        </p>
+        <p id="basis" className="max-w-3xl text-as-ink-2">
+          {BASIS_LEGEND}
         </p>
         <div className="grid gap-8 lg:grid-cols-2">
           <table className="data-table">
@@ -497,7 +501,7 @@ export default function MethodPage() {
         ) : (
           <p>No state sale rules are written up yet.</p>
         )}
-        <p className="text-as-ink-2">Other states are not written up yet.</p>
+        <p className="text-as-ink-2">We have not looked up the other states yet.</p>
       </section>
 
       <section aria-labelledby="limits" className="prose-plain max-w-3xl">
