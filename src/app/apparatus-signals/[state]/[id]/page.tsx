@@ -20,6 +20,7 @@ import {
   formatScore,
   formatWindow,
   lowerFirst,
+  numberWord,
   plural,
   tierLabel,
   websiteHref,
@@ -27,7 +28,6 @@ import {
 } from "@/apparatus-signals/lib/format";
 import { NAMED, bandLabel, typePlural } from "@/apparatus-signals/lib/trucks";
 import {
-  BASIS_LEGEND,
   READ_BY_LABEL,
   VERDICT_LABELS,
   checkedLabel,
@@ -71,9 +71,9 @@ const LIKE_FOR_LIKE = /;\s*departments usually replace like with like\.?$/;
 /** The "When it should list" line, from the lead's stage and window, against the run month. */
 function whenLine(dept: Department, signals: Signal[], month: string): string {
   if (dept.stage === "sold") {
-    return dept.top_kind === "bids_closed"
-      ? "Bids closed; we have not found the result."
-      : "Already sold.";
+    if (dept.top_kind === "bids_closed") return "Bids closed; we have not found the result.";
+    if (dept.top_kind === "direct_sale") return "Going direct to a buyer; it will not list.";
+    return "Already sold.";
   }
   if (dept.stage === "gear") return "No truck to list: it is selling gear.";
   if (dept.stage === "listed") {
@@ -84,7 +84,7 @@ function whenLine(dept: Department, signals: Signal[], month: string): string {
       .pop();
     return closes ? `At auction now; closes ${formatDate(closes)}.` : "At auction now.";
   }
-  if (!dept.window) return "No window: we have no rule for this kind of signal yet.";
+  if (!dept.window) return "No window for this kind of signal.";
   const how = dept.window.how ? ` ${capitalize(dept.window.how.replace(/\.$/, ""))}.` : "";
   const passed = dept.window.to < month;
   return `${passed ? "Was due" : "Likely"} ${formatWindow(dept.window)}.${how}`;
@@ -92,7 +92,9 @@ function whenLine(dept: Department, signals: Signal[], month: string): string {
 
 function TruckSection({ dept }: { dept: Department }) {
   const { truck, guide } = dept;
-  const known = Boolean(truck.description || truck.type);
+  // A direct sale has no truck for sale; the pipeline blanks it on purpose.
+  const direct = dept.top_kind === "direct_sale";
+  const known = !direct && Boolean(truck.description || truck.type);
   let year = "";
   if (truck.year && truck.year_how === "stated") year = ` Model year ${truck.year}.`;
   if (truck.year && truck.year_how === "from age") {
@@ -104,7 +106,11 @@ function TruckSection({ dept }: { dept: Department }) {
         The truck
       </h2>
       {!known ? (
-        <p className="mt-1 max-w-3xl text-as-ink-2">The record does not name the old truck.</p>
+        <p className="mt-1 max-w-3xl text-as-ink-2">
+          {direct
+            ? "The truck goes to the buyer; nothing is for sale."
+            : "The record does not name the old truck."}
+        </p>
       ) : (
         <>
           <p className="mt-1 text-lg font-semibold">
@@ -237,7 +243,9 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
           {READ_BY_LABEL[dept.read_by].toLowerCase()}
           {dept.checked ? ` · ${lowerFirst(checkedLabel(dept.checked))}` : ""}
         </p>
-        <p className="mt-1 text-sm text-as-muted">{BASIS_LEGEND}</p>
+        <p className="mt-1 text-sm">
+          <Link href={`${BASE}/method#basis`}>What &ldquo;seen&rdquo; and &ldquo;expected&rdquo; mean</Link>
+        </p>
       </section>
 
       <TruckSection dept={dept} />
@@ -259,8 +267,8 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
         </h2>
         {hitRates.length === 0 && cases.length === 0 ? (
           <p className="text-as-ink-2">
-            There is no track record yet for &ldquo;{kindLabel(dept.top_kind, method).toLowerCase()}
-            &rdquo;.
+            We have not tracked what happens after &ldquo;
+            {lowerFirst(kindLabel(dept.top_kind, method))}&rdquo;.
           </p>
         ) : (
           <>
@@ -270,8 +278,8 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
                 <p>{h.next}</p>
                 <p className="text-sm text-as-muted">
                   {h.state === state.code
-                    ? `Found ${h.found} in ${state.name}, as of ${formatDate(h.as_of)}.`
-                    : `Counted in ${getState(h.state)?.name ?? h.state}, where we read by hand; not measured in this state.`}
+                    ? `${capitalize(numberWord(h.found))} ${state.name} ${h.found === 1 ? "department" : "departments"} had this signal (counted ${formatDate(h.as_of)}).`
+                    : `We only have ${getState(h.state)?.name ?? h.state} numbers for this.`}
                 </p>
               </div>
             ))}

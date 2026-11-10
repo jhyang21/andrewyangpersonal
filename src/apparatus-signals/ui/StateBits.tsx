@@ -77,7 +77,7 @@ export function RuleBox({ state, rule }: { state: StateRow; rule: SaleRule | nul
         </>
       ) : (
         <p className="mt-1 text-as-ink-2">
-          The sale rules for {state.name} are not written up yet.
+          We have not looked up {state.name}&rsquo;s sale rules yet.
         </p>
       )}
     </section>

@@ -1339,72 +1339,6 @@
   "guide": null
  },
  {
-  "checked": "partly",
-  "score": 4.0,
-  "department": "Middletown Fire Department",
-  "registry_name": "",
-  "city": "Middletown",
-  "county": "Dauphin",
-  "type": "",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "Selling: 2001 KME fire pumper. Resolution 2024-19 allowed sale to bid-exempt buyers; Oct 7, 2025 minutes authorize sale to a volunteer fire department, pending final inspection",
-  "signal_date": "2025-10-07",
-  "proof_url": "https://middletownborough.com/wp-content/uploads/2025/10/Agenda-100725.pdf",
-  "proof_quote": "2001 KME fire pumper truck",
-  "other_signals": "",
-  "named_in_source": "Middletown Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "2001 KME fire pumper",
-   "type": "pumper",
-   "year": 2001,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": null,
-  "rank": 25,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "21-25",
-   "n": 77,
-   "median": 5100,
-   "p25": 3550,
-   "p75": 8000,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2001 KME Excel Fire Truck",
-     "price": 6200.0,
-     "date": "2026-04-06",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/46623/item/lot-0004-2001-kme-excel-fire-truck-291377/"
-    },
-    {
-     "item": "2001 Pierce Quantum Tilt Cab Super Crew Fire Pumper",
-     "price": 9800.0,
-     "date": "2026-02-18",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46086/item/lot-0001-2001-pierce-quantum-tilt-cab-super-crew-fire-pumper-287937/"
-    },
-    {
-     "item": "2001 E-ONE Fire Truck Cab Over Engine",
-     "price": 6100.0,
-     "date": "2026-02-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/45978/item/lot-0002-2001-e-one-fire-truck-cab-over-engine-287201/"
-    }
-   ]
-  }
- },
- {
   "checked": "fema_table",
   "score": 4.0,
   "department": "Mifflintown Hose Company NO 1",
@@ -1438,7 +1372,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 26,
+  "rank": 25,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1477,7 +1411,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 27,
+  "rank": 26,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1516,7 +1450,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 28,
+  "rank": 27,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1555,7 +1489,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 29,
+  "rank": 28,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1594,7 +1528,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 30,
+  "rank": 29,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1633,7 +1567,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 31,
+  "rank": 30,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1672,7 +1606,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 32,
+  "rank": 31,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1711,7 +1645,7 @@
    "to": "2027-09",
    "how": "grant awarded Sep 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 33,
+  "rank": 32,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1750,7 +1684,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 34,
+  "rank": 33,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1789,7 +1723,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 35,
+  "rank": 34,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1828,7 +1762,7 @@
    "to": "2025-05",
    "how": "sale announced Nov 2024; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 36,
+  "rank": 35,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1898,7 +1832,7 @@
    "to": "2028-11",
    "how": "new truck due Spring 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 37,
+  "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1968,7 +1902,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 38,
+  "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2038,7 +1972,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 39,
+  "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2108,7 +2042,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 40,
+  "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2178,7 +2112,7 @@
    "to": "2026-03",
    "how": "new truck arrived Sep 2025; the old one may already have sold quietly"
   },
-  "rank": 41,
+  "rank": 40,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2248,7 +2182,7 @@
    "to": "2029-04",
    "how": "new truck due Oct 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 42,
+  "rank": 41,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2318,7 +2252,7 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 43,
+  "rank": 42,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2388,7 +2322,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 44,
+  "rank": 43,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2458,7 +2392,7 @@
    "to": "2028-09",
    "how": "money approved Sep 2026; order, build, then sale"
   },
-  "rank": 45,
+  "rank": 44,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2497,7 +2431,7 @@
    "to": "2028-05",
    "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 46,
+  "rank": 45,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2567,7 +2501,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 47,
+  "rank": 46,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2637,7 +2571,7 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 48,
+  "rank": 47,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2707,7 +2641,7 @@
    "to": "2028-01",
    "how": "money approved Jan 2026; order, build, then sale"
   },
-  "rank": 49,
+  "rank": 48,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2746,7 +2680,7 @@
    "to": "2029-04",
    "how": "new truck due Oct 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 50,
+  "rank": 49,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2816,7 +2750,7 @@
    "to": "2025-11",
    "how": "new truck arrived May 2025; the old one may already have sold quietly"
   },
-  "rank": 51,
+  "rank": 50,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2886,7 +2820,7 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 52,
+  "rank": 51,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2956,7 +2890,7 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 53,
+  "rank": 52,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3026,7 +2960,7 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 54,
+  "rank": 53,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3065,7 +2999,7 @@
    "to": "2026-11",
    "how": "ordered Nov 2025; builds have taken four to twelve months in the back-test"
   },
-  "rank": 55,
+  "rank": 54,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3104,7 +3038,7 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 56,
+  "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3139,7 +3073,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 57,
+  "rank": 56,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3178,7 +3112,7 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 58,
+  "rank": 57,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3213,7 +3147,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 59,
+  "rank": 58,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -3252,7 +3186,7 @@
    "to": "2027-04",
    "how": "ordered Apr 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 60,
+  "rank": 59,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3291,6 +3225,41 @@
    "to": "2027-02",
    "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
+  "rank": 60,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "partly",
+  "score": 2.0,
+  "department": "Middletown Fire Department",
+  "registry_name": "",
+  "city": "Middletown",
+  "county": "Dauphin",
+  "type": "",
+  "website": "",
+  "why_call": "Sale to a chosen buyer; will not list",
+  "detail": "Selling: 2001 KME fire pumper. Resolution 2024-19 allowed sale to bid-exempt buyers; Oct 7, 2025 minutes authorize sale to a volunteer fire department, pending final inspection",
+  "signal_date": "2025-10-07",
+  "proof_url": "https://middletownborough.com/wp-content/uploads/2025/10/Agenda-100725.pdf",
+  "proof_quote": "2001 KME fire pumper truck",
+  "other_signals": "",
+  "named_in_source": "Middletown Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "direct_sale",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "sold",
+  "window": null,
   "rank": 61,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",

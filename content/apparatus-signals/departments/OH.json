@@ -71,6 +71,45 @@
  },
  {
   "checked": "fema_table",
+  "score": 5.5,
+  "department": "Danbury Township Fire Department",
+  "registry_name": "Lakeside Volunteer Fire Protective Association, Inc",
+  "city": "Lakeside",
+  "county": "Ottawa",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $264,761, awarded 9/22/26 (FY2025)",
+  "signal_date": "2026-09-22",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Danbury Township Fire Department, Vehicle Acquisition, $264,761",
+  "other_signals": "New truck on order: New Sutphen pumper-tanker on order (2025-09), delivery December 2027",
+  "named_in_source": "Danbury Township Fire Department",
+  "name_match": "hand-checked alias",
+  "fdid": "62017",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 2,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Aid Township Volunteer Fire Department, Inc.",
   "registry_name": "",
@@ -103,7 +142,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 2,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -142,7 +181,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -181,7 +220,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 4,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -251,7 +290,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -290,7 +329,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -360,7 +399,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -399,7 +438,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -438,7 +477,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 9,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -477,48 +516,9 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "fema_table",
-  "score": 4.0,
-  "department": "Danbury Township Fire Department",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $264,761, awarded 9/22/26 (FY2025)",
-  "signal_date": "2026-09-22",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Danbury Township Fire Department, Vehicle Acquisition, $264,761",
-  "other_signals": "",
-  "named_in_source": "Danbury Township Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2028-03",
-   "to": "2029-09",
-   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
-  },
   "rank": 11,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
@@ -1210,76 +1210,6 @@
  {
   "checked": "trade_press",
   "score": 3.0,
-  "department": "Danbury Township Fire Department",
-  "registry_name": "Lakeside Volunteer Fire Protective Association, Inc",
-  "city": "Lakeside",
-  "county": "Ottawa",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Sutphen pumper-tanker on order (2025-09), delivery December 2027",
-  "signal_date": "2025-09-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-sept-2025/",
-  "proof_quote": "SUTPHEN—Danbury Township Fire Department, Lakeside, pumper-tanker. Delivery in December 2027.",
-  "other_signals": "",
-  "named_in_source": "Danbury Township Fire Department",
-  "name_match": "by town (only department there)",
-  "fdid": "62017",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2027-12",
-   "to": "2028-06",
-   "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
-  },
-  "rank": 28,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1995 Freightliner FL120 Firovac Tanker",
-     "price": 21200.0,
-     "date": "2020-02-14",
-     "state": "OH",
-     "url": "https://www.auctionsinternational.com/auction/20310/item/lot-0001-1995-freightliner-fl120-firovac-tanker-123773/"
-    },
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
   "department": "Delaware Fire Department",
   "registry_name": "Delaware Fire Department",
   "city": "Delaware",
@@ -1311,7 +1241,7 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 29,
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1381,7 +1311,7 @@
    "to": "2028-11",
    "how": "new truck due Spring 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 30,
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1451,7 +1381,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 31,
+  "rank": 30,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1521,7 +1451,7 @@
    "to": "2029-03",
    "how": "new truck due Sep 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 32,
+  "rank": 31,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1591,7 +1521,7 @@
    "to": "2027-05",
    "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 33,
+  "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1661,7 +1591,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 34,
+  "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1731,7 +1661,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 35,
+  "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1801,7 +1731,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 36,
+  "rank": 35,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1871,7 +1801,7 @@
    "to": "2027-01",
    "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 37,
+  "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1941,7 +1871,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 38,
+  "rank": 37,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2011,7 +1941,7 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 39,
+  "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2081,7 +2011,7 @@
    "to": "2028-12",
    "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 40,
+  "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2151,7 +2081,7 @@
    "to": "2029-05",
    "how": "new truck due Nov 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 41,
+  "rank": 40,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2221,7 +2151,7 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 42,
+  "rank": 41,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2291,7 +2221,7 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 43,
+  "rank": 42,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2361,7 +2291,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 44,
+  "rank": 43,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2431,7 +2361,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 45,
+  "rank": 44,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2470,7 +2400,7 @@
    "to": "2026-07",
    "how": "new truck was due Jan 2026; the old one may already have sold quietly"
   },
-  "rank": 46,
+  "rank": 45,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2540,7 +2470,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 47,
+  "rank": 46,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2579,7 +2509,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 48,
+  "rank": 47,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2618,7 +2548,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 49,
+  "rank": 48,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2657,7 +2587,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 50,
+  "rank": 49,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2696,7 +2626,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 51,
+  "rank": 50,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2735,7 +2665,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 52,
+  "rank": 51,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2774,7 +2704,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 53,
+  "rank": 52,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2813,7 +2743,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 54,
+  "rank": 53,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2852,7 +2782,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 55,
+  "rank": 54,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -2891,7 +2821,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 56,
+  "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2930,7 +2860,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 57,
+  "rank": 56,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2969,7 +2899,7 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 58,
+  "rank": 57,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null

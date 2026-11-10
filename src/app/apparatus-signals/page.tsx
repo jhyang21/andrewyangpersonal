@@ -66,6 +66,15 @@ export default function HomePage() {
     { value: stages.listed, label: "at auction now" },
     { value: stages.sold, label: "sold since May" },
   ];
+  const source = meta.sales_source;
+  const salesSource = source
+    ? [
+        `At-auction and sold counts come from ${source.name}, whose ${source.region} lots we read by hand.`,
+        source.note,
+      ]
+        .filter(Boolean)
+        .join(" ")
+    : null;
   const stats = [
     {
       label: "Leads in all",
@@ -109,6 +118,7 @@ export default function HomePage() {
             </span>
           ))}
         </p>
+        {salesSource ? <p className="text-sm text-as-muted">{salesSource}</p> : null}
         <p className="text-sm text-as-ink-2">
           {WEEK_RULE} &ldquo;{READ_BY_LABEL.person}&rdquo; means we opened the page; it did not
           come off the grant or trade-press feed.

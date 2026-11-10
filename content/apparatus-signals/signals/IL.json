@@ -1027,26 +1027,6 @@
   "fdid": "LA152"
  },
  {
-  "kind": "delivery_due",
-  "date": "2026-09-01",
-  "detail": "New Alexis pumper due September 2026 (ordered 2025-08)",
-  "old_truck": null,
-  "where": "trade press",
-  "quote": "ALEXIS—Wood Dale Fire Protection District pumper. Delivery in September 2026.",
-  "url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-aug-2025/",
-  "new_truck_type": "pumper",
-  "expected": "2026-09",
-  "expected_precision": "month",
-  "expected_words": "September 2026",
-  "points": 4,
-  "read_by": "feed",
-  "source_name": "Wood Dale Fire Protection District",
-  "source_city": "",
-  "source_county": "",
-  "match": "exact",
-  "fdid": "DD392"
- },
- {
   "kind": "new_truck_ordered",
   "date": "2025-09-01",
   "detail": "New E-One pumper on order (2025-09), delivery February 2028",

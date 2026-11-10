@@ -851,9 +851,9 @@
   "name": "New Jersey",
   "departments": 713,
   "leads": {
-   "week": 2,
+   "week": 1,
    "month": 16,
-   "watch": 31,
+   "watch": 32,
    "total": 49
   },
   "by_kind": {
@@ -863,8 +863,9 @@
    "new_truck_arrived": 7,
    "delivery_due": 7,
    "council_approval": 4,
-   "surplus_declared": 2,
-   "sale_planned": 1
+   "surplus_declared": 1,
+   "sale_planned": 1,
+   "direct_sale": 1
   },
   "coverage": "deep",
   "layers": [
@@ -890,8 +891,8 @@
    "note": "Most New Jersey units sell at public online auction, so the resolution that authorizes the sale is the earliest public signal. The dollar lines are those in force since 1 July 2025 (DCA Local Finance Notice 2025-08). A bill introduced in February 2026 (S3437) would redraw the bands; it is not law."
   },
   "guide_total": {
-   "trucks": 24,
-   "median_sum": 149150
+   "trucks": 23,
+   "median_sum": 145500
   }
  },
  {
@@ -1008,12 +1009,12 @@
   "leads": {
    "week": 1,
    "month": 24,
-   "watch": 33,
-   "total": 58
+   "watch": 32,
+   "total": 57
   },
   "by_kind": {
    "grant": 35,
-   "new_truck_ordered": 18,
+   "new_truck_ordered": 17,
    "delivery_due": 4,
    "new_truck_arrived": 1
   },
@@ -1025,8 +1026,8 @@
   "registry_fetched": "2026-11-08",
   "rule": null,
   "guide_total": {
-   "trucks": 23,
-   "median_sum": 138300
+   "trucks": 22,
+   "median_sum": 130300
   }
  },
  {
@@ -1088,8 +1089,8 @@
   "departments": 1771,
   "leads": {
    "week": 1,
-   "month": 35,
-   "watch": 39,
+   "month": 34,
+   "watch": 40,
    "total": 75
   },
   "by_kind": {
@@ -1098,9 +1099,10 @@
    "new_truck_arrived": 4,
    "delivery_due": 4,
    "council_approval": 4,
-   "sale_planned": 3,
    "bids_closed": 3,
-   "already_sold": 1
+   "sale_planned": 2,
+   "already_sold": 1,
+   "direct_sale": 1
   },
   "coverage": "deep",
   "layers": [
@@ -1130,8 +1132,8 @@
    "note": "A sale to a volunteer fire company or another government skips bidding, so a municipal truck often moves quietly (Harrisburg to Highspire, 2025). At $2,000 and up the sale must be advertised, so the first public signal is usually a council or supervisors minute authorizing the sale, then an ad or online listing 10 or more days before the close. Companies that own their trucks often post the sale on their own site or Facebook first. Second-class townships moved from $1,000 to $2,000 in 2017; older resolutions that cite $1,000 are out of date."
   },
   "guide_total": {
-   "trucks": 35,
-   "median_sum": 209875
+   "trucks": 34,
+   "median_sum": 204775
   }
  },
  {

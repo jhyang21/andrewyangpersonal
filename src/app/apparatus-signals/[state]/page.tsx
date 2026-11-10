@@ -100,7 +100,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
   const done = departments.filter((d) => isDoneStage(d.stage)).length;
   const extra = [
     gear ? `${plural(gear, "department")} selling gear, no truck named.` : "",
-    done ? `${formatNumber(done)} already at auction or sold.` : "",
+    done ? `${formatNumber(done)} already listed, sold, bids closed or going direct.` : "",
   ]
     .filter(Boolean)
     .join(" ");

@@ -1,14 +1,14 @@
 {
  "updated": "2026-11-09",
- "generated_at": "2026-11-10T03:08:16Z",
+ "generated_at": "2026-11-10T05:04:12Z",
  "totals": {
   "states": 51,
   "departments_in_registry": 27102,
-  "leads": 1112,
-  "leads_week": 23,
+  "leads": 1111,
+  "leads_week": 22,
   "hand_read_leads": 161,
   "observed_leads": 133,
-  "signals": 1262,
+  "signals": 1259,
   "deep_states": [
    "CT",
    "NJ",
@@ -18,9 +18,17 @@
   "auction_states": [],
   "sales": 1231,
   "guide_total": {
-   "trucks": 615,
-   "median_sum": 3659075
+   "trucks": 612,
+   "median_sum": 3642325
   }
+ },
+ "sales_source": {
+  "name": "Auctions International",
+  "region": "New York",
+  "states": [
+   "NY"
+  ],
+  "note": "A few sales were found in public notices or news instead."
  },
  "sources": [
   {
