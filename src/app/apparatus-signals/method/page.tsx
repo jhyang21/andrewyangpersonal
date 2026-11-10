@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Fragment } from "react";
 import { BASE } from "@/apparatus-signals/lib/site";
 import { allLeads, getMeta, getMethod, getSales, getState, getStates } from "@/apparatus-signals/lib/data";
 import {
@@ -8,6 +9,7 @@ import {
   formatMoney,
   formatNumber,
   joinPlain,
+  numberWord,
   plural,
   tierLabel,
 } from "@/apparatus-signals/lib/format";
@@ -29,6 +31,9 @@ import DoesItWork from "@/apparatus-signals/ui/DoesItWork";
 import Ext from "@/apparatus-signals/ui/Ext";
 import { RuleBox } from "@/apparatus-signals/ui/StateBits";
 
+/** The age band the method page uses to compare auction and dealer prices. */
+const GAP_BAND = "21-25";
+
 export const metadata: Metadata = {
   title: "Method",
   description: "Where the leads come from, how they are scored, and what the list cannot see.",
@@ -49,6 +54,11 @@ export default function MethodPage() {
   );
   const tiers = [...method.tiers].sort((a, b) => b.floor - a.floor);
   const guide = method.price_guide;
+  const asks = method.ask_guide;
+  const pumperRow = (table: { type: string; band: string; median: number }[]) =>
+    table.find((r) => r.type === "pumper" && r.band === GAP_BAND);
+  const auctionPumper = pumperRow(guide.table);
+  const dealerPumper = pumperRow(asks.table);
 
   return (
     <div className="space-y-12">
@@ -145,6 +155,77 @@ export default function MethodPage() {
         </table>
         <ul className="max-w-3xl list-disc space-y-1 pl-5 text-sm text-as-ink-2">
           {guide.meta.caveats.map((c) => (
+            <li key={c}>{c}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="dealer-asks" className="space-y-4">
+        <h2 id="dealer-asks" className="text-xl font-semibold">
+          What dealers ask
+        </h2>
+        <p className="max-w-3xl">
+          Beside each guide price the site shows what dealers ask for a truck of that type and age.
+          It uses {formatNumber(asks.meta.listings_used)} priced listings read from{" "}
+          {asks.meta.dealers.map((d, i) => (
+            <Fragment key={d.name}>
+              {i === 0 ? "" : i === asks.meta.dealers.length - 1 ? " and " : ", "}
+              <Ext href={d.url}>{d.name}</Ext> ({formatNumber(d.used)} of {formatNumber(d.listings)}
+              {i === 0 ? " listings" : ""})
+            </Fragment>
+          ))}{" "}
+          on {formatDate(asks.meta.seen)}, and skips the rest: {asks.meta.skipped_why}. Age is the{" "}
+          {asks.meta.age}. The bands, the thin rule (under {numberWord(asks.meta.thin_below)}{" "}
+          listings) and the use of the median are the same as in the price guide, so the two tables
+          read side by side.
+        </p>
+        {auctionPumper && dealerPumper ? (
+          <p className="max-w-3xl">
+            The gap is the point. At auction a pumper {bandLabel(GAP_BAND)} sells for about{" "}
+            <span className="num">{formatMoney(auctionPumper.median)}</span>; dealers list one for
+            about <span className="num">{formatMoney(dealerPumper.median)}</span>. Auction lots
+            sell as-is to the high bidder in a few weeks; dealer trucks are serviced, pump-tested
+            and wait for a buyer.
+          </p>
+        ) : null}
+        <table className="data-table">
+          <caption className="sr-only">Dealer asking prices by truck type and age</caption>
+          <thead>
+            <tr>
+              <th scope="col">Truck type</th>
+              <th scope="col">Age</th>
+              <th scope="col" className="r">
+                Listings
+              </th>
+              <th scope="col" className="r">
+                Asking median
+              </th>
+              <th scope="col" className="r">
+                Middle half
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {asks.table.map((r) => (
+              <tr key={`${r.type}-${r.band}`} className={r.thin ? "text-as-muted" : ""}>
+                <td className={r.band === "all ages" ? "font-semibold" : ""}>{typePlural(r.type)}</td>
+                <td data-label="Age">{bandLabel(r.band)}</td>
+                <td className="r" data-label="Listings">
+                  {formatNumber(r.n)}
+                  {r.thin ? <span className="block text-xs">few listings</span> : null}
+                </td>
+                <td className="r" data-label="Asking median">
+                  {formatMoney(r.median)}
+                </td>
+                <td className="r whitespace-nowrap" data-label="Middle half">
+                  {formatMoney(r.p25)} to {formatMoney(r.p75)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <ul className="max-w-3xl list-disc space-y-1 pl-5 text-sm text-as-ink-2">
+          {asks.meta.caveats.map((c) => (
             <li key={c}>{c}</li>
           ))}
         </ul>
