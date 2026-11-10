@@ -48,7 +48,7 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 
 - `/apparatus-signals` is a self-contained microsite: routes in `src/app/apparatus-signals/`, code in `src/apparatus-signals/` (`lib/`, `ui/`, `styles.css`), data in `content/apparatus-signals/`. Every internal link starts with `BASE` from `src/apparatus-signals/lib/site.ts`.
 - Its data comes from the pipeline in `~/Documents/projects/apparatus-signals/`. To refresh it, rerun `python export_site.py` in that repo's `pipeline/` (it writes straight into `content/apparatus-signals/`), then build and commit here. The build fails if the data carries a phone, an outreach field or a forbidden word (`lib/data.ts`).
-- It has its own tokens, font (Geist) and nav on purpose; it does not use `SiteNav` and is not in `content/projects.json`. Its tokens are scoped to the `.apparatus-signals` wrapper and prefixed `--as-*`; the only trace in `globals.css` is the `--color-as-*` lines in `@theme inline`, which give it utilities like `text-as-muted`.
+- It has its own tokens, font (Geist) and nav on purpose; it does not use `SiteNav`. Its entry in `content/projects.json` carries `href: "/apparatus-signals"`, so the Projects list links to the microsite instead of a `/projects/<slug>` page, and the sitemap skips it there (its own section lists every page). Its tokens are scoped to the `.apparatus-signals` wrapper and prefixed `--as-*`; the only trace in `globals.css` is the `--color-as-*` lines in `@theme inline`, which give it utilities like `text-as-muted`.
 
 ---
 

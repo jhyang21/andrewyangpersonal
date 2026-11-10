@@ -16,10 +16,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: memo.date ? new Date(memo.date) : undefined,
   }));
 
-  const projects = getAllProjects().map((project) => ({
-    url: `${SITE_URL}/projects/${project.slug}`,
-    lastModified: project.date ? new Date(project.date) : undefined,
-  }));
+  // Entries with their own href are not /projects pages, so they are left out here; the Apparatus
+  // Signals microsite has its own section below.
+  const projects = getAllProjects()
+    .filter((project) => !project.href)
+    .map((project) => ({
+      url: `${SITE_URL}/projects/${project.slug}`,
+      lastModified: project.date ? new Date(project.date) : undefined,
+    }));
 
   return [
     { url: SITE_URL },

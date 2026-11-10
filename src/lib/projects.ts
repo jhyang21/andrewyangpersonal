@@ -7,6 +7,8 @@ export type Project = {
   slug: string;
   date: string;
   summary: string;
+  /** Where the entry links when it is not a page under /projects (the Apparatus Signals microsite). */
+  href?: string;
 };
 
 /**
