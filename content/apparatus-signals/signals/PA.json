@@ -510,7 +510,7 @@
   "fdid": "04071"
  },
  {
-  "kind": "sale_planned",
+  "kind": "direct_sale",
   "detail": "Selling: 2001 KME fire pumper. Resolution 2024-19 allowed sale to bid-exempt buyers; Oct 7, 2025 minutes authorize sale to a volunteer fire department, pending final inspection",
   "date": "2025-10-07",
   "quote": "2001 KME fire pumper truck",
@@ -518,7 +518,7 @@
   "where": "public notice or news",
   "url": "https://middletownborough.com/wp-content/uploads/2025/10/Agenda-100725.pdf",
   "checked": "partly",
-  "points": 4,
+  "points": 2,
   "read_by": "person",
   "source_name": "Middletown Fire Department",
   "source_city": "Middletown",

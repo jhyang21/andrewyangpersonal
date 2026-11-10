@@ -1,71 +1,5 @@
 [
  {
-  "checked": "corrected",
-  "score": 7.0,
-  "department": "Township of South Brunswick",
-  "registry_name": "",
-  "city": "South Brunswick",
-  "county": "Middlesex",
-  "type": "",
-  "website": "",
-  "why_call": "Board voted to sell a truck",
-  "detail": "Selling: ambulance(s) no longer needed for municipal purposes. Sale to Monmouth Junction First Aid Squad, Inc. proposed in ordinance 2026-14",
-  "signal_date": "2026-10",
-  "proof_url": "https://southbrunswicknj.gov/ordinance-2026-14-authorizing-sale-of-vehicle-and-ambulances-no-longer-needed-for-municipal-purposes-to-the-monmouth-junction-first-aid-squad-inc/",
-  "proof_quote": "Ordinance #2026-14 Authorizing Sale of Vehicle and Ambulance(S) No Longer Needed for Municipal Purposes To the Monmouth Junction First Aid Squad, Inc.",
-  "other_signals": "",
-  "named_in_source": "Township of South Brunswick",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "surplus_declared",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "ambulance(s) no longer needed for municipal purposes",
-   "type": "ambulance",
-   "year": null,
-   "year_how": null,
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": null,
-  "rank": 1,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "ambulance",
-   "band": "all ages",
-   "n": 355,
-   "median": 3650,
-   "p25": 1900,
-   "p75": 6550,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2013 International DuraStar 4300 Ambulance",
-     "price": 5100.0,
-     "date": "2026-10-24",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49532/item/lot-0001-2013-international-durastar-4300-ambulance-312278/"
-    },
-    {
-     "item": "2010 Ford E-350 Ambulance",
-     "price": 880.0,
-     "date": "2026-10-21",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49450/item/lot-0002-2-2010-ford-e-350-ambulance-311765/"
-    },
-    {
-     "item": "2005 Ford E-450 Ambulance",
-     "price": 4050.0,
-     "date": "2026-10-20",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49446/item/lot-0001-2005-ford-e-450-ambulance-311730/"
-    }
-   ]
-  }
- },
- {
   "checked": "trade_press",
   "score": 6.0,
   "department": "Belleville Fire Department",
@@ -99,7 +33,7 @@
    "to": "2027-03",
    "how": "new truck in service Sep 2026; we allow six months for the old one to list"
   },
-  "rank": 2,
+  "rank": 1,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -169,7 +103,7 @@
    "to": "2026-03",
    "how": "voted to sell Sep 2025; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -239,7 +173,7 @@
    "to": "2026-11",
    "how": "new truck in service May 2026; we allow six months for the old one to list"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -278,7 +212,7 @@
    "to": "2028-11",
    "how": "money approved Nov 2026; order, build, then sale"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -348,7 +282,7 @@
    "to": "2027-02",
    "how": "sale announced Aug 2026"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -418,7 +352,7 @@
    "to": "2026-08",
    "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -457,7 +391,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -496,7 +430,7 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 9,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -535,7 +469,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -574,7 +508,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -613,7 +547,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 12,
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -652,7 +586,7 @@
    "to": "2029-02",
    "how": "new truck due Summer 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 13,
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -722,7 +656,7 @@
    "to": "2028-11",
    "how": "money approved Nov 2026; order, build, then sale"
   },
-  "rank": 14,
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -761,7 +695,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 15,
+  "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -800,7 +734,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 16,
+  "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -870,7 +804,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 17,
+  "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -909,7 +843,7 @@
    "to": "2028-05",
    "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 18,
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -979,7 +913,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 19,
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1049,7 +983,7 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 20,
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1088,7 +1022,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1158,7 +1092,7 @@
    "to": "2027-09",
    "how": "money approved Sep 2025; order, build, then sale"
   },
-  "rank": 22,
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1197,7 +1131,7 @@
    "to": "2025-10",
    "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
   },
-  "rank": 23,
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1267,7 +1201,7 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1337,7 +1271,7 @@
    "to": "2028-03",
    "how": "money approved Mar 2026; order, build, then sale"
   },
-  "rank": 25,
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1376,7 +1310,7 @@
    "to": "2028-02",
    "how": "money approved Feb 2026; order, build, then sale"
   },
-  "rank": 26,
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1446,7 +1380,7 @@
    "to": "2028-06",
    "how": "money approved Jun 2026; order, build, then sale"
   },
-  "rank": 27,
+  "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1485,7 +1419,7 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 28,
+  "rank": 27,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1555,7 +1489,7 @@
    "to": "2028-02",
    "how": "money approved Feb 2026; order, build, then sale"
   },
-  "rank": 29,
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1594,7 +1528,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 30,
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1664,7 +1598,7 @@
    "to": "2025-11",
    "how": "new truck arrived May 2025; the old one may already have sold quietly"
   },
-  "rank": 31,
+  "rank": 30,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1734,7 +1668,7 @@
    "to": "2027-05",
    "how": "money approved May 2025; order, build, then sale"
   },
-  "rank": 32,
+  "rank": 31,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1773,7 +1707,7 @@
    "to": "2027-02",
    "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 33,
+  "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1812,7 +1746,7 @@
    "to": "2028-07",
    "how": "money approved Jul 2026; order, build, then sale"
   },
-  "rank": 34,
+  "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1851,7 +1785,7 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 35,
+  "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1921,7 +1855,7 @@
    "to": "2026-02",
    "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
   },
-  "rank": 36,
+  "rank": 35,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1991,7 +1925,7 @@
    "to": "2028-07",
    "how": "money approved Jul 2026; order, build, then sale"
   },
-  "rank": 37,
+  "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2030,7 +1964,7 @@
    "to": "2028-06",
    "how": "money approved Jun 2026; order, build, then sale"
   },
-  "rank": 38,
+  "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2069,7 +2003,7 @@
    "to": "2026-09",
    "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
   },
-  "rank": 39,
+  "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2139,7 +2073,7 @@
    "to": "2026-01",
    "how": "new truck was due Jul 2025; the old one may already have sold quietly"
   },
-  "rank": 40,
+  "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2209,7 +2143,7 @@
    "to": "2028-07",
    "how": "money approved Jul 2026; order, build, then sale"
   },
-  "rank": 41,
+  "rank": 40,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2248,6 +2182,41 @@
    "to": "2028-12",
    "how": "grant awarded Dec 2025; in the back-test the median gap from award to sale was 28 months"
   },
+  "rank": 41,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "corrected",
+  "score": 2.0,
+  "department": "Township of South Brunswick",
+  "registry_name": "",
+  "city": "South Brunswick",
+  "county": "Middlesex",
+  "type": "",
+  "website": "",
+  "why_call": "Sale to a named buyer; will not list",
+  "detail": "Selling: ambulance(s) no longer needed for municipal purposes. Sale to Monmouth Junction First Aid Squad, Inc. proposed in ordinance 2026-14",
+  "signal_date": "2026-10",
+  "proof_url": "https://southbrunswicknj.gov/ordinance-2026-14-authorizing-sale-of-vehicle-and-ambulances-no-longer-needed-for-municipal-purposes-to-the-monmouth-junction-first-aid-squad-inc/",
+  "proof_quote": "Ordinance #2026-14 Authorizing Sale of Vehicle and Ambulance(S) No Longer Needed for Municipal Purposes To the Monmouth Junction First Aid Squad, Inc.",
+  "other_signals": "",
+  "named_in_source": "Township of South Brunswick",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "direct_sale",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "sold",
+  "window": null,
   "rank": 42,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",

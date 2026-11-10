@@ -124,8 +124,8 @@
   "source_name": "Danbury Township Fire Department",
   "source_city": "",
   "source_county": "",
-  "match": "not in registry",
-  "fdid": ""
+  "match": "hand-checked alias",
+  "fdid": "62017"
  },
  {
   "kind": "grant",
@@ -805,7 +805,7 @@
   "source_name": "Danbury Township Fire Department",
   "source_city": "Lakeside",
   "source_county": "",
-  "match": "by town (only department there)",
+  "match": "hand-checked alias",
   "fdid": "62017"
  },
  {

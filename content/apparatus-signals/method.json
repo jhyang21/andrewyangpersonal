@@ -959,6 +959,7 @@
   "council_approval": 3,
   "grant": 3,
   "already_sold": 2,
+  "direct_sale": 2,
   "auction_equipment": 2,
   "afg_large": 1
  },
@@ -976,6 +977,7 @@
   "council_approval": "Board approved buying a new truck",
   "grant": "Won a grant for a new truck",
   "already_sold": "Sold its old truck direct",
+  "direct_sale": "Sale to a named buyer; will not list",
   "auction_equipment": "Gear at auction now (no truck)",
   "afg_large": "Large federal fire grant (purpose to confirm)"
  },
@@ -999,6 +1001,7 @@
   "bids_closed",
   "auction_support",
   "already_sold",
+  "direct_sale",
   "auction_equipment"
  ],
  "tiers": [

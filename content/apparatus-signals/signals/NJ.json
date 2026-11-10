@@ -34,7 +34,7 @@
   "fdid": "03131"
  },
  {
-  "kind": "surplus_declared",
+  "kind": "direct_sale",
   "detail": "Selling: ambulance(s) no longer needed for municipal purposes. Sale to Monmouth Junction First Aid Squad, Inc. proposed in ordinance 2026-14",
   "date": "2026-10",
   "quote": "Ordinance #2026-14 Authorizing Sale of Vehicle and Ambulance(S) No Longer Needed for Municipal Purposes To the Monmouth Junction First Aid Squad, Inc.",
@@ -42,7 +42,7 @@
   "where": "public notice or news",
   "url": "https://southbrunswicknj.gov/ordinance-2026-14-authorizing-sale-of-vehicle-and-ambulances-no-longer-needed-for-municipal-purposes-to-the-monmouth-junction-first-aid-squad-inc/",
   "checked": "corrected",
-  "points": 7,
+  "points": 2,
   "read_by": "person",
   "source_name": "Township of South Brunswick",
   "source_city": "South Brunswick",

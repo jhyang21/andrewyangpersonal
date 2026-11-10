@@ -1,7 +1,7 @@
 [
  {
   "checked": "trade_press",
-  "score": 8.0,
+  "score": 6.0,
   "department": "Wood Dale Fire Protection District #1",
   "registry_name": "Wood Dale Fire Protection District #1",
   "city": "Wood Dale",
@@ -13,7 +13,7 @@
   "signal_date": "2026-09-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-september-2026/",
   "proof_quote": "Department: WOOD DALE (IL) FIRE PROTECTION DISTRICT; Type: PUMPER (PHANTOM MODEL); Built by: ALEXIS FIRE EQUIPMENT",
-  "other_signals": "New truck was due; delivery not confirmed: New Alexis pumper due September 2026 (ordered 2025-08)",
+  "other_signals": "",
   "named_in_source": "Wood Dale Fire Protection District",
   "name_match": "exact",
   "fdid": "DD392",
