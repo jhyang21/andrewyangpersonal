@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getIndex } from "@/cup-notes/lib/data";
+import { findings } from "@/cup-notes/lib/findings";
 import { formatDate, formatNumber } from "@/cup-notes/lib/format";
 import { SITE_BYLINE, SITE_NAME, SITE_QUESTION } from "@/cup-notes/lib/site";
 
@@ -9,17 +10,16 @@ export const contentType = "image/png";
 
 /* Hard-coded light colours: the image has no theme. Ground, ink, muted and green match the tokens. */
 export default function Image() {
-  const { meta, scenarios } = getIndex();
-  const { counts } = meta;
-  const calls = counts.manager_calls + counts.barista_calls + counts.customer_calls;
-  const strict = scenarios.filter((s) => s.levers.enforcement === "strict");
-  const managers = strict.reduce((n, s) => n + Object.values(s.stance_mix).reduce((a, b) => a + b, 0), 0);
-  const enforceAll = strict.reduce((n, s) => n + s.stance_mix.enforce_all, 0);
-  const stats: [string, string][] = [
-    [formatNumber(counts.scenarios), "versions of the rule"],
-    [formatNumber(calls), "calls to the model"],
-    [`${enforceAll} of ${managers}`, "managers enforced the strict rule on every cup"],
-  ];
+  const index = getIndex();
+  const { meta } = index;
+  const f = findings(index);
+  const stats: [string, string][] = [[formatNumber(meta.counts.scenarios), "versions of the rule"]];
+  if (f) {
+    stats.push(
+      [`${f.enforceAll} of ${f.managers}`, "managers enforced the strict rule on every cup"],
+      [`${f.slammedSat} vs ${f.quietSat}`, "satisfaction, short-staffed rush vs quiet shift"],
+    );
+  }
   return new ImageResponse(
     (
       <div
@@ -43,7 +43,7 @@ export default function Image() {
         <div style={{ display: "flex", gap: 56, alignItems: "flex-end" }}>
           {stats.map(([n, label]) => (
             <div key={label} style={{ display: "flex", flexDirection: "column", maxWidth: 300 }}>
-              <div style={{ fontSize: 56, fontWeight: 700, color: "#4F7A3A" }}>{n}</div>
+              <div style={{ fontSize: 56, fontWeight: 700, color: "#4A7336" }}>{n}</div>
               <div style={{ fontSize: 24, color: "#6F675C" }}>{label}</div>
             </div>
           ))}

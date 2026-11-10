@@ -186,7 +186,7 @@ function TradeoffChartImpl({ index, selection }: Props) {
                       <p key={e} className="cn-chart-tip-row">
                         <span className={`cn-swatch cn-swatch-${e}`} />
                         {leverLabel(index, "enforcement", e)}
-                        <strong>{row[`${e}Raw`] ?? "not simulated"}</strong>
+                        <strong>{row[`${e}Raw`] ?? "no run"}</strong>
                       </p>
                     ))}
                   </div>
