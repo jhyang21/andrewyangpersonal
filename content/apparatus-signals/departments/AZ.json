@@ -1,15 +1,15 @@
 [
  {
   "checked": "trade_press",
-  "score": 4.5,
+  "score": 6.5,
   "department": "Surprise Fire Medical Department",
   "registry_name": "",
   "city": "",
   "county": "",
   "type": "",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New SVI Trucks air & light truck delivered (2026-07)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New SVI Trucks air & light truck, in the Jul 2026 delivery column",
   "signal_date": "2026-07-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-july-2026/",
   "proof_quote": "Department: SURPRISE (AZ) FIRE MEDICAL DEPARTMENT; Type: AIR & LIGHT TRUCK; Built by: SVI TRUCKS",
@@ -27,14 +27,14 @@
    "year_how": null,
    "type_how": "the new truck is an air & light truck; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-04",
-   "to": "2026-10",
-   "how": "in a delivery column dated Jul 2026; the old one may already have sold quietly"
+   "from": "2026-01",
+   "to": "2026-12",
+   "how": "named in a delivery column dated Jul 2026; columns print one to six months after the delivery, and we allow six months after delivery for the old truck to list"
   },
-  "rank": 1,
   "tier": "2 Call this month",
+  "rank": 1,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -73,8 +73,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 2,
   "tier": "2 Call this month",
+  "rank": 2,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -113,8 +113,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
   "tier": "2 Call this month",
+  "rank": 3,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -153,8 +153,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
   "tier": "2 Call this month",
+  "rank": 4,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -193,8 +193,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
   "tier": "2 Call this month",
+  "rank": 5,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -233,8 +233,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 6,
   "tier": "2 Call this month",
+  "rank": 6,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -273,8 +273,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
   "tier": "2 Call this month",
+  "rank": 7,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -288,8 +288,8 @@
   "county": "Maricopa",
   "type": "Career",
   "website": "https://www.chandleraz.gov/default.aspx?pageid=900",
-  "why_call": "New truck in service",
-  "detail": "New Pierce Manufacturing pumper delivered (2025-02)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Pierce Manufacturing pumper, in the Feb 2025 delivery column",
   "signal_date": "2025-02-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-february-2025/",
   "proof_quote": "Department: CHANDLER (AZ) FIRE DEPARTMENT; Type: PUMPER; Built by: PIERCE MANUFACTURING",
@@ -307,14 +307,14 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2024-11",
-   "to": "2025-05",
-   "how": "in a delivery column dated Feb 2025; the old one may already have sold quietly"
+   "from": "2024-08",
+   "to": "2025-07",
+   "how": "named in a delivery column dated Feb 2025; the old truck may already have sold quietly"
   },
-  "rank": 8,
   "tier": "3 Watch",
+  "rank": 8,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -367,8 +367,8 @@
   "county": "Coconino",
   "type": "Mostly volunteer",
   "website": "https://www.mormonlakefire.com/",
-  "why_call": "New truck in service",
-  "detail": "New Iturri America mini pumper delivered (2026-05)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Iturri America mini pumper, in the May 2026 delivery column",
   "signal_date": "2026-05-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-may-2026/",
   "proof_quote": "Department: MORMON LAKE (AZ) FIRE DISTRICT; Type: MINI PUMPER; Built by: ITURRI AMERICA",
@@ -386,14 +386,14 @@
    "year_how": null,
    "type_how": "the new truck is a mini pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-02",
-   "to": "2026-08",
-   "how": "in a delivery column dated May 2026; the old one may already have sold quietly"
+   "from": "2025-11",
+   "to": "2026-10",
+   "how": "named in a delivery column dated May 2026; the old truck may already have sold quietly"
   },
-  "rank": 9,
   "tier": "3 Watch",
+  "rank": 9,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "mini pumper",
@@ -471,8 +471,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 10,
   "tier": "3 Watch",
+  "rank": 10,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -511,8 +511,8 @@
    "to": "2026-08",
    "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 11,
   "tier": "3 Watch",
+  "rank": 11,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -551,8 +551,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 12,
   "tier": "3 Watch",
+  "rank": 12,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null

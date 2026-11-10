@@ -60,11 +60,11 @@
     "new_truck_arrived"
    ],
    "anchor": "date",
-   "from_months": -3,
-   "to_months": 3,
-   "how_template": "in a delivery column dated {month}; columns run months behind the delivery, so the old truck may list any time now",
+   "from_months": -6,
+   "to_months": 5,
+   "how_template": "named in a delivery column dated {month}; columns print one to six months after the delivery, and we allow six months after delivery for the old truck to list",
    "n_cases": 0,
-   "how_past_template": "in a delivery column dated {month}; the old one may already have sold quietly",
+   "how_past_template": "named in a delivery column dated {month}; the old truck may already have sold quietly",
    "where": "trade press"
   },
   {

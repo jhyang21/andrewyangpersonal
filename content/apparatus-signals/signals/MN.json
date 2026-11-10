@@ -258,7 +258,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-09-01",
-  "detail": "New Custom Fire Apparatus enclosed top-mount pumper delivered (2025-09)",
+  "detail": "New Custom Fire Apparatus enclosed top-mount pumper, in the Sep 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: NORTHFIELD AREA (MN) FIRE DEPARTMENT; Type: ENCLOSED TOP-MOUNT PUMPER; Built by: CUSTOM FIRE APPARATUS",
@@ -275,7 +275,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-04-01",
-  "detail": "New Custom Fire Apparatus pumper delivered (2026-04)",
+  "detail": "New Custom Fire Apparatus pumper, in the Apr 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: NORTH ST. PAUL (MN) FIRE DEPARTMENT; Type: PUMPER; Built by: CUSTOM FIRE APPARATUS",

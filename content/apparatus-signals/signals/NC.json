@@ -66,7 +66,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-07-01",
-  "detail": "New SVI Trucks walk-in heavy rescue delivered (2025-07)",
+  "detail": "New SVI Trucks walk-in heavy rescue, in the Jul 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: DURHAM (NC) FIRE DEPARTMENT; Type: WALK-IN HEAVY RESCUE; Built by: SVI TRUCKS",
@@ -83,7 +83,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-03-01",
-  "detail": "New Pierce Manufacturing volterra electric pumper delivered (2026-03)",
+  "detail": "New Pierce Manufacturing volterra electric pumper, in the Mar 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: CARY (NC) FIRE DEPARTMENT; Type: VOLTERRA ELECTRIC PUMPER; Built by: PIERCE MANUFACTURING",

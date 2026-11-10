@@ -29,8 +29,8 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 1,
   "tier": "1 Call this week",
+  "rank": 1,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "ambulance",
@@ -104,8 +104,8 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 2,
   "tier": "1 Call this week",
+  "rank": 2,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -179,8 +179,8 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 3,
   "tier": "1 Call this week",
+  "rank": 3,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -254,8 +254,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 4,
   "tier": "1 Call this week",
+  "rank": 4,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -294,8 +294,8 @@
    "to": "2027-03",
    "how": "new truck in service Sep 2026; we allow six months for the old one to list"
   },
-  "rank": 5,
   "tier": "1 Call this week",
+  "rank": 5,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -369,8 +369,8 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 6,
   "tier": "1 Call this week",
+  "rank": 6,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -444,8 +444,8 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 7,
   "tier": "1 Call this week",
+  "rank": 7,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -519,8 +519,8 @@
   },
   "stage": "listed",
   "window": null,
-  "rank": 8,
   "tier": "1 Call this week",
+  "rank": 8,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
@@ -598,8 +598,8 @@
    "to": "2027-03",
    "how": "new truck in service Sep 2026; we allow six months for the old one to list"
   },
-  "rank": 9,
   "tier": "1 Call this week",
+  "rank": 9,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -638,8 +638,8 @@
    "to": "2026-10",
    "how": "voted to sell Apr 2026; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 10,
   "tier": "1 Call this week",
+  "rank": 10,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -717,8 +717,8 @@
    "to": "2027-01",
    "how": "voted to sell Jul 2026"
   },
-  "rank": 11,
   "tier": "1 Call this week",
+  "rank": 11,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -796,8 +796,8 @@
    "to": "2027-05",
    "how": "sale announced"
   },
-  "rank": 12,
   "tier": "1 Call this week",
+  "rank": 12,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -875,8 +875,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 13,
   "tier": "2 Call this month",
+  "rank": 13,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
@@ -954,8 +954,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 14,
   "tier": "2 Call this month",
+  "rank": 14,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -994,11 +994,90 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 15,
   "tier": "2 Call this month",
+  "rank": 15,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 5.0,
+  "department": "Canaan Fire Department",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Spencer Fire Apparatus pumper, in the Jul 2026 delivery column",
+  "signal_date": "2026-07-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-july-2026/",
+  "proof_quote": "Department: CANAAN (NY) FIRE DEPARTMENT; Type: PUMPER; Built by: SPENCER FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "Canaan Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_arrived",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-01",
+   "to": "2026-12",
+   "how": "named in a delivery column dated Jul 2026; columns print one to six months after the delivery, and we allow six months after delivery for the old truck to list"
+  },
+  "tier": "2 Call this month",
+  "rank": 16,
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
+  }
  },
  {
   "checked": "auction_site",
@@ -1030,8 +1109,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 16,
   "tier": "2 Call this month",
+  "rank": 17,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -1066,8 +1145,8 @@
   },
   "stage": "surplus",
   "window": null,
-  "rank": 17,
   "tier": "2 Call this month",
+  "rank": 18,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1102,8 +1181,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 18,
   "tier": "2 Call this month",
+  "rank": 19,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1138,8 +1217,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 19,
   "tier": "2 Call this month",
+  "rank": 20,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -1153,8 +1232,8 @@
   "county": "Tioga",
   "type": "Volunteer",
   "website": "apalachinfd.com",
-  "why_call": "New truck in service",
-  "detail": "New Rescue 1 Manufacturing rescue truck delivered (2025-03)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Rescue 1 Manufacturing rescue truck, in the Mar 2025 delivery column",
   "signal_date": "2025-03-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-march-2025/",
   "proof_quote": "Department: APALACHIN (NY) FIRE RESCUE; Type: RESCUE TRUCK; Built by: RESCUE 1 MANUFACTURING",
@@ -1172,14 +1251,14 @@
    "year_how": null,
    "type_how": "the new truck is a rescue truck; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2024-12",
-   "to": "2025-06",
-   "how": "in a delivery column dated Mar 2025; the old one may already have sold quietly"
+   "from": "2024-09",
+   "to": "2025-08",
+   "how": "named in a delivery column dated Mar 2025; the old truck may already have sold quietly"
   },
-  "rank": 20,
   "tier": "2 Call this month",
+  "rank": 21,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -1257,8 +1336,8 @@
    "to": "2028-02",
    "how": "new truck due Summer 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
   "tier": "2 Call this month",
+  "rank": 22,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -1336,8 +1415,8 @@
    "to": "2026-07",
    "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
   },
-  "rank": 22,
   "tier": "2 Call this month",
+  "rank": 23,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1372,8 +1451,8 @@
   },
   "stage": "replacing",
   "window": null,
-  "rank": 23,
   "tier": "2 Call this month",
+  "rank": 24,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -1451,8 +1530,8 @@
    "to": "2027-01",
    "how": "ordered Jan 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 24,
   "tier": "2 Call this month",
+  "rank": 25,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1491,8 +1570,8 @@
    "to": "2028-09",
    "how": "money approved Sep 2026; order, build, then sale"
   },
-  "rank": 25,
   "tier": "2 Call this month",
+  "rank": 26,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1531,8 +1610,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 26,
   "tier": "2 Call this month",
+  "rank": 27,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1571,8 +1650,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 27,
   "tier": "2 Call this month",
+  "rank": 28,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1611,8 +1690,8 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 28,
   "tier": "2 Call this month",
+  "rank": 29,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -1690,8 +1769,8 @@
    "to": "2027-11",
    "how": "money approved Nov 2025; order, build, then sale"
   },
-  "rank": 29,
   "tier": "2 Call this month",
+  "rank": 30,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "ambulance",
@@ -1769,8 +1848,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 30,
   "tier": "2 Call this month",
+  "rank": 31,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -1848,8 +1927,8 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 31,
   "tier": "2 Call this month",
+  "rank": 32,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1888,8 +1967,8 @@
    "to": "2029-11",
    "how": "new truck due Spring 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 32,
   "tier": "2 Call this month",
+  "rank": 33,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -1967,8 +2046,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 33,
   "tier": "2 Call this month",
+  "rank": 34,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -2007,8 +2086,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 34,
   "tier": "2 Call this month",
+  "rank": 35,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2047,8 +2126,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 35,
   "tier": "2 Call this month",
+  "rank": 36,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2087,8 +2166,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 36,
   "tier": "2 Call this month",
+  "rank": 37,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -2127,8 +2206,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 37,
   "tier": "2 Call this month",
+  "rank": 38,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -2206,8 +2285,8 @@
    "to": "2026-09",
    "how": "voted to sell Mar 2026; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 38,
   "tier": "2 Call this month",
+  "rank": 39,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "mini pumper",
@@ -2285,8 +2364,8 @@
    "to": "2026-08",
    "how": "voted to sell Feb 2026; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 39,
   "tier": "2 Call this month",
+  "rank": 40,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -2364,8 +2443,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 40,
   "tier": "2 Call this month",
+  "rank": 41,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -2404,8 +2483,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 41,
   "tier": "2 Call this month",
+  "rank": 42,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2444,8 +2523,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 42,
   "tier": "2 Call this month",
+  "rank": 43,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2484,8 +2563,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 43,
   "tier": "2 Call this month",
+  "rank": 44,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2524,8 +2603,8 @@
    "to": "2026-08",
    "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
   },
-  "rank": 44,
   "tier": "2 Call this month",
+  "rank": 45,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "ambulance",
@@ -2603,8 +2682,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 45,
   "tier": "2 Call this month",
+  "rank": 46,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -2682,8 +2761,8 @@
    "to": "2026-10",
    "how": "voted to sell Apr 2026; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 46,
   "tier": "2 Call this month",
+  "rank": 47,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -2761,8 +2840,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 47,
   "tier": "2 Call this month",
+  "rank": 48,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2801,8 +2880,8 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 48,
   "tier": "2 Call this month",
+  "rank": 49,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
@@ -2880,8 +2959,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 49,
   "tier": "2 Call this month",
+  "rank": 50,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -2920,8 +2999,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 50,
   "tier": "3 Watch",
+  "rank": 51,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -2995,8 +3074,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 51,
   "tier": "3 Watch",
+  "rank": 52,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -3031,8 +3110,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 52,
   "tier": "3 Watch",
+  "rank": 53,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -3071,8 +3150,8 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 53,
   "tier": "3 Watch",
+  "rank": 54,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -3150,8 +3229,8 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 54,
   "tier": "3 Watch",
+  "rank": 55,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -3225,8 +3304,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 55,
   "tier": "3 Watch",
+  "rank": 56,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3265,90 +3344,11 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 56,
   "tier": "3 Watch",
+  "rank": 57,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
-  "department": "Canaan Fire Department",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Spencer Fire Apparatus pumper delivered (2026-07)",
-  "signal_date": "2026-07-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-july-2026/",
-  "proof_quote": "Department: CANAAN (NY) FIRE DEPARTMENT; Type: PUMPER; Built by: SPENCER FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "Canaan Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_arrived",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-04",
-   "to": "2026-10",
-   "how": "in a delivery column dated Jul 2026; the old one may already have sold quietly"
-  },
-  "rank": 57,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 437,
-   "median": 4300,
-   "p25": 2800,
-   "p75": 6400,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    },
-    {
-     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
-     "price": 7000.0,
-     "date": "2026-10-21",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
-    }
-   ]
-  },
-  "ask": {
-   "band": "26-30",
-   "usual_age": 29,
-   "n": 72,
-   "median": 39900,
-   "p25": 29875,
-   "p75": 56000,
-   "thin": false
-  }
  },
  {
   "checked": "confirmed",
@@ -3384,8 +3384,8 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 58,
   "tier": "3 Watch",
+  "rank": 58,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -3424,8 +3424,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 59,
   "tier": "3 Watch",
+  "rank": 59,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -3503,8 +3503,8 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 60,
   "tier": "3 Watch",
+  "rank": 60,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -3582,8 +3582,8 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 61,
   "tier": "3 Watch",
+  "rank": 61,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -3622,8 +3622,8 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 62,
   "tier": "3 Watch",
+  "rank": 62,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3662,8 +3662,8 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 63,
   "tier": "3 Watch",
+  "rank": 63,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -3702,8 +3702,8 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 64,
   "tier": "3 Watch",
+  "rank": 64,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -3781,8 +3781,8 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 65,
   "tier": "3 Watch",
+  "rank": 65,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -3856,8 +3856,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 66,
   "tier": "3 Watch",
+  "rank": 66,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -3892,8 +3892,8 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 67,
   "tier": "3 Watch",
+  "rank": 67,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -3932,8 +3932,8 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 68,
   "tier": "3 Watch",
+  "rank": 68,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -3968,8 +3968,8 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 69,
   "tier": "3 Watch",
+  "rank": 69,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -4008,8 +4008,8 @@
    "to": "2027-01",
    "how": "ordered Jan 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 70,
   "tier": "3 Watch",
+  "rank": 70,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -4048,8 +4048,8 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 71,
   "tier": "3 Watch",
+  "rank": 71,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -4088,8 +4088,8 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 72,
   "tier": "3 Watch",
+  "rank": 72,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -4124,8 +4124,8 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 73,
   "tier": "3 Watch",
+  "rank": 73,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -4164,8 +4164,8 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 74,
   "tier": "3 Watch",
+  "rank": 74,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -4204,8 +4204,8 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 75,
   "tier": "3 Watch",
+  "rank": 75,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -4244,8 +4244,8 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 76,
   "tier": "3 Watch",
+  "rank": 76,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -4323,8 +4323,8 @@
    "to": "2026-12",
    "how": "ordered Dec 2025; builds have taken four to twelve months in the back-test"
   },
-  "rank": 77,
   "tier": "3 Watch",
+  "rank": 77,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -4363,8 +4363,8 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 78,
   "tier": "3 Watch",
+  "rank": 78,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -4399,8 +4399,8 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 79,
   "tier": "3 Watch",
+  "rank": 79,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -4439,8 +4439,8 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 80,
   "tier": "3 Watch",
+  "rank": 80,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -4475,8 +4475,8 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 81,
   "tier": "3 Watch",
+  "rank": 81,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -4515,8 +4515,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 82,
   "tier": "3 Watch",
+  "rank": 82,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -4594,8 +4594,8 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 83,
   "tier": "3 Watch",
+  "rank": 83,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -4634,8 +4634,8 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 84,
   "tier": "3 Watch",
+  "rank": 84,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -4674,8 +4674,8 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 85,
   "tier": "3 Watch",
+  "rank": 85,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -4749,8 +4749,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 86,
   "tier": "3 Watch",
+  "rank": 86,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -4785,8 +4785,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 87,
   "tier": "3 Watch",
+  "rank": 87,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -4825,8 +4825,8 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 88,
   "tier": "3 Watch",
+  "rank": 88,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -4865,8 +4865,8 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 89,
   "tier": "3 Watch",
+  "rank": 89,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -4880,8 +4880,8 @@
   "county": "Suffolk",
   "type": "Volunteer",
   "website": "https://www.sbfd.org/",
-  "why_call": "New truck in service",
-  "detail": "New Smeal Fire Apparatus rear-mount quint delivered (2026-01)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Smeal Fire Apparatus rear-mount quint, in the Jan 2026 delivery column",
   "signal_date": "2026-01-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-january-2026/",
   "proof_quote": "Department: STONY BROOK (NY) FIRE DEPARTMENT; Type: REAR-MOUNT QUINT; Built by: SMEAL FIRE APPARATUS",
@@ -4899,14 +4899,14 @@
    "year_how": null,
    "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-10",
-   "to": "2026-04",
-   "how": "in a delivery column dated Jan 2026; the old one may already have sold quietly"
+   "from": "2025-07",
+   "to": "2026-06",
+   "how": "named in a delivery column dated Jan 2026; the old truck may already have sold quietly"
   },
-  "rank": 90,
   "tier": "3 Watch",
+  "rank": 90,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -4984,8 +4984,8 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 91,
   "tier": "3 Watch",
+  "rank": 91,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -5024,8 +5024,8 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 92,
   "tier": "3 Watch",
+  "rank": 92,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -5099,8 +5099,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 93,
   "tier": "3 Watch",
+  "rank": 93,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -5139,8 +5139,8 @@
    "to": "2028-03",
    "how": "money approved Mar 2026; order, build, then sale"
   },
-  "rank": 94,
   "tier": "3 Watch",
+  "rank": 94,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -5175,8 +5175,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 95,
   "tier": "3 Watch",
+  "rank": 95,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -5211,8 +5211,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 96,
   "tier": "3 Watch",
+  "rank": 96,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -5251,8 +5251,8 @@
    "to": "2028-01",
    "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 97,
   "tier": "3 Watch",
+  "rank": 97,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "rescue",
@@ -5330,8 +5330,8 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 98,
   "tier": "3 Watch",
+  "rank": 98,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -5370,8 +5370,8 @@
    "to": "2027-04",
    "how": "ordered Apr 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 99,
   "tier": "3 Watch",
+  "rank": 99,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -5406,8 +5406,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 100,
   "tier": "3 Watch",
+  "rank": 100,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -5442,8 +5442,8 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 101,
   "tier": "3 Watch",
+  "rank": 101,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -5478,8 +5478,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 102,
   "tier": "3 Watch",
+  "rank": 102,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -5514,8 +5514,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 103,
   "tier": "3 Watch",
+  "rank": 103,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -5550,8 +5550,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 104,
   "tier": "3 Watch",
+  "rank": 104,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -5586,8 +5586,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 105,
   "tier": "3 Watch",
+  "rank": 105,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -5626,8 +5626,8 @@
    "to": "2026-10",
    "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
   },
-  "rank": 106,
   "tier": "3 Watch",
+  "rank": 106,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -5662,8 +5662,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 107,
   "tier": "3 Watch",
+  "rank": 107,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -5698,8 +5698,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 108,
   "tier": "3 Watch",
+  "rank": 108,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -5734,8 +5734,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 109,
   "tier": "3 Watch",
+  "rank": 109,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -5770,8 +5770,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 110,
   "tier": "3 Watch",
+  "rank": 110,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -5806,8 +5806,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 111,
   "tier": "3 Watch",
+  "rank": 111,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -5846,8 +5846,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 112,
   "tier": "3 Watch",
+  "rank": 112,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -5882,8 +5882,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 113,
   "tier": "3 Watch",
+  "rank": 113,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null

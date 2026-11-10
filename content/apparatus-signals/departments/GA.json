@@ -8,8 +8,8 @@
   "county": "Spalding",
   "type": "Mostly career",
   "website": "https://www.spaldingcounty.com/",
-  "why_call": "New truck in service",
-  "detail": "New Sutphen Fire Apparatus pumper delivered (2026-09)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Sutphen Fire Apparatus pumper, in the Sep 2026 delivery column",
   "signal_date": "2026-09-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-september-2026/",
   "proof_quote": "Department: SPALDING COUNTY (GA) FIRE DEPARTMENT; Type: PUMPER; Built by: SUTPHEN FIRE APPARATUS",
@@ -27,14 +27,14 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-06",
-   "to": "2026-12",
-   "how": "in a delivery column dated Sep 2026; columns run months behind the delivery, so the old truck may list any time now"
+   "from": "2026-03",
+   "to": "2027-02",
+   "how": "named in a delivery column dated Sep 2026; columns print one to six months after the delivery, and we allow six months after delivery for the old truck to list"
   },
-  "rank": 1,
   "tier": "2 Call this month",
+  "rank": 1,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -112,8 +112,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 2,
   "tier": "2 Call this month",
+  "rank": 2,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -152,8 +152,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
   "tier": "2 Call this month",
+  "rank": 3,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -192,8 +192,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
   "tier": "2 Call this month",
+  "rank": 4,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -232,8 +232,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
   "tier": "2 Call this month",
+  "rank": 5,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -272,8 +272,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 6,
   "tier": "2 Call this month",
+  "rank": 6,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -312,8 +312,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
   "tier": "2 Call this month",
+  "rank": 7,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -352,8 +352,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
   "tier": "2 Call this month",
+  "rank": 8,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -392,8 +392,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 9,
   "tier": "2 Call this month",
+  "rank": 9,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -432,8 +432,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
   "tier": "2 Call this month",
+  "rank": 10,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -472,8 +472,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
   "tier": "2 Call this month",
+  "rank": 11,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -512,8 +512,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 12,
   "tier": "2 Call this month",
+  "rank": 12,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -552,8 +552,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 13,
   "tier": "2 Call this month",
+  "rank": 13,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -592,8 +592,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 14,
   "tier": "2 Call this month",
+  "rank": 14,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -632,8 +632,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 15,
   "tier": "2 Call this month",
+  "rank": 15,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -672,8 +672,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 16,
   "tier": "2 Call this month",
+  "rank": 16,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -687,8 +687,8 @@
   "county": "Early",
   "type": "Mostly career",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Midwest Fire Tanker quick atack unit delivered (2025-02)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Midwest Fire Tanker quick atack unit, in the Feb 2025 delivery column",
   "signal_date": "2025-02-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-february-2025/",
   "proof_quote": "Department: BLAKELY (GA) FIRE DEPARTMENT; Type: QUICK ATACK UNIT; Built by: MIDWEST FIRE TANKER",
@@ -706,14 +706,14 @@
    "year_how": null,
    "type_how": "the new truck is a quick atack unit; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2024-11",
-   "to": "2025-05",
-   "how": "in a delivery column dated Feb 2025; the old one may already have sold quietly"
+   "from": "2024-08",
+   "to": "2025-07",
+   "how": "named in a delivery column dated Feb 2025; the old truck may already have sold quietly"
   },
-  "rank": 17,
   "tier": "3 Watch",
+  "rank": 17,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "mini pumper",
@@ -791,8 +791,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 18,
   "tier": "3 Watch",
+  "rank": 18,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -831,8 +831,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 19,
   "tier": "3 Watch",
+  "rank": 19,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -871,8 +871,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 20,
   "tier": "3 Watch",
+  "rank": 20,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -911,8 +911,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 21,
   "tier": "3 Watch",
+  "rank": 21,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -951,8 +951,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 22,
   "tier": "3 Watch",
+  "rank": 22,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null

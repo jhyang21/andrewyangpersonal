@@ -113,8 +113,8 @@
   "departments": 853,
   "leads": {
    "week": 0,
-   "month": 13,
-   "watch": 17,
+   "month": 14,
+   "watch": 16,
    "total": 30
   },
   "by_kind": {
@@ -433,8 +433,8 @@
   "departments": 766,
   "leads": {
    "week": 0,
-   "month": 13,
-   "watch": 43,
+   "month": 14,
+   "watch": 42,
    "total": 56
   },
   "by_kind": {
@@ -984,8 +984,8 @@
   "departments": 1649,
   "leads": {
    "week": 12,
-   "month": 37,
-   "watch": 64,
+   "month": 38,
+   "watch": 63,
    "total": 113
   },
   "by_kind": {
@@ -1459,8 +1459,8 @@
   "departments": 428,
   "leads": {
    "week": 0,
-   "month": 6,
-   "watch": 5,
+   "month": 7,
+   "watch": 4,
    "total": 11
   },
   "by_kind": {

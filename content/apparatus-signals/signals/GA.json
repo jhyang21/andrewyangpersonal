@@ -322,7 +322,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-02-01",
-  "detail": "New Midwest Fire Tanker quick atack unit delivered (2025-02)",
+  "detail": "New Midwest Fire Tanker quick atack unit, in the Feb 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: BLAKELY (GA) FIRE DEPARTMENT; Type: QUICK ATACK UNIT; Built by: MIDWEST FIRE TANKER",
@@ -339,7 +339,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-09-01",
-  "detail": "New Sutphen Fire Apparatus pumper delivered (2026-09)",
+  "detail": "New Sutphen Fire Apparatus pumper, in the Sep 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: SPALDING COUNTY (GA) FIRE DEPARTMENT; Type: PUMPER; Built by: SUTPHEN FIRE APPARATUS",

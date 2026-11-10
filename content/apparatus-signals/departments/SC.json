@@ -33,8 +33,8 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 1,
   "tier": "3 Watch",
+  "rank": 1,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -112,8 +112,8 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 2,
   "tier": "3 Watch",
+  "rank": 2,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -191,8 +191,8 @@
    "to": "2026-08",
    "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 3,
   "tier": "3 Watch",
+  "rank": 3,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null

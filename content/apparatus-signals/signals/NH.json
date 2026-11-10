@@ -50,7 +50,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-03-01",
-  "detail": "New Alexis Fire Equipment pumper delivered (2026-03)",
+  "detail": "New Alexis Fire Equipment pumper, in the Mar 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: CHICHESTER (CT) FIRE DEPARTMENT; Type: PUMPER; Built by: ALEXIS FIRE EQUIPMENT",
@@ -67,7 +67,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-05-01",
-  "detail": "New Rosenbauer mid-mount cobra platform quint delivered (2026-05)",
+  "detail": "New Rosenbauer mid-mount cobra platform quint, in the May 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: BARNSTEAD (NH) FIRE RESCUE; Type: MID-MOUNT COBRA PLATFORM QUINT; Built by: ROSENBAUER",

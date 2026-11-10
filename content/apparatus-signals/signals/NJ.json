@@ -573,7 +573,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-04-01",
-  "detail": "New Fouts Fire Apparatus rescue pumper delivered (2025-04)",
+  "detail": "New Fouts Fire Apparatus rescue pumper, in the Apr 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: DENVILLE (NJ) FIRE DEPARTMENT; Type: RESCUE PUMPER; Built by: FOUTS FIRE APPARATUS",
@@ -590,7 +590,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-05-01",
-  "detail": "New Ferrara Fire Apparatus aerial ladder quint delivered (2025-05)",
+  "detail": "New Ferrara Fire Apparatus aerial ladder quint, in the May 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: NEWTON (NJ) FIRE DEPARTMENT; Type: AERIAL LADDER QUINT; Built by: FERRARA FIRE APPARATUS",
@@ -607,7 +607,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-08-01",
-  "detail": "New Spartan Emergency Response pumper (star series) delivered (2025-08)",
+  "detail": "New Spartan Emergency Response pumper (star series), in the Aug 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: RANDOLPH TOWNSHIP (NJ) SHONGUM MOUNTAIN FIRE CO. 5; Type: PUMPER (STAR SERIES); Built by: SPARTAN EMERGENCY RESPONSE",
@@ -624,7 +624,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-02-01",
-  "detail": "New Rescue 1 MFG hazmat response vehicle (responds in essex county) delivered (2026-02)",
+  "detail": "New Rescue 1 MFG hazmat response vehicle (responds in essex county), in the Feb 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: NUTLEY (NJ) FIRE DEPARTMENT; Type: HAZMAT RESPONSE VEHICLE (RESPONDS IN ESSEX COUNTY); Built by: RESCUE 1 MFG",
@@ -641,7 +641,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-03-01",
-  "detail": "New E-One Fire Apparatus pumper delivered (2026-03)",
+  "detail": "New E-One Fire Apparatus pumper, in the Mar 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: WOODBRIDGE TOWNSHIP (NJ) COLONIA CHEMICAL H & L; Type: PUMPER; Built by: E-ONE FIRE APPARATUS",
@@ -658,7 +658,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-09-01",
-  "detail": "New Ferrara Fire Apparatus rear-mount quint delivered (2026-09)",
+  "detail": "New Ferrara Fire Apparatus rear-mount quint, in the Sep 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: BELLEVILLE (NJ) FIRE DEPARTMENT; Type: REAR-MOUNT QUINT; Built by: FERRARA FIRE APPARATUS",

@@ -8,8 +8,8 @@
   "county": "Douglas",
   "type": "Mostly volunteer",
   "website": "http://www.franktownfire.org/",
-  "why_call": "New truck in service",
-  "detail": "New Midwest Fire Tanker brush truck delivered (2026-09)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Midwest Fire Tanker brush truck, in the Sep 2026 delivery column",
   "signal_date": "2026-09-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-september-2026/",
   "proof_quote": "Department: FRANKTOWN (CO) FIRE PROTECTION DISTRICT; Type: BRUSH TRUCK; Built by: MIDWEST FIRE TANKER",
@@ -27,14 +27,14 @@
    "year_how": null,
    "type_how": "the new truck is a brush truck; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-06",
-   "to": "2026-12",
-   "how": "in a delivery column dated Sep 2026; columns run months behind the delivery, so the old truck may list any time now"
+   "from": "2026-03",
+   "to": "2027-02",
+   "how": "named in a delivery column dated Sep 2026; columns print one to six months after the delivery, and we allow six months after delivery for the old truck to list"
   },
-  "rank": 1,
   "tier": "2 Call this month",
+  "rank": 1,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "brush",
@@ -87,8 +87,8 @@
   "county": "Park",
   "type": "Mostly volunteer",
   "website": "https://www.plattecanyonfire.com/",
-  "why_call": "New truck in service",
-  "detail": "New SVI Trucks tanker delivered (2026-10)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New SVI Trucks tanker, in the Oct 2026 delivery column",
   "signal_date": "2026-10-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-october-2026/",
   "proof_quote": "Department: PLATTE CANYON (CO) FIRE PROTECTION DISTRICT; Type: TANKER; Built by: SVI TRUCKS",
@@ -106,14 +106,14 @@
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-07",
-   "to": "2027-01",
-   "how": "in a delivery column dated Oct 2026; columns run months behind the delivery, so the old truck may list any time now"
+   "from": "2026-04",
+   "to": "2027-03",
+   "how": "named in a delivery column dated Oct 2026; columns print one to six months after the delivery, and we allow six months after delivery for the old truck to list"
   },
-  "rank": 2,
   "tier": "2 Call this month",
+  "rank": 2,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -191,8 +191,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
   "tier": "2 Call this month",
+  "rank": 3,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -231,8 +231,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 4,
   "tier": "2 Call this month",
+  "rank": 4,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -285,8 +285,8 @@
   "county": "Pueblo",
   "type": "Career",
   "website": "pueblo.us/fire",
-  "why_call": "New truck in service",
-  "detail": "New Sutphen Fire Apparatus pumper/tanker delivered (2025-12)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Sutphen Fire Apparatus pumper/tanker, in the Dec 2025 delivery column",
   "signal_date": "2025-12-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-december-2025/",
   "proof_quote": "Department: PUEBLO (CO) RURAL FIRE PROTECTION DISTRICT; Type: PUMPER/TANKER; Built by: SUTPHEN FIRE APPARATUS",
@@ -304,14 +304,14 @@
    "year_how": null,
    "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-09",
-   "to": "2026-03",
-   "how": "in a delivery column dated Dec 2025; the old one may already have sold quietly"
+   "from": "2025-06",
+   "to": "2026-05",
+   "how": "named in a delivery column dated Dec 2025; the old truck may already have sold quietly"
   },
-  "rank": 5,
   "tier": "3 Watch",
+  "rank": 5,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -389,8 +389,8 @@
    "to": "2026-10",
    "how": "new truck was due Apr 2026; the old one may already have sold quietly"
   },
-  "rank": 6,
   "tier": "3 Watch",
+  "rank": 6,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -468,8 +468,8 @@
    "to": "2026-08",
    "how": "new truck was due Feb 2026; the old one may already have sold quietly"
   },
-  "rank": 7,
   "tier": "3 Watch",
+  "rank": 7,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "mini pumper",

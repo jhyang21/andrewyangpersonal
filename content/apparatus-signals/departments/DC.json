@@ -8,8 +8,8 @@
   "county": "District of Columbia",
   "type": "Career",
   "website": "https://www.mwaa.com",
-  "why_call": "New truck in service",
-  "detail": "New Oshkosh Airport Products airport rescue and firefighting vehicle (stryker, 6x6) 3 units delivered (2026-02)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Oshkosh Airport Products airport rescue and firefighting vehicle (stryker, 6x6) 3 units, in the Feb 2026 delivery column",
   "signal_date": "2026-02-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-february-2026/",
   "proof_quote": "Department: METROPOLITAN WASHINGTON AIRPORTS AUTHORITY (PROTECTS DULLES AND REAGAN INTERNATIONAL AIRPORTS); Type: AIRPORT RESCUE AND FIREFIGHTING VEHICLE (STRYKER, 6X6) 3 UNITS; Built by: OSHKOSH AIRPORT PRODUCTS",
@@ -27,14 +27,14 @@
    "year_how": null,
    "type_how": "the new trucks are airport rescue and firefighting vehicle (stryker, 6x6) 3 units; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-11",
-   "to": "2026-05",
-   "how": "in a delivery column dated Feb 2026; the old one may already have sold quietly"
+   "from": "2025-08",
+   "to": "2026-07",
+   "how": "named in a delivery column dated Feb 2026; the old truck may already have sold quietly"
   },
-  "rank": 1,
   "tier": "3 Watch",
+  "rank": 1,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null

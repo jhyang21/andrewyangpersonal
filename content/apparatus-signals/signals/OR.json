@@ -82,7 +82,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-02-01",
-  "detail": "New KME Fire Apparatus aerial ladder delivered (2025-02)",
+  "detail": "New KME Fire Apparatus aerial ladder, in the Feb 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: HILLSBORO (OR) FIRE RESCUE; Type: AERIAL LADDER; Built by: KME FIRE APPARATUS",
@@ -99,7 +99,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-06-01",
-  "detail": "New Pierce Manufacturing aerial platform delivered (2025-06)",
+  "detail": "New Pierce Manufacturing aerial platform, in the Jun 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: SALEM (OR) FIRE DEPARTMENT; Type: AERIAL PLATFORM; Built by: PIERCE MANUFACTURING",

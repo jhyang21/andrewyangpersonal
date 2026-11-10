@@ -79,7 +79,7 @@ export default function HomePage() {
     {
       label: "Leads in all",
       value: formatNumber(totals.leads),
-      note: `${formatNumber(totals.leads - totals.observed_leads)} are inferred from a grant, an order or a vote to buy. No one has seen the old truck yet.`,
+      note: `${formatNumber(totals.leads - totals.observed_leads)} are inferred from a grant, an order, a due date or a trade-press delivery column. No one has seen the old truck yet.`,
     },
     { label: "Seen, not inferred", value: formatNumber(totals.observed_leads) },
     { label: "Fire departments covered", value: formatNumber(totals.departments_in_registry) },

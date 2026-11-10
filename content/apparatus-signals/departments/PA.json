@@ -33,8 +33,8 @@
    "to": "2026-12",
    "how": "sale announced Jun 2026"
   },
-  "rank": 1,
   "tier": "1 Call this week",
+  "rank": 1,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -112,8 +112,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 2,
   "tier": "2 Call this month",
+  "rank": 2,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -127,8 +127,8 @@
   "county": "",
   "type": "",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New 4 Guys Fire Trucks pumper delivered (2026-08)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New 4 Guys Fire Trucks pumper, in the Aug 2026 delivery column",
   "signal_date": "2026-08-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-august-2026/",
   "proof_quote": "Department: MEYERSDALE (PA) VOLUNTEER FIRE DEPARTMENT; Type: PUMPER; Built by: 4 GUYS FIRE TRUCKS",
@@ -146,14 +146,14 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-05",
-   "to": "2026-11",
-   "how": "in a delivery column dated Aug 2026; columns run months behind the delivery, so the old truck may list any time now"
+   "from": "2026-02",
+   "to": "2027-01",
+   "how": "named in a delivery column dated Aug 2026; columns print one to six months after the delivery, and we allow six months after delivery for the old truck to list"
   },
-  "rank": 3,
   "tier": "2 Call this month",
+  "rank": 3,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -231,8 +231,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
   "tier": "2 Call this month",
+  "rank": 4,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -310,8 +310,8 @@
    "to": "2027-01",
    "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 5,
   "tier": "2 Call this month",
+  "rank": 5,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
@@ -389,8 +389,8 @@
    "to": "2027-02",
    "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 6,
   "tier": "2 Call this month",
+  "rank": 6,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -468,8 +468,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 7,
   "tier": "2 Call this month",
+  "rank": 7,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -547,8 +547,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
   "tier": "2 Call this month",
+  "rank": 8,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -587,8 +587,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 9,
   "tier": "2 Call this month",
+  "rank": 9,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -627,8 +627,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
   "tier": "2 Call this month",
+  "rank": 10,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -667,8 +667,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
   "tier": "2 Call this month",
+  "rank": 11,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -707,8 +707,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 12,
   "tier": "2 Call this month",
+  "rank": 12,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -747,8 +747,8 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 13,
   "tier": "2 Call this month",
+  "rank": 13,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -826,8 +826,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 14,
   "tier": "2 Call this month",
+  "rank": 14,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -905,8 +905,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 15,
   "tier": "2 Call this month",
+  "rank": 15,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -945,8 +945,8 @@
    "to": "2028-04",
    "how": "grant awarded Apr 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 16,
   "tier": "2 Call this month",
+  "rank": 16,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -1024,8 +1024,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 17,
   "tier": "2 Call this month",
+  "rank": 17,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1064,8 +1064,8 @@
    "to": "2027-07",
    "how": "grant awarded Jul 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 18,
   "tier": "2 Call this month",
+  "rank": 18,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -1143,8 +1143,8 @@
    "to": "2027-03",
    "how": "money approved Mar 2025; order, build, then sale"
   },
-  "rank": 19,
   "tier": "2 Call this month",
+  "rank": 19,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1183,8 +1183,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 20,
   "tier": "2 Call this month",
+  "rank": 20,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1223,8 +1223,8 @@
    "to": "2029-02",
    "how": "new truck due Summer 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
   "tier": "2 Call this month",
+  "rank": 21,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -1302,8 +1302,8 @@
    "to": "2028-10",
    "how": "grant awarded Oct 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 22,
   "tier": "2 Call this month",
+  "rank": 22,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -1381,8 +1381,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 23,
   "tier": "2 Call this month",
+  "rank": 23,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1421,8 +1421,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 24,
   "tier": "2 Call this month",
+  "rank": 24,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1461,8 +1461,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 25,
   "tier": "2 Call this month",
+  "rank": 25,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1501,8 +1501,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 26,
   "tier": "2 Call this month",
+  "rank": 26,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1541,8 +1541,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 27,
   "tier": "2 Call this month",
+  "rank": 27,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1581,8 +1581,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 28,
   "tier": "2 Call this month",
+  "rank": 28,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1621,8 +1621,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 29,
   "tier": "2 Call this month",
+  "rank": 29,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1661,8 +1661,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 30,
   "tier": "2 Call this month",
+  "rank": 30,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1701,8 +1701,8 @@
    "to": "2027-09",
    "how": "grant awarded Sep 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 31,
   "tier": "2 Call this month",
+  "rank": 31,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1741,8 +1741,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 32,
   "tier": "2 Call this month",
+  "rank": 32,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1781,8 +1781,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 33,
   "tier": "2 Call this month",
+  "rank": 33,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1821,8 +1821,8 @@
    "to": "2025-05",
    "how": "sale announced Nov 2024; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 34,
   "tier": "2 Call this month",
+  "rank": 34,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "brush",
@@ -1900,8 +1900,8 @@
    "to": "2028-11",
    "how": "new truck due Spring 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 35,
   "tier": "3 Watch",
+  "rank": 35,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -1979,8 +1979,8 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 36,
   "tier": "3 Watch",
+  "rank": 36,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -2058,8 +2058,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 37,
   "tier": "3 Watch",
+  "rank": 37,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -2137,8 +2137,8 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 38,
   "tier": "3 Watch",
+  "rank": 38,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -2191,8 +2191,8 @@
   "county": "",
   "type": "",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Marco Equipment Sales mini pumper delivered (2025-09)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Marco Equipment Sales mini pumper, in the Sep 2025 delivery column",
   "signal_date": "2025-09-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries/",
   "proof_quote": "Department: HOBBIE VOLUNTEER FIRE DEPARTMENT, WAPWALLOPEN (PA); Type: MINI PUMPER; Built by: MARCO EQUIPMENT SALES",
@@ -2210,14 +2210,14 @@
    "year_how": null,
    "type_how": "the new truck is a mini pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-06",
-   "to": "2025-12",
-   "how": "in a delivery column dated Sep 2025; the old one may already have sold quietly"
+   "from": "2025-03",
+   "to": "2026-02",
+   "how": "named in a delivery column dated Sep 2025; the old truck may already have sold quietly"
   },
-  "rank": 39,
   "tier": "3 Watch",
+  "rank": 39,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
@@ -2295,8 +2295,8 @@
    "to": "2029-04",
    "how": "new truck due Oct 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 40,
   "tier": "3 Watch",
+  "rank": 40,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -2374,8 +2374,8 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 41,
   "tier": "3 Watch",
+  "rank": 41,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -2453,8 +2453,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 42,
   "tier": "3 Watch",
+  "rank": 42,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -2532,8 +2532,8 @@
    "to": "2028-09",
    "how": "money approved Sep 2026; order, build, then sale"
   },
-  "rank": 43,
   "tier": "3 Watch",
+  "rank": 43,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2572,8 +2572,8 @@
    "to": "2028-05",
    "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 44,
   "tier": "3 Watch",
+  "rank": 44,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -2651,8 +2651,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 45,
   "tier": "3 Watch",
+  "rank": 45,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -2730,8 +2730,8 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 46,
   "tier": "3 Watch",
+  "rank": 46,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -2809,8 +2809,8 @@
    "to": "2028-01",
    "how": "money approved Jan 2026; order, build, then sale"
   },
-  "rank": 47,
   "tier": "3 Watch",
+  "rank": 47,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2849,8 +2849,8 @@
    "to": "2029-04",
    "how": "new truck due Oct 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 48,
   "tier": "3 Watch",
+  "rank": 48,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -2903,8 +2903,8 @@
   "county": "Huntingdon",
   "type": "Volunteer",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Toyne Fire Apparatus pumper/tanker delivered (2025-05)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Toyne Fire Apparatus pumper/tanker, in the May 2025 delivery column",
   "signal_date": "2025-05-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-may-2025/",
   "proof_quote": "Department: SMITHFIELD (PA) VOLUNTEER FIRE DEPARTMENT; Type: PUMPER/TANKER; Built by: TOYNE FIRE APPARATUS",
@@ -2922,14 +2922,14 @@
    "year_how": null,
    "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-02",
-   "to": "2025-08",
-   "how": "in a delivery column dated May 2025; the old one may already have sold quietly"
+   "from": "2024-11",
+   "to": "2025-10",
+   "how": "named in a delivery column dated May 2025; the old truck may already have sold quietly"
   },
-  "rank": 49,
   "tier": "3 Watch",
+  "rank": 49,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -3007,8 +3007,8 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 50,
   "tier": "3 Watch",
+  "rank": 50,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -3086,8 +3086,8 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 51,
   "tier": "3 Watch",
+  "rank": 51,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -3140,8 +3140,8 @@
   "county": "Union",
   "type": "Volunteer",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New 4 Guys Fire Trucks heavy rescue delivered (2026-05)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New 4 Guys Fire Trucks heavy rescue, in the May 2026 delivery column",
   "signal_date": "2026-05-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-may-2026/",
   "proof_quote": "Department: WHITE DEER TOWNSHIP (PA) FIRE DEPARTMENT; Type: HEAVY RESCUE; Built by: 4 GUYS FIRE TRUCKS",
@@ -3159,14 +3159,14 @@
    "year_how": null,
    "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-02",
-   "to": "2026-08",
-   "how": "in a delivery column dated May 2026; the old one may already have sold quietly"
+   "from": "2025-11",
+   "to": "2026-10",
+   "how": "named in a delivery column dated May 2026; the old truck may already have sold quietly"
   },
-  "rank": 52,
   "tier": "3 Watch",
+  "rank": 52,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -3244,8 +3244,8 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 53,
   "tier": "3 Watch",
+  "rank": 53,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3284,8 +3284,8 @@
    "to": "2026-11",
    "how": "ordered Nov 2025; builds have taken four to twelve months in the back-test"
   },
-  "rank": 54,
   "tier": "3 Watch",
+  "rank": 54,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3324,8 +3324,8 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 55,
   "tier": "3 Watch",
+  "rank": 55,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3360,8 +3360,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 56,
   "tier": "3 Watch",
+  "rank": 56,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3400,8 +3400,8 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 57,
   "tier": "3 Watch",
+  "rank": 57,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3436,8 +3436,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 58,
   "tier": "3 Watch",
+  "rank": 58,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -3476,8 +3476,8 @@
    "to": "2027-04",
    "how": "ordered Apr 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 59,
   "tier": "3 Watch",
+  "rank": 59,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3516,8 +3516,8 @@
    "to": "2027-02",
    "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 60,
   "tier": "3 Watch",
+  "rank": 60,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3552,8 +3552,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 61,
   "tier": "3 Watch",
+  "rank": 61,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3592,8 +3592,8 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 62,
   "tier": "3 Watch",
+  "rank": 62,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3632,8 +3632,8 @@
    "to": "2029-06",
    "how": "grant awarded Jun 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 63,
   "tier": "3 Watch",
+  "rank": 63,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3672,8 +3672,8 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 64,
   "tier": "3 Watch",
+  "rank": 64,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3708,8 +3708,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 65,
   "tier": "3 Watch",
+  "rank": 65,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -3783,8 +3783,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 66,
   "tier": "3 Watch",
+  "rank": 66,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
@@ -3862,8 +3862,8 @@
    "to": "2025-06",
    "how": "ordered Jun 2024; the usual build time has passed"
   },
-  "rank": 67,
   "tier": "3 Watch",
+  "rank": 67,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -3941,8 +3941,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 68,
   "tier": "3 Watch",
+  "rank": 68,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -3981,8 +3981,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 69,
   "tier": "3 Watch",
+  "rank": 69,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -4021,8 +4021,8 @@
    "to": "2025-12",
    "how": "ordered Dec 2024; the usual build time has passed"
   },
-  "rank": 70,
   "tier": "3 Watch",
+  "rank": 70,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -4061,8 +4061,8 @@
    "to": "2025-06",
    "how": "ordered Jun 2024; the usual build time has passed"
   },
-  "rank": 71,
   "tier": "3 Watch",
+  "rank": 71,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -4101,8 +4101,8 @@
    "to": "2026-10",
    "how": "money approved Oct 2024; the usual gap has passed"
   },
-  "rank": 72,
   "tier": "3 Watch",
+  "rank": 72,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -4180,8 +4180,8 @@
    "to": "2026-08",
    "how": "new truck was due Feb 2026; the old one may already have sold quietly"
   },
-  "rank": 73,
   "tier": "3 Watch",
+  "rank": 73,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -4259,8 +4259,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 74,
   "tier": "3 Watch",
+  "rank": 74,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -4299,8 +4299,8 @@
    "to": "2025-06",
    "how": "ordered Jun 2024; the usual build time has passed"
   },
-  "rank": 75,
   "tier": "3 Watch",
+  "rank": 75,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null

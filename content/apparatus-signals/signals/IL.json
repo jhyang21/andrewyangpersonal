@@ -178,7 +178,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-03-01",
-  "detail": "New Alexis Fire Equipment pumper tanker delivered (2025-03)",
+  "detail": "New Alexis Fire Equipment pumper tanker, in the Mar 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: ALEXIS (IL) FIRE PROTECTION DISTRICT; Type: PUMPER TANKER; Built by: ALEXIS FIRE EQUIPMENT",
@@ -195,7 +195,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-12-01",
-  "detail": "New 4 Guys Fire Trucks tanker delivered (2025-12)",
+  "detail": "New 4 Guys Fire Trucks tanker, in the Dec 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: CONGERVILLE (IL) RURAL FIRE PROTECTION DISTRICT; Type: TANKER; Built by: 4 GUYS FIRE TRUCKS",
@@ -212,7 +212,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-09-01",
-  "detail": "New Alexis Fire Equipment pumper (phantom model) delivered (2026-09)",
+  "detail": "New Alexis Fire Equipment pumper (phantom model), in the Sep 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: WOOD DALE (IL) FIRE PROTECTION DISTRICT; Type: PUMPER (PHANTOM MODEL); Built by: ALEXIS FIRE EQUIPMENT",

@@ -33,8 +33,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 1,
   "tier": "2 Call this month",
+  "rank": 1,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -73,8 +73,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 2,
   "tier": "2 Call this month",
+  "rank": 2,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -152,8 +152,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
   "tier": "2 Call this month",
+  "rank": 3,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -192,8 +192,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
   "tier": "2 Call this month",
+  "rank": 4,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -232,8 +232,8 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 5,
   "tier": "3 Watch",
+  "rank": 5,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
@@ -311,8 +311,8 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
   "tier": "3 Watch",
+  "rank": 6,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -390,8 +390,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 7,
   "tier": "3 Watch",
+  "rank": 7,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null

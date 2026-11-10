@@ -18,7 +18,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-12-01",
-  "detail": "New Sutphen Fire Apparatus pumper/tanker delivered (2025-12)",
+  "detail": "New Sutphen Fire Apparatus pumper/tanker, in the Dec 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: PUEBLO (CO) RURAL FIRE PROTECTION DISTRICT; Type: PUMPER/TANKER; Built by: SUTPHEN FIRE APPARATUS",
@@ -35,7 +35,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-09-01",
-  "detail": "New Midwest Fire Tanker brush truck delivered (2026-09)",
+  "detail": "New Midwest Fire Tanker brush truck, in the Sep 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: FRANKTOWN (CO) FIRE PROTECTION DISTRICT; Type: BRUSH TRUCK; Built by: MIDWEST FIRE TANKER",
@@ -52,7 +52,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-10-01",
-  "detail": "New SVI Trucks tanker delivered (2026-10)",
+  "detail": "New SVI Trucks tanker, in the Oct 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: PLATTE CANYON (CO) FIRE PROTECTION DISTRICT; Type: TANKER; Built by: SVI TRUCKS",

@@ -34,7 +34,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-06-01",
-  "detail": "New Spencer Manufacturing pumper delivered (2025-06)",
+  "detail": "New Spencer Manufacturing pumper, in the Jun 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: BUTLER COUNTY (KS) FIRE DEPARTMENT; Type: PUMPER; Built by: SPENCER MANUFACTURING",

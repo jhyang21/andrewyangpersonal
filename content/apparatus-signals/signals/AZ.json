@@ -146,7 +146,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-02-01",
-  "detail": "New Pierce Manufacturing pumper delivered (2025-02)",
+  "detail": "New Pierce Manufacturing pumper, in the Feb 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: CHANDLER (AZ) FIRE DEPARTMENT; Type: PUMPER; Built by: PIERCE MANUFACTURING",
@@ -163,7 +163,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-05-01",
-  "detail": "New Iturri America mini pumper delivered (2026-05)",
+  "detail": "New Iturri America mini pumper, in the May 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: MORMON LAKE (AZ) FIRE DISTRICT; Type: MINI PUMPER; Built by: ITURRI AMERICA",
@@ -180,7 +180,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-07-01",
-  "detail": "New SVI Trucks air & light truck delivered (2026-07)",
+  "detail": "New SVI Trucks air & light truck, in the Jul 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: SURPRISE (AZ) FIRE MEDICAL DEPARTMENT; Type: AIR & LIGHT TRUCK; Built by: SVI TRUCKS",

@@ -1892,7 +1892,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-03-01",
-  "detail": "New Rescue 1 Manufacturing rescue truck delivered (2025-03)",
+  "detail": "New Rescue 1 Manufacturing rescue truck, in the Mar 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: APALACHIN (NY) FIRE RESCUE; Type: RESCUE TRUCK; Built by: RESCUE 1 MANUFACTURING",
@@ -1909,7 +1909,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-01-01",
-  "detail": "New Smeal Fire Apparatus rear-mount quint delivered (2026-01)",
+  "detail": "New Smeal Fire Apparatus rear-mount quint, in the Jan 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: STONY BROOK (NY) FIRE DEPARTMENT; Type: REAR-MOUNT QUINT; Built by: SMEAL FIRE APPARATUS",
@@ -1926,7 +1926,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-07-01",
-  "detail": "New Spencer Fire Apparatus pumper delivered (2026-07)",
+  "detail": "New Spencer Fire Apparatus pumper, in the Jul 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: CANAAN (NY) FIRE DEPARTMENT; Type: PUMPER; Built by: SPENCER FIRE APPARATUS",
