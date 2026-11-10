@@ -236,8 +236,8 @@ export interface Department {
 
 /**
  * Where the old truck is now. "surplus": the old truck is free but not listed: a vote or plan
- * to sell, or a new truck seen in service. "replacing": money, an order or a due date only;
- * nothing seen yet. "gear": sells gear at auction, no truck named. "listed": at auction now.
+ * to sell, or a new truck in service read in a story or notice. "replacing": money, an order,
+ * a due date or a trade-press delivery column only; nothing seen yet. "gear": sells gear at auction, no truck named. "listed": at auction now.
  * "sold": sold (some before May), or bids closed with no result found.
  */
 export type Stage = "sold" | "listed" | "surplus" | "replacing" | "gear";
@@ -446,6 +446,8 @@ export interface WindowRule {
   anchor?: string;
   /** The wording once a window has passed. */
   how_past_template?: string;
+  /** Set when the rule fits only signals from this source ("trade press"); unset fits any source. */
+  where?: string;
   n_cases: number;
 }
 
@@ -472,6 +474,8 @@ export interface ChangelogRun {
   new_from_feeds?: FeedAdd[];
   dropped: string[];
   dropped_count: number;
+  /** One sentence on a scoring change this run brought in. */
+  note?: string;
 }
 
 // ---------- reading ----------
@@ -681,10 +685,14 @@ export function stageTotals(): { not_listed_soon: number; listed: number; sold: 
   };
 }
 
-/** Strongest leads first: score, then tier, then most recent signal. */
+/**
+ * Strongest leads first: tier ("1 …" before "2 …"), then score, then most recent
+ * signal. Tier leads because an expected lead can outscore a seen one yet stop
+ * at "Call this month".
+ */
 export function compareLeads(a: Department, b: Department): number {
-  if (b.score !== a.score) return b.score - a.score;
   if (a.tier !== b.tier) return a.tier.localeCompare(b.tier);
+  if (b.score !== a.score) return b.score - a.score;
   return (b.signal_date || "").localeCompare(a.signal_date || "");
 }
 

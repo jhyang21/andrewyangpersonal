@@ -130,7 +130,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-06-01",
-  "detail": "New U.S. Fire Apparatus industrial pumper delivered (2025-06)",
+  "detail": "New U.S. Fire Apparatus industrial pumper, in the Jun 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: TPC GROUP, HOUSTON (TX); Type: INDUSTRIAL PUMPER; Built by: U.S. FIRE APPARATUS",
@@ -147,7 +147,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-08-01",
-  "detail": "New Midwest Fire Tanker pumper/tanker delivered (2025-08)",
+  "detail": "New Midwest Fire Tanker pumper/tanker, in the Aug 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: ONALASKA (TX) VOLUNTEER FIRE DEPARTMENT; Type: PUMPER/TANKER; Built by: MIDWEST FIRE TANKER",
@@ -164,7 +164,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-12-01",
-  "detail": "New Pierce Manufacturing tractor-drawn aerial quint delivered (2025-12)",
+  "detail": "New Pierce Manufacturing tractor-drawn aerial quint, in the Dec 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: BEXAR COUNTY (TX) EMERGENCY SERVICE DEPARTMENT DISTRICT 2; Type: TRACTOR-DRAWN AERIAL QUINT; Built by: PIERCE MANUFACTURING",
@@ -181,7 +181,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-08-01",
-  "detail": "New Oshkosh Airport Products arff delivered (2026-08)",
+  "detail": "New Oshkosh Airport Products arff, in the Aug 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: DFW INTERNATIONAL AIRPORT (TX); Type: ARFF; Built by: OSHKOSH AIRPORT PRODUCTS",

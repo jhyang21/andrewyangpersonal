@@ -945,7 +945,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-05-01",
-  "detail": "New Toyne Fire Apparatus pumper/tanker delivered (2025-05)",
+  "detail": "New Toyne Fire Apparatus pumper/tanker, in the May 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: SMITHFIELD (PA) VOLUNTEER FIRE DEPARTMENT; Type: PUMPER/TANKER; Built by: TOYNE FIRE APPARATUS",
@@ -962,7 +962,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-09-01",
-  "detail": "New Marco Equipment Sales mini pumper delivered (2025-09)",
+  "detail": "New Marco Equipment Sales mini pumper, in the Sep 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: HOBBIE VOLUNTEER FIRE DEPARTMENT, WAPWALLOPEN (PA); Type: MINI PUMPER; Built by: MARCO EQUIPMENT SALES",
@@ -979,7 +979,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-05-01",
-  "detail": "New 4 Guys Fire Trucks heavy rescue delivered (2026-05)",
+  "detail": "New 4 Guys Fire Trucks heavy rescue, in the May 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: WHITE DEER TOWNSHIP (PA) FIRE DEPARTMENT; Type: HEAVY RESCUE; Built by: 4 GUYS FIRE TRUCKS",
@@ -996,7 +996,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-08-01",
-  "detail": "New 4 Guys Fire Trucks pumper delivered (2026-08)",
+  "detail": "New 4 Guys Fire Trucks pumper, in the Aug 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: MEYERSDALE (PA) VOLUNTEER FIRE DEPARTMENT; Type: PUMPER; Built by: 4 GUYS FIRE TRUCKS",

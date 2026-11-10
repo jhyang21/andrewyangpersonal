@@ -85,9 +85,9 @@
   "name": "Arizona",
   "departments": 238,
   "leads": {
-   "week": 1,
+   "week": 0,
    "month": 7,
-   "watch": 4,
+   "watch": 5,
    "total": 12
   },
   "by_kind": {
@@ -141,8 +141,8 @@
   "name": "Colorado",
   "departments": 310,
   "leads": {
-   "week": 2,
-   "month": 2,
+   "week": 0,
+   "month": 4,
    "watch": 3,
    "total": 7
   },
@@ -295,8 +295,8 @@
   "name": "Georgia",
   "departments": 461,
   "leads": {
-   "week": 1,
-   "month": 15,
+   "week": 0,
+   "month": 16,
    "watch": 6,
    "total": 22
   },
@@ -403,8 +403,8 @@
   "name": "Illinois",
   "departments": 1107,
   "leads": {
-   "week": 1,
-   "month": 25,
+   "week": 0,
+   "month": 26,
    "watch": 78,
    "total": 104
   },
@@ -796,8 +796,8 @@
   "name": "North Dakota",
   "departments": 327,
   "leads": {
-   "week": 1,
-   "month": 6,
+   "week": 0,
+   "month": 7,
    "watch": 5,
    "total": 12
   },
@@ -855,8 +855,8 @@
   "departments": 211,
   "leads": {
    "week": 0,
-   "month": 3,
-   "watch": 3,
+   "month": 2,
+   "watch": 4,
    "total": 6
   },
   "by_kind": {
@@ -882,8 +882,8 @@
   "name": "New Jersey",
   "departments": 713,
   "leads": {
-   "week": 1,
-   "month": 16,
+   "week": 0,
+   "month": 17,
    "watch": 32,
    "total": 49
   },
@@ -983,8 +983,8 @@
   "name": "New York",
   "departments": 1649,
   "leads": {
-   "week": 13,
-   "month": 37,
+   "week": 12,
+   "month": 38,
    "watch": 63,
    "total": 113
   },
@@ -996,11 +996,12 @@
    "delivery_due": 7,
    "bond_or_referendum": 7,
    "auction_open": 6,
-   "surplus_declared": 6,
    "auction_equipment": 6,
+   "surplus_declared": 5,
    "council_approval": 2,
    "sale_planned": 1,
    "auction_support": 1,
+   "bids_closed": 1,
    "already_sold": 1
   },
   "coverage": "deep",
@@ -1042,8 +1043,8 @@
   "name": "Ohio",
   "departments": 1148,
   "leads": {
-   "week": 1,
-   "month": 24,
+   "week": 0,
+   "month": 25,
    "watch": 32,
    "total": 57
   },
@@ -1072,8 +1073,8 @@
   "departments": 749,
   "leads": {
    "week": 0,
-   "month": 5,
-   "watch": 2,
+   "month": 4,
+   "watch": 3,
    "total": 7
   },
   "by_kind": {
@@ -1127,8 +1128,8 @@
   "departments": 1771,
   "leads": {
    "week": 1,
-   "month": 34,
-   "watch": 40,
+   "month": 33,
+   "watch": 41,
    "total": 75
   },
   "by_kind": {

@@ -98,7 +98,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-07-01",
-  "detail": "New HME Trucks pumper delivered (2025-07)",
+  "detail": "New HME Trucks pumper, in the Jul 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: RAINELLE (WV) FIRE DEPARTMENT; Type: PUMPER; Built by: HME TRUCKS",
@@ -115,7 +115,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-06-01",
-  "detail": "New Marco Equipment Sales initial attack pumper delivered (2026-06)",
+  "detail": "New Marco Equipment Sales initial attack pumper, in the Jun 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: KINGWOOD (WV) VOLUNTEER FIRE DEPARTMENT; Type: INITIAL ATTACK PUMPER; Built by: MARCO EQUIPMENT SALES",

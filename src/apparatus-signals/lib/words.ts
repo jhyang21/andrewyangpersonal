@@ -136,9 +136,14 @@ export function fillTemplate(template: string): string {
 export function windowSpan(rule: {
   kinds: string[];
   anchor?: string;
+  where?: string;
   from_months: number;
   to_months: number;
 }): string {
+  if (rule.from_months < 0) {
+    const from = rule.where === "trade press" ? "the column month" : "the signal date";
+    return `${-rule.from_months} months before to ${rule.to_months} months after ${from}`;
+  }
   const span = `${rule.from_months}–${rule.to_months} months`;
   if (rule.anchor === "expected") return `${span} after the promised delivery month`;
   if (rule.anchor === "today") return `${span} after the notice, or the run date when the notice has none`;
@@ -247,7 +252,7 @@ export function leadTimeCasesFor(kind: string, method: Method): LeadTimeCase[] {
 /** Plain labels for score modifiers. method.json names them but gives no label. */
 const MODIFIER_LABELS: Record<string, string> = {
   old_truck_named: "The source names the truck being replaced",
-  recent: "Signal dated in the last 90 days",
+  recent: "Signal dated in the last 90 days (a trade-press delivery column does not count)",
   repeat_seller: "Sold two or more trucks since May",
   stale: "Surplus vote over 180 days old with no sale seen",
   grant_due: "Vehicle grant won one to three years ago, so the new truck is due",
@@ -261,7 +266,7 @@ const MODIFIER_LABELS: Record<string, string> = {
 export const BASIS_LABEL: Record<Basis, string> = { observed: "Seen", expected: "Expected" };
 
 export const BASIS_LEGEND =
-  "Seen: an open lot, a vote to sell or a delivered truck. Expected: inferred from a grant, an order or a due date.";
+  "Seen: an open lot, a vote to sell or a delivered truck we read about. Expected: inferred from a grant, an order, a due date or a trade-press delivery column.";
 
 export const READ_BY_LABEL: Record<ReadBy, string> = {
   person: "Read by hand",
@@ -270,7 +275,7 @@ export const READ_BY_LABEL: Record<ReadBy, string> = {
 
 /** The rule behind the top tier, in the words the method page uses. */
 export const WEEK_RULE =
-  "“Call this week” means we saw it: an open auction lot, a vote to sell, or a new truck in service.";
+  "“Call this week” means we saw it: an open auction lot, a vote to sell, or a new truck in service in a story or notice we read.";
 
 export function modifierLabel(name: string): string {
   return MODIFIER_LABELS[name] ?? name.replace(/_/g, " ");
@@ -284,4 +289,15 @@ export const VERDICT_LABELS: Record<string, string> = {
 
 export function kindLabel(kind: string, method: Method): string {
   return method.labels[kind] ?? kind.replace(/_/g, " ");
+}
+
+/**
+ * One signal's label: its kind's, except a trade-press delivery column entry, which says a
+ * new truck came but is not a sighting (the pipeline's label_of). Kind-level counts keep kindLabel.
+ */
+export function signalLabel(sig: { kind: string; where?: string | null }, method: Method): string {
+  if (sig.kind === "new_truck_arrived" && sig.where === "trade press") {
+    return "New truck in a trade-press delivery column";
+  }
+  return kindLabel(sig.kind, method);
 }

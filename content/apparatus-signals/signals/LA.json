@@ -66,7 +66,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-02-01",
-  "detail": "New US Fire Apparatus pumper delivered (2025-02)",
+  "detail": "New US Fire Apparatus pumper, in the Feb 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: MARRERO RAGUSA FIRE COMPANY 3, MARRERO (LA); Type: PUMPER; Built by: US FIRE APPARATUS",

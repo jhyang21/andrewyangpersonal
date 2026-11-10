@@ -262,6 +262,7 @@ export default function MethodPage() {
                   <td>{kindLabel(k, method)}</td>
                   <td data-label="Seen or expected">
                     {BASIS_LABEL[method.observed.includes(k) ? "observed" : "expected"]}
+                    {k === "new_truck_arrived" ? " in a story or notice; expected in a trade-press delivery column" : ""}
                   </td>
                   <td className="r" data-label="Points">
                     {method.points[k]}
@@ -337,8 +338,15 @@ export default function MethodPage() {
             {(method.window ?? []).map((w) => {
               const example = windowExample(w, leads);
               return (
-                <tr key={`${w.kinds.join(",")}:${w.anchor ?? ""}`}>
-                  <td className="font-semibold">{joinPlain(w.kinds.map((k) => kindLabel(k, method)), "or")}</td>
+                <tr key={`${w.kinds.join(",")}:${w.anchor ?? ""}:${w.where ?? ""}`}>
+                  <td className="font-semibold">
+                    {joinPlain(w.kinds.map((k) => kindLabel(k, method)), "or")}
+                    {w.where === "trade press"
+                      ? " (trade-press delivery column)"
+                      : w.kinds.includes("new_truck_arrived")
+                        ? " (story or notice read by hand)"
+                        : ""}
+                  </td>
                   <td data-label="Window">{windowSpan(w)}</td>
                   <td data-label="How">
                     {example ? `e.g. ${example}` : capitalize(fillTemplate(w.how_template))}.

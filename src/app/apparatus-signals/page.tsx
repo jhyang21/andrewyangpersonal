@@ -79,7 +79,7 @@ export default function HomePage() {
     {
       label: "Leads in all",
       value: formatNumber(totals.leads),
-      note: `${formatNumber(totals.leads - totals.observed_leads)} are inferred from a grant, an order or a vote to buy. No one has seen the old truck yet.`,
+      note: `${formatNumber(totals.leads - totals.observed_leads)} are inferred from a grant, an order, a due date or a trade-press delivery column. No one has seen the old truck yet.`,
     },
     { label: "Seen, not inferred", value: formatNumber(totals.observed_leads) },
     { label: "Fire departments covered", value: formatNumber(totals.departments_in_registry) },
@@ -233,7 +233,7 @@ export default function HomePage() {
           Top 10 leads in all states
         </h2>
         <p className="mb-3 text-sm text-as-ink-2">
-          Ranked by score.
+          Ranked by tier, then score.
           {deepNames.length && topDeep > top.length / 2
             ? ` ${joinPlain(deepNames)} ${deepNames.length === 1 ? "is" : "are"} read by hand, so ${deepNames.length === 1 ? "it fills" : "they fill"} most of the list.`
             : ""}

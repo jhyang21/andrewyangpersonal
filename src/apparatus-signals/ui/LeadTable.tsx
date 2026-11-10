@@ -104,7 +104,8 @@ export default function LeadTable({
       (r) => (tier === "all" || r.tier === tier) && (kind === "all" || r.kinds.includes(kind)),
     );
     if (sort === "score") {
-      out.sort((a, b) => b.score - a.score || byRank(a, b));
+      // Tier first, as the rank does: an expected lead can outscore a seen one yet stop at "Call this month".
+      out.sort((a, b) => tierOrder(a.tier) - tierOrder(b.tier) || b.score - a.score || byRank(a, b));
     } else {
       out.sort((a, b) => {
         if (!a.signal_date !== !b.signal_date) return a.signal_date ? -1 : 1;
@@ -138,7 +139,7 @@ export default function LeadTable({
         <label className="text-sm text-as-ink-2">
           Sort by
           <select className={selectCls} value={sort} onChange={(e) => setSort(e.target.value as SortKey)}>
-            <option value="score">Score, highest first</option>
+            <option value="score">Tier, then score</option>
             <option value="date">Date, newest first</option>
           </select>
         </label>

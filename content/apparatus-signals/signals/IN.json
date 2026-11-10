@@ -146,7 +146,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-01-01",
-  "detail": "New HME Trucks urban attack pumper (core 62) delivered (2026-01)",
+  "detail": "New HME Trucks urban attack pumper (core 62), in the Jan 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: GREENWOOD (IN) FIRE DEPARTMENT; Type: URBAN ATTACK PUMPER (CORE 62); Built by: HME TRUCKS",
@@ -163,7 +163,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-06-01",
-  "detail": "New US Fire Apparatus pumper/tanker delivered (2026-06)",
+  "detail": "New US Fire Apparatus pumper/tanker, in the Jun 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: COWAN (IN) VOLUNTEER FIRE DEPARTMENT; Type: PUMPER/TANKER; Built by: US FIRE APPARATUS",

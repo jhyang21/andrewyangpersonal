@@ -1,84 +1,5 @@
 [
  {
-  "checked": "trade_press",
-  "score": 6.0,
-  "department": "Belleville Fire Department",
-  "registry_name": "Belleville Fire Department",
-  "city": "Belleville",
-  "county": "Essex",
-  "type": "Career",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Ferrara Fire Apparatus rear-mount quint delivered (2026-09)",
-  "signal_date": "2026-09-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-september-2026/",
-  "proof_quote": "Department: BELLEVILLE (NJ) FIRE DEPARTMENT; Type: REAR-MOUNT QUINT; Built by: FERRARA FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "Belleville Fire Department",
-  "name_match": "exact",
-  "fdid": "07010",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-09",
-   "to": "2027-03",
-   "how": "new truck in service Sep 2026; we allow six months for the old one to list"
-  },
-  "rank": 1,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 103,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8550,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Seagrave Ladder Fire Truck",
-     "price": 7700.0,
-     "date": "2023-11-08",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/35052/item/lot-0004-1993-seagrave-ladder-fire-truck-218010/"
-    },
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    }
-   ]
-  },
-  "ask": {
-   "band": "26-30",
-   "usual_age": 27,
-   "n": 19,
-   "median": 75000,
-   "p25": 57500,
-   "p75": 137500,
-   "thin": false
-  }
- },
- {
   "checked": "confirmed",
   "score": 5.5,
   "department": "Cherry Hill Fire Department",
@@ -112,8 +33,8 @@
    "to": "2026-03",
    "how": "voted to sell Sep 2025; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 2,
   "tier": "2 Call this month",
+  "rank": 1,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -191,11 +112,90 @@
    "to": "2026-11",
    "how": "new truck in service May 2026; we allow six months for the old one to list"
   },
-  "rank": 3,
   "tier": "2 Call this month",
+  "rank": 2,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 5.0,
+  "department": "Belleville Fire Department",
+  "registry_name": "Belleville Fire Department",
+  "city": "Belleville",
+  "county": "Essex",
+  "type": "Career",
+  "website": "",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Ferrara Fire Apparatus rear-mount quint, in the Sep 2026 delivery column",
+  "signal_date": "2026-09-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-september-2026/",
+  "proof_quote": "Department: BELLEVILLE (NJ) FIRE DEPARTMENT; Type: REAR-MOUNT QUINT; Built by: FERRARA FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "Belleville Fire Department",
+  "name_match": "exact",
+  "fdid": "07010",
+  "top_kind": "new_truck_arrived",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-03",
+   "to": "2027-02",
+   "how": "named in a delivery column dated Sep 2026; columns print one to six months after the delivery, and we allow six months after delivery for the old truck to list"
+  },
+  "tier": "2 Call this month",
+  "rank": 3,
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Seagrave Ladder Fire Truck",
+     "price": 7700.0,
+     "date": "2023-11-08",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/35052/item/lot-0004-1993-seagrave-ladder-fire-truck-218010/"
+    },
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    }
+   ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 27,
+   "n": 19,
+   "median": 75000,
+   "p25": 57500,
+   "p75": 137500,
+   "thin": false
+  }
  },
  {
   "checked": "confirmed",
@@ -231,8 +231,8 @@
    "to": "2028-11",
    "how": "money approved Nov 2026; order, build, then sale"
   },
-  "rank": 4,
   "tier": "2 Call this month",
+  "rank": 4,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -310,8 +310,8 @@
    "to": "2027-02",
    "how": "sale announced Aug 2026"
   },
-  "rank": 5,
   "tier": "2 Call this month",
+  "rank": 5,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -364,8 +364,8 @@
   "county": "Essex",
   "type": "Mostly career",
   "website": "https://www.nutleynj.org/",
-  "why_call": "New truck in service",
-  "detail": "New Rescue 1 MFG hazmat response vehicle (responds in essex county) delivered (2026-02)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Rescue 1 MFG hazmat response vehicle (responds in essex county), in the Feb 2026 delivery column",
   "signal_date": "2026-02-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-february-2026/",
   "proof_quote": "Department: NUTLEY (NJ) FIRE DEPARTMENT; Type: HAZMAT RESPONSE VEHICLE (RESPONDS IN ESSEX COUNTY); Built by: RESCUE 1 MFG",
@@ -374,7 +374,7 @@
   "name_match": "exact",
   "fdid": "07160",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -383,14 +383,14 @@
    "year_how": null,
    "type_how": "the new truck is a hazmat response vehicle (responds in essex county); departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-02",
-   "to": "2026-08",
-   "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
+   "from": "2025-08",
+   "to": "2026-07",
+   "how": "named in a delivery column dated Feb 2026; the old truck may already have sold quietly"
   },
-  "rank": 6,
   "tier": "2 Call this month",
+  "rank": 6,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -429,8 +429,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
   "tier": "2 Call this month",
+  "rank": 7,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -469,8 +469,8 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 8,
   "tier": "2 Call this month",
+  "rank": 8,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -509,8 +509,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 9,
   "tier": "2 Call this month",
+  "rank": 9,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -549,8 +549,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
   "tier": "2 Call this month",
+  "rank": 10,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -589,8 +589,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
   "tier": "2 Call this month",
+  "rank": 11,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -629,8 +629,8 @@
    "to": "2029-02",
    "how": "new truck due Summer 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 12,
   "tier": "2 Call this month",
+  "rank": 12,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -708,8 +708,8 @@
    "to": "2028-11",
    "how": "money approved Nov 2026; order, build, then sale"
   },
-  "rank": 13,
   "tier": "2 Call this month",
+  "rank": 13,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -748,8 +748,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 14,
   "tier": "2 Call this month",
+  "rank": 14,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -788,8 +788,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 15,
   "tier": "2 Call this month",
+  "rank": 15,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -867,8 +867,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 16,
   "tier": "2 Call this month",
+  "rank": 16,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -907,8 +907,8 @@
    "to": "2028-05",
    "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 17,
   "tier": "2 Call this month",
+  "rank": 17,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -986,8 +986,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 18,
   "tier": "3 Watch",
+  "rank": 18,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -1065,8 +1065,8 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 19,
   "tier": "3 Watch",
+  "rank": 19,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1105,8 +1105,8 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 20,
   "tier": "3 Watch",
+  "rank": 20,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -1184,8 +1184,8 @@
    "to": "2027-09",
    "how": "money approved Sep 2025; order, build, then sale"
   },
-  "rank": 21,
   "tier": "3 Watch",
+  "rank": 21,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1199,8 +1199,8 @@
   "county": "Morris",
   "type": "Volunteer",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Fouts Fire Apparatus rescue pumper delivered (2025-04)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Fouts Fire Apparatus rescue pumper, in the Apr 2025 delivery column",
   "signal_date": "2025-04-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-april-2025/",
   "proof_quote": "Department: DENVILLE (NJ) FIRE DEPARTMENT; Type: RESCUE PUMPER; Built by: FOUTS FIRE APPARATUS",
@@ -1209,7 +1209,7 @@
   "name_match": "exact",
   "fdid": "14080",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1218,14 +1218,14 @@
    "year_how": null,
    "type_how": "the new truck is a rescue pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-04",
-   "to": "2025-10",
-   "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
+   "from": "2024-10",
+   "to": "2025-09",
+   "how": "named in a delivery column dated Apr 2025; the old truck may already have sold quietly"
   },
-  "rank": 22,
   "tier": "3 Watch",
+  "rank": 22,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -1303,8 +1303,8 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 23,
   "tier": "3 Watch",
+  "rank": 23,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "rescue",
@@ -1382,8 +1382,8 @@
    "to": "2028-03",
    "how": "money approved Mar 2026; order, build, then sale"
   },
-  "rank": 24,
   "tier": "3 Watch",
+  "rank": 24,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1422,8 +1422,8 @@
    "to": "2028-02",
    "how": "money approved Feb 2026; order, build, then sale"
   },
-  "rank": 25,
   "tier": "3 Watch",
+  "rank": 25,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -1501,8 +1501,8 @@
    "to": "2028-06",
    "how": "money approved Jun 2026; order, build, then sale"
   },
-  "rank": 26,
   "tier": "3 Watch",
+  "rank": 26,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1541,8 +1541,8 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 27,
   "tier": "3 Watch",
+  "rank": 27,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -1620,8 +1620,8 @@
    "to": "2028-02",
    "how": "money approved Feb 2026; order, build, then sale"
   },
-  "rank": 28,
   "tier": "3 Watch",
+  "rank": 28,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1660,8 +1660,8 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 29,
   "tier": "3 Watch",
+  "rank": 29,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -1714,8 +1714,8 @@
   "county": "Sussex",
   "type": "Volunteer",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Ferrara Fire Apparatus aerial ladder quint delivered (2025-05)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Ferrara Fire Apparatus aerial ladder quint, in the May 2025 delivery column",
   "signal_date": "2025-05-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-may-2025/",
   "proof_quote": "Department: NEWTON (NJ) FIRE DEPARTMENT; Type: AERIAL LADDER QUINT; Built by: FERRARA FIRE APPARATUS",
@@ -1724,7 +1724,7 @@
   "name_match": "exact",
   "fdid": "19151",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1733,14 +1733,14 @@
    "year_how": null,
    "type_how": "the new truck is an aerial ladder quint; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-05",
-   "to": "2025-11",
-   "how": "new truck arrived May 2025; the old one may already have sold quietly"
+   "from": "2024-11",
+   "to": "2025-10",
+   "how": "named in a delivery column dated May 2025; the old truck may already have sold quietly"
   },
-  "rank": 30,
   "tier": "3 Watch",
+  "rank": 30,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -1818,8 +1818,8 @@
    "to": "2027-05",
    "how": "money approved May 2025; order, build, then sale"
   },
-  "rank": 31,
   "tier": "3 Watch",
+  "rank": 31,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1858,8 +1858,8 @@
    "to": "2027-02",
    "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 32,
   "tier": "3 Watch",
+  "rank": 32,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1898,8 +1898,8 @@
    "to": "2028-07",
    "how": "money approved Jul 2026; order, build, then sale"
   },
-  "rank": 33,
   "tier": "3 Watch",
+  "rank": 33,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1938,8 +1938,8 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 34,
   "tier": "3 Watch",
+  "rank": 34,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -1992,8 +1992,8 @@
   "county": "",
   "type": "",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Spartan Emergency Response pumper (star series) delivered (2025-08)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Spartan Emergency Response pumper (star series), in the Aug 2025 delivery column",
   "signal_date": "2025-08-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-august-2025/",
   "proof_quote": "Department: RANDOLPH TOWNSHIP (NJ) SHONGUM MOUNTAIN FIRE CO. 5; Type: PUMPER (STAR SERIES); Built by: SPARTAN EMERGENCY RESPONSE",
@@ -2002,7 +2002,7 @@
   "name_match": "not in registry",
   "fdid": "",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -2011,14 +2011,14 @@
    "year_how": null,
    "type_how": "the new truck is a pumper (star series); departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-08",
-   "to": "2026-02",
-   "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
+   "from": "2025-02",
+   "to": "2026-01",
+   "how": "named in a delivery column dated Aug 2025; the old truck may already have sold quietly"
   },
-  "rank": 35,
   "tier": "3 Watch",
+  "rank": 35,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -2096,8 +2096,8 @@
    "to": "2028-07",
    "how": "money approved Jul 2026; order, build, then sale"
   },
-  "rank": 36,
   "tier": "3 Watch",
+  "rank": 36,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -2136,8 +2136,8 @@
    "to": "2028-06",
    "how": "money approved Jun 2026; order, build, then sale"
   },
-  "rank": 37,
   "tier": "3 Watch",
+  "rank": 37,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2151,8 +2151,8 @@
   "county": "",
   "type": "",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New E-One Fire Apparatus pumper delivered (2026-03)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New E-One Fire Apparatus pumper, in the Mar 2026 delivery column",
   "signal_date": "2026-03-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-march-2026/",
   "proof_quote": "Department: WOODBRIDGE TOWNSHIP (NJ) COLONIA CHEMICAL H & L; Type: PUMPER; Built by: E-ONE FIRE APPARATUS",
@@ -2161,7 +2161,7 @@
   "name_match": "not in registry",
   "fdid": "",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -2170,14 +2170,14 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-03",
-   "to": "2026-09",
-   "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
+   "from": "2025-09",
+   "to": "2026-08",
+   "how": "named in a delivery column dated Mar 2026; the old truck may already have sold quietly"
   },
-  "rank": 38,
   "tier": "3 Watch",
+  "rank": 38,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -2255,8 +2255,8 @@
    "to": "2026-01",
    "how": "new truck was due Jul 2025; the old one may already have sold quietly"
   },
-  "rank": 39,
   "tier": "3 Watch",
+  "rank": 39,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -2334,8 +2334,8 @@
    "to": "2028-07",
    "how": "money approved Jul 2026; order, build, then sale"
   },
-  "rank": 40,
   "tier": "3 Watch",
+  "rank": 40,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2374,8 +2374,8 @@
    "to": "2028-12",
    "how": "grant awarded Dec 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 41,
   "tier": "3 Watch",
+  "rank": 41,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2410,8 +2410,8 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 42,
   "tier": "3 Watch",
+  "rank": 42,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2450,8 +2450,8 @@
    "to": "2026-09",
    "how": "new truck was due Mar 2026; the old one may already have sold quietly"
   },
-  "rank": 43,
   "tier": "3 Watch",
+  "rank": 43,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -2529,8 +2529,8 @@
    "to": "2026-09",
    "how": "new truck was due Mar 2026; the old one may already have sold quietly"
   },
-  "rank": 44,
   "tier": "3 Watch",
+  "rank": 44,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -2569,8 +2569,8 @@
    "to": "2026-06",
    "how": "new truck was due Fourth Quarter 2025; the old one may already have sold quietly"
   },
-  "rank": 45,
   "tier": "3 Watch",
+  "rank": 45,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
@@ -2648,8 +2648,8 @@
    "to": "2026-03",
    "how": "new truck was due Sep 2025; the old one may already have sold quietly"
   },
-  "rank": 46,
   "tier": "3 Watch",
+  "rank": 46,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -2688,8 +2688,8 @@
    "to": "2026-05",
    "how": "new truck was due Nov 2025; the old one may already have sold quietly"
   },
-  "rank": 47,
   "tier": "3 Watch",
+  "rank": 47,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -2767,8 +2767,8 @@
    "to": "2026-07",
    "how": "ordered Jul 2025; the usual build time has passed"
   },
-  "rank": 48,
   "tier": "3 Watch",
+  "rank": 48,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -2846,8 +2846,8 @@
    "to": "2026-08",
    "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 49,
   "tier": "3 Watch",
+  "rank": 49,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null

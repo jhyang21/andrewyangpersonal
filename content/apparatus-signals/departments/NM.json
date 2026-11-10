@@ -33,8 +33,8 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 1,
   "tier": "2 Call this month",
+  "rank": 1,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "brush",
@@ -112,8 +112,8 @@
    "to": "2027-08",
    "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 2,
   "tier": "3 Watch",
+  "rank": 2,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
@@ -191,8 +191,8 @@
    "to": "2025-12",
    "how": "new truck was due Jun 2025; the old one may already have sold quietly"
   },
-  "rank": 3,
   "tier": "3 Watch",
+  "rank": 3,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",

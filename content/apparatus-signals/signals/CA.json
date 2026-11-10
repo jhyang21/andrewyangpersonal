@@ -162,7 +162,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-03-01",
-  "detail": "New Rosenbauer America two pumpers delivered (2025-03)",
+  "detail": "New Rosenbauer America two pumpers, in the Mar 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: MOUNTAIN HOUSE (CA) FIRE RESCUE; Type: TWO PUMPERS; Built by: ROSENBAUER AMERICA",
@@ -179,7 +179,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-04-01",
-  "detail": "New Seagrave Fire Apparatus pumper delivered (2025-04)",
+  "detail": "New Seagrave Fire Apparatus pumper, in the Apr 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: REDONDO BEACH (CA) FIRE DEPARTMENT; Type: PUMPER; Built by: SEAGRAVE FIRE APPARATUS",
@@ -196,7 +196,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-06-01",
-  "detail": "New Rosenbauer America tractor-drawn aerial ladder delivered (2025-06)",
+  "detail": "New Rosenbauer America tractor-drawn aerial ladder, in the Jun 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: STOCKTON (CA) FIRE DEPARTMENT; Type: TRACTOR-DRAWN AERIAL LADDER; Built by: ROSENBAUER AMERICA",
@@ -213,7 +213,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-07-01",
-  "detail": "New Rosenbauer America type 1 pumper (hose tender), three units delivered (2025-07)",
+  "detail": "New Rosenbauer America type 1 pumper (hose tender), three units, in the Jul 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: SAN FRANCISCO (CA) FIRE DEPARTMENT; Type: TYPE 1 PUMPER (HOSE TENDER), THREE UNITS; Built by: ROSENBAUER AMERICA",
@@ -230,7 +230,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2025-08-01",
-  "detail": "New KME Fire Apparatus rear-mount quint delivered (2025-08)",
+  "detail": "New KME Fire Apparatus rear-mount quint, in the Aug 2025 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: ORANGE COUNTY (CA) FIRE AUTHORITY; Type: REAR-MOUNT QUINT; Built by: KME FIRE APPARATUS",
@@ -247,7 +247,7 @@
  {
   "kind": "new_truck_arrived",
   "date": "2026-07-01",
-  "detail": "New Seagrave Fire Apparatus tractor drawn aerial ladder delivered (2026-07)",
+  "detail": "New Seagrave Fire Apparatus tractor drawn aerial ladder, in the Jul 2026 delivery column",
   "old_truck": null,
   "where": "trade press",
   "quote": "Department: HAYWARD (CA) FIRE DEPARTMENT; Type: TRACTOR DRAWN AERIAL LADDER; Built by: SEAGRAVE FIRE APPARATUS",

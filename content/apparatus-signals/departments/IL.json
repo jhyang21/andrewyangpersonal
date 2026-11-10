@@ -1,15 +1,15 @@
 [
  {
   "checked": "trade_press",
-  "score": 6.0,
+  "score": 5.0,
   "department": "Wood Dale Fire Protection District #1",
   "registry_name": "Wood Dale Fire Protection District #1",
   "city": "Wood Dale",
   "county": "DuPage",
   "type": "Career",
   "website": "https://www.wdfd.org/",
-  "why_call": "New truck in service",
-  "detail": "New Alexis Fire Equipment pumper (phantom model) delivered (2026-09)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Alexis Fire Equipment pumper (phantom model), in the Sep 2026 delivery column",
   "signal_date": "2026-09-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-september-2026/",
   "proof_quote": "Department: WOOD DALE (IL) FIRE PROTECTION DISTRICT; Type: PUMPER (PHANTOM MODEL); Built by: ALEXIS FIRE EQUIPMENT",
@@ -18,7 +18,7 @@
   "name_match": "exact",
   "fdid": "DD392",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -27,14 +27,14 @@
    "year_how": null,
    "type_how": "the new truck is a pumper (phantom model); departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-09",
-   "to": "2027-03",
-   "how": "new truck in service Sep 2026; we allow six months for the old one to list"
+   "from": "2026-03",
+   "to": "2027-02",
+   "how": "named in a delivery column dated Sep 2026; columns print one to six months after the delivery, and we allow six months after delivery for the old truck to list"
   },
+  "tier": "2 Call this month",
   "rank": 1,
-  "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -112,8 +112,8 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 2,
   "tier": "2 Call this month",
+  "rank": 2,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -191,8 +191,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 3,
   "tier": "2 Call this month",
+  "rank": 3,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -270,8 +270,8 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 4,
   "tier": "2 Call this month",
+  "rank": 4,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -349,8 +349,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 5,
   "tier": "2 Call this month",
+  "rank": 5,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
@@ -428,8 +428,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
   "tier": "2 Call this month",
+  "rank": 6,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -507,8 +507,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
   "tier": "2 Call this month",
+  "rank": 7,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -547,8 +547,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
   "tier": "2 Call this month",
+  "rank": 8,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -587,8 +587,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 9,
   "tier": "2 Call this month",
+  "rank": 9,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "brush",
@@ -666,8 +666,8 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 10,
   "tier": "2 Call this month",
+  "rank": 10,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -745,8 +745,8 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 11,
   "tier": "2 Call this month",
+  "rank": 11,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -824,8 +824,8 @@
    "to": "2029-03",
    "how": "new truck due Sep 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 12,
   "tier": "2 Call this month",
+  "rank": 12,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -903,8 +903,8 @@
    "to": "2028-12",
    "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 13,
   "tier": "2 Call this month",
+  "rank": 13,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
@@ -982,8 +982,8 @@
    "to": "2028-12",
    "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 14,
   "tier": "2 Call this month",
+  "rank": 14,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -1061,8 +1061,8 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 15,
   "tier": "2 Call this month",
+  "rank": 15,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -1140,8 +1140,8 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 16,
   "tier": "2 Call this month",
+  "rank": 16,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -1219,8 +1219,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 17,
   "tier": "2 Call this month",
+  "rank": 17,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1259,8 +1259,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 18,
   "tier": "2 Call this month",
+  "rank": 18,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -1338,8 +1338,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 19,
   "tier": "2 Call this month",
+  "rank": 19,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1378,8 +1378,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 20,
   "tier": "2 Call this month",
+  "rank": 20,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -1457,8 +1457,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
   "tier": "2 Call this month",
+  "rank": 21,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -1536,8 +1536,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 22,
   "tier": "2 Call this month",
+  "rank": 22,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -1615,8 +1615,8 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 23,
   "tier": "2 Call this month",
+  "rank": 23,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -1694,8 +1694,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 24,
   "tier": "2 Call this month",
+  "rank": 24,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1734,8 +1734,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 25,
   "tier": "2 Call this month",
+  "rank": 25,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1774,8 +1774,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 26,
   "tier": "2 Call this month",
+  "rank": 26,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -1789,8 +1789,8 @@
   "county": "Warren",
   "type": "Volunteer",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Alexis Fire Equipment pumper tanker delivered (2025-03)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Alexis Fire Equipment pumper tanker, in the Mar 2025 delivery column",
   "signal_date": "2025-03-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-march-2025/",
   "proof_quote": "Department: ALEXIS (IL) FIRE PROTECTION DISTRICT; Type: PUMPER TANKER; Built by: ALEXIS FIRE EQUIPMENT",
@@ -1799,7 +1799,7 @@
   "name_match": "exact",
   "fdid": "WB113",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1808,14 +1808,14 @@
    "year_how": null,
    "type_how": "the new truck is a pumper tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-03",
-   "to": "2025-09",
-   "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
+   "from": "2024-09",
+   "to": "2025-08",
+   "how": "named in a delivery column dated Mar 2025; the old truck may already have sold quietly"
   },
-  "rank": 27,
   "tier": "3 Watch",
+  "rank": 27,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -1893,8 +1893,8 @@
    "to": "2028-06",
    "how": "new truck due in 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 28,
   "tier": "3 Watch",
+  "rank": 28,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -1972,8 +1972,8 @@
    "to": "2030-03",
    "how": "new truck due Sep 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 29,
   "tier": "3 Watch",
+  "rank": 29,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -2051,8 +2051,8 @@
    "to": "2028-11",
    "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 30,
   "tier": "3 Watch",
+  "rank": 30,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -2130,8 +2130,8 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 31,
   "tier": "3 Watch",
+  "rank": 31,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
@@ -2209,8 +2209,8 @@
    "to": "2027-08",
    "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 32,
   "tier": "3 Watch",
+  "rank": 32,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -2288,8 +2288,8 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 33,
   "tier": "3 Watch",
+  "rank": 33,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -2367,8 +2367,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 34,
   "tier": "3 Watch",
+  "rank": 34,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -2446,8 +2446,8 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 35,
   "tier": "3 Watch",
+  "rank": 35,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -2525,8 +2525,8 @@
    "to": "2030-05",
    "how": "new truck due Nov 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 36,
   "tier": "3 Watch",
+  "rank": 36,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -2604,8 +2604,8 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 37,
   "tier": "3 Watch",
+  "rank": 37,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -2683,8 +2683,8 @@
    "to": "2030-01",
    "how": "new truck due Jul 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 38,
   "tier": "3 Watch",
+  "rank": 38,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -2762,8 +2762,8 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 39,
   "tier": "3 Watch",
+  "rank": 39,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -2841,8 +2841,8 @@
    "to": "2029-11",
    "how": "new truck due May 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 40,
   "tier": "3 Watch",
+  "rank": 40,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -2920,8 +2920,8 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 41,
   "tier": "3 Watch",
+  "rank": 41,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -2999,8 +2999,8 @@
    "to": "2029-08",
    "how": "new truck due Feb 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 42,
   "tier": "3 Watch",
+  "rank": 42,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -3078,8 +3078,8 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 43,
   "tier": "3 Watch",
+  "rank": 43,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -3132,8 +3132,8 @@
   "county": "Woodford",
   "type": "Volunteer",
   "website": "",
-  "why_call": "New truck in service",
-  "detail": "New 4 Guys Fire Trucks tanker delivered (2025-12)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New 4 Guys Fire Trucks tanker, in the Dec 2025 delivery column",
   "signal_date": "2025-12-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-december-2025/",
   "proof_quote": "Department: CONGERVILLE (IL) RURAL FIRE PROTECTION DISTRICT; Type: TANKER; Built by: 4 GUYS FIRE TRUCKS",
@@ -3142,7 +3142,7 @@
   "name_match": "exact",
   "fdid": "WK123",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -3151,14 +3151,14 @@
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2025-12",
-   "to": "2026-06",
-   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
+   "from": "2025-06",
+   "to": "2026-05",
+   "how": "named in a delivery column dated Dec 2025; the old truck may already have sold quietly"
   },
-  "rank": 44,
   "tier": "3 Watch",
+  "rank": 44,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -3236,8 +3236,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 45,
   "tier": "3 Watch",
+  "rank": 45,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -3315,8 +3315,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 46,
   "tier": "3 Watch",
+  "rank": 46,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -3394,8 +3394,8 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 47,
   "tier": "3 Watch",
+  "rank": 47,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -3473,8 +3473,8 @@
    "to": "2029-06",
    "how": "new truck due Dec 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 48,
   "tier": "3 Watch",
+  "rank": 48,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
@@ -3552,8 +3552,8 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 49,
   "tier": "3 Watch",
+  "rank": 49,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -3631,8 +3631,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 50,
   "tier": "3 Watch",
+  "rank": 50,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -3710,8 +3710,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 51,
   "tier": "3 Watch",
+  "rank": 51,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -3789,8 +3789,8 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 52,
   "tier": "3 Watch",
+  "rank": 52,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -3868,8 +3868,8 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 53,
   "tier": "3 Watch",
+  "rank": 53,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -3947,8 +3947,8 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 54,
   "tier": "3 Watch",
+  "rank": 54,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -4026,8 +4026,8 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 55,
   "tier": "3 Watch",
+  "rank": 55,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -4105,8 +4105,8 @@
    "to": "2029-07",
    "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 56,
   "tier": "3 Watch",
+  "rank": 56,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -4184,8 +4184,8 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 57,
   "tier": "3 Watch",
+  "rank": 57,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -4263,8 +4263,8 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 58,
   "tier": "3 Watch",
+  "rank": 58,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -4342,8 +4342,8 @@
    "to": "2029-05",
    "how": "new truck due Nov 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 59,
   "tier": "3 Watch",
+  "rank": 59,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -4421,8 +4421,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 60,
   "tier": "3 Watch",
+  "rank": 60,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -4500,8 +4500,8 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 61,
   "tier": "3 Watch",
+  "rank": 61,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -4579,8 +4579,8 @@
    "to": "2029-11",
    "how": "new truck due May 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 62,
   "tier": "3 Watch",
+  "rank": 62,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
@@ -4658,8 +4658,8 @@
    "to": "2029-02",
    "how": "new truck due Summer 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 63,
   "tier": "3 Watch",
+  "rank": 63,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -4737,8 +4737,8 @@
    "to": "2028-12",
    "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 64,
   "tier": "3 Watch",
+  "rank": 64,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -4816,8 +4816,8 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 65,
   "tier": "3 Watch",
+  "rank": 65,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "rescue",
@@ -4895,8 +4895,8 @@
    "to": "2028-11",
    "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 66,
   "tier": "3 Watch",
+  "rank": 66,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -4974,8 +4974,8 @@
    "to": "2030-03",
    "how": "new truck due Sep 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 67,
   "tier": "3 Watch",
+  "rank": 67,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -5053,8 +5053,8 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 68,
   "tier": "3 Watch",
+  "rank": 68,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "brush",
@@ -5132,8 +5132,8 @@
    "to": "2029-09",
    "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 69,
   "tier": "3 Watch",
+  "rank": 69,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -5211,8 +5211,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 70,
   "tier": "3 Watch",
+  "rank": 70,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -5290,8 +5290,8 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 71,
   "tier": "3 Watch",
+  "rank": 71,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -5369,8 +5369,8 @@
    "to": "2030-03",
    "how": "new truck due Sep 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 72,
   "tier": "3 Watch",
+  "rank": 72,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -5448,8 +5448,8 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 73,
   "tier": "3 Watch",
+  "rank": 73,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -5527,8 +5527,8 @@
    "to": "2030-01",
    "how": "new truck due Jul 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 74,
   "tier": "3 Watch",
+  "rank": 74,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -5606,8 +5606,8 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 75,
   "tier": "3 Watch",
+  "rank": 75,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "mini pumper",
@@ -5685,8 +5685,8 @@
    "to": "2030-02",
    "how": "new truck due Aug 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 76,
   "tier": "3 Watch",
+  "rank": 76,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -5764,8 +5764,8 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 77,
   "tier": "3 Watch",
+  "rank": 77,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -5843,8 +5843,8 @@
    "to": "2029-09",
    "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 78,
   "tier": "3 Watch",
+  "rank": 78,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -5922,8 +5922,8 @@
    "to": "2030-02",
    "how": "new truck due Aug 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 79,
   "tier": "3 Watch",
+  "rank": 79,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -6001,8 +6001,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 80,
   "tier": "3 Watch",
+  "rank": 80,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -6080,8 +6080,8 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 81,
   "tier": "3 Watch",
+  "rank": 81,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -6159,8 +6159,8 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 82,
   "tier": "3 Watch",
+  "rank": 82,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -6238,8 +6238,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 83,
   "tier": "3 Watch",
+  "rank": 83,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -6317,8 +6317,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 84,
   "tier": "3 Watch",
+  "rank": 84,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -6396,8 +6396,8 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 85,
   "tier": "3 Watch",
+  "rank": 85,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
@@ -6475,8 +6475,8 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 86,
   "tier": "3 Watch",
+  "rank": 86,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -6554,8 +6554,8 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 87,
   "tier": "3 Watch",
+  "rank": 87,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "rescue",
@@ -6633,8 +6633,8 @@
    "to": "2029-07",
    "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 88,
   "tier": "3 Watch",
+  "rank": 88,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -6712,8 +6712,8 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 89,
   "tier": "3 Watch",
+  "rank": 89,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -6791,8 +6791,8 @@
    "to": "2030-01",
    "how": "new truck due Jul 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 90,
   "tier": "3 Watch",
+  "rank": 90,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -6870,8 +6870,8 @@
    "to": "2029-05",
    "how": "new truck due Nov 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 91,
   "tier": "3 Watch",
+  "rank": 91,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -6949,8 +6949,8 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 92,
   "tier": "3 Watch",
+  "rank": 92,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
@@ -7028,8 +7028,8 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 93,
   "tier": "3 Watch",
+  "rank": 93,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -7107,8 +7107,8 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 94,
   "tier": "3 Watch",
+  "rank": 94,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -7186,8 +7186,8 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 95,
   "tier": "3 Watch",
+  "rank": 95,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
@@ -7265,8 +7265,8 @@
    "to": "2026-06",
    "how": "new truck was due Dec 2025; the old one may already have sold quietly"
   },
-  "rank": 96,
   "tier": "3 Watch",
+  "rank": 96,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "brush",
@@ -7344,8 +7344,8 @@
    "to": "2026-05",
    "how": "ordered May 2025; the usual build time has passed"
   },
-  "rank": 97,
   "tier": "3 Watch",
+  "rank": 97,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -7423,8 +7423,8 @@
    "to": "2026-01",
    "how": "new truck was due Jul 2025; the old one may already have sold quietly"
   },
-  "rank": 98,
   "tier": "3 Watch",
+  "rank": 98,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -7502,8 +7502,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 99,
   "tier": "3 Watch",
+  "rank": 99,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -7542,8 +7542,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 100,
   "tier": "3 Watch",
+  "rank": 100,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -7582,8 +7582,8 @@
    "to": "2026-08",
    "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 101,
   "tier": "3 Watch",
+  "rank": 101,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -7622,8 +7622,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 102,
   "tier": "3 Watch",
+  "rank": 102,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
   "ask": null
@@ -7662,8 +7662,8 @@
    "to": "2026-07",
    "how": "ordered Jul 2025; the usual build time has passed"
   },
-  "rank": 103,
   "tier": "3 Watch",
+  "rank": 103,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -7702,8 +7702,8 @@
    "to": "2025-12",
    "how": "new truck was due Jun 2025; the old one may already have sold quietly"
   },
-  "rank": 104,
   "tier": "3 Watch",
+  "rank": 104,
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",

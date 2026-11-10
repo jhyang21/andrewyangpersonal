@@ -33,8 +33,8 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 1,
   "tier": "2 Call this month",
+  "rank": 1,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -112,8 +112,8 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 2,
   "tier": "2 Call this month",
+  "rank": 2,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -191,8 +191,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
   "tier": "2 Call this month",
+  "rank": 3,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -231,8 +231,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
   "tier": "2 Call this month",
+  "rank": 4,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -271,8 +271,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
   "tier": "2 Call this month",
+  "rank": 5,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -311,8 +311,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 6,
   "tier": "2 Call this month",
+  "rank": 6,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -351,8 +351,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
   "tier": "2 Call this month",
+  "rank": 7,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
@@ -391,8 +391,8 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
   "tier": "2 Call this month",
+  "rank": 8,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -431,8 +431,8 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 9,
   "tier": "2 Call this month",
+  "rank": 9,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -471,8 +471,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
   "tier": "2 Call this month",
+  "rank": 10,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -511,8 +511,8 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
   "tier": "2 Call this month",
+  "rank": 11,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -551,8 +551,8 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 12,
   "tier": "2 Call this month",
+  "rank": 12,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -630,8 +630,8 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 13,
   "tier": "3 Watch",
+  "rank": 13,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "brush",
@@ -709,8 +709,8 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 14,
   "tier": "3 Watch",
+  "rank": 14,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -788,8 +788,8 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 15,
   "tier": "3 Watch",
+  "rank": 15,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -867,8 +867,8 @@
    "to": "2028-01",
    "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 16,
   "tier": "3 Watch",
+  "rank": 16,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "brush",
@@ -946,8 +946,8 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 17,
   "tier": "3 Watch",
+  "rank": 17,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -1025,8 +1025,8 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 18,
   "tier": "3 Watch",
+  "rank": 18,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -1079,8 +1079,8 @@
   "county": "Livingston",
   "type": "Mostly volunteer",
   "website": "https://www.howellfire.net/",
-  "why_call": "New truck in service",
-  "detail": "New Sutphen Fire Apparatus aerial ladder quint delivered (2026-03)",
+  "why_call": "New truck in a trade-press delivery column",
+  "detail": "New Sutphen Fire Apparatus aerial ladder quint, in the Mar 2026 delivery column",
   "signal_date": "2026-03-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-march-2026/",
   "proof_quote": "Department: HOWELL AREA (MI) FIRE DEPARTMENT; Type: AERIAL LADDER QUINT; Built by: SUTPHEN FIRE APPARATUS",
@@ -1089,7 +1089,7 @@
   "name_match": "exact",
   "fdid": "04706",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1098,14 +1098,14 @@
    "year_how": null,
    "type_how": "the new truck is an aerial ladder quint; departments usually replace like with like"
   },
-  "stage": "surplus",
+  "stage": "replacing",
   "window": {
-   "from": "2026-03",
-   "to": "2026-09",
-   "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
+   "from": "2025-09",
+   "to": "2026-08",
+   "how": "named in a delivery column dated Mar 2026; the old truck may already have sold quietly"
   },
-  "rank": 19,
   "tier": "3 Watch",
+  "rank": 19,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -1183,8 +1183,8 @@
    "to": "2029-04",
    "how": "new truck due Oct 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 20,
   "tier": "3 Watch",
+  "rank": 20,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -1262,8 +1262,8 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
   "tier": "3 Watch",
+  "rank": 21,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
@@ -1341,8 +1341,8 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 22,
   "tier": "3 Watch",
+  "rank": 22,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -1420,8 +1420,8 @@
    "to": "2027-09",
    "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 23,
   "tier": "3 Watch",
+  "rank": 23,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -1499,8 +1499,8 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
   "tier": "3 Watch",
+  "rank": 24,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
@@ -1578,8 +1578,8 @@
    "to": "2028-12",
    "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 25,
   "tier": "3 Watch",
+  "rank": 25,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
@@ -1657,8 +1657,8 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 26,
   "tier": "3 Watch",
+  "rank": 26,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
@@ -1736,8 +1736,8 @@
    "to": "2027-01",
    "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 27,
   "tier": "3 Watch",
+  "rank": 27,
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -1815,8 +1815,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 28,
   "tier": "3 Watch",
+  "rank": 28,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1855,8 +1855,8 @@
    "to": "2026-06",
    "how": "new truck was due Dec 2025; the old one may already have sold quietly"
   },
-  "rank": 29,
   "tier": "3 Watch",
+  "rank": 29,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
@@ -1934,8 +1934,8 @@
    "to": "2026-08",
    "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 30,
   "tier": "3 Watch",
+  "rank": 30,
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
@@ -1974,8 +1974,8 @@
    "to": "2026-07",
    "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 31,
   "tier": "3 Watch",
+  "rank": 31,
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
   "ask": null
