@@ -11,6 +11,12 @@ export const DEFAULT_SELECTION: LeverSelection = {
   staffing: "short",
 };
 
+/** How many rules (enforcement × note) and kinds of shift (traffic × staffing) the runs cover. */
+export function ruleAndShiftCounts(index: CupNotesIndex) {
+  const n = (l: LeverKey) => index.levers[l].length;
+  return { rules: n("enforcement") * n("note"), shifts: n("traffic") * n("staffing") };
+}
+
 /* Same key format the generator uses: `{enforcement}-{note}-{traffic}-{staffing}`. */
 export function scenarioKey(s: LeverSelection) {
   return `${s.enforcement}-${s.note}-${s.traffic}-${s.staffing}`;

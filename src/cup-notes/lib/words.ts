@@ -107,7 +107,7 @@ export const METRIC_ORDER: Metric[] = [
 ];
 
 export const HINTS = {
-  managers: "Hover or tab to a card for what the manager thought and didn’t say. Open store for the whole shift.",
+  managers: "Open a card for what the manager thought and didn’t say. Open store for the whole shift.",
   cups: "Hover, tap or arrow through the cups to read each note and how that customer took it.",
   faces: "Click a face to read what that customer said.",
 };
@@ -117,6 +117,13 @@ export const FALLBACK_NOTE =
 
 export const NO_NOTE = "No note";
 export const NAME_ONLY = "Nothing on the cup but a name";
+
+/**
+ * Above the lever quotes on the home and method pages. The manager prompt carries enforcement and
+ * note under the memo heading; traffic and staffing come in a separate "Today's shift" block.
+ */
+export const MEMO_LINES =
+  "The memo is two lines: how hard HQ pushes, and what counts as a note. The line and the staffing reach the manager on their own, as today’s shift. Every quote below is word for word what the managers read.";
 
 /** What each round of calls sees, for the method page. */
 export const ROUND_SEES: Record<"manager" | "barista" | "customer", { who: string; sees: string }> = {
@@ -136,7 +143,7 @@ export const ROUND_SEES: Record<"manager" | "barista" | "customer", { who: strin
 
 /** The paragraph under the chain on every run page. */
 export const HOW_TO_READ =
-  "The memo at the top is the same for every store. Managers decide what it means for their team. Baristas decide what to write with a line in front of them. Customers decide if they cared. The five numbers at the bottom are what HQ would see. Everything above them is why. Read the quotes: a manager who tells the team one thing and thinks another, a barista who stops at the fourth cup, a customer who liked the note and hated the wait.";
+  "The memo at the top is the same for every store. Everything below it is what six managers, twelve baristas and 96 customers did with it. The five numbers at the bottom are what HQ would see. Read the quotes. They show where the rule bent.";
 
 function move(from: number, to: number, unit = "", digits = 0) {
   const a = from.toFixed(digits);
@@ -164,10 +171,16 @@ export function compareSentence(nameA: string, nameB: string, a: Outcomes, b: Ou
 
 /** The three findings on the home page. Arithmetic in findings.ts; only the words live here. */
 export function findingSentences(f: Findings): string[] {
+  /* The rest are the off-peak and encourage stances; ignore gets its own sentence when it happens. */
+  const rest = f.offpeak + f.encourage;
+  const ignored = f.ignore > 0 ? ` ${f.ignore} ignored it.` : "";
+  /* One rounded number decides the wording and fills it, so the two always agree. */
+  const satGap = r0(Math.abs(f.strict.customer_satisfaction - f.adaptive.customer_satisfaction));
+  const satMove = satGap <= 3 ? "The note barely moved it." : `The note moved it ${satGap} points.`;
   return [
-    `Strict rule, ${f.managers} manager decisions, ${f.enforceAll} enforced every cup. The rest made a rush exception or turned it into a request. Each had a reason that fit their store.`,
-    `Short-staffed rush, personal notes: strict kept a note on ${r0(f.strict.compliance_pct)}% of cups, adaptive on ${r0(f.adaptive.compliance_pct)}%. Strict cost ${f.strict.avg_seconds_added.toFixed(1)} seconds a cup, adaptive ${f.adaptive.avg_seconds_added.toFixed(1)}. Satisfaction ${r0(f.strict.customer_satisfaction)} and ${r0(f.adaptive.customer_satisfaction)}. The note barely moved it.`,
-    `Satisfaction tracked the line: ${f.quietSat} on quiet, full-staffed shifts, ${f.slammedSat} on short-staffed rushes, under every rule. Connection tracked the note: ${f.personalConn} where it had to be personal, ${f.markConn} where a smiley counted. Count compliance alone and you miss both.`,
+    `Strict rule, ${f.managers} manager decisions, ${f.enforceAll} chose to enforce every cup. ${rest} made a rush exception or turned it into a request.${ignored}`,
+    `Short-staffed rush, personal notes: strict kept a note on ${r0(f.strict.compliance_pct)}% of cups, adaptive on ${r0(f.adaptive.compliance_pct)}%. Strict cost ${f.strict.avg_seconds_added.toFixed(1)} seconds a cup, adaptive ${f.adaptive.avg_seconds_added.toFixed(1)}. Satisfaction ${r0(f.strict.customer_satisfaction)} and ${r0(f.adaptive.customer_satisfaction)}. ${satMove}`,
+    `Satisfaction tracked the line: ${f.quietSat} on quiet, full-staffed shifts, ${f.slammedSat} on short-staffed rushes, across every rule. Connection tracked the note: ${f.personalConn} where it had to be personal, ${f.markConn} where a smiley counted. Compliance alone shows neither.`,
   ];
 }
 

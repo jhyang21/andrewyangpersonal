@@ -3,7 +3,7 @@ import { getIndex, getLeverText, getPrompts } from "@/cup-notes/lib/data";
 import { formatDate, formatNumber, usd } from "@/cup-notes/lib/format";
 import { LEVER_ORDER } from "@/cup-notes/lib/levers";
 import { BASE, pageOpenGraph } from "@/cup-notes/lib/site";
-import { LEVER_INTRO, LEVER_TITLES, ROUND_SEES, tenure } from "@/cup-notes/lib/words";
+import { LEVER_INTRO, LEVER_TITLES, MEMO_LINES, ROUND_SEES, tenure } from "@/cup-notes/lib/words";
 
 const DESCRIPTION =
   "How the cup-note runs were made: the three rounds, the people, the prompts word for word, and what it cost.";
@@ -89,9 +89,7 @@ export default function MethodPage() {
         <h2 id="memo-title" className="text-2xl font-semibold">
           The memo
         </h2>
-        <p className="text-cn-muted">
-          Each run&rsquo;s memo is one line per lever, word for word what the managers read.
-        </p>
+        <p className="text-cn-muted">{MEMO_LINES}</p>
         {LEVER_ORDER.map((lever) => (
           <div key={lever}>
             <h3 className="font-semibold">
@@ -134,8 +132,9 @@ export default function MethodPage() {
           Wait times
         </h2>
         <p>
-          Wait times are arithmetic: the line, plus the seconds each note added. The model never sets
-          them.
+          Each barista picks the seconds a note adds to that cup. The code turns those into the wait:
+          the people ahead in line, times the time to serve one plus the average seconds added so
+          far. The model never sets the wait itself.
         </p>
       </section>
 
@@ -177,8 +176,8 @@ export default function MethodPage() {
         </h2>
         <p>
           Not Starbucks data. The stores and the people are invented and the model wrote every word
-          they say. Not a forecast: it shows how a rule can bend on the way down, not how often it
-          will. Use it like a tabletop exercise before a rollout to thousands of stores: it tells you
+          they say. Not a forecast: it shows the ways a rule can bend between HQ and the cup. It
+          cannot say how often each one happens. Use it like a tabletop exercise before a rollout to thousands of stores: it tells you
           what to test in real stores.
         </p>
       </section>

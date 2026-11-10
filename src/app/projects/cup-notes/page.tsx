@@ -1,10 +1,16 @@
 import Link from "next/link";
 import { getIndex, getLeverText } from "@/cup-notes/lib/data";
 import { findings } from "@/cup-notes/lib/findings";
-import { DEFAULT_SELECTION, LEVER_ORDER, scenarioKey, scenarioName } from "@/cup-notes/lib/levers";
+import {
+  DEFAULT_SELECTION,
+  LEVER_ORDER,
+  ruleAndShiftCounts,
+  scenarioKey,
+  scenarioName,
+} from "@/cup-notes/lib/levers";
 import { BASE, runHref } from "@/cup-notes/lib/site";
 import type { LeverSelection } from "@/cup-notes/lib/types";
-import { LEVER_INTRO, LEVER_TITLES, findingSentences } from "@/cup-notes/lib/words";
+import { LEVER_INTRO, LEVER_TITLES, MEMO_LINES, findingSentences } from "@/cup-notes/lib/words";
 import { RunsTable } from "@/cup-notes/ui/RunsTable";
 import { TradeoffChart } from "@/cup-notes/ui/TradeoffChart";
 
@@ -12,6 +18,7 @@ export default function CupNotesHome() {
   const index = getIndex();
   const text = getLeverText();
   const found = findings(index);
+  const { rules, shifts } = ruleAndShiftCounts(index);
   const byKey = new Map(index.scenarios.map((s) => [s.key, s]));
   const opts = (lever: keyof LeverSelection) => index.levers[lever];
 
@@ -30,11 +37,13 @@ export default function CupNotesHome() {
           </p>
           <p>
             The rule was never the decision. The rollout was. Mandate it or ask nicely? Full note, or
-            does a smiley count in a rush? Baristas asked for a break at peak and got told no.
+            does a smiley count in a rush? Baristas said peak is when it hurts. The union took it to
+            the labor board.
           </p>
           <p>
             So I ran it. Six stores, twelve baristas, 96 customers, every one played by a model,
-            under 24 versions of the rule and the shift. Pick a run.
+            under {rules} versions of the rule and {shifts} kinds of shift. {index.scenarios.length}{" "}
+            runs. Pick a run.
           </p>
         </div>
       </header>
@@ -105,7 +114,7 @@ export default function CupNotesHome() {
           The four levers
         </h2>
         <p className="max-w-3xl text-cn-muted">
-          Each run&rsquo;s memo is one line per lever, word for word what the managers read.
+          {MEMO_LINES}
         </p>
         <div className="grid gap-4 md:grid-cols-2">
           {LEVER_ORDER.map((lever) => (

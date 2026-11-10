@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { getIndex } from "@/cup-notes/lib/data";
 import { findings } from "@/cup-notes/lib/findings";
 import { formatDate, formatNumber } from "@/cup-notes/lib/format";
+import { ruleAndShiftCounts } from "@/cup-notes/lib/levers";
 import { SITE_BYLINE, SITE_NAME, SITE_QUESTION } from "@/cup-notes/lib/site";
 
 export const alt = `${SITE_NAME}: ${SITE_QUESTION}`;
@@ -13,10 +14,13 @@ export default function Image() {
   const index = getIndex();
   const { meta } = index;
   const f = findings(index);
-  const stats: [string, string][] = [[formatNumber(meta.counts.scenarios), "versions of the rule"]];
+  const { rules, shifts } = ruleAndShiftCounts(index);
+  const stats: [string, string][] = [
+    [formatNumber(meta.counts.scenarios), `runs: ${rules} rules × ${shifts} shifts`],
+  ];
   if (f) {
     stats.push(
-      [`${f.enforceAll} of ${f.managers}`, "managers enforced the strict rule on every cup"],
+      [`${f.enforceAll} of ${f.managers}`, "manager decisions chose to enforce every cup"],
       [`${f.slammedSat} vs ${f.quietSat}`, "satisfaction, short-staffed rush vs quiet shift"],
     );
   }

@@ -1,6 +1,6 @@
 // The home page findings. Arithmetic over the saved outcomes, so they move with the dataset and
 // never say a number the data does not hold. The words around them live in words.ts.
-import type { CupNotesIndex, Outcomes } from "./types";
+import type { CupNotesIndex, Outcomes, ScenarioSummary } from "./types";
 
 const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
 export const r0 = (v: number) => Math.round(v);
@@ -12,7 +12,11 @@ export type Findings = {
   slammedSat: number;
   personalConn: number;
   markConn: number;
+  /** Manager decisions under the strict rule, by stance. They sum to `managers`. */
   enforceAll: number;
+  offpeak: number;
+  encourage: number;
+  ignore: number;
   managers: number;
 };
 
@@ -28,8 +32,13 @@ export function findings(index: CupNotesIndex): Findings | null {
   if (!strict || !adaptive || !quiet.length || !slammed.length || !personal.length || !mark.length || !strictRuns.length) {
     return null;
   }
-  const enforceAll = strictRuns.reduce((n, s) => n + s.stance_mix.enforce_all, 0);
-  const managers = strictRuns.reduce((n, s) => n + Object.values(s.stance_mix).reduce((a, b) => a + b, 0), 0);
+  const sum = (stance: keyof ScenarioSummary["stance_mix"]) =>
+    strictRuns.reduce((n, s) => n + s.stance_mix[stance], 0);
+  const enforceAll = sum("enforce_all");
+  const offpeak = sum("enforce_offpeak");
+  const encourage = sum("encourage");
+  const ignore = sum("ignore");
+  const managers = enforceAll + offpeak + encourage + ignore;
   return {
     strict: strict.outcomes,
     adaptive: adaptive.outcomes,
@@ -38,6 +47,9 @@ export function findings(index: CupNotesIndex): Findings | null {
     personalConn: r0(mean(personal.map((s) => s.outcomes.connection))),
     markConn: r0(mean(mark.map((s) => s.outcomes.connection))),
     enforceAll,
+    offpeak,
+    encourage,
+    ignore,
     managers,
   };
 }

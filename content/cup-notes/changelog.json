@@ -21,6 +21,6 @@
     },
     "usd": 0.2,
     "schema_failures": 0,
-    "note": "First run. All 24 versions of the rule, one batch per round: managers, then baristas, then customers."
+    "note": "First run. All 6 rules under all 4 shifts, 24 runs, one batch per round: managers, then baristas, then customers."
   }
 ]
