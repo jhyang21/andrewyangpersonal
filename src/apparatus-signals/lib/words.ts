@@ -160,7 +160,7 @@ export function windowExample(
   return pick?.window ? pick.window.how.replace(/\.$/, "") : null;
 }
 
-export const DONE_NOTE = "These listed or sold after we flagged them.";
+export const DONE_NOTE = "Already listed or sold; kept for the record.";
 
 const SECOND_READER = "Checked by a second reader";
 

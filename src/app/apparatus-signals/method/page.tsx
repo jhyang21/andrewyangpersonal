@@ -499,7 +499,7 @@ export default function MethodPage() {
             </div>
           ))
         ) : (
-          <p>No state sale rules are written up yet.</p>
+          <p>We have not looked up any state&rsquo;s sale rules yet.</p>
         )}
         <p className="text-as-ink-2">We have not looked up the other states yet.</p>
       </section>
