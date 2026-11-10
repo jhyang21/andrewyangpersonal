@@ -79,13 +79,12 @@ export const STAGE_LABEL: Record<Stage, string> = {
  */
 export function stageHeading(stage: Stage, topKinds: string[]): string {
   if (stage !== "sold") return STAGE_LABEL[stage];
-  const extra = [
+  const [first, second] = [
     topKinds.includes("bids_closed") ? "bids closed" : "",
     topKinds.includes("direct_sale") ? "going to a named buyer" : "",
   ].filter(Boolean);
-  if (!extra.length) return STAGE_LABEL.sold;
-  // "Sold, or bids closed"; with both, "Sold, bids closed, or going to a named buyer".
-  return `Sold, ${extra.slice(0, -1).map((e) => `${e}, `).join("")}or ${extra[extra.length - 1]}`;
+  if (!first) return STAGE_LABEL.sold;
+  return second ? `Sold, ${first}, or ${second}` : `Sold, or ${first}`;
 }
 
 /** Not yet at auction or sold: the leads worth a call, and the only ones ranked. */
