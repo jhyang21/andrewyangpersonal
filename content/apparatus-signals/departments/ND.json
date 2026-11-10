@@ -67,6 +67,15 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -137,6 +146,15 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 26,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  },
  {
@@ -176,7 +194,8 @@
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -215,7 +234,8 @@
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -254,7 +274,8 @@
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -293,7 +314,8 @@
   "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -332,7 +354,8 @@
   "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -402,6 +425,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -472,6 +504,15 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -542,6 +583,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -612,6 +662,15 @@
      "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 35,
+   "n": 1,
+   "median": 6000,
+   "p25": 6000,
+   "p75": 6000,
+   "thin": true
   }
  },
  {
@@ -682,6 +741,15 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 26,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  }
 ]

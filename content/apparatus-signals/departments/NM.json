@@ -67,6 +67,15 @@
      "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 40,
+   "n": 2,
+   "median": 53250,
+   "p25": 45375,
+   "p75": 61125,
+   "thin": true
   }
  },
  {
@@ -137,6 +146,15 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 26,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  },
  {
@@ -207,6 +225,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  }
 ]

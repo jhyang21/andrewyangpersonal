@@ -67,6 +67,15 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  }
 ]

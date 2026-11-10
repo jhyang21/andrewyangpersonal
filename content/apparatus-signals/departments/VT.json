@@ -36,7 +36,8 @@
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -75,7 +76,8 @@
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -145,6 +147,15 @@
      "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 27,
+   "n": 19,
+   "median": 75000,
+   "p25": 57500,
+   "p75": 137500,
+   "thin": false
   }
  }
 ]

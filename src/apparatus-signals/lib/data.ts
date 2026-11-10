@@ -93,6 +93,61 @@ export interface GuideTotal {
   /** Leads with a guide price. */
   trucks: number;
   median_sum: number;
+  /** Dealer asking medians of the same leads, summed. */
+  ask_sum: number;
+}
+
+/**
+ * What dealers ask for a truck of one type in one age band. The band can differ from the
+ * guide's: each table falls back to "all ages" on its own when its band has no rows.
+ */
+export interface Ask {
+  band: string;
+  n: number;
+  median: number;
+  p25: number;
+  p75: number;
+  /** Fewer listings than the ask guide's thin_below. */
+  thin: boolean;
+  /**
+   * Set when the lead's model year is unknown: the band is the one at this age, the usual age
+   * of the type at auction, because dealer stock runs younger than auction stock.
+   */
+  usual_age: number | null;
+}
+
+/** One row of the ask guide: dealer listings of one type in one age band. */
+export type AskGuideRow = Omit<Ask, "usual_age"> & { type: string };
+
+export interface AskDealer {
+  name: string;
+  url: string;
+  /** Listings on the dealer's site. */
+  listings: number;
+  /** Listings with a price, a model year and a type the guide prices. */
+  used: number;
+}
+
+export interface AskGuideMeta {
+  /** The day the dealer sites were read. */
+  seen: string;
+  built: string;
+  source: string;
+  dealers: AskDealer[];
+  listings_used: number;
+  by_type: Record<string, number>;
+  skipped_why: string;
+  bands: string[];
+  age: string;
+  thin_below: number;
+  caveats: string[];
+}
+
+export interface AskGuide {
+  meta: AskGuideMeta;
+  table: AskGuideRow[];
+  /** The usual age of each type at auction (median age of its sold lots), by type. */
+  usual_age: Record<string, number>;
 }
 
 export interface PriceGuide {
@@ -172,6 +227,8 @@ export interface Department {
   truck: Truck;
   /** Null when the truck's type is unknown or not a fire truck or ambulance. */
   guide: Guide | null;
+  /** What dealers ask for a truck like it. Null when the type is unknown or no dealer row exists. */
+  ask: Ask | null;
   stage: Stage;
   /** When the old truck should list. Null when listed, sold, or no rule fits. */
   window: ListingWindow | null;
@@ -360,6 +417,8 @@ export interface BlindRead {
 export interface Method {
   /** What used fire trucks sold for at auction, by type and age. */
   price_guide: PriceGuide;
+  /** What dealers ask for used fire trucks, by type and age, in the price guide's bands. */
+  ask_guide: AskGuide;
   /** Feeds checked against closed auction sales. Null until the back-test has run. */
   backtest: Backtest | null;
   /** Hand-read public records, blind test. Null until it has run. */

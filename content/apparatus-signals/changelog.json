@@ -1,5 +1,20 @@
 [
  {
+  "date": "2026-11-10",
+  "states": 51,
+  "leads": 1111,
+  "leads_week": 22,
+  "hand_read_leads": 161,
+  "observed_leads": 133,
+  "signals": 1259,
+  "new_leads": [],
+  "new_lead_count": 0,
+  "new_from_feeds": [],
+  "dropped": [],
+  "dropped_count": 0,
+  "compared_with": "2026-11-09"
+ },
+ {
   "date": "2026-11-09",
   "states": 51,
   "leads": 1111,

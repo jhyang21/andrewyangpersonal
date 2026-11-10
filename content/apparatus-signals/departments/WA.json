@@ -36,7 +36,8 @@
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -106,6 +107,15 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -145,7 +155,8 @@
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -184,7 +195,8 @@
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -254,6 +266,15 @@
      "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 27,
+   "n": 19,
+   "median": 75000,
+   "p25": 57500,
+   "p75": 137500,
+   "thin": false
   }
  },
  {
@@ -324,6 +345,15 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -363,6 +393,7 @@
   "rank": 7,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  }
 ]

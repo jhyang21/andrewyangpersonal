@@ -36,7 +36,8 @@
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -106,6 +107,15 @@
      "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 40,
+   "n": 2,
+   "median": 53250,
+   "p25": 45375,
+   "p75": 61125,
+   "thin": true
   }
  }
 ]

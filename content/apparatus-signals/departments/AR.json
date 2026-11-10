@@ -67,6 +67,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -106,7 +115,8 @@
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -145,7 +155,8 @@
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -184,7 +195,8 @@
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -223,7 +235,8 @@
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -293,6 +306,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -363,6 +385,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  }
 ]

@@ -36,6 +36,7 @@
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  }
 ]

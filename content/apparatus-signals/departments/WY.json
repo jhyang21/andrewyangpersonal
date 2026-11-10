@@ -67,6 +67,15 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 26,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  }
 ]

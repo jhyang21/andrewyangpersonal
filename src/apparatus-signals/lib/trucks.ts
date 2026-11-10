@@ -1,5 +1,5 @@
 // Words for a lead's truck and its guide price. Pure functions, safe on server and client.
-import type { GuideTotal, PriceGuideRow, Truck } from "./data";
+import type { Ask, GuideTotal, PriceGuideRow, Truck } from "./data";
 import { formatMoney, plural } from "./format";
 
 /** truck.type_how when a record names the old truck. */
@@ -39,6 +39,11 @@ export function guideTitle(g: PriceGuideRow): string {
   return `${plural(g.n, "sale")}, ${g.type}, ${bandLabel(g.band)}`;
 }
 
+/** "72 dealer listings of pumpers, 21 to 25 years old; asking prices, not sales": the hover text on a dealer ask. */
+export function askTitle(type: string, a: Ask): string {
+  return `${plural(a.n, "dealer listing")} of ${typePlural(type)}, ${bandLabel(a.band)}; asking prices, not sales`;
+}
+
 /** "About" a sum of medians: $3.67M from a million up, else the nearest thousand. */
 function aboutMoney(n: number): string {
   if (n >= 1_000_000) return `$${(n / 1_000_000).toFixed(2)}M`;
@@ -48,5 +53,7 @@ function aboutMoney(n: number): string {
 /** One line on the guide value of a list of leads. `where` is e.g. "on this list". */
 export function guideTotalLine(total: GuideTotal, where = "on the lists in all states"): string {
   if (total.trucks === 0) return `No truck ${where} has a known type, so there is no guide value.`;
-  return `Guide value of the trucks ${where}: about ${aboutMoney(total.median_sum)} across ${plural(total.trucks, "truck")} with a known type.`;
+  const guide = `Guide value of the trucks ${where}: about ${aboutMoney(total.median_sum)} across ${plural(total.trucks, "truck")} with a known type.`;
+  if (!(total.ask_sum > 0)) return guide; // also undefined, in an older export
+  return `${guide} Dealers ask about ${aboutMoney(total.ask_sum)} for trucks like them.`;
 }

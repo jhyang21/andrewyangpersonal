@@ -67,6 +67,15 @@
      "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 40,
+   "n": 2,
+   "median": 53250,
+   "p25": 45375,
+   "p75": 61125,
+   "thin": true
   }
  },
  {
@@ -137,6 +146,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -176,7 +194,8 @@
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -246,6 +265,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -316,6 +344,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -386,6 +423,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -456,6 +502,15 @@
      "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 35,
+   "n": 1,
+   "median": 6000,
+   "p25": 6000,
+   "p75": 6000,
+   "thin": true
   }
  }
 ]

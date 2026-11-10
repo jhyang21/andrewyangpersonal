@@ -12,8 +12,8 @@ import {
   websiteHref,
   websiteText,
 } from "@/apparatus-signals/lib/format";
-import type { Basis, Checked, Guide, ReadBy, Stage, Truck } from "@/apparatus-signals/lib/data";
-import { guideTitle, truckLabel } from "@/apparatus-signals/lib/trucks";
+import type { Ask, Basis, Checked, Guide, ReadBy, Stage, Truck } from "@/apparatus-signals/lib/data";
+import { askTitle, guideTitle, truckLabel } from "@/apparatus-signals/lib/trucks";
 import {
   BASIS_LEGEND,
   DONE_NOTE,
@@ -43,6 +43,8 @@ export interface LeadRow {
   truck: Truck;
   /** The guide price and its closest sales; null when the truck type is unknown. */
   guide: Guide | null;
+  /** What dealers ask for a truck like it; null when no dealer row fits. */
+  ask: Ask | null;
   signal_date: string;
   other_signals: string;
   proof_url: string;
@@ -66,7 +68,7 @@ export interface KindOption {
 
 type SortKey = "score" | "date";
 
-const COLUMNS = 10;
+const COLUMNS = 11;
 
 /** Unranked rows (gear, listed, sold) sort after ranked ones and keep their order. */
 function byRank(a: LeadRow, b: LeadRow): number {
@@ -242,6 +244,9 @@ function GroupTable({
           <th scope="col" className="r">
             Guide price
           </th>
+          <th scope="col" className="r">
+            Dealer ask
+          </th>
           <th scope="col">Likely listed</th>
           <th scope="col">When</th>
           <th scope="col" className="r">
@@ -281,6 +286,16 @@ function GroupTable({
                     <span title={guideTitle(r.guide)}>
                       {formatMoney(r.guide.median)}
                       {r.guide.thin ? <span className="block text-xs text-as-muted">few sales</span> : null}
+                    </span>
+                  ) : (
+                    "—"
+                  )}
+                </td>
+                <td className="r whitespace-nowrap" data-label="Dealer ask">
+                  {r.guide && r.ask ? (
+                    <span title={askTitle(r.guide.type, r.ask)}>
+                      {formatMoney(r.ask.median)}
+                      {r.ask.thin ? <span className="block text-xs text-as-muted">few listings</span> : null}
                     </span>
                   ) : (
                     "—"

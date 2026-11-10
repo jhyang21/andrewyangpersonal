@@ -67,6 +67,15 @@
      "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 27,
+   "n": 19,
+   "median": 75000,
+   "p25": 57500,
+   "p75": 137500,
+   "thin": false
   }
  },
  {
@@ -137,6 +146,15 @@
      "url": "https://www.auctionsinternational.com/auction/4552/item/lot-0002-1995-mack-cs00p-tanker-truckinformation-added-27499/"
     }
    ]
+  },
+  "ask": {
+   "band": "<=15",
+   "usual_age": null,
+   "n": 14,
+   "median": 320000,
+   "p25": 241750,
+   "p75": 423250,
+   "thin": false
   }
  },
  {
@@ -176,7 +194,8 @@
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -246,6 +265,15 @@
      "url": "https://www.auctionsinternational.com/auction/25132/item/lot-0001-1997-freightliner-fl180e-one-pumper-truck-154193/"
     }
    ]
+  },
+  "ask": {
+   "band": "21-25",
+   "usual_age": null,
+   "n": 72,
+   "median": 60000,
+   "p25": 42375,
+   "p75": 75000,
+   "thin": false
   }
  },
  {
@@ -316,6 +344,15 @@
      "url": "https://www.auctionsinternational.com/auction/32154/item/lot-0001-2008-pierce-saber-pumper-truck-198710/"
     }
    ]
+  },
+  "ask": {
+   "band": "<=15",
+   "usual_age": null,
+   "n": 23,
+   "median": 219000,
+   "p25": 149500,
+   "p75": 310000,
+   "thin": false
   }
  },
  {
@@ -355,7 +392,8 @@
   "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -394,7 +432,8 @@
   "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -433,7 +472,8 @@
   "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -472,7 +512,8 @@
   "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -511,7 +552,8 @@
   "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -550,7 +592,8 @@
   "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -620,6 +663,15 @@
      "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -659,7 +711,8 @@
   "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -698,7 +751,8 @@
   "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -768,6 +822,15 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 26,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  },
  {
@@ -807,7 +870,8 @@
   "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -877,6 +941,15 @@
      "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -947,6 +1020,15 @@
      "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 27,
+   "n": 19,
+   "median": 75000,
+   "p25": 57500,
+   "p75": 137500,
+   "thin": false
   }
  },
  {
@@ -986,7 +1068,8 @@
   "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -1056,6 +1139,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -1095,7 +1187,8 @@
   "rank": 21,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -1165,6 +1258,15 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 26,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  },
  {
@@ -1235,6 +1337,15 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 26,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  },
  {
@@ -1274,7 +1385,8 @@
   "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "unreachable",
@@ -1344,6 +1456,15 @@
      "url": "https://www.auctionsinternational.com/auction/38675/item/lot-0011-2005-freightliner-ms-crew-cab-fire-truck-239875/"
     }
    ]
+  },
+  "ask": {
+   "band": "16-20",
+   "usual_age": null,
+   "n": 57,
+   "median": 139900,
+   "p25": 90000,
+   "p75": 180000,
+   "thin": false
   }
  },
  {
@@ -1383,7 +1504,8 @@
   "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -1453,6 +1575,15 @@
      "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -1492,7 +1623,8 @@
   "rank": 28,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -1562,6 +1694,15 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 26,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  },
  {
@@ -1632,6 +1773,15 @@
      "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 27,
+   "n": 19,
+   "median": 75000,
+   "p25": 57500,
+   "p75": 137500,
+   "thin": false
   }
  },
  {
@@ -1671,7 +1821,8 @@
   "rank": 31,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -1710,7 +1861,8 @@
   "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -1749,7 +1901,8 @@
   "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -1819,6 +1972,15 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 26,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  },
  {
@@ -1889,6 +2051,15 @@
      "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -1928,7 +2099,8 @@
   "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1967,7 +2139,8 @@
   "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -2037,6 +2210,15 @@
      "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -2107,6 +2289,15 @@
      "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0001-1992-e-one-pumper-truck-286255/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": null,
+   "n": 62,
+   "median": 20000,
+   "p25": 15000,
+   "p75": 25000,
+   "thin": false
   }
  },
  {
@@ -2146,7 +2337,8 @@
   "rank": 40,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -2185,7 +2377,8 @@
   "rank": 41,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -2220,7 +2413,8 @@
   "rank": 42,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -2290,6 +2484,15 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -2329,7 +2532,8 @@
   "rank": 44,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -2399,6 +2603,15 @@
      "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 35,
+   "n": 1,
+   "median": 6000,
+   "p25": 6000,
+   "p75": 6000,
+   "thin": true
   }
  },
  {
@@ -2438,7 +2651,8 @@
   "rank": 46,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -2508,6 +2722,15 @@
      "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -2578,6 +2801,15 @@
      "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -2617,6 +2849,7 @@
   "rank": 49,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  }
 ]

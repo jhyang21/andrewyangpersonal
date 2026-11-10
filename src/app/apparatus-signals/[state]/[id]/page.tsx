@@ -91,7 +91,7 @@ function whenLine(dept: Department, signals: Signal[], month: string): string {
 }
 
 function TruckSection({ dept }: { dept: Department }) {
-  const { truck, guide } = dept;
+  const { truck, guide, ask } = dept;
   // A direct sale has no truck for sale; the pipeline blanks it on purpose.
   const direct = dept.top_kind === "direct_sale";
   const known = !direct && Boolean(truck.description || truck.type);
@@ -138,6 +138,20 @@ function TruckSection({ dept }: { dept: Department }) {
                 <span className="num">{formatMoney(guide.p75)}</span>).
                 {guide.thin ? " Thin data; do not quote this number." : ""}
               </p>
+              {ask ? (
+                <p className="mt-3 max-w-3xl">
+                  Dealers list {typePlural(guide.type)}, {bandLabel(ask.band)}, for about{" "}
+                  <span className="num font-semibold">{formatMoney(ask.median)}</span> (
+                  {plural(ask.n, "listing")}; half between{" "}
+                  <span className="num">{formatMoney(ask.p25)}</span> and{" "}
+                  <span className="num">{formatMoney(ask.p75)}</span>). That is an asking price, not a
+                  sale. Dealer trucks are usually serviced first.
+                  {ask.usual_age
+                    ? ` The age is a guess: the model year is unknown, and ${ask.usual_age} is the usual age of ${typePlural(guide.type)} sold at auction.`
+                    : ""}
+                  {ask.thin ? " Thin data; do not quote this number." : ""}
+                </p>
+              ) : null}
               {guide.comps.length ? (
                 <div className="mt-3">
                   <p className="text-sm text-as-muted">Closest sales:</p>
@@ -164,6 +178,8 @@ function TruckSection({ dept }: { dept: Department }) {
       )}
       <p className="mt-3 text-sm">
         <Link href={`${BASE}/method#price-guide`}>How the guide works</Link>
+        {" · "}
+        <Link href={`${BASE}/method#dealer-asks`}>How the dealer asks work</Link>
       </p>
     </section>
   );

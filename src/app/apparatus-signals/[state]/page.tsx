@@ -64,6 +64,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     detail: d.detail,
     truck: d.truck,
     guide: d.guide,
+    ask: d.ask,
     signal_date: d.signal_date,
     other_signals: d.other_signals,
     proof_url: d.proof_url,

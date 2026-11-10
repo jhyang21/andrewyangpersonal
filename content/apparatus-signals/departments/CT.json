@@ -67,6 +67,15 @@
      "url": "https://www.auctionsinternational.com/auction/44675/item/lot-0001-e-193-1994-pierce-pumper-280637/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": null,
+   "n": 62,
+   "median": 20000,
+   "p25": 15000,
+   "p75": 25000,
+   "thin": false
   }
  },
  {
@@ -137,6 +146,15 @@
      "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -176,7 +194,8 @@
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -215,7 +234,8 @@
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -254,7 +274,8 @@
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -324,6 +345,15 @@
      "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -394,6 +424,15 @@
      "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -433,7 +472,8 @@
   "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -503,6 +543,15 @@
      "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -542,7 +591,8 @@
   "rank": 10,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -612,6 +662,15 @@
      "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0022-1996-sutphen-ts-100-100-quint-tower-truck-132713/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 27,
+   "n": 19,
+   "median": 75000,
+   "p25": 57500,
+   "p75": 137500,
+   "thin": false
   }
  },
  {
@@ -651,7 +710,8 @@
   "rank": 12,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -690,7 +750,8 @@
   "rank": 13,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -760,6 +821,15 @@
      "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -830,6 +900,15 @@
      "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -869,7 +948,8 @@
   "rank": 16,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -939,6 +1019,15 @@
      "url": "https://www.auctionsinternational.com/auction/45162/item/lot-0101-2003-pierce-sabre-fire-pumper-truck-282488/"
     }
    ]
+  },
+  "ask": {
+   "band": "21-25",
+   "usual_age": null,
+   "n": 72,
+   "median": 60000,
+   "p25": 42375,
+   "p75": 75000,
+   "thin": false
   }
  },
  {
@@ -1009,6 +1098,15 @@
      "url": "https://www.auctionsinternational.com/auction/46119/item/lot-0001-1991-international-4900-pumper-fire-truck-288169/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": null,
+   "n": 62,
+   "median": 20000,
+   "p25": 15000,
+   "p75": 25000,
+   "thin": false
   }
  },
  {
@@ -1048,7 +1146,8 @@
   "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1087,7 +1186,8 @@
   "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1126,7 +1226,8 @@
   "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1165,7 +1266,8 @@
   "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -1204,7 +1306,8 @@
   "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1274,6 +1377,15 @@
      "url": "https://www.auctionsinternational.com/auction/24145/item/lot-0001-1992-pierce-arrow-fire-pumper-rescue-truck-148424/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": null,
+   "n": 18,
+   "median": 39700,
+   "p25": 24350,
+   "p75": 56250,
+   "thin": false
   }
  },
  {
@@ -1309,7 +1421,8 @@
   "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1348,7 +1461,8 @@
   "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1414,6 +1528,15 @@
      "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -1453,7 +1576,8 @@
   "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -1492,7 +1616,8 @@
   "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1531,7 +1656,8 @@
   "rank": 30,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -1570,7 +1696,8 @@
   "rank": 31,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -1609,7 +1736,8 @@
   "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "corrected",
@@ -1644,7 +1772,8 @@
   "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1683,7 +1812,8 @@
   "rank": 34,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1722,7 +1852,8 @@
   "rank": 35,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1761,7 +1892,8 @@
   "rank": 36,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1800,7 +1932,8 @@
   "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1839,7 +1972,8 @@
   "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1878,6 +2012,7 @@
   "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  }
 ]
