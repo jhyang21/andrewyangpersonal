@@ -109,10 +109,15 @@ export interface Ask {
   p75: number;
   /** Fewer listings than the ask guide's thin_below. */
   thin: boolean;
+  /**
+   * Set when the lead's model year is unknown: the band is the one at this age, the usual age
+   * of the type at auction, because dealer stock runs younger than auction stock.
+   */
+  usual_age: number | null;
 }
 
 /** One row of the ask guide: dealer listings of one type in one age band. */
-export type AskGuideRow = Ask & { type: string };
+export type AskGuideRow = Omit<Ask, "usual_age"> & { type: string };
 
 export interface AskDealer {
   name: string;
@@ -141,6 +146,8 @@ export interface AskGuideMeta {
 export interface AskGuide {
   meta: AskGuideMeta;
   table: AskGuideRow[];
+  /** The usual age of each type at auction (median age of its sold lots), by type. */
+  usual_age: Record<string, number>;
 }
 
 export interface PriceGuide {

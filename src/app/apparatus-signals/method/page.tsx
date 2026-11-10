@@ -197,18 +197,25 @@ export default function MethodPage() {
               {i === 0 ? " listings" : ""})
             </Fragment>
           ))}{" "}
-          on {formatDate(asks.meta.seen)}, and skips the rest: {asks.meta.skipped_why}. Age is the{" "}
+          on {formatDate(asks.meta.seen)}. It skips the rest: {asks.meta.skipped_why}. Age is the{" "}
           {asks.meta.age}. The bands, the thin rule (under {numberWord(asks.meta.thin_below)}{" "}
           listings) and the use of the median are the same as in the price guide, so the two tables
           read side by side.
+        </p>
+        <p className="max-w-3xl">
+          Dealer stock runs younger than auction stock, and asks fall with age where auction prices
+          barely move. So when a lead&apos;s model year is unknown, the ask is not the all-ages row
+          but the row at the usual age of that type at auction (the median age of its sold lots:{" "}
+          {joinPlain(Object.entries(asks.usual_age).map(([t, a]) => `${typePlural(t)} ${a}`))}).
+          The department page says so on those leads.
         </p>
         {auctionPumper && dealerPumper ? (
           <p className="max-w-3xl">
             The gap is the point. At auction a pumper {bandLabel(GAP_BAND)} sells for about{" "}
             <span className="num">{formatMoney(auctionPumper.median)}</span>; dealers list one for
             about <span className="num">{formatMoney(dealerPumper.median)}</span>. Auction lots
-            sell as-is to the high bidder in a few weeks; dealer trucks are serviced, pump-tested
-            and wait for a buyer.
+            sell as-is to the high bidder in a few weeks; dealer trucks are usually serviced and
+            wait for a buyer.
           </p>
         ) : null}
         <PriceTable

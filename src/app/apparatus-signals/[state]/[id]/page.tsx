@@ -144,8 +144,11 @@ function TruckSection({ dept }: { dept: Department }) {
                   <span className="num font-semibold">{formatMoney(ask.median)}</span> (
                   {plural(ask.n, "listing")}; half between{" "}
                   <span className="num">{formatMoney(ask.p25)}</span> and{" "}
-                  <span className="num">{formatMoney(ask.p75)}</span>). That is an asking price for a
-                  serviced truck, not a sale.
+                  <span className="num">{formatMoney(ask.p75)}</span>). That is an asking price, not a
+                  sale. Dealer trucks are usually serviced first.
+                  {ask.usual_age
+                    ? ` The age is a guess: the model year is unknown, and ${ask.usual_age} is the usual age of ${typePlural(guide.type)} sold at auction.`
+                    : ""}
                   {ask.thin ? " Thin data; do not quote this number." : ""}
                 </p>
               ) : null}
