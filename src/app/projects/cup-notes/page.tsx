@@ -1,269 +1,158 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-import { SiteNav } from "@/components/SiteNav";
-import { CupNotesDemo } from "@/components/projects/cup-notes/CupNotesDemo";
-import type { CupNotesIndex } from "@/lib/cup-notes/types";
-import { getCupNotesIndex, getProjectBySlug } from "@/lib/projects";
+import { getIndex, getLeverText } from "@/cup-notes/lib/data";
+import { findings } from "@/cup-notes/lib/findings";
+import { DEFAULT_SELECTION, LEVER_ORDER, scenarioKey, scenarioName } from "@/cup-notes/lib/levers";
+import { BASE, runHref } from "@/cup-notes/lib/site";
+import type { LeverSelection } from "@/cup-notes/lib/types";
+import { LEVER_INTRO, LEVER_TITLES, findingSentences } from "@/cup-notes/lib/words";
+import { RunsTable } from "@/cup-notes/ui/RunsTable";
+import { TradeoffChart } from "@/cup-notes/ui/TradeoffChart";
 
-const SLUG = "cup-notes";
-
-const SOURCES = [
-  {
-    href: "https://www.nrn.com/top-500-restaurants/starbucks-baristas-are-writing-more-than-just-names-on-cups-and-not-everyone-is-happy-about-it",
-    label: "Nation’s Restaurant News",
-  },
-  {
-    href: "https://bostonglobe.com/2026/05/06/lifestyle/starbucks-baristas-cup-affirmations-union",
-    label: "The Boston Globe",
-  },
-];
-
-export function generateMetadata(): Metadata {
-  const project = getProjectBySlug(SLUG);
-  const title = project?.title ?? "The cup note";
-  const description = project?.summary;
-  return {
-    title: `${title} | Andrew Yang`,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "article",
-      publishedTime: project?.date,
-      url: `/projects/${SLUG}`,
-    },
-    twitter: {
-      card: "summary",
-      title,
-      description,
-    },
-  };
-}
-
-const usd = (v: number) =>
-  v.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 2 });
-
-const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
-const r0 = (v: number) => Math.round(v);
-
-/*
- * The findings below are arithmetic over the saved outcomes, so they move with the dataset and
- * never say a number the data does not hold. Each pulls one contrast an executive would ask for.
- */
-function findings(index: CupNotesIndex) {
-  const byKey = new Map(index.scenarios.map((s) => [s.key, s]));
-  const strict = byKey.get("strict-personal-rush-short");
-  const adaptive = byKey.get("adaptive-personal-rush-short");
-  const quiet = index.scenarios.filter((s) => s.levers.traffic === "steady" && s.levers.staffing === "full");
-  const slammed = index.scenarios.filter((s) => s.levers.traffic === "rush" && s.levers.staffing === "short");
-  const personal = index.scenarios.filter((s) => s.levers.note === "personal");
-  const mark = index.scenarios.filter((s) => s.levers.note === "mark");
-  const strictRuns = index.scenarios.filter((s) => s.levers.enforcement === "strict");
-  if (!strict || !adaptive || !quiet.length || !slammed.length || !personal.length || !mark.length || !strictRuns.length) {
-    return null;
-  }
-  const enforceAll = strictRuns.reduce((n, s) => n + s.stance_mix.enforce_all, 0);
-  const managers = strictRuns.reduce((n, s) => n + Object.values(s.stance_mix).reduce((a, b) => a + b, 0), 0);
-  return {
-    strict: strict.outcomes,
-    adaptive: adaptive.outcomes,
-    quietSat: r0(mean(quiet.map((s) => s.outcomes.customer_satisfaction))),
-    slammedSat: r0(mean(slammed.map((s) => s.outcomes.customer_satisfaction))),
-    personalConn: r0(mean(personal.map((s) => s.outcomes.connection))),
-    markConn: r0(mean(mark.map((s) => s.outcomes.connection))),
-    enforceAll,
-    managers,
-  };
-}
-
-export default function CupNotesPage() {
-  const project = getProjectBySlug(SLUG);
-  if (!project) notFound();
-
-  const index = getCupNotesIndex();
-  const { meta } = index;
-  const calls =
-    meta.counts.manager_calls + meta.counts.barista_calls + meta.counts.customer_calls;
-  const generated = meta.generated_at.slice(0, 10);
+export default function CupNotesHome() {
+  const index = getIndex();
+  const text = getLeverText();
   const found = findings(index);
+  const byKey = new Map(index.scenarios.map((s) => [s.key, s]));
+  const opts = (lever: keyof LeverSelection) => index.levers[lever];
+
+  /* Rows: the rule (enforcement × note). Columns: the shift (traffic × staffing). */
+  const rows = opts("enforcement").flatMap((e) => opts("note").map((n) => ({ e, n })));
+  const cols = opts("traffic").flatMap((tr) => opts("staffing").map((st) => ({ tr, st })));
 
   return (
-    <div className="min-h-screen">
-      <SiteNav current="projects" />
-      <main className="mx-auto w-full max-w-2xl px-6 pb-20">
-        <Link
-          href="/projects"
-          className="text-sm text-[var(--color-muted)] hover:text-[var(--color-ink)]"
-        >
-          &larr; Back to projects
-        </Link>
-
-        <article className="mt-8">
-          <p className="text-xs text-[var(--color-muted)]">{project.date}</p>
-          <h1 className="mt-2 font-serif text-4xl leading-tight text-[var(--color-ink)]">
-            {project.title}
-          </h1>
-
-          <div className="prose-post mt-8">
-            <p>
-              Starbucks has asked its baristas to write short notes on cups. Head office wrote one
-              rule. What customers got depended on who read it: a store manager judged on
-              drive-thru times, a barista with twelve people in line, a regular who likes being
-              known, a commuter who just wants the coffee.
-            </p>
-            <p>
-              A policy does not produce an outcome. It passes through people, and each of them
-              bends it. This page replays a simulation of that chain, worked out in advance: six
-              stores, twelve baristas and ninety-six customers, each one played by a language
-              model, under 24 versions of the rule and the shift. Pick a version and run it.
-            </p>
-          </div>
-
-          {/*
-            The demo widens past the 42rem measure: to 60rem from `lg` and 72rem from `xl`, where
-            the viewport has room for three manager cards and a shift row on one line. Below `lg`
-            it sits in the prose column and stacks.
-          */}
-          <section className="mt-10 lg:-mx-[10.5rem] xl:-mx-[16.5rem]">
-            <CupNotesDemo index={index} />
-          </section>
-
-          <div className="prose-post mt-12">
-            {found && (
-              <>
-                <h2>What this run found</h2>
-                <ul>
-                  <li>
-                    <strong>The rule bent before it reached a single cup.</strong> Under the strict
-                    rule, only {found.enforceAll} of {found.managers} manager decisions enforced
-                    every cup. The rest carved out a rush exception or softened it to a request,
-                    each for a reason that fits their store.
-                  </li>
-                  <li>
-                    <strong>Strict and adaptive buy different things.</strong> On a short-staffed
-                    rush with personal notes, strict kept notes on{" "}
-                    {r0(found.strict.compliance_pct)}% of cups and adaptive on{" "}
-                    {r0(found.adaptive.compliance_pct)}%. Strict cost{" "}
-                    {found.strict.avg_seconds_added.toFixed(1)} seconds a cup against{" "}
-                    {found.adaptive.avg_seconds_added.toFixed(1)}. Customer satisfaction came out
-                    at {r0(found.strict.customer_satisfaction)} and{" "}
-                    {r0(found.adaptive.customer_satisfaction)}: the note barely moved it.
-                  </li>
-                  <li>
-                    <strong>The line sets satisfaction; the note moves connection.</strong>{" "}
-                    Satisfaction averaged {found.quietSat} on quiet, fully staffed shifts and{" "}
-                    {found.slammedSat} on short-staffed rushes, whatever the rule. Connection
-                    averaged {found.personalConn} across the runs where the note had to be
-                    personal and {found.markConn} where any mark counted. A rollout that measures
-                    only compliance would miss both.
-                  </li>
-                </ul>
-              </>
-            )}
-
-            <h2>How to read this</h2>
-            <p>
-              <strong>Follow one rule down the chain.</strong> The memo at the top is the same for
-              every store. The managers decide what it means for their team, the baristas decide
-              what to write with a line in front of them, and the customers decide whether they
-              cared. The five numbers at the bottom are what head office would see; everything
-              above them is why.
-            </p>
-            <p>
-              <strong>Change one lever at a time.</strong> Run the default, then press Compare and
-              switch Enforcement from Strict to Adaptive. The managers, cups and faces swap to the
-              new run, and the line under the levers says what moved. The charts at the end put all
-              24 runs side by side: who kept the most notes, who kept customers happiest, and what
-              each cost in seconds.
-            </p>
-            <p>
-              <strong>Read the quotes, not just the totals.</strong> The numbers say a policy
-              worked or failed. The quotes say where it broke: a manager who tells the team one
-              thing and thinks another, a barista who stops writing at the fourth cup, a customer
-              who liked the note but hated the wait.
-            </p>
-
-            <h2>How it was made</h2>
-            <p>
-              Each person is one call to {meta.model}, with reasoning effort set to{" "}
-              {meta.reasoning_effort}, run in advance through OpenAI&rsquo;s batch service. There
-              are three rounds, and each one sees only what the person in it would know:
-            </p>
-            <ul>
-              <li>
-                <strong>Managers</strong> see the rule, the shift, their store and their own
-                job: what they are judged on, how long they have run the store, how they feel
-                about programs from head office.
-              </li>
-              <li>
-                <strong>Baristas</strong> see their manager&rsquo;s message, the shift, and the
-                eight customers they serve with the line length at each. They decide each cup and
-                how many seconds it costs.
-              </li>
-              <li>
-                <strong>Customers</strong> see who they are, where they are, how long they
-                waited and what is on their cup. They never see the rule or the manager.
-              </li>
-            </ul>
-            <p>
-              The people are the same in every run, so the differences come from the rule and the
-              shift, not from new faces. Wait times are worked out by plain arithmetic from the
-              line and the seconds each note added; the model never sets them.
-            </p>
-            {meta.source === "fixture" ? (
-              <p>
-                <strong>
-                  The answers on this page are placeholders from a rule-based stand-in, not the
-                  model.
-                </strong>{" "}
-                The full run is {calls.toLocaleString("en-US")} calls across{" "}
-                {meta.counts.scenarios} scenarios ({meta.counts.manager_calls} manager,{" "}
-                {meta.counts.barista_calls.toLocaleString("en-US")} barista and{" "}
-                {meta.counts.customer_calls.toLocaleString("en-US")} customer); none of them has
-                been made for this version.
-              </p>
-            ) : (
-              <p>
-                This run made {calls.toLocaleString("en-US")} calls across{" "}
-                {meta.counts.scenarios} scenarios ({meta.counts.manager_calls} manager,{" "}
-                {meta.counts.barista_calls.toLocaleString("en-US")} barista and{" "}
-                {meta.counts.customer_calls.toLocaleString("en-US")} customer), used{" "}
-                {(meta.tokens.input + meta.tokens.output).toLocaleString("en-US")} tokens and cost{" "}
-                {usd(meta.usd)}. {meta.schema_failures} answers failed the schema check. Generated{" "}
-                {generated}, prompt version {meta.prompt_version}.
-              </p>
-            )}
-
-            <h2>What this is not</h2>
-            <p>
-              It is not Starbucks data. The stores, managers, baristas and customers are invented,
-              and a language model wrote every word they say. It is not a forecast either: it
-              shows how a rule can bend as it passes through people, not how often it will. Use it
-              the way you would use a tabletop exercise before a rollout to thousands of stores: to
-              find the questions worth testing in real stores, not to answer them.
-            </p>
-          </div>
-
-          <p className="mt-10 border-t border-[var(--color-border-warm)] pt-6 text-xs leading-6 text-[var(--color-muted)]">
-            Sources on the real policy:{" "}
-            {SOURCES.map((s, i) => (
-              <span key={s.href}>
-                {i > 0 && " and "}
-                <a
-                  href={s.href}
-                  className="underline underline-offset-2 hover:text-[var(--color-ink)]"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {s.label}
-                </a>
-              </span>
-            ))}
-            . {meta.disclaimer}
+    <div className="space-y-12">
+      <header className="max-w-3xl space-y-4">
+        <h1 className="text-3xl font-semibold sm:text-4xl">The cup note</h1>
+        <div className="cn-prose text-lg">
+          <p>
+            Starbucks told baristas to write a note on every cup. Saturday, 8:40, line out the door:
+            a smiley. Two pm, dead quiet: a whole sentence. Same rule, different cup.
           </p>
-        </article>
-      </main>
+          <p>
+            The rule was never the decision. The rollout was. Mandate it or ask nicely? Full note, or
+            does a smiley count in a rush? Baristas asked for a break at peak and got told no.
+          </p>
+          <p>
+            So I ran it. Six stores, twelve baristas, 96 customers, every one played by a model,
+            under 24 versions of the rule and the shift. Pick a run.
+          </p>
+        </div>
+      </header>
+
+      <section aria-labelledby="runs-title" className="space-y-3">
+        <h2 id="runs-title" className="text-2xl font-semibold">
+          The {index.scenarios.length} runs
+        </h2>
+        <p className="max-w-3xl text-cn-muted">
+          Rows are the rule, columns the shift. Each cell is one run: share of cups with a note, and
+          customer satisfaction.
+        </p>
+        <div className="cn-table-wrap">
+          <table className="cn-grid">
+            <thead>
+              <tr>
+                <td />
+                {cols.map(({ tr, st }) => (
+                  <th scope="col" key={`${tr.key}-${st.key}`}>
+                    {tr.label}
+                    <span className="cn-dim"> · {st.label}</span>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map(({ e, n }) => (
+                <tr key={`${e.key}-${n.key}`}>
+                  <th scope="row">
+                    {e.label}
+                    <span className="cn-dim"> · {n.label}</span>
+                  </th>
+                  {cols.map(({ tr, st }) => {
+                    const sel = { enforcement: e.key, note: n.key, traffic: tr.key, staffing: st.key };
+                    const s = byKey.get(scenarioKey(sel));
+                    return (
+                      <td key={`${tr.key}-${st.key}`}>
+                        {s ? (
+                          <Link href={runHref(s.key)} aria-label={scenarioName(index, sel)}>
+                            <span className="cn-grid-main">{Math.round(s.outcomes.compliance_pct)}%</span>
+                            <span className="cn-grid-sub">
+                              satisfaction {Math.round(s.outcomes.customer_satisfaction)}
+                            </span>
+                          </Link>
+                        ) : (
+                          <span className="cn-dim">–</span>
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Not sure where to start? The hardest shift under the strictest rule:{" "}
+          <Link href={runHref(scenarioKey(DEFAULT_SELECTION))}>
+            {scenarioName(index, DEFAULT_SELECTION)}
+          </Link>
+          .
+        </p>
+      </section>
+
+      <section aria-labelledby="levers-title" className="space-y-4">
+        <h2 id="levers-title" className="text-2xl font-semibold">
+          The four levers
+        </h2>
+        <p className="max-w-3xl text-cn-muted">
+          Each run&rsquo;s memo is one line per lever, word for word what the managers read.
+        </p>
+        <div className="grid gap-4 md:grid-cols-2">
+          {LEVER_ORDER.map((lever) => (
+            <div key={lever} className="cn-card cn-lever-card">
+              <h3 className="font-semibold">
+                {LEVER_TITLES[lever]}
+                <span className="font-normal text-cn-muted"> · {LEVER_INTRO[lever]}</span>
+              </h3>
+              <dl className="mt-3 space-y-3">
+                {index.levers[lever].map((o) => (
+                  <div key={o.key}>
+                    <dt className="font-medium">
+                      {o.label}
+                      <span className="font-normal text-cn-muted"> · {o.short}</span>
+                    </dt>
+                    <dd className="cn-memo-line">&ldquo;{text[lever][o.key]}&rdquo;</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {found && (
+        <section aria-labelledby="found-title" className="max-w-3xl space-y-3">
+          <h2 id="found-title" className="text-2xl font-semibold">
+            What came out
+          </h2>
+          <ul className="cn-prose list-disc space-y-2 pl-5">
+            {findingSentences(found).map((s) => (
+              <li key={s}>{s}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section aria-labelledby="all-title" className="space-y-4">
+        <h2 id="all-title" className="text-2xl font-semibold">
+          Side by side
+        </h2>
+        <TradeoffChart index={index} selection={null} />
+        <RunsTable index={index} />
+      </section>
+
+      <p className="max-w-3xl">
+        How the people, prompts and numbers were made: <Link href={`${BASE}/method`}>Method</Link>.
+      </p>
     </div>
   );
 }

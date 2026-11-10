@@ -1,13 +1,15 @@
 import fs from "fs";
 import path from "path";
-import type { CupNotesIndex } from "@/lib/cup-notes/types";
 
 export type Project = {
   title: string;
   slug: string;
   date: string;
   summary: string;
-  /** Where the entry links when it is not a page under /projects (the Apparatus Signals microsite). */
+  /**
+   * Where the entry links when it is not a page under /projects (the Apparatus Signals microsite).
+   * The cup-notes microsite needs none: it lives at /projects/cup-notes, the default address.
+   */
   href?: string;
 };
 
@@ -33,12 +35,6 @@ const BRENT_WTI_PATH = path.join(
   "content",
   "brent-wti-spread.json",
 );
-const CUP_NOTES_INDEX_PATH = path.join(
-  process.cwd(),
-  "content",
-  "cup-notes",
-  "index.json",
-);
 
 export function getAllProjects(): Project[] {
   if (!fs.existsSync(PROJECTS_PATH)) return [];
@@ -55,11 +51,3 @@ export function getBrentWtiSeries(): BrentWtiSeries {
   return JSON.parse(raw) as BrentWtiSeries;
 }
 
-/**
- * The cup-notes index: levers, people and the 24 scenario summaries. The per-scenario detail files are
- * too large to inline, so they sit in `public/cup-notes/scenarios/` and the demo fetches them on demand.
- */
-export function getCupNotesIndex(): CupNotesIndex {
-  const raw = fs.readFileSync(CUP_NOTES_INDEX_PATH, "utf-8");
-  return JSON.parse(raw) as CupNotesIndex;
-}

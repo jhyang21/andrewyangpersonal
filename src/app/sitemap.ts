@@ -3,6 +3,8 @@ import { getAllMemos } from "@/lib/memos";
 import { getAllProjects } from "@/lib/projects";
 import { departmentHref, getDepartments, getMeta, getStates } from "@/apparatus-signals/lib/data";
 import { BASE } from "@/apparatus-signals/lib/site";
+import { getIndex as getCupNotesData, getRunKeys } from "@/cup-notes/lib/data";
+import { BASE as CUP_NOTES_BASE, runHref } from "@/cup-notes/lib/site";
 
 const SITE_URL = "https://www.andrewyangpersonal.com";
 
@@ -17,7 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Entries with their own href are not /projects pages, so they are left out here; the Apparatus
-  // Signals microsite has its own section below.
+  // Signals microsite has its own section below. The cup-notes home is listed here like any project,
+  // and its sub-pages in their own section.
   const projects = getAllProjects()
     .filter((project) => !project.href)
     .map((project) => ({
@@ -31,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...memos,
     { url: `${SITE_URL}/projects` },
     ...projects,
+    ...cupNotes(),
     ...apparatusSignals(),
   ];
 }
@@ -43,5 +47,12 @@ function apparatusSignals(): MetadataRoute.Sitemap {
     paths.push(`${BASE}/${s.code.toLowerCase()}`);
     for (const d of getDepartments(s.code)) paths.push(departmentHref(s.code, d));
   }
+  return paths.map((p) => ({ url: `${SITE_URL}${p}`, lastModified }));
+}
+
+/** The cup-notes sub-pages: method, changelog and every run. The home is in the projects list above. */
+function cupNotes(): MetadataRoute.Sitemap {
+  const lastModified = new Date(getCupNotesData().meta.generated_at);
+  const paths = [`${CUP_NOTES_BASE}/method`, `${CUP_NOTES_BASE}/changelog`, ...getRunKeys().map(runHref)];
   return paths.map((p) => ({ url: `${SITE_URL}${p}`, lastModified }));
 }
