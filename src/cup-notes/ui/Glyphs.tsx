@@ -1,7 +1,7 @@
-import type { CupAction, Reaction } from "@/lib/cup-notes/types";
+import type { CupAction, Reaction } from "@/cup-notes/lib/types";
 
 /*
- * Two small glyphs the whole demo shares. Colour comes from the `--cn-*` variables in cup-notes.css;
+ * Two small glyphs the whole demo shares. Colour comes from the `--cn-*` variables in styles.css;
  * the marks inside each glyph carry the same meaning a second way, so neither the cups nor the faces
  * depend on colour alone: a smiley cup has a smiley, a generic note one written line, a personal note
  * two; each face has its own mouth.

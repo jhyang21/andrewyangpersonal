@@ -3,26 +3,27 @@
 import { useState } from "react";
 import type { KeyboardEvent } from "react";
 import { motion } from "motion/react";
-import type { CupNotesIndex, ScenarioDetail, Shift } from "@/lib/cup-notes/types";
+import type { CupNotesIndex, ScenarioDetail, Shift } from "@/cup-notes/lib/types";
+import { ACTION_LABELS, NAME_ONLY, REACTION_LABELS } from "@/cup-notes/lib/words";
 import { CupGlyph, FaceGlyph } from "./Glyphs";
-import { ACTION_LABELS, REACTION_LABELS, T, rowDone } from "./shared";
+import { T, rowDone } from "./timeline";
 
 type Props = {
   index: CupNotesIndex;
-  detail: ScenarioDetail | null;
+  detail: ScenarioDetail;
   t: number;
 };
 
 type Hot = { row: number; slot: number };
 
 /** The twelve rows in store order, then barista order, matched to their saved shift. */
-export function shiftRows(index: CupNotesIndex, detail: ScenarioDetail | null) {
+export function shiftRows(index: CupNotesIndex, detail: ScenarioDetail) {
   return index.stores.flatMap((store) =>
     store.baristas.map((b) => ({
       store,
       barista: b,
       shift:
-        detail?.shifts.find((s) => s.store === store.key && s.barista === b.key) ?? null,
+        detail.shifts.find((s) => s.store === store.key && s.barista === b.key) ?? null,
     })),
   );
 }
@@ -117,7 +118,7 @@ export function ShiftStrip({ index, detail, t }: Props) {
                               {ACTION_LABELS[cup.action]}: <em>&ldquo;{cup.note_text}&rdquo;</em>
                             </>
                           ) : (
-                            "Nothing on the cup but a name"
+                            NAME_ONLY
                           )}
                         </span>
                         <span className="cn-tip-meta">
