@@ -1,20 +1,44 @@
 /*
- * The cup note demo — scoped styles.
+ * The cup note microsite styles. Imported only by src/app/projects/cup-notes/layout.tsx.
  *
- * Everything is namespaced under `.cn-root`, the same reasoning as `.bw-root`: the simulation's
- * colours are chart colours, not site colours, so they stay out of `globals.css`'s `@theme inline`
- * block, which ships on every page. Site tokens are read here, never redefined.
+ * Every token and selector is scoped to the .cup-notes wrapper, so the rest of the personal site is
+ * not touched. Tailwind loads once from the root globals.css, which also maps the --color-cn-*
+ * theme entries (text-cn-muted, border-cn-line, bg-cn-card, ...) to these variables.
  *
- * The palettes were run through the dataviz validator against the white card surface:
- *   - Enforcement is the default categorical order's first three slots, which pass all-pairs (the
- *     scatter puts any two side by side). Aqua sits at 2.8:1, so every use carries a text label.
- *   - Cup actions are one violet ramp, light to dark as the note takes more effort. Skip is an
- *     outline, not a fourth step.
- *   - Reactions diverge blue (pleased) to red (put out) round a grey midpoint, each arm one hue.
+ * Brand green is for links, focus and the one primary button; amber is for warnings. The data
+ * palettes are separate and were run through the dataviz validator against the card surface:
+ *   - Enforcement takes the default categorical order's first three slots, which pass all-pairs (the
+ *     scatter puts any two side by side). On the light card aqua sits at 2.8:1, so every use carries
+ *     a text label. The dark steps pass all checks on the dark card.
+ *   - Cup actions are one violet ramp, ordered by effort. Light mode runs light to dark; dark mode
+ *     runs dark to light, so the most effort is always the most contrast. Skip is an outline.
+ *   - Reactions diverge blue (pleased) to red (put out) round a grey midpoint, each arm one hue,
+ *     stepped the same way for each mode.
  * None of them carries meaning alone: cups and faces have their own marks, and chips say their state.
  */
 
-.cn-root {
+/* ---- tokens -------------------------------------------------------------------------------- */
+
+.cup-notes {
+  color-scheme: light;
+  --cn-ground: #f6f1e8;
+  --cn-card: #fffdf9;
+  --cn-ink: #1a1a1a;
+  --cn-muted: #6f675c;
+  --cn-line: #e4dccd;
+  --cn-line-strong: #d3c9b8;
+  --cn-tint: #efe9dd;
+  /* Darker than the brand's #4F7A3A so link text clears 4.5:1 on the ground. */
+  --cn-green: #4a7336;
+  --cn-green-hover: #3e6230;
+  --cn-green-tint: #e3edda;
+  --cn-amber: #c8862b;
+  --cn-amber-ink: #925c16;
+  --cn-amber-tint: #fbefd9;
+  --cn-radius: 14px;
+  --cn-shadow: 0 1px 2px rgba(26, 26, 26, 0.06);
+  --cn-shadow-pop: 0 6px 18px rgba(26, 26, 26, 0.16);
+
   --cn-strict: #2a78d6;
   --cn-flexible: #eb6834;
   --cn-adaptive: #1baf7a;
@@ -22,48 +46,123 @@
   --cn-cup-smiley: #9d91ec;
   --cn-cup-generic: #6250d6;
   --cn-cup-personal: #38298c;
+  --cn-mark-on-cup: #ffffff;
 
   --cn-r-delighted: #1c5cab;
   --cn-r-warm: #86b6ef;
   --cn-r-neutral: #b5b3aa;
   --cn-r-indifferent: #f0a29b;
   --cn-r-annoyed: #c43a3a;
+  --cn-mark-on-face: #ffffff;
 
   --cn-fixture: #b42318;
-  --cn-warn-ink: #8a3a05;
+}
 
-  color: var(--color-ink);
+@media (prefers-color-scheme: dark) {
+  .cup-notes {
+    color-scheme: dark;
+    --cn-ground: #171512;
+    --cn-card: #211e1a;
+    --cn-ink: #f2ede4;
+    --cn-muted: #a9a091;
+    --cn-line: #3a342c;
+    --cn-line-strong: #4d463b;
+    --cn-tint: #2c2822;
+    --cn-green: #8db873;
+    --cn-green-hover: #a3c98b;
+    --cn-green-tint: #2a3424;
+    --cn-amber: #d9a04a;
+    --cn-amber-ink: #e0b066;
+    --cn-amber-tint: #3a2f1e;
+    --cn-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --cn-shadow-pop: 0 6px 18px rgba(0, 0, 0, 0.5);
+
+    /* Dark steps of the same hues, validated against the dark card. */
+    --cn-strict: #3987e5;
+    --cn-flexible: #d95926;
+    --cn-adaptive: #199e70;
+
+    --cn-cup-smiley: #5a49c4;
+    --cn-cup-generic: #8a7de6;
+    --cn-cup-personal: #bdb5f5;
+    --cn-mark-on-cup: #171512;
+
+    --cn-r-delighted: #9ec5f4;
+    --cn-r-warm: #3987e5;
+    --cn-r-neutral: #6b6964;
+    --cn-r-indifferent: #c75a52;
+    --cn-r-annoyed: #f2a49c;
+    --cn-mark-on-face: #171512;
+  }
+}
+
+/* ---- base ---------------------------------------------------------------------------------- */
+
+@layer base {
+  .cup-notes {
+    background: var(--cn-ground);
+    color: var(--cn-ink);
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
+    font-size: 16px;
+  }
+
+  .cup-notes a {
+    color: var(--cn-green);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  .cup-notes a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  .cup-notes h1,
+  .cup-notes h2,
+  .cup-notes h3 {
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  .cup-notes .sr-only-focusable:not(:focus) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
 }
 
 /*
- * The global `:focus-visible` ring is near-white, which vanishes on these white cards. The same fix
- * `.bw-root` makes: a visible accent ring for everything focusable in here, the segmented controls
- * (whose input is visually hidden) and the `summary` included.
+ * Focus ring. Left outside the layers on purpose: the root globals.css has an unlayered
+ * `a:focus-visible` rule (transparent outline, faint box-shadow) that would beat any layered rule.
  */
-.cn-root :focus-visible,
-.cn-root .cn-seg:has(input:focus-visible) {
-  outline: 2px solid var(--color-accent);
+.cup-notes :focus-visible {
+  outline: 2px solid var(--cn-green);
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px var(--color-accent-tint);
+  box-shadow: none;
 }
 
+/* ---- shared -------------------------------------------------------------------------------- */
+
 .cn-dim {
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-hint {
   margin-top: 10px;
   font-size: 12px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-card,
-.cn-panel,
 .cn-strip {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border-warm);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
+  background: var(--cn-card);
+  border: 1px solid var(--cn-line);
+  border-radius: var(--cn-radius);
+  box-shadow: var(--cn-shadow);
 }
 
 /* ---- header -------------------------------------------------------------------------------- */
@@ -82,78 +181,7 @@
   letter-spacing: 0.02em;
 }
 
-.cn-head {
-  margin-bottom: 16px;
-}
-
-.cn-head-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px 16px;
-}
-
-.cn-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--color-muted);
-}
-
-.cn-badge {
-  display: inline-flex;
-  padding: 3px 10px;
-  border: 1px solid var(--color-border-warm);
-  border-radius: 999px;
-  background: var(--color-primary-tint);
-  font-size: 12px;
-  color: var(--color-ink);
-}
-
-.cn-head-scenario {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.cn-head-ab .cn-head-scenario {
-  font-size: 16px;
-  margin-top: 6px;
-}
-
-.cn-ab {
-  display: inline-flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  border-radius: 5px;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 1;
-  vertical-align: 1px;
-}
-
-.cn-ab-a {
-  border: 1.5px solid var(--color-ink);
-  color: var(--color-ink);
-}
-
-.cn-ab-b {
-  background: var(--color-ink);
-  color: var(--color-paper);
-}
-
 /* ---- levers -------------------------------------------------------------------------------- */
-
-.cn-panel {
-  padding: 16px;
-}
 
 .cn-levers {
   display: grid;
@@ -161,10 +189,6 @@
 }
 
 @media (min-width: 640px) {
-  .cn-panel {
-    padding: 20px;
-  }
-
   .cn-levers {
     grid-template-columns: 1fr 1fr;
   }
@@ -192,24 +216,21 @@
   margin-bottom: 6px;
   font-size: 12px;
   font-weight: 600;
-  color: var(--color-muted);
-}
-
-.cn-seg-legend-b {
-  font-weight: 400;
+  color: var(--cn-muted);
 }
 
 .cn-seg-track {
   display: flex;
   gap: 4px;
   padding: 3px;
-  background: var(--color-primary-tint);
+  background: var(--cn-tint);
   border-radius: 10px;
 }
 
 /* At least 44px tall: on a phone these are narrow, and a near miss swaps the whole scenario. */
 .cn-seg {
   display: flex;
+  text-decoration: none;
   flex: 1 1 0;
   min-width: 0;
   min-height: 48px;
@@ -217,12 +238,12 @@
   justify-content: center;
   padding: 6px 10px;
   border-radius: 8px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
   cursor: pointer;
 }
 
 .cn-seg:hover {
-  color: var(--color-ink);
+  color: var(--cn-ink);
 }
 
 .cn-seg-label {
@@ -238,13 +259,13 @@
 }
 
 .cn-seg-on {
-  background: var(--color-surface);
-  color: var(--color-ink);
-  box-shadow: 0 1px 2px rgba(16, 20, 24, 0.08);
+  background: var(--cn-card);
+  color: var(--cn-ink);
+  box-shadow: var(--cn-shadow);
 }
 
 .cn-seg-on .cn-seg-short {
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-actions {
@@ -252,15 +273,6 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid var(--color-border-warm);
-}
-
-.cn-actions-hint {
-  flex: 1 1 16rem;
-  font-size: 12px;
-  color: var(--color-muted);
 }
 
 .cn-btn {
@@ -277,46 +289,22 @@
 }
 
 .cn-btn-primary {
-  background: var(--color-ink);
-  color: var(--color-paper);
+  background: var(--cn-green);
+  color: var(--cn-card);
 }
 
 .cn-btn-primary:hover {
-  background: var(--color-primary-hover);
+  background: var(--cn-green-hover);
 }
 
 .cn-btn-ghost {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border-warm);
-  color: var(--color-ink);
+  background: var(--cn-card);
+  border: 1px solid var(--cn-line);
+  color: var(--cn-ink);
 }
 
 .cn-btn-ghost:hover {
-  background: var(--color-primary-tint);
-}
-
-.cn-btn-on {
-  background: var(--color-accent-tint);
-  border-color: var(--color-accent);
-}
-
-.cn-btn-icon {
-  width: 44px;
-  padding: 0;
-}
-
-.cn-compare-line {
-  margin-top: 12px;
-  padding: 12px 16px;
-  border-radius: 10px;
-  background: var(--color-accent-tint);
-  font-size: 14px;
-  line-height: 1.55;
-}
-
-.cn-compare-line-quiet {
-  background: var(--color-primary-tint);
-  color: var(--color-muted);
+  background: var(--cn-tint);
 }
 
 /* ---- the chain ----------------------------------------------------------------------------- */
@@ -344,7 +332,7 @@
   left: 13px;
   width: 2px;
   border-radius: 1px;
-  background: var(--color-border-warm);
+  background: var(--cn-line);
 }
 
 .cn-step:last-child::before {
@@ -370,24 +358,24 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  border: 1.5px solid var(--color-border-warm);
-  background: var(--color-surface);
+  border: 1.5px solid var(--cn-line);
+  background: var(--cn-card);
   font-size: 12px;
   font-weight: 700;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-step-live .cn-step-n {
-  border-color: var(--color-accent);
-  background: var(--color-accent);
-  color: #ffffff;
-  box-shadow: 0 0 0 4px var(--color-accent-tint);
+  border-color: var(--cn-green);
+  background: var(--cn-green);
+  color: var(--cn-card);
+  box-shadow: 0 0 0 4px var(--cn-green-tint);
 }
 
 .cn-step-done .cn-step-n {
-  border-color: var(--color-ink);
-  background: var(--color-ink);
-  color: var(--color-paper);
+  border-color: var(--cn-ink);
+  background: var(--cn-ink);
+  color: var(--cn-ground);
 }
 
 .cn-step-title {
@@ -398,7 +386,7 @@
 
 .cn-step-sub {
   font-size: 13px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 @media (max-width: 639px) {
@@ -434,7 +422,7 @@
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.03em;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-policy-main {
@@ -482,7 +470,7 @@
 
 .cn-mgr-type {
   font-size: 12px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-mgr-who {
@@ -504,46 +492,46 @@
   align-items: center;
   padding: 2px 8px;
   border-radius: 999px;
-  background: var(--color-primary-tint);
+  background: var(--cn-tint);
   font-size: 11px;
   font-weight: 500;
   line-height: 1.5;
-  color: var(--color-ink);
+  color: var(--cn-ink);
   white-space: nowrap;
 }
 
 .cn-chip-quiet {
   background: transparent;
-  box-shadow: inset 0 0 0 1px var(--color-border-warm);
-  color: var(--color-muted);
+  box-shadow: inset 0 0 0 1px var(--cn-line);
+  color: var(--cn-muted);
 }
 
 .cn-chip-warn {
   margin-left: 4px;
-  background: #fdf0d9;
-  color: var(--cn-warn-ink);
+  background: var(--cn-amber-tint);
+  color: var(--cn-amber-ink);
 }
 
 /* Stance chips step from solid to open as the manager pushes less. The words carry the meaning. */
 .cn-stance-enforce_all {
-  background: var(--color-ink);
-  color: var(--color-paper);
+  background: var(--cn-ink);
+  color: var(--cn-ground);
 }
 
 .cn-stance-enforce_offpeak {
-  background: var(--color-muted);
-  color: #ffffff;
+  background: var(--cn-muted);
+  color: var(--cn-card);
 }
 
 .cn-stance-encourage {
-  background: var(--color-primary-tint);
-  color: var(--color-ink);
+  background: var(--cn-tint);
+  color: var(--cn-ink);
 }
 
 .cn-stance-ignore {
   background: transparent;
-  box-shadow: inset 0 0 0 1px var(--color-muted);
-  color: var(--color-muted);
+  box-shadow: inset 0 0 0 1px var(--cn-muted);
+  color: var(--cn-muted);
 }
 
 .cn-meter {
@@ -552,14 +540,14 @@
   align-items: center;
   gap: 8px;
   font-size: 11px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-meter-track {
   position: relative;
   height: 6px;
   border-radius: 3px;
-  background: var(--color-primary-tint);
+  background: var(--cn-tint);
   overflow: hidden;
 }
 
@@ -567,14 +555,14 @@
   position: absolute;
   inset: 0 auto 0 0;
   border-radius: 3px;
-  background: var(--color-accent);
+  background: var(--cn-green);
 }
 
 .cn-meter-val {
   min-width: 2ch;
   text-align: right;
   font-variant-numeric: tabular-nums;
-  color: var(--color-ink);
+  color: var(--cn-ink);
 }
 
 /*
@@ -601,13 +589,13 @@
 .cn-mgr-thought {
   visibility: hidden;
   padding: 8px 10px;
-  border-left: 2px solid var(--color-accent);
+  border-left: 2px solid var(--cn-green);
   border-radius: 0 8px 8px 0;
-  background: var(--color-paper);
+  background: var(--cn-ground);
   font-size: 13px;
   font-style: italic;
   line-height: 1.5;
-  color: var(--color-ink);
+  color: var(--cn-ink);
 }
 
 .cn-mgr-thought-tag {
@@ -616,7 +604,7 @@
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-mgr:hover .cn-mgr-thought,
@@ -631,7 +619,7 @@
 
 .cn-wait-line {
   font-size: 13px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-mgr-open {
@@ -644,25 +632,20 @@
   border-radius: 4px;
   font-size: 12px;
   font-weight: 600;
-  color: var(--color-accent);
-  cursor: pointer;
+  color: var(--cn-green);
+  text-decoration: none;
 }
 
-/* The button stretches over the whole card, so a click anywhere on it opens the store. */
+/* The link stretches over the whole card, so a click anywhere on it jumps to the store's record. */
 .cn-mgr-open::after {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: var(--radius-card);
+  border-radius: var(--cn-radius);
 }
 
-.cn-mgr-open:disabled {
-  color: var(--color-muted);
-  cursor: default;
-}
-
-.cn-mgr:has(.cn-mgr-open:not(:disabled)):hover {
-  border-color: #d8cfc1;
+.cn-mgr:has(.cn-mgr-open):hover {
+  border-color: var(--cn-line-strong);
 }
 
 /* ---- shift strip --------------------------------------------------------------------------- */
@@ -671,7 +654,7 @@
   display: grid;
   gap: 6px 16px;
   padding: 10px 14px;
-  border-bottom: 1px solid var(--color-border-warm);
+  border-bottom: 1px solid var(--cn-line);
 }
 
 .cn-row:last-child {
@@ -680,7 +663,7 @@
 
 /* A slightly heavier line between stores; each store has two baristas. */
 .cn-row:nth-child(2n):not(:last-child) {
-  border-bottom-color: #ddd4c6;
+  border-bottom-color: var(--cn-line-strong);
 }
 
 @media (min-width: 1024px) {
@@ -716,7 +699,7 @@
 
 .cn-row-store {
   font-size: 12px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-row-cups {
@@ -740,7 +723,7 @@
 }
 
 .cn-cup-btn:hover:not(:disabled) {
-  background: var(--color-primary-tint);
+  background: var(--cn-tint);
 }
 
 .cn-cup-btn:disabled {
@@ -766,32 +749,32 @@
 .cn-cup-empty .cn-cup-lid,
 .cn-cup-empty .cn-cup-body {
   fill: none;
-  stroke: var(--color-border-warm);
+  stroke: var(--cn-line);
 }
 
 .cn-cup-skip .cn-cup-lid,
 .cn-cup-skip .cn-cup-body {
-  fill: var(--color-surface);
-  stroke: var(--color-muted);
+  fill: var(--cn-card);
+  stroke: var(--cn-muted);
 }
 
 /* The lid keeps a 1px surface seam from the body so the two read as parts of one cup. */
 .cn-cup-smiley .cn-cup-lid,
 .cn-cup-smiley .cn-cup-body {
   fill: var(--cn-cup-smiley);
-  stroke: var(--color-surface);
+  stroke: var(--cn-card);
 }
 
 .cn-cup-generic .cn-cup-lid,
 .cn-cup-generic .cn-cup-body {
   fill: var(--cn-cup-generic);
-  stroke: var(--color-surface);
+  stroke: var(--cn-card);
 }
 
 .cn-cup-personal .cn-cup-lid,
 .cn-cup-personal .cn-cup-body {
   fill: var(--cn-cup-personal);
-  stroke: var(--color-surface);
+  stroke: var(--cn-card);
 }
 
 .cn-cup-mark {
@@ -801,13 +784,13 @@
 }
 
 .cn-cup-smiley .cn-cup-mark {
-  fill: var(--color-ink);
-  stroke: var(--color-ink);
+  fill: var(--cn-ink);
+  stroke: var(--cn-ink);
 }
 
 .cn-cup-generic .cn-cup-mark,
 .cn-cup-personal .cn-cup-mark {
-  stroke: #ffffff;
+  stroke: var(--cn-mark-on-cup);
 }
 
 /* ---- tooltip ------------------------------------------------------------------------------- */
@@ -822,10 +805,10 @@
   width: 260px;
   max-width: calc(100vw - 48px);
   padding: 10px 12px;
-  border: 1px solid var(--color-border-warm);
+  border: 1px solid var(--cn-line);
   border-radius: 10px;
-  background: var(--color-surface);
-  box-shadow: 0 6px 18px rgba(16, 20, 24, 0.16);
+  background: var(--cn-card);
+  box-shadow: var(--cn-shadow-pop);
   font-size: 12px;
   line-height: 1.45;
   pointer-events: none;
@@ -844,7 +827,7 @@
 }
 
 .cn-tip-meta {
-  color: var(--color-muted);
+  color: var(--cn-muted);
   font-variant-numeric: tabular-nums;
 }
 
@@ -852,7 +835,7 @@
   display: flex;
   gap: 8px;
   padding-top: 6px;
-  border-top: 1px solid var(--color-border-warm);
+  border-top: 1px solid var(--cn-line);
 }
 
 .cn-tip-react .cn-face {
@@ -875,7 +858,7 @@
   font-size: 12.5px;
   font-style: italic;
   line-height: 1.45;
-  color: var(--color-ink);
+  color: var(--cn-ink);
 }
 
 .cn-row-stats {
@@ -883,7 +866,7 @@
   gap: 12px;
   margin-top: 2px;
   font-size: 11px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
   font-variant-numeric: tabular-nums;
 }
 
@@ -903,7 +886,7 @@
   align-items: center;
   gap: 6px;
   font-size: 12px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-legend .cn-face {
@@ -918,7 +901,7 @@
 
 .cn-legend-n {
   font-weight: 600;
-  color: var(--color-ink);
+  color: var(--cn-ink);
   font-variant-numeric: tabular-nums;
 }
 
@@ -952,7 +935,7 @@
 
 .cn-face-empty .cn-face-disc {
   fill: none;
-  stroke: var(--color-border-warm);
+  stroke: var(--cn-line);
   stroke-width: 1.2;
 }
 
@@ -977,8 +960,8 @@
 }
 
 .cn-face-mark {
-  fill: var(--color-ink);
-  stroke: var(--color-ink);
+  fill: var(--cn-ink);
+  stroke: var(--cn-ink);
   stroke-width: 1.6;
   stroke-linecap: round;
 }
@@ -987,11 +970,14 @@
   stroke: none;
 }
 
-/* Features go white on the two dark ends of the scale, ink on the three light steps. */
+/*
+ * Features on the two ends of the scale take --cn-mark-on-face: white on the dark light-mode ends,
+ * the ground on the light dark-mode ends. Ink on the three middle steps.
+ */
 .cn-face-delighted .cn-face-mark,
 .cn-face-annoyed .cn-face-mark {
-  fill: #ffffff;
-  stroke: #ffffff;
+  fill: var(--cn-mark-on-face);
+  stroke: var(--cn-mark-on-face);
 }
 
 /* ---- reaction wall ------------------------------------------------------------------------- */
@@ -1015,8 +1001,8 @@
 
 .cn-wall-store {
   padding: 10px 12px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border-warm);
+  background: var(--cn-card);
+  border: 1px solid var(--cn-line);
   border-radius: 12px;
 }
 
@@ -1024,7 +1010,7 @@
   margin-bottom: 4px;
   font-size: 12px;
   font-weight: 600;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-wall-line {
@@ -1044,7 +1030,7 @@
 }
 
 .cn-face-btn:hover:not(:disabled) {
-  background: var(--color-primary-tint);
+  background: var(--cn-tint);
 }
 
 .cn-face-btn:disabled {
@@ -1056,7 +1042,7 @@
 }
 
 .cn-face-picked {
-  box-shadow: inset 0 0 0 1.5px var(--color-ink);
+  box-shadow: inset 0 0 0 1.5px var(--cn-ink);
 }
 
 .cn-wall-pick {
@@ -1066,7 +1052,7 @@
   margin-top: 10px;
   padding: 12px 14px;
   border-radius: 12px;
-  background: var(--color-primary-tint);
+  background: var(--cn-tint);
 }
 
 .cn-wall-pick .cn-face {
@@ -1083,7 +1069,7 @@
 .cn-wall-pick-head {
   font-size: 12px;
   font-weight: 600;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-wall-pick-quote {
@@ -1095,7 +1081,7 @@
 .cn-wall-pick-meta {
   margin-top: 4px;
   font-size: 11.5px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 /* ---- outcome tiles ------------------------------------------------------------------------- */
@@ -1129,7 +1115,7 @@
 .cn-tile-label {
   font-size: 12px;
   font-weight: 600;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 /* Below the five-across layout a label can wrap; keep the big numbers on one baseline anyway. */
@@ -1138,15 +1124,6 @@
     min-height: 2.6em;
     line-height: 1.3;
   }
-}
-
-.cn-tile-a {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 6px;
-  font-size: 13px;
-  color: var(--color-muted);
 }
 
 /* Proportional figures on the big number: tabular digits look loose at this size. */
@@ -1161,51 +1138,18 @@
   letter-spacing: -0.01em;
 }
 
-.cn-tile-delta {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  font-size: 12px;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-}
-
 .cn-tile-note {
   margin-top: 4px;
   font-size: 11.5px;
   line-height: 1.4;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-card-wait {
   box-shadow: none;
 }
 
-/* ---- missing / stale ----------------------------------------------------------------------- */
-
-.cn-missing {
-  margin-top: 28px;
-  padding: 40px 24px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.cn-missing-title {
-  margin-bottom: 6px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-/* A fetch in flight holds the last scenario at half strength rather than flashing to empty. */
-.cn-stale {
-  opacity: 0.5;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .cn-stale {
-    transition: opacity 160ms ease;
-  }
-
   .cn-seg,
   .cn-btn,
   .cn-step-n {
@@ -1221,24 +1165,12 @@
   margin-top: 16px;
   padding: 10px 14px;
   border-radius: 10px;
-  background: #fdf0d9;
+  background: var(--cn-amber-tint);
   font-size: 12.5px;
-  color: var(--cn-warn-ink);
+  color: var(--cn-amber-ink);
 }
 
 /* ---- tradeoff chart ------------------------------------------------------------------------ */
-
-.cn-section {
-  margin-top: 12px;
-  padding-top: 28px;
-  border-top: 1px solid var(--color-border-warm);
-}
-
-.cn-section-title {
-  margin-bottom: 12px;
-  font-size: 16px;
-  font-weight: 600;
-}
 
 .cn-chart-grid {
   display: grid;
@@ -1267,24 +1199,24 @@
   display: block;
   font-size: 12px;
   font-weight: 400;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-chart-foot {
   margin-top: 6px;
   font-size: 11.5px;
   line-height: 1.45;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-chart-label {
-  fill: var(--color-ink);
+  fill: var(--cn-ink);
   font-size: 11px;
   font-variant-numeric: tabular-nums;
 }
 
 .cn-chart-tag {
-  fill: var(--color-ink);
+  fill: var(--cn-ink);
   font-size: 11px;
   font-weight: 700;
 }
@@ -1292,10 +1224,10 @@
 .cn-chart-tip {
   min-width: 170px;
   padding: 8px 12px;
-  border: 1px solid var(--color-border-warm);
+  border: 1px solid var(--cn-line);
   border-radius: 8px;
-  background: var(--color-surface);
-  box-shadow: 0 4px 14px rgba(16, 20, 24, 0.14);
+  background: var(--cn-card);
+  box-shadow: var(--cn-shadow-pop);
   font-size: 12px;
 }
 
@@ -1308,44 +1240,28 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-chart-tip-row strong {
   margin-left: auto;
   padding-left: 12px;
-  color: var(--color-ink);
+  color: var(--cn-ink);
   font-variant-numeric: tabular-nums;
-}
-
-.cn-details {
-  margin-top: 16px;
-}
-
-.cn-table-toggle {
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--color-muted);
-  border-radius: 4px;
-}
-
-.cn-table-toggle:hover {
-  color: var(--color-ink);
 }
 
 .cn-table-wrap {
   overflow: auto;
   max-height: 460px;
   margin-top: 10px;
-  border: 1px solid var(--color-border-warm);
+  border: 1px solid var(--cn-line);
   border-radius: 10px;
 }
 
 .cn-table {
   width: 100%;
   border-collapse: collapse;
-  background: var(--color-surface);
+  background: var(--cn-card);
   font-size: 12.5px;
   font-variant-numeric: tabular-nums;
 }
@@ -1353,7 +1269,7 @@
 .cn-table th,
 .cn-table td {
   padding: 6px 12px;
-  border-bottom: 1px solid var(--color-border-warm);
+  border-bottom: 1px solid var(--cn-line);
   text-align: right;
   white-space: nowrap;
 }
@@ -1366,10 +1282,10 @@
 .cn-table thead th {
   position: sticky;
   top: 0;
-  background: var(--color-surface);
+  background: var(--cn-card);
   font-size: 11.5px;
   font-weight: 600;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
 .cn-table tr:last-child th,
@@ -1379,76 +1295,35 @@
 
 .cn-table-now th,
 .cn-table-now td {
-  background: var(--color-accent-tint);
+  background: var(--cn-green-tint);
 }
 
-/* ---- store drill-down ---------------------------------------------------------------------- */
+/* ---- store record --------------------------------------------------------------------------- */
 
-.cn-dialog {
-  width: min(46rem, calc(100vw - 24px));
-  max-height: calc(100dvh - 24px);
-  margin: auto;
-  padding: 0;
-  border: 1px solid var(--color-border-warm);
-  border-radius: var(--radius-card);
-  background: var(--color-surface);
-  color: var(--color-ink);
-  box-shadow: 0 18px 48px rgba(16, 20, 24, 0.22);
-  overflow: auto;
-  overscroll-behavior: contain;
-}
-
-.cn-dialog::backdrop {
-  background: rgba(16, 20, 24, 0.38);
-}
-
-.cn-dialog-body {
-  padding: 0 20px 24px;
-}
-
-@media (min-width: 640px) {
-  .cn-dialog-body {
-    padding: 0 28px 28px;
-  }
-}
-
-.cn-dialog-head {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 18px 0 12px;
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border-warm);
-}
-
-.cn-dialog-title {
+.cn-record-title {
   margin-top: 2px;
   font-size: 20px;
   font-weight: 600;
 }
 
-.cn-dialog-setting {
+.cn-record-setting {
   margin-top: 14px;
   font-size: 13.5px;
   line-height: 1.6;
-  color: var(--color-muted);
+  color: var(--cn-muted);
 }
 
-.cn-dialog-section {
+.cn-record-section {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-top: 20px;
   padding-top: 18px;
-  border-top: 1px solid var(--color-border-warm);
+  border-top: 1px solid var(--cn-line);
   font-size: 13.5px;
 }
 
-.cn-dialog-section h4 {
+.cn-record-section h4 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1460,12 +1335,12 @@
 .cn-said {
   padding: 10px 12px;
   border-radius: 10px;
-  background: var(--color-paper);
+  background: var(--cn-ground);
   line-height: 1.55;
 }
 
 .cn-said-private {
-  border-left: 2px solid var(--color-accent);
+  border-left: 2px solid var(--cn-green);
   border-radius: 0 10px 10px 0;
   font-style: italic;
 }
@@ -1474,7 +1349,7 @@
   font-style: normal;
 }
 
-.cn-dialog-quote {
+.cn-record-quote {
   font-style: italic;
   line-height: 1.55;
 }
@@ -1491,7 +1366,7 @@
   align-items: center;
   gap: 2px 10px;
   padding: 6px 0;
-  border-bottom: 1px solid var(--color-border-warm);
+  border-bottom: 1px solid var(--cn-line);
   font-size: 12.5px;
 }
 
@@ -1512,7 +1387,7 @@
 
 .cn-cuplist-num {
   font-variant-numeric: tabular-nums;
-  color: var(--color-muted);
+  color: var(--cn-muted);
   white-space: nowrap;
 }
 
@@ -1555,4 +1430,163 @@
 .cn-react-group li {
   padding: 3px 0;
   line-height: 1.5;
+}
+
+/* ---- pages --------------------------------------------------------------------------------- */
+
+/* Plain reading text: the intro, findings, how-to-read and method paragraphs. */
+.cn-prose {
+  line-height: 1.65;
+}
+
+.cn-prose p + p,
+.cn-prose p + ul,
+.cn-prose ul + p {
+  margin-top: 0.85rem;
+}
+
+/* The memo text each lever option put in front of the managers, quoted word for word. */
+.cn-memo-line,
+.cn-policy-memo {
+  margin-top: 4px;
+  padding-left: 10px;
+  border-left: 2px solid var(--cn-line-strong);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--cn-muted);
+}
+
+.cn-policy-memo {
+  margin-top: 8px;
+}
+
+.cn-lever-card,
+.cn-person,
+.cn-near,
+.cn-change {
+  padding: 16px 18px;
+}
+
+/* Home: the 24 runs as rule (rows) by shift (columns). */
+.cn-grid {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--cn-card);
+  font-size: 13px;
+}
+
+.cn-grid th,
+.cn-grid td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--cn-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.cn-grid thead th {
+  position: sticky;
+  top: 0;
+  background: var(--cn-card);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cn-grid tbody th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cn-grid tr:last-child th,
+.cn-grid tr:last-child td {
+  border-bottom: 0;
+}
+
+.cn-grid td a {
+  display: flex;
+  flex-direction: column;
+  min-width: 6.5rem;
+  padding: 4px 6px;
+  margin: -4px -6px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.cn-grid td a:hover {
+  background: var(--cn-green-tint);
+}
+
+.cn-grid-main {
+  font-size: 17px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.cn-grid-sub {
+  font-size: 12px;
+  color: var(--cn-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* The runs table has a visible heading above it; the caption is for screen readers. */
+.cn-table-caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Method: the prompts, word for word. */
+.cn-prompt {
+  padding: 12px 16px;
+}
+
+.cn-prompt summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cn-prompt pre {
+  margin-top: 4px;
+  padding: 12px;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: var(--cn-tint);
+  font-size: 12.5px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Changelog: one fact list per run. */
+.cn-change-facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 16px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.cn-change-facts dt {
+  color: var(--cn-muted);
+}
+
+/* The fixture warning runs the full width of the page, above the header. */
+.cup-notes > .cn-fixture {
+  justify-content: center;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* Run page: each store's record, which the manager cards' "Open store" links jump to. */
+.cn-record {
+  padding: 18px 20px 20px;
+  scroll-margin-top: 16px;
+}
+
+.cn-record:target {
+  border-color: var(--cn-green);
+  box-shadow: 0 0 0 2px var(--cn-green-tint);
 }

@@ -28,6 +28,14 @@
   --color-as-rule: var(--as-rule);
   --color-as-axis: var(--as-axis);
   --color-as-link: var(--as-link);
+  --color-cn-ground: var(--cn-ground);
+  --color-cn-card: var(--cn-card);
+  --color-cn-ink: var(--cn-ink);
+  --color-cn-muted: var(--cn-muted);
+  --color-cn-line: var(--cn-line);
+  --color-cn-green: var(--cn-green);
+  --color-cn-amber: var(--cn-amber);
+  --color-cn-amber-ink: var(--cn-amber-ink);
 }
 
 body {

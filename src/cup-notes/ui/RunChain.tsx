@@ -74,7 +74,7 @@ export function RunChain({ index, detail, memo }: Props) {
 
   return (
     <MotionConfig reducedMotion="user">
-      <div className="cn-root">
+      <div>
         <div className="cn-actions">
           <button type="button" className="cn-btn cn-btn-primary" onClick={replay}>
             <RotateCcw size={16} aria-hidden="true" />
