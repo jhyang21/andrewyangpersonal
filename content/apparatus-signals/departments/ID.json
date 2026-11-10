@@ -39,10 +39,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {

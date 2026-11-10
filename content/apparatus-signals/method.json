@@ -7,8 +7,9 @@
    "anchor": "expected",
    "from_months": 0,
    "to_months": 6,
-   "how_template": "new truck due {month}; old trucks usually list within six months of delivery",
+   "how_template": "new truck due {month}; we allow six months after delivery for the old one to list",
    "n_cases": 0,
+   "how_past_template": "new truck was due {month}; the old one may already have sold quietly",
    "widen": {
     "season": [
      -1,
@@ -25,10 +26,11 @@
     "new_truck_ordered"
    ],
    "anchor": "date",
-   "from_months": 12,
-   "to_months": 24,
-   "how_template": "ordered {month}; builds take a year or more",
-   "n_cases": 3
+   "from_months": 4,
+   "to_months": 12,
+   "how_template": "ordered {month}; builds have taken four to twelve months in the back-test",
+   "n_cases": 3,
+   "how_past_template": "ordered {month}; the usual build time has passed"
   },
   {
    "kinds": [
@@ -39,7 +41,8 @@
    "from_months": 12,
    "to_months": 24,
    "how_template": "money approved {month}; order, build, then sale",
-   "n_cases": 3
+   "n_cases": 3,
+   "how_past_template": "money approved {month}; the usual gap has passed"
   },
   {
    "kinds": [
@@ -49,7 +52,8 @@
    "from_months": 18,
    "to_months": 36,
    "how_template": "grant awarded {month}; in the back-test the median gap from award to sale was 28 months",
-   "n_cases": 19
+   "n_cases": 19,
+   "how_past_template": "grant awarded {month}; the usual gap has passed, so the old truck may be gone"
   },
   {
    "kinds": [
@@ -58,7 +62,7 @@
    "anchor": "date",
    "from_months": 0,
    "to_months": 6,
-   "how_template": "new truck in service {month}; the old one usually lists within six months",
+   "how_template": "new truck in service {month}; we allow six months for the old one to list",
    "n_cases": 0,
    "how_past_template": "new truck arrived {month}; the old one may already have sold quietly"
   },
@@ -69,7 +73,7 @@
    "anchor": "date",
    "from_months": 0,
    "to_months": 6,
-   "how_template": "new truck was due {month}; the old one usually lists within six months",
+   "how_template": "new truck was due {month}; we allow six months after delivery for the old one to list",
    "n_cases": 0,
    "how_past_template": "new truck was due {month}; the old one may already have sold quietly",
    "widen": {
@@ -87,21 +91,25 @@
    "kinds": [
     "surplus_declared"
    ],
-   "anchor": "today",
+   "anchor": "date",
    "from_months": 0,
    "to_months": 3,
    "how_template": "voted to sell {month}",
-   "n_cases": 2
+   "n_cases": 2,
+   "how_past_template": "voted to sell {month}; probably sold by now",
+   "fallback": "today"
   },
   {
    "kinds": [
     "sale_planned"
    ],
-   "anchor": "today",
+   "anchor": "date",
    "from_months": 0,
    "to_months": 3,
    "how_template": "sale announced {month}",
-   "n_cases": 0
+   "n_cases": 0,
+   "how_past_template": "sale announced {month}; probably sold by now",
+   "fallback": "today"
   }
  ],
  "price_guide": {
@@ -109,9 +117,11 @@
    "as_of": "2026-11-09",
    "built": "2026-11-09",
    "source": "Auctions International Past Prices, status sold",
-   "lots_sold": 1257,
-   "lots_used": 1174,
-   "lots_dropped": 83,
+   "lots_sold": 1228,
+   "lots_relisted": 29,
+   "relisted_why": "sold again by the same seller within 120 days at another price; the first sale fell through",
+   "lots_used": 1147,
+   "lots_dropped": 81,
    "dropped_why": "not a fire truck (road, fuel or vacuum tankers, trailers, bodies, pickups and cars)",
    "bands": [
     "<=15",
@@ -143,10 +153,10 @@
    {
     "type": "pumper",
     "band": "16-20",
-    "n": 60,
-    "median": 4550,
-    "p25": 3500,
-    "p75": 6625,
+    "n": 58,
+    "median": 4450,
+    "p25": 3400,
+    "p75": 6675,
     "thin": false
    },
    {
@@ -161,7 +171,7 @@
    {
     "type": "pumper",
     "band": "26-30",
-    "n": 109,
+    "n": 108,
     "median": 5100,
     "p25": 3050,
     "p75": 6700,
@@ -170,19 +180,19 @@
    {
     "type": "pumper",
     "band": "31+",
-    "n": 191,
+    "n": 185,
     "median": 3600,
-    "p25": 2438,
+    "p25": 2425,
     "p75": 5200,
     "thin": false
    },
    {
     "type": "pumper",
     "band": "all ages",
-    "n": 446,
-    "median": 4350,
+    "n": 437,
+    "median": 4300,
     "p25": 2800,
-    "p75": 6300,
+    "p75": 6400,
     "thin": false
    },
    {
@@ -215,8 +225,8 @@
    {
     "type": "aerial",
     "band": "26-30",
-    "n": 29,
-    "median": 7500,
+    "n": 28,
+    "median": 7300,
     "p25": 5100,
     "p75": 8600,
     "thin": false
@@ -233,10 +243,10 @@
    {
     "type": "aerial",
     "band": "all ages",
-    "n": 104,
+    "n": 103,
     "median": 6200,
     "p25": 4550,
-    "p75": 8600,
+    "p75": 8550,
     "thin": false
    },
    {
@@ -278,19 +288,19 @@
    {
     "type": "tanker",
     "band": "31+",
-    "n": 53,
-    "median": 5300,
-    "p25": 2650,
-    "p75": 12400,
+    "n": 52,
+    "median": 5450,
+    "p25": 2625,
+    "p75": 12525,
     "thin": false
    },
    {
     "type": "tanker",
     "band": "all ages",
-    "n": 86,
-    "median": 7850,
-    "p25": 4525,
-    "p75": 16075,
+    "n": 85,
+    "median": 8000,
+    "p25": 4600,
+    "p75": 16200,
     "thin": false
    },
    {
@@ -305,10 +315,10 @@
    {
     "type": "rescue",
     "band": "16-20",
-    "n": 22,
-    "median": 16100,
-    "p25": 8050,
-    "p75": 24450,
+    "n": 21,
+    "median": 16300,
+    "p25": 8000,
+    "p75": 25100,
     "thin": false
    },
    {
@@ -332,19 +342,19 @@
    {
     "type": "rescue",
     "band": "31+",
-    "n": 44,
-    "median": 4900,
-    "p25": 3412,
-    "p75": 7525,
+    "n": 42,
+    "median": 4575,
+    "p25": 3238,
+    "p75": 7575,
     "thin": false
    },
    {
     "type": "rescue",
     "band": "all ages",
-    "n": 141,
+    "n": 138,
     "median": 7400,
-    "p25": 4400,
-    "p75": 15100,
+    "p25": 4325,
+    "p75": 15175,
     "thin": false
    },
    {
@@ -404,55 +414,55 @@
    {
     "type": "mini pumper",
     "band": "31+",
-    "n": 11,
-    "median": 7000,
-    "p25": 6350,
-    "p75": 8600,
+    "n": 10,
+    "median": 6850,
+    "p25": 6225,
+    "p75": 8075,
     "thin": false
    },
    {
     "type": "mini pumper",
     "band": "all ages",
-    "n": 16,
-    "median": 8600,
-    "p25": 6675,
+    "n": 15,
+    "median": 8400,
+    "p25": 6650,
     "p75": 12300,
     "thin": false
    },
    {
     "type": "ambulance",
     "band": "<=15",
-    "n": 198,
-    "median": 3925,
-    "p25": 1925,
-    "p75": 7650,
+    "n": 191,
+    "median": 4050,
+    "p25": 1950,
+    "p75": 8000,
     "thin": false
    },
    {
     "type": "ambulance",
     "band": "16-20",
-    "n": 70,
-    "median": 3825,
-    "p25": 2369,
-    "p75": 5625,
+    "n": 67,
+    "median": 3800,
+    "p25": 2312,
+    "p75": 5850,
     "thin": false
    },
    {
     "type": "ambulance",
     "band": "21-25",
-    "n": 53,
-    "median": 3550,
-    "p25": 1925,
+    "n": 52,
+    "median": 3500,
+    "p25": 1900,
     "p75": 5900,
     "thin": false
    },
    {
     "type": "ambulance",
     "band": "26-30",
-    "n": 32,
-    "median": 2538,
-    "p25": 1744,
-    "p75": 5200,
+    "n": 31,
+    "median": 2525,
+    "p25": 1688,
+    "p75": 4600,
     "thin": false
    },
    {
@@ -467,10 +477,10 @@
    {
     "type": "ambulance",
     "band": "all ages",
-    "n": 367,
-    "median": 3600,
+    "n": 355,
+    "median": 3650,
     "p25": 1900,
-    "p75": 6500,
+    "p75": 6550,
     "thin": false
    }
   ]
@@ -941,6 +951,7 @@
   "sale_planned": 6,
   "new_truck_arrived": 5,
   "auction_closed": 2,
+  "bids_closed": 2,
   "auction_support": 4,
   "delivery_due": 3,
   "new_truck_ordered": 3,
@@ -957,6 +968,7 @@
   "sale_planned": "Plans to sell a truck",
   "new_truck_arrived": "New truck in service",
   "auction_closed": "Sold a truck at auction since May",
+  "bids_closed": "Took bids on a truck; result not found",
   "auction_support": "Support vehicle at auction now",
   "delivery_due": "New truck was due; delivery not confirmed",
   "new_truck_ordered": "New truck on order",
@@ -983,6 +995,7 @@
   "sale_planned",
   "new_truck_arrived",
   "auction_closed",
+  "bids_closed",
   "auction_support",
   "already_sold",
   "auction_equipment"

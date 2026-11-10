@@ -109,7 +109,7 @@
   "window": {
    "from": "2028-05",
    "to": "2028-11",
-   "how": "new truck due May 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
   "rank": 3,
   "tier": "3 Watch",
@@ -117,10 +117,10 @@
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {

@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BASE } from "@/apparatus-signals/lib/site";
-import { getMeta, getMethod, getSales, getState, getStates } from "@/apparatus-signals/lib/data";
 import {
+  getDepartments,
+  getMeta,
+  getMethod,
+  getSales,
+  getState,
+  getStates,
+} from "@/apparatus-signals/lib/data";
+import {
+  capitalize,
   formatDate,
   formatMoney,
   formatNumber,
@@ -12,7 +20,15 @@ import {
 } from "@/apparatus-signals/lib/format";
 import { bandLabel, typePlural } from "@/apparatus-signals/lib/trucks";
 import { ageBuckets, lotsByState, medianPrice, splitSales } from "@/apparatus-signals/lib/sales";
-import { BASIS_LABEL, VERDICT_LABELS, WEEK_RULE, kindLabel, modifierLabel } from "@/apparatus-signals/lib/words";
+import {
+  BASIS_LABEL,
+  VERDICT_LABELS,
+  WEEK_RULE,
+  fillTemplate,
+  kindLabel,
+  modifierLabel,
+  windowExample,
+} from "@/apparatus-signals/lib/words";
 import { LeadTimeChart, PriceByAgeChart } from "@/apparatus-signals/ui/charts";
 import DoesItWork from "@/apparatus-signals/ui/DoesItWork";
 import Ext from "@/apparatus-signals/ui/Ext";
@@ -32,6 +48,7 @@ export default function MethodPage() {
   const medianAll = medianPrice(sales.lots);
   const byState = lotsByState(sales.sold);
   const ruleStates = states.filter((s) => s.rule ?? method.rules[s.code]);
+  const allLeads = states.flatMap((s) => getDepartments(s.code));
   const kinds = Object.keys(method.points).sort(
     (a, b) => method.points[b] - method.points[a] || a.localeCompare(b),
   );
@@ -244,9 +261,19 @@ export default function MethodPage() {
                 <td className="num whitespace-nowrap" data-label="Lists after">
                   {w.from_months}–{w.to_months} months
                 </td>
-                <td data-label="How">{w.how_template}</td>
+                <td data-label="How">
+                  {capitalize(
+                    windowExample(w, allLeads) ?? fillTemplate(w.how_template),
+                  )}
+                  .
+                  {w.how_past_template ? (
+                    <div className="text-sm text-as-ink-2">
+                      Once past: {fillTemplate(w.how_past_template)}.
+                    </div>
+                  ) : null}
+                </td>
                 <td className="r" data-label="Cases">
-                  {formatNumber(w.n_cases)}
+                  {w.n_cases > 0 ? formatNumber(w.n_cases) : "no measured cases yet"}
                 </td>
               </tr>
             ))}

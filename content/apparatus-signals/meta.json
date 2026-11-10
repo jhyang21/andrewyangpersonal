@@ -1,12 +1,12 @@
 {
  "updated": "2026-11-09",
- "generated_at": "2026-11-09T23:54:06Z",
+ "generated_at": "2026-11-10T01:45:33Z",
  "totals": {
   "states": 51,
   "departments_in_registry": 27102,
   "leads": 1112,
-  "leads_week": 33,
-  "hand_read_leads": 164,
+  "leads_week": 26,
+  "hand_read_leads": 162,
   "observed_leads": 133,
   "signals": 1262,
   "deep_states": [
@@ -16,10 +16,10 @@
    "PA"
   ],
   "auction_states": [],
-  "sales": 1261,
+  "sales": 1231,
   "guide_total": {
-   "trucks": 618,
-   "median_sum": 3669825
+   "trucks": 611,
+   "median_sum": 3638825
   }
  },
  "sources": [

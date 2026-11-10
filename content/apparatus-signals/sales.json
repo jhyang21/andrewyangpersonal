@@ -313,19 +313,6 @@
   "site": "Auctions International"
  },
  {
-  "state": "NY",
-  "seller": "Village of Tupper Lake",
-  "item": "1994 Pierce Lance Pumper",
-  "price": 10000,
-  "date": "2026-09-04",
-  "url": "https://www.auctionsinternational.com/pastsales/",
-  "item_kind": "apparatus",
-  "year": 1994,
-  "status": "sold",
-  "price_kind": "sold",
-  "site": "Auctions International"
- },
- {
   "state": "NC",
   "state_how": "stated",
   "seller": "City of Hickory",
@@ -353,21 +340,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/48623/item/lot-0007-2016-ford-f-350-super-duty-ambulance-307013/",
-  "site": "Auctions International"
- },
- {
-  "state": "NC",
-  "state_how": "stated",
-  "seller": "Durham County",
-  "item": "2015 Mercedes-Benz Sprinter Ambulance",
-  "year": 2015,
-  "item_kind": "ambulance",
-  "date": "2026-09-03",
-  "price": 710.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/48724/item/lot-0006-2015-mercedes-benz-sprinter-ambulance-307519/",
   "site": "Auctions International"
  },
  {
@@ -877,21 +849,6 @@
   "site": "Auctions International"
  },
  {
-  "state": "NC",
-  "state_how": "stated",
-  "seller": "Forsyth County",
-  "item": "2016 Chevrolet Express Ambulance",
-  "year": 2016,
-  "item_kind": "ambulance",
-  "date": "2026-06-16",
-  "price": 770.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/47611/item/lot-0002-2016-chevrolet-express-ambulance-299224/",
-  "site": "Auctions International"
- },
- {
   "state": "NY",
   "state_how": "stated",
   "seller": "Nassau County Fleet Services, Long Island",
@@ -919,36 +876,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/47547/item/lot-0007-2017-ford-f350-super-duty-ambulance-for-parts-298895/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "Nassau County Fleet Services, Long Island",
-  "item": "2016 Ford F350 Super Duty Ambulance",
-  "year": 2016,
-  "item_kind": "ambulance",
-  "date": "2026-06-12",
-  "price": 2325.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/47547/item/lot-0008-2016-ford-f350-super-duty-ambulance-298896/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "Nassau County Fleet Services, Long Island",
-  "item": "2017 Ford F350 Super Duty Ambulance",
-  "year": 2017,
-  "item_kind": "ambulance",
-  "date": "2026-06-12",
-  "price": 3250.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/47547/item/lot-0014-2017-ford-f350-super-duty-ambulance-298902/",
   "site": "Auctions International"
  },
  {
@@ -1149,36 +1076,6 @@
  {
   "state": "NY",
   "state_how": "stated",
-  "seller": "City of Yonkers",
-  "item": "2007 American LaFrance Eagle Fire Truck",
-  "year": 2007,
-  "item_kind": "pumper",
-  "date": "2026-05-02",
-  "price": 4850.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/46993/item/lot-0001-4073-2007-american-lafrance-eagle-fire-truck-294657/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "City of Yonkers",
-  "item": "2009 Spartan Gladiator Fire Truck",
-  "year": 2009,
-  "item_kind": "pumper",
-  "date": "2026-05-02",
-  "price": 4850.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/46993/item/lot-0002-4101-2009-spartan-gladiator-fire-truck-294662/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
   "seller": "Allegany County Surplus",
   "item": "2003 Sterling L90 Aluminum 2100 Gallon Tanker Fuel Truck/17",
   "year": 2003,
@@ -1264,21 +1161,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/46703/item/lot-0001-2000-freightliner-fl80-pierce-water-tendertanker-291744/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "Ellenburg Depot FD",
-  "item": "1992 Pierce Pumper",
-  "year": 1992,
-  "item_kind": "pumper",
-  "date": "2026-04-11",
-  "price": 3050.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/46754/item/lot-0001-1992-pierce-pumper-292113/",
   "site": "Auctions International"
  },
  {
@@ -2004,21 +1886,6 @@
  {
   "state": "NY",
   "state_how": "stated",
-  "seller": "City of Ithaca FD",
-  "item": "1990 Simon-Duplex Saulsbury Rescue Truck",
-  "year": 1990,
-  "item_kind": "rescue",
-  "date": "2025-12-06",
-  "price": 6400.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/45237/item/lot-0001-1990-simon-duplex-saulsbury-rescue-truck-282957/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
   "seller": "Cattaraugus Volunteer Joint FD",
   "item": "1996 Ford 800 Series Ambulance/Rescue Truck",
   "year": 1996,
@@ -2554,21 +2421,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/44052/item/lot-0002-1997-international-4700-ambulance-275276/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "Copiague Fire District, Long Island",
-  "item": "1998 Spartan/LTI Gladiator Tower Ladder",
-  "year": 1998,
-  "item_kind": "aerial",
-  "date": "2025-09-18",
-  "price": 10000.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/44067/item/lot-0001-1998-spartanlti-gladiator-tower-ladder-275065/",
   "site": "Auctions International"
  },
  {
@@ -3319,21 +3171,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/42479/item/lot-0044-2012-ford-f450-ambulance-264655/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "Chautauqua Portland Fire District",
-  "item": "2001 Ford E450 Rescue Ambulance",
-  "year": 2001,
-  "item_kind": "ambulance",
-  "date": "2025-06-09",
-  "price": 9000.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/42540/item/lot-0001-2001-ford-e450-rescue-ambulance-265163/",
   "site": "Auctions International"
  },
  {
@@ -4417,21 +4254,6 @@
   "site": "Auctions International"
  },
  {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "Village of Morrisville",
-  "item": "1941 Chevy Pumper Fire Truck",
-  "year": 1941,
-  "item_kind": "pumper",
-  "date": "2024-10-10",
-  "price": 5100.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/39270/item/lot-0001-1941-chevy-pumper-fire-truck-243652/",
-  "site": "Auctions International"
- },
- {
   "state": "MA",
   "state_how": "stated",
   "seller": "City of Beverly Fire",
@@ -5044,21 +4866,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/37132/item/lot-0001-1987-fmcspartan-pumper-truck-230686/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "Sodus Center Fire District",
-  "item": "1988 Chevy 4500 P-Series Fire Rescue",
-  "year": 1988,
-  "item_kind": "rescue",
-  "date": "2024-04-17",
-  "price": 7400.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/36666/item/lot-0001-1988-chevy-4500-p-series-fire-rescue-230342/",
   "site": "Auctions International"
  },
  {
@@ -8994,21 +8801,6 @@
  {
   "state": "NY",
   "state_how": "stated",
-  "seller": "Village of Manlius FD",
-  "item": "2003 American LaFrance Rescue Engine Truck",
-  "year": 2003,
-  "item_kind": "rescue",
-  "date": "2021-08-06",
-  "price": 8200.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/25641/item/lot-0001-2003-american-lafrance-rescue-engine-truck-156962/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
   "seller": "Three Town Fire District",
   "item": "2007 Ford F550 XL Super Duty Crew Cab Rescue/Utility Truck",
   "year": 2007,
@@ -9124,21 +8916,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/25155/item/lot-0001-1978-peterbilt-hpt4000-howe-us-tanker-154194/",
-  "site": "Auctions International"
- },
- {
-  "state": "ME",
-  "state_how": "stated",
-  "seller": "Town of Sabattus",
-  "item": "1990 Ford/Eone C8000 Pumper Truck",
-  "year": 1990,
-  "item_kind": "pumper",
-  "date": "2021-06-11",
-  "price": 4550.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/25111/item/lot-0001-1990-fordeone-c8000-pumper-truck-153968/",
   "site": "Auctions International"
  },
  {
@@ -10744,21 +10521,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/22047/item/lot-0001-1989-mack-mr688-cab-over-rescue-truck-135001/",
-  "site": "Auctions International"
- },
- {
-  "state": "MA",
-  "state_how": "stated",
-  "seller": "Town of Peru Fire",
-  "item": "1985 Duplex 3D Custom Fire Pumper",
-  "year": 1985,
-  "item_kind": "pumper",
-  "date": "2020-08-14",
-  "price": 6300.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/21996/item/lot-0001-1985-duplex-3d-custom-fire-pumper-134515/",
   "site": "Auctions International"
  },
  {
@@ -13642,21 +13404,6 @@
   "site": "Auctions International"
  },
  {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "Nassau County Police",
-  "item": "2013 Chevrolet Express Ambulance",
-  "year": 2013,
-  "item_kind": "ambulance",
-  "date": "2018-11-02",
-  "price": 1075.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/15715/item/lot-0012-2013-chevrolet-express-ambulance-97066/",
-  "site": "Auctions International"
- },
- {
   "state": "MA",
   "state_how": "stated",
   "seller": "Town of Auburn DPW",
@@ -13909,21 +13656,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/15085/item/lot-0002-1983-ford-f80-pumpertanker-truck-93171/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "stated",
-  "seller": "Wilton Fire District",
-  "item": "2008 Chevrolet Tahoe Suburban Fire and Rescue",
-  "year": 2008,
-  "item_kind": "rescue",
-  "date": "2018-09-11",
-  "price": 7800.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/15136/item/lot-0001-2008-chevrolet-tahoe-suburban-fire-and-rescue-93156/",
   "site": "Auctions International"
  },
  {
@@ -14377,21 +14109,6 @@
   "site": "Auctions International"
  },
  {
-  "state": null,
-  "state_how": "unknown",
-  "seller": "Wells Fire District",
-  "item": "1990 Ford F350 Ambulance",
-  "year": 1990,
-  "item_kind": "ambulance",
-  "date": "2018-05-10",
-  "price": 9200.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/13394/item/lot-0001-1990-ford-f350-ambulance-85039/",
-  "site": "Auctions International"
- },
- {
   "state": "NY",
   "state_how": "stated",
   "seller": "Town of Tully Ambulance District",
@@ -14674,21 +14391,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/13376/item/lot-0020-2002-e-one-typhoon-pumper-82045/",
-  "site": "Auctions International"
- },
- {
-  "state": "MA",
-  "state_how": "stated",
-  "seller": "City of Medford Fire",
-  "item": "1987 Pierce Arrow Pumper",
-  "year": 1987,
-  "item_kind": "pumper",
-  "date": "2018-02-27",
-  "price": 3450.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/13402/item/lot-0001-1987-pierce-arrow-pumper-81998/",
   "site": "Auctions International"
  },
  {
@@ -16119,21 +15821,6 @@
  {
   "state": null,
   "state_how": "unknown",
-  "seller": "Town of Shandaken",
-  "item": "2006 Ford E350 Super Duty Ambulance",
-  "year": 2006,
-  "item_kind": "ambulance",
-  "date": "2017-01-31",
-  "price": 3150.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/9876/item/lot-0003-2006-ford-e350-super-duty-ambulance-60009/",
-  "site": "Auctions International"
- },
- {
-  "state": null,
-  "state_how": "unknown",
   "seller": "Town of Sullivan Surplus",
   "item": "1999 Freightliner FL80 Pumper Fire Truck",
   "year": 1999,
@@ -16449,21 +16136,6 @@
  {
   "state": "NY",
   "state_how": "registry",
-  "seller": "Town of Coxsackie",
-  "item": "2004 Ford E350 Ambulance",
-  "year": 2004,
-  "item_kind": "ambulance",
-  "date": "2016-10-25",
-  "price": 3050.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/9060/item/lot-0001-2004-ford-e350-ambulance-55414/",
-  "site": "Auctions International"
- },
- {
-  "state": "NY",
-  "state_how": "registry",
   "seller": "City of Yonkers",
   "item": "1998 Hendrickson Custom Fire Engine Pumper",
   "year": 1998,
@@ -16474,21 +16146,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/9013/item/lot-0014-1998-hendrickson-custom-fire-engine-pumper-55220/",
-  "site": "Auctions International"
- },
- {
-  "state": null,
-  "state_how": "unknown",
-  "seller": "City of Fulton",
-  "item": "1996 Freightliner FL 80 Fire Truck-4 Door Cab & Chassis",
-  "year": 1996,
-  "item_kind": "pumper",
-  "date": "2016-10-14",
-  "price": 4350.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/8894/item/lot-0001-1996-freightliner-fl-80-fire-truck-4-door-cab-chassis-54514/",
   "site": "Auctions International"
  },
  {
@@ -16794,21 +16451,6 @@
  {
   "state": null,
   "state_how": "unknown",
-  "seller": "Berkshire Fire District",
-  "item": "2000 Ford F450 Ambulance",
-  "year": 2000,
-  "item_kind": "ambulance",
-  "date": "2016-04-14",
-  "price": 4049.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/7514/item/lot-0001-2000-ford-f450-ambulance-45279/",
-  "site": "Auctions International"
- },
- {
-  "state": null,
-  "state_how": "unknown",
   "seller": "Town of Hurley",
   "item": "1979 Ford Fire Truck",
   "year": 1979,
@@ -17004,21 +16646,6 @@
  {
   "state": null,
   "state_how": "unknown",
-  "seller": "Virgil FD",
-  "item": "1987 Ford F-800 Fire Truck",
-  "year": 1987,
-  "item_kind": "pumper",
-  "date": "2016-01-08",
-  "price": 10100.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/6799/item/lot-0001-1987-ford-f-800-fire-truck-41304/",
-  "site": "Auctions International"
- },
- {
-  "state": null,
-  "state_how": "unknown",
   "seller": "Jefferson Community College",
   "item": "1986 Federal Fire Truck",
   "year": 1986,
@@ -17059,21 +16686,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/6685/item/lot-0014-2000-spartan-fire-truck-40681/",
-  "site": "Auctions International"
- },
- {
-  "state": null,
-  "state_how": "unknown",
-  "seller": "Town of Norfolk Board of Fire Commissioners",
-  "item": "1983 Ford 800 Fire Truck",
-  "year": 1983,
-  "item_kind": "pumper",
-  "date": "2015-12-04",
-  "price": 710.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/6577/item/lot-0001-1983-ford-800-fire-truck-39903/",
   "site": "Auctions International"
  },
  {
@@ -17239,21 +16851,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/5753/item/lot-0001-1973-dodge-custom-300-pierce-mini-pumper-35733/",
-  "site": "Auctions International"
- },
- {
-  "state": null,
-  "state_how": "unknown",
-  "seller": "Town of Rosendale",
-  "item": "1973 Mack Water Tanker",
-  "year": 1973,
-  "item_kind": "tanker",
-  "date": "2015-08-18",
-  "price": 3550.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/5694/item/lot-0001-1973-mack-water-tanker-34757/",
   "site": "Auctions International"
  },
  {
@@ -17932,21 +17529,6 @@
   "site": "Auctions International"
  },
  {
-  "state": "NY",
-  "state_how": "registry",
-  "seller": "Town of New Paltz",
-  "item": "1996 Ford Econoline E350 Ambulance",
-  "year": 1996,
-  "item_kind": "ambulance",
-  "date": "2014-09-04",
-  "price": 2700.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/3803/item/lot-0004-1996-ford-econoline-e350-ambulance-22141/",
-  "site": "Auctions International"
- },
- {
   "state": null,
   "state_how": "unknown",
   "seller": "Town of Long Lake Highway Dept.",
@@ -17959,21 +17541,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/3224/item/lot-0025-1978-american-lafrance-pumper-fire-engine-fire-truck-18626/",
-  "site": "Auctions International"
- },
- {
-  "state": null,
-  "state_how": "unknown",
-  "seller": "Town of Long Lake Highway Dept.",
-  "item": "1995 Ford E350 Type III Ambulance",
-  "year": 1995,
-  "item_kind": "ambulance",
-  "date": "2014-08-27",
-  "price": 5200.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/3224/item/lot-0026-1995-ford-e350-type-iii-ambulance-18629/",
   "site": "Auctions International"
  },
  {
@@ -18334,21 +17901,6 @@
   "price_kind": "sold",
   "asked": null,
   "url": "https://www.auctionsinternational.com/auction/1964/item/lot-0001-1981-ford-f800-fire-truck-11775/",
-  "site": "Auctions International"
- },
- {
-  "state": null,
-  "state_how": "unknown",
-  "seller": "Machias Fire District",
-  "item": "1970 Ford F250 Mini Pumper Pick Up",
-  "year": 1970,
-  "item_kind": "mini pumper",
-  "date": "2013-12-12",
-  "price": 8800.0,
-  "status": "sold",
-  "price_kind": "sold",
-  "asked": null,
-  "url": "https://www.auctionsinternational.com/auction/2067/item/lot-0001-1970-ford-f250-mini-pumper-pick-up-12283/",
   "site": "Auctions International"
  },
  {

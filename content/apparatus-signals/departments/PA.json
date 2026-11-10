@@ -1,215 +1,5 @@
 [
  {
-  "checked": "corrected",
-  "score": 8.0,
-  "department": "Washington City Bureau of Fire",
-  "registry_name": "Washington City Bureau of Fire",
-  "city": "Washington",
-  "county": "Washington",
-  "type": "Career",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces 2013 Spartan pumper, 42,972 miles, Hale pump, 1,000 gal tank",
-  "signal_date": "2024-04-29",
-  "proof_url": "https://washingtonpa.us/wp-content/uploads/2024/03/fire-truck-sale-w-pics-.pdf",
-  "proof_quote": "The City of Washington is accepting sealed bids for the following",
-  "other_signals": "Won a grant for a new truck: FEMA vehicle grant $328,571, awarded 9/22/26 (FY2025)",
-  "named_in_source": "City of Washington Fire Department",
-  "name_match": "exact",
-  "fdid": "63054",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "2013 Spartan pumper, 42,972 miles, Hale pump, 1,000 gal tank",
-   "type": "pumper",
-   "year": 2013,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Apr 2024"
-  },
-  "rank": 1,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "<=15",
-   "n": 9,
-   "median": 4650,
-   "p25": 3300,
-   "p75": 5100,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2005 American LaFrance Eagle Fire Truck",
-     "price": 4650.0,
-     "date": "2018-01-04",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/12874/item/lot-0011-2005-american-lafrance-eagle-fire-truck-79973/"
-    },
-    {
-     "item": "2006 American LaFrance Eagle Fire Truck",
-     "price": 5100.0,
-     "date": "2018-01-04",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/12874/item/lot-0006-2006-american-lafrance-eagle-fire-truck-79968/"
-    },
-    {
-     "item": "2008 Pierce Saber Pumper Truck",
-     "price": 3300.0,
-     "date": "2023-03-22",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/32154/item/lot-0001-2008-pierce-saber-pumper-truck-198710/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed",
-  "score": 6.0,
-  "department": "Harrisburg Bureau of Fire",
-  "registry_name": "Harrisburg Bureau of Fire",
-  "city": "Harrisburg",
-  "county": "Dauphin",
-  "type": "Mostly career",
-  "website": "https://harrisburgpa.gov/bureau-of-fire/",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces 1997 Seagrave pumper",
-  "signal_date": "2025-04-15",
-  "proof_url": "https://highspire.gov/wp-content/uploads/2025/04/Regular-Meeting-AGENDA-04-15-2025-with-attached-items-for-Brough-Councils-consideration.pdf",
-  "proof_quote": "has received an offer for the purchase of one (1) used 1997 Seagrave pumper truck",
-  "other_signals": "",
-  "named_in_source": "City of Harrisburg Bureau of Fire",
-  "name_match": "exact",
-  "fdid": "22001",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "1997 Seagrave pumper",
-   "type": "pumper",
-   "year": 1997,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Apr 2025"
-  },
-  "rank": 2,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "26-30",
-   "n": 109,
-   "median": 5100,
-   "p25": 3050,
-   "p75": 6700,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1997 KME CMFD-EXCEL Pumper Fire Truck",
-     "price": 4550.0,
-     "date": "2026-02-10",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46015/item/lot-0004-1997-kme-cmfd-excel-pumper-fire-truck-287480/"
-    },
-    {
-     "item": "1996 KME Renegade Pumper Truck",
-     "price": 3200.0,
-     "date": "2025-06-11",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/42479/item/lot-0046-1996-kme-renegade-pumper-truck-264657/"
-    },
-    {
-     "item": "1996 Freightliner FL-80 New Lexington Pumper Truck",
-     "price": 14700.0,
-     "date": "2025-04-10",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/41832/item/lot-0001-1996-freightliner-fl-80-new-lexington-pumper-truck-259962/"
-    }
-   ]
-  }
- },
- {
-  "checked": "partly",
-  "score": 6.0,
-  "department": "Middletown Fire Department",
-  "registry_name": "",
-  "city": "Middletown",
-  "county": "Dauphin",
-  "type": "",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces 2001 KME fire pumper",
-  "signal_date": "2025-10-07",
-  "proof_url": "https://middletownborough.com/wp-content/uploads/2025/10/Agenda-100725.pdf",
-  "proof_quote": "2001 KME fire pumper truck",
-  "other_signals": "",
-  "named_in_source": "Middletown Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "2001 KME fire pumper",
-   "type": "pumper",
-   "year": 2001,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Oct 2025"
-  },
-  "rank": 3,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "21-25",
-   "n": 77,
-   "median": 5100,
-   "p25": 3550,
-   "p75": 8000,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2001 KME Excel Fire Truck",
-     "price": 6200.0,
-     "date": "2026-04-06",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/46623/item/lot-0004-2001-kme-excel-fire-truck-291377/"
-    },
-    {
-     "item": "2001 Pierce Quantum Tilt Cab Super Crew Fire Pumper",
-     "price": 9800.0,
-     "date": "2026-02-18",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46086/item/lot-0001-2001-pierce-quantum-tilt-cab-super-crew-fire-pumper-287937/"
-    },
-    {
-     "item": "2001 E-ONE Fire Truck Cab Over Engine",
-     "price": 6100.0,
-     "date": "2026-02-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/45978/item/lot-0002-2001-e-one-fire-truck-cab-over-engine-287201/"
-    }
-   ]
-  }
- },
- {
   "checked": "confirmed",
   "score": 6.0,
   "department": "Slatington Volunteer Fire Department",
@@ -219,7 +9,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "Plans to sell a truck",
-  "detail": "new fire truck; fire department to take a $353,547 loan; replaces two current fire trucks",
+  "detail": "Selling: two current fire trucks. potential sale; fire department keeps $13,000 of proceeds",
   "signal_date": "2026-06-08",
   "proof_url": "https://www.slatington.org/AgendaCenter/ViewFile/Minutes/_06082026-199",
   "proof_quote": "the Fire Department can retain $13,000 from the potential sale of the two (2) current fire trucks",
@@ -239,20 +29,20 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Jun 2026"
+   "from": "2026-06",
+   "to": "2026-09",
+   "how": "sale announced Jun 2026; probably sold by now"
   },
-  "rank": 4,
+  "rank": 1,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -275,76 +65,6 @@
      "date": "2026-11-04",
      "state": "ME",
      "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed",
-  "score": 6.0,
-  "department": "West Middlesex Volunteer Fire Department",
-  "registry_name": "West Middlesex Volunteer Fire Department",
-  "city": "West Middlesex",
-  "county": "Mercer",
-  "type": "Volunteer",
-  "website": "https://westmiddlesexfire.com/",
-  "why_call": "Plans to sell a truck",
-  "detail": "new tanker already purchased; replaces borough-owned brush truck",
-  "signal_date": "2024-11-19",
-  "proof_url": "https://boroughofwestmiddlesex.com/PDFs/minutes/20241119Minutes.pdf",
-  "proof_quote": "possibly sell the Brush Truck that is owned by the Borough and use proceeds towards the New Tanker",
-  "other_signals": "",
-  "named_in_source": "West Middlesex Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "43740",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "borough-owned brush truck",
-   "type": "brush",
-   "year": null,
-   "year_how": null,
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Nov 2024"
-  },
-  "rank": 5,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "brush",
-   "band": "all ages",
-   "n": 14,
-   "median": 6825,
-   "p25": 5175,
-   "p75": 10350,
-   "thin": false,
-   "comps": [
-    {
-     "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
-     "price": 3150.0,
-     "date": "2026-07-17",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48054/item/lot-0001-listing-updated-1986-ford-f-350-brush-fire-truck-302769/"
-    },
-    {
-     "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
-     "price": 33300.0,
-     "date": "2026-06-24",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47593/item/lot-0001-2006-ford-f550-crew-cab-dually-rescue-brush-fire-truck-299118/"
-    },
-    {
-     "item": "1963 Mercedes Unimog-S Fire/Brush Truck",
-     "price": 9900.0,
-     "date": "2026-02-20",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
     }
    ]
   }
@@ -383,186 +103,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 6,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "confirmed",
-  "score": 5.0,
-  "department": "Alert Fire Company (Downingtown Borough)",
-  "registry_name": "",
-  "city": "Downingtown",
-  "county": "Chester",
-  "type": "",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "two new Pierce engines already in service; replaces 1998 Spartan/RD Murray pumper, Engine 45",
-  "signal_date": "2025-09-19",
-  "proof_url": "https://www.inquirer.com/life/yellow-fire-truck-downingtown-auction-20250919.html",
-  "proof_quote": "Downingtown is auctioning off a very nice looking yellow one from 1998 that has 28,558 miles on it.",
-  "other_signals": "",
-  "named_in_source": "Alert Fire Company (Downingtown Borough)",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "1998 Spartan/RD Murray pumper, Engine 45",
-   "type": "pumper",
-   "year": 1998,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Sep 2025"
-  },
-  "rank": 7,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "26-30",
-   "n": 109,
-   "median": 5100,
-   "p25": 3050,
-   "p75": 6700,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1998 HME Smeal 1871 Fire Truck",
-     "price": 5700.0,
-     "date": "2026-10-14",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49473/item/lot-0001-4485-1998-hme-smeal-1871-fire-truck-311921/"
-    },
-    {
-     "item": "1998 Freightliner FL80 Pierce Saber Pumper",
-     "price": 10900.0,
-     "date": "2026-06-11",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47509/item/lot-0001-1998-freightliner-fl80-pierce-saber-pumper-298556/"
-    },
-    {
-     "item": "1998 Smeal/International 4900 Fire Engine",
-     "price": 6500.0,
-     "date": "2026-02-17",
-     "state": null,
-     "url": "https://www.auctionsinternational.com/auction/46088/item/lot-0001-1998-smealinternational-4900-fire-engine-287939/"
-    }
-   ]
-  }
- },
- {
-  "checked": "corrected",
-  "score": 5.0,
-  "department": "Bessemer Volunteer Fire Company",
-  "registry_name": "Bessemer Volunteer Fire Company",
-  "city": "Bessemer",
-  "county": "Lawrence",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces 1981 Chevrolet CK30 mini pumper (1980s)",
-  "signal_date": "2025-03-05",
-  "proof_url": "https://www.wpxi.com/news/local/lawrence-county-borough-auctioning-off-1980s-fire-truck/QRFYJBAIN5CKJKBYWXPYCUFHJQ",
-  "proof_quote": "The proceeds from the sale go right back to the borough",
-  "other_signals": "",
-  "named_in_source": "Bessemer Volunteer Fire Company",
-  "name_match": "exact",
-  "fdid": "37004",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "1981 Chevrolet CK30 mini pumper (1980s)",
-   "type": "mini pumper",
-   "year": 1981,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Mar 2025"
-  },
-  "rank": 8,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "mini pumper",
-   "band": "31+",
-   "n": 11,
-   "median": 7000,
-   "p25": 6350,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1977 Chevy Pierce Custom Deluxe 3500 Mini Pumper",
-     "price": 7100.0,
-     "date": "2022-11-04",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/30445/item/lot-0005-1977-chevy-pierce-custom-deluxe-3500-mini-pumper-189677/"
-    },
-    {
-     "item": "1970 Ford F250 Mini Pumper Pick Up",
-     "price": 8400.0,
-     "date": "2014-01-07",
-     "state": null,
-     "url": "https://www.auctionsinternational.com/auction/2451/item/lot-0001-1970-ford-f250-mini-pumper-pick-up-14295/"
-    },
-    {
-     "item": "1970 Ford F250 Mini Pumper Pick Up",
-     "price": 8800.0,
-     "date": "2013-12-12",
-     "state": null,
-     "url": "https://www.auctionsinternational.com/auction/2067/item/lot-0001-1970-ford-f250-mini-pumper-pick-up-12283/"
-    }
-   ]
-  }
- },
- {
-  "checked": "corrected",
-  "score": 5.0,
-  "department": "Chippewa Township Volunteer Fire Department",
-  "registry_name": "Chippewa Township Volunteer Fire Department",
-  "city": "Beaver Falls",
-  "county": "Beaver",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces 1999 Dodge Ram 2500 Cummins diesel, 82,121 miles, optional skid unit with 150-gal tank",
-  "signal_date": "2026-07-13",
-  "proof_url": "https://chippewafire.org/news/226/-FOR-SALE--Sealed-Bid-Opportunity-The-Chippewa-Township-Volunteer-Fire-Department-is-accepting-sealed-bids-for-the-sale-of-our1999-Dodge-Ram-2500--Cummins-24-Valve-Turbo-Diesel--Approx",
-  "proof_quote": "The Chippewa Township Volunteer Fire Department reserves the right to accept or reject any and all bids.",
-  "other_signals": "",
-  "named_in_source": "Chippewa Township Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "04022",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "1999 Dodge Ram 2500 Cummins diesel, 82,121 miles, optional skid unit with 150-gal tank",
-   "type": "other",
-   "year": 1999,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Jul 2026"
-  },
-  "rank": 9,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -599,18 +140,18 @@
   "window": {
    "from": "2026-08",
    "to": "2027-02",
-   "how": "new truck in service Aug 2026; the old one usually lists within six months"
+   "how": "new truck in service Aug 2026; we allow six months for the old one to list"
   },
-  "rank": 10,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -636,6 +177,45 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 5.0,
+  "department": "Washington City Bureau of Fire",
+  "registry_name": "Washington City Bureau of Fire",
+  "city": "Washington",
+  "county": "Washington",
+  "type": "Career",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $328,571, awarded 9/22/26 (FY2025)",
+  "signal_date": "2026-09-22",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Washington Fire Co. Number 1, Vehicle Acquisition, $328,571",
+  "other_signals": "Took bids on a truck; result not found: Selling: 2013 Spartan pumper, 42,972 miles, Hale pump, 1,000 gal tank. sealed bids due 2024-04-29, opened at council meeting, award 2024-05-02",
+  "named_in_source": "Washington Fire Co. Number 1",
+  "name_match": "exact, ambiguous (9 same-name rows)",
+  "fdid": "63054",
+  "top_kind": "grant",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 4,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "trade_press",
@@ -669,18 +249,18 @@
   "window": {
    "from": "2026-05",
    "to": "2026-11",
-   "how": "new truck in service May 2026; the old one usually lists within six months"
+   "how": "new truck in service May 2026; we allow six months for the old one to list"
   },
-  "rank": 11,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -739,17 +319,17 @@
   "window": {
    "from": "2026-07",
    "to": "2027-01",
-   "how": "new truck was due Jul 2026; the old one usually lists within six months"
+   "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 12,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [
@@ -787,7 +367,7 @@
   "type": "Mostly volunteer",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "; replaces 1993 Pierce engine, bought in 2017 from a neighboring company",
+  "detail": "Replaces 1993 Pierce engine, bought in 2017 from a neighboring company",
   "signal_date": "2026-02-15",
   "proof_url": "https://www.1strespondernews.com/news/021626126/ambridge-fire-department-lists-engine-71-3-for-sale-on-municibid",
   "proof_quote": "Engine 71-3 is being sold as part of the department's fleet update after placing an order for a new Pierce engine in 2025. This unit is one of two being replaced by the incoming apparatus.",
@@ -807,19 +387,19 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-02",
-   "to": "2028-02",
-   "how": "ordered Feb 2026; builds take a year or more"
+   "from": "2026-06",
+   "to": "2027-02",
+   "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 13,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "31+",
-   "n": 191,
+   "n": 185,
    "median": 3600,
-   "p25": 2438,
+   "p25": 2425,
    "p75": 5200,
    "thin": false,
    "comps": [
@@ -879,18 +459,18 @@
   "window": {
    "from": "2027-10",
    "to": "2028-04",
-   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 14,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -951,7 +531,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 15,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -990,7 +570,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 16,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1029,7 +609,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 17,
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1068,7 +648,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 18,
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1107,7 +687,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 19,
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1142,11 +722,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-08",
-   "to": "2028-08",
-   "how": "ordered Aug 2026; builds take a year or more"
+   "from": "2026-12",
+   "to": "2027-08",
+   "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 20,
+  "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1214,18 +794,18 @@
   "window": {
    "from": "2026-10",
    "to": "2027-04",
-   "how": "new truck was due Oct 2026; the old one usually lists within six months"
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
+  "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1286,7 +866,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 22,
+  "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -1301,7 +881,7 @@
   "type": "Volunteer",
   "website": "http://www.sta4.com/",
   "why_call": "Won a grant for a new truck",
-  "detail": "new pumper, due late 2026 or early 2027; replaces 21-year-old pumper",
+  "detail": "New pumper, due late 2026 or early 2027; replaces 21-year-old pumper",
   "signal_date": "2025-04-16",
   "proof_url": "https://localnews1.org/commissioners-expected-to-ok-677000-fire-truck/",
   "proof_quote": "The funds actually are coming through the county to the fire company",
@@ -1325,7 +905,7 @@
    "to": "2028-04",
    "how": "grant awarded Apr 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 23,
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1395,7 +975,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 24,
+  "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1434,7 +1014,7 @@
    "to": "2027-07",
    "how": "grant awarded Jul 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 25,
+  "rank": 19,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1480,7 +1060,7 @@
   "type": "Volunteer",
   "website": "https://www.koppelborough.org/fire.html",
   "why_call": "Board approved buying a new truck",
-  "detail": "replacement fire truck, best deal about $39,000; replaces borough-owned truck damaged in a wreck on the way to a fire",
+  "detail": "Replacement fire truck, best deal about $39,000; replaces borough-owned truck damaged in a wreck on the way to a fire",
   "signal_date": "2025-03-04",
   "proof_url": "https://www.koppelborough.gov/documents/minutes/mins-030425.pdf",
   "proof_quote": "A motion was made to purchase a new fire truck to replace the current truck the Borough owns.",
@@ -1504,7 +1084,7 @@
    "to": "2027-03",
    "how": "money approved Mar 2025; order, build, then sale"
   },
-  "rank": 26,
+  "rank": 20,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1543,7 +1123,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 27,
+  "rank": 21,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1580,18 +1160,18 @@
   "window": {
    "from": "2028-06",
    "to": "2029-02",
-   "how": "new truck due Summer 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Summer 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 28,
+  "rank": 22,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1652,7 +1232,7 @@
    "to": "2028-10",
    "how": "grant awarded Oct 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 29,
+  "rank": 23,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1722,10 +1302,80 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 30,
+  "rank": 24,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
+ },
+ {
+  "checked": "partly",
+  "score": 4.0,
+  "department": "Middletown Fire Department",
+  "registry_name": "",
+  "city": "Middletown",
+  "county": "Dauphin",
+  "type": "",
+  "website": "",
+  "why_call": "Plans to sell a truck",
+  "detail": "Selling: 2001 KME fire pumper. Resolution 2024-19 allowed sale to bid-exempt buyers; Oct 7, 2025 minutes authorize sale to a volunteer fire department, pending final inspection",
+  "signal_date": "2025-10-07",
+  "proof_url": "https://middletownborough.com/wp-content/uploads/2025/10/Agenda-100725.pdf",
+  "proof_quote": "2001 KME fire pumper truck",
+  "other_signals": "",
+  "named_in_source": "Middletown Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "sale_planned",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": "2001 KME fire pumper",
+   "type": "pumper",
+   "year": 2001,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-10",
+   "to": "2026-01",
+   "how": "sale announced Oct 2025; probably sold by now"
+  },
+  "rank": 25,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "21-25",
+   "n": 77,
+   "median": 5100,
+   "p25": 3550,
+   "p75": 8000,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2001 KME Excel Fire Truck",
+     "price": 6200.0,
+     "date": "2026-04-06",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/46623/item/lot-0004-2001-kme-excel-fire-truck-291377/"
+    },
+    {
+     "item": "2001 Pierce Quantum Tilt Cab Super Crew Fire Pumper",
+     "price": 9800.0,
+     "date": "2026-02-18",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46086/item/lot-0001-2001-pierce-quantum-tilt-cab-super-crew-fire-pumper-287937/"
+    },
+    {
+     "item": "2001 E-ONE Fire Truck Cab Over Engine",
+     "price": 6100.0,
+     "date": "2026-02-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/45978/item/lot-0002-2001-e-one-fire-truck-cab-over-engine-287201/"
+    }
+   ]
+  }
  },
  {
   "checked": "fema_table",
@@ -1761,7 +1411,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 31,
+  "rank": 26,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1800,7 +1450,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 32,
+  "rank": 27,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1839,7 +1489,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 33,
+  "rank": 28,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1878,7 +1528,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 34,
+  "rank": 29,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1917,7 +1567,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 35,
+  "rank": 30,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1956,7 +1606,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 36,
+  "rank": 31,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1995,7 +1645,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 37,
+  "rank": 32,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2034,7 +1684,7 @@
    "to": "2027-09",
    "how": "grant awarded Sep 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 38,
+  "rank": 33,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2073,7 +1723,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 39,
+  "rank": 34,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2112,10 +1762,80 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 40,
+  "rank": 35,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
+ },
+ {
+  "checked": "confirmed",
+  "score": 4.0,
+  "department": "West Middlesex Volunteer Fire Department",
+  "registry_name": "West Middlesex Volunteer Fire Department",
+  "city": "West Middlesex",
+  "county": "Mercer",
+  "type": "Volunteer",
+  "website": "https://westmiddlesexfire.com/",
+  "why_call": "Plans to sell a truck",
+  "detail": "Selling: borough-owned brush truck. chief proposed selling it, possibly on an online auction site; item to go on December agenda",
+  "signal_date": "2024-11-19",
+  "proof_url": "https://boroughofwestmiddlesex.com/PDFs/minutes/20241119Minutes.pdf",
+  "proof_quote": "possibly sell the Brush Truck that is owned by the Borough and use proceeds towards the New Tanker",
+  "other_signals": "",
+  "named_in_source": "West Middlesex Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "43740",
+  "top_kind": "sale_planned",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": "borough-owned brush truck",
+   "type": "brush",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2024-11",
+   "to": "2025-02",
+   "how": "sale announced Nov 2024; probably sold by now"
+  },
+  "rank": 36,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "brush",
+   "band": "all ages",
+   "n": 14,
+   "median": 6825,
+   "p25": 5175,
+   "p75": 10350,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
+     "price": 3150.0,
+     "date": "2026-07-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48054/item/lot-0001-listing-updated-1986-ford-f-350-brush-fire-truck-302769/"
+    },
+    {
+     "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
+     "price": 33300.0,
+     "date": "2026-06-24",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47593/item/lot-0001-2006-ford-f550-crew-cab-dually-rescue-brush-fire-truck-299118/"
+    },
+    {
+     "item": "1963 Mercedes Unimog-S Fire/Brush Truck",
+     "price": 9900.0,
+     "date": "2026-02-20",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
+    }
+   ]
+  }
  },
  {
   "checked": "trade_press",
@@ -2149,18 +1869,18 @@
   "window": {
    "from": "2028-03",
    "to": "2028-11",
-   "how": "new truck due Spring 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Spring 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 41,
+  "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2219,18 +1939,18 @@
   "window": {
    "from": "2028-01",
    "to": "2028-07",
-   "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 42,
+  "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -2289,18 +2009,18 @@
   "window": {
    "from": "2027-10",
    "to": "2028-04",
-   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 43,
+  "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2357,11 +2077,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2025-06",
-   "to": "2026-06",
-   "how": "ordered Jun 2024; builds take a year or more"
+   "from": "2024-10",
+   "to": "2025-06",
+   "how": "ordered Jun 2024; the usual build time has passed"
   },
-  "rank": 44,
+  "rank": 40,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2429,9 +2149,9 @@
   "window": {
    "from": "2025-01",
    "to": "2026-07",
-   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 45,
+  "rank": 41,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2468,9 +2188,9 @@
   "window": {
    "from": "2025-01",
    "to": "2026-07",
-   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 46,
+  "rank": 42,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2507,18 +2227,18 @@
   "window": {
    "from": "2027-01",
    "to": "2027-07",
-   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 47,
+  "rank": 43,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -2579,15 +2299,15 @@
    "to": "2026-03",
    "how": "new truck arrived Sep 2025; the old one may already have sold quietly"
   },
-  "rank": 48,
+  "rank": 44,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [
@@ -2645,11 +2365,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2025-12",
-   "to": "2026-12",
-   "how": "ordered Dec 2024; builds take a year or more"
+   "from": "2025-04",
+   "to": "2025-12",
+   "how": "ordered Dec 2024; the usual build time has passed"
   },
-  "rank": 49,
+  "rank": 45,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2686,18 +2406,18 @@
   "window": {
    "from": "2028-10",
    "to": "2029-04",
-   "how": "new truck due Oct 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Oct 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 50,
+  "rank": 46,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -2734,7 +2454,7 @@
   "type": "Volunteer",
   "website": "https://www.milestownshipfire.com/",
   "why_call": "New truck on order",
-  "detail": "replacement engine (type not captured; page text only partly read); replaces 1998 E-One Freightliner",
+  "detail": "Replacement engine (type not captured; page text only partly read); replaces 1998 E-One Freightliner",
   "signal_date": "2024-06-28",
   "proof_url": "https://www.milestownshipfire.com/apps/public/news/newsView.cfm?News_ID=5",
   "proof_quote": "This Engine will replace our retired 1998 E-One Freightliner that was recently sold to another fire department in Arkansas.",
@@ -2754,11 +2474,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2025-06",
-   "to": "2026-06",
-   "how": "ordered Jun 2024; builds take a year or more"
+   "from": "2024-10",
+   "to": "2025-06",
+   "how": "ordered Jun 2024; the usual build time has passed"
   },
-  "rank": 51,
+  "rank": 47,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2795,18 +2515,18 @@
   "window": {
    "from": "2025-10",
    "to": "2026-10",
-   "how": "money approved Oct 2024; order, build, then sale"
+   "how": "money approved Oct 2024; the usual gap has passed"
   },
-  "rank": 52,
+  "rank": 48,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "16-20",
-   "n": 60,
-   "median": 4550,
-   "p25": 3500,
-   "p75": 6625,
+   "n": 58,
+   "median": 4450,
+   "p25": 3400,
+   "p75": 6675,
    "thin": false,
    "comps": [
     {
@@ -2867,16 +2587,16 @@
    "to": "2026-08",
    "how": "new truck was due Feb 2026; the old one may already have sold quietly"
   },
-  "rank": 53,
+  "rank": 49,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2913,7 +2633,7 @@
   "type": "",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "two-man-cab tanker, emergency replacement for Tanker 7; replaces Tanker 7 (tank problems, cannot be repaired)",
+  "detail": "Two-man-cab tanker, emergency replacement for Tanker 7; replaces Tanker 7 (tank problems, cannot be repaired)",
   "signal_date": "2026-05-14",
   "proof_url": "https://lebtown.com/2026/05/14/north-annville-twp-supervisors-asked-to-replace-tanker-truck-ahead-of-schedule/",
   "proof_quote": "It's an emergency purchase and it's right this second,",
@@ -2933,20 +2653,20 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-05",
-   "to": "2028-05",
-   "how": "ordered May 2026; builds take a year or more"
+   "from": "2026-09",
+   "to": "2027-05",
+   "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 54,
+  "rank": 50,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -3005,9 +2725,9 @@
   "window": {
    "from": "2025-01",
    "to": "2026-07",
-   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
-  "rank": 55,
+  "rank": 51,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3044,18 +2764,18 @@
   "window": {
    "from": "2027-10",
    "to": "2028-04",
-   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 56,
+  "rank": 52,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -3092,7 +2812,7 @@
   "type": "Volunteer",
   "website": "https://www.pennforestfire.com/",
   "why_call": "Board approved buying a new truck",
-  "detail": "new rescue truck",
+  "detail": "New rescue truck",
   "signal_date": "2026-09-24",
   "proof_url": "https://www.tnonline.com/20260924/penn-forest-fire-company-no-1-getting-new-rescue-truck/",
   "proof_quote": "The new rescue truck is fully paid for by Penn Forest Township.",
@@ -3116,7 +2836,7 @@
    "to": "2028-09",
    "how": "money approved Sep 2026; order, build, then sale"
   },
-  "rank": 57,
+  "rank": 53,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3153,18 +2873,18 @@
   "window": {
    "from": "2027-09",
    "to": "2028-05",
-   "how": "new truck due Fall 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 58,
+  "rank": 54,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -3223,18 +2943,18 @@
   "window": {
    "from": "2027-10",
    "to": "2028-04",
-   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 59,
+  "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -3293,18 +3013,18 @@
   "window": {
    "from": "2027-05",
    "to": "2027-11",
-   "how": "new truck due May 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 60,
+  "rank": 56,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -3365,7 +3085,7 @@
    "to": "2028-01",
    "how": "money approved Jan 2026; order, build, then sale"
   },
-  "rank": 61,
+  "rank": 57,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3402,18 +3122,18 @@
   "window": {
    "from": "2028-10",
    "to": "2029-04",
-   "how": "new truck due Oct 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Oct 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 62,
+  "rank": 58,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -3474,16 +3194,16 @@
    "to": "2025-11",
    "how": "new truck arrived May 2025; the old one may already have sold quietly"
   },
-  "rank": 63,
+  "rank": 59,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -3540,11 +3260,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2025-06",
-   "to": "2026-06",
-   "how": "ordered Jun 2024; builds take a year or more"
+   "from": "2024-10",
+   "to": "2025-06",
+   "how": "ordered Jun 2024; the usual build time has passed"
   },
-  "rank": 64,
+  "rank": 60,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3581,18 +3301,18 @@
   "window": {
    "from": "2026-08",
    "to": "2027-02",
-   "how": "new truck was due Aug 2026; the old one usually lists within six months"
+   "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 65,
+  "rank": 61,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -3651,18 +3371,18 @@
   "window": {
    "from": "2027-04",
    "to": "2027-10",
-   "how": "new truck due Apr 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 66,
+  "rank": 62,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -3719,11 +3439,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-08",
-   "to": "2028-08",
-   "how": "ordered Aug 2026; builds take a year or more"
+   "from": "2026-12",
+   "to": "2027-08",
+   "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 67,
+  "rank": 63,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3758,11 +3478,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-11",
-   "to": "2027-11",
-   "how": "ordered Nov 2025; builds take a year or more"
+   "from": "2026-03",
+   "to": "2026-11",
+   "how": "ordered Nov 2025; builds have taken four to twelve months in the back-test"
   },
-  "rank": 68,
+  "rank": 64,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3797,11 +3517,46 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-03",
-   "to": "2028-03",
-   "how": "ordered Mar 2026; builds take a year or more"
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 69,
+  "rank": 65,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "corrected",
+  "score": 2.0,
+  "department": "Chippewa Township Volunteer Fire Department",
+  "registry_name": "Chippewa Township Volunteer Fire Department",
+  "city": "Beaver Falls",
+  "county": "Beaver",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Took bids on a truck; result not found",
+  "detail": "Selling: 1999 Dodge Ram 2500 Cummins diesel, 82,121 miles, optional skid unit with 150-gal tank. sealed bids July 13 to August 15, 2026",
+  "signal_date": "2026-08-15",
+  "proof_url": "https://chippewafire.org/news/226/-FOR-SALE--Sealed-Bid-Opportunity-The-Chippewa-Township-Volunteer-Fire-Department-is-accepting-sealed-bids-for-the-sale-of-our1999-Dodge-Ram-2500--Cummins-24-Valve-Turbo-Diesel--Approx",
+  "proof_quote": "The Chippewa Township Volunteer Fire Department reserves the right to accept or reject any and all bids.",
+  "other_signals": "",
+  "named_in_source": "Chippewa Township Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "04022",
+  "top_kind": "bids_closed",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "sold",
+  "window": null,
+  "rank": 66,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3836,13 +3591,48 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-03",
-   "to": "2028-03",
-   "how": "ordered Mar 2026; builds take a year or more"
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 70,
+  "rank": 67,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "confirmed",
+  "score": 2.0,
+  "department": "Harrisburg Bureau of Fire",
+  "registry_name": "Harrisburg Bureau of Fire",
+  "city": "Harrisburg",
+  "county": "Dauphin",
+  "type": "Mostly career",
+  "website": "https://harrisburgpa.gov/bureau-of-fire/",
+  "why_call": "Sold its old truck direct",
+  "detail": "Selling: 1997 Seagrave pumper. sold to Highspire Borough for Citizens Fire Company #1 (Highspire Resolution 13 of 2025)",
+  "signal_date": "2025-04-15",
+  "proof_url": "https://highspire.gov/wp-content/uploads/2025/04/Regular-Meeting-AGENDA-04-15-2025-with-attached-items-for-Brough-Councils-consideration.pdf",
+  "proof_quote": "has received an offer for the purchase of one (1) used 1997 Seagrave pumper truck",
+  "other_signals": "",
+  "named_in_source": "City of Harrisburg Bureau of Fire",
+  "name_match": "exact",
+  "fdid": "22001",
+  "top_kind": "already_sold",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "sold",
+  "window": null,
+  "rank": 68,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
@@ -3875,11 +3665,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-04",
-   "to": "2028-04",
-   "how": "ordered Apr 2026; builds take a year or more"
+   "from": "2026-08",
+   "to": "2027-04",
+   "how": "ordered Apr 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 71,
+  "rank": 69,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3914,11 +3704,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-02",
-   "to": "2028-02",
-   "how": "ordered Feb 2026; builds take a year or more"
+   "from": "2026-06",
+   "to": "2027-02",
+   "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 72,
+  "rank": 70,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3953,11 +3743,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-05",
-   "to": "2028-05",
-   "how": "ordered May 2026; builds take a year or more"
+   "from": "2026-09",
+   "to": "2027-05",
+   "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 73,
+  "rank": 71,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3996,7 +3786,7 @@
    "to": "2029-06",
    "how": "grant awarded Jun 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 74,
+  "rank": 72,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -4031,10 +3821,80 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-03",
-   "to": "2028-03",
-   "how": "ordered Mar 2026; builds take a year or more"
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
+  "rank": 73,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "confirmed",
+  "score": 1.0,
+  "department": "Alert Fire Company (Downingtown Borough)",
+  "registry_name": "",
+  "city": "Downingtown",
+  "county": "Chester",
+  "type": "",
+  "website": "",
+  "why_call": "Took bids on a truck; result not found",
+  "detail": "Selling: 1998 Spartan/RD Murray pumper, Engine 45. online auction closing 2025-09-26; proceeds to the borough",
+  "signal_date": "2025-09-26",
+  "proof_url": "https://www.inquirer.com/life/yellow-fire-truck-downingtown-auction-20250919.html",
+  "proof_quote": "Downingtown is auctioning off a very nice looking yellow one from 1998 that has 28,558 miles on it.",
+  "other_signals": "",
+  "named_in_source": "Alert Fire Company (Downingtown Borough)",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "bids_closed",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "sold",
+  "window": null,
+  "rank": 74,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "corrected",
+  "score": 1.0,
+  "department": "Bessemer Volunteer Fire Company",
+  "registry_name": "Bessemer Volunteer Fire Company",
+  "city": "Bessemer",
+  "county": "Lawrence",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Took bids on a truck; result not found",
+  "detail": "Selling: 1981 Chevrolet CK30 mini pumper (1980s). online auction, bidding closes March 11",
+  "signal_date": "2025-03-11",
+  "proof_url": "https://www.wpxi.com/news/local/lawrence-county-borough-auctioning-off-1980s-fire-truck/QRFYJBAIN5CKJKBYWXPYCUFHJQ",
+  "proof_quote": "The proceeds from the sale go right back to the borough",
+  "other_signals": "",
+  "named_in_source": "Bessemer Volunteer Fire Company",
+  "name_match": "exact",
+  "fdid": "37004",
+  "top_kind": "bids_closed",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "sold",
+  "window": null,
   "rank": 75,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",

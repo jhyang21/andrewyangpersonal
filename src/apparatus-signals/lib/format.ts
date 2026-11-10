@@ -25,14 +25,12 @@ export function formatWindow(w: { from: string; to: string }): string {
   return fy === ty ? `${from}–${to} ${ty}` : `${from} ${fy}–${to} ${ty}`;
 }
 
-/** What the "Likely listed" column shows for a lead. */
-export function likelyListed(d: {
-  stage: string;
-  window: { from: string; to: string } | null;
-}): string {
-  if (d.stage === "listed") return "Now";
-  if (d.stage === "sold") return "Sold";
-  return d.window ? formatWindow(d.window) : "—";
+/**
+ * "YYYY-MM" for now. Pages are static, so this is the build month. Call it on
+ * the server only, so the client never renders a different month.
+ */
+export function currentMonth(): string {
+  return new Date().toISOString().slice(0, 7);
 }
 
 export function capitalize(s: string): string {

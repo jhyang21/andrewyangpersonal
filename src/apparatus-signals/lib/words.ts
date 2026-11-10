@@ -1,7 +1,18 @@
 // Plain-English copy that is derived from the data: coverage tiers, what each state gets
 // read, stages, check and match labels, and the links between signal kinds and the method tables.
-import type { Basis, Checked, Coverage, HitRate, LeadTimeCase, Method, ReadBy, Stage, StateRow } from "./data";
-import { joinPlain } from "./format";
+import type {
+  Basis,
+  Checked,
+  Coverage,
+  HitRate,
+  LeadTimeCase,
+  ListingWindow,
+  Method,
+  ReadBy,
+  Stage,
+  StateRow,
+} from "./data";
+import { formatWindow, joinPlain } from "./format";
 
 export const COVERAGE_ORDER: Coverage[] = ["deep", "auctions", "national"];
 
@@ -51,22 +62,87 @@ export function layerSentence(state: StateRow, method: Method): string {
 }
 
 /** The order the stage groups appear in, and their headings. */
-export const STAGE_ORDER: Stage[] = ["surplus", "replacing", "listed", "sold"];
+export const STAGE_ORDER: Stage[] = ["surplus", "replacing", "gear", "listed", "sold"];
 
 export const STAGE_LABEL: Record<Stage, string> = {
-  surplus: "Will sell, not listed yet",
+  surplus: "Old truck out of service, not listed yet",
   replacing: "Replacing a truck",
+  gear: "Sells gear at auction; no truck named",
   listed: "At auction now",
   sold: "Sold recently",
 };
 
-/** Not yet at auction or sold: the leads worth a call. */
+/**
+ * A stage group's heading. The sold group names closed bids only when one of
+ * its leads (`topKinds`, all of the group, not the filtered view) is one.
+ */
+export function stageHeading(stage: Stage, topKinds: string[]): string {
+  return stage === "sold" && topKinds.includes("bids_closed")
+    ? "Sold, or bids closed"
+    : STAGE_LABEL[stage];
+}
+
+/** Not yet at auction or sold: the leads worth a call, and the only ones ranked. */
 export function isOpenStage(stage: Stage): boolean {
   return stage === "surplus" || stage === "replacing";
 }
 
-/** Shown where the tier label sits, for leads already on a channel. */
-export const STAGE_WHEN: Partial<Record<Stage, string>> = { sold: "Sold", listed: "At auction" };
+/** Already on a channel. Gear is neither open nor done. */
+export function isDoneStage(stage: Stage): boolean {
+  return stage === "listed" || stage === "sold";
+}
+
+/** The state table's When cell for a lead with no tier (gear or done); null for the rest. */
+export function shortWhen(stage: Stage, topKind: string): string | null {
+  if (stage === "gear") return "Gear only";
+  if (stage === "listed") return "At auction";
+  if (stage === "sold") return topKind === "bids_closed" ? "Bids closed" : "Sold";
+  return null;
+}
+
+/**
+ * What the "Likely listed" column shows. `month` is the build month
+ * ("YYYY-MM"); a window that ended before it has passed.
+ */
+export function likelyListed(
+  d: { stage: Stage; top_kind: string; window: ListingWindow | null },
+  month: string,
+): string {
+  if (d.stage === "listed") return "Now";
+  if (d.stage === "sold") return shortWhen(d.stage, d.top_kind) as string;
+  if (!d.window) return "—";
+  return d.window.to < month
+    ? `Was due ${formatWindow(d.window)}; may already have sold`
+    : formatWindow(d.window);
+}
+
+/**
+ * A window rule's template as a general sentence: {month} and {season} become
+ * plain words. Any other placeholder stays as it is.
+ */
+export function fillTemplate(template: string): string {
+  return template.replace(/\{month\}/g, "that month").replace(/\{season\}/g, "that season");
+}
+
+/**
+ * The How cell of a window rule, as a worked example: the real `window.how` of
+ * the first lead whose top kind the rule covers and whose wording came from
+ * this rule's template (two rules can share a kind). Null when no lead fits;
+ * the caller then shows the filled template.
+ */
+export function windowExample(
+  rule: { kinds: string[]; how_template: string },
+  leads: { top_kind: string; window: ListingWindow | null }[],
+): string | null {
+  const pattern = rule.how_template
+    .split(/\{\w+\}/)
+    .map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+    // A placeholder never spans a ";", so past wording ("…; probably sold by now") does not fit.
+    .join("[^;]+?");
+  const re = new RegExp(`^${pattern}\\.?$`, "i");
+  const pick = leads.find((d) => rule.kinds.includes(d.top_kind) && re.test(d.window?.how ?? ""));
+  return pick?.window ? pick.window.how.replace(/\.$/, "") : null;
+}
 
 export const DONE_NOTE = "Already on a channel. Here as proof the earlier signs were right.";
 

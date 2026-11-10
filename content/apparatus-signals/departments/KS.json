@@ -31,7 +31,7 @@
   "window": {
    "from": "2027-11",
    "to": "2028-05",
-   "how": "new truck due Nov 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 1,
   "tier": "2 Call this month",
@@ -39,10 +39,10 @@
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -187,10 +187,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -249,7 +249,7 @@
   "window": {
    "from": "2027-02",
    "to": "2027-08",
-   "how": "new truck due Feb 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 5,
   "tier": "3 Watch",
@@ -257,10 +257,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -319,7 +319,7 @@
   "window": {
    "from": "2026-12",
    "to": "2027-06",
-   "how": "new truck due Dec 2026; old trucks usually list within six months of delivery"
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
   "rank": 6,
   "tier": "3 Watch",
@@ -327,10 +327,10 @@
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {

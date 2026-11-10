@@ -10,11 +10,11 @@ import {
   stageTotals,
 } from "@/apparatus-signals/lib/data";
 import {
+  currentMonth,
   formatDate,
   formatNumber,
   formatScore,
   joinPlain,
-  likelyListed,
   tierLabel,
 } from "@/apparatus-signals/lib/format";
 import { binLabel, buildScale } from "@/apparatus-signals/lib/scale";
@@ -26,6 +26,7 @@ import {
   READ_BY_LABEL,
   WEEK_RULE,
   isOpenStage,
+  likelyListed,
 } from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
 import { testSummary } from "@/apparatus-signals/ui/DoesItWork";
@@ -34,6 +35,7 @@ import UsMap, { type MapState } from "@/apparatus-signals/ui/UsMap";
 export default function HomePage() {
   const meta = getMeta();
   const { totals } = meta;
+  const month = currentMonth();
   const stages = stageTotals();
   const summary = testSummary(getMethod());
   const states = getStates();
@@ -48,7 +50,7 @@ export default function HomePage() {
     deep: s.coverage === "deep",
     coverageName: COVERAGE[s.coverage].name,
   }));
-  // The Top 10 is for trucks not yet on a channel; listed and sold leads stay on the state pages.
+  // The Top 10 is for trucks not yet on a channel; gear, listed and sold leads stay on the state pages.
   const top = allLeads()
     .filter((d) => isOpenStage(d.stage))
     .sort(compareLeads)
@@ -262,7 +264,7 @@ export default function HomePage() {
                   {d.detail ? <div className="text-sm text-as-ink-2">{d.detail}</div> : null}
                 </td>
                 <td className="whitespace-nowrap" data-label="Likely listed">
-                  {likelyListed(d)}
+                  {likelyListed(d, month)}
                 </td>
                 <td data-label="When">
                   {tierLabel(d.tier)} <BasisBadge basis={d.basis} />
@@ -279,7 +281,7 @@ export default function HomePage() {
         </table>
         <p className="mt-3 text-sm text-as-ink-2">
           {formatNumber(stages.listed)} more are at auction now and {formatNumber(stages.sold)} sold
-          this year; see each state.
+          since May; see each state.
         </p>
       </section>
     </div>

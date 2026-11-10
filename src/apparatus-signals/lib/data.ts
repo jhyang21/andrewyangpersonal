@@ -174,9 +174,10 @@ export interface Department {
 /**
  * Where the old truck is now. "surplus": the old truck is free but not listed: a vote or plan
  * to sell, or a new truck seen in service. "replacing": money, an order or a due date only;
- * nothing seen yet. "listed": at auction now. "sold": sold since May.
+ * nothing seen yet. "gear": sells gear at auction, no truck named. "listed": at auction now.
+ * "sold": sold since May, or bids closed with no result found.
  */
-export type Stage = "sold" | "listed" | "surplus" | "replacing";
+export type Stage = "sold" | "listed" | "surplus" | "replacing" | "gear";
 
 export interface ListingWindow {
   /** "YYYY-MM". */
@@ -376,6 +377,8 @@ export interface WindowRule {
   from_months: number;
   to_months: number;
   how_template: string;
+  /** The wording once a window has passed. */
+  how_past_template?: string;
   n_cases: number;
 }
 

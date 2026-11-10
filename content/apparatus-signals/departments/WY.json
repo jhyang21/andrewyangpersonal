@@ -31,7 +31,7 @@
   "window": {
    "from": "2027-05",
    "to": "2027-11",
-   "how": "new truck due May 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 1,
   "tier": "2 Call this month",
@@ -39,10 +39,10 @@
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {

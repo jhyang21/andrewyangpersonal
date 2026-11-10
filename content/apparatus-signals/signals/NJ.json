@@ -18,7 +18,7 @@
  },
  {
   "kind": "sale_planned",
-  "detail": "; replaces 2013 KME pumper",
+  "detail": "Selling: 2013 KME pumper. to be sold at public auction (minimum bid $95,000)",
   "date": "2026-08-06",
   "quote": "Resolution No. 2026 - 115 and N.J.S.A. 40A:12-13 and N.J.S.A. 40A:11-36",
   "old_truck": "2013 KME pumper",
@@ -35,7 +35,7 @@
  },
  {
   "kind": "surplus_declared",
-  "detail": "Selling: ambulance(s) no longer needed for municipal purposes. Sale to Monmouth Junction First Aid Squad, Inc. authorized by ordinance 2026-14; adoption not confirmed",
+  "detail": "Selling: ambulance(s) no longer needed for municipal purposes. Sale to Monmouth Junction First Aid Squad, Inc. authorized by ordinance 2026-14; adoption not yet recorded",
   "date": "2026-10",
   "quote": "Ordinance #2026-14 Authorizing Sale of Vehicle and Ambulance(S) No Longer Needed for Municipal Purposes To the Monmouth Junction First Aid Squad, Inc.",
   "old_truck": "ambulance(s) no longer needed for municipal purposes",
@@ -52,7 +52,7 @@
  },
  {
   "kind": "council_approval",
-  "detail": "pumper, foam unit and support vehicle",
+  "detail": "Pumper, foam unit and support vehicle",
   "date": "2025-12-18",
   "quote": "RESOLUTION AUTHORIZING AND APPROVING THE CAPITAL PURCHASE OF A NEW PUMPER APPARATUS, A NEW FOAM UNIT AND ONE (1) NEW SUPPORT VEHICLE",
   "old_truck": null,
@@ -69,7 +69,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "pumper fire engine",
+  "detail": "Pumper fire engine",
   "date": "2026-06-29",
   "quote": "ACQUISITION OF A NEW PUMPER FIRE ENGINE, INCLUDING ORIGINAL APPARATUS AND EQUIPMENT",
   "old_truck": null,
@@ -86,7 +86,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "pumper fire truck",
+  "detail": "Pumper fire truck",
   "date": "2026-03-25",
   "quote": "Purpose: The acquisition of a pumper fire truck, including all related costs and expenditures incidental thereto",
   "old_truck": null,
@@ -103,7 +103,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "fire truck",
+  "detail": "Fire truck",
   "date": "2026-04-27",
   "quote": "Acquisition, by purchase, of new and additional firefighting equipment for the preservation of life and property in the Borough, including one (1) fire truck for use by the Bernardsville Fire Company.",
   "old_truck": null,
@@ -120,7 +120,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "fire pumper truck and command vehicle",
+  "detail": "Fire pumper truck and command vehicle",
   "date": "2026-07-09",
   "quote": "Acquisition Of A Fire Pumper Truck, A Command Vehicle And Various Fire Safety Equipment.",
   "old_truck": null,
@@ -137,7 +137,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "fire truck",
+  "detail": "Fire truck",
   "date": "2026-06-16",
   "quote": "Acquisition by purchase of new and additional firefighting equipment for use by the Fire Department of the Township, including a fire truck.",
   "old_truck": null,
@@ -154,7 +154,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "fire truck",
+  "detail": "Fire truck",
   "date": "2026-08-12",
   "quote": "BOND ORDINANCE PROVIDING FOR THE ACQUISITION OF A FIRE TRUCK, APPROPRIATING $1,750,000 THEREFOR",
   "old_truck": null,
@@ -171,7 +171,7 @@
  },
  {
   "kind": "council_approval",
-  "detail": "fire truck",
+  "detail": "Fire truck",
   "date": "2026-07-20",
   "quote": "APPROPRIATING THEREFOR THE SUM OF $110,000.00 FROM THE RESERVE FOR FIRE TRUCK",
   "old_truck": null,
@@ -188,7 +188,7 @@
  },
  {
   "kind": "council_approval",
-  "detail": "fire engine",
+  "detail": "Fire engine",
   "date": "2025-05-20",
   "quote": "Supplemental funding for the acquisition of a new fire engine, including original apparatus and equipment, for the use of Fire Company No. 2.",
   "old_truck": null,
@@ -222,7 +222,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "foam pumper; replaces 24-year-old foam pumper",
+  "detail": "Foam pumper; replaces 24-year-old foam pumper",
   "date": "2026-11",
   "quote": "acquire a new foam pumper fire apparatus to replace the Fire District's current, 24-year-old foam pumper apparatus",
   "old_truck": "24-year-old foam pumper",
@@ -239,7 +239,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "three fire trucks",
+  "detail": "Three fire trucks",
   "date": "2026-11-03",
   "quote": "spending $7.5 million to purchase three fire trucks",
   "old_truck": null,
@@ -256,7 +256,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "firetruck",
+  "detail": "Firetruck",
   "date": "2026-02-21",
   "quote": "the purchase of a firetruck for an amount not exceeding $1,150,000",
   "old_truck": null,
@@ -273,7 +273,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "pumper; replaces 2007 pumper",
+  "detail": "Pumper; replaces 2007 pumper",
   "date": "2026-02-21",
   "quote": "authorized to acquire a new fire engine (pumper) for a total not to exceed amount of $1,000,000",
   "old_truck": "2007 pumper",
@@ -392,7 +392,7 @@
  },
  {
   "kind": "grant",
-  "detail": "pumper",
+  "detail": "Pumper",
   "date": "2025-09-14",
   "quote": "Hamilton Township has secured another $1 million in State Budget funding dedicated to the purchase of a vital new pumper",
   "old_truck": null,
@@ -426,7 +426,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "two new trucks",
+  "detail": "Two new trucks",
   "date": "2025-09-09",
   "quote": "for voting in favor of purchasing two brand-new fire trucks",
   "old_truck": null,
@@ -443,7 +443,7 @@
  },
  {
   "kind": "grant",
-  "detail": "rescue-engine",
+  "detail": "Rescue-engine",
   "date": "2025-12-15",
   "quote": "This includes a $975,000 award toward the cost of the Borough's new rescue-engine through the FY26",
   "old_truck": null,

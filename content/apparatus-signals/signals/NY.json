@@ -1,13 +1,13 @@
 [
  {
-  "kind": "sale_planned",
+  "kind": "bids_closed",
   "detail": "1998 Ford tandem-axle tanker truck, 1,000 GPM Darley pump",
   "date": "2026-09-08",
   "url": "http://townofwindhamny.gov/legal-notice/windham-fire-district-1-accepting-sealed-bids-for-1998-ford-tanker-truck/76284/",
   "quote": "Windham Fire District #1 Accepting Sealed Bids for 1998 Ford Tanker Truck; bids due September 8, 2026, 4:00 p.m.",
   "old_truck": "1998 Ford tandem-axle tanker truck, 1,000 GPM Darley pump",
   "where": "own notice (Town of Windham website)",
-  "points": 7,
+  "points": 3,
   "read_by": "person",
   "source_name": "Windham Fire District #1",
   "source_city": "Hensonville",
@@ -32,14 +32,14 @@
   "fdid": "37011"
  },
  {
-  "kind": "sale_planned",
+  "kind": "bids_closed",
   "detail": "1975 Diamond Reo/4-Guys fire tanker",
   "date": "2026-08-10",
   "url": "https://www.townofnewburghny.gov/cn/news/index.cfm?NID=58674&jump2=0",
   "quote": "BID FOR 1975 Fire Tanker (sealed bids due 7:30 p.m. August 10, 2026)",
   "old_truck": "1975 Diamond Reo/4-Guys fire tanker",
   "where": "own notice (Town of Newburgh website)",
-  "points": 5,
+  "points": 1,
   "read_by": "person",
   "source_name": "Coldenham Fire District",
   "source_city": "",
@@ -1633,7 +1633,7 @@
  },
  {
   "kind": "bond_or_referendum",
-  "detail": "New 2026 ambulance and new 2026 pumper (special vote 2026-05-19; result not found)",
+  "detail": "New 2026 ambulance and new 2026 pumper (special vote 19 May 2026; result not posted)",
   "date": "2026-04-09",
   "quote": "purchasing, outfitting, and equipping one (1) new 2026 Ambulance",
   "old_truck": null,
@@ -1650,7 +1650,7 @@
  },
  {
   "kind": "surplus_declared",
-  "detail": "Selling: 2001 KME aerial platform (EP-267). Public auction, per a search summary; the minutes could not be opened",
+  "detail": "Selling: 2001 KME aerial platform (EP-267). Public auction planned (minutes not opened)",
   "date": "2025-11-04",
   "quote": "",
   "old_truck": "2001 KME aerial platform (EP-267)",

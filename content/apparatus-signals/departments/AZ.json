@@ -31,7 +31,7 @@
   "window": {
    "from": "2026-07",
    "to": "2027-01",
-   "how": "new truck in service Jul 2026; the old one usually lists within six months"
+   "how": "new truck in service Jul 2026; we allow six months for the old one to list"
   },
   "rank": 1,
   "tier": "1 Call this week",
@@ -70,7 +70,7 @@
   "window": {
    "from": "2026-05",
    "to": "2026-11",
-   "how": "new truck in service May 2026; the old one usually lists within six months"
+   "how": "new truck in service May 2026; we allow six months for the old one to list"
   },
   "rank": 2,
   "tier": "2 Call this month",
@@ -78,9 +78,9 @@
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [
@@ -382,10 +382,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -444,7 +444,7 @@
   "window": {
    "from": "2025-01",
    "to": "2026-07",
-   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
   "rank": 10,
   "tier": "3 Watch",
@@ -483,7 +483,7 @@
   "window": {
    "from": "2025-02",
    "to": "2026-08",
-   "how": "grant awarded Aug 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
   },
   "rank": 11,
   "tier": "3 Watch",
@@ -522,7 +522,7 @@
   "window": {
    "from": "2025-01",
    "to": "2026-07",
-   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
   "rank": 12,
   "tier": "3 Watch",

@@ -32,6 +32,11 @@ function bestFeedShare(bt: Backtest): string {
   return `${Math.round(best * 100)}%`;
 }
 
+/** One feed's share of sales it came before, e.g. "4%". */
+function feedShare(bt: Backtest, key: string): string {
+  return `${Math.round((bt.recall[key]?.rate ?? 0) * 100)}%`;
+}
+
 /** The one-line summary the home page links from. */
 export function testSummary(method: Method): string | null {
   const { backtest: bt, blind_read: br } = method;
@@ -213,8 +218,8 @@ export default function DoesItWork({ method }: { method: Method }) {
         Does it work?
       </h2>
       <p className="max-w-3xl">
-        We checked two ways. Against {formatNumber(bt.meta.lots_used)} closed lots, a grant or
-        order came first in about {bestFeedShare(bt)} of sales. Then{" "}
+        We checked two ways. Against {formatNumber(bt.meta.lots_used)} closed lots, a grant came
+        first in about {feedShare(bt, "grant")} of sales. Then{" "}
         {formatNumber(sold.departments + control.departments)} New York departments, blind: a prior
         sign for {percent(sold.sign_within_18_months, sold.departments)} of sellers against{" "}
         {percent(control.sign_within_18_months, control.departments)} of non-sellers. Small numbers.

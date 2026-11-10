@@ -31,7 +31,7 @@
   "window": {
    "from": "2026-05",
    "to": "2026-11",
-   "how": "new truck in service May 2026; the old one usually lists within six months"
+   "how": "new truck in service May 2026; we allow six months for the old one to list"
   },
   "rank": 1,
   "tier": "2 Call this month",
@@ -39,10 +39,10 @@
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -257,7 +257,7 @@
   "window": {
    "from": "2025-01",
    "to": "2026-07",
-   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
   "rank": 6,
   "tier": "3 Watch",
@@ -296,7 +296,7 @@
   "window": {
    "from": "2025-01",
    "to": "2026-07",
-   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
   "rank": 7,
   "tier": "3 Watch",

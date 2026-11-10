@@ -9,7 +9,7 @@
   "type": "",
   "website": "",
   "why_call": "Board voted to sell a truck",
-  "detail": "Selling: ambulance(s) no longer needed for municipal purposes. Sale to Monmouth Junction First Aid Squad, Inc. authorized by ordinance 2026-14; adoption not confirmed",
+  "detail": "Selling: ambulance(s) no longer needed for municipal purposes. Sale to Monmouth Junction First Aid Squad, Inc. authorized by ordinance 2026-14; adoption not yet recorded",
   "signal_date": "2026-10",
   "proof_url": "https://southbrunswicknj.gov/ordinance-2026-14-authorizing-sale-of-vehicle-and-ambulances-no-longer-needed-for-municipal-purposes-to-the-monmouth-junction-first-aid-squad-inc/",
   "proof_quote": "Ordinance #2026-14 Authorizing Sale of Vehicle and Ambulance(S) No Longer Needed for Municipal Purposes To the Monmouth Junction First Aid Squad, Inc.",
@@ -29,8 +29,8 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
+   "from": "2026-10",
+   "to": "2027-01",
    "how": "voted to sell Oct 2026"
   },
   "rank": 1,
@@ -39,10 +39,10 @@
   "guide": {
    "type": "ambulance",
    "band": "all ages",
-   "n": 367,
-   "median": 3600,
+   "n": 355,
+   "median": 3650,
    "p25": 1900,
-   "p75": 6500,
+   "p75": 6550,
    "thin": false,
    "comps": [
     {
@@ -83,7 +83,7 @@
   "signal_date": "2026-02-01",
   "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-february-2026/",
   "proof_quote": "Department: NUTLEY (NJ) FIRE DEPARTMENT; Type: HAZMAT RESPONSE VEHICLE (RESPONDS IN ESSEX COUNTY); Built by: RESCUE 1 MFG",
-  "other_signals": "Money approved for a new truck: fire truck",
+  "other_signals": "Money approved for a new truck: Fire truck",
   "named_in_source": "Nutley Fire Department",
   "name_match": "exact",
   "fdid": "07160",
@@ -140,7 +140,7 @@
   "window": {
    "from": "2026-09",
    "to": "2027-03",
-   "how": "new truck in service Sep 2026; the old one usually lists within six months"
+   "how": "new truck in service Sep 2026; we allow six months for the old one to list"
   },
   "rank": 3,
   "tier": "1 Call this week",
@@ -148,10 +148,10 @@
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -192,7 +192,7 @@
   "signal_date": "2025-09-18",
   "proof_url": "https://www.chnj.gov/Archive.aspx?ADID=2703",
   "proof_quote": "authorizes the public sale of the surplus 2012 Freightliner/Crimson Foam Tender",
-  "other_signals": "Board approved buying a new truck: pumper, foam unit and support vehicle",
+  "other_signals": "Board approved buying a new truck: Pumper, foam unit and support vehicle",
   "named_in_source": "Cherry Hill Fire District #13",
   "name_match": "exact",
   "fdid": "04130",
@@ -208,9 +208,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "voted to sell Sep 2025"
+   "from": "2025-09",
+   "to": "2025-12",
+   "how": "voted to sell Sep 2025; probably sold by now"
   },
   "rank": 4,
   "tier": "2 Call this month",
@@ -280,7 +280,7 @@
   "window": {
    "from": "2026-05",
    "to": "2026-11",
-   "how": "new truck in service May 2026; the old one usually lists within six months"
+   "how": "new truck in service May 2026; we allow six months for the old one to list"
   },
   "rank": 5,
   "tier": "2 Call this month",
@@ -297,7 +297,7 @@
   "type": "Volunteer",
   "website": "https://www.delranfire.org/",
   "why_call": "Money approved for a new truck",
-  "detail": "foam pumper; replaces 24-year-old foam pumper",
+  "detail": "Foam pumper; replaces 24-year-old foam pumper",
   "signal_date": "2026-11",
   "proof_url": "https://www.ballotready.org/measures/fire-district-public-question",
   "proof_quote": "acquire a new foam pumper fire apparatus to replace the Fire District's current, 24-year-old foam pumper apparatus",
@@ -367,7 +367,7 @@
   "type": "Volunteer",
   "website": "https://www.lumbertonfire.org/",
   "why_call": "Plans to sell a truck",
-  "detail": "; replaces 2013 KME pumper",
+  "detail": "Selling: 2013 KME pumper. to be sold at public auction (minimum bid $95,000)",
   "signal_date": "2026-08-06",
   "proof_url": "https://www.lumbertontwp.com/wp-content/uploads/2026/08/Public-Auction-Notice-KME-Pumper-Truck-2026.pdf",
   "proof_quote": "Resolution No. 2026 - 115 and N.J.S.A. 40A:12-13 and N.J.S.A. 40A:11-36",
@@ -387,8 +387,8 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
+   "from": "2026-08",
+   "to": "2026-11",
    "how": "sale announced Aug 2026"
   },
   "rank": 7,
@@ -467,10 +467,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -546,7 +546,7 @@
   "type": "Volunteer",
   "website": "www.barnegatlightfire.com",
   "why_call": "Money approved for a new truck",
-  "detail": "fire truck",
+  "detail": "Fire truck",
   "signal_date": "2026-08-12",
   "proof_url": "https://barnegatlight.org/wp-content/uploads/2026/08/NOTICE-OF-PENDING-BOND-ORDINANCE-2026-11.pdf",
   "proof_quote": "BOND ORDINANCE PROVIDING FOR THE ACQUISITION OF A FIRE TRUCK, APPROPRIATING $1,750,000 THEREFOR",
@@ -663,7 +663,7 @@
   "type": "",
   "website": "",
   "why_call": "Won a grant for a new truck",
-  "detail": "pumper",
+  "detail": "Pumper",
   "signal_date": "2025-09-14",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/pumpers/nj-township-receives-another-1m-grant-for-new-fire-apparatus/",
   "proof_quote": "Hamilton Township has secured another $1 million in State Budget funding dedicated to the purchase of a vital new pumper",
@@ -724,7 +724,7 @@
   "window": {
    "from": "2028-06",
    "to": "2029-02",
-   "how": "new truck due Summer 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Summer 2028; we allow six months after delivery for the old one to list"
   },
   "rank": 14,
   "tier": "2 Call this month",
@@ -732,10 +732,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -772,7 +772,7 @@
   "type": "Mostly career",
   "website": "https://www.lfddistrict1.com/",
   "why_call": "Money approved for a new truck",
-  "detail": "three fire trucks",
+  "detail": "Three fire trucks",
   "signal_date": "2026-11-03",
   "proof_url": "https://www.yahoo.com/news/politics/articles/central-jersey-referendum-results-election-184828039.html",
   "proof_quote": "spending $7.5 million to purchase three fire trucks",
@@ -872,7 +872,7 @@
   "window": {
    "from": "2026-10",
    "to": "2027-04",
-   "how": "new truck was due Oct 2026; the old one usually lists within six months"
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
   "rank": 17,
   "tier": "2 Call this month",
@@ -880,10 +880,10 @@
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -981,7 +981,7 @@
   "window": {
    "from": "2027-09",
    "to": "2028-05",
-   "how": "new truck due Fall 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 19,
   "tier": "2 Call this month",
@@ -989,10 +989,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1059,10 +1059,10 @@
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1121,7 +1121,7 @@
   "window": {
    "from": "2027-10",
    "to": "2028-04",
-   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 21,
   "tier": "3 Watch",
@@ -1129,10 +1129,10 @@
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1169,7 +1169,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "Money approved for a new truck",
-  "detail": "fire truck",
+  "detail": "Fire truck",
   "signal_date": "2026-04-27",
   "proof_url": "https://bernardsville.gov/add-public-notice/mayor-council-notices/1394-bond-ord-intro-2048/file",
   "proof_quote": "Acquisition, by purchase, of new and additional firefighting equipment for the preservation of life and property in the Borough, including one (1) fire truck for use by the Bernardsville Fire Company.",
@@ -1230,7 +1230,7 @@
   "window": {
    "from": "2027-09",
    "to": "2028-03",
-   "how": "new truck due Sep 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 23,
   "tier": "3 Watch",
@@ -1238,10 +1238,10 @@
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1278,7 +1278,7 @@
   "type": "Volunteer",
   "website": "https://cfc23.com/",
   "why_call": "Money approved for a new truck",
-  "detail": "two new trucks",
+  "detail": "Two new trucks",
   "signal_date": "2025-09-09",
   "proof_url": "https://www.1strespondernews.com/news/091925132/centerton-fire-secures-approval-for-two-new-trucks",
   "proof_quote": "for voting in favor of purchasing two brand-new fire trucks",
@@ -1386,10 +1386,10 @@
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1448,7 +1448,7 @@
   "window": {
    "from": "2028-02",
    "to": "2028-08",
-   "how": "new truck due Feb 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
   "rank": 27,
   "tier": "3 Watch",
@@ -1456,10 +1456,10 @@
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1496,7 +1496,7 @@
   "type": "Volunteer",
   "website": "https://www.gfc681.org/",
   "why_call": "Money approved for a new truck",
-  "detail": "pumper fire truck",
+  "detail": "Pumper fire truck",
   "signal_date": "2026-03-25",
   "proof_url": "https://gibbsborotownhall.com/wp-content/uploads/2026/03/2026-06_Adoption_Notice.pdf",
   "proof_quote": "Purpose: The acquisition of a pumper fire truck, including all related costs and expenditures incidental thereto",
@@ -1535,7 +1535,7 @@
   "type": "Volunteer",
   "website": "https://www.jamesburgfd.com/",
   "why_call": "Money approved for a new truck",
-  "detail": "pumper; replaces 2007 pumper",
+  "detail": "Pumper; replaces 2007 pumper",
   "signal_date": "2026-02-21",
   "proof_url": "https://www.jamesburgbofc.com/docs/Notices/special-meeting-jan-22-2026.pdf",
   "proof_quote": "authorized to acquire a new fire engine (pumper) for a total not to exceed amount of $1,000,000",
@@ -1565,10 +1565,10 @@
   "guide": {
    "type": "pumper",
    "band": "16-20",
-   "n": 60,
-   "median": 4550,
-   "p25": 3500,
-   "p75": 6625,
+   "n": 58,
+   "median": 4450,
+   "p25": 3400,
+   "p75": 6675,
    "thin": false,
    "comps": [
     {
@@ -1579,18 +1579,18 @@
      "url": "https://www.auctionsinternational.com/auction/47463/item/lot-0001-4073-2007-american-lafrance-eagle-fire-truck-298205/"
     },
     {
-     "item": "2007 American LaFrance Eagle Fire Truck",
-     "price": 4850.0,
-     "date": "2026-05-02",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46993/item/lot-0001-4073-2007-american-lafrance-eagle-fire-truck-294657/"
-    },
-    {
      "item": "2006 Pierce Pumper Truck",
      "price": 1975.0,
      "date": "2025-10-17",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/44472/item/lot-0001-2006-pierce-pumper-truck-277530/"
+    },
+    {
+     "item": "2005 Freightliner MS Crew Cab Fire Truck",
+     "price": 6300.0,
+     "date": "2024-09-07",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/38675/item/lot-0011-2005-freightliner-ms-crew-cab-fire-truck-239875/"
     }
    ]
   }
@@ -1666,7 +1666,7 @@
   "window": {
    "from": "2027-06",
    "to": "2027-12",
-   "how": "new truck due Jun 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 31,
   "tier": "3 Watch",
@@ -1674,10 +1674,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1714,7 +1714,7 @@
   "type": "",
   "website": "",
   "why_call": "Money approved for a new truck",
-  "detail": "firetruck",
+  "detail": "Firetruck",
   "signal_date": "2026-02-21",
   "proof_url": "https://informthevotecc.netlify.app/fire_districts/maurice-river-4-cumberland-23",
   "proof_quote": "the purchase of a firetruck for an amount not exceeding $1,150,000",
@@ -1775,7 +1775,7 @@
   "window": {
    "from": "2028-01",
    "to": "2028-07",
-   "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
   "rank": 33,
   "tier": "3 Watch",
@@ -1783,10 +1783,10 @@
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1853,10 +1853,10 @@
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1893,7 +1893,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "Board approved buying a new truck",
-  "detail": "fire engine",
+  "detail": "Fire engine",
   "signal_date": "2025-05-20",
   "proof_url": "https://www.paramusborough.gov/Archive.aspx?ADID=554",
   "proof_quote": "Supplemental funding for the acquisition of a new fire engine, including original apparatus and equipment, for the use of Fire Company No. 2.",
@@ -1952,9 +1952,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-07",
-   "to": "2027-07",
-   "how": "ordered Jul 2025; builds take a year or more"
+   "from": "2025-11",
+   "to": "2026-07",
+   "how": "ordered Jul 2025; the usual build time has passed"
   },
   "rank": 36,
   "tier": "3 Watch",
@@ -1962,10 +1962,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2022,9 +2022,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-02",
-   "to": "2028-02",
-   "how": "ordered Feb 2026; builds take a year or more"
+   "from": "2026-06",
+   "to": "2027-02",
+   "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 37,
   "tier": "3 Watch",
@@ -2102,7 +2102,7 @@
   "window": {
    "from": "2027-05",
    "to": "2027-11",
-   "how": "new truck due May 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 39,
   "tier": "3 Watch",
@@ -2110,10 +2110,10 @@
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -2180,10 +2180,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2242,7 +2242,7 @@
   "window": {
    "from": "2025-02",
    "to": "2026-08",
-   "how": "grant awarded Aug 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
   },
   "rank": 41,
   "tier": "3 Watch",
@@ -2259,7 +2259,7 @@
   "type": "Career",
   "website": "www.ventnorcity.org",
   "why_call": "Money approved for a new truck",
-  "detail": "fire pumper truck and command vehicle",
+  "detail": "Fire pumper truck and command vehicle",
   "signal_date": "2026-07-09",
   "proof_url": "https://www.ventnorcity.org/news/post/22785/",
   "proof_quote": "Acquisition Of A Fire Pumper Truck, A Command Vehicle And Various Fire Safety Equipment.",
@@ -2298,7 +2298,7 @@
   "type": "",
   "website": "",
   "why_call": "Money approved for a new truck",
-  "detail": "pumper fire engine",
+  "detail": "Pumper fire engine",
   "signal_date": "2026-06-29",
   "proof_url": "https://www.wtmorris.org/media/attachments/2026/06/30/ro-08-26-bond-pumper-fire-engine-final-statement.docx",
   "proof_quote": "ACQUISITION OF A NEW PUMPER FIRE ENGINE, INCLUDING ORIGINAL APPARATUS AND EQUIPMENT",
@@ -2367,9 +2367,9 @@
   "guide": {
    "type": "pumper",
    "band": "31+",
-   "n": 191,
+   "n": 185,
    "median": 3600,
-   "p25": 2438,
+   "p25": 2425,
    "p75": 5200,
    "thin": false,
    "comps": [
@@ -2388,11 +2388,11 @@
      "url": "https://www.auctionsinternational.com/auction/47028/item/lot-0001-1992-pierce-pumper-295314/"
     },
     {
-     "item": "1992 Pierce Pumper",
-     "price": 3050.0,
-     "date": "2026-04-11",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46754/item/lot-0001-1992-pierce-pumper-292113/"
+     "item": "1992 E One Pumper Truck",
+     "price": 4800.0,
+     "date": "2026-01-24",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0001-1992-e-one-pumper-truck-286255/"
     }
    ]
   }
@@ -2407,7 +2407,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "Board approved buying a new truck",
-  "detail": "fire truck",
+  "detail": "Fire truck",
   "signal_date": "2026-07-20",
   "proof_url": "https://www.hamptonboro.org/add-legal-notice/mayor-council-notices/506-capital-ordinance-no-08-2026-authorizing-the-making-of-public-improvements-appropriating-therefor-the-sum-of-110-000-00-from-the-reserve-for-fire-truck/file",
   "proof_quote": "APPROPRIATING THEREFOR THE SUM OF $110,000.00 FROM THE RESERVE FOR FIRE TRUCK",
@@ -2446,7 +2446,7 @@
   "type": "Volunteer",
   "website": "https://www.hohokus.org",
   "why_call": "Won a grant for a new truck",
-  "detail": "rescue-engine",
+  "detail": "Rescue-engine",
   "signal_date": "2025-12-15",
   "proof_url": "https://www.fireapparatusmagazine.com/?p=201621",
   "proof_quote": "This includes a $975,000 award toward the cost of the Borough's new rescue-engine through the FY26",
@@ -2515,9 +2515,9 @@
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [
@@ -2624,10 +2624,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {

@@ -14,6 +14,7 @@ import {
 } from "@/apparatus-signals/lib/data";
 import {
   capitalize,
+  currentMonth,
   formatDate,
   formatMoney,
   formatScore,
@@ -28,10 +29,10 @@ import { NAMED, bandLabel, typePlural } from "@/apparatus-signals/lib/trucks";
 import {
   BASIS_LEGEND,
   READ_BY_LABEL,
-  STAGE_WHEN,
   VERDICT_LABELS,
   checkedLabel,
   hitRatesFor,
+  isOpenStage,
   kindLabel,
   leadTimeCasesFor,
 } from "@/apparatus-signals/lib/words";
@@ -67,9 +68,14 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
 /** The heading above already says like for like, so the type_how tail would repeat it. */
 const LIKE_FOR_LIKE = /;\s*departments usually replace like with like\.?$/;
 
-/** The "When it should list" line, from the lead's stage and window. */
-function whenLine(dept: Department, signals: Signal[]): string {
-  if (dept.stage === "sold") return "Already sold.";
+/** The "When it should list" line, from the lead's stage and window, against the build month. */
+function whenLine(dept: Department, signals: Signal[], month: string): string {
+  if (dept.stage === "sold") {
+    return dept.top_kind === "bids_closed"
+      ? "Bids closed; we have not found the result."
+      : "Already sold.";
+  }
+  if (dept.stage === "gear") return "No truck to list: it is selling gear.";
   if (dept.stage === "listed") {
     const closes = signals
       .filter((s) => s.kind === "auction_open" && s.date)
@@ -80,7 +86,8 @@ function whenLine(dept: Department, signals: Signal[]): string {
   }
   if (!dept.window) return "No window set: no rule fits this signal.";
   const how = dept.window.how ? ` ${capitalize(dept.window.how.replace(/\.$/, ""))}.` : "";
-  return `Likely ${formatWindow(dept.window)}.${how}`;
+  const passed = dept.window.to < month;
+  return `${passed ? "Was due" : "Likely"} ${formatWindow(dept.window)}.${how}`;
 }
 
 function TruckSection({ dept }: { dept: Department }) {
@@ -208,7 +215,7 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
           ) : null}
         </dl>
         <p>
-          <span className="font-semibold">When it should list:</span> {whenLine(dept, signals)}
+          <span className="font-semibold">When it should list:</span> {whenLine(dept, signals, currentMonth())}
         </p>
       </header>
 
@@ -217,7 +224,9 @@ export default async function DepartmentPage({ params }: { params: Promise<{ sta
           The lead
         </h2>
         <p className="mt-1 text-lg font-semibold">
-          {STAGE_WHEN[dept.stage] ?? tierLabel(dept.tier)}: {dept.why_call}{" "}
+          {!isOpenStage(dept.stage)
+            ? kindLabel(dept.top_kind, method)
+            : `${tierLabel(dept.tier)}: ${dept.why_call}`}{" "}
           <BasisBadge basis={dept.basis} />
         </p>
         {dept.detail ? <p>{dept.detail}</p> : null}

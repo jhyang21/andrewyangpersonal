@@ -1,215 +1,5 @@
 [
  {
-  "checked": "confirmed",
-  "score": 6.0,
-  "department": "New Hartford Fire Department",
-  "registry_name": "New Hartford Fire Department",
-  "city": "New Hartford",
-  "county": "Litchfield",
-  "type": "Mostly volunteer",
-  "website": "https://newhartfordfire.com/",
-  "why_call": "Plans to sell a truck",
-  "detail": "new fire truck (town is taking delivery); replaces 2004 Ferrara pumper (49,981 miles)",
-  "signal_date": "2026-08-03",
-  "proof_url": "https://www.torringtonct.gov/AgendaCenter/ViewFile/Minutes/_08052026-829",
-  "proof_quote": "approve the purchase of the 2004 Ferrara Pumper from the New Hartford Fire Department for $80,000",
-  "other_signals": "",
-  "named_in_source": "New Hartford Fire Department",
-  "name_match": "exact",
-  "fdid": "01130",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "2004 Ferrara pumper (49,981 miles)",
-   "type": "pumper",
-   "year": 2004,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Aug 2026"
-  },
-  "rank": 1,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "21-25",
-   "n": 77,
-   "median": 5100,
-   "p25": 3550,
-   "p75": 8000,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
-     "price": 7000.0,
-     "date": "2026-10-21",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
-    },
-    {
-     "item": "2004 HME Fire Pumper Truck",
-     "price": 4800.0,
-     "date": "2026-01-24",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0002-2004-hme-fire-pumper-truck-286256/"
-    },
-    {
-     "item": "2003 Pierce Sabre Fire Pumper Truck",
-     "price": 1850.0,
-     "date": "2025-12-02",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/45162/item/lot-0101-2003-pierce-sabre-fire-pumper-truck-282488/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed",
-  "score": 6.0,
-  "department": "Noroton Heights Fire Department, Inc.",
-  "registry_name": "Noroton Heights Fire Department, Inc.",
-  "city": "Darien",
-  "county": "Fairfield",
-  "type": "Volunteer",
-  "website": "http://www.norotonheightsfd.com/",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces Mack CF pumper, about 74,000 miles (retired about eight months earlier)",
-  "signal_date": "2026-08-13",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/darien-ct-fire-departments-retired-pumper-truck-is-up-for-auction/",
-  "proof_quote": "Bids can be made on the Mack CF fire truck 24 hours a day through Aug. 20",
-  "other_signals": "",
-  "named_in_source": "Noroton Heights Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "05051",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "Mack CF pumper, about 74,000 miles (retired about eight months earlier)",
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Aug 2026"
-  },
-  "rank": 2,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Mack MR688P Pumper",
-     "price": 3300.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0013-1993-mack-mr688p-pumper-132705/"
-    },
-    {
-     "item": "1993 Mack MR688P Pumper",
-     "price": 3050.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0014-1993-mack-mr688p-pumper-132704/"
-    },
-    {
-     "item": "1985 Mack CF686FC Pumper",
-     "price": 3650.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed",
-  "score": 5.0,
-  "department": "Ansonia Fire Department",
-  "registry_name": "Ansonia Fire Department",
-  "city": "Ansonia",
-  "county": "New Haven",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces Engine 4",
-  "signal_date": "2026-04-01",
-  "proof_url": "https://firenews.org/news-2026CT.html",
-  "proof_quote": "Engine 4 is in the process of being sold off.",
-  "other_signals": "",
-  "named_in_source": "Ansonia Fire Department",
-  "name_match": "exact",
-  "fdid": "06010",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "Engine 4",
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Apr 2026"
-  },
-  "rank": 3,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Mack MR688P Pumper",
-     "price": 3300.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0013-1993-mack-mr688p-pumper-132705/"
-    },
-    {
-     "item": "1993 Mack MR688P Pumper",
-     "price": 3050.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0014-1993-mack-mr688p-pumper-132704/"
-    },
-    {
-     "item": "1985 Mack CF686FC Pumper",
-     "price": 3650.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
-    }
-   ]
-  }
- },
- {
   "checked": "trade_press",
   "score": 5.0,
   "department": "Bradley International Airport Fire Department",
@@ -243,80 +33,10 @@
    "to": "2026-10",
    "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
   },
-  "rank": 4,
+  "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
- },
- {
-  "checked": "corrected",
-  "score": 5.0,
-  "department": "Columbia Volunteer Fire Department, Inc.",
-  "registry_name": "Columbia Volunteer Fire Department, Inc.",
-  "city": "Columbia",
-  "county": "Tolland",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces Engine 205 (1991 pumper)",
-  "signal_date": "2026-01-26",
-  "proof_url": "https://www.fireapparatusmagazine.com/?p=203235",
-  "proof_quote": "The town of Columbia approved the sale of a $25,000 fire engine to the town of Hebron.",
-  "other_signals": "",
-  "named_in_source": "Columbia Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "03030",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "Engine 205 (1991 pumper)",
-   "type": "pumper",
-   "year": 1991,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Jan 2026"
-  },
-  "rank": 5,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "31+",
-   "n": 191,
-   "median": 3600,
-   "p25": 2438,
-   "p75": 5200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1985 Mack CF686FC Pumper",
-     "price": 3650.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
-    },
-    {
-     "item": "1984 Sutphen Deluge Pumper",
-     "price": 2500.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0020-1984-sutphen-deluge-pumper-132711/"
-    },
-    {
-     "item": "1991 International 4900 Pumper Fire Truck",
-     "price": 5500.0,
-     "date": "2026-02-17",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46119/item/lot-0001-1991-international-4900-pumper-fire-truck-288169/"
-    }
-   ]
-  }
  },
  {
   "checked": "confirmed",
@@ -328,7 +48,7 @@
   "type": "Volunteer",
   "website": "https://norfolkfire.org/",
   "why_call": "Money approved for a new truck",
-  "detail": "pumper from lowest of six bids; delivery in just under three years; replaces pumper, 31 years old",
+  "detail": "Pumper from lowest of six bids; delivery in just under three years; replaces pumper, 31 years old",
   "signal_date": "2026-08-20",
   "proof_url": "https://norfolkct.org/town-meeting-september-2-to-act-on-fire-truck-garage/",
   "proof_quote": "The new truck will be delivered in just under three years and will replace a truck that is currently 31 years old.",
@@ -352,15 +72,15 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 6,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "31+",
-   "n": 191,
+   "n": 185,
    "median": 3600,
-   "p25": 2438,
+   "p25": 2425,
    "p75": 5200,
    "thin": false,
    "comps": [
@@ -384,115 +104,6 @@
      "date": "2025-11-14",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/44675/item/lot-0001-e-193-1994-pierce-pumper-280637/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed",
-  "score": 5.0,
-  "department": "Tolland Fire Department",
-  "registry_name": "Tolland Fire Department",
-  "city": "Tolland",
-  "county": "Tolland",
-  "type": "Mostly volunteer",
-  "website": "https://www.tollandfire.org/",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces 2007 Ford F350 Super Duty 4x4 (fire department utility truck, obsolete, not operable)",
-  "signal_date": "2024-12-09",
-  "proof_url": "https://patch.com/connecticut/tolland/tolland-likely-decommission-fire-vehicle",
-  "proof_quote": "It is being proposed that the truck be traded or sold off as surplus property.",
-  "other_signals": "",
-  "named_in_source": "Tolland Fire Department",
-  "name_match": "exact",
-  "fdid": "03100",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "2007 Ford F350 Super Duty 4x4 (fire department utility truck, obsolete, not operable)",
-   "type": "other",
-   "year": 2007,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Dec 2024"
-  },
-  "rank": 7,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "partly",
-  "score": 5.0,
-  "department": "Town of Montville Fire Department",
-  "registry_name": "Town of Montville Fire Department",
-  "city": "Uncasville",
-  "county": "New London",
-  "type": "Mostly volunteer",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "; replaces 1991 KME Spartan engine (no title)",
-  "signal_date": "2025-10-16",
-  "proof_url": "https://www.fireapparatusmagazine.com/?p=198331",
-  "proof_quote": "most bids come in in the last few minutes.",
-  "other_signals": "",
-  "named_in_source": "Town of Montville Fire Department",
-  "name_match": "exact",
-  "fdid": "08110",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "1991 KME Spartan engine (no title)",
-   "type": "pumper",
-   "year": 1991,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Oct 2025"
-  },
-  "rank": 8,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "31+",
-   "n": 191,
-   "median": 3600,
-   "p25": 2438,
-   "p75": 5200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1985 Mack CF686FC Pumper",
-     "price": 3650.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
-    },
-    {
-     "item": "1984 Sutphen Deluge Pumper",
-     "price": 2500.0,
-     "date": "2020-07-14",
-     "state": "CT",
-     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0020-1984-sutphen-deluge-pumper-132711/"
-    },
-    {
-     "item": "1991 International 4900 Pumper Fire Truck",
-     "price": 5500.0,
-     "date": "2026-02-17",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46119/item/lot-0001-1991-international-4900-pumper-fire-truck-288169/"
     }
    ]
   }
@@ -527,20 +138,20 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-10",
-   "to": "2028-10",
-   "how": "ordered Oct 2026; builds take a year or more"
+   "from": "2027-02",
+   "to": "2027-10",
+   "how": "ordered Oct 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 9,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -601,7 +212,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -616,7 +227,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "replacement for Rescue 5; replaces Rescue 5 (1997)",
+  "detail": "Replacement for Rescue 5; replaces Rescue 5 (1997)",
   "signal_date": "2025-10-06",
   "proof_url": "https://municipal-documents.s3.amazonaws.com/uploads/litchfield-ct/board-of-fire-commissioners-ems/documents/minutes/146228/FC%20Minutes%20Oct%2014%2C%202025%20Special%20Meeting.pdf",
   "proof_quote": "LFD voted to use $600,000 of company funds to replace Rescue 5",
@@ -636,11 +247,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-10",
-   "to": "2027-10",
-   "how": "ordered Oct 2025; builds take a year or more"
+   "from": "2026-02",
+   "to": "2026-10",
+   "how": "ordered Oct 2025; the usual build time has passed"
   },
-  "rank": 11,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -710,7 +321,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 12,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -749,7 +360,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 13,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -784,20 +395,20 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-04",
-   "to": "2028-04",
-   "how": "ordered Apr 2026; builds take a year or more"
+   "from": "2026-08",
+   "to": "2027-04",
+   "how": "ordered Apr 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 14,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -858,16 +469,16 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 15,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -928,10 +539,80 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 16,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
+ },
+ {
+  "checked": "confirmed",
+  "score": 3.0,
+  "department": "Ansonia Fire Department",
+  "registry_name": "Ansonia Fire Department",
+  "city": "Ansonia",
+  "county": "New Haven",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Plans to sell a truck",
+  "detail": "Selling: Engine 4. being sold off (exact day not given; April 2026 news item)",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://firenews.org/news-2026CT.html",
+  "proof_quote": "Engine 4 is in the process of being sold off.",
+  "other_signals": "",
+  "named_in_source": "Ansonia Fire Department",
+  "name_match": "exact",
+  "fdid": "06010",
+  "top_kind": "sale_planned",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": "Engine 4",
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-07",
+   "how": "sale announced Apr 2026; probably sold by now"
+  },
+  "rank": 11,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3300.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0013-1993-mack-mr688p-pumper-132705/"
+    },
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3050.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0014-1993-mack-mr688p-pumper-132704/"
+    },
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    }
+   ]
+  }
  },
  {
   "checked": "trade_press",
@@ -965,18 +646,18 @@
   "window": {
    "from": "2027-12",
    "to": "2028-08",
-   "how": "new truck due Winter 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Winter 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 17,
+  "rank": 12,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1013,7 +694,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "Money approved for a new truck",
-  "detail": "quint engine pumper truck with small aerial device",
+  "detail": "Quint engine pumper truck with small aerial device",
   "signal_date": "2025-05-01",
   "proof_url": "https://clintonct.org/DocumentCenter/View/15060/2025-05-01-Legal-Notice-Special-Town-Meeting-and-Referendum",
   "proof_quote": "Shall the Town of Clinton appropriate $1,600,000 for the purchase of fire apparatus and equipment for the Clinton Volunteer Fire Department, Inc.",
@@ -1037,7 +718,7 @@
    "to": "2027-05",
    "how": "money approved May 2025; order, build, then sale"
   },
-  "rank": 18,
+  "rank": 13,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1052,7 +733,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "Won a grant for a new truck",
-  "detail": "ambulance (state grant passed through the town)",
+  "detail": "Ambulance (state grant passed through the town)",
   "signal_date": "2026-01-22",
   "proof_url": "https://www.franklinct.gov/AgendaCenter/ViewFile/Minutes/_01222026-81",
   "proof_quote": "allowing funds to move through the Town directly to the FVFD 501(c)(3) without the Town being listed as the owner",
@@ -1076,7 +757,7 @@
    "to": "2029-01",
    "how": "grant awarded Jan 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 19,
+  "rank": 14,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1113,18 +794,18 @@
   "window": {
    "from": "2027-09",
    "to": "2028-03",
-   "how": "new truck due Sep 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 20,
+  "rank": 15,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1183,18 +864,18 @@
   "window": {
    "from": "2027-01",
    "to": "2027-07",
-   "how": "new truck due Jan 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
+  "rank": 16,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1224,6 +905,45 @@
  {
   "checked": "confirmed",
   "score": 3.0,
+  "department": "Tolland Fire Department",
+  "registry_name": "Tolland Fire Department",
+  "city": "Tolland",
+  "county": "Tolland",
+  "type": "Mostly volunteer",
+  "website": "https://www.tollandfire.org/",
+  "why_call": "Plans to sell a truck",
+  "detail": "Selling: 2007 Ford F350 Super Duty 4x4 (fire department utility truck, obsolete, not operable). trade or sell as surplus; possibly listed on GovDeals",
+  "signal_date": "2024-12-09",
+  "proof_url": "https://patch.com/connecticut/tolland/tolland-likely-decommission-fire-vehicle",
+  "proof_quote": "It is being proposed that the truck be traded or sold off as surplus property.",
+  "other_signals": "",
+  "named_in_source": "Tolland Fire Department",
+  "name_match": "exact",
+  "fdid": "03100",
+  "top_kind": "sale_planned",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": "2007 Ford F350 Super Duty 4x4 (fire department utility truck, obsolete, not operable)",
+   "type": "other",
+   "year": 2007,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2024-12",
+   "to": "2025-03",
+   "how": "sale announced Dec 2024; probably sold by now"
+  },
+  "rank": 17,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "confirmed",
+  "score": 3.0,
   "department": "Town of Farmington Fire Department",
   "registry_name": "Town of Farmington Fire Department",
   "city": "Farmington",
@@ -1231,7 +951,7 @@
   "type": "Mostly volunteer",
   "website": "https://www.farmington-ct.org",
   "why_call": "Board approved buying a new truck",
-  "detail": "aerial quint (Tunxis Hose) and pumper engine (East Farms); replaces Engine 5 and Rescue 15 (20 years old); Engine 10 (14 years old)",
+  "detail": "Aerial quint (Tunxis Hose) and pumper engine (East Farms); replaces Engine 5 and Rescue 15 (20 years old); Engine 10 (14 years old)",
   "signal_date": "2024-12-10",
   "proof_url": "https://patch.com/connecticut/farmington/farmington-oks-3-1-million-contracts-new-fire-trucks",
   "proof_quote": "The truck will eventually replace Engine 5 and Rescue 15, both of which are 20 years old",
@@ -1255,7 +975,7 @@
    "to": "2026-12",
    "how": "money approved Dec 2024; order, build, then sale"
   },
-  "rank": 22,
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1292,6 +1012,76 @@
   }
  },
  {
+  "checked": "partly",
+  "score": 3.0,
+  "department": "Town of Montville Fire Department",
+  "registry_name": "Town of Montville Fire Department",
+  "city": "Uncasville",
+  "county": "New London",
+  "type": "Mostly volunteer",
+  "website": "",
+  "why_call": "Plans to sell a truck",
+  "detail": "Selling: 1991 KME Spartan engine (no title). online public auction, $5,000 opening bid",
+  "signal_date": "2025-10-16",
+  "proof_url": "https://www.fireapparatusmagazine.com/?p=198331",
+  "proof_quote": "most bids come in in the last few minutes.",
+  "other_signals": "",
+  "named_in_source": "Town of Montville Fire Department",
+  "name_match": "exact",
+  "fdid": "08110",
+  "top_kind": "sale_planned",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": "1991 KME Spartan engine (no title)",
+   "type": "pumper",
+   "year": 1991,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-10",
+   "to": "2026-01",
+   "how": "sale announced Oct 2025; probably sold by now"
+  },
+  "rank": 19,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "31+",
+   "n": 185,
+   "median": 3600,
+   "p25": 2425,
+   "p75": 5200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    },
+    {
+     "item": "1984 Sutphen Deluge Pumper",
+     "price": 2500.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0020-1984-sutphen-deluge-pumper-132711/"
+    },
+    {
+     "item": "1991 International 4900 Pumper Fire Truck",
+     "price": 5500.0,
+     "date": "2026-02-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46119/item/lot-0001-1991-international-4900-pumper-fire-truck-288169/"
+    }
+   ]
+  }
+ },
+ {
   "checked": "confirmed",
   "score": 3.0,
   "department": "Weston Volunteer Fire Department",
@@ -1321,11 +1111,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-09",
-   "to": "2028-09",
-   "how": "ordered Sep 2026; builds take a year or more"
+   "from": "2027-01",
+   "to": "2027-09",
+   "how": "ordered Sep 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 23,
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1360,11 +1150,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-03",
-   "to": "2028-03",
-   "how": "ordered Mar 2026; builds take a year or more"
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 24,
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1399,11 +1189,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-05",
-   "to": "2028-05",
-   "how": "ordered May 2026; builds take a year or more"
+   "from": "2026-09",
+   "to": "2027-05",
+   "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 25,
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1418,7 +1208,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "two Spartan/4-Guys pumpers, delivery expected 3rd quarter 2028",
+  "detail": "Two Spartan/4-Guys pumpers, delivery expected 3rd quarter 2028",
   "signal_date": "2026-07-01",
   "proof_url": "https://firenews.org/news-2026CT.html",
   "proof_quote": "has placed and order for two (2) Spartan/4-Guys pumpers with delivery expected in 3rd quarter of 2028",
@@ -1438,11 +1228,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-07",
-   "to": "2028-07",
-   "how": "ordered Jul 2026; builds take a year or more"
+   "from": "2026-11",
+   "to": "2027-07",
+   "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 26,
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1457,7 +1247,7 @@
   "type": "Mostly volunteer",
   "website": "https://www.guilfordfire.com/",
   "why_call": "New truck on order",
-  "detail": "fire engine bought with 2024 bond funds; board approved equipment to outfit it",
+  "detail": "Fire engine bought with 2024 bond funds; board approved equipment to outfit it",
   "signal_date": "2026-04-06",
   "proof_url": "https://patch.com/connecticut/guilford/guilford-selectmen-approve-142k-outfit-fire-truck",
   "proof_quote": "The Board of Selectmen on April 6 unanimously approved more than $142,000 in capital purchases to outfit a fire engine previously acquired through 2024 bond funding.",
@@ -1477,11 +1267,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-04",
-   "to": "2028-04",
-   "how": "ordered Apr 2026; builds take a year or more"
+   "from": "2026-08",
+   "to": "2027-04",
+   "how": "ordered Apr 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 27,
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1516,11 +1306,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-08",
-   "to": "2027-08",
-   "how": "ordered Aug 2025; builds take a year or more"
+   "from": "2025-12",
+   "to": "2026-08",
+   "how": "ordered Aug 2025; the usual build time has passed"
   },
-  "rank": 28,
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1555,11 +1345,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2025-12",
-   "to": "2026-12",
-   "how": "ordered Dec 2024; builds take a year or more"
+   "from": "2025-04",
+   "to": "2025-12",
+   "how": "ordered Dec 2024; the usual build time has passed"
   },
-  "rank": 29,
+  "rank": 26,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1594,13 +1384,48 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-09",
-   "to": "2027-09",
-   "how": "ordered Sep 2025; builds take a year or more"
+   "from": "2026-01",
+   "to": "2026-09",
+   "how": "ordered Sep 2025; the usual build time has passed"
   },
-  "rank": 30,
+  "rank": 27,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
+ },
+ {
+  "checked": "confirmed",
+  "score": 2.0,
+  "department": "New Hartford Fire Department",
+  "registry_name": "New Hartford Fire Department",
+  "city": "New Hartford",
+  "county": "Litchfield",
+  "type": "Mostly volunteer",
+  "website": "https://newhartfordfire.com/",
+  "why_call": "Sold its old truck direct",
+  "detail": "Selling: 2004 Ferrara pumper (49,981 miles). sold to the City of Torrington for $80,000; Torrington approved the purchase on 3 Aug 2026",
+  "signal_date": "2026-08-03",
+  "proof_url": "https://www.torringtonct.gov/AgendaCenter/ViewFile/Minutes/_08052026-829",
+  "proof_quote": "approve the purchase of the 2004 Ferrara Pumper from the New Hartford Fire Department for $80,000",
+  "other_signals": "",
+  "named_in_source": "New Hartford Fire Department",
+  "name_match": "exact",
+  "fdid": "01130",
+  "top_kind": "already_sold",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "sold",
+  "window": null,
+  "rank": 28,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
@@ -1633,13 +1458,48 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-07",
-   "to": "2028-07",
-   "how": "ordered Jul 2026; builds take a year or more"
+   "from": "2026-11",
+   "to": "2027-07",
+   "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 31,
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "confirmed",
+  "score": 2.0,
+  "department": "Noroton Heights Fire Department, Inc.",
+  "registry_name": "Noroton Heights Fire Department, Inc.",
+  "city": "Darien",
+  "county": "Fairfield",
+  "type": "Volunteer",
+  "website": "http://www.norotonheightsfd.com/",
+  "why_call": "Took bids on a truck; result not found",
+  "detail": "Selling: Mack CF pumper, about 74,000 miles (retired about eight months earlier). online government surplus auction, bidding through Aug. 20, 2026; proceeds go to the town",
+  "signal_date": "2026-08-20",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/darien-ct-fire-departments-retired-pumper-truck-is-up-for-auction/",
+  "proof_quote": "Bids can be made on the Mack CF fire truck 24 hours a day through Aug. 20",
+  "other_signals": "",
+  "named_in_source": "Noroton Heights Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "05051",
+  "top_kind": "bids_closed",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "sold",
+  "window": null,
+  "rank": 30,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
@@ -1672,11 +1532,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-11",
-   "to": "2027-11",
-   "how": "ordered Nov 2025; builds take a year or more"
+   "from": "2026-03",
+   "to": "2026-11",
+   "how": "ordered Nov 2025; builds have taken four to twelve months in the back-test"
   },
-  "rank": 32,
+  "rank": 31,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1711,11 +1571,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-09",
-   "to": "2027-09",
-   "how": "ordered Sep 2025; builds take a year or more"
+   "from": "2026-01",
+   "to": "2026-09",
+   "how": "ordered Sep 2025; the usual build time has passed"
   },
-  "rank": 33,
+  "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1730,7 +1590,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "two Spartan FB-94/Fouts pumpers (Bulldog)",
+  "detail": "Two Spartan FB-94/Fouts pumpers (Bulldog)",
   "signal_date": "2026-08-01",
   "proof_url": "https://firenews.org/news-2026CT.html",
   "proof_quote": "has placed an order with Bulldog for two (2) Spartan FB-94/Fouts pumpers",
@@ -1750,11 +1610,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-08",
-   "to": "2028-08",
-   "how": "ordered Aug 2026; builds take a year or more"
+   "from": "2026-12",
+   "to": "2027-08",
+   "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 34,
+  "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1769,7 +1629,7 @@
   "type": "",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "two Seagrave Marauder 2000 GPM/1000 gal pumpers",
+  "detail": "Two Seagrave Marauder 2000 GPM/1000 gal pumpers",
   "signal_date": "2024-12-01",
   "proof_url": "https://firenews.org/news-2026CT.html",
   "proof_quote": "has placed an order with FWD Seagrave for two (2) Seagrave Marauder 2000 GPM/1000 gal pumpers",
@@ -1789,11 +1649,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2025-12",
-   "to": "2026-12",
-   "how": "ordered Dec 2024; builds take a year or more"
+   "from": "2025-04",
+   "to": "2025-12",
+   "how": "ordered Dec 2024; the usual build time has passed"
   },
-  "rank": 35,
+  "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1808,7 +1668,7 @@
   "type": "Volunteer",
   "website": "http://www.southburyfire.com/",
   "why_call": "New truck on order",
-  "detail": "twin rescue pumpers on Spartan chassis (4-Guys), 2000 GPM (delivery expected in 2028)",
+  "detail": "Twin rescue pumpers on Spartan chassis (4-Guys), 2000 GPM (delivery expected in 2028)",
   "signal_date": "2026-03-01",
   "proof_url": "https://firenews.org/news-2026CT.html",
   "proof_quote": "has on order with 4-Guys twin rescue pumpers built on Spartan chassis' with 2000 GPM pumps",
@@ -1828,11 +1688,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-03",
-   "to": "2028-03",
-   "how": "ordered Mar 2026; builds take a year or more"
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 36,
+  "rank": 35,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1867,11 +1727,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-10",
-   "to": "2027-10",
-   "how": "ordered Oct 2025; builds take a year or more"
+   "from": "2026-02",
+   "to": "2026-10",
+   "how": "ordered Oct 2025; the usual build time has passed"
   },
-  "rank": 37,
+  "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1906,11 +1766,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-02",
-   "to": "2028-02",
-   "how": "ordered Feb 2026; builds take a year or more"
+   "from": "2026-06",
+   "to": "2027-02",
+   "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 38,
+  "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1945,10 +1805,45 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-02",
-   "to": "2028-02",
-   "how": "ordered Feb 2026; builds take a year or more"
+   "from": "2026-06",
+   "to": "2027-02",
+   "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
   },
+  "rank": 38,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "corrected",
+  "score": 1.0,
+  "department": "Columbia Volunteer Fire Department, Inc.",
+  "registry_name": "Columbia Volunteer Fire Department, Inc.",
+  "city": "Columbia",
+  "county": "Tolland",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Sold its old truck direct",
+  "detail": "Selling: Engine 205 (1991 pumper). sold to Hebron, a mutual aid partner, for $25,000",
+  "signal_date": "2026-01-26",
+  "proof_url": "https://www.fireapparatusmagazine.com/?p=203235",
+  "proof_quote": "The town of Columbia approved the sale of a $25,000 fire engine to the town of Hebron.",
+  "other_signals": "",
+  "named_in_source": "Columbia Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "03030",
+  "top_kind": "already_sold",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "sold",
+  "window": null,
   "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",

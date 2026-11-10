@@ -7,23 +7,22 @@ import {
   formatMoney,
   formatNumber,
   formatScore,
-  likelyListed,
   tierLabel,
   tierOrder,
   websiteHref,
   websiteText,
 } from "@/apparatus-signals/lib/format";
-import type { Basis, Checked, Guide, ListingWindow, ReadBy, Stage, Truck } from "@/apparatus-signals/lib/data";
+import type { Basis, Checked, Guide, ReadBy, Stage, Truck } from "@/apparatus-signals/lib/data";
 import { guideTitle, truckLabel } from "@/apparatus-signals/lib/trucks";
 import {
   BASIS_LEGEND,
   DONE_NOTE,
   READ_BY_LABEL,
-  STAGE_LABEL,
   STAGE_ORDER,
-  STAGE_WHEN,
   checkedLabel,
-  isOpenStage,
+  isDoneStage,
+  shortWhen,
+  stageHeading,
 } from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
 import Ext from "@/apparatus-signals/ui/Ext";
@@ -31,7 +30,7 @@ import Ext from "@/apparatus-signals/ui/Ext";
 export interface LeadRow {
   id: string;
   href: string;
-  /** Place among the state's leads not yet listed; null for listed and sold. */
+  /** Place among the state's open leads (surplus, replacing); null for the rest. */
   rank: number | null;
   tier: string;
   score: number;
@@ -55,7 +54,9 @@ export interface LeadRow {
   read_by: ReadBy;
   kinds: string[];
   stage: Stage;
-  window: ListingWindow | null;
+  top_kind: string;
+  /** The Likely listed cell, worked out on the server against the build month. */
+  likely: string;
 }
 
 export interface KindOption {
@@ -67,7 +68,7 @@ type SortKey = "score" | "date";
 
 const COLUMNS = 10;
 
-/** Unranked rows (listed, sold) sort after ranked ones and keep their order. */
+/** Unranked rows (gear, listed, sold) sort after ranked ones and keep their order. */
 function byRank(a: LeadRow, b: LeadRow): number {
   return (a.rank ?? Number.MAX_SAFE_INTEGER) - (b.rank ?? Number.MAX_SAFE_INTEGER);
 }
@@ -169,23 +170,27 @@ export default function LeadTable({
       <div className="space-y-8">
         {groups.map(({ stage, rows: groupRows }) => {
           const headingId = `stage-${stage}`;
+          const label = stageHeading(
+            stage,
+            rows.filter((r) => r.stage === stage).map((r) => r.top_kind),
+          );
           const heading = (
             <>
-              {STAGE_LABEL[stage]}{" "}
+              {label}{" "}
               <span className="num font-normal text-as-muted">({formatNumber(groupRows.length)})</span>
             </>
           );
           const body = groupRows.length ? (
             <GroupTable
               rows={groupRows}
-              caption={`${STAGE_LABEL[stage]}, ${stateName}`}
+              caption={`${label}, ${stateName}`}
               open={open}
               toggle={toggle}
             />
           ) : (
             <p className="text-as-ink-2">No leads here match these filters.</p>
           );
-          if (!isOpenStage(stage)) {
+          if (isDoneStage(stage)) {
             return (
               <details key={stage}>
                 <summary className="cursor-pointer">
@@ -282,10 +287,10 @@ function GroupTable({
                   )}
                 </td>
                 <td className="whitespace-nowrap" data-label="Likely listed">
-                  {likelyListed(r)}
+                  {r.likely}
                 </td>
                 <td data-label="When" className={r.tier.startsWith("1") ? "font-semibold" : ""}>
-                  {STAGE_WHEN[r.stage] ?? tierLabel(r.tier)} <BasisBadge basis={r.basis} />
+                  {shortWhen(r.stage, r.top_kind) ?? tierLabel(r.tier)} <BasisBadge basis={r.basis} />
                 </td>
                 <td className="r" data-label="Score">
                   {formatScore(r.score)}

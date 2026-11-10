@@ -1,7 +1,73 @@
 [
  {
+  "checked": "auction_site",
+  "score": 10.0,
+  "department": "Laurens Fire District",
+  "registry_name": "Laurens Fire District, Mount Vision Volunteer Fire Department",
+  "city": "Mount Vision",
+  "county": "Otsego",
+  "type": "Volunteer",
+  "website": "mountvisionfd.com",
+  "why_call": "Fire truck at auction now",
+  "detail": "2009 GMC TopKick C4500 Ambulance (current bid $710)",
+  "signal_date": "2026-11-10",
+  "proof_url": "https://www.auctionsinternational.com/auction/laurens-fire-district-ny-49585-49585/bidgallery/",
+  "proof_quote": "LAURENS FIRE DISTRICT-NY #49585 (2 lots) / Lot # 0001 2009 GMC TopKick C4500 Ambulance",
+  "other_signals": "Money approved for a new truck: New 2026 ambulance and new 2026 pumper (special vote 19 May 2026; result not posted) | Gear at auction now (no truck): 2022 Big Tex 70PI-18XBK 18 Foot Trailer (current bid $2,350)",
+  "named_in_source": "Laurens Fire District",
+  "name_match": "hand-checked alias",
+  "fdid": "39014",
+  "top_kind": "auction_open",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": "2009 GMC TopKick C4500 Ambulance",
+   "type": "ambulance",
+   "year": 2009,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
+  "stage": "listed",
+  "window": null,
+  "rank": 1,
+  "tier": "1 Call this week",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "ambulance",
+   "band": "16-20",
+   "n": 67,
+   "median": 3800,
+   "p25": 2312,
+   "p75": 5850,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2009 Ford E450 Ambulance",
+     "price": 6200.0,
+     "date": "2026-01-06",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45665/item/lot-0001-2009-ford-e450-ambulance-285381/"
+    },
+    {
+     "item": "2001 Ford E450 Ambulance",
+     "price": 5100.0,
+     "date": "2018-06-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/14026/item/lot-0002-2001-ford-e450-ambulance-85500/"
+    },
+    {
+     "item": "2001 Ford E450 Type III Ambulance",
+     "price": 5300.0,
+     "date": "2018-04-13",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/13728/item/lot-0001-2001-ford-e450-type-iii-ambulance-83793/"
+    }
+   ]
+  }
+ },
+ {
   "checked": "confirmed",
-  "score": 12.0,
+  "score": 10.0,
   "department": "Windham Fire District No. 1",
   "registry_name": "Hensonville Hose Company, Inc.",
   "city": "Hensonville",
@@ -13,7 +79,7 @@
   "signal_date": "2026-08-13",
   "proof_url": "https://townofwindhamny.gov/legal-notice/notice-of-permissive-referendum-surplus-fire-apparatus-and-equipment/76292/",
   "proof_quote": "1998 Ford Tanker that is no longer necessary for the uses or purposes of the Fire District",
-  "other_signals": "Plans to sell a truck: 1998 Ford tandem-axle tanker truck, 1,000 GPM Darley pump | Money approved for a new truck: New tanker truck",
+  "other_signals": "Took bids on a truck; result not found: 1998 Ford tandem-axle tanker truck, 1,000 GPM Darley pump | Money approved for a new truck: New tanker truck",
   "named_in_source": "Windham Fire District No. 1",
   "name_match": "hand-checked alias",
   "fdid": "20013",
@@ -29,11 +95,11 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
+   "from": "2026-08",
+   "to": "2026-11",
    "how": "voted to sell Aug 2026"
   },
-  "rank": 1,
+  "rank": 2,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -71,72 +137,6 @@
  },
  {
   "checked": "auction_site",
-  "score": 10.0,
-  "department": "Laurens Fire District",
-  "registry_name": "Laurens Fire District, Mount Vision Volunteer Fire Department",
-  "city": "Mount Vision",
-  "county": "Otsego",
-  "type": "Volunteer",
-  "website": "mountvisionfd.com",
-  "why_call": "Fire truck at auction now",
-  "detail": "2009 GMC TopKick C4500 Ambulance (current bid $710)",
-  "signal_date": "2026-11-10",
-  "proof_url": "https://www.auctionsinternational.com/auction/laurens-fire-district-ny-49585-49585/bidgallery/",
-  "proof_quote": "LAURENS FIRE DISTRICT-NY #49585 (2 lots) / Lot # 0001 2009 GMC TopKick C4500 Ambulance",
-  "other_signals": "Money approved for a new truck: New 2026 ambulance and new 2026 pumper (special vote 2026-05-19; result not found) | Gear at auction now (no truck): 2022 Big Tex 70PI-18XBK 18 Foot Trailer (current bid $2,350)",
-  "named_in_source": "Laurens Fire District",
-  "name_match": "hand-checked alias",
-  "fdid": "39014",
-  "top_kind": "auction_open",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "2009 GMC TopKick C4500 Ambulance",
-   "type": "ambulance",
-   "year": 2009,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "listed",
-  "window": null,
-  "rank": 2,
-  "tier": "1 Call this week",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "ambulance",
-   "band": "16-20",
-   "n": 70,
-   "median": 3825,
-   "p25": 2369,
-   "p75": 5625,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2009 Ford E450 Ambulance",
-     "price": 6200.0,
-     "date": "2026-01-06",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/45665/item/lot-0001-2009-ford-e450-ambulance-285381/"
-    },
-    {
-     "item": "2001 Ford E450 Ambulance",
-     "price": 5100.0,
-     "date": "2018-06-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/14026/item/lot-0002-2001-ford-e450-ambulance-85500/"
-    },
-    {
-     "item": "2001 Ford E450 Type III Ambulance",
-     "price": 5300.0,
-     "date": "2018-04-13",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/13728/item/lot-0001-2001-ford-e450-type-iii-ambulance-83793/"
-    }
-   ]
-  }
- },
- {
-  "checked": "auction_site",
   "score": 8.5,
   "department": "Oxford Fire Department",
   "registry_name": "Oxford Fire Department",
@@ -149,7 +149,7 @@
   "signal_date": "2026-11-13",
   "proof_url": "https://www.auctionsinternational.com/auction/village-of-oxford-ny-48402-48402/item/2001-hme-central-states-fire-truck-305469/",
   "proof_quote": "VILLAGE OF OXFORD-NY #48402 (1 lots) / Lot # 0001: 2001 HME Central States Fire Truck",
-  "other_signals": "Board voted to sell a truck: Selling: 2001 KME aerial platform (EP-267). Public auction, per a search summary; the minutes could not be opened",
+  "other_signals": "Board voted to sell a truck: Selling: 2001 KME aerial platform (EP-267). Public auction planned (minutes not opened)",
   "named_in_source": "Village of Oxford",
   "name_match": "exact",
   "fdid": "09014",
@@ -237,7 +237,7 @@
   "guide": {
    "type": "pumper",
    "band": "26-30",
-   "n": 109,
+   "n": 108,
    "median": 5100,
    "p25": 3050,
    "p75": 6700,
@@ -338,7 +338,7 @@
   "window": {
    "from": "2026-09",
    "to": "2027-03",
-   "how": "new truck in service Sep 2026; the old one usually lists within six months"
+   "how": "new truck in service Sep 2026; we allow six months for the old one to list"
   },
   "rank": 6,
   "tier": "1 Call this week",
@@ -412,9 +412,9 @@
   "guide": {
    "type": "pumper",
    "band": "31+",
-   "n": 191,
+   "n": 185,
    "median": 3600,
-   "p25": 2438,
+   "p25": 2425,
    "p75": 5200,
    "thin": false,
    "comps": [
@@ -426,18 +426,18 @@
      "url": "https://www.auctionsinternational.com/auction/47028/item/lot-0001-1992-pierce-pumper-295314/"
     },
     {
-     "item": "1992 Pierce Pumper",
-     "price": 3050.0,
-     "date": "2026-04-11",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46754/item/lot-0001-1992-pierce-pumper-292113/"
-    },
-    {
      "item": "1991 Pierce Lance Pumper Truck",
      "price": 4550.0,
      "date": "2025-07-01",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/42962/item/lot-0001-1991-pierce-lance-pumper-truck-267424/"
+    },
+    {
+     "item": "1989 Pierce Lance Pumper Truck",
+     "price": 5200.0,
+     "date": "2023-10-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/34695/item/lot-0001-1989-pierce-lance-pumper-truck-215654/"
     }
    ]
   }
@@ -575,76 +575,6 @@
   }
  },
  {
-  "checked": "opened",
-  "score": 6.5,
-  "department": "Coldenham Fire Company",
-  "registry_name": "Coldenham Fire Company",
-  "city": "Walden",
-  "county": "Orange",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Plans to sell a truck",
-  "detail": "1975 Diamond Reo/4-Guys fire tanker",
-  "signal_date": "2026-08-10",
-  "proof_url": "https://www.townofnewburghny.gov/cn/news/index.cfm?NID=58674&jump2=0",
-  "proof_quote": "BID FOR 1975 Fire Tanker (sealed bids due 7:30 p.m. August 10, 2026)",
-  "other_signals": "New truck on order: New E-One pumper on order (2025-06), delivery October 2027",
-  "named_in_source": "Coldenham Fire District",
-  "name_match": "exact",
-  "fdid": "36006",
-  "top_kind": "sale_planned",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "1975 Diamond Reo/4-Guys fire tanker",
-   "type": "tanker",
-   "year": 1975,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "sale announced Aug 2026"
-  },
-  "rank": 10,
-  "tier": "1 Call this week",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "tanker",
-   "band": "31+",
-   "n": 53,
-   "median": 5300,
-   "p25": 2650,
-   "p75": 12400,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1970 Kaiser Jeep M51A2 6X6 Tanker",
-     "price": 4000.0,
-     "date": "2021-03-12",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/24010/item/lot-0060-1970-kaiser-jeep-m51a2-6x6-tanker-147880/"
-    },
-    {
-     "item": "1963 Jeep 2.5 Ton Tanker",
-     "price": 2300.0,
-     "date": "2014-10-07",
-     "state": null,
-     "url": "https://www.auctionsinternational.com/auction/3869/item/lot-0002-1963-jeep-25-ton-tanker-22462/"
-    },
-    {
-     "item": "1972 Dodge 800 Tanker",
-     "price": 2650.0,
-     "date": "2019-09-18",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/18854/item/lot-0003-1972-dodge-800-tanker-114539/"
-    }
-   ]
-  }
- },
- {
   "checked": "confirmed",
   "score": 6.5,
   "department": "Pine Hill Hose Company 5",
@@ -678,7 +608,7 @@
    "to": "2026-07",
    "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -715,9 +645,9 @@
   "window": {
    "from": "2026-09",
    "to": "2027-03",
-   "how": "new truck in service Sep 2026; the old one usually lists within six months"
+   "how": "new truck in service Sep 2026; we allow six months for the old one to list"
   },
-  "rank": 12,
+  "rank": 11,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -756,16 +686,16 @@
    "to": "2026-08",
    "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
   },
-  "rank": 13,
+  "rank": 12,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "ambulance",
    "band": "16-20",
-   "n": 70,
-   "median": 3825,
-   "p25": 2369,
-   "p75": 5625,
+   "n": 67,
+   "median": 3800,
+   "p25": 2312,
+   "p75": 5850,
    "thin": false,
    "comps": [
     {
@@ -822,11 +752,11 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "voted to sell Apr 2026"
+   "from": "2026-04",
+   "to": "2026-07",
+   "how": "voted to sell Apr 2026; probably sold by now"
   },
-  "rank": 14,
+  "rank": 13,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -892,11 +822,11 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "voted to sell Jul 2026"
+   "from": "2026-07",
+   "to": "2026-10",
+   "how": "voted to sell Jul 2026; probably sold by now"
   },
-  "rank": 15,
+  "rank": 14,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -966,16 +896,16 @@
    "to": "2027-02",
    "how": "sale announced"
   },
-  "rank": 16,
+  "rank": 15,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1036,7 +966,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 17,
+  "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1075,7 +1005,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 18,
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1112,18 +1042,18 @@
   "window": {
    "from": "2026-07",
    "to": "2027-01",
-   "how": "new truck in service Jul 2026; the old one usually lists within six months"
+   "how": "new truck in service Jul 2026; we allow six months for the old one to list"
   },
-  "rank": 19,
+  "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1180,7 +1110,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 20,
+  "rank": 19,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -1215,7 +1145,7 @@
   },
   "stage": "surplus",
   "window": null,
-  "rank": 21,
+  "rank": 20,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1254,16 +1184,16 @@
    "to": "2026-07",
    "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
   },
-  "rank": 22,
+  "rank": 21,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1320,7 +1250,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 23,
+  "rank": 22,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -1359,16 +1289,16 @@
    "to": "2025-09",
    "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
   },
-  "rank": 24,
+  "rank": 23,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1427,18 +1357,18 @@
   "window": {
    "from": "2027-06",
    "to": "2028-02",
-   "how": "new truck due Summer 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Summer 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 25,
+  "rank": 24,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1495,11 +1425,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-01",
-   "to": "2028-01",
-   "how": "ordered Jan 2026; builds take a year or more"
+   "from": "2026-05",
+   "to": "2027-01",
+   "how": "ordered Jan 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 26,
+  "rank": 25,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1538,7 +1468,7 @@
    "to": "2028-09",
    "how": "money approved Sep 2026; order, build, then sale"
   },
-  "rank": 27,
+  "rank": 26,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1577,7 +1507,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 28,
+  "rank": 27,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1616,7 +1546,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 29,
+  "rank": 28,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1653,15 +1583,15 @@
   "window": {
    "from": "2026-08",
    "to": "2027-02",
-   "how": "new truck was due Aug 2026; the old one usually lists within six months"
+   "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 30,
+  "rank": 29,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "26-30",
-   "n": 109,
+   "n": 108,
    "median": 5100,
    "p25": 3050,
    "p75": 6700,
@@ -1725,16 +1655,16 @@
    "to": "2027-11",
    "how": "money approved Nov 2025; order, build, then sale"
   },
-  "rank": 31,
+  "rank": 30,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "ambulance",
    "band": "all ages",
-   "n": 367,
-   "median": 3600,
+   "n": 355,
+   "median": 3650,
    "p25": 1900,
-   "p75": 6500,
+   "p75": 6550,
    "thin": false,
    "comps": [
     {
@@ -1793,18 +1723,18 @@
   "window": {
    "from": "2026-10",
    "to": "2027-04",
-   "how": "new truck was due Oct 2026; the old one usually lists within six months"
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 32,
+  "rank": 31,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1861,11 +1791,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-05",
-   "to": "2028-05",
-   "how": "ordered May 2026; builds take a year or more"
+   "from": "2026-09",
+   "to": "2027-05",
+   "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 33,
+  "rank": 32,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1902,18 +1832,18 @@
   "window": {
    "from": "2029-03",
    "to": "2029-11",
-   "how": "new truck due Spring 2029; old trucks usually list within six months of delivery"
+   "how": "new truck due Spring 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 34,
+  "rank": 33,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1974,7 +1904,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 35,
+  "rank": 34,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -2013,7 +1943,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 36,
+  "rank": 35,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2052,7 +1982,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 37,
+  "rank": 36,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2091,7 +2021,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 38,
+  "rank": 37,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -2128,18 +2058,18 @@
   "window": {
    "from": "2026-10",
    "to": "2027-04",
-   "how": "new truck was due Oct 2026; the old one usually lists within six months"
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 39,
+  "rank": 38,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2196,11 +2126,11 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "voted to sell Mar 2026"
+   "from": "2026-03",
+   "to": "2026-06",
+   "how": "voted to sell Mar 2026; probably sold by now"
   },
-  "rank": 40,
+  "rank": 39,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2266,20 +2196,20 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "voted to sell Feb 2026"
+   "from": "2026-02",
+   "to": "2026-05",
+   "how": "voted to sell Feb 2026; probably sold by now"
   },
-  "rank": 41,
+  "rank": 40,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2340,7 +2270,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 42,
+  "rank": 41,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -2379,7 +2309,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 43,
+  "rank": 42,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2418,7 +2348,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 44,
+  "rank": 43,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2457,7 +2387,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 45,
+  "rank": 44,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2496,7 +2426,7 @@
    "to": "2026-10",
    "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
   },
-  "rank": 46,
+  "rank": 45,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2533,18 +2463,18 @@
   "window": {
    "from": "2026-10",
    "to": "2027-04",
-   "how": "new truck was due Oct 2026; the old one usually lists within six months"
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 47,
+  "rank": 46,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2601,17 +2531,17 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-11",
-   "to": "2027-02",
-   "how": "voted to sell Apr 2026"
+   "from": "2026-04",
+   "to": "2026-07",
+   "how": "voted to sell Apr 2026; probably sold by now"
   },
-  "rank": 48,
+  "rank": 47,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "26-30",
-   "n": 109,
+   "n": 108,
    "median": 5100,
    "p25": 3050,
    "p75": 6700,
@@ -2675,7 +2605,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 49,
+  "rank": 48,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -2714,7 +2644,7 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 50,
+  "rank": 49,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -2751,18 +2681,18 @@
   "window": {
    "from": "2026-09",
    "to": "2027-03",
-   "how": "new truck was due Sep 2026; the old one usually lists within six months"
+   "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 51,
+  "rank": 50,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -2823,10 +2753,80 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 52,
+  "rank": 51,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.5,
+  "department": "Coldenham Fire Company",
+  "registry_name": "Coldenham Fire Company",
+  "city": "Walden",
+  "county": "Orange",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New E-One pumper on order (2025-06), delivery October 2027",
+  "signal_date": "2025-06-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
+  "proof_quote": "E-ONE—Coldenham Fire Department, Walden, pumper. Delivery in October 2027.",
+  "other_signals": "Took bids on a truck; result not found: 1975 Diamond Reo/4-Guys fire tanker",
+  "named_in_source": "Coldenham Fire Department",
+  "name_match": "exact",
+  "fdid": "36006",
+  "top_kind": "new_truck_ordered",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 52,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    },
+    {
+     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
+     "price": 7000.0,
+     "date": "2026-10-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+    }
+   ]
+  }
  },
  {
   "checked": "fema_table",
@@ -2860,7 +2860,7 @@
   "window": {
    "from": "2025-01",
    "to": "2026-07",
-   "how": "grant awarded Jul 2023; in the back-test the median gap from award to sale was 28 months"
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
   },
   "rank": 53,
   "tier": "3 Watch",
@@ -2969,7 +2969,7 @@
   "window": {
    "from": "2027-08",
    "to": "2028-02",
-   "how": "new truck due Aug 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 56,
   "tier": "3 Watch",
@@ -2977,10 +2977,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -3039,7 +3039,7 @@
   "window": {
    "from": "2026-08",
    "to": "2027-02",
-   "how": "new truck was due Aug 2026; the old one usually lists within six months"
+   "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
   "rank": 57,
   "tier": "3 Watch",
@@ -3047,10 +3047,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -3142,9 +3142,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-05",
-   "to": "2028-05",
-   "how": "ordered May 2026; builds take a year or more"
+   "from": "2026-09",
+   "to": "2027-05",
+   "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 59,
   "tier": "3 Watch",
@@ -3181,9 +3181,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-07",
-   "to": "2028-07",
-   "how": "ordered Jul 2026; builds take a year or more"
+   "from": "2026-11",
+   "to": "2027-07",
+   "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 60,
   "tier": "3 Watch",
@@ -3222,7 +3222,7 @@
   "window": {
    "from": "2027-10",
    "to": "2028-04",
-   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 61,
   "tier": "3 Watch",
@@ -3230,10 +3230,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -3292,7 +3292,7 @@
   "window": {
    "from": "2027-08",
    "to": "2028-02",
-   "how": "new truck due Aug 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 62,
   "tier": "3 Watch",
@@ -3300,10 +3300,10 @@
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -3360,9 +3360,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-07",
-   "to": "2028-07",
-   "how": "ordered Jul 2026; builds take a year or more"
+   "from": "2026-11",
+   "to": "2027-07",
+   "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 63,
   "tier": "3 Watch",
@@ -3399,9 +3399,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-07",
-   "to": "2028-07",
-   "how": "ordered Jul 2026; builds take a year or more"
+   "from": "2026-11",
+   "to": "2027-07",
+   "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 64,
   "tier": "3 Watch",
@@ -3479,7 +3479,7 @@
   "window": {
    "from": "2026-12",
    "to": "2027-06",
-   "how": "new truck due Dec 2026; old trucks usually list within six months of delivery"
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
   "rank": 66,
   "tier": "3 Watch",
@@ -3487,10 +3487,10 @@
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -3549,7 +3549,7 @@
   "window": {
    "from": "2027-09",
    "to": "2028-03",
-   "how": "new truck due Sep 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 67,
   "tier": "3 Watch",
@@ -3557,10 +3557,10 @@
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -3650,7 +3650,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "replacing",
+  "stage": "gear",
   "window": null,
   "rank": 69,
   "tier": "3 Watch",
@@ -3724,7 +3724,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "replacing",
+  "stage": "gear",
   "window": null,
   "rank": 71,
   "tier": "3 Watch",
@@ -3761,9 +3761,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-01",
-   "to": "2028-01",
-   "how": "ordered Jan 2026; builds take a year or more"
+   "from": "2026-05",
+   "to": "2027-01",
+   "how": "ordered Jan 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 72,
   "tier": "3 Watch",
@@ -3800,9 +3800,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-08",
-   "to": "2028-08",
-   "how": "ordered Aug 2026; builds take a year or more"
+   "from": "2026-12",
+   "to": "2027-08",
+   "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 73,
   "tier": "3 Watch",
@@ -3876,7 +3876,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "replacing",
+  "stage": "gear",
   "window": null,
   "rank": 75,
   "tier": "3 Watch",
@@ -3913,9 +3913,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-03",
-   "to": "2028-03",
-   "how": "ordered Mar 2026; builds take a year or more"
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 76,
   "tier": "3 Watch",
@@ -3993,7 +3993,7 @@
   "window": {
    "from": "2028-01",
    "to": "2028-07",
-   "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
   "rank": 78,
   "tier": "3 Watch",
@@ -4001,10 +4001,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -4061,9 +4061,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2026-12",
-   "to": "2027-12",
-   "how": "ordered Dec 2025; builds take a year or more"
+   "from": "2026-04",
+   "to": "2026-12",
+   "how": "ordered Dec 2025; builds have taken four to twelve months in the back-test"
   },
   "rank": 79,
   "tier": "3 Watch",
@@ -4137,7 +4137,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "replacing",
+  "stage": "gear",
   "window": null,
   "rank": 81,
   "tier": "3 Watch",
@@ -4174,9 +4174,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-07",
-   "to": "2028-07",
-   "how": "ordered Jul 2026; builds take a year or more"
+   "from": "2026-11",
+   "to": "2027-07",
+   "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 82,
   "tier": "3 Watch",
@@ -4213,9 +4213,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-03",
-   "to": "2028-03",
-   "how": "ordered Mar 2026; builds take a year or more"
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 83,
   "tier": "3 Watch",
@@ -4250,7 +4250,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "replacing",
+  "stage": "gear",
   "window": null,
   "rank": 84,
   "tier": "3 Watch",
@@ -4289,7 +4289,7 @@
   "window": {
    "from": "2027-10",
    "to": "2028-04",
-   "how": "new truck due Oct 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 85,
   "tier": "3 Watch",
@@ -4297,10 +4297,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -4357,9 +4357,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-08",
-   "to": "2028-08",
-   "how": "ordered Aug 2026; builds take a year or more"
+   "from": "2026-12",
+   "to": "2027-08",
+   "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 86,
   "tier": "3 Watch",
@@ -4398,7 +4398,7 @@
   "window": {
    "from": "2028-01",
    "to": "2028-07",
-   "how": "new truck due Jan 2028; old trucks usually list within six months of delivery"
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
   "rank": 87,
   "tier": "3 Watch",
@@ -4406,10 +4406,10 @@
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -4536,9 +4536,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-05",
-   "to": "2028-05",
-   "how": "ordered May 2026; builds take a year or more"
+   "from": "2026-09",
+   "to": "2027-05",
+   "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 90,
   "tier": "3 Watch",
@@ -4575,9 +4575,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-03",
-   "to": "2028-03",
-   "how": "ordered Mar 2026; builds take a year or more"
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 91,
   "tier": "3 Watch",
@@ -4614,9 +4614,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-08",
-   "to": "2028-08",
-   "how": "ordered Aug 2026; builds take a year or more"
+   "from": "2026-12",
+   "to": "2027-08",
+   "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 92,
   "tier": "3 Watch",
@@ -4655,7 +4655,7 @@
   "window": {
    "from": "2026-12",
    "to": "2027-06",
-   "how": "new truck due Dec 2026; old trucks usually list within six months of delivery"
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
   "rank": 93,
   "tier": "3 Watch",
@@ -4663,10 +4663,10 @@
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -4865,7 +4865,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "replacing",
+  "stage": "gear",
   "window": null,
   "rank": 98,
   "tier": "3 Watch",
@@ -4904,7 +4904,7 @@
   "window": {
    "from": "2027-07",
    "to": "2028-01",
-   "how": "new truck due Jul 2027; old trucks usually list within six months of delivery"
+   "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 99,
   "tier": "3 Watch",
@@ -4912,10 +4912,10 @@
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -4972,9 +4972,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-03",
-   "to": "2028-03",
-   "how": "ordered Mar 2026; builds take a year or more"
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 100,
   "tier": "3 Watch",
@@ -5011,9 +5011,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-04",
-   "to": "2028-04",
-   "how": "ordered Apr 2026; builds take a year or more"
+   "from": "2026-08",
+   "to": "2027-04",
+   "how": "ordered Apr 2026; builds have taken four to twelve months in the back-test"
   },
   "rank": 101,
   "tier": "3 Watch",
@@ -5083,7 +5083,7 @@
    "year_how": null,
    "type_how": null
   },
-  "stage": "replacing",
+  "stage": "gear",
   "window": null,
   "rank": 103,
   "tier": "3 Watch",

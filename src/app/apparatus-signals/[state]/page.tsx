@@ -11,9 +11,15 @@ import {
   leadsPer100,
   signalsFor,
 } from "@/apparatus-signals/lib/data";
-import { formatNumber, plural } from "@/apparatus-signals/lib/format";
+import { currentMonth, formatNumber, plural } from "@/apparatus-signals/lib/format";
 import { guideTotalLine } from "@/apparatus-signals/lib/trucks";
-import { COVERAGE, kindLabel } from "@/apparatus-signals/lib/words";
+import {
+  COVERAGE,
+  isDoneStage,
+  isOpenStage,
+  kindLabel,
+  likelyListed,
+} from "@/apparatus-signals/lib/words";
 import KindBars from "@/apparatus-signals/ui/KindBars";
 import LeadTable, { type KindOption, type LeadRow } from "@/apparatus-signals/ui/LeadTable";
 import { CoverageCard, RuleBox } from "@/apparatus-signals/ui/StateBits";
@@ -41,6 +47,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
   const method = getMethod();
   const departments = getDepartments(state.code);
   const rule = state.rule ?? method.rules[state.code] ?? null;
+  const month = currentMonth();
 
   const rows: LeadRow[] = departments.map((d) => ({
     id: d.id,
@@ -68,7 +75,8 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     read_by: d.read_by,
     kinds: [...new Set([d.top_kind, ...signalsFor(state.code, d).map((s) => s.kind)])],
     stage: d.stage,
-    window: d.window,
+    top_kind: d.top_kind,
+    likely: likelyListed(d, month),
   }));
 
   const kindSet = new Set(rows.flatMap((r) => r.kinds));
@@ -83,7 +91,18 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     count,
   }));
 
-  const { week, month, watch, total } = state.leads;
+  // Tier counts cover open leads only; gear and done leads are counted apart.
+  const total = departments.length;
+  const open = departments.filter((d) => isOpenStage(d.stage));
+  const tierCount = (n: string) => open.filter((d) => d.tier.startsWith(n)).length;
+  const gear = departments.filter((d) => d.stage === "gear").length;
+  const done = departments.filter((d) => isDoneStage(d.stage)).length;
+  const extra = [
+    gear ? `${plural(gear, "department")} selling gear, no truck named.` : "",
+    done ? `${formatNumber(done)} already at auction or sold.` : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <div className="space-y-8">
@@ -97,7 +116,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
         <p className="mt-2 text-lg text-as-ink-2">
           {total === 0
             ? "No leads this refresh."
-            : `${plural(total, "lead")}: ${formatNumber(week)} to call this week, ${formatNumber(month)} this month, ${formatNumber(watch)} to watch.`}{" "}
+            : `${plural(total, "lead")}. Not yet listed: ${formatNumber(tierCount("1"))} to call this week, ${formatNumber(tierCount("2"))} this month, ${formatNumber(tierCount("3"))} to watch.${extra ? ` ${extra}` : ""}`}{" "}
           <span className="num">{leadsPer100(state).toFixed(1)}</span> per 100 departments.
         </p>
       </header>
