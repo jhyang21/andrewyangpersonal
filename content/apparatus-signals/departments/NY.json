@@ -63,6 +63,14 @@
      "url": "https://www.auctionsinternational.com/auction/13728/item/lot-0001-2001-ford-e450-type-iii-ambulance-83793/"
     }
    ]
+  },
+  "ask": {
+   "band": "16-20",
+   "n": 25,
+   "median": 24500,
+   "p25": 19500,
+   "p75": 30000,
+   "thin": false
   }
  },
  {
@@ -133,6 +141,14 @@
      "url": "https://www.auctionsinternational.com/auction/16681/item/lot-0001-lot-updated-1991-international-4900-tanker-102265/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "n": 16,
+   "median": 70000,
+   "p25": 48750,
+   "p75": 91600,
+   "thin": false
   }
  },
  {
@@ -199,6 +215,14 @@
      "url": "https://www.auctionsinternational.com/auction/40716/item/lot-0001-2000-spartan-rd-murray-metro-star-pumper-truck-253691/"
     }
    ]
+  },
+  "ask": {
+   "band": "21-25",
+   "n": 72,
+   "median": 60000,
+   "p25": 42375,
+   "p75": 75000,
+   "thin": false
   }
  },
  {
@@ -265,6 +289,14 @@
      "url": "https://www.auctionsinternational.com/auction/38453/item/lot-0001-1996-pierce-saber-custom-pumper-truck-238588/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -300,7 +332,8 @@
   "rank": 5,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -370,6 +403,14 @@
      "url": "https://www.auctionsinternational.com/auction/40716/item/lot-0001-2000-spartan-rd-murray-metro-star-pumper-truck-253691/"
     }
    ]
+  },
+  "ask": {
+   "band": "21-25",
+   "n": 72,
+   "median": 60000,
+   "p25": 42375,
+   "p75": 75000,
+   "thin": false
   }
  },
  {
@@ -436,6 +477,14 @@
      "url": "https://www.auctionsinternational.com/auction/34695/item/lot-0001-1989-pierce-lance-pumper-truck-215654/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "n": 62,
+   "median": 20000,
+   "p25": 15000,
+   "p75": 25000,
+   "thin": false
   }
  },
  {
@@ -502,6 +551,14 @@
      "url": "https://www.auctionsinternational.com/auction/24483/item/lot-0001-2002-kme-trk-tiller-aerial-fire-truck-150462/"
     }
    ]
+  },
+  "ask": {
+   "band": "16-20",
+   "n": 12,
+   "median": 212500,
+   "p25": 199000,
+   "p75": 324000,
+   "thin": false
   }
  },
  {
@@ -568,6 +625,14 @@
      "url": "https://www.auctionsinternational.com/auction/14438/item/lot-0001-1995-sutphen-midmount-ts-4dr-95-ft-tower-ladder-88307/"
     }
    ]
+  },
+  "ask": {
+   "band": "21-25",
+   "n": 26,
+   "median": 107500,
+   "p25": 71225,
+   "p75": 150000,
+   "thin": false
   }
  },
  {
@@ -607,7 +672,8 @@
   "rank": 10,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -677,6 +743,14 @@
      "url": "https://www.auctionsinternational.com/auction/22555/item/lot-0002-1997-freightliner-fl80-fire-truck-138682/"
     }
    ]
+  },
+  "ask": {
+   "band": "21-25",
+   "n": 72,
+   "median": 60000,
+   "p25": 42375,
+   "p75": 75000,
+   "thin": false
   }
  },
  {
@@ -747,6 +821,14 @@
      "url": "https://www.auctionsinternational.com/auction/22008/item/lot-0024-1996-spartan-gladiator-pumper-135970/"
     }
    ]
+  },
+  "ask": {
+   "band": "21-25",
+   "n": 72,
+   "median": 60000,
+   "p25": 42375,
+   "p75": 75000,
+   "thin": false
   }
  },
  {
@@ -817,6 +899,14 @@
      "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  },
  {
@@ -887,6 +977,14 @@
      "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  },
  {
@@ -926,7 +1024,8 @@
   "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -965,7 +1064,8 @@
   "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -1035,6 +1135,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1070,7 +1178,8 @@
   "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -1105,7 +1214,8 @@
   "rank": 19,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -1140,7 +1250,8 @@
   "rank": 20,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -1175,7 +1286,8 @@
   "rank": 21,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -1245,6 +1357,14 @@
      "url": "https://www.auctionsinternational.com/auction/48216/item/lot-0001-1991-gmc-topkick-e-one-rescue-7-crew-truck-304148/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 107,
+   "median": 60000,
+   "p25": 35000,
+   "p75": 127500,
+   "thin": false
   }
  },
  {
@@ -1315,6 +1435,14 @@
      "url": "https://www.auctionsinternational.com/auction/48216/item/lot-0001-1991-gmc-topkick-e-one-rescue-7-crew-truck-304148/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 107,
+   "median": 60000,
+   "p25": 35000,
+   "p75": 127500,
+   "thin": false
   }
  },
  {
@@ -1354,7 +1482,8 @@
   "rank": 24,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1393,7 +1522,8 @@
   "rank": 25,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -1432,7 +1562,8 @@
   "rank": 26,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -1471,7 +1602,8 @@
   "rank": 27,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -1510,7 +1642,8 @@
   "rank": 28,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "partly",
@@ -1580,6 +1713,14 @@
      "url": "https://www.auctionsinternational.com/auction/38453/item/lot-0001-1996-pierce-saber-custom-pumper-truck-238588/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -1650,6 +1791,14 @@
      "url": "https://www.auctionsinternational.com/auction/49204/item/lot-0001-2002-ford-e450-ambulance-310210/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 76,
+   "median": 31000,
+   "p25": 20000,
+   "p75": 51000,
+   "thin": false
   }
  },
  {
@@ -1720,6 +1869,14 @@
      "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1759,7 +1916,8 @@
   "rank": 32,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -1829,6 +1987,14 @@
      "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  },
  {
@@ -1868,7 +2034,8 @@
   "rank": 34,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -1907,7 +2074,8 @@
   "rank": 35,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -1946,7 +2114,8 @@
   "rank": 36,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -1985,7 +2154,8 @@
   "rank": 37,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -2055,6 +2225,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2125,6 +2303,14 @@
      "url": "https://www.auctionsinternational.com/auction/35754/item/lot-0001-1996-ford-f450-super-duty-mini-pumper-truck-222582/"
     }
    ]
+  },
+  "ask": {
+   "band": "21-25",
+   "n": 5,
+   "median": 50000,
+   "p25": 40000,
+   "p75": 55000,
+   "thin": false
   }
  },
  {
@@ -2195,6 +2381,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2234,7 +2428,8 @@
   "rank": 41,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -2273,7 +2468,8 @@
   "rank": 42,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -2312,7 +2508,8 @@
   "rank": 43,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -2351,7 +2548,8 @@
   "rank": 44,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "partly",
@@ -2421,6 +2619,14 @@
      "url": "https://www.auctionsinternational.com/auction/13728/item/lot-0001-2001-ford-e450-type-iii-ambulance-83793/"
     }
    ]
+  },
+  "ask": {
+   "band": "16-20",
+   "n": 25,
+   "median": 24500,
+   "p25": 19500,
+   "p75": 30000,
+   "thin": false
   }
  },
  {
@@ -2491,6 +2697,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2561,6 +2775,14 @@
      "url": "https://www.auctionsinternational.com/auction/30069/item/lot-0002-1995-saulsbury-spartan-pumper-truck-186820/"
     }
    ]
+  },
+  "ask": {
+   "band": "26-30",
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
   }
  },
  {
@@ -2600,46 +2822,8 @@
   "rank": 48,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "confirmed",
-  "score": 4.0,
-  "department": "Slate Hill Fire Department",
-  "registry_name": "Slate Hill Fire Department",
-  "city": "Slate Hill",
-  "county": "Orange",
-  "type": "Volunteer",
-  "website": "https://www.geocities.com/SLATEHILLFIREDISTRICT/",
-  "why_call": "Money approved for a new truck",
-  "detail": "Pierce 1500-gpm pumper and Pierce 100-foot tower ladder",
-  "signal_date": "2026-08-11",
-  "proof_url": "https://www.noticeregistry.com/new-york/notice/public-hearing-slate-hill-3327f7496a3fbb8baa2c1957fa475ea9",
-  "proof_quote": "the sum of $ is hereby appropriated for the purchase of Pierce 1500 gallon per minute pumper",
-  "other_signals": "",
-  "named_in_source": "Slate Hill Fire District",
-  "name_match": "exact",
-  "fdid": "36040",
-  "top_kind": "bond_or_referendum",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2027-08",
-   "to": "2028-08",
-   "how": "money approved Aug 2026; order, build, then sale"
-  },
-  "rank": 49,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -2675,7 +2859,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 50,
+  "rank": 49,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2709,6 +2893,14 @@
      "url": "https://www.auctionsinternational.com/auction/48216/item/lot-0001-1991-gmc-topkick-e-one-rescue-7-crew-truck-304148/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 107,
+   "median": 60000,
+   "p25": 35000,
+   "p75": 127500,
+   "thin": false
   }
  },
  {
@@ -2745,10 +2937,11 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 51,
+  "rank": 50,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -2784,7 +2977,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 52,
+  "rank": 51,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2818,6 +3011,14 @@
      "url": "https://www.auctionsinternational.com/auction/18854/item/lot-0003-1972-dodge-800-tanker-114539/"
     }
    ]
+  },
+  "ask": {
+   "band": "31+",
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
+   "thin": false
   }
  },
  {
@@ -2850,10 +3051,11 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 53,
+  "rank": 52,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -2885,10 +3087,11 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 54,
+  "rank": 53,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -2924,7 +3127,7 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 55,
+  "rank": 54,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2958,6 +3161,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2994,7 +3205,7 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 56,
+  "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3028,6 +3239,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -3060,10 +3279,11 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 57,
+  "rank": 56,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -3099,10 +3319,11 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 58,
+  "rank": 57,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -3138,10 +3359,11 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 59,
+  "rank": 58,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -3177,7 +3399,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 60,
+  "rank": 59,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3211,6 +3433,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -3247,7 +3477,7 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 61,
+  "rank": 60,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -3281,6 +3511,14 @@
      "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -3317,10 +3555,11 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 62,
+  "rank": 61,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -3356,10 +3595,11 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 63,
+  "rank": 62,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -3395,10 +3635,11 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 64,
+  "rank": 63,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -3434,7 +3675,7 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 65,
+  "rank": 64,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -3468,6 +3709,14 @@
      "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -3504,7 +3753,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 66,
+  "rank": 65,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3538,6 +3787,14 @@
      "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -3570,10 +3827,11 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 67,
+  "rank": 66,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -3605,10 +3863,11 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 68,
+  "rank": 67,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "partly",
@@ -3644,10 +3903,11 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 69,
+  "rank": 68,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -3679,10 +3939,11 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 70,
+  "rank": 69,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -3718,10 +3979,11 @@
    "to": "2027-01",
    "how": "ordered Jan 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 71,
+  "rank": 70,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -3757,10 +4019,11 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 72,
+  "rank": 71,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -3796,10 +4059,11 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 73,
+  "rank": 72,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -3831,10 +4095,11 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 74,
+  "rank": 73,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -3870,10 +4135,11 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 75,
+  "rank": 74,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -3909,10 +4175,11 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 76,
+  "rank": 75,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -3948,7 +4215,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 77,
+  "rank": 76,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -3982,6 +4249,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -4018,10 +4293,11 @@
    "to": "2026-12",
    "how": "ordered Dec 2025; builds have taken four to twelve months in the back-test"
   },
-  "rank": 78,
+  "rank": 77,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -4057,10 +4333,11 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 79,
+  "rank": 78,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -4092,10 +4369,11 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 80,
+  "rank": 79,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -4131,10 +4409,11 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 81,
+  "rank": 80,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -4166,10 +4445,11 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 82,
+  "rank": 81,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -4205,7 +4485,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 83,
+  "rank": 82,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -4239,6 +4519,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -4275,10 +4563,51 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
+  "rank": 83,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null,
+  "ask": null
+ },
+ {
+  "checked": "confirmed",
+  "score": 3.0,
+  "department": "Slate Hill Fire Department",
+  "registry_name": "Slate Hill Fire Department",
+  "city": "Slate Hill",
+  "county": "Orange",
+  "type": "Volunteer",
+  "website": "https://www.geocities.com/SLATEHILLFIREDISTRICT/",
+  "why_call": "Money approved for a new truck",
+  "detail": "Pierce 1500-gpm pumper and Pierce 100-foot tower ladder",
+  "signal_date": "2026-08-11",
+  "proof_url": "https://www.noticeregistry.com/new-york/notice/public-hearing-slate-hill-3327f7496a3fbb8baa2c1957fa475ea9",
+  "proof_quote": "the sum of $ is hereby appropriated for the purchase of Pierce 1500 gallon per minute pumper",
+  "other_signals": "",
+  "named_in_source": "Slate Hill Fire District",
+  "name_match": "exact",
+  "fdid": "36040",
+  "top_kind": "bond_or_referendum",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "money approved Aug 2026; order, build, then sale"
+  },
   "rank": 84,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -4348,6 +4677,14 @@
      "url": "https://www.auctionsinternational.com/auction/46668/item/lot-0001-2006-freightliner-m2-106-tanker-291563/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -4383,7 +4720,8 @@
   "rank": 86,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -4418,7 +4756,8 @@
   "rank": 87,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -4457,7 +4796,8 @@
   "rank": 88,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -4496,7 +4836,8 @@
   "rank": 89,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -4566,6 +4907,14 @@
      "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  },
  {
@@ -4605,7 +4954,8 @@
   "rank": 91,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -4675,6 +5025,14 @@
      "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -4710,7 +5068,8 @@
   "rank": 93,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -4749,7 +5108,8 @@
   "rank": 94,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -4784,7 +5144,8 @@
   "rank": 95,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -4819,7 +5180,8 @@
   "rank": 96,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -4889,6 +5251,14 @@
      "url": "https://www.auctionsinternational.com/auction/48216/item/lot-0001-1991-gmc-topkick-e-one-rescue-7-crew-truck-304148/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 107,
+   "median": 60000,
+   "p25": 35000,
+   "p75": 127500,
+   "thin": false
   }
  },
  {
@@ -4928,7 +5298,8 @@
   "rank": 98,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -4967,7 +5338,8 @@
   "rank": 99,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5002,7 +5374,8 @@
   "rank": 100,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5037,7 +5410,8 @@
   "rank": 101,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5072,7 +5446,8 @@
   "rank": 102,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5107,7 +5482,8 @@
   "rank": 103,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5142,7 +5518,8 @@
   "rank": 104,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5177,7 +5554,8 @@
   "rank": 105,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "partly",
@@ -5216,7 +5594,8 @@
   "rank": 106,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5251,7 +5630,8 @@
   "rank": 107,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5286,7 +5666,8 @@
   "rank": 108,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5321,7 +5702,8 @@
   "rank": 109,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5356,7 +5738,8 @@
   "rank": 110,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "auction_site",
@@ -5391,7 +5774,8 @@
   "rank": 111,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -5430,7 +5814,8 @@
   "rank": 112,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "confirmed",
@@ -5465,6 +5850,7 @@
   "rank": 113,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  }
 ]

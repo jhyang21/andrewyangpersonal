@@ -36,7 +36,8 @@
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -106,6 +107,14 @@
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 107,
+   "median": 60000,
+   "p25": 35000,
+   "p75": 127500,
+   "thin": false
   }
  },
  {
@@ -176,6 +185,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -215,7 +232,8 @@
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -285,6 +303,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -355,6 +381,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -425,6 +459,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -464,7 +506,8 @@
   "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -503,7 +546,8 @@
   "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -573,6 +617,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -643,6 +695,14 @@
      "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  },
  {
@@ -682,7 +742,8 @@
   "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -752,6 +813,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -822,6 +891,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -892,6 +969,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -962,6 +1047,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1032,6 +1125,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1102,6 +1203,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1172,6 +1281,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1242,6 +1359,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1312,6 +1437,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1382,6 +1515,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1452,6 +1593,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1522,6 +1671,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1592,6 +1749,14 @@
      "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 31,
+   "median": 65000,
+   "p25": 36000,
+   "p75": 122450,
+   "thin": false
   }
  },
  {
@@ -1662,6 +1827,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1732,6 +1905,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1802,6 +1983,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1872,6 +2061,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1942,6 +2139,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2012,6 +2217,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2082,6 +2295,14 @@
      "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  },
  {
@@ -2152,6 +2373,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2222,6 +2451,14 @@
      "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  },
  {
@@ -2292,6 +2529,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2362,6 +2607,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2432,6 +2685,14 @@
      "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  },
  {
@@ -2502,6 +2763,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2572,6 +2841,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -2642,6 +2919,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2712,6 +2997,14 @@
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -2782,6 +3075,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -2852,6 +3153,14 @@
      "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  },
  {
@@ -2922,6 +3231,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -2961,7 +3278,8 @@
   "rank": 45,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -3000,7 +3318,8 @@
   "rank": 46,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -3070,6 +3389,14 @@
      "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 80,
+   "median": 99250,
+   "p25": 53750,
+   "p75": 199000,
+   "thin": false
   }
  }
 ]

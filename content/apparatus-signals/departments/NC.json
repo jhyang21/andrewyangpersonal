@@ -67,6 +67,14 @@
      "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 107,
+   "median": 60000,
+   "p25": 35000,
+   "p75": 127500,
+   "thin": false
   }
  },
  {
@@ -137,6 +145,14 @@
      "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -176,7 +192,8 @@
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -246,6 +263,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -285,7 +310,8 @@
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "fema_table",
@@ -324,7 +350,8 @@
   "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -394,6 +421,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -464,6 +499,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -503,7 +546,8 @@
   "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": null,
+  "ask": null
  },
  {
   "checked": "trade_press",
@@ -573,6 +617,14 @@
      "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 107,
+   "median": 60000,
+   "p25": 35000,
+   "p75": 127500,
+   "thin": false
   }
  },
  {
@@ -643,6 +695,14 @@
      "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -713,6 +773,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -783,6 +851,14 @@
      "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -853,6 +929,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -923,6 +1007,14 @@
      "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 107,
+   "median": 60000,
+   "p25": 35000,
+   "p75": 127500,
+   "thin": false
   }
  },
  {
@@ -993,6 +1085,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1063,6 +1163,14 @@
      "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1133,6 +1241,14 @@
      "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1203,6 +1319,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1273,6 +1397,14 @@
      "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1343,6 +1475,14 @@
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 63,
+   "median": 86400,
+   "p25": 49998,
+   "p75": 197250,
+   "thin": false
   }
  },
  {
@@ -1413,6 +1553,14 @@
      "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 107,
+   "median": 60000,
+   "p25": 35000,
+   "p75": 127500,
+   "thin": false
   }
  },
  {
@@ -1483,6 +1631,14 @@
      "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 286,
+   "median": 50000,
+   "p25": 27625,
+   "p75": 109000,
+   "thin": false
   }
  },
  {
@@ -1553,6 +1709,14 @@
      "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 16,
+   "median": 49998,
+   "p25": 30600,
+   "p75": 79249,
+   "thin": false
   }
  },
  {
@@ -1623,6 +1787,14 @@
      "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 16,
+   "median": 49998,
+   "p25": 30600,
+   "p75": 79249,
+   "thin": false
   }
  }
 ]

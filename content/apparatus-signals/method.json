@@ -485,6 +485,426 @@
    }
   ]
  },
+ "ask_guide": {
+  "meta": {
+   "seen": "2026-11-10",
+   "built": "2026-11-10",
+   "source": "Dealer websites' used-truck listings, asking price shown",
+   "dealers": [
+    {
+     "name": "Firetrucks Unlimited",
+     "url": "https://usedfiretrucks.firetrucksunlimited.com/AvailableTrucksFTU/All",
+     "listings": 886,
+     "used": 637
+    },
+    {
+     "name": "Command Fire Apparatus",
+     "url": "https://commandfireapparatus.com/inventory/",
+     "listings": 26,
+     "used": 22
+    }
+   ],
+   "listings_used": 659,
+   "by_type": {
+    "pumper": 286,
+    "rescue": 107,
+    "aerial": 80,
+    "ambulance": 76,
+    "tanker": 63,
+    "brush": 31,
+    "mini pumper": 16
+   },
+   "skipped_why": "no price shown (call for a quote), no model year, a courtesy listing, or not a type the guide prices (command cars, airport trucks)",
+   "bands": [
+    "<=15",
+    "16-20",
+    "21-25",
+    "26-30",
+    "31+",
+    "all ages"
+   ],
+   "age": "year seen minus model year",
+   "thin_below": 5,
+   "caveats": [
+    "Asking prices, not sales. Trucks often sell below the ask, and some never sell.",
+    "Dealer trucks are usually serviced and pump-tested before sale; auction trucks sell as-is.",
+    "One website per dealer, read on one day. Firetrucks Unlimited's listing site runs on Brindlee Mountain's listing system, so some of its trucks may be listed by Brindlee.",
+    "Most listings are from Firetrucks Unlimited; Command Fire Apparatus sells late-model trucks only.",
+    "Rows with fewer than 5 listings are marked thin: do not quote them."
+   ]
+  },
+  "table": [
+   {
+    "type": "pumper",
+    "band": "<=15",
+    "n": 23,
+    "median": 219000,
+    "p25": 149500,
+    "p75": 310000,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "16-20",
+    "n": 57,
+    "median": 139900,
+    "p25": 90000,
+    "p75": 180000,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "21-25",
+    "n": 72,
+    "median": 60000,
+    "p25": 42375,
+    "p75": 75000,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "26-30",
+    "n": 72,
+    "median": 39900,
+    "p25": 29875,
+    "p75": 56000,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "31+",
+    "n": 62,
+    "median": 20000,
+    "p25": 15000,
+    "p75": 25000,
+    "thin": false
+   },
+   {
+    "type": "pumper",
+    "band": "all ages",
+    "n": 286,
+    "median": 50000,
+    "p25": 27625,
+    "p75": 109000,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "<=15",
+    "n": 6,
+    "median": 650000,
+    "p25": 349250,
+    "p75": 980000,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "16-20",
+    "n": 12,
+    "median": 212500,
+    "p25": 199000,
+    "p75": 324000,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "21-25",
+    "n": 26,
+    "median": 107500,
+    "p25": 71225,
+    "p75": 150000,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "26-30",
+    "n": 19,
+    "median": 75000,
+    "p25": 57500,
+    "p75": 137500,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "31+",
+    "n": 17,
+    "median": 40000,
+    "p25": 24900,
+    "p75": 50000,
+    "thin": false
+   },
+   {
+    "type": "aerial",
+    "band": "all ages",
+    "n": 80,
+    "median": 99250,
+    "p25": 53750,
+    "p75": 199000,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "<=15",
+    "n": 14,
+    "median": 320000,
+    "p25": 241750,
+    "p75": 423250,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "16-20",
+    "n": 7,
+    "median": 118000,
+    "p25": 88200,
+    "p75": 232500,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "21-25",
+    "n": 8,
+    "median": 114250,
+    "p25": 94249,
+    "p75": 146250,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "26-30",
+    "n": 16,
+    "median": 70000,
+    "p25": 48750,
+    "p75": 91600,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "31+",
+    "n": 18,
+    "median": 42250,
+    "p25": 20375,
+    "p75": 61750,
+    "thin": false
+   },
+   {
+    "type": "tanker",
+    "band": "all ages",
+    "n": 63,
+    "median": 86400,
+    "p25": 49998,
+    "p75": 197250,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "<=15",
+    "n": 22,
+    "median": 155000,
+    "p25": 118750,
+    "p75": 295500,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "16-20",
+    "n": 24,
+    "median": 97250,
+    "p25": 65000,
+    "p75": 151250,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "21-25",
+    "n": 24,
+    "median": 52450,
+    "p25": 35000,
+    "p75": 72500,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "26-30",
+    "n": 18,
+    "median": 39700,
+    "p25": 24350,
+    "p75": 56250,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "31+",
+    "n": 19,
+    "median": 30000,
+    "p25": 20000,
+    "p75": 42500,
+    "thin": false
+   },
+   {
+    "type": "rescue",
+    "band": "all ages",
+    "n": 107,
+    "median": 60000,
+    "p25": 35000,
+    "p75": 127500,
+    "thin": false
+   },
+   {
+    "type": "brush",
+    "band": "<=15",
+    "n": 9,
+    "median": 195000,
+    "p25": 119900,
+    "p75": 225000,
+    "thin": false
+   },
+   {
+    "type": "brush",
+    "band": "16-20",
+    "n": 9,
+    "median": 60000,
+    "p25": 45000,
+    "p75": 76000,
+    "thin": false
+   },
+   {
+    "type": "brush",
+    "band": "21-25",
+    "n": 9,
+    "median": 37000,
+    "p25": 32500,
+    "p75": 69000,
+    "thin": false
+   },
+   {
+    "type": "brush",
+    "band": "26-30",
+    "n": 2,
+    "median": 42500,
+    "p25": 31250,
+    "p75": 53750,
+    "thin": true
+   },
+   {
+    "type": "brush",
+    "band": "31+",
+    "n": 2,
+    "median": 53250,
+    "p25": 45375,
+    "p75": 61125,
+    "thin": true
+   },
+   {
+    "type": "brush",
+    "band": "all ages",
+    "n": 31,
+    "median": 65000,
+    "p25": 36000,
+    "p75": 122450,
+    "thin": false
+   },
+   {
+    "type": "mini pumper",
+    "band": "<=15",
+    "n": 4,
+    "median": 127250,
+    "p25": 114124,
+    "p75": 173500,
+    "thin": true
+   },
+   {
+    "type": "mini pumper",
+    "band": "16-20",
+    "n": 4,
+    "median": 44998,
+    "p25": 35000,
+    "p75": 53746,
+    "thin": true
+   },
+   {
+    "type": "mini pumper",
+    "band": "21-25",
+    "n": 5,
+    "median": 50000,
+    "p25": 40000,
+    "p75": 55000,
+    "thin": false
+   },
+   {
+    "type": "mini pumper",
+    "band": "26-30",
+    "n": 2,
+    "median": 19950,
+    "p25": 17474,
+    "p75": 22425,
+    "thin": true
+   },
+   {
+    "type": "mini pumper",
+    "band": "31+",
+    "n": 1,
+    "median": 6000,
+    "p25": 6000,
+    "p75": 6000,
+    "thin": true
+   },
+   {
+    "type": "mini pumper",
+    "band": "all ages",
+    "n": 16,
+    "median": 49998,
+    "p25": 30600,
+    "p75": 79249,
+    "thin": false
+   },
+   {
+    "type": "ambulance",
+    "band": "<=15",
+    "n": 46,
+    "median": 45000,
+    "p25": 29925,
+    "p75": 62250,
+    "thin": false
+   },
+   {
+    "type": "ambulance",
+    "band": "16-20",
+    "n": 25,
+    "median": 24500,
+    "p25": 19500,
+    "p75": 30000,
+    "thin": false
+   },
+   {
+    "type": "ambulance",
+    "band": "21-25",
+    "n": 2,
+    "median": 15000,
+    "p25": 12500,
+    "p75": 17500,
+    "thin": true
+   },
+   {
+    "type": "ambulance",
+    "band": "26-30",
+    "n": 3,
+    "median": 8000,
+    "p25": 6500,
+    "p75": 11000,
+    "thin": true
+   },
+   {
+    "type": "ambulance",
+    "band": "all ages",
+    "n": 76,
+    "median": 31000,
+    "p25": 20000,
+    "p75": 51000,
+    "thin": false
+   }
+  ]
+ },
  "backtest": {
   "meta": {
    "as_of": "2026-11-09",

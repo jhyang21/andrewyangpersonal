@@ -67,6 +67,14 @@
      "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
     }
    ]
+  },
+  "ask": {
+   "band": "all ages",
+   "n": 31,
+   "median": 65000,
+   "p25": 36000,
+   "p75": 122450,
+   "thin": false
   }
  },
  {
@@ -106,6 +114,7 @@
   "rank": 2,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": null,
+  "ask": null
  }
 ]
