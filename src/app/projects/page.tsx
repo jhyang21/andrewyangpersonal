@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SiteNav } from "@/components/SiteNav";
-import { getAllProjects } from "@/lib/projects";
+import { getAllProjects, projectHref } from "@/lib/projects";
 
 export const metadata = {
   title: "Projects | Andrew Yang",
@@ -31,7 +31,7 @@ export default function ProjectsPage() {
                 key={p.slug}
                 className="border-b border-[var(--color-border-warm)] pb-8 last:border-0"
               >
-                <Link href={`/projects/${p.slug}`} className="group block">
+                <Link href={projectHref(p)} className="group block">
                   <p className="text-xs text-[var(--color-muted)]">{p.date}</p>
                   <h2 className="mt-1 font-serif text-xl text-[var(--color-ink)] group-hover:text-[var(--color-accent)]">
                     {p.title}

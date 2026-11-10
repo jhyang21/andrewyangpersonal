@@ -7,7 +7,14 @@ export type Project = {
   slug: string;
   date: string;
   summary: string;
+  /** Where the entry links when it is not a page under /projects (the Apparatus Signals microsite). */
+  href?: string;
 };
+
+/** The entry's link: its own page under /projects unless it names another one. */
+export function projectHref(p: Project): string {
+  return p.href ?? `/projects/${p.slug}`;
+}
 
 /**
  * The Brent–WTI dataset, stored as parallel arrays rather than a row per day.
