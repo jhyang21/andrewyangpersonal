@@ -139,8 +139,10 @@ export const HOW_TO_READ =
   "The memo at the top is the same for every store. Managers decide what it means for their team. Baristas decide what to write with a line in front of them. Customers decide if they cared. The five numbers at the bottom are what HQ would see. Everything above them is why. Read the quotes: a manager who tells the team one thing and thinks another, a barista who stops at the fourth cup, a customer who liked the note and hated the wait.";
 
 function move(from: number, to: number, unit = "", digits = 0) {
-  if (to === from) return "no change";
-  return `${to > from ? "up" : "down"} from ${from.toFixed(digits)}${unit}`;
+  const a = from.toFixed(digits);
+  const b = to.toFixed(digits);
+  if (a === b) return "no change";
+  return `${to > from ? "up" : "down"} from ${a}${unit}`;
 }
 
 /**
