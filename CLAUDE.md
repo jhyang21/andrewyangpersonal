@@ -2,7 +2,7 @@
 
 Personal portfolio/blog with memos. Next.js 16 App Router, Tailwind v4, filesystem-based content.
 
-The site is static. It has no database, no API routes and no secrets. The only client components are the Shape Lab (`src/components/shape-lab/`), the projects chart, the cup-notes demo (`src/components/projects/cup-notes/`) and the Apparatus Signals map and lead table (`src/apparatus-signals/ui/`).
+The site is static. It has no database, no API routes and no secrets. The only client components are the Shape Lab (`src/components/shape-lab/`), the projects chart, the cup-notes run chain and chart (`src/cup-notes/ui/`) and the Apparatus Signals map and lead table (`src/apparatus-signals/ui/`).
 
 ---
 
@@ -23,7 +23,7 @@ npm run lint
 - **Next.js 16** App Router (`src/app/`)
 - **Tailwind v4** — CSS-first config in `globals.css` (`@theme inline`), no `tailwind.config.*`
 - **TypeScript** strict, path alias `@/*` → `src/*`
-- **Runtime dependencies** beyond Next/React: `katex`, for math in memos; `@vercel/analytics`, whose `<Analytics />` in the root layout counts page views; and `motion`, `recharts` and `lucide-react`, imported only by the cup-notes demo. No markdown libraries, no CMS.
+- **Runtime dependencies** beyond Next/React: `katex`, for math in memos; `@vercel/analytics`, whose `<Analytics />` in the root layout counts page views; and `motion`, `recharts` and `lucide-react`, imported only by the cup-notes microsite. No markdown libraries, no CMS.
 
 ---
 
@@ -38,11 +38,15 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 - Memo detail pages are statically generated (`generateStaticParams`)
 - **Adding/editing content requires a redeploy**
 
-### Cup-notes dataset
+### Cup-notes microsite
 
-- `/projects/cup-notes` replays a precomputed simulation. `simulation/` is the Python generator; `simulation/SPEC.md` is the contract, mirrored in `src/lib/cup-notes/types.ts`.
-- `content/cup-notes/index.json` is read at build time; the 24 `public/cup-notes/scenarios/<key>.json` files are fetched by the demo on demand.
-- `npm run build` runs `npm run check:dataset` first, which fails unless the index exists, came from the OpenAI batch run (not the fixture) and every scenario has a file. Use `npx next build` to build against fixture data locally.
+- `/projects/cup-notes` is a self-contained microsite: routes in `src/app/projects/cup-notes/` (home, 24 run pages, `method`, `changelog`, `not-found`, OG image), code in `src/cup-notes/` (`lib/`, `ui/`, `styles.css`). Every internal link starts with `BASE` or `runHref()` from `src/cup-notes/lib/site.ts`.
+- It sits under `/projects` with no `src/app/projects/layout.tsx`, on purpose: such a layout would wrap the microsite's own shell too. Its `content/projects.json` entry has no `href`, so the Projects list and the sitemap's project list link the home as usual; the sitemap's `cupNotes()` section adds the method, changelog and run pages.
+- Data: `content/cup-notes/index.json`, the 24 `content/cup-notes/scenarios/<key>.json` files and `changelog.json`, all read at build time. `simulation/` is the Python generator; `simulation/SPEC.md` is the contract, mirrored in `src/cup-notes/lib/types.ts`.
+- The build also reads `simulation/config/levers.json` (the memo text) and `simulation/config/prompts/<version>/` (shown word for word on the method page). Never exclude `simulation/config` from the deploy. Never rewrite `policy_text`, `description` or the prompt files: they are what the model saw.
+- `npm run build` runs `npm run check:dataset` first. It fails unless the index came from the OpenAI batch run (not the fixture), every scenario file exists in `content/cup-notes/scenarios/`, there is no `public/cup-notes/` folder, `changelog.json` has an entry with the index's `prompt_version` and `batch_ids`, and a banned word is absent from the cup-notes content and source. Use `npx next build` to build against fixture data locally.
+- After each new batch run, add a `changelog.json` entry for it. `meta.disclaimer` may be edited by hand.
+- It has its own tokens, font (DM Sans) and nav on purpose; it does not use `SiteNav`. Tokens are scoped to the `.cup-notes` wrapper and prefixed `--cn-*`, with a dark-mode block; the only trace in `globals.css` is the `--color-cn-*` lines in `@theme inline`.
 
 ### Apparatus Signals microsite
 
