@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-09",
- "generated_at": "2026-11-10T04:40:25Z",
+ "generated_at": "2026-11-10T04:50:08Z",
  "totals": {
   "states": 51,
   "departments_in_registry": 27102,
@@ -24,7 +24,7 @@
  },
  "sales_source": {
   "name": "Auctions International",
-  "region": "New York, the only state whose lots we read by hand",
+  "region": "New York only",
   "states": [
    "NY"
   ],
