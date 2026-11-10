@@ -98,6 +98,25 @@
 
 /* ---- base ---------------------------------------------------------------------------------- */
 
+/*
+ * The page behind the wrapper (overscroll, the edge on a short page) takes the ground too, or dark
+ * mode shows a light rim. Unlayered and more specific than the body rule in globals.css. The tokens
+ * live on .cup-notes, so the two grounds are written out here.
+ */
+html:has(.cup-notes),
+html:has(.cup-notes) body {
+  color-scheme: light;
+  background: #f6f1e8;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:has(.cup-notes),
+  html:has(.cup-notes) body {
+    color-scheme: dark;
+    background: #171512;
+  }
+}
+
 @layer base {
   .cup-notes {
     background: var(--cn-ground);
@@ -566,11 +585,27 @@
 }
 
 /*
- * Message and private thought stack in one grid cell (see ManagerCard). Hover or keyboard focus
- * inside the card swaps which one shows.
+ * Message and private thought stack in one grid cell (see ManagerCard). The cell is a button whose
+ * ::after stretches over the card, so a tap anywhere on the card swaps which one shows. Hover swaps
+ * them too, but only where the device can hover.
  */
 .cn-mgr-voice {
   display: grid;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cn-mgr-voice::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--cn-radius);
 }
 
 .cn-mgr-voice > * {
@@ -578,6 +613,7 @@
 }
 
 .cn-mgr-msg {
+  display: block;
   font-size: 13px;
   line-height: 1.55;
 }
@@ -587,6 +623,7 @@
 }
 
 .cn-mgr-thought {
+  display: block;
   visibility: hidden;
   padding: 8px 10px;
   border-left: 2px solid var(--cn-green);
@@ -607,14 +644,22 @@
   color: var(--cn-muted);
 }
 
-.cn-mgr:hover .cn-mgr-thought,
-.cn-mgr:focus-within .cn-mgr-thought {
+.cn-mgr-flip .cn-mgr-thought {
   visibility: visible;
 }
 
-.cn-mgr:hover .cn-mgr-msg,
-.cn-mgr:focus-within .cn-mgr-msg {
+.cn-mgr-flip .cn-mgr-msg {
   visibility: hidden;
+}
+
+@media (hover: hover) {
+  .cn-mgr:hover .cn-mgr-thought {
+    visibility: visible;
+  }
+
+  .cn-mgr:hover .cn-mgr-msg {
+    visibility: hidden;
+  }
 }
 
 .cn-wait-line {
@@ -622,7 +667,10 @@
   color: var(--cn-muted);
 }
 
+/* Sits above the card-wide button, so it still jumps to the store's record. */
 .cn-mgr-open {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-self: flex-start;
   align-items: center;
@@ -634,14 +682,6 @@
   font-weight: 600;
   color: var(--cn-green);
   text-decoration: none;
-}
-
-/* The link stretches over the whole card, so a click anywhere on it jumps to the store's record. */
-.cn-mgr-open::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: var(--cn-radius);
 }
 
 .cn-mgr:hover {

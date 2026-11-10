@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import { getIndex, getLeverText, getPrompts } from "@/cup-notes/lib/data";
 import { formatDate, formatNumber, usd } from "@/cup-notes/lib/format";
 import { LEVER_ORDER } from "@/cup-notes/lib/levers";
+import { BASE, pageOpenGraph } from "@/cup-notes/lib/site";
 import { LEVER_INTRO, LEVER_TITLES, ROUND_SEES, tenure } from "@/cup-notes/lib/words";
+
+const DESCRIPTION =
+  "How the cup-note runs were made: the three rounds, the people, the prompts word for word, and what it cost.";
 
 export const metadata: Metadata = {
   title: "Method",
-  description: "How the cup-note runs were made: the three rounds, the people, the prompts word for word, and what it cost.",
+  description: DESCRIPTION,
+  openGraph: pageOpenGraph("Method", `${BASE}/method`, DESCRIPTION),
 };
 
 const STAGE_TITLES = { manager: "Manager", barista: "Barista", customer: "Customer" } as const;

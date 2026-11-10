@@ -26,6 +26,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: SITE_NAME,
       description: project?.summary,
+      siteName: SITE_NAME,
       type: "article",
       publishedTime: project?.date,
       url: BASE,

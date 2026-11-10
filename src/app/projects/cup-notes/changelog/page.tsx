@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { getChangelog } from "@/cup-notes/lib/data";
 import { formatDate, formatNumber, usd } from "@/cup-notes/lib/format";
+import { BASE, pageOpenGraph } from "@/cup-notes/lib/site";
+
+const DESCRIPTION =
+  "Every generated dataset behind the cup-note runs: model, prompt version, batches and cost.";
 
 export const metadata: Metadata = {
   title: "Changelog",
-  description: "Every generated dataset behind the cup-note runs: model, prompt version, batches and cost.",
+  description: DESCRIPTION,
+  openGraph: pageOpenGraph("Changelog", `${BASE}/changelog`, DESCRIPTION),
 };
 
 export default function ChangelogPage() {

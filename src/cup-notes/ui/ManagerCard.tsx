@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import { clamp01 } from "@/cup-notes/lib/format";
@@ -22,10 +23,11 @@ export function ManagerCard({ store, manager, order, t }: Props) {
   /* Cut on a word boundary so the line reads as speech, not as a glitch. */
   let cut = Math.ceil(spoken * message.length);
   if (cut < message.length) cut = Math.max(0, message.lastIndexOf(" ", cut));
+  const [open, setOpen] = useState(false);
 
   return (
     <motion.article
-      className={`cn-card cn-mgr ${shown ? "" : "cn-card-wait"}`}
+      className={`cn-card cn-mgr ${shown ? "" : "cn-card-wait"} ${open ? "cn-mgr-flip" : ""}`}
       initial={false}
       animate={{ opacity: shown ? 1 : 0.55, y: shown ? 0 : 6 }}
       transition={{ duration: 0.35, ease: "easeOut" }}
@@ -69,21 +71,28 @@ export function ManagerCard({ store, manager, order, t }: Props) {
 
           {/*
             The message and the private thought share one grid cell, so the card is always as tall
-            as the longer of the two and swapping them on hover or focus never moves the layout.
+            as the longer of the two and swapping them never moves the layout. The button stretches
+            over the card: a tap or click anywhere on it swaps them, which hover alone cannot do on
+            a phone.
           */}
-          <div className="cn-mgr-voice">
-            <p className="cn-mgr-msg">
+          <button
+            type="button"
+            className="cn-mgr-voice"
+            aria-pressed={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className="cn-mgr-msg">
               <span className="sr-only">Tells the team: {message}</span>
               <span aria-hidden="true">
                 &ldquo;{message.slice(0, cut)}
                 <span className="cn-unsaid">{message.slice(cut)}</span>&rdquo;
               </span>
-            </p>
-            <p className="cn-mgr-thought">
+            </span>
+            <span className="cn-mgr-thought">
               <span className="cn-mgr-thought-tag">Thinks, privately</span>
               {manager.private_thought}
-            </p>
-          </div>
+            </span>
+          </button>
         </>
       ) : (
         <p className="cn-wait-line">{manager ? "Reading the memo" : "Waiting for the memo"}</p>

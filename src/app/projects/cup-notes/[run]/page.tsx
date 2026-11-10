@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getIndex, getLeverText, getRun, getRunKeys } from "@/cup-notes/lib/data";
 import { LEVER_ORDER, leverLabel, neighbours, parseKey, scenarioName } from "@/cup-notes/lib/levers";
-import { runHref } from "@/cup-notes/lib/site";
+import { pageOpenGraph, runHref } from "@/cup-notes/lib/site";
 import type { LeverKey } from "@/cup-notes/lib/types";
 import { HOW_TO_READ, LEVER_TITLES, compareSentence } from "@/cup-notes/lib/words";
 import { LeverPicker } from "@/cup-notes/ui/LeverPicker";
@@ -24,9 +24,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const selection = parseKey(index, run);
   if (!selection) return {};
   const name = scenarioName(index, selection);
+  const description = `One run of the cup-note rule: ${name}. Six stores, twelve baristas, 96 cups.`;
   return {
     title: name,
-    description: `One run of the cup-note rule: ${name}. What six managers said, what twelve baristas wrote, what 96 customers thought.`,
+    description,
+    openGraph: pageOpenGraph(name, runHref(run), description),
   };
 }
 
@@ -58,7 +60,10 @@ export default async function RunPage({ params }: Params) {
         <LeverPicker index={index} selection={selection} />
       </header>
 
-      <section aria-label="The chain">
+      <section aria-labelledby="chain-title">
+        <h2 id="chain-title" className="sr-only">
+          From the memo to the cup
+        </h2>
         <RunChain index={index} detail={detail} memo={memo} />
         <p className="cn-prose mt-6 max-w-3xl">{HOW_TO_READ}</p>
       </section>

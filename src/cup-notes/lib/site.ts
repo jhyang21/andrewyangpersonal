@@ -17,6 +17,14 @@ export const SOURCES = [
   },
 ];
 
+/**
+ * Open Graph fields for a page below the home. A page's openGraph replaces the layout's whole
+ * object, so siteName and type are repeated here; the image still comes from opengraph-image.tsx.
+ */
+export function pageOpenGraph(title: string, path: string, description?: string) {
+  return { title, description, url: path, siteName: SITE_NAME, type: "article" as const };
+}
+
 /** A run page. Keys are `{enforcement}-{note}-{traffic}-{staffing}`. */
 export function runHref(key: string) {
   return `${BASE}/${key}`;

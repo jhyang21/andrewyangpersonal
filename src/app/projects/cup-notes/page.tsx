@@ -73,7 +73,8 @@ export default function CupNotesHome() {
                     return (
                       <td key={`${tr.key}-${st.key}`}>
                         {s ? (
-                          <Link href={runHref(s.key)} aria-label={scenarioName(index, sel)}>
+                          <Link href={runHref(s.key)}>
+                            <span className="sr-only">{scenarioName(index, sel)}: </span>
                             <span className="cn-grid-main">{Math.round(s.outcomes.compliance_pct)}%</span>
                             <span className="cn-grid-sub">
                               satisfaction {Math.round(s.outcomes.customer_satisfaction)}
