@@ -93,10 +93,10 @@
    ],
    "anchor": "date",
    "from_months": 0,
-   "to_months": 3,
+   "to_months": 6,
    "how_template": "voted to sell {month}",
    "n_cases": 2,
-   "how_past_template": "voted to sell {month}; probably sold by now",
+   "how_past_template": "voted to sell {month}; six months with no listing found, so it may have sold quietly",
    "fallback": "today"
   },
   {
@@ -105,10 +105,10 @@
    ],
    "anchor": "date",
    "from_months": 0,
-   "to_months": 3,
+   "to_months": 6,
    "how_template": "sale announced {month}",
    "n_cases": 0,
-   "how_past_template": "sale announced {month}; probably sold by now",
+   "how_past_template": "sale announced {month}; six months with no listing found, so it may have sold quietly",
    "fallback": "today"
   }
  ],

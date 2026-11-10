@@ -30,7 +30,7 @@
   "stage": "surplus",
   "window": {
    "from": "2026-10",
-   "to": "2027-01",
+   "to": "2027-04",
    "how": "voted to sell Oct 2026"
   },
   "rank": 1,
@@ -209,8 +209,8 @@
   "stage": "surplus",
   "window": {
    "from": "2025-09",
-   "to": "2025-12",
-   "how": "voted to sell Sep 2025; probably sold by now"
+   "to": "2026-03",
+   "how": "voted to sell Sep 2025; six months with no listing found, so it may have sold quietly"
   },
   "rank": 4,
   "tier": "2 Call this month",
@@ -388,7 +388,7 @@
   "stage": "surplus",
   "window": {
    "from": "2026-08",
-   "to": "2026-11",
+   "to": "2027-02",
    "how": "sale announced Aug 2026"
   },
   "rank": 7,

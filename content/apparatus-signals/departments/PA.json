@@ -30,8 +30,8 @@
   "stage": "surplus",
   "window": {
    "from": "2026-06",
-   "to": "2026-09",
-   "how": "sale announced Jun 2026; probably sold by now"
+   "to": "2026-12",
+   "how": "sale announced Jun 2026"
   },
   "rank": 1,
   "tier": "1 Call this week",
@@ -200,11 +200,11 @@
   "basis": "observed",
   "read_by": "feed",
   "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
+   "description": "2013 Spartan pumper, 42,972 miles, Hale pump, 1,000 gal tank",
+   "type": "pumper",
+   "year": 2013,
+   "year_how": "stated",
+   "type_how": "named in the record"
   },
   "stage": "replacing",
   "window": {
@@ -215,7 +215,38 @@
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "guide": {
+   "type": "pumper",
+   "band": "<=15",
+   "n": 9,
+   "median": 4650,
+   "p25": 3300,
+   "p75": 5100,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2005 American LaFrance Eagle Fire Truck",
+     "price": 4650.0,
+     "date": "2018-01-04",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/12874/item/lot-0011-2005-american-lafrance-eagle-fire-truck-79973/"
+    },
+    {
+     "item": "2006 American LaFrance Eagle Fire Truck",
+     "price": 5100.0,
+     "date": "2018-01-04",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/12874/item/lot-0006-2006-american-lafrance-eagle-fire-truck-79968/"
+    },
+    {
+     "item": "2008 Pierce Saber Pumper Truck",
+     "price": 3300.0,
+     "date": "2023-03-22",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/32154/item/lot-0001-2008-pierce-saber-pumper-truck-198710/"
+    }
+   ]
+  }
  },
  {
   "checked": "trade_press",
@@ -1338,8 +1369,8 @@
   "stage": "surplus",
   "window": {
    "from": "2025-10",
-   "to": "2026-01",
-   "how": "sale announced Oct 2025; probably sold by now"
+   "to": "2026-04",
+   "how": "sale announced Oct 2025; six months with no listing found, so it may have sold quietly"
   },
   "rank": 25,
   "tier": "2 Call this month",
@@ -1798,8 +1829,8 @@
   "stage": "surplus",
   "window": {
    "from": "2024-11",
-   "to": "2025-02",
-   "how": "sale announced Nov 2024; probably sold by now"
+   "to": "2025-05",
+   "how": "sale announced Nov 2024; six months with no listing found, so it may have sold quietly"
   },
   "rank": 36,
   "tier": "2 Call this month",
@@ -3548,11 +3579,11 @@
   "basis": "observed",
   "read_by": "person",
   "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
+   "description": "1999 Dodge Ram 2500 Cummins diesel, 82,121 miles, optional skid unit with 150-gal tank",
+   "type": "other",
+   "year": 1999,
+   "year_how": "stated",
+   "type_how": "named in the record"
   },
   "stage": "sold",
   "window": null,
@@ -3852,18 +3883,49 @@
   "basis": "observed",
   "read_by": "person",
   "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
+   "description": "1998 Spartan/RD Murray pumper, Engine 45",
+   "type": "pumper",
+   "year": 1998,
+   "year_how": "stated",
+   "type_how": "named in the record"
   },
   "stage": "sold",
   "window": null,
   "rank": 74,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": {
+   "type": "pumper",
+   "band": "26-30",
+   "n": 108,
+   "median": 5100,
+   "p25": 3050,
+   "p75": 6700,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1998 HME Smeal 1871 Fire Truck",
+     "price": 5700.0,
+     "date": "2026-10-14",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49473/item/lot-0001-4485-1998-hme-smeal-1871-fire-truck-311921/"
+    },
+    {
+     "item": "1998 Freightliner FL80 Pierce Saber Pumper",
+     "price": 10900.0,
+     "date": "2026-06-11",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47509/item/lot-0001-1998-freightliner-fl80-pierce-saber-pumper-298556/"
+    },
+    {
+     "item": "1998 Smeal/International 4900 Fire Engine",
+     "price": 6500.0,
+     "date": "2026-02-17",
+     "state": null,
+     "url": "https://www.auctionsinternational.com/auction/46088/item/lot-0001-1998-smealinternational-4900-fire-engine-287939/"
+    }
+   ]
+  }
  },
  {
   "checked": "corrected",
@@ -3887,17 +3949,48 @@
   "basis": "observed",
   "read_by": "person",
   "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
+   "description": "1981 Chevrolet CK30 mini pumper (1980s)",
+   "type": "mini pumper",
+   "year": 1981,
+   "year_how": "stated",
+   "type_how": "named in the record"
   },
   "stage": "sold",
   "window": null,
   "rank": 75,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": {
+   "type": "mini pumper",
+   "band": "31+",
+   "n": 10,
+   "median": 6850,
+   "p25": 6225,
+   "p75": 8075,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1977 Chevy Pierce Custom Deluxe 3500 Mini Pumper",
+     "price": 7100.0,
+     "date": "2022-11-04",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/30445/item/lot-0005-1977-chevy-pierce-custom-deluxe-3500-mini-pumper-189677/"
+    },
+    {
+     "item": "1970 Ford F250 Mini Pumper Pick Up",
+     "price": 8400.0,
+     "date": "2014-01-07",
+     "state": null,
+     "url": "https://www.auctionsinternational.com/auction/2451/item/lot-0001-1970-ford-f250-mini-pumper-pick-up-14295/"
+    },
+    {
+     "item": "1973 Dodge Custom 300 Pierce Mini Pumper",
+     "price": 6600.0,
+     "date": "2015-09-18",
+     "state": null,
+     "url": "https://www.auctionsinternational.com/auction/5753/item/lot-0001-1973-dodge-custom-300-pierce-mini-pumper-35733/"
+    }
+   ]
+  }
  }
 ]

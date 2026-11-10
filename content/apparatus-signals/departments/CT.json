@@ -575,8 +575,8 @@
   "stage": "surplus",
   "window": {
    "from": "2026-04",
-   "to": "2026-07",
-   "how": "sale announced Apr 2026; probably sold by now"
+   "to": "2026-10",
+   "how": "sale announced Apr 2026; six months with no listing found, so it may have sold quietly"
   },
   "rank": 11,
   "tier": "3 Watch",
@@ -933,8 +933,8 @@
   "stage": "surplus",
   "window": {
    "from": "2024-12",
-   "to": "2025-03",
-   "how": "sale announced Dec 2024; probably sold by now"
+   "to": "2025-06",
+   "how": "sale announced Dec 2024; six months with no listing found, so it may have sold quietly"
   },
   "rank": 17,
   "tier": "3 Watch",
@@ -1042,8 +1042,8 @@
   "stage": "surplus",
   "window": {
    "from": "2025-10",
-   "to": "2026-01",
-   "how": "sale announced Oct 2025; probably sold by now"
+   "to": "2026-04",
+   "how": "sale announced Oct 2025; six months with no listing found, so it may have sold quietly"
   },
   "rank": 19,
   "tier": "3 Watch",
@@ -1489,18 +1489,49 @@
   "basis": "observed",
   "read_by": "person",
   "truck": {
-   "description": null,
-   "type": null,
+   "description": "Mack CF pumper, about 74,000 miles (retired about eight months earlier)",
+   "type": "pumper",
    "year": null,
    "year_how": null,
-   "type_how": null
+   "type_how": "named in the record"
   },
   "stage": "sold",
   "window": null,
   "rank": 30,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3300.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0013-1993-mack-mr688p-pumper-132705/"
+    },
+    {
+     "item": "1993 Mack MR688P Pumper",
+     "price": 3050.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0014-1993-mack-mr688p-pumper-132704/"
+    },
+    {
+     "item": "1985 Mack CF686FC Pumper",
+     "price": 3650.0,
+     "date": "2020-07-14",
+     "state": "CT",
+     "url": "https://www.auctionsinternational.com/auction/21791/item/lot-0015-1985-mack-cf686fc-pumper-132706/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed",

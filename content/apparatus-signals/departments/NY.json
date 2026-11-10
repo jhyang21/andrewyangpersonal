@@ -96,7 +96,7 @@
   "stage": "surplus",
   "window": {
    "from": "2026-08",
-   "to": "2026-11",
+   "to": "2027-02",
    "how": "voted to sell Aug 2026"
   },
   "rank": 2,
@@ -753,8 +753,8 @@
   "stage": "surplus",
   "window": {
    "from": "2026-04",
-   "to": "2026-07",
-   "how": "voted to sell Apr 2026; probably sold by now"
+   "to": "2026-10",
+   "how": "voted to sell Apr 2026; six months with no listing found, so it may have sold quietly"
   },
   "rank": 13,
   "tier": "1 Call this week",
@@ -823,8 +823,8 @@
   "stage": "surplus",
   "window": {
    "from": "2026-07",
-   "to": "2026-10",
-   "how": "voted to sell Jul 2026; probably sold by now"
+   "to": "2027-01",
+   "how": "voted to sell Jul 2026"
   },
   "rank": 14,
   "tier": "1 Call this week",
@@ -893,7 +893,7 @@
   "stage": "surplus",
   "window": {
    "from": "2026-11",
-   "to": "2027-02",
+   "to": "2027-05",
    "how": "sale announced"
   },
   "rank": 15,
@@ -2127,8 +2127,8 @@
   "stage": "surplus",
   "window": {
    "from": "2026-03",
-   "to": "2026-06",
-   "how": "voted to sell Mar 2026; probably sold by now"
+   "to": "2026-09",
+   "how": "voted to sell Mar 2026; six months with no listing found, so it may have sold quietly"
   },
   "rank": 39,
   "tier": "2 Call this month",
@@ -2197,8 +2197,8 @@
   "stage": "surplus",
   "window": {
    "from": "2026-02",
-   "to": "2026-05",
-   "how": "voted to sell Feb 2026; probably sold by now"
+   "to": "2026-08",
+   "how": "voted to sell Feb 2026; six months with no listing found, so it may have sold quietly"
   },
   "rank": 40,
   "tier": "2 Call this month",
@@ -2532,8 +2532,8 @@
   "stage": "surplus",
   "window": {
    "from": "2026-04",
-   "to": "2026-07",
-   "how": "voted to sell Apr 2026; probably sold by now"
+   "to": "2026-10",
+   "how": "voted to sell Apr 2026; six months with no listing found, so it may have sold quietly"
   },
   "rank": 47,
   "tier": "2 Call this month",
@@ -2780,11 +2780,11 @@
   "basis": "observed",
   "read_by": "feed",
   "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
+   "description": "1975 Diamond Reo/4-Guys fire tanker",
+   "type": "tanker",
+   "year": 1975,
+   "year_how": "stated",
+   "type_how": "named in the record"
   },
   "stage": "replacing",
   "window": {
@@ -2796,34 +2796,34 @@
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 437,
-   "median": 4300,
-   "p25": 2800,
-   "p75": 6400,
+   "type": "tanker",
+   "band": "31+",
+   "n": 52,
+   "median": 5450,
+   "p25": 2625,
+   "p75": 12525,
    "thin": false,
    "comps": [
     {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+     "item": "1970 Kaiser Jeep M51A2 6X6 Tanker",
+     "price": 4000.0,
+     "date": "2021-03-12",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/24010/item/lot-0060-1970-kaiser-jeep-m51a2-6x6-tanker-147880/"
     },
     {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+     "item": "1963 Jeep 2.5 Ton Tanker",
+     "price": 2300.0,
+     "date": "2014-10-07",
+     "state": null,
+     "url": "https://www.auctionsinternational.com/auction/3869/item/lot-0002-1963-jeep-25-ton-tanker-22462/"
     },
     {
-     "item": "2004 Freightliner/American LaFrance Metropolitan 1500 GPM Pumper",
-     "price": 7000.0,
-     "date": "2026-10-21",
+     "item": "1972 Dodge 800 Tanker",
+     "price": 2650.0,
+     "date": "2019-09-18",
      "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49430/item/lot-0001-2004-freightlineramerican-lafrance-metropolitan-1500-gpm-pumper-311578/"
+     "url": "https://www.auctionsinternational.com/auction/18854/item/lot-0003-1972-dodge-800-tanker-114539/"
     }
    ]
   }
