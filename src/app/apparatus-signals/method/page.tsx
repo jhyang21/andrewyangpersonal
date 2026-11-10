@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BASE } from "@/apparatus-signals/lib/site";
-import {
-  getDepartments,
-  getMeta,
-  getMethod,
-  getSales,
-  getState,
-  getStates,
-} from "@/apparatus-signals/lib/data";
+import { allLeads, getMeta, getMethod, getSales, getState, getStates } from "@/apparatus-signals/lib/data";
 import {
   capitalize,
   formatDate,
@@ -48,7 +41,7 @@ export default function MethodPage() {
   const medianAll = medianPrice(sales.lots);
   const byState = lotsByState(sales.sold);
   const ruleStates = states.filter((s) => s.rule ?? method.rules[s.code]);
-  const allLeads = states.flatMap((s) => getDepartments(s.code));
+  const leads = allLeads();
   const kinds = Object.keys(method.points).sort(
     (a, b) => method.points[b] - method.points[a] || a.localeCompare(b),
   );
@@ -263,7 +256,7 @@ export default function MethodPage() {
                 </td>
                 <td data-label="How">
                   {capitalize(
-                    windowExample(w, allLeads) ?? fillTemplate(w.how_template),
+                    windowExample(w, leads) ?? fillTemplate(w.how_template),
                   )}
                   .
                   {w.how_past_template ? (
