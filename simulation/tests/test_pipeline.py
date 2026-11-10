@@ -10,7 +10,7 @@ from cupnotes import batch, compile, config, fake, prompts, schemas, world
 def tmp_outputs(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "RUNS_DIR", tmp_path / "runs")
     monkeypatch.setattr(config, "INDEX_PATH", tmp_path / "content" / "index.json")
-    monkeypatch.setattr(config, "SCENARIO_DIR", tmp_path / "public" / "scenarios")
+    monkeypatch.setattr(config, "SCENARIO_DIR", tmp_path / "content" / "scenarios")
     return tmp_path
 
 

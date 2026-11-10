@@ -3,11 +3,13 @@
 // The microsite shows fixture data with a red band, which is fine on a laptop and wrong on the live
 // site, so `npm run build` runs this first. It checks that:
 // - the index exists and came from the OpenAI batch run rather than the fixture backend;
-// - every scenario it lists has a detail file in content/cup-notes/scenarios/;
+// - every scenario it lists has a detail file in content/cup-notes/scenarios/, that folder holds no
+//   other scenario files, and each file's key matches its file name;
 // - no stray public/cup-notes/ folder is left (an old compile wrote there);
 // - content/cup-notes/changelog.json has an entry for this dataset (same prompt version and batch ids;
-//   not generated_at, which compile rewrites on every run);
-// - a word that must never appear on the site is absent from the cup-notes content and source.
+//   not generated_at, which compile rewrites on every run) whose counts, tokens and usd match the index;
+// - a word that must never appear on the site is absent from the cup-notes content, the source and
+//   simulation/config (the prompts and memo text the method page prints).
 
 import fs from "node:fs";
 import path from "node:path";
@@ -52,6 +54,19 @@ if (missing.length > 0) {
   fail(`no scenario file for ${missing.length} key(s): ${missing.join(", ")}`);
 }
 
+const scenarioFiles = fs.readdirSync(scenarioDir).filter((name) => name.endsWith(".json"));
+if (scenarioFiles.length !== scenarios.length) {
+  fail(
+    `${rel(scenarioDir)} has ${scenarioFiles.length} scenario files but the index lists ${scenarios.length}; remove the extras or recompile`,
+  );
+}
+for (const name of scenarioFiles) {
+  const key = readJson(path.join(scenarioDir, name))?.key;
+  if (`${key}.json` !== name) {
+    fail(`${rel(path.join(scenarioDir, name))} holds key "${key}", which does not match its file name`);
+  }
+}
+
 if (fs.existsSync(strayDir)) {
   fail(`${rel(strayDir)} exists; scenario files live in ${rel(scenarioDir)} now. Delete it.`);
 }
@@ -64,13 +79,22 @@ const sameIds = (a, b) =>
   [...a].sort().join("\n") === [...b].sort().join("\n");
 const logged =
   Array.isArray(changelog) &&
-  changelog.some(
+  changelog.find(
     (e) => e?.prompt_version === index.meta.prompt_version && sameIds(e?.batch_ids, index.meta.batch_ids),
   );
 if (!logged) {
   fail(
     `no entry in ${rel(changelogPath)} matches prompt ${index.meta.prompt_version} and the index's batch ids; add a changelog entry for this dataset`,
   );
+}
+// The changelog page shows these, so they must be the index's own numbers.
+const sameJson = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+for (const field of ["counts", "tokens", "usd"]) {
+  if (!sameJson(logged[field], index.meta[field])) {
+    fail(
+      `the changelog entry's ${field} (${JSON.stringify(logged[field])}) differs from the index's (${JSON.stringify(index.meta[field])}); copy them from index.json meta`,
+    );
+  }
 }
 
 // Split so this file does not match itself.
@@ -80,6 +104,8 @@ const guarded = [
   dataDir,
   path.join(root, "src", "cup-notes"),
   path.join(root, "src", "app", "projects", "cup-notes"),
+  // The method page prints the prompts and the memo text from here word for word.
+  path.join(root, "simulation", "config"),
 ];
 function* files(p) {
   if (!fs.existsSync(p)) return;
