@@ -70,8 +70,6 @@ export function RunChain({ index, detail, memo }: Props) {
     setPhase("done");
   }, []);
 
-  const t = phase === "done" ? T.end : elapsed;
-
   return (
     <MotionConfig reducedMotion="user">
       <div>
@@ -90,7 +88,7 @@ export function RunChain({ index, detail, memo }: Props) {
 
         {detail.has_fallback && <p className="cn-fallback-note">{FALLBACK_NOTE}</p>}
 
-        <ChainStage index={index} detail={detail} memo={memo} phase={phase} t={t} />
+        <ChainStage index={index} detail={detail} memo={memo} phase={phase} t={elapsed} />
       </div>
     </MotionConfig>
   );

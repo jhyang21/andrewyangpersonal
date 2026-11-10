@@ -62,7 +62,7 @@ export function StoreRecord({ index, detail, store }: Props) {
         </p>
         <p className="cn-dim">Judged on {store.manager.judged_on}.</p>
         <div className="cn-mgr-flags">
-          <span className={`cn-chip cn-stance cn-stance-${manager.stance}`}>
+          <span className={`cn-chip cn-stance-${manager.stance}`}>
             {STANCE_LABELS[manager.stance]}
           </span>
           <span className="cn-chip cn-chip-quiet">

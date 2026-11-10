@@ -1,6 +1,5 @@
 "use client";
 
-import { memo } from "react";
 import {
   Bar,
   BarChart,
@@ -74,7 +73,7 @@ function MetricTick({ x, y, payload }: { x?: number | string; y?: number | strin
   );
 }
 
-function TradeoffChartImpl({ index, selection }: Props) {
+export function TradeoffChart({ index, selection }: Props) {
   const byKey = new Map(index.scenarios.map((s) => [s.key, s]));
   /* With no run on screen, the bar chart shows the default run's shift. */
   const scope = selection ?? DEFAULT_SELECTION;
@@ -294,10 +293,6 @@ function TradeoffChartImpl({ index, selection }: Props) {
           </p>
         </figure>
       </div>
-
     </div>
   );
 }
-
-/* The chart never reads the playback clock, so it should not redraw thirty times a second with it. */
-export const TradeoffChart = memo(TradeoffChartImpl);

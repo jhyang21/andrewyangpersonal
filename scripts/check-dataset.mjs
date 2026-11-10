@@ -57,17 +57,16 @@ if (fs.existsSync(strayDir)) {
 }
 
 const changelog = readJson(changelogPath);
-if (!Array.isArray(changelog) || changelog.length === 0) {
-  fail(`${rel(changelogPath)} is empty; add a changelog entry for this dataset`);
-}
 const sameIds = (a, b) =>
   Array.isArray(a) &&
   Array.isArray(b) &&
   a.length === b.length &&
   [...a].sort().join("\n") === [...b].sort().join("\n");
-const logged = changelog.some(
-  (e) => e?.prompt_version === index.meta.prompt_version && sameIds(e?.batch_ids, index.meta.batch_ids),
-);
+const logged =
+  Array.isArray(changelog) &&
+  changelog.some(
+    (e) => e?.prompt_version === index.meta.prompt_version && sameIds(e?.batch_ids, index.meta.batch_ids),
+  );
 if (!logged) {
   fail(
     `no entry in ${rel(changelogPath)} matches prompt ${index.meta.prompt_version} and the index's batch ids; add a changelog entry for this dataset`,

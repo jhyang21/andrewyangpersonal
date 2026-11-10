@@ -50,7 +50,7 @@ function apparatusSignals(): MetadataRoute.Sitemap {
   return paths.map((p) => ({ url: `${SITE_URL}${p}`, lastModified }));
 }
 
-/** The cup-notes sub-pages: method, changelog and every run. The home is in the projects list above. */
+/** The cup-notes sub-pages: method, changelog and every run. */
 function cupNotes(): MetadataRoute.Sitemap {
   const lastModified = new Date(getCupNotesData().meta.generated_at);
   const paths = [`${CUP_NOTES_BASE}/method`, `${CUP_NOTES_BASE}/changelog`, ...getRunKeys().map(runHref)];

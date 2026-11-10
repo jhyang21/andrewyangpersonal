@@ -2,7 +2,7 @@
 // never say a number the data does not hold. The words around them live in words.ts.
 import type { CupNotesIndex, Outcomes } from "./types";
 
-export const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
+const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
 export const r0 = (v: number) => Math.round(v);
 
 export type Findings = {

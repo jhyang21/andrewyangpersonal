@@ -40,21 +40,16 @@ export default async function RunPage({ params }: Params) {
   const memo = Object.fromEntries(
     LEVER_ORDER.map((l) => [l, text[l][selection[l]] ?? ""]),
   ) as Record<LeverKey, string>;
-  const summaries = new Map(index.scenarios.map((s) => [s.key, s]));
-  const here = summaries.get(detail.key);
-  const near = here
-    ? neighbours(index, selection).flatMap((n) => {
-        const other = summaries.get(n.key);
-        if (!other) return [];
-        const line = compareSentence(
-          leverLabel(index, n.lever, selection[n.lever]),
-          leverLabel(index, n.lever, n.selection[n.lever]),
-          here.outcomes,
-          other.outcomes,
-        );
-        return [{ ...n, ...line }];
-      })
-    : [];
+  const near = neighbours(index, selection).map(({ lever, run: other }) => ({
+    lever,
+    key: other.key,
+    ...compareSentence(
+      leverLabel(index, lever, selection[lever]),
+      leverLabel(index, lever, other.levers[lever]),
+      detail.outcomes,
+      other.outcomes,
+    ),
+  }));
 
   return (
     <div className="space-y-10">

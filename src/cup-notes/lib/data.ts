@@ -64,7 +64,7 @@ export function getLeverText(): LeverText {
 const STAGES: Prompt["stage"][] = ["manager", "barista", "customer"];
 
 /** The three prompt files for a version, split on their `## system` and `## user` headings. */
-export function getPrompts(version = getIndex().meta.prompt_version): Prompt[] {
+export function getPrompts(version: string): Prompt[] {
   return STAGES.map((stage) => {
     const raw = readText(path.join(CONFIG_DIR, "prompts", version, `${stage}.md`));
     const sections: Record<string, string[]> = {};

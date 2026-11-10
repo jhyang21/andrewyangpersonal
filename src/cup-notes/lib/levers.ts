@@ -1,5 +1,5 @@
 // The four levers and the run keys they make. Pure functions, safe on server and client.
-import type { CupNotesIndex, LeverKey, LeverSelection } from "./types";
+import type { CupNotesIndex, LeverKey, LeverSelection, ScenarioSummary } from "./types";
 
 export const LEVER_ORDER: LeverKey[] = ["enforcement", "note", "traffic", "staffing"];
 
@@ -30,18 +30,17 @@ export function parseKey(index: CupNotesIndex, key: string): LeverSelection | nu
   return index.scenarios.find((s) => s.key === key)?.levers ?? null;
 }
 
-export type Neighbour = { lever: LeverKey; key: string; selection: LeverSelection };
+type Neighbour = { lever: LeverKey; run: ScenarioSummary };
 
 /** Every run that differs from this one in exactly one lever, in lever order (five of them). */
 export function neighbours(index: CupNotesIndex, selection: LeverSelection): Neighbour[] {
-  const keys = new Set(index.scenarios.map((s) => s.key));
+  const byKey = new Map(index.scenarios.map((s) => [s.key, s]));
   const out: Neighbour[] = [];
   for (const lever of LEVER_ORDER) {
     for (const o of index.levers[lever]) {
       if (o.key === selection[lever]) continue;
-      const next = { ...selection, [lever]: o.key };
-      const key = scenarioKey(next);
-      if (keys.has(key)) out.push({ lever, key, selection: next });
+      const run = byKey.get(scenarioKey({ ...selection, [lever]: o.key }));
+      if (run) out.push({ lever, run });
     }
   }
   return out;

@@ -3,7 +3,7 @@
  *
  * Every token and selector is scoped to the .cup-notes wrapper, so the rest of the personal site is
  * not touched. Tailwind loads once from the root globals.css, which also maps the --color-cn-*
- * theme entries (text-cn-muted, border-cn-line, bg-cn-card, ...) to these variables.
+ * theme entries (text-cn-muted, border-cn-line, bg-cn-ground, ...) to these variables.
  *
  * Brand green is for links, focus and the one primary button; amber is for warnings. The data
  * palettes are separate and were run through the dataviz validator against the card surface:
@@ -644,7 +644,7 @@
   border-radius: var(--cn-radius);
 }
 
-.cn-mgr:has(.cn-mgr-open):hover {
+.cn-mgr:hover {
   border-color: var(--cn-line-strong);
 }
 
