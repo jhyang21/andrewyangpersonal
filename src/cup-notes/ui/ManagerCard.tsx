@@ -2,18 +2,19 @@
 
 import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
-import type { Manager, Store } from "@/lib/cup-notes/types";
-import { STANCE_LABELS, T, clamp01 } from "./shared";
+import { clamp01 } from "@/cup-notes/lib/format";
+import type { Manager, Store } from "@/cup-notes/lib/types";
+import { MANAGER_FLAGS, STANCE_LABELS } from "@/cup-notes/lib/words";
+import { T } from "./timeline";
 
 type Props = {
   store: Store;
   manager: Manager | null;
   order: number;
   t: number;
-  onOpen: (storeKey: string) => void;
 };
 
-export function ManagerCard({ store, manager, order, t, onOpen }: Props) {
+export function ManagerCard({ store, manager, order, t }: Props) {
   const start = T.managerStart(order);
   const shown = manager !== null && t >= start;
   const spoken = clamp01((t - start - 150) / T.managerSpeak);
@@ -46,10 +47,10 @@ export function ManagerCard({ store, manager, order, t, onOpen }: Props) {
               {STANCE_LABELS[manager.stance]}
             </span>
             <span className="cn-chip cn-chip-quiet">
-              {manager.tracks_compliance ? "Checking cups" : "Not checking"}
+              {manager.tracks_compliance ? MANAGER_FLAGS.checking : MANAGER_FLAGS.notChecking}
             </span>
             {manager.peak_exception && (
-              <span className="cn-chip cn-chip-quiet">Rush: may skip</span>
+              <span className="cn-chip cn-chip-quiet">{MANAGER_FLAGS.rushSkip}</span>
             )}
           </div>
 
@@ -88,16 +89,11 @@ export function ManagerCard({ store, manager, order, t, onOpen }: Props) {
         <p className="cn-wait-line">{manager ? "Reading the memo" : "Waiting for the memo"}</p>
       )}
 
-      <button
-        type="button"
-        className="cn-mgr-open"
-        onClick={() => onOpen(store.key)}
-        disabled={!shown}
-      >
+      <a className="cn-mgr-open" href={`#store-${store.key}`}>
         Open store
         <ChevronRight size={14} aria-hidden="true" />
         <span className="sr-only">: {store.name}</span>
-      </button>
+      </a>
     </motion.article>
   );
 }

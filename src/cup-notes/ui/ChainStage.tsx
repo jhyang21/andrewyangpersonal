@@ -1,35 +1,26 @@
 "use client";
 
 import type { ReactNode } from "react";
-import type {
-  CupAction,
-  CupNotesIndex,
-  LeverSelection,
-  Outcomes,
-  ScenarioDetail,
-} from "@/lib/cup-notes/types";
+import type { CupAction, CupNotesIndex, LeverKey, ScenarioDetail } from "@/cup-notes/lib/types";
+import { ACTION_LABELS, HINTS, STEPS, type Stage } from "@/cup-notes/lib/words";
 import { CupGlyph } from "./Glyphs";
 import { ManagerCard } from "./ManagerCard";
 import { OutcomeTiles } from "./OutcomeTiles";
 import { ReactionWall } from "./ReactionWall";
 import { ShiftStrip } from "./ShiftStrip";
-import type { Phase } from "./LeverPanel";
-import { ACTION_LABELS, STAGES, type Stage, stageAt } from "./shared";
+import { STAGES, stageAt, type Phase } from "./timeline";
 
 type Props = {
   index: CupNotesIndex;
-  selection: LeverSelection;
-  detail: ScenarioDetail | null;
+  detail: ScenarioDetail;
+  memo: Record<LeverKey, string>;
   phase: Phase;
   t: number;
-  pinned: Outcomes | null;
-  onOpenStore: (storeKey: string) => void;
 };
 
 type StepState = "wait" | "live" | "done";
 
 function stepState(stage: Stage, phase: Phase, t: number): StepState {
-  if (phase === "idle") return "wait";
   if (phase === "done") return "done";
   const now = STAGES.indexOf(stageAt(t));
   const me = STAGES.indexOf(stage);
@@ -38,14 +29,12 @@ function stepState(stage: Stage, phase: Phase, t: number): StepState {
 
 function Step({
   n,
-  title,
-  sub,
+  stage,
   state,
   children,
 }: {
   n: number;
-  title: string;
-  sub: string;
+  stage: Stage;
   state: StepState;
   children: ReactNode;
 }) {
@@ -55,8 +44,8 @@ function Step({
         <span className="cn-step-n" aria-hidden="true">
           {n}
         </span>
-        <h3 className="cn-step-title">{title}</h3>
-        <span className="cn-step-sub">{sub}</span>
+        <h3 className="cn-step-title">{STEPS[stage].title}</h3>
+        <span className="cn-step-sub">{STEPS[stage].sub}</span>
       </div>
       <div>{children}</div>
     </li>
@@ -65,9 +54,8 @@ function Step({
 
 const CUP_LEGEND: CupAction[] = ["skip", "smiley", "generic", "personal"];
 
-export function ChainStage({ index, selection, detail, phase, t, pinned, onOpenStore }: Props) {
-  const opt = (lever: keyof LeverSelection) =>
-    index.levers[lever].find((o) => o.key === selection[lever]);
+export function ChainStage({ index, detail, memo, phase, t }: Props) {
+  const opt = (lever: LeverKey) => index.levers[lever].find((o) => o.key === detail.levers[lever]);
   const enforcement = opt("enforcement");
   const note = opt("note");
   const traffic = opt("traffic");
@@ -75,7 +63,7 @@ export function ChainStage({ index, selection, detail, phase, t, pinned, onOpenS
 
   return (
     <ol className="cn-chain">
-      <Step n={1} title="Policy" sub="One memo, sent to six stores" state={stepState("policy", phase, t)}>
+      <Step n={1} stage="policy" state={stepState("policy", phase, t)}>
         <div className="cn-card cn-policy">
           <div>
             <p className="cn-policy-tag">The rule</p>
@@ -84,6 +72,9 @@ export function ChainStage({ index, selection, detail, phase, t, pinned, onOpenS
             </p>
             <p className="cn-policy-main">
               {note?.label}: {note?.short}.
+            </p>
+            <p className="cn-policy-memo">
+              {memo.enforcement} {memo.note}
             </p>
           </div>
           <div>
@@ -94,16 +85,14 @@ export function ChainStage({ index, selection, detail, phase, t, pinned, onOpenS
             <p className="cn-policy-cond">
               {staffing?.label} · {staffing?.short}
             </p>
+            <p className="cn-policy-memo">
+              {memo.traffic} {memo.staffing}
+            </p>
           </div>
         </div>
       </Step>
 
-      <Step
-        n={2}
-        title="Store managers"
-        sub="Each reads the memo through their own job"
-        state={stepState("managers", phase, t)}
-      >
+      <Step n={2} stage="managers" state={stepState("managers", phase, t)}>
         <div className="cn-mgr-grid">
           {index.stores.map((store, i) => (
             <ManagerCard
@@ -111,23 +100,14 @@ export function ChainStage({ index, selection, detail, phase, t, pinned, onOpenS
               store={store}
               order={i}
               t={t}
-              manager={detail?.managers.find((m) => m.store === store.key) ?? null}
-              onOpen={onOpenStore}
+              manager={detail.managers.find((m) => m.store === store.key) ?? null}
             />
           ))}
         </div>
-        <p className="cn-hint">
-          Hover or focus a card to see what the manager thinks but does not say. Open a store for
-          the whole shift.
-        </p>
+        <p className="cn-hint">{HINTS.managers}</p>
       </Step>
 
-      <Step
-        n={3}
-        title="Baristas"
-        sub="Twelve people, eight customers each"
-        state={stepState("shifts", phase, t)}
-      >
+      <Step n={3} stage="shifts" state={stepState("shifts", phase, t)}>
         <ul className="cn-legend" aria-label="Cup key">
           {CUP_LEGEND.map((a) => (
             <li key={a}>
@@ -137,27 +117,15 @@ export function ChainStage({ index, selection, detail, phase, t, pinned, onOpenS
           ))}
         </ul>
         <ShiftStrip index={index} detail={detail} t={t} />
-        <p className="cn-hint">
-          Hover, tap or arrow through the cups to read each note and how that customer took it.
-        </p>
+        <p className="cn-hint">{HINTS.cups}</p>
       </Step>
 
-      <Step
-        n={4}
-        title="Customers"
-        sub="96 people react to the cup and the wait"
-        state={stepState("customers", phase, t)}
-      >
+      <Step n={4} stage="customers" state={stepState("customers", phase, t)}>
         <ReactionWall index={index} detail={detail} t={t} />
       </Step>
 
-      <Step
-        n={5}
-        title="Outcomes"
-        sub="Averages over all 96 cups"
-        state={stepState("outcomes", phase, t)}
-      >
-        <OutcomeTiles outcomes={detail?.outcomes ?? null} pinned={pinned} t={t} />
+      <Step n={5} stage="outcomes" state={stepState("outcomes", phase, t)}>
+        <OutcomeTiles outcomes={detail.outcomes} t={t} />
       </Step>
     </ol>
   );

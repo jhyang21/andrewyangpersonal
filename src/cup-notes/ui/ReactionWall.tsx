@@ -3,14 +3,15 @@
 import { useState } from "react";
 import type { KeyboardEvent } from "react";
 import { motion } from "motion/react";
-import type { CupNotesIndex, Reaction, ScenarioDetail } from "@/lib/cup-notes/types";
+import type { CupNotesIndex, Reaction, ScenarioDetail } from "@/cup-notes/lib/types";
+import { ACTION_LABELS, HINTS, REACTIONS, REACTION_LABELS } from "@/cup-notes/lib/words";
 import { FaceGlyph } from "./Glyphs";
 import { shiftRows } from "./ShiftStrip";
-import { ACTION_LABELS, REACTIONS, REACTION_LABELS, T } from "./shared";
+import { T } from "./timeline";
 
 type Props = {
   index: CupNotesIndex;
-  detail: ScenarioDetail | null;
+  detail: ScenarioDetail;
   t: number;
 };
 
@@ -136,7 +137,7 @@ export function ReactionWall({ index, detail, t }: Props) {
             </div>
           </>
         ) : (
-          <p className="cn-hint">Click a face to read what that customer said.</p>
+          <p className="cn-hint">{HINTS.faces}</p>
         )}
       </div>
     </div>
