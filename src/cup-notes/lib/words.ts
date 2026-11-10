@@ -138,9 +138,9 @@ export const ROUND_SEES: Record<"manager" | "barista" | "customer", { who: strin
 export const HOW_TO_READ =
   "The memo at the top is the same for every store. Managers decide what it means for their team. Baristas decide what to write with a line in front of them. Customers decide if they cared. The five numbers at the bottom are what HQ would see. Everything above them is why. Read the quotes: a manager who tells the team one thing and thinks another, a barista who stops at the fourth cup, a customer who liked the note and hated the wait.";
 
-function move(from: number, to: number, unit = "") {
+function move(from: number, to: number, unit = "", digits = 0) {
   if (to === from) return "no change";
-  return `${to > from ? "up" : "down"} from ${from}${unit}`;
+  return `${to > from ? "up" : "down"} from ${from.toFixed(digits)}${unit}`;
 }
 
 /**
@@ -150,13 +150,13 @@ function move(from: number, to: number, unit = "") {
 export function compareSentence(nameA: string, nameB: string, a: Outcomes, b: Outcomes) {
   const ca = r0(a.compliance_pct);
   const cb = r0(b.compliance_pct);
-  const wa = Number(a.avg_seconds_added.toFixed(1));
-  const wb = Number(b.avg_seconds_added.toFixed(1));
+  const wa = a.avg_seconds_added;
+  const wb = b.avg_seconds_added;
   const sa = r0(a.customer_satisfaction);
   const sb = r0(b.customer_satisfaction);
   return {
     title: `${nameB} instead of ${nameA}`,
-    text: `A note on ${cb}% of cups, ${move(ca, cb, "%")}. ${wb.toFixed(1)} s a cup, ${move(wa, wb, " s")}. Satisfaction ${sb}, ${move(sa, sb)}.`,
+    text: `A note on ${cb}% of cups, ${move(ca, cb, "%")}. ${wb.toFixed(1)} s a cup, ${move(wa, wb, " s", 1)}. Satisfaction ${sb}, ${move(sa, sb)}.`,
   };
 }
 
