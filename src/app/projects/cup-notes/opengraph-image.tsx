@@ -34,8 +34,11 @@ export default function Image() {
           color: "#1A1A1A",
         }}
       >
-        <div style={{ display: "flex", fontSize: 28, color: "#6F675C" }}>
-          {SITE_NAME} {SITE_BYLINE}
+        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 28, color: "#6F675C" }}>
+          <div style={{ display: "flex" }}>
+            {SITE_NAME} {SITE_BYLINE}
+          </div>
+          <div style={{ display: "flex" }}>{formatDate(meta.generated_at)}</div>
         </div>
         <div style={{ display: "flex", fontSize: 68, fontWeight: 700, lineHeight: 1.1 }}>
           {SITE_QUESTION}?
@@ -47,9 +50,6 @@ export default function Image() {
               <div style={{ fontSize: 24, color: "#6F675C" }}>{label}</div>
             </div>
           ))}
-          <div style={{ display: "flex", marginLeft: "auto", fontSize: 24, color: "#6F675C" }}>
-            {formatDate(meta.generated_at)}
-          </div>
         </div>
       </div>
     ),
