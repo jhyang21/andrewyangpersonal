@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Grant County Fire Department #4",
   "registry_name": "Grant County Fire Department #4",
@@ -27,13 +27,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Kittitas County Fire District  7",
   "registry_name": "Kittitas County Fire District  7",
@@ -60,16 +66,22 @@
    "year_how": null,
    "type_how": "the new trucks are two 4×4 pumpers; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
+  },
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -97,7 +109,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Klickitat County Fire Protection District #4 Lyle",
   "registry_name": "",
@@ -124,13 +136,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Town of Carbonado Fire Department",
   "registry_name": "Town of Carbonado Fire Department",
@@ -157,46 +175,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Snohomish County Fire District # 19",
-  "registry_name": "Snohomish County Fire District # 19",
-  "city": "Stanwood",
-  "county": "Snohomish",
-  "type": "Mostly volunteer",
-  "website": "http://www.firedistrict19.com/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $676,000, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Snohomish County Fire District 21, Vehicle Acquisition, $676,000",
-  "other_signals": "",
-  "named_in_source": "Snohomish County Fire District 21",
-  "name_match": "exact, ambiguous (10 same-name rows)",
-  "fdid": "31D19",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 5,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Snohomish County Fire District 7",
   "registry_name": "Snohomish County Fire District 7",
@@ -223,16 +214,22 @@
    "year_how": null,
    "type_how": "the new truck is a LT 110 NXT rear-mount aerial ladder quint; departments usually replace like with like"
   },
-  "rank": 6,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 5,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -260,7 +257,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Stevens County Fire District # 4",
   "registry_name": "Stevens County Fire District # 4",
@@ -287,16 +284,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 7,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-11",
+   "to": "2028-05",
+   "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 6,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -322,5 +325,44 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Snohomish County Fire District # 19",
+  "registry_name": "Snohomish County Fire District # 19",
+  "city": "Stanwood",
+  "county": "Snohomish",
+  "type": "Mostly volunteer",
+  "website": "http://www.firedistrict19.com/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $676,000, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Snohomish County Fire District 21, Vehicle Acquisition, $676,000",
+  "other_signals": "",
+  "named_in_source": "Snohomish County Fire District 21",
+  "name_match": "exact, ambiguous (10 same-name rows)",
+  "fdid": "31D19",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 7,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  }
 ]

@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { BASE } from "./site";
+import { isOpenStage } from "./words";
 
 const DATA_DIR = path.join(process.cwd(), "content", "apparatus-signals");
 
@@ -25,9 +26,9 @@ export interface Meta {
     departments_in_registry: number;
     leads: number;
     leads_week: number;
-    /** Leads whose strongest signal a person read (an auction lot, a notice), not a feed. */
+    /** Leads whose strongest signal we read by hand (an auction lot, a notice), not a feed. */
     hand_read_leads: number;
-    /** Leads with at least one signal someone saw happen. */
+    /** Leads with at least one seen signal. */
     observed_leads: number;
     signals: number;
     deep_states: string[];
@@ -151,7 +152,7 @@ export interface Department {
   other_signals: string;
   proof_url: string;
   proof_quote: string;
-  checked: string;
+  checked: Checked | null;
   ask_for: string;
   website: string;
   type: string;
@@ -165,11 +166,44 @@ export interface Department {
   truck: Truck;
   /** Null when the truck's type is unknown or not a fire truck or ambulance. */
   guide: Guide | null;
+  stage: Stage;
+  /** When the old truck should list. Null when listed, sold, or no rule fits. */
+  window: ListingWindow | null;
 }
 
-/** "observed": someone saw a signal happen. "expected": every signal is a prediction. */
+/**
+ * Where the old truck is now. "surplus": the old truck is free but not listed: a vote or plan
+ * to sell, or a new truck seen in service. "replacing": money, an order or a due date only;
+ * nothing seen yet. "gear": sells gear at auction, no truck named. "listed": at auction now.
+ * "sold": sold (some before May), or bids closed with no result found.
+ */
+export type Stage = "sold" | "listed" | "surplus" | "replacing" | "gear";
+
+export interface ListingWindow {
+  /** "YYYY-MM". */
+  from: string;
+  /** "YYYY-MM". */
+  to: string;
+  /** Lower-case clause on how the window was set. */
+  how: string;
+}
+
+/** How a signal (or a lead's strongest signal) was checked. */
+export type Checked =
+  | "confirmed"
+  | "corrected"
+  | "partly"
+  | "unreachable"
+  | "not_rechecked"
+  | "auction_site"
+  | "fema_table"
+  | "fema_open_data"
+  | "trade_press"
+  | "opened";
+
+/** "observed": we saw a signal happen. "expected": every signal is inferred. */
 export type Basis = "observed" | "expected";
-/** "person": read on the page by a person. "feed": read by a script from a data feed. */
+/** "person": read on the page by hand. "feed": read by a script from a data feed. */
 export type ReadBy = "person" | "feed";
 
 export interface Signal {
@@ -187,7 +221,7 @@ export interface Signal {
   url: string;
   quote: string;
   read_by: ReadBy;
-  checked?: string;
+  checked?: Checked | null;
 }
 
 export interface Sale {
@@ -326,7 +360,7 @@ export interface Method {
   blind_read: BlindRead | null;
   points: Record<string, number>;
   labels: Record<string, string>;
-  /** Signal kinds someone saw happen; every other kind is expected. */
+  /** Signal kinds we saw happen; every other kind is expected. */
   observed: string[];
   modifiers: Record<string, number>;
   tiers: Tier[];
@@ -334,6 +368,26 @@ export interface Method {
   hit_rates: HitRate[];
   layers: Record<string, string>;
   rules: Record<string, SaleRule>;
+  /** How the listing window is set, one row per group of signal kinds. */
+  window: WindowRule[];
+}
+
+export interface WindowRule {
+  kinds: string[];
+  from_months: number;
+  to_months: number;
+  how_template: string;
+  /** What the months count from: "expected" (promised delivery), "date" (the signal's date) or "today". */
+  anchor?: string;
+  /** The wording once a window has passed. */
+  how_past_template?: string;
+  n_cases: number;
+}
+
+export interface FeedAdd {
+  kind: string;
+  count: number;
+  source: string;
 }
 
 export interface ChangelogRun {
@@ -345,8 +399,12 @@ export interface ChangelogRun {
   hand_read_leads?: number;
   observed_leads?: number;
   signals: number;
+  /** Adds we read by hand, as "NY: Name (why)" lines. */
   new_leads: string[];
+  /** All adds: the hand-read ones plus the feed counts. */
   new_lead_count: number;
+  /** Feed adds, as counts only. Missing in runs before 2026-11-09. */
+  new_from_feeds?: FeedAdd[];
   dropped: string[];
   dropped_count: number;
 }
@@ -459,13 +517,25 @@ export function getDepartments(code: string): DepartmentWithId[] {
       );
     }
     seen.set(id, row.department);
-    return { ...row, id };
+    return { ...row, id, openRank: null as number | null };
   });
+  // Rank only the leads not yet listed, in the home Top 10's order.
+  out
+    .filter((d) => isOpenStage(d.stage))
+    .sort(compareLeads)
+    .forEach((d, i) => {
+      d.openRank = i + 1;
+    });
   cache.set(key, out);
   return out;
 }
 
-export type DepartmentWithId = Department & { id: string };
+/**
+ * openRank: place among the state's leads not yet listed (stage surplus or
+ * replacing), by compareLeads. Null for listed and sold leads. The site shows
+ * this, not the export's `rank`, which counts every stage.
+ */
+export type DepartmentWithId = Department & { id: string; openRank: number | null };
 
 export function getDepartment(code: string, id: string): DepartmentWithId | undefined {
   return getDepartments(code).find((d) => d.id === id);
@@ -510,6 +580,40 @@ export function allLeads(): LeadAcrossStates[] {
   return getStates().flatMap((s) =>
     getDepartments(s.code).map((d) => ({ ...d, stateCode: s.code, stateName: s.name })),
   );
+}
+
+/**
+ * "YYYY-MM" of the data run. A window that ended before it has passed. Taken
+ * from the data, not the clock, so a rebuild alone never changes the pages.
+ */
+export function runMonth(): string {
+  return getMeta().updated.slice(0, 7);
+}
+
+/** The month the "sold since May" count starts. */
+const SOLD_SINCE = "2026-05";
+const SOLD_KINDS = new Set(["auction_closed", "already_sold"]);
+
+/**
+ * Headline stage counts, counted from the department rows (the only source).
+ * not_listed_soon is tier 1 or 2 at stage surplus or replacing: the ones to
+ * call before they list. sold counts sold-stage leads with any sale signal
+ * (not closed bids) dated May 2026 or later, whatever their top signal; the
+ * sold stage also holds older sales and closed bids.
+ */
+export function stageTotals(): { not_listed_soon: number; listed: number; sold: number } {
+  const leads = allLeads();
+  return {
+    not_listed_soon: leads.filter((d) => isOpenStage(d.stage) && /^[12]\b/.test(d.tier)).length,
+    listed: leads.filter((d) => d.stage === "listed").length,
+    sold: leads.filter(
+      (d) =>
+        d.stage === "sold" &&
+        signalsFor(d.stateCode, d).some(
+          (s) => SOLD_KINDS.has(s.kind) && (s.date ?? "") >= SOLD_SINCE,
+        ),
+    ).length,
+  };
 }
 
 /** Strongest leads first: score, then tier, then most recent signal. */

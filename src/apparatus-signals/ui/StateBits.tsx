@@ -28,9 +28,8 @@ export function CoverageCard({ state, method }: { state: StateRow; method: Metho
         })}
       </ul>
       <p className="mt-3 text-sm text-as-ink-2">
-        The federal registry lists {formatNumber(state.departments)} fire departments in{" "}
-        {state.name}
-        {state.registry_fetched ? `, as fetched on ${formatDate(state.registry_fetched)}` : ""}.
+        USFA registry: {formatNumber(state.departments)} departments in {state.name}
+        {state.registry_fetched ? ` (pulled ${formatDate(state.registry_fetched)})` : ""}.
       </p>
     </section>
   );

@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Brierfield Fire and Rescue",
   "registry_name": "Brierfield Fire and Rescue",
@@ -27,13 +27,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Andalusia Fire Department",
   "registry_name": "Andalusia Fire Department",
@@ -60,13 +66,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Ardmore Volunteer Fire Department Inc",
   "registry_name": "",
@@ -93,13 +105,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Ashford Volunteer Fire Department",
   "registry_name": "Ashford Volunteer Fire Department",
@@ -126,13 +144,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Babbie Volunteer Fire Department",
   "registry_name": "Babbie Volunteer Fire Department",
@@ -159,13 +183,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Barney Volunteer Fire Department",
   "registry_name": "Barney Volunteer Fire Department",
@@ -192,13 +222,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Beat Eight Volunteer Fire Department",
   "registry_name": "",
@@ -225,13 +261,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Brewton Fire Department",
   "registry_name": "Brewton Fire Department",
@@ -258,13 +300,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "CRANE HILL COMMUNITIES FIRE & EMS",
   "registry_name": "",
@@ -291,13 +339,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Childersburg Fire & Rescue",
   "registry_name": "Childersburg Fire & Rescue",
@@ -324,13 +378,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "City of Cordova Volunteer Fire Department",
   "registry_name": "City of Cordova Volunteer Fire Department",
@@ -357,13 +417,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Eufaula Fire and Rescue",
   "registry_name": "Eufaula Fire and Rescue",
@@ -390,13 +456,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "FGHR Volunteer Fire Department",
   "registry_name": "FGHR Volunteer Fire Department",
@@ -423,13 +495,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "FIW Volunteer Fire Department",
   "registry_name": "",
@@ -456,13 +534,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Fayette Fire Department",
   "registry_name": "Fayette Fire Department",
@@ -489,13 +573,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Florala Fire Department",
   "registry_name": "Florala Fire Department",
@@ -522,13 +612,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Littleville Volunteer Fire Department",
   "registry_name": "Littleville Volunteer Fire Department",
@@ -555,13 +651,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Meeksville Volunteer Fire Department Inc",
   "registry_name": "",
@@ -588,13 +690,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "New Bethel Fire Department",
   "registry_name": "New Bethel Fire Department",
@@ -621,13 +729,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 19,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Oneonta Fire and Rescue Service",
   "registry_name": "Oneonta Fire and Rescue Service",
@@ -654,13 +768,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 20,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Onycha Volunteer Fire Department",
   "registry_name": "Onycha Volunteer Fire Department",
@@ -687,13 +807,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 21,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Real Island Volunteer Fire Department, Inc.",
   "registry_name": "Real Island Volunteer Fire Department, Inc.",
@@ -720,13 +846,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 22,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Town Creek Volunteer Fire Department",
   "registry_name": "",
@@ -753,13 +885,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 23,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Town of Addison",
   "registry_name": "",
@@ -786,13 +924,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 24,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Troy Fire Department",
   "registry_name": "Troy Fire Department",
@@ -819,13 +963,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-03",
+   "to": "2027-09",
+   "how": "grant awarded Sep 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 25,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Union Hill Volunteer Fire Department",
   "registry_name": "Union Hill Volunteer Fire Department",
@@ -852,13 +1002,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 26,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Wagarville Volunteer Fire Department",
   "registry_name": "Wagarville Volunteer Fire Department",
@@ -885,46 +1041,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 27,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Birmingham Fire and Rescue Service Department",
-  "registry_name": "Birmingham Fire and Rescue Service Department",
-  "city": "Birmingham",
-  "county": "Jefferson",
-  "type": "Career",
-  "website": "https://www.birminghamal.gov/fire/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $318,181, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Birmingham, Vehicle Acquisition, $318,181",
-  "other_signals": "",
-  "named_in_source": "City of Birmingham",
-  "name_match": "exact",
-  "fdid": "00102",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 28,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Booth Volunteer Fire Department",
   "registry_name": "Booth Volunteer Fire Department",
@@ -951,16 +1080,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 29,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -988,8 +1123,47 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Birmingham Fire and Rescue Service Department",
+  "registry_name": "Birmingham Fire and Rescue Service Department",
+  "city": "Birmingham",
+  "county": "Jefferson",
+  "type": "Career",
+  "website": "https://www.birminghamal.gov/fire/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $318,181, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Birmingham, Vehicle Acquisition, $318,181",
+  "other_signals": "",
+  "named_in_source": "City of Birmingham",
+  "name_match": "exact",
+  "fdid": "00102",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 29,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
   "department": "Craft Volunteer Fire Department Inc",
   "registry_name": "",
   "city": "",
@@ -1015,14 +1189,20 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
   "rank": 30,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
+  "checked": "fema_table",
+  "score": 1.0,
   "department": "Faunsdale Volunteer Fire Department",
   "registry_name": "Faunsdale Volunteer Fire Department",
   "city": "Faunsdale",
@@ -1048,14 +1228,20 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
   "rank": 31,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
+  "checked": "fema_table",
+  "score": 1.0,
   "department": "Owassa-Brownville Volunteer Fire Department",
   "registry_name": "Owassa-Brownville Volunteer Fire Department",
   "city": "Evergreen",
@@ -1081,14 +1267,20 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-03",
+   "to": "2026-09",
+   "how": "grant awarded Sep 2023; the usual gap has passed, so the old truck may be gone"
+  },
   "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
+  "checked": "fema_table",
+  "score": 1.0,
   "department": "Russellville Fire Department",
   "registry_name": "Russellville Fire Department",
   "city": "Russellville",
@@ -1114,14 +1306,20 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
   "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
+  "checked": "fema_table",
+  "score": 1.0,
   "department": "Spring Hill Volunteer Fire Department, Inc.",
   "registry_name": "Spring Hill Volunteer Fire Department, Inc.",
   "city": "Troy",
@@ -1147,14 +1345,20 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
   "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
+  "checked": "fema_table",
+  "score": 1.0,
   "department": "Tallassee Fire Department",
   "registry_name": "Tallassee Fire Department",
   "city": "Tallassee",
@@ -1180,14 +1384,20 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-03",
+   "to": "2026-09",
+   "how": "grant awarded Sep 2023; the usual gap has passed, so the old truck may be gone"
+  },
   "rank": 35,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
+  "checked": "fema_table",
+  "score": 1.0,
   "department": "Westover Volunteer Fire and Rescue",
   "registry_name": "Westover Volunteer Fire and Rescue",
   "city": "Westover",
@@ -1212,6 +1422,12 @@
    "year": null,
    "year_how": null,
    "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-03",
+   "to": "2026-09",
+   "how": "grant awarded Sep 2023; the usual gap has passed, so the old truck may be gone"
   },
   "rank": 36,
   "tier": "3 Watch",

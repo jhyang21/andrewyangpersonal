@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "City of Gustavus",
   "registry_name": "",
@@ -26,6 +26,12 @@
    "year": null,
    "year_how": null,
    "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
   "rank": 1,
   "tier": "2 Call this month",

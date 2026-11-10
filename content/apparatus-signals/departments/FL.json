@@ -1,6 +1,6 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "Edgewater Department of Fire and Rescue Services",
   "registry_name": "Edgewater Department of Fire and Rescue Services",
@@ -27,16 +27,22 @@
    "year_how": null,
    "type_how": "the new truck is a SPH 100-foot aerial platform quint; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -64,7 +70,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Deltona Fire & Rescue Department",
   "registry_name": "Deltona Fire & Rescue Department",
@@ -91,16 +97,22 @@
    "year_how": null,
    "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
+  },
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -128,7 +140,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Jackson County Fire Rescue",
   "registry_name": "Jackson County Fire Rescue",
@@ -155,13 +167,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Miami-Dade Fire Rescue Department",
   "registry_name": "Miami-Dade Fire Rescue Department",
@@ -188,13 +206,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Ocean City Wright Fire Control District",
   "registry_name": "",
@@ -221,16 +245,22 @@
    "year_how": null,
    "type_how": "the new truck is a Ft. Walton Beach SL75 aerial ladder quint; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
+  },
   "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -258,40 +288,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "County of Jackson office Clerk",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $500,000, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "County of Jackson office Clerk, Vehicle Acquisition, $500,000",
-  "other_signals": "",
-  "named_in_source": "County of Jackson office Clerk",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 6,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Eastpoint Volunteer Fire Department",
   "registry_name": "",
@@ -318,16 +315,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 7,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 6,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -355,7 +358,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Estero Fire & Rescue",
   "registry_name": "Estero Fire & Rescue",
@@ -382,16 +385,22 @@
    "year_how": null,
    "type_how": "the new truck is an aerial ladder quint; departments usually replace like with like"
   },
-  "rank": 8,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 7,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -419,40 +428,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Financial Services, Florida Department of",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $500,000, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Financial Services, Florida Department of, Vehicle Acquisition, $500,000",
-  "other_signals": "",
-  "named_in_source": "Financial Services, Florida Department of",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 9,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Indian River County Fire Rescue",
   "registry_name": "Indian River County Fire Rescue",
@@ -479,16 +455,22 @@
    "year_how": null,
    "type_how": "the new trucks are two custom F3 pumpers; departments usually replace like with like"
   },
-  "rank": 10,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 8,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -516,7 +498,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Orange City Fire Department",
   "registry_name": "Orange City Fire Department",
@@ -543,16 +525,22 @@
    "year_how": null,
    "type_how": "the new truck is a hp 75 aerial quint; departments usually replace like with like"
   },
-  "rank": 11,
+  "stage": "surplus",
+  "window": {
+   "from": "2025-04",
+   "to": "2025-10",
+   "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
+  },
+  "rank": 9,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -580,7 +568,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Orlando Fire Department",
   "registry_name": "Orlando Fire Department",
@@ -607,16 +595,22 @@
    "year_how": null,
    "type_how": "the new truck is a walk-through heavy rescue; departments usually replace like with like"
   },
-  "rank": 12,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 10,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -644,71 +638,85 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Winter Haven Fire Department",
-  "registry_name": "Winter Haven Fire Department",
-  "city": "Winter Haven",
-  "county": "Polk",
-  "type": "Career",
-  "website": "https://www.mywinterhaven.com/fire-department/",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Sutphen two pumpers due December 2025 (ordered 2025-07)",
-  "signal_date": "2025-12-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
-  "proof_quote": "SUTPHEN—Winter Haven Fire Department two pumpers. Delivery in December 2025.",
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "County of Jackson office Clerk",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $500,000, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "County of Jackson office Clerk, Vehicle Acquisition, $500,000",
   "other_signals": "",
-  "named_in_source": "Winter Haven Fire Department",
-  "name_match": "exact",
-  "fdid": "05142",
-  "top_kind": "delivery_due",
+  "named_in_source": "County of Jackson office Clerk",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "grant",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
-   "type": "pumper",
+   "type": null,
    "year": null,
    "year_how": null,
-   "type_how": "the new trucks are two pumpers; departments usually replace like with like"
+   "type_how": null
   },
-  "rank": 13,
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 11,
   "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
+  "ask_for": "Fire chief or company president",
+  "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Financial Services, Florida Department of",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $500,000, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Financial Services, Florida Department of, Vehicle Acquisition, $500,000",
+  "other_signals": "",
+  "named_in_source": "Financial Services, Florida Department of",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 12,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
   "score": 1.0,
   "department": "Palm Bay Fire Rescue",
   "registry_name": "Palm Bay Fire Rescue",
@@ -735,16 +743,22 @@
    "year_how": null,
    "type_how": "the new truck is a light rescue; departments usually replace like with like"
   },
-  "rank": 14,
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2025-08",
+   "how": "new truck was due Feb 2025; the old one may already have sold quietly"
+  },
+  "rank": 13,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -767,6 +781,76 @@
      "date": "2026-08-27",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Winter Haven Fire Department",
+  "registry_name": "Winter Haven Fire Department",
+  "city": "Winter Haven",
+  "county": "Polk",
+  "type": "Career",
+  "website": "https://www.mywinterhaven.com/fire-department/",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Sutphen two pumpers due December 2025 (ordered 2025-07)",
+  "signal_date": "2025-12-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
+  "proof_quote": "SUTPHEN—Winter Haven Fire Department two pumpers. Delivery in December 2025.",
+  "other_signals": "",
+  "named_in_source": "Winter Haven Fire Department",
+  "name_match": "exact",
+  "fdid": "05142",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new trucks are two pumpers; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck was due Dec 2025; the old one may already have sold quietly"
+  },
+  "rank": 14,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
   }

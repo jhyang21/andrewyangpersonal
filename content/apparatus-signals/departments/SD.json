@@ -1,23 +1,241 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "fema_table",
   "score": 4.0,
+  "department": "Ludlow Volunteer Fire Department",
+  "registry_name": "Ludlow Volunteer Fire Department",
+  "city": "Ludlow",
+  "county": "Harding",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $285,714, awarded 9/22/26 (FY2025)",
+  "signal_date": "2026-09-22",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Ludlow Volunteer Fire Department, Vehicle Acquisition, $285,714",
+  "other_signals": "",
+  "named_in_source": "Ludlow Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "35006",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 1,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 4.0,
+  "department": "Warner Fire Department",
+  "registry_name": "Warner Fire Department",
+  "city": "Warner",
+  "county": "Brown",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $466,666, awarded 8/16/24 (FY2023)",
+  "signal_date": "2024-08-16",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Warner Volunteer Fire Department, Vehicle Acquisition, $466,666",
+  "other_signals": "",
+  "named_in_source": "Warner Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "03009",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 2,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Brookings Fire Department",
+  "registry_name": "Brookings Fire Department",
+  "city": "Brookings",
+  "county": "Brookings",
+  "type": "Mostly volunteer",
+  "website": "https://www.cityofbrookings.org/index.aspx?nid=231",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper on order (2026-04), delivery February 2028",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
+  "proof_quote": "TOYNE—Brookings Fire Department pumper. Delivery in February 2028.",
+  "other_signals": "",
+  "named_in_source": "Brookings Fire Department",
+  "name_match": "exact",
+  "fdid": "06001",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 3,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Dakota Valley Emergency Services District",
+  "registry_name": "North Sioux City Fire Department",
+  "city": "North Sioux City",
+  "county": "Union",
+  "type": "Mostly volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Pierce pumper on order (2025-10), delivery March 2029",
+  "signal_date": "2025-10-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-oct-2025/",
+  "proof_quote": "PIERCE—Dakota Valley Emergency Services District, North Sioux City, SD, pumper. Delivery in March 2029.",
+  "other_signals": "",
+  "named_in_source": "Dakota Valley Emergency Services District",
+  "name_match": "by town (only department there)",
+  "fdid": "62002",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-03",
+   "to": "2029-09",
+   "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 4,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
   "department": "Gettysburg Volunteer Fire Department",
   "registry_name": "Gettysburg Volunteer Fire Department",
   "city": "Gettysburg",
   "county": "Potter",
   "type": "Volunteer",
   "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Midwest Fire tanker-pumper due November 2026 (ordered 2026-01)",
-  "signal_date": "2026-11-01",
+  "why_call": "New truck on order",
+  "detail": "New Midwest Fire tanker-pumper on order (2026-01), delivery November 2026",
+  "signal_date": "2026-01-01",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
   "proof_quote": "MIDWEST FIRE—Gettysburg Fire Department tanker-pumper. Delivery in November 2026.",
   "other_signals": "",
   "named_in_source": "Gettysburg Fire Department",
   "name_match": "exact",
   "fdid": "54001",
-  "top_kind": "delivery_due",
+  "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
@@ -27,16 +245,22 @@
    "year_how": null,
    "type_how": "the new truck is a tanker-pumper; departments usually replace like with like"
   },
-  "rank": 1,
-  "tier": "2 Call this month",
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 5,
+  "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -64,74 +288,288 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 4.0,
-  "department": "Ludlow Volunteer Fire Department",
-  "registry_name": "Ludlow Volunteer Fire Department",
-  "city": "Ludlow",
-  "county": "Harding",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $285,714, awarded 9/22/26 (FY2025)",
-  "signal_date": "2026-09-22",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Ludlow Volunteer Fire Department, Vehicle Acquisition, $285,714",
-  "other_signals": "",
-  "named_in_source": "Ludlow Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "35006",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 2,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "from FEMA's awards table",
-  "score": 4.0,
-  "department": "Warner Fire Department",
-  "registry_name": "Warner Fire Department",
-  "city": "Warner",
-  "county": "Brown",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $466,666, awarded 8/16/24 (FY2023)",
-  "signal_date": "2024-08-16",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Warner Volunteer Fire Department, Vehicle Acquisition, $466,666",
-  "other_signals": "",
-  "named_in_source": "Warner Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "03009",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 3,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
+  "department": "Hill City Fire Department",
+  "registry_name": "Hill City Fire Department",
+  "city": "Hill City",
+  "county": "Pennington",
+  "type": "Mostly volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Pierce pumper on order (2026-01), delivery April 2027",
+  "signal_date": "2026-01-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
+  "proof_quote": "PIERCE—Hill City Fire Protection District pumper. Delivery in April 2027.",
+  "other_signals": "",
+  "named_in_source": "Hill City Fire Protection District",
+  "name_match": "exact",
+  "fdid": "02014",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2027-10",
+   "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 6,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Mitchell Fire & Ambulance",
+  "registry_name": "Mitchell Fire & Ambulance",
+  "city": "Mitchell",
+  "county": "Davison",
+  "type": "Mostly career",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper on order (2025-07), delivery July 2027",
+  "signal_date": "2025-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
+  "proof_quote": "TOYNE—Mitchell Fire/EMS Department pumper. Delivery in July 2027.",
+  "other_signals": "",
+  "named_in_source": "Mitchell Fire/EMS Department",
+  "name_match": "exact",
+  "fdid": "08101",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 7,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Redfield City Fire Department",
+  "registry_name": "Redfield City Fire Department",
+  "city": "Redfield",
+  "county": "Spink",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Toyne top-mount pumper on order (2025-07), delivery April 2027",
+  "signal_date": "2025-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
+  "proof_quote": "TOYNE—Redfield Fire Department top-mount pumper. Delivery in April 2027.",
+  "other_signals": "",
+  "named_in_source": "Redfield Fire Department",
+  "name_match": "exact",
+  "fdid": "57008",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a top-mount pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2027-10",
+   "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 8,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Volga Fire Department",
+  "registry_name": "Volga Fire Department",
+  "city": "Volga",
+  "county": "Brookings",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper on order (2025-06), delivery March 2027",
+  "signal_date": "2025-06-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
+  "proof_quote": "TOYNE—Volga Fire Department pumper. Delivery in March 2027.",
+  "other_signals": "",
+  "named_in_source": "Volga Fire Department",
+  "name_match": "exact",
+  "fdid": "06003",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2027-09",
+   "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 9,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
   "department": "Aberdeen Fire Rescue",
   "registry_name": "Aberdeen Fire Rescue",
   "city": "Aberdeen",
@@ -157,7 +595,13 @@
    "year_how": null,
    "type_how": "the new truck is a brush truck; departments usually replace like with like"
   },
-  "rank": 4,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck was due Apr 2026; the old one may already have sold quietly"
+  },
+  "rank": 10,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -189,390 +633,6 @@
      "date": "2026-02-20",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Brookings Fire Department",
-  "registry_name": "Brookings Fire Department",
-  "city": "Brookings",
-  "county": "Brookings",
-  "type": "Mostly volunteer",
-  "website": "https://www.cityofbrookings.org/index.aspx?nid=231",
-  "why_call": "New truck on order",
-  "detail": "New Toyne pumper on order (2026-04), delivery February 2028",
-  "signal_date": "2026-04-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
-  "proof_quote": "TOYNE—Brookings Fire Department pumper. Delivery in February 2028.",
-  "other_signals": "",
-  "named_in_source": "Brookings Fire Department",
-  "name_match": "exact",
-  "fdid": "06001",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 5,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Dakota Valley Emergency Services District",
-  "registry_name": "North Sioux City Fire Department",
-  "city": "North Sioux City",
-  "county": "Union",
-  "type": "Mostly volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Pierce pumper on order (2025-10), delivery March 2029",
-  "signal_date": "2025-10-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-oct-2025/",
-  "proof_quote": "PIERCE—Dakota Valley Emergency Services District, North Sioux City, SD, pumper. Delivery in March 2029.",
-  "other_signals": "",
-  "named_in_source": "Dakota Valley Emergency Services District",
-  "name_match": "by town (only department there)",
-  "fdid": "62002",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 6,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Hill City Fire Department",
-  "registry_name": "Hill City Fire Department",
-  "city": "Hill City",
-  "county": "Pennington",
-  "type": "Mostly volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Pierce pumper on order (2026-01), delivery April 2027",
-  "signal_date": "2026-01-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
-  "proof_quote": "PIERCE—Hill City Fire Protection District pumper. Delivery in April 2027.",
-  "other_signals": "",
-  "named_in_source": "Hill City Fire Protection District",
-  "name_match": "exact",
-  "fdid": "02014",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 7,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Mitchell Fire & Ambulance",
-  "registry_name": "Mitchell Fire & Ambulance",
-  "city": "Mitchell",
-  "county": "Davison",
-  "type": "Mostly career",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Toyne pumper on order (2025-07), delivery July 2027",
-  "signal_date": "2025-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
-  "proof_quote": "TOYNE—Mitchell Fire/EMS Department pumper. Delivery in July 2027.",
-  "other_signals": "",
-  "named_in_source": "Mitchell Fire/EMS Department",
-  "name_match": "exact",
-  "fdid": "08101",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 8,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Redfield City Fire Department",
-  "registry_name": "Redfield City Fire Department",
-  "city": "Redfield",
-  "county": "Spink",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Toyne top-mount pumper on order (2025-07), delivery April 2027",
-  "signal_date": "2025-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
-  "proof_quote": "TOYNE—Redfield Fire Department top-mount pumper. Delivery in April 2027.",
-  "other_signals": "",
-  "named_in_source": "Redfield Fire Department",
-  "name_match": "exact",
-  "fdid": "57008",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a top-mount pumper; departments usually replace like with like"
-  },
-  "rank": 9,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Volga Fire Department",
-  "registry_name": "Volga Fire Department",
-  "city": "Volga",
-  "county": "Brookings",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Toyne pumper on order (2025-06), delivery March 2027",
-  "signal_date": "2025-06-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
-  "proof_quote": "TOYNE—Volga Fire Department pumper. Delivery in March 2027.",
-  "other_signals": "",
-  "named_in_source": "Volga Fire Department",
-  "name_match": "exact",
-  "fdid": "06003",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 10,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
     }
    ]
   }

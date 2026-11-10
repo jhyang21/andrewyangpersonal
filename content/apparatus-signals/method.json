@@ -1,12 +1,127 @@
 {
+ "window": [
+  {
+   "kinds": [
+    "new_truck_ordered"
+   ],
+   "anchor": "expected",
+   "from_months": 0,
+   "to_months": 6,
+   "how_template": "new truck due {month}; we allow six months after delivery for the old one to list",
+   "n_cases": 0,
+   "how_past_template": "new truck was due {month}; the old one may already have sold quietly",
+   "widen": {
+    "season": [
+     -1,
+     1
+    ],
+    "year": [
+     -6,
+     5
+    ]
+   }
+  },
+  {
+   "kinds": [
+    "new_truck_ordered"
+   ],
+   "anchor": "date",
+   "from_months": 4,
+   "to_months": 12,
+   "how_template": "ordered {month}; builds have taken four to twelve months in the back-test",
+   "n_cases": 3,
+   "how_past_template": "ordered {month}; the usual build time has passed"
+  },
+  {
+   "kinds": [
+    "bond_or_referendum",
+    "council_approval"
+   ],
+   "anchor": "date",
+   "from_months": 12,
+   "to_months": 24,
+   "how_template": "money approved {month}; order, build, then sale",
+   "n_cases": 3,
+   "how_past_template": "money approved {month}; the usual gap has passed"
+  },
+  {
+   "kinds": [
+    "grant"
+   ],
+   "anchor": "date",
+   "from_months": 18,
+   "to_months": 36,
+   "how_template": "grant awarded {month}; in the back-test the median gap from award to sale was 28 months",
+   "n_cases": 19,
+   "how_past_template": "grant awarded {month}; the usual gap has passed, so the old truck may be gone"
+  },
+  {
+   "kinds": [
+    "new_truck_arrived"
+   ],
+   "anchor": "date",
+   "from_months": 0,
+   "to_months": 6,
+   "how_template": "new truck in service {month}; we allow six months for the old one to list",
+   "n_cases": 0,
+   "how_past_template": "new truck arrived {month}; the old one may already have sold quietly"
+  },
+  {
+   "kinds": [
+    "delivery_due"
+   ],
+   "anchor": "date",
+   "from_months": 0,
+   "to_months": 6,
+   "how_template": "new truck was due {month}; we allow six months after delivery for the old one to list",
+   "n_cases": 0,
+   "how_past_template": "new truck was due {month}; the old one may already have sold quietly",
+   "widen": {
+    "season": [
+     -1,
+     1
+    ],
+    "year": [
+     -6,
+     5
+    ]
+   }
+  },
+  {
+   "kinds": [
+    "surplus_declared"
+   ],
+   "anchor": "date",
+   "from_months": 0,
+   "to_months": 6,
+   "how_template": "voted to sell {month}",
+   "n_cases": 2,
+   "how_past_template": "voted to sell {month}; six months with no listing found, so it may have sold quietly",
+   "fallback": "today"
+  },
+  {
+   "kinds": [
+    "sale_planned"
+   ],
+   "anchor": "date",
+   "from_months": 0,
+   "to_months": 6,
+   "how_template": "sale announced {month}",
+   "n_cases": 0,
+   "how_past_template": "sale announced {month}; six months with no listing found, so it may have sold quietly",
+   "fallback": "today"
+  }
+ ],
  "price_guide": {
   "meta": {
    "as_of": "2026-11-09",
    "built": "2026-11-09",
    "source": "Auctions International Past Prices, status sold",
-   "lots_sold": 1257,
-   "lots_used": 1174,
-   "lots_dropped": 83,
+   "lots_sold": 1228,
+   "lots_relisted": 29,
+   "relisted_why": "sold again by the same seller within 120 days at another price; the first sale fell through",
+   "lots_used": 1147,
+   "lots_dropped": 81,
    "dropped_why": "not a fire truck (road, fuel or vacuum tankers, trailers, bodies, pickups and cars)",
    "bands": [
     "<=15",
@@ -38,10 +153,10 @@
    {
     "type": "pumper",
     "band": "16-20",
-    "n": 60,
-    "median": 4550,
-    "p25": 3500,
-    "p75": 6625,
+    "n": 58,
+    "median": 4450,
+    "p25": 3400,
+    "p75": 6675,
     "thin": false
    },
    {
@@ -56,7 +171,7 @@
    {
     "type": "pumper",
     "band": "26-30",
-    "n": 109,
+    "n": 108,
     "median": 5100,
     "p25": 3050,
     "p75": 6700,
@@ -65,19 +180,19 @@
    {
     "type": "pumper",
     "band": "31+",
-    "n": 191,
+    "n": 185,
     "median": 3600,
-    "p25": 2438,
+    "p25": 2425,
     "p75": 5200,
     "thin": false
    },
    {
     "type": "pumper",
     "band": "all ages",
-    "n": 446,
-    "median": 4350,
+    "n": 437,
+    "median": 4300,
     "p25": 2800,
-    "p75": 6300,
+    "p75": 6400,
     "thin": false
    },
    {
@@ -110,8 +225,8 @@
    {
     "type": "aerial",
     "band": "26-30",
-    "n": 29,
-    "median": 7500,
+    "n": 28,
+    "median": 7300,
     "p25": 5100,
     "p75": 8600,
     "thin": false
@@ -128,10 +243,10 @@
    {
     "type": "aerial",
     "band": "all ages",
-    "n": 104,
+    "n": 103,
     "median": 6200,
     "p25": 4550,
-    "p75": 8600,
+    "p75": 8550,
     "thin": false
    },
    {
@@ -173,19 +288,19 @@
    {
     "type": "tanker",
     "band": "31+",
-    "n": 53,
-    "median": 5300,
-    "p25": 2650,
-    "p75": 12400,
+    "n": 52,
+    "median": 5450,
+    "p25": 2625,
+    "p75": 12525,
     "thin": false
    },
    {
     "type": "tanker",
     "band": "all ages",
-    "n": 86,
-    "median": 7850,
-    "p25": 4525,
-    "p75": 16075,
+    "n": 85,
+    "median": 8000,
+    "p25": 4600,
+    "p75": 16200,
     "thin": false
    },
    {
@@ -200,10 +315,10 @@
    {
     "type": "rescue",
     "band": "16-20",
-    "n": 22,
-    "median": 16100,
-    "p25": 8050,
-    "p75": 24450,
+    "n": 21,
+    "median": 16300,
+    "p25": 8000,
+    "p75": 25100,
     "thin": false
    },
    {
@@ -227,19 +342,19 @@
    {
     "type": "rescue",
     "band": "31+",
-    "n": 44,
-    "median": 4900,
-    "p25": 3412,
-    "p75": 7525,
+    "n": 42,
+    "median": 4575,
+    "p25": 3238,
+    "p75": 7575,
     "thin": false
    },
    {
     "type": "rescue",
     "band": "all ages",
-    "n": 141,
+    "n": 138,
     "median": 7400,
-    "p25": 4400,
-    "p75": 15100,
+    "p25": 4325,
+    "p75": 15175,
     "thin": false
    },
    {
@@ -299,55 +414,55 @@
    {
     "type": "mini pumper",
     "band": "31+",
-    "n": 11,
-    "median": 7000,
-    "p25": 6350,
-    "p75": 8600,
+    "n": 10,
+    "median": 6850,
+    "p25": 6225,
+    "p75": 8075,
     "thin": false
    },
    {
     "type": "mini pumper",
     "band": "all ages",
-    "n": 16,
-    "median": 8600,
-    "p25": 6675,
+    "n": 15,
+    "median": 8400,
+    "p25": 6650,
     "p75": 12300,
     "thin": false
    },
    {
     "type": "ambulance",
     "band": "<=15",
-    "n": 198,
-    "median": 3925,
-    "p25": 1925,
-    "p75": 7650,
+    "n": 191,
+    "median": 4050,
+    "p25": 1950,
+    "p75": 8000,
     "thin": false
    },
    {
     "type": "ambulance",
     "band": "16-20",
-    "n": 70,
-    "median": 3825,
-    "p25": 2369,
-    "p75": 5625,
+    "n": 67,
+    "median": 3800,
+    "p25": 2312,
+    "p75": 5850,
     "thin": false
    },
    {
     "type": "ambulance",
     "band": "21-25",
-    "n": 53,
-    "median": 3550,
-    "p25": 1925,
+    "n": 52,
+    "median": 3500,
+    "p25": 1900,
     "p75": 5900,
     "thin": false
    },
    {
     "type": "ambulance",
     "band": "26-30",
-    "n": 32,
-    "median": 2538,
-    "p25": 1744,
-    "p75": 5200,
+    "n": 31,
+    "median": 2525,
+    "p25": 1688,
+    "p75": 4600,
     "thin": false
    },
    {
@@ -362,10 +477,10 @@
    {
     "type": "ambulance",
     "band": "all ages",
-    "n": 367,
-    "median": 3600,
+    "n": 355,
+    "median": 3650,
     "p25": 1900,
-    "p75": 6500,
+    "p75": 6550,
     "thin": false
    }
   ]
@@ -438,7 +553,7 @@
     "295 lots have no state and are left out. The source script already tried the registry match; their auction numbers share no stated lots, so nothing cheap was left to infer from.",
     "Sellers that are police, sheriffs, resellers, authorities or county governments are not matched to a fire department. Town DPW and highway sellers are matched to the town's fire department.",
     "Seller matches are exact place words or a hand-checked alias only. Near-spelling matches were refused: with no county to check, all ten were wrong (Wolcott to Olcott, Harrison to Garrison).",
-    "Hits bunch up in a few cities: Lynn (MA) and Auburn (NY) give 7 of the 19 apparatus grant hits, so the recall rate rests on few departments.",
+    "Hits bunch up in a few cities: Lynn (MA) and Auburn (NY) give 7 of the 19 apparatus grant hits, so the recall rate depends on a few departments.",
     "A 'Town of X' seller matches the registry row with place words X. When several rows share those words, all of them count as the department.",
     "Orders cover 2025-01 to 2026-10 and deliveries 2025-02 to 2026-10 (missing 2025-10, 2025-11). Most sales fall outside those spans, and sales early in 2025 see only a sliver of their window.",
     "Trade press starts in 2025, so no order or delivery is old enough for 24 months of follow-up: precision for those kinds is empty by construction.",
@@ -836,6 +951,7 @@
   "sale_planned": 6,
   "new_truck_arrived": 5,
   "auction_closed": 2,
+  "bids_closed": 2,
   "auction_support": 4,
   "delivery_due": 3,
   "new_truck_ordered": 3,
@@ -847,11 +963,12 @@
   "afg_large": 1
  },
  "labels": {
-  "auction_open": "Fire truck at auction now",
+  "auction_open": "Fire truck or ambulance at auction now",
   "surplus_declared": "Board voted to sell a truck",
   "sale_planned": "Plans to sell a truck",
   "new_truck_arrived": "New truck in service",
-  "auction_closed": "Sold or took bids on a truck since May",
+  "auction_closed": "Sold a truck at auction since May",
+  "bids_closed": "Took bids on a truck; result not found",
   "auction_support": "Support vehicle at auction now",
   "delivery_due": "New truck was due; delivery not confirmed",
   "new_truck_ordered": "New truck on order",
@@ -870,7 +987,8 @@
   "grant_due": 1,
   "snippet_only": -1,
   "arrived_last_year": -2,
-  "arrived_long_ago": -4
+  "arrived_long_ago": -4,
+  "window_passed": -2
  },
  "observed": [
   "auction_open",
@@ -878,6 +996,7 @@
   "sale_planned",
   "new_truck_arrived",
   "auction_closed",
+  "bids_closed",
   "auction_support",
   "already_sold",
   "auction_equipment"
@@ -908,7 +1027,7 @@
    "trace_kind": "grant",
    "trace": "FY2026 House community-project (earmark) request of $850,000 for a tower ladder truck for Long Beach Fire Department; status blank, request only",
    "url": "https://www.cagw.org/earmark-single/?id=140085",
-   "note": "The earmark page gives fiscal year 2026 only, not a month, and does not say the request was funded; so no date or lead time is claimed. Out of window (before 2023): Long Island Herald, 2022-02-03 and 2022-05-19, council approved a $2.1M new ladder truck (HGAC buy) to replace a ladder truck damaged in Superstorm Sandy; the articles do not name the 2008 Ferrara, so it may be a different truck. Council proceedings of 2024-12-17 (opened) show only a $600,000 county grant for a new ambulance. No surplus resolution found."
+   "note": "The earmark page gives only fiscal year 2026 and does not say the request was funded, so no date is claimed. Council approved a $2.1M ladder truck in 2022 to replace one damaged in Superstorm Sandy, but the articles do not name the 2008 Ferrara. No surplus resolution found."
   },
   {
    "state": "NY",
@@ -921,7 +1040,7 @@
    "trace_kind": "bond_or_referendum",
    "trace": "Legal notice: fire commissioners adopted resolutions 2026-04-08 for a special election 2026-05-19 on a new 2026 ambulance (installment purchase up to 4 years) and a new 2026 pumper",
    "url": "https://www.noticeregistry.com/new-york/notice/public-hearing-laurens-cf5b749e2c5d10f3e3f72754e6cd3ced",
-   "note": "Dollar amounts are blank on the page and the vote result was not found. The page is a third-party notice site; the notice says the Board adopted the resolution on 2026-04-08. No surplus resolution found. Link to the 2009 ambulance is by type only (the district has one ambulance on record)."
+   "note": "The notice is on a third-party site and gives no dollar amounts; the Board adopted the resolution on 8 Apr 2026. The link to the 2009 ambulance is by type only. No surplus resolution found."
   },
   {
    "state": "NY",
@@ -934,7 +1053,7 @@
    "trace_kind": "council_approval",
    "trace": "Village board minutes (seen only as a search-result summary): reallocate $600,000 to buy a new 2025 pumper/tanker to replace an older unit (#262), subject to permissive referendum; financing via NY Fire Fighter Revolving Loan",
    "url": "https://www.villageofoxfordny.gov/assets/minutes-2025/7-29-25-Minutes.pdf",
-   "note": "villageofoxfordny.gov returned HTTP 403 to every fetch, so no minutes were opened and no verbatim quote is possible; details come from search summaries. Unit #262 is not tied to the 2001 HME. Out of window: Evening Sun 2021-02-26 (opened) says the department proposed to replace its 2002 HME Rescue Pumper with a $750,000 2021-22 model; year differs by one from the lot (2001), so it may be the same truck. Note: oxfordeagle.com hits are Oxford, Mississippi and were discarded."
+   "note": "The village site refused every fetch, so the details come from search summaries and no quote is possible. A 2021 article says the department proposed to replace its 2002 HME rescue pumper; the lot is a 2001, so it may be the same truck. No surplus resolution found."
   },
   {
    "state": "NY",
@@ -947,7 +1066,7 @@
    "trace_kind": null,
    "trace": null,
    "url": null,
-   "note": "Every hit was for the Roosevelt Fire District in Hyde Park, Dutchess County (its own E-ONE tower ladder and AFG grant); these were discarded as a different district. Searched the Nassau district by name, ZIP 11575, tower ladder, bid, resolution, Fire News Long Island. The district's own site and Newsday were not reachable through search results."
+   "note": "Every hit was for the Roosevelt Fire District in Dutchess County and was discarded. Searches by name, ZIP 11575, tower ladder, bid and resolution found nothing for the Nassau district."
   },
   {
    "state": "NY",
@@ -960,7 +1079,7 @@
    "trace_kind": "bond_or_referendum",
    "trace": "Board agenda: declare intent to buy a Fire Department vehicle at est. $1,298,994, reimbursed via bond not above that sum (confirms the known item)",
    "url": "https://www.seacliff-ny.gov/AgendaCenter/ViewFile/ArchivedAgenda/_07232026-67",
-   "note": "Confirmed the 2026-07-23 item; found nothing earlier. Pages are PDFs whose text I read locally from the saved download. The agenda says 'vehicle' / 'fire truck', not 'pumper', and does not name the 1998 truck; the 'same type' call rests on your note. Search summaries claimed a 'Spartan Sidemount Pumper from Hendrickson' item in early July; I could not find that wording in any file I opened (July 6 minutes, June 24 agenda and minutes, July 23 agendas), so I did not use it. Related but unproven: 2026-06-24 board authorized an application for a $400,000 FY2025 Assistance to Firefighters grant (purpose not stated). Sept 8 agenda also lists 'New Fire Truck' and 'Chief's truck' under old business. No surplus resolution found."
+   "note": "Confirmed the 23 Jul 2026 agenda item; nothing earlier found. The agenda says 'fire truck', not 'pumper', and does not name the 1998 truck, so 'same type' is an assumption. A 24 Jun 2026 vote to apply for a $400,000 federal grant is related but unproven. No surplus resolution found."
   },
   {
    "state": "NY",
@@ -973,7 +1092,7 @@
    "trace_kind": "surplus_declared",
    "trace": "Board of Trustees declared a 1992 fire engine surplus property for sale (meeting of 2026-07-27, per procurement-tracking page)",
    "url": "https://starbridge.ai/buyer/larchmont-village-of",
-   "note": "The source is a third-party aggregator, not the village's own minutes; the village's minutes redirected and were not read. It names a 1992 engine, not the make, but the year matches the lot. No replacement-truck purchase, bond or grant found for Larchmont Village (hits about new engines were Town of Mamaroneck and were discarded)."
+   "note": "The source is an aggregator, not the village's own minutes. It names a 1992 engine without the make; the year matches the lot. No new-truck purchase, bond or grant found for the village."
   }
  ],
  "hit_rates": [

@@ -47,7 +47,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 1,
-   "median_sum": 7850
+   "median_sum": 8000
   }
  },
  {
@@ -74,7 +74,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 3,
-   "median_sum": 23550
+   "median_sum": 24000
   }
  },
  {
@@ -100,7 +100,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 2,
-   "median_sum": 12950
+   "median_sum": 12700
   }
  },
  {
@@ -128,7 +128,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 19,
-   "median_sum": 120975
+   "median_sum": 120625
   }
  },
  {
@@ -137,8 +137,8 @@
   "departments": 310,
   "leads": {
    "week": 2,
-   "month": 4,
-   "watch": 1,
+   "month": 2,
+   "watch": 3,
    "total": 7
   },
   "by_kind": {
@@ -155,7 +155,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 6,
-   "median_sum": 46825
+   "median_sum": 47225
   }
  },
  {
@@ -163,18 +163,20 @@
   "name": "Connecticut",
   "departments": 246,
   "leads": {
-   "week": 2,
-   "month": 14,
-   "watch": 23,
+   "week": 0,
+   "month": 8,
+   "watch": 31,
    "total": 39
   },
   "by_kind": {
    "new_truck_ordered": 23,
-   "sale_planned": 6,
    "grant": 5,
+   "sale_planned": 3,
    "bond_or_referendum": 2,
    "council_approval": 2,
-   "new_truck_arrived": 1
+   "already_sold": 2,
+   "new_truck_arrived": 1,
+   "bids_closed": 1
   },
   "coverage": "deep",
   "layers": [
@@ -196,8 +198,8 @@
    "note": "The earliest public signal is a council or selectmen agenda line declaring a vehicle surplus, or a town meeting or referendum notice funding the new truck, often one to three years before delivery. An auction listing is a late signal. Towns may also sell through the state DAS auction contract (22PSX0014)."
   },
   "guide_total": {
-   "trucks": 14,
-   "median_sum": 70650
+   "trucks": 12,
+   "median_sum": 62000
   }
  },
  {
@@ -206,8 +208,8 @@
   "departments": 3,
   "leads": {
    "week": 0,
-   "month": 1,
-   "watch": 0,
+   "month": 0,
+   "watch": 1,
    "total": 1
   },
   "by_kind": {
@@ -247,7 +249,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 1,
-   "median_sum": 4350
+   "median_sum": 4300
   }
  },
  {
@@ -275,7 +277,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 10,
-   "median_sum": 60050
+   "median_sum": 59900
   }
  },
  {
@@ -301,7 +303,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 2,
-   "median_sum": 12950
+   "median_sum": 12700
   }
  },
  {
@@ -335,13 +337,13 @@
   "departments": 739,
   "leads": {
    "week": 0,
-   "month": 11,
-   "watch": 32,
+   "month": 10,
+   "watch": 33,
    "total": 43
   },
   "by_kind": {
-   "new_truck_ordered": 30,
-   "delivery_due": 10,
+   "new_truck_ordered": 31,
+   "delivery_due": 9,
    "grant": 3
   },
   "coverage": "national",
@@ -353,7 +355,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 40,
-   "median_sum": 259950
+   "median_sum": 262050
   }
  },
  {
@@ -362,13 +364,13 @@
   "departments": 198,
   "leads": {
    "week": 0,
-   "month": 2,
-   "watch": 0,
+   "month": 1,
+   "watch": 1,
    "total": 2
   },
   "by_kind": {
-   "new_truck_arrived": 1,
-   "grant": 1
+   "grant": 1,
+   "new_truck_arrived": 1
   },
   "coverage": "national",
   "layers": [
@@ -379,7 +381,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 1,
-   "median_sum": 4350
+   "median_sum": 4300
   }
  },
  {
@@ -388,8 +390,8 @@
   "departments": 1107,
   "leads": {
    "week": 1,
-   "month": 26,
-   "watch": 77,
+   "month": 25,
+   "watch": 78,
    "total": 104
   },
   "by_kind": {
@@ -407,7 +409,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 92,
-   "median_sum": 489825
+   "median_sum": 487875
   }
  },
  {
@@ -416,14 +418,14 @@
   "departments": 766,
   "leads": {
    "week": 0,
-   "month": 15,
-   "watch": 41,
+   "month": 14,
+   "watch": 42,
    "total": 56
   },
   "by_kind": {
-   "new_truck_ordered": 39,
+   "new_truck_ordered": 38,
    "grant": 9,
-   "delivery_due": 6,
+   "delivery_due": 7,
    "new_truck_arrived": 2
   },
   "coverage": "national",
@@ -435,7 +437,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 46,
-   "median_sum": 267800
+   "median_sum": 267600
   }
  },
  {
@@ -462,7 +464,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 4,
-   "median_sum": 24400
+   "median_sum": 24600
   }
  },
  {
@@ -489,7 +491,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 2,
-   "median_sum": 12200
+   "median_sum": 12300
   }
  },
  {
@@ -517,7 +519,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 4,
-   "median_sum": 22750
+   "median_sum": 22800
   }
  },
  {
@@ -544,7 +546,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 4,
-   "median_sum": 24400
+   "median_sum": 24600
   }
  },
  {
@@ -571,7 +573,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 6,
-   "median_sum": 38625
+   "median_sum": 38825
   }
  },
  {
@@ -597,7 +599,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 2,
-   "median_sum": 15700
+   "median_sum": 16000
   }
  },
  {
@@ -606,8 +608,8 @@
   "departments": 976,
   "leads": {
    "week": 0,
-   "month": 13,
-   "watch": 18,
+   "month": 12,
+   "watch": 19,
    "total": 31
   },
   "by_kind": {
@@ -625,7 +627,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 19,
-   "median_sum": 120900
+   "median_sum": 121550
   }
  },
  {
@@ -634,14 +636,14 @@
   "departments": 725,
   "leads": {
    "week": 0,
-   "month": 23,
-   "watch": 35,
+   "month": 18,
+   "watch": 40,
    "total": 58
   },
   "by_kind": {
-   "new_truck_ordered": 31,
+   "new_truck_ordered": 35,
    "grant": 15,
-   "delivery_due": 10,
+   "delivery_due": 6,
    "new_truck_arrived": 2
   },
   "coverage": "national",
@@ -653,7 +655,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 43,
-   "median_sum": 219225
+   "median_sum": 218125
   }
  },
  {
@@ -662,14 +664,14 @@
   "departments": 755,
   "leads": {
    "week": 0,
-   "month": 14,
-   "watch": 33,
+   "month": 13,
+   "watch": 34,
    "total": 47
   },
   "by_kind": {
    "new_truck_ordered": 27,
-   "delivery_due": 12,
-   "grant": 6,
+   "delivery_due": 11,
+   "grant": 7,
    "new_truck_arrived": 2
   },
   "coverage": "national",
@@ -680,8 +682,8 @@
   "registry_fetched": "2026-11-08",
   "rule": null,
   "guide_total": {
-   "trucks": 41,
-   "median_sum": 243975
+   "trucks": 40,
+   "median_sum": 237125
   }
  },
  {
@@ -739,14 +741,14 @@
   "departments": 1089,
   "leads": {
    "week": 0,
-   "month": 13,
-   "watch": 12,
+   "month": 10,
+   "watch": 15,
    "total": 25
   },
   "by_kind": {
-   "new_truck_ordered": 13,
-   "delivery_due": 6,
+   "new_truck_ordered": 15,
    "grant": 4,
+   "delivery_due": 4,
    "new_truck_arrived": 2
   },
   "coverage": "national",
@@ -758,7 +760,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 21,
-   "median_sum": 140050
+   "median_sum": 140500
   }
  },
  {
@@ -767,8 +769,8 @@
   "departments": 327,
   "leads": {
    "week": 1,
-   "month": 7,
-   "watch": 4,
+   "month": 6,
+   "watch": 5,
    "total": 12
   },
   "by_kind": {
@@ -795,8 +797,8 @@
   "departments": 389,
   "leads": {
    "week": 0,
-   "month": 4,
-   "watch": 22,
+   "month": 3,
+   "watch": 23,
    "total": 26
   },
   "by_kind": {
@@ -814,7 +816,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 25,
-   "median_sum": 142500
+   "median_sum": 142450
   }
  },
  {
@@ -823,14 +825,14 @@
   "departments": 211,
   "leads": {
    "week": 0,
-   "month": 4,
-   "watch": 2,
+   "month": 3,
+   "watch": 3,
    "total": 6
   },
   "by_kind": {
    "grant": 3,
    "new_truck_arrived": 2,
-   "new_truck_ordered": 1
+   "delivery_due": 1
   },
   "coverage": "national",
   "layers": [
@@ -841,7 +843,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 3,
-   "median_sum": 18400
+   "median_sum": 18500
   }
  },
  {
@@ -849,17 +851,17 @@
   "name": "New Jersey",
   "departments": 713,
   "leads": {
-   "week": 3,
-   "month": 17,
-   "watch": 29,
+   "week": 2,
+   "month": 16,
+   "watch": 31,
    "total": 49
   },
   "by_kind": {
-   "new_truck_ordered": 11,
    "bond_or_referendum": 10,
+   "new_truck_ordered": 10,
    "grant": 8,
    "new_truck_arrived": 7,
-   "delivery_due": 6,
+   "delivery_due": 7,
    "council_approval": 4,
    "surplus_declared": 2,
    "sale_planned": 1
@@ -889,7 +891,7 @@
   },
   "guide_total": {
    "trucks": 24,
-   "median_sum": 149450
+   "median_sum": 149150
   }
  },
  {
@@ -915,7 +917,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 3,
-   "median_sum": 22075
+   "median_sum": 22225
   }
  },
  {
@@ -946,21 +948,21 @@
   "name": "New York",
   "departments": 1649,
   "leads": {
-   "week": 14,
-   "month": 37,
+   "week": 13,
+   "month": 38,
    "watch": 62,
    "total": 113
   },
   "by_kind": {
-   "new_truck_ordered": 31,
+   "new_truck_ordered": 30,
    "auction_closed": 22,
    "grant": 15,
    "new_truck_arrived": 9,
+   "delivery_due": 7,
    "bond_or_referendum": 7,
-   "auction_equipment": 7,
    "auction_open": 6,
-   "delivery_due": 6,
-   "surplus_declared": 5,
+   "surplus_declared": 6,
+   "auction_equipment": 6,
    "council_approval": 2,
    "sale_planned": 1,
    "auction_support": 1,
@@ -995,8 +997,8 @@
    "note": "A better price can mean a slower sale. Know which side of $20,000 a truck sits on before the call."
   },
   "guide_total": {
-   "trucks": 37,
-   "median_sum": 211000
+   "trucks": 39,
+   "median_sum": 231150
   }
  },
  {
@@ -1005,14 +1007,14 @@
   "departments": 1148,
   "leads": {
    "week": 1,
-   "month": 25,
-   "watch": 32,
+   "month": 24,
+   "watch": 33,
    "total": 58
   },
   "by_kind": {
    "grant": 35,
-   "new_truck_ordered": 17,
-   "delivery_due": 5,
+   "new_truck_ordered": 18,
+   "delivery_due": 4,
    "new_truck_arrived": 1
   },
   "coverage": "national",
@@ -1024,7 +1026,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 23,
-   "median_sum": 137850
+   "median_sum": 138300
   }
  },
  {
@@ -1050,7 +1052,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 1,
-   "median_sum": 7850
+   "median_sum": 8000
   }
  },
  {
@@ -1085,18 +1087,20 @@
   "name": "Pennsylvania",
   "departments": 1771,
   "leads": {
-   "week": 5,
+   "week": 1,
    "month": 35,
-   "watch": 35,
+   "watch": 39,
    "total": 75
   },
   "by_kind": {
+   "grant": 28,
    "new_truck_ordered": 28,
-   "grant": 27,
-   "sale_planned": 8,
    "new_truck_arrived": 4,
    "delivery_due": 4,
-   "council_approval": 4
+   "council_approval": 4,
+   "sale_planned": 3,
+   "bids_closed": 3,
+   "already_sold": 1
   },
   "coverage": "deep",
   "layers": [
@@ -1126,8 +1130,8 @@
    "note": "A sale to a volunteer fire company or another government skips bidding, so a municipal truck often moves quietly (Harrisburg to Highspire, 2025). At $2,000 and up the sale must be advertised, so the first public signal is usually a council or supervisors minute authorizing the sale, then an ad or online listing 10 or more days before the close. Companies that own their trucks often post the sale on their own site or Facebook first. Second-class townships moved from $1,000 to $2,000 in 2017; older resolutions that cite $1,000 are out of date."
   },
   "guide_total": {
-   "trucks": 36,
-   "median_sum": 214875
+   "trucks": 35,
+   "median_sum": 209875
   }
  },
  {
@@ -1153,7 +1157,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 2,
-   "median_sum": 15700
+   "median_sum": 16000
   }
  },
  {
@@ -1179,7 +1183,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 2,
-   "median_sum": 12200
+   "median_sum": 12300
   }
  },
  {
@@ -1188,14 +1192,14 @@
   "departments": 294,
   "leads": {
    "week": 0,
-   "month": 3,
-   "watch": 7,
+   "month": 2,
+   "watch": 8,
    "total": 10
   },
   "by_kind": {
-   "new_truck_ordered": 6,
-   "delivery_due": 2,
-   "grant": 2
+   "new_truck_ordered": 7,
+   "grant": 2,
+   "delivery_due": 1
   },
   "coverage": "national",
   "layers": [
@@ -1206,7 +1210,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 8,
-   "median_sum": 40775
+   "median_sum": 40625
   }
  },
  {
@@ -1215,14 +1219,13 @@
   "departments": 638,
   "leads": {
    "week": 0,
-   "month": 19,
-   "watch": 7,
+   "month": 18,
+   "watch": 8,
    "total": 26
   },
   "by_kind": {
    "grant": 20,
-   "new_truck_ordered": 4,
-   "delivery_due": 1,
+   "new_truck_ordered": 5,
    "new_truck_arrived": 1
   },
   "coverage": "national",
@@ -1234,7 +1237,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 6,
-   "median_sum": 38000
+   "median_sum": 38200
   }
  },
  {
@@ -1243,8 +1246,8 @@
   "departments": 1530,
   "leads": {
    "week": 0,
-   "month": 10,
-   "watch": 27,
+   "month": 9,
+   "watch": 28,
    "total": 37
   },
   "by_kind": {
@@ -1262,7 +1265,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 28,
-   "median_sum": 175375
+   "median_sum": 176025
   }
  },
  {
@@ -1315,7 +1318,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 4,
-   "median_sum": 23950
+   "median_sum": 24000
   }
  },
  {
@@ -1368,7 +1371,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 3,
-   "median_sum": 14900
+   "median_sum": 14800
   }
  },
  {
@@ -1395,7 +1398,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 10,
-   "median_sum": 60550
+   "median_sum": 60900
   }
  },
  {
@@ -1422,7 +1425,7 @@
   "rule": null,
   "guide_total": {
    "trucks": 5,
-   "median_sum": 32250
+   "median_sum": 32600
   }
  },
  {

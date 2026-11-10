@@ -1,6 +1,6 @@
 [
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 7.0,
   "department": "Township of South Brunswick",
   "registry_name": "",
@@ -9,7 +9,7 @@
   "type": "",
   "website": "",
   "why_call": "Board voted to sell a truck",
-  "detail": "Selling: ambulance(s) no longer needed for municipal purposes. Sale to Monmouth Junction First Aid Squad, Inc. authorized by ordinance 2026-14; adoption not confirmed",
+  "detail": "Selling: ambulance(s) no longer needed for municipal purposes. Sale to Monmouth Junction First Aid Squad, Inc. proposed in ordinance 2026-14",
   "signal_date": "2026-10",
   "proof_url": "https://southbrunswicknj.gov/ordinance-2026-14-authorizing-sale-of-vehicle-and-ambulances-no-longer-needed-for-municipal-purposes-to-the-monmouth-junction-first-aid-squad-inc/",
   "proof_quote": "Ordinance #2026-14 Authorizing Sale of Vehicle and Ambulance(S) No Longer Needed for Municipal Purposes To the Monmouth Junction First Aid Squad, Inc.",
@@ -27,16 +27,18 @@
    "year_how": null,
    "type_how": "named in the record"
   },
+  "stage": "surplus",
+  "window": null,
   "rank": 1,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "ambulance",
    "band": "all ages",
-   "n": 367,
-   "median": 3600,
+   "n": 355,
+   "median": 3650,
    "p25": 1900,
-   "p75": 6500,
+   "p75": 6550,
    "thin": false,
    "comps": [
     {
@@ -64,40 +66,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 6.5,
-  "department": "Nutley Fire Department",
-  "registry_name": "Nutley Fire Department",
-  "city": "Nutley",
-  "county": "Essex",
-  "type": "Mostly career",
-  "website": "https://www.nutleynj.org/",
-  "why_call": "New truck in service",
-  "detail": "New Rescue 1 MFG hazmat response vehicle (responds in essex county) delivered (2026-02)",
-  "signal_date": "2026-02-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-february-2026/",
-  "proof_quote": "Department: NUTLEY (NJ) FIRE DEPARTMENT; Type: HAZMAT RESPONSE VEHICLE (RESPONDS IN ESSEX COUNTY); Built by: RESCUE 1 MFG",
-  "other_signals": "Money approved for a new truck: fire truck",
-  "named_in_source": "Nutley Fire Department",
-  "name_match": "exact",
-  "fdid": "07160",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "other",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a hazmat response vehicle (responds in essex county); departments usually replace like with like"
-  },
-  "rank": 2,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 6.0,
   "department": "Belleville Fire Department",
   "registry_name": "Belleville Fire Department",
@@ -124,16 +93,22 @@
    "year_how": null,
    "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
   },
-  "rank": 3,
+  "stage": "surplus",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck in service Sep 2026; we allow six months for the old one to list"
+  },
+  "rank": 2,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -161,7 +136,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 5.5,
   "department": "Cherry Hill Fire Department",
   "registry_name": "Cherry Hill Fire Department",
@@ -174,7 +149,7 @@
   "signal_date": "2025-09-18",
   "proof_url": "https://www.chnj.gov/Archive.aspx?ADID=2703",
   "proof_quote": "authorizes the public sale of the surplus 2012 Freightliner/Crimson Foam Tender",
-  "other_signals": "Board approved buying a new truck: pumper, foam unit and support vehicle",
+  "other_signals": "Board approved buying a new truck: Pumper, foam unit and support vehicle",
   "named_in_source": "Cherry Hill Fire District #13",
   "name_match": "exact",
   "fdid": "04130",
@@ -188,7 +163,13 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
-  "rank": 4,
+  "stage": "surplus",
+  "window": {
+   "from": "2025-09",
+   "to": "2026-03",
+   "how": "voted to sell Sep 2025; six months with no listing found, so it may have sold quietly"
+  },
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -225,7 +206,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 5.0,
   "department": "Alloway Township Fire Company",
   "registry_name": "Alloway Township Fire Company",
@@ -252,13 +233,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 5,
+  "stage": "surplus",
+  "window": {
+   "from": "2026-05",
+   "to": "2026-11",
+   "how": "new truck in service May 2026; we allow six months for the old one to list"
+  },
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 5.0,
   "department": "Delran Fire Department",
   "registry_name": "Delran Fire Department",
@@ -267,7 +254,7 @@
   "type": "Volunteer",
   "website": "https://www.delranfire.org/",
   "why_call": "Money approved for a new truck",
-  "detail": "foam pumper; replaces 24-year-old foam pumper",
+  "detail": "Foam pumper; replaces 24-year-old foam pumper",
   "signal_date": "2026-11",
   "proof_url": "https://www.ballotready.org/measures/fire-district-public-question",
   "proof_quote": "acquire a new foam pumper fire apparatus to replace the Fire District's current, 24-year-old foam pumper apparatus",
@@ -285,7 +272,13 @@
    "year_how": "from age",
    "type_how": "named in the record"
   },
-  "rank": 6,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-11",
+   "to": "2028-11",
+   "how": "money approved Nov 2026; order, build, then sale"
+  },
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -322,7 +315,7 @@
   }
  },
  {
-  "checked": "page no longer reachable: Notice PDF now returns 404 and the township site search finds nothing. A search index still holds the notice text: Resolution 2026-115 (Aug 6 2026), '2103' [sic] KME pumper, minimum bid $95,000, bids opened Sep 2 2026. No outcome found. No verbatim line could be fetched.",
+  "checked": "unreachable",
   "score": 5.0,
   "department": "Lumberton Fire Company # 1",
   "registry_name": "Lumberton Fire Company # 1",
@@ -331,7 +324,7 @@
   "type": "Volunteer",
   "website": "https://www.lumbertonfire.org/",
   "why_call": "Plans to sell a truck",
-  "detail": "; replaces 2013 KME pumper",
+  "detail": "Selling: 2013 KME pumper. to be sold at public auction (minimum bid $95,000)",
   "signal_date": "2026-08-06",
   "proof_url": "https://www.lumbertontwp.com/wp-content/uploads/2026/08/Public-Auction-Notice-KME-Pumper-Truck-2026.pdf",
   "proof_quote": "Resolution No. 2026 - 115 and N.J.S.A. 40A:12-13 and N.J.S.A. 40A:11-36",
@@ -349,7 +342,13 @@
    "year_how": "stated",
    "type_how": "named in the record"
   },
-  "rank": 7,
+  "stage": "surplus",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "sale announced Aug 2026"
+  },
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -386,71 +385,46 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 5.0,
-  "department": "Woodbridge Township Colonia Chemical H & L",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
+  "checked": "trade_press",
+  "score": 4.5,
+  "department": "Nutley Fire Department",
+  "registry_name": "Nutley Fire Department",
+  "city": "Nutley",
+  "county": "Essex",
+  "type": "Mostly career",
+  "website": "https://www.nutleynj.org/",
   "why_call": "New truck in service",
-  "detail": "New E-One Fire Apparatus pumper delivered (2026-03)",
-  "signal_date": "2026-03-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-march-2026/",
-  "proof_quote": "Department: WOODBRIDGE TOWNSHIP (NJ) COLONIA CHEMICAL H & L; Type: PUMPER; Built by: E-ONE FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "Woodbridge Township Colonia Chemical H & L",
-  "name_match": "not in registry",
-  "fdid": "",
+  "detail": "New Rescue 1 MFG hazmat response vehicle (responds in essex county) delivered (2026-02)",
+  "signal_date": "2026-02-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-february-2026/",
+  "proof_quote": "Department: NUTLEY (NJ) FIRE DEPARTMENT; Type: HAZMAT RESPONSE VEHICLE (RESPONDS IN ESSEX COUNTY); Built by: RESCUE 1 MFG",
+  "other_signals": "Money approved for a new truck: Fire truck",
+  "named_in_source": "Nutley Fire Department",
+  "name_match": "exact",
+  "fdid": "07160",
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "feed",
   "truck": {
    "description": null,
-   "type": "pumper",
+   "type": "other",
    "year": null,
    "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
+   "type_how": "the new truck is a hazmat response vehicle (responds in essex county); departments usually replace like with like"
   },
-  "rank": 8,
+  "stage": "surplus",
+  "window": {
+   "from": "2026-02",
+   "to": "2026-08",
+   "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
+  },
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1992 Spartan Monarch Fire Truck",
-     "price": 8100.0,
-     "date": "2026-03-26",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
-    },
-    {
-     "item": "1981 Hahn HCP 15 Top Mount Pumper",
-     "price": 3000.0,
-     "date": "2018-03-13",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/13504/item/lot-0001-1981-hahn-hcp-15-top-mount-pumper-82473/"
-    },
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    }
-   ]
-  }
+  "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Aura Volunteer Fire Rescue # 1",
   "registry_name": "Aura Volunteer Fire Rescue # 1",
@@ -477,13 +451,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 9,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 4.0,
   "department": "Barnegat Light Volunteer Fire Company #1",
   "registry_name": "Barnegat Light Volunteer Fire Company #1",
@@ -492,7 +472,7 @@
   "type": "Volunteer",
   "website": "www.barnegatlightfire.com",
   "why_call": "Money approved for a new truck",
-  "detail": "fire truck",
+  "detail": "Fire truck",
   "signal_date": "2026-08-12",
   "proof_url": "https://barnegatlight.org/wp-content/uploads/2026/08/NOTICE-OF-PENDING-BOND-ORDINANCE-2026-11.pdf",
   "proof_quote": "BOND ORDINANCE PROVIDING FOR THE ACQUISITION OF A FIRE TRUCK, APPROPRIATING $1,750,000 THEREFOR",
@@ -510,13 +490,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 10,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-08",
+   "how": "money approved Aug 2026; order, build, then sale"
+  },
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Carneys Point Fire Department & Rescue Squad, Inc.",
   "registry_name": "Carneys Point Fire Department & Rescue Squad, Inc.",
@@ -543,13 +529,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 11,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Chester Volunteer Fire Company",
   "registry_name": "Chester Volunteer Fire Company",
@@ -576,13 +568,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 12,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 4.0,
   "department": "Hamilton Township",
   "registry_name": "",
@@ -591,7 +589,7 @@
   "type": "",
   "website": "",
   "why_call": "Won a grant for a new truck",
-  "detail": "pumper",
+  "detail": "Pumper",
   "signal_date": "2025-09-14",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/pumpers/nj-township-receives-another-1m-grant-for-new-fire-apparatus/",
   "proof_quote": "Hamilton Township has secured another $1 million in State Budget funding dedicated to the purchase of a vital new pumper",
@@ -609,13 +607,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 13,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Kearny Fire Department",
   "registry_name": "Kearny Fire Department",
@@ -642,16 +646,22 @@
    "year_how": null,
    "type_how": "the new truck is a custom pumper; departments usually replace like with like"
   },
-  "rank": 14,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-06",
+   "to": "2029-02",
+   "how": "new truck due Summer 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -679,7 +689,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 4.0,
   "department": "Lambertville Fire Department",
   "registry_name": "Lambertville Fire Department",
@@ -688,7 +698,7 @@
   "type": "Mostly career",
   "website": "https://www.lfddistrict1.com/",
   "why_call": "Money approved for a new truck",
-  "detail": "three fire trucks",
+  "detail": "Three fire trucks",
   "signal_date": "2026-11-03",
   "proof_url": "https://www.yahoo.com/news/politics/articles/central-jersey-referendum-results-election-184828039.html",
   "proof_quote": "spending $7.5 million to purchase three fire trucks",
@@ -706,13 +716,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 15,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-11",
+   "to": "2028-11",
+   "how": "money approved Nov 2026; order, build, then sale"
+  },
+  "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Logan Volunteer Fire Company of Pedricktown",
   "registry_name": "Logan Volunteer Fire Company of Pedricktown",
@@ -739,13 +755,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 16,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Milltown Volunteer Fire Department",
   "registry_name": "Milltown Volunteer Fire Department",
@@ -772,16 +794,22 @@
    "year_how": null,
    "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
   },
-  "rank": 17,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -809,7 +837,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Township of North Bergen",
   "registry_name": "",
@@ -836,13 +864,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 18,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Wayne Fire Department",
   "registry_name": "Wayne Fire Department",
@@ -869,16 +903,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 19,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-05",
+   "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -906,71 +946,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 4.0,
-  "department": "West Milford Fire Department",
-  "registry_name": "West Milford Fire Department",
-  "city": "West Milford",
-  "county": "Passaic",
-  "type": "Mostly volunteer",
-  "website": "https://www.wmoem.org/",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "E-One Typhoon 2,500-gallon tanker, delivery March 2026; replaces tanker out of service since 2021",
-  "signal_date": "2026-03-26",
-  "proof_url": "https://www.westmilfordmessenger.com/news/local-news/west-milford-fire-dept-unveils-new-tanker-4-JX5716685",
-  "proof_quote": "The new Tanker 4, which serves as an initial fire attack truck, is a E-One 2500-gallon Typhoon 6-man cab tanker",
-  "other_signals": "",
-  "named_in_source": "West Milford Fire Department, Company 4",
-  "name_match": "exact",
-  "fdid": "16150",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": "tanker out of service since 2021",
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "named in the record"
-  },
-  "rank": 20,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Bayonne Fire Department",
   "registry_name": "Bayonne Fire Department",
@@ -997,16 +973,22 @@
    "year_how": null,
    "type_how": "the new truck is a Spartan UT 100 rear-mount aerial ladder; departments usually replace like with like"
   },
-  "rank": 21,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1034,7 +1016,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 3.0,
   "department": "Borough of Bernardsville / Bernardsville Fire Company",
   "registry_name": "Bernardsville Fire Company # 1",
@@ -1043,7 +1025,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "Money approved for a new truck",
-  "detail": "fire truck",
+  "detail": "Fire truck",
   "signal_date": "2026-04-27",
   "proof_url": "https://bernardsville.gov/add-public-notice/mayor-council-notices/1394-bond-ord-intro-2048/file",
   "proof_quote": "Acquisition, by purchase, of new and additional firefighting equipment for the preservation of life and property in the Borough, including one (1) fire truck for use by the Bernardsville Fire Company.",
@@ -1061,13 +1043,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 22,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2028-04",
+   "how": "money approved Apr 2026; order, build, then sale"
+  },
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Budd Lake Volunteer Fire Department",
   "registry_name": "Budd Lake Volunteer Fire Department",
@@ -1094,16 +1082,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 23,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-03",
+   "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1131,7 +1125,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
+  "checked": "corrected",
   "score": 3.0,
   "department": "Centerton Fire Company (Pittsgrove Fire District 3)",
   "registry_name": "Centerton Fire Company",
@@ -1140,7 +1134,7 @@
   "type": "Volunteer",
   "website": "https://cfc23.com/",
   "why_call": "Money approved for a new truck",
-  "detail": "two new trucks",
+  "detail": "Two new trucks",
   "signal_date": "2025-09-09",
   "proof_url": "https://www.1strespondernews.com/news/091925132/centerton-fire-secures-approval-for-two-new-trucks",
   "proof_quote": "for voting in favor of purchasing two brand-new fire trucks",
@@ -1158,46 +1152,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 24,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-09",
+   "how": "money approved Sep 2025; order, build, then sale"
+  },
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 3.0,
-  "department": "City of Camden Fire Department",
-  "registry_name": "City of Camden Fire Department",
-  "city": "Camden",
-  "county": "Camden",
-  "type": "Career",
-  "website": "https://www.ci.camden.nj.us/fire-department/",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "Tower Ladder 3, delivery March 2026",
-  "signal_date": "2026-03-18",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/ladder-trucks/camden-nj-welcomes-new-ladder-truck/",
-  "proof_quote": "Tower Ladder 3 is a long-awaited addition to Camden’s North 27th Street Station that is part of the larger effort to address aging apparatus throughout the city.",
-  "other_signals": "",
-  "named_in_source": "Camden Fire Department",
-  "name_match": "exact",
-  "fdid": "04100",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 25,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Denville Volunteer Fire Department",
   "registry_name": "Denville Volunteer Fire Department",
@@ -1224,16 +1191,22 @@
    "year_how": null,
    "type_how": "the new truck is a rescue pumper; departments usually replace like with like"
   },
-  "rank": 26,
+  "stage": "surplus",
+  "window": {
+   "from": "2025-04",
+   "to": "2025-10",
+   "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
+  },
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1261,7 +1234,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Eastampton Fire-Rescue Department",
   "registry_name": "Eastampton Fire-Rescue Department",
@@ -1288,16 +1261,22 @@
    "year_how": null,
    "type_how": "the new truck is a rescue; departments usually replace like with like"
   },
-  "rank": 27,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1325,16 +1304,1075 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "corrected",
   "score": 3.0,
+  "department": "Gibbsboro Fire Company #1",
+  "registry_name": "Gibbsboro Fire Company #1",
+  "city": "Gibbsboro",
+  "county": "Camden",
+  "type": "Volunteer",
+  "website": "https://www.gfc681.org/",
+  "why_call": "Money approved for a new truck",
+  "detail": "Pumper fire truck",
+  "signal_date": "2026-03-25",
+  "proof_url": "https://gibbsborotownhall.com/wp-content/uploads/2026/03/2026-06_Adoption_Notice.pdf",
+  "proof_quote": "Purpose: The acquisition of a pumper fire truck, including all related costs and expenditures incidental thereto",
+  "other_signals": "",
+  "named_in_source": "Borough of Gibbsboro",
+  "name_match": "exact",
+  "fdid": "04681",
+  "top_kind": "bond_or_referendum",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-03",
+   "how": "money approved Mar 2026; order, build, then sale"
+  },
+  "rank": 25,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "unreachable",
+  "score": 3.0,
+  "department": "Jamesburg Volunteer Fire Department",
+  "registry_name": "Jamesburg Volunteer Fire Department",
+  "city": "Jamesburg",
+  "county": "Middlesex",
+  "type": "Volunteer",
+  "website": "https://www.jamesburgfd.com/",
+  "why_call": "Money approved for a new truck",
+  "detail": "Pumper; replaces 2007 pumper",
+  "signal_date": "2026-02-21",
+  "proof_url": "https://www.jamesburgbofc.com/docs/Notices/special-meeting-jan-22-2026.pdf",
+  "proof_quote": "authorized to acquire a new fire engine (pumper) for a total not to exceed amount of $1,000,000",
+  "other_signals": "",
+  "named_in_source": "Jamesburg Fire District No. 1",
+  "name_match": "exact",
+  "fdid": "12008",
+  "top_kind": "bond_or_referendum",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": "2007 pumper",
+   "type": "pumper",
+   "year": 2007,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2028-02",
+   "how": "money approved Feb 2026; order, build, then sale"
+  },
+  "rank": 26,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "16-20",
+   "n": 58,
+   "median": 4450,
+   "p25": 3400,
+   "p75": 6675,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2007 American LaFrance Eagle Fire Truck",
+     "price": 1725.0,
+     "date": "2026-05-29",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47463/item/lot-0001-4073-2007-american-lafrance-eagle-fire-truck-298205/"
+    },
+    {
+     "item": "2006 Pierce Pumper Truck",
+     "price": 1975.0,
+     "date": "2025-10-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/44472/item/lot-0001-2006-pierce-pumper-truck-277530/"
+    },
+    {
+     "item": "2005 Freightliner MS Crew Cab Fire Truck",
+     "price": 6300.0,
+     "date": "2024-09-07",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/38675/item/lot-0011-2005-freightliner-ms-crew-cab-fire-truck-239875/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "corrected",
+  "score": 3.0,
+  "department": "Jefferson Township Fire Department",
+  "registry_name": "Jefferson Township Fire Department",
+  "city": "Lake Hopatcong",
+  "county": "Morris",
+  "type": "Volunteer",
+  "website": "jtfd2.com and jtfd1.org",
+  "why_call": "Board approved buying a new truck",
+  "detail": "Ford F550 ambulance",
+  "signal_date": "2026-06-10",
+  "proof_url": "https://morrisfocus.com/2026/06/20/jefferson-township-ambulance-purchase-draws-criticism-over-cost/",
+  "proof_quote": "the township's recent approval of a Ford F550 ambulance purchase totaling $409,734",
+  "other_signals": "",
+  "named_in_source": "Jefferson Township volunteer ambulance squad",
+  "name_match": "exact",
+  "fdid": "14140",
+  "top_kind": "council_approval",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2028-06",
+   "how": "money approved Jun 2026; order, build, then sale"
+  },
+  "rank": 27,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Manasquan Fire District #1",
+  "registry_name": "Manasquan Fire District #1",
+  "city": "Manasquan",
+  "county": "Monmouth",
+  "type": "Volunteer",
+  "website": "http://www.manasquanfire.org/",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper on order (2025-01), delivery June 2027",
+  "signal_date": "2025-01-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2025/",
+  "proof_quote": "TOYNE—Manasquan Fire District pumper. Delivery in June 2027.",
+  "other_signals": "",
+  "named_in_source": "Manasquan Fire District",
+  "name_match": "exact",
+  "fdid": "13270",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2027-12",
+   "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 28,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Spartan Monarch Fire Truck",
+     "price": 8100.0,
+     "date": "2026-03-26",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
+    },
+    {
+     "item": "1981 Hahn HCP 15 Top Mount Pumper",
+     "price": 3000.0,
+     "date": "2018-03-13",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/13504/item/lot-0001-1981-hahn-hcp-15-top-mount-pumper-82473/"
+    },
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "corrected",
+  "score": 3.0,
+  "department": "Maurice River Fire District, Station 23",
+  "registry_name": "",
+  "city": "Maurice River",
+  "county": "Cumberland",
+  "type": "",
+  "website": "",
+  "why_call": "Money approved for a new truck",
+  "detail": "Firetruck",
+  "signal_date": "2026-02-21",
+  "proof_url": "https://informthevotecc.netlify.app/fire_districts/maurice-river-4-cumberland-23",
+  "proof_quote": "the purchase of a firetruck for an amount not exceeding $1,150,000",
+  "other_signals": "",
+  "named_in_source": "Maurice River Fire District, Station 23",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "bond_or_referendum",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2028-02",
+   "how": "money approved Feb 2026; order, build, then sale"
+  },
+  "rank": 29,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Middlesex Fire Department",
+  "registry_name": "Middlesex Fire Department",
+  "city": "Middlesex",
+  "county": "Middlesex",
+  "type": "Volunteer",
+  "website": "https://www.middlesexboro-nj.gov",
+  "why_call": "New truck on order",
+  "detail": "New E-One rescue-pumper on order (2026-04), delivery January 2028",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
+  "proof_quote": "E-ONE—Middlesex Borough Fire Department rescue-pumper. Delivery in January 2028.",
+  "other_signals": "",
+  "named_in_source": "Middlesex Borough Fire Department",
+  "name_match": "exact",
+  "fdid": "12011",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 30,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 138,
+   "median": 7400,
+   "p25": 4325,
+   "p75": 15175,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    },
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Newton Fire Department",
+  "registry_name": "Newton Fire Department",
+  "city": "Newton",
+  "county": "Sussex",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "New Ferrara Fire Apparatus aerial ladder quint delivered (2025-05)",
+  "signal_date": "2025-05-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-may-2025/",
+  "proof_quote": "Department: NEWTON (NJ) FIRE DEPARTMENT; Type: AERIAL LADDER QUINT; Built by: FERRARA FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "Newton Fire Department",
+  "name_match": "exact",
+  "fdid": "19151",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an aerial ladder quint; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-05",
+   "to": "2025-11",
+   "how": "new truck arrived May 2025; the old one may already have sold quietly"
+  },
+  "rank": 31,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Seagrave Ladder Fire Truck",
+     "price": 7700.0,
+     "date": "2023-11-08",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/35052/item/lot-0004-1993-seagrave-ladder-fire-truck-218010/"
+    },
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "corrected",
+  "score": 3.0,
+  "department": "Paramus Fire Department",
+  "registry_name": "Paramus Fire Department",
+  "city": "Paramus",
+  "county": "Bergen",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Board approved buying a new truck",
+  "detail": "Fire engine",
+  "signal_date": "2025-05-20",
+  "proof_url": "https://www.paramusborough.gov/Archive.aspx?ADID=554",
+  "proof_quote": "Supplemental funding for the acquisition of a new fire engine, including original apparatus and equipment, for the use of Fire Company No. 2.",
+  "other_signals": "",
+  "named_in_source": "Borough of Paramus / Fire Company No. 2",
+  "name_match": "exact",
+  "fdid": "02460",
+  "top_kind": "council_approval",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-05",
+   "to": "2027-05",
+   "how": "money approved May 2025; order, build, then sale"
+  },
+  "rank": 32,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "corrected",
+  "score": 3.0,
+  "department": "Pennsauken Fire Department",
+  "registry_name": "Pennsauken Fire Department",
+  "city": "Pennsauken",
+  "county": "Camden",
+  "type": "Mostly volunteer",
+  "website": "https://www.pennsaukenfire.org/",
+  "why_call": "New truck on order",
+  "detail": "Enforcer 100 ft aerial ladder truck",
+  "signal_date": "2026-02-19",
+  "proof_url": "https://www.pennsauken.gov/AgendaCenter/ViewFile/Minutes/_02192026-256",
+  "proof_quote": "2026:86 A Resolution Authorizing Pre-Payment for the Purchase of an Enforcer 100 Ft. AAT Through the HGAC Buy Cooperative Purchasing Program",
+  "other_signals": "",
+  "named_in_source": "Township of Pennsauken",
+  "name_match": "exact",
+  "fdid": "04110",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-06",
+   "to": "2027-02",
+   "how": "ordered Feb 2026; builds have taken four to twelve months in the back-test"
+  },
+  "rank": 33,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "corrected",
+  "score": 3.0,
+  "department": "Pennsville Fire and Rescue Company 1",
+  "registry_name": "Pennsville Fire and Rescue Company 1",
+  "city": "Pennsville",
+  "county": "Salem",
+  "type": "Mostly volunteer",
+  "website": "www.pennsvillefd.org",
+  "why_call": "Board approved buying a new truck",
+  "detail": "2027 Ford F550 Horton 457 Type 1 ambulance",
+  "signal_date": "2026-07-02",
+  "proof_url": "https://www.pennsville.org/m/newsflash/Home/Detail/62",
+  "proof_quote": "the purchase of one 2027 Ford F550 Horton 457 Type 1 Modular Ambulance",
+  "other_signals": "",
+  "named_in_source": "Pennsville Township",
+  "name_match": "exact",
+  "fdid": "17051",
+  "top_kind": "council_approval",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-07",
+   "how": "money approved Jul 2026; order, build, then sale"
+  },
+  "rank": 34,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Phillips 66 Byway Refinery",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Ferrara rescue on order (2025-04), delivery May 2027",
+  "signal_date": "2025-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
+  "proof_quote": "FERRARA—Phillips 66 Byway Refinery rescue. Delivery in May 2027.",
+  "other_signals": "",
+  "named_in_source": "Phillips 66 Byway Refinery",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 35,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 138,
+   "median": 7400,
+   "p25": 4325,
+   "p75": 15175,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    },
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Randolph Township Shongum Mountain Fire Co. 5",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "New Spartan Emergency Response pumper (star series) delivered (2025-08)",
+  "signal_date": "2025-08-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-august-2025/",
+  "proof_quote": "Department: RANDOLPH TOWNSHIP (NJ) SHONGUM MOUNTAIN FIRE CO. 5; Type: PUMPER (STAR SERIES); Built by: SPARTAN EMERGENCY RESPONSE",
+  "other_signals": "",
+  "named_in_source": "Randolph Township Shongum Mountain Fire Co. 5",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper (star series); departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-08",
+   "to": "2026-02",
+   "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
+  },
+  "rank": 36,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Spartan Monarch Fire Truck",
+     "price": 8100.0,
+     "date": "2026-03-26",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
+    },
+    {
+     "item": "1981 Hahn HCP 15 Top Mount Pumper",
+     "price": 3000.0,
+     "date": "2018-03-13",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/13504/item/lot-0001-1981-hahn-hcp-15-top-mount-pumper-82473/"
+    },
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "confirmed",
+  "score": 3.0,
+  "department": "Ventnor City Fire Department",
+  "registry_name": "Ventnor City Fire Department",
+  "city": "Ventnor City",
+  "county": "Atlantic",
+  "type": "Career",
+  "website": "www.ventnorcity.org",
+  "why_call": "Money approved for a new truck",
+  "detail": "Fire pumper truck and command vehicle",
+  "signal_date": "2026-07-09",
+  "proof_url": "https://www.ventnorcity.org/news/post/22785/",
+  "proof_quote": "Acquisition Of A Fire Pumper Truck, A Command Vehicle And Various Fire Safety Equipment.",
+  "other_signals": "",
+  "named_in_source": "City of Ventnor",
+  "name_match": "exact",
+  "fdid": "01221",
+  "top_kind": "bond_or_referendum",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-07",
+   "how": "money approved Jul 2026; order, build, then sale"
+  },
+  "rank": 37,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "confirmed",
+  "score": 3.0,
+  "department": "Washington Township",
+  "registry_name": "",
+  "city": "Washington Township",
+  "county": "Morris",
+  "type": "",
+  "website": "",
+  "why_call": "Money approved for a new truck",
+  "detail": "Pumper fire engine",
+  "signal_date": "2026-06-29",
+  "proof_url": "https://www.wtmorris.org/media/attachments/2026/06/30/ro-08-26-bond-pumper-fire-engine-final-statement.docx",
+  "proof_quote": "ACQUISITION OF A NEW PUMPER FIRE ENGINE, INCLUDING ORIGINAL APPARATUS AND EQUIPMENT",
+  "other_signals": "",
+  "named_in_source": "Washington Township",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "bond_or_referendum",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2028-06",
+   "how": "money approved Jun 2026; order, build, then sale"
+  },
+  "rank": 38,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Woodbridge Township Colonia Chemical H & L",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "New E-One Fire Apparatus pumper delivered (2026-03)",
+  "signal_date": "2026-03-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-march-2026/",
+  "proof_quote": "Department: WOODBRIDGE TOWNSHIP (NJ) COLONIA CHEMICAL H & L; Type: PUMPER; Built by: E-ONE FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "Woodbridge Township Colonia Chemical H & L",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-03",
+   "to": "2026-09",
+   "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
+  },
+  "rank": 39,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Spartan Monarch Fire Truck",
+     "price": 8100.0,
+     "date": "2026-03-26",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
+    },
+    {
+     "item": "1981 Hahn HCP 15 Top Mount Pumper",
+     "price": 3000.0,
+     "date": "2018-03-13",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/13504/item/lot-0001-1981-hahn-hcp-15-top-mount-pumper-82473/"
+    },
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "corrected",
+  "score": 2.0,
+  "department": "Far Hills-Bedminster Fire Department",
+  "registry_name": "Far Hills-Bedminster Fire Department",
+  "city": "Bedminster",
+  "county": "Somerset",
+  "type": "Volunteer",
+  "website": "https://www.fhbfd.org",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "Pierce Enforcer (Squad 29), delivery July 2025; replaces 1992 Pierce Lance engine",
+  "signal_date": "2025-07-11",
+  "proof_url": "https://patch.com/new-jersey/baskingridge/new-fire-truck-joins-far-hills-bedminster-fire-department",
+  "proof_quote": "This new apparatus replaces the department's 1992 Pierce Lance Engine, which served the residents for 30 years.",
+  "other_signals": "",
+  "named_in_source": "Far Hills-Bedminster Fire Department",
+  "name_match": "exact",
+  "fdid": "18010",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": "1992 Pierce Lance engine",
+   "type": "pumper",
+   "year": 1992,
+   "year_how": "stated",
+   "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-07",
+   "to": "2026-01",
+   "how": "new truck was due Jul 2025; the old one may already have sold quietly"
+  },
+  "rank": 40,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "31+",
+   "n": 185,
+   "median": 3600,
+   "p25": 2425,
+   "p75": 5200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Spartan Monarch Fire Truck",
+     "price": 8100.0,
+     "date": "2026-03-26",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
+    },
+    {
+     "item": "1992 Pierce Pumper",
+     "price": 4350.0,
+     "date": "2026-05-08",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47028/item/lot-0001-1992-pierce-pumper-295314/"
+    },
+    {
+     "item": "1992 E One Pumper Truck",
+     "price": 4800.0,
+     "date": "2026-01-24",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/45833/item/lot-0001-1992-e-one-pumper-truck-286255/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "corrected",
+  "score": 2.0,
+  "department": "Hampton Fire Company No 1",
+  "registry_name": "Hampton Fire Company No 1",
+  "city": "Hampton",
+  "county": "Hunterdon",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Board approved buying a new truck",
+  "detail": "Fire truck",
+  "signal_date": "2026-07-20",
+  "proof_url": "https://www.hamptonboro.org/add-legal-notice/mayor-council-notices/506-capital-ordinance-no-08-2026-authorizing-the-making-of-public-improvements-appropriating-therefor-the-sum-of-110-000-00-from-the-reserve-for-fire-truck/file",
+  "proof_quote": "APPROPRIATING THEREFOR THE SUM OF $110,000.00 FROM THE RESERVE FOR FIRE TRUCK",
+  "other_signals": "",
+  "named_in_source": "Borough of Hampton",
+  "name_match": "exact",
+  "fdid": "10130",
+  "top_kind": "council_approval",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-07",
+   "how": "money approved Jul 2026; order, build, then sale"
+  },
+  "rank": 41,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "corrected",
+  "score": 2.0,
+  "department": "Ho Ho Kus Volunteer Fire Department",
+  "registry_name": "Ho Ho Kus Volunteer Fire Department",
+  "city": "Ho Ho Kus",
+  "county": "Atlantic",
+  "type": "Volunteer",
+  "website": "https://www.hohokus.org",
+  "why_call": "Won a grant for a new truck",
+  "detail": "Rescue-engine",
+  "signal_date": "2025-12-15",
+  "proof_url": "https://www.fireapparatusmagazine.com/?p=201621",
+  "proof_quote": "This includes a $975,000 award toward the cost of the Borough's new rescue-engine through the FY26",
+  "other_signals": "",
+  "named_in_source": "Ho-Ho-Kus Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "02280",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2028-12",
+   "how": "grant awarded Dec 2025; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 42,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "corrected",
+  "score": 2.0,
+  "department": "West Milford Fire Department",
+  "registry_name": "West Milford Fire Department",
+  "city": "West Milford",
+  "county": "Passaic",
+  "type": "Mostly volunteer",
+  "website": "https://www.wmoem.org/",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "E-One Typhoon 2,500-gallon tanker, delivery March 2026; replaces tanker out of service since 2021",
+  "signal_date": "2026-03-26",
+  "proof_url": "https://www.westmilfordmessenger.com/news/local-news/west-milford-fire-dept-unveils-new-tanker-4-JX5716685",
+  "proof_quote": "The new Tanker 4, which serves as an initial fire attack truck, is a E-One 2500-gallon Typhoon 6-man cab tanker",
+  "other_signals": "",
+  "named_in_source": "West Milford Fire Department, Company 4",
+  "name_match": "exact",
+  "fdid": "16150",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": "tanker out of service since 2021",
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "named in the record"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-03",
+   "to": "2026-09",
+   "how": "new truck was due Mar 2026; the old one may already have sold quietly"
+  },
+  "rank": 43,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "corrected",
+  "score": 1.0,
+  "department": "City of Camden Fire Department",
+  "registry_name": "City of Camden Fire Department",
+  "city": "Camden",
+  "county": "Camden",
+  "type": "Career",
+  "website": "https://www.ci.camden.nj.us/fire-department/",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "Tower Ladder 3, delivery March 2026",
+  "signal_date": "2026-03-18",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/ladder-trucks/camden-nj-welcomes-new-ladder-truck/",
+  "proof_quote": "Tower Ladder 3 is a long-awaited addition to Camden’s North 27th Street Station that is part of the larger effort to address aging apparatus throughout the city.",
+  "other_signals": "",
+  "named_in_source": "Camden Fire Department",
+  "name_match": "exact",
+  "fdid": "04100",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-03",
+   "to": "2026-09",
+   "how": "new truck was due Mar 2026; the old one may already have sold quietly"
+  },
+  "rank": 44,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
   "department": "Franklin Fire Company #1",
   "registry_name": "Franklin Fire Company #1",
   "city": "Columbus",
   "county": "Burlington",
   "type": "Volunteer",
   "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Fouts Fire four quick-attack trucks on order (2025-11), delivery Fourth Quarter 2025",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Fouts Fire four quick-attack trucks due Fourth Quarter 2025 (ordered 2025-11)",
   "signal_date": "2025-11-01",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
   "proof_quote": "FOUTS FIRE—Franklin Fire Department four quick-attack trucks. Delivery in Fourth Quarter 2025.",
@@ -1342,7 +2380,7 @@
   "named_in_source": "Franklin Fire Department",
   "name_match": "exact, ambiguous (3 same-name rows)",
   "fdid": "03331",
-  "top_kind": "new_truck_ordered",
+  "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
@@ -1352,15 +2390,21 @@
    "year_how": null,
    "type_how": "the new trucks are four quick-attack trucks; departments usually replace like with like"
   },
-  "rank": 28,
+  "stage": "replacing",
+  "window": {
+   "from": "2025-10",
+   "to": "2026-06",
+   "how": "new truck was due Fourth Quarter 2025; the old one may already have sold quietly"
+  },
+  "rank": 45,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [
@@ -1389,882 +2433,7 @@
   }
  },
  {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 3.0,
-  "department": "Gibbsboro Fire Company #1",
-  "registry_name": "Gibbsboro Fire Company #1",
-  "city": "Gibbsboro",
-  "county": "Camden",
-  "type": "Volunteer",
-  "website": "https://www.gfc681.org/",
-  "why_call": "Money approved for a new truck",
-  "detail": "pumper fire truck",
-  "signal_date": "2026-03-25",
-  "proof_url": "https://gibbsborotownhall.com/wp-content/uploads/2026/03/2026-06_Adoption_Notice.pdf",
-  "proof_quote": "Purpose: The acquisition of a pumper fire truck, including all related costs and expenditures incidental thereto",
-  "other_signals": "",
-  "named_in_source": "Borough of Gibbsboro",
-  "name_match": "exact",
-  "fdid": "04681",
-  "top_kind": "bond_or_referendum",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 29,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "page no longer reachable: Notice PDF returns 404; the Feb 26 2026 minutes PDF also 404s. A search index still holds the notice: question to buy a pumper not to exceed $1,000,000 replacing a 2007 pumper, election Feb 21 2026. No result found. No verbatim line could be fetched.",
-  "score": 3.0,
-  "department": "Jamesburg Volunteer Fire Department",
-  "registry_name": "Jamesburg Volunteer Fire Department",
-  "city": "Jamesburg",
-  "county": "Middlesex",
-  "type": "Volunteer",
-  "website": "https://www.jamesburgfd.com/",
-  "why_call": "Money approved for a new truck",
-  "detail": "pumper; replaces 2007 pumper",
-  "signal_date": "2026-02-21",
-  "proof_url": "https://www.jamesburgbofc.com/docs/Notices/special-meeting-jan-22-2026.pdf",
-  "proof_quote": "authorized to acquire a new fire engine (pumper) for a total not to exceed amount of $1,000,000",
-  "other_signals": "",
-  "named_in_source": "Jamesburg Fire District No. 1",
-  "name_match": "exact",
-  "fdid": "12008",
-  "top_kind": "bond_or_referendum",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": "2007 pumper",
-   "type": "pumper",
-   "year": 2007,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "rank": 30,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "pumper",
-   "band": "16-20",
-   "n": 60,
-   "median": 4550,
-   "p25": 3500,
-   "p75": 6625,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2007 American LaFrance Eagle Fire Truck",
-     "price": 1725.0,
-     "date": "2026-05-29",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47463/item/lot-0001-4073-2007-american-lafrance-eagle-fire-truck-298205/"
-    },
-    {
-     "item": "2007 American LaFrance Eagle Fire Truck",
-     "price": 4850.0,
-     "date": "2026-05-02",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46993/item/lot-0001-4073-2007-american-lafrance-eagle-fire-truck-294657/"
-    },
-    {
-     "item": "2006 Pierce Pumper Truck",
-     "price": 1975.0,
-     "date": "2025-10-17",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/44472/item/lot-0001-2006-pierce-pumper-truck-277530/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 3.0,
-  "department": "Jefferson Township Fire Department",
-  "registry_name": "Jefferson Township Fire Department",
-  "city": "Lake Hopatcong",
-  "county": "Morris",
-  "type": "Volunteer",
-  "website": "jtfd2.com and jtfd1.org",
-  "why_call": "Board approved buying a new truck",
-  "detail": "Ford F550 ambulance",
-  "signal_date": "2026-06-10",
-  "proof_url": "https://morrisfocus.com/2026/06/20/jefferson-township-ambulance-purchase-draws-criticism-over-cost/",
-  "proof_quote": "the township's recent approval of a Ford F550 ambulance purchase totaling $409,734",
-  "other_signals": "",
-  "named_in_source": "Jefferson Township volunteer ambulance squad",
-  "name_match": "exact",
-  "fdid": "14140",
-  "top_kind": "council_approval",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 31,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Manasquan Fire District #1",
-  "registry_name": "Manasquan Fire District #1",
-  "city": "Manasquan",
-  "county": "Monmouth",
-  "type": "Volunteer",
-  "website": "http://www.manasquanfire.org/",
-  "why_call": "New truck on order",
-  "detail": "New Toyne pumper on order (2025-01), delivery June 2027",
-  "signal_date": "2025-01-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2025/",
-  "proof_quote": "TOYNE—Manasquan Fire District pumper. Delivery in June 2027.",
-  "other_signals": "",
-  "named_in_source": "Manasquan Fire District",
-  "name_match": "exact",
-  "fdid": "13270",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 32,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1992 Spartan Monarch Fire Truck",
-     "price": 8100.0,
-     "date": "2026-03-26",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
-    },
-    {
-     "item": "1981 Hahn HCP 15 Top Mount Pumper",
-     "price": 3000.0,
-     "date": "2018-03-13",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/13504/item/lot-0001-1981-hahn-hcp-15-top-mount-pumper-82473/"
-    },
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 3.0,
-  "department": "Maurice River Fire District, Station 23",
-  "registry_name": "",
-  "city": "Maurice River",
-  "county": "Cumberland",
-  "type": "",
-  "website": "",
-  "why_call": "Money approved for a new truck",
-  "detail": "firetruck",
-  "signal_date": "2026-02-21",
-  "proof_url": "https://informthevotecc.netlify.app/fire_districts/maurice-river-4-cumberland-23",
-  "proof_quote": "the purchase of a firetruck for an amount not exceeding $1,150,000",
-  "other_signals": "",
-  "named_in_source": "Maurice River Fire District, Station 23",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "bond_or_referendum",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 33,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Middlesex Fire Department",
-  "registry_name": "Middlesex Fire Department",
-  "city": "Middlesex",
-  "county": "Middlesex",
-  "type": "Volunteer",
-  "website": "https://www.middlesexboro-nj.gov",
-  "why_call": "New truck on order",
-  "detail": "New E-One rescue-pumper on order (2026-04), delivery January 2028",
-  "signal_date": "2026-04-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
-  "proof_quote": "E-ONE—Middlesex Borough Fire Department rescue-pumper. Delivery in January 2028.",
-  "other_signals": "",
-  "named_in_source": "Middlesex Borough Fire Department",
-  "name_match": "exact",
-  "fdid": "12011",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "rescue",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
-  },
-  "rank": 34,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "rescue",
-   "band": "all ages",
-   "n": 141,
-   "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
-     "price": 9600.0,
-     "date": "2026-11-05",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
-    },
-    {
-     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
-     "price": 10200.0,
-     "date": "2026-10-15",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
-    },
-    {
-     "item": "1987 GMC 7000 Rescue Truck",
-     "price": 1575.0,
-     "date": "2026-08-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Newton Fire Department",
-  "registry_name": "Newton Fire Department",
-  "city": "Newton",
-  "county": "Sussex",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Ferrara Fire Apparatus aerial ladder quint delivered (2025-05)",
-  "signal_date": "2025-05-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-may-2025/",
-  "proof_quote": "Department: NEWTON (NJ) FIRE DEPARTMENT; Type: AERIAL LADDER QUINT; Built by: FERRARA FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "Newton Fire Department",
-  "name_match": "exact",
-  "fdid": "19151",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an aerial ladder quint; departments usually replace like with like"
-  },
-  "rank": 35,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Seagrave Ladder Fire Truck",
-     "price": 7700.0,
-     "date": "2023-11-08",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/35052/item/lot-0004-1993-seagrave-ladder-fire-truck-218010/"
-    },
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 3.0,
-  "department": "Paramus Fire Department",
-  "registry_name": "Paramus Fire Department",
-  "city": "Paramus",
-  "county": "Bergen",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Board approved buying a new truck",
-  "detail": "fire engine",
-  "signal_date": "2025-05-20",
-  "proof_url": "https://www.paramusborough.gov/Archive.aspx?ADID=554",
-  "proof_quote": "Supplemental funding for the acquisition of a new fire engine, including original apparatus and equipment, for the use of Fire Company No. 2.",
-  "other_signals": "",
-  "named_in_source": "Borough of Paramus / Fire Company No. 2",
-  "name_match": "exact",
-  "fdid": "02460",
-  "top_kind": "council_approval",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 36,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Parkertown Fire Company",
-  "registry_name": "Parkertown Fire Company",
-  "city": "Little Egg Harbor",
-  "county": "Ocean",
-  "type": "Volunteer",
-  "website": "https://www.station70.com",
-  "why_call": "New truck on order",
-  "detail": "New E-One pumper on order (2025-07)",
-  "signal_date": "2025-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
-  "proof_quote": "E-ONE—Parkertown Volunteer Fire Company, Little Egg Harbor Township, pumper.",
-  "other_signals": "",
-  "named_in_source": "Parkertown Volunteer Fire Company",
-  "name_match": "exact",
-  "fdid": "15070",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 37,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1992 Spartan Monarch Fire Truck",
-     "price": 8100.0,
-     "date": "2026-03-26",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
-    },
-    {
-     "item": "1981 Hahn HCP 15 Top Mount Pumper",
-     "price": 3000.0,
-     "date": "2018-03-13",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/13504/item/lot-0001-1981-hahn-hcp-15-top-mount-pumper-82473/"
-    },
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 3.0,
-  "department": "Pennsauken Fire Department",
-  "registry_name": "Pennsauken Fire Department",
-  "city": "Pennsauken",
-  "county": "Camden",
-  "type": "Mostly volunteer",
-  "website": "https://www.pennsaukenfire.org/",
-  "why_call": "New truck on order",
-  "detail": "Enforcer 100 ft aerial ladder truck",
-  "signal_date": "2026-02-19",
-  "proof_url": "https://www.pennsauken.gov/AgendaCenter/ViewFile/Minutes/_02192026-256",
-  "proof_quote": "2026:86 A Resolution Authorizing Pre-Payment for the Purchase of an Enforcer 100 Ft. AAT Through the HGAC Buy Cooperative Purchasing Program",
-  "other_signals": "",
-  "named_in_source": "Township of Pennsauken",
-  "name_match": "exact",
-  "fdid": "04110",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 38,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 3.0,
-  "department": "Pennsville Fire and Rescue Company 1",
-  "registry_name": "Pennsville Fire and Rescue Company 1",
-  "city": "Pennsville",
-  "county": "Salem",
-  "type": "Mostly volunteer",
-  "website": "www.pennsvillefd.org",
-  "why_call": "Board approved buying a new truck",
-  "detail": "2027 Ford F550 Horton 457 Type 1 ambulance",
-  "signal_date": "2026-07-02",
-  "proof_url": "https://www.pennsville.org/m/newsflash/Home/Detail/62",
-  "proof_quote": "the purchase of one 2027 Ford F550 Horton 457 Type 1 Modular Ambulance",
-  "other_signals": "",
-  "named_in_source": "Pennsville Township",
-  "name_match": "exact",
-  "fdid": "17051",
-  "top_kind": "council_approval",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 39,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Phillips 66 Byway Refinery",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Ferrara rescue on order (2025-04), delivery May 2027",
-  "signal_date": "2025-04-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
-  "proof_quote": "FERRARA—Phillips 66 Byway Refinery rescue. Delivery in May 2027.",
-  "other_signals": "",
-  "named_in_source": "Phillips 66 Byway Refinery",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "rescue",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a rescue; departments usually replace like with like"
-  },
-  "rank": 40,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "rescue",
-   "band": "all ages",
-   "n": 141,
-   "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
-     "price": 9600.0,
-     "date": "2026-11-05",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
-    },
-    {
-     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
-     "price": 10200.0,
-     "date": "2026-10-15",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
-    },
-    {
-     "item": "1987 GMC 7000 Rescue Truck",
-     "price": 1575.0,
-     "date": "2026-08-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Randolph Township Shongum Mountain Fire Co. 5",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Spartan Emergency Response pumper (star series) delivered (2025-08)",
-  "signal_date": "2025-08-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-august-2025/",
-  "proof_quote": "Department: RANDOLPH TOWNSHIP (NJ) SHONGUM MOUNTAIN FIRE CO. 5; Type: PUMPER (STAR SERIES); Built by: SPARTAN EMERGENCY RESPONSE",
-  "other_signals": "",
-  "named_in_source": "Randolph Township Shongum Mountain Fire Co. 5",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper (star series); departments usually replace like with like"
-  },
-  "rank": 41,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1992 Spartan Monarch Fire Truck",
-     "price": 8100.0,
-     "date": "2026-03-26",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
-    },
-    {
-     "item": "1981 Hahn HCP 15 Top Mount Pumper",
-     "price": 3000.0,
-     "date": "2018-03-13",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/13504/item/lot-0001-1981-hahn-hcp-15-top-mount-pumper-82473/"
-    },
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    }
-   ]
-  }
- },
- {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Raritan Valley Regional Emergency Medical Service, Inc",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $181,818, awarded 8/18/23 (FY2022)",
-  "signal_date": "2023-08-18",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Raritan Valley Regional Emergency Medical Service, Inc, Vehicle Acquisition, $181,818",
-  "other_signals": "",
-  "named_in_source": "Raritan Valley Regional Emergency Medical Service, Inc",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 42,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "confirmed by a second reader",
-  "score": 3.0,
-  "department": "Ventnor City Fire Department",
-  "registry_name": "Ventnor City Fire Department",
-  "city": "Ventnor City",
-  "county": "Atlantic",
-  "type": "Career",
-  "website": "www.ventnorcity.org",
-  "why_call": "Money approved for a new truck",
-  "detail": "fire pumper truck and command vehicle",
-  "signal_date": "2026-07-09",
-  "proof_url": "https://www.ventnorcity.org/news/post/22785/",
-  "proof_quote": "Acquisition Of A Fire Pumper Truck, A Command Vehicle And Various Fire Safety Equipment.",
-  "other_signals": "",
-  "named_in_source": "City of Ventnor",
-  "name_match": "exact",
-  "fdid": "01221",
-  "top_kind": "bond_or_referendum",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 43,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "confirmed by a second reader",
-  "score": 3.0,
-  "department": "Washington Township",
-  "registry_name": "",
-  "city": "Washington Township",
-  "county": "Morris",
-  "type": "",
-  "website": "",
-  "why_call": "Money approved for a new truck",
-  "detail": "pumper fire engine",
-  "signal_date": "2026-06-29",
-  "proof_url": "https://www.wtmorris.org/media/attachments/2026/06/30/ro-08-26-bond-pumper-fire-engine-final-statement.docx",
-  "proof_quote": "ACQUISITION OF A NEW PUMPER FIRE ENGINE, INCLUDING ORIGINAL APPARATUS AND EQUIPMENT",
-  "other_signals": "",
-  "named_in_source": "Washington Township",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "bond_or_referendum",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 44,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 2.0,
-  "department": "Far Hills-Bedminster Fire Department",
-  "registry_name": "Far Hills-Bedminster Fire Department",
-  "city": "Bedminster",
-  "county": "Somerset",
-  "type": "Volunteer",
-  "website": "https://www.fhbfd.org",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "Pierce Enforcer (Squad 29), delivery July 2025; replaces 1992 Pierce Lance engine",
-  "signal_date": "2025-07-11",
-  "proof_url": "https://patch.com/new-jersey/baskingridge/new-fire-truck-joins-far-hills-bedminster-fire-department",
-  "proof_quote": "This new apparatus replaces the department's 1992 Pierce Lance Engine, which served the residents for 30 years.",
-  "other_signals": "",
-  "named_in_source": "Far Hills-Bedminster Fire Department",
-  "name_match": "exact",
-  "fdid": "18010",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": "1992 Pierce Lance engine",
-   "type": "pumper",
-   "year": 1992,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "rank": 45,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "31+",
-   "n": 191,
-   "median": 3600,
-   "p25": 2438,
-   "p75": 5200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1992 Spartan Monarch Fire Truck",
-     "price": 8100.0,
-     "date": "2026-03-26",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
-    },
-    {
-     "item": "1992 Pierce Pumper",
-     "price": 4350.0,
-     "date": "2026-05-08",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47028/item/lot-0001-1992-pierce-pumper-295314/"
-    },
-    {
-     "item": "1992 Pierce Pumper",
-     "price": 3050.0,
-     "date": "2026-04-11",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46754/item/lot-0001-1992-pierce-pumper-292113/"
-    }
-   ]
-  }
- },
- {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 2.0,
-  "department": "Hampton Fire Company No 1",
-  "registry_name": "Hampton Fire Company No 1",
-  "city": "Hampton",
-  "county": "Hunterdon",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Board approved buying a new truck",
-  "detail": "fire truck",
-  "signal_date": "2026-07-20",
-  "proof_url": "https://www.hamptonboro.org/add-legal-notice/mayor-council-notices/506-capital-ordinance-no-08-2026-authorizing-the-making-of-public-improvements-appropriating-therefor-the-sum-of-110-000-00-from-the-reserve-for-fire-truck/file",
-  "proof_quote": "APPROPRIATING THEREFOR THE SUM OF $110,000.00 FROM THE RESERVE FOR FIRE TRUCK",
-  "other_signals": "",
-  "named_in_source": "Borough of Hampton",
-  "name_match": "exact",
-  "fdid": "10130",
-  "top_kind": "council_approval",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 46,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "confirmed by a second reader; quote or link corrected",
-  "score": 2.0,
-  "department": "Ho Ho Kus Volunteer Fire Department",
-  "registry_name": "Ho Ho Kus Volunteer Fire Department",
-  "city": "Ho Ho Kus",
-  "county": "Atlantic",
-  "type": "Volunteer",
-  "website": "https://www.hohokus.org",
-  "why_call": "Won a grant for a new truck",
-  "detail": "rescue-engine",
-  "signal_date": "2025-12-15",
-  "proof_url": "https://www.fireapparatusmagazine.com/?p=201621",
-  "proof_quote": "This includes a $975,000 award toward the cost of the Borough's new rescue-engine through the FY26",
-  "other_signals": "",
-  "named_in_source": "Ho-Ho-Kus Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "02280",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 47,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "confirmed by a second reader",
+  "checked": "confirmed",
   "score": 1.0,
   "department": "Logan Township Fire Department",
   "registry_name": "Logan Township Fire Department",
@@ -2291,13 +2460,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 48,
+  "stage": "replacing",
+  "window": {
+   "from": "2025-09",
+   "to": "2026-03",
+   "how": "new truck was due Sep 2025; the old one may already have sold quietly"
+  },
+  "rank": 46,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 1.0,
   "department": "Monmouth Beach Fire Department",
   "registry_name": "Monmouth Beach Fire Department",
@@ -2324,16 +2499,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 49,
+  "stage": "replacing",
+  "window": {
+   "from": "2025-11",
+   "to": "2026-05",
+   "how": "new truck was due Nov 2025; the old one may already have sold quietly"
+  },
+  "rank": 47,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2359,5 +2540,114 @@
     }
    ]
   }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Parkertown Fire Company",
+  "registry_name": "Parkertown Fire Company",
+  "city": "Little Egg Harbor",
+  "county": "Ocean",
+  "type": "Volunteer",
+  "website": "https://www.station70.com",
+  "why_call": "New truck on order",
+  "detail": "New E-One pumper on order (2025-07)",
+  "signal_date": "2025-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
+  "proof_quote": "E-ONE—Parkertown Volunteer Fire Company, Little Egg Harbor Township, pumper.",
+  "other_signals": "",
+  "named_in_source": "Parkertown Volunteer Fire Company",
+  "name_match": "exact",
+  "fdid": "15070",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-11",
+   "to": "2026-07",
+   "how": "ordered Jul 2025; the usual build time has passed"
+  },
+  "rank": 48,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Spartan Monarch Fire Truck",
+     "price": 8100.0,
+     "date": "2026-03-26",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/46469/item/lot-0009-1992-spartan-monarch-fire-truck-290231/"
+    },
+    {
+     "item": "1981 Hahn HCP 15 Top Mount Pumper",
+     "price": 3000.0,
+     "date": "2018-03-13",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/13504/item/lot-0001-1981-hahn-hcp-15-top-mount-pumper-82473/"
+    },
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Raritan Valley Regional Emergency Medical Service, Inc",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $181,818, awarded 8/18/23 (FY2022)",
+  "signal_date": "2023-08-18",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Raritan Valley Regional Emergency Medical Service, Inc, Vehicle Acquisition, $181,818",
+  "other_signals": "",
+  "named_in_source": "Raritan Valley Regional Emergency Medical Service, Inc",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 49,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
  }
 ]

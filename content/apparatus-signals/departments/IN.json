@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Tri Township Fire and Rescue",
   "registry_name": "Tri Township Fire and Rescue",
@@ -27,13 +27,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
   "department": "Cowan Volunteer Fire Department",
   "registry_name": "",
@@ -60,16 +66,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "new truck in service Jun 2026; we allow six months for the old one to list"
+  },
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -97,71 +109,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 5.0,
-  "department": "Greenwood Fire Department",
-  "registry_name": "Greenwood Fire Department",
-  "city": "Greenwood",
-  "county": "Johnson",
-  "type": "Mostly career",
-  "website": "https://www.greenwood.in.gov/department/index.php?structureid=50",
-  "why_call": "New truck in service",
-  "detail": "New HME Trucks urban attack pumper (core 62) delivered (2026-01)",
-  "signal_date": "2026-01-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-january-2026/",
-  "proof_quote": "Department: GREENWOOD (IN) FIRE DEPARTMENT; Type: URBAN ATTACK PUMPER (CORE 62); Built by: HME TRUCKS",
-  "other_signals": "",
-  "named_in_source": "Greenwood Fire Department",
-  "name_match": "exact",
-  "fdid": "41004",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an urban attack pumper (core 62); departments usually replace like with like"
-  },
-  "rank": 3,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "Ellettsville Fire Department",
   "registry_name": "Ellettsville Fire Department",
@@ -188,16 +136,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 4,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-01",
+   "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -225,7 +179,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Carter Fire District",
   "registry_name": "Carter Fire District",
@@ -252,13 +206,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 5,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Clifford Volunteer Fire Department",
   "registry_name": "Clifford Volunteer Fire Department",
@@ -285,16 +245,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 6,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2028-09",
+   "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -322,7 +288,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Eli Lilly Fire Department",
   "registry_name": "",
@@ -331,7 +297,7 @@
   "type": "",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "New US Fire Apparatus pumper-tanker on order (2026-10), delivery November",
+  "detail": "New US Fire Apparatus pumper-tanker on order (2026-10), delivery Nov 2026",
   "signal_date": "2026-10-01",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/october-2026-recent-apparatus-orders/",
   "proof_quote": "US FIRE APPARATUS—Eli Lilly Fire Department pumper-tanker. Delivery in November.",
@@ -349,16 +315,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 7,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -386,7 +358,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Fire Department of Liberty Township",
   "registry_name": "Fire Department of Liberty Township",
@@ -413,77 +385,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 8,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Hamilton Township Volunteer Fire Company, Inc.",
-  "registry_name": "Hamilton Township Volunteer Fire Company, Inc.",
-  "city": "Muncie",
-  "county": "Delaware",
-  "type": "Volunteer",
-  "website": "https://www.htvfcin.org/",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Rosenbauer pumper-tanker due November 2026 (ordered 2025-03)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2025/",
-  "proof_quote": "ROSENBAUER—Hamilton Township Fire Company, Muncie, pumper-tanker. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "Hamilton Township Fire Company",
-  "name_match": "exact",
-  "fdid": "18004",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
-  },
-  "rank": 9,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Lafayette Fire Department",
   "registry_name": "Lafayette Fire Department",
@@ -510,13 +424,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 10,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Monroe Fire Protection District",
   "registry_name": "Monroe Fire Protection District",
@@ -543,16 +463,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 11,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-03",
+   "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -580,7 +506,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "New Marion Volunteer Fire Department Inc",
   "registry_name": "",
@@ -607,13 +533,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 12,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "ORANGE CO RURAL VFD DIST INCORPORATED",
   "registry_name": "",
@@ -640,13 +572,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 13,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Southington Fire Department",
   "registry_name": "",
@@ -673,16 +611,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 14,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -710,7 +654,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Straughn Volunteer Fire Department",
   "registry_name": "Straughn Volunteer Fire Department",
@@ -737,79 +681,89 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 15,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Abington Township Volunteer Fire Department, Inc.",
-  "registry_name": "Abington Township Volunteer Fire Department, Inc.",
-  "city": "Centerville",
-  "county": "Wayne",
+  "checked": "trade_press",
+  "score": 4.0,
+  "department": "Tippecanoe Township Volunteer Fire Department",
+  "registry_name": "Tippecanoe Township Volunteer Fire Department",
+  "city": "Battle Ground",
+  "county": "Tippecanoe",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $252,380, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Abington Twp Volunteer Fire Department Inc, Vehicle Acquisition, $252,380",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New SVI heavy rescue due Oct 2026 (ordered 2026-07)",
+  "signal_date": "2026-10-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/july-2026-recent-apparatus-orders/",
+  "proof_quote": "SVI—Tippecanoe Township Fire Department heavy rescue. Delivery in October.",
   "other_signals": "",
-  "named_in_source": "Abington Twp Volunteer Fire Department Inc",
+  "named_in_source": "Tippecanoe Township Fire Department",
   "name_match": "exact",
-  "fdid": "89001",
-  "top_kind": "grant",
+  "fdid": "79011",
+  "top_kind": "delivery_due",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
-   "type": null,
+   "type": "rescue",
    "year": null,
    "year_how": null,
-   "type_how": null
+   "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
   },
-  "rank": 16,
-  "tier": "3 Watch",
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 14,
+  "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 138,
+   "median": 7400,
+   "p25": 4325,
+   "p75": 15175,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    },
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    }
+   ]
+  }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Arcola Volunteer Fire Department",
-  "registry_name": "Arcola Volunteer Fire Department",
-  "city": "Arcola",
-  "county": "Allen",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $357,142, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Arcola Volunteer Fire Department Inc, Vehicle Acquisition, $357,142",
-  "other_signals": "",
-  "named_in_source": "Arcola Volunteer Fire Department Inc",
-  "name_match": "exact",
-  "fdid": "02003",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 17,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Argos Fire Protection Territory",
   "registry_name": "",
@@ -836,16 +790,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 18,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2027-08",
+   "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 15,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -873,7 +833,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Auburn Fire Department",
   "registry_name": "Auburn Fire Department",
@@ -900,16 +860,22 @@
    "year_how": null,
    "type_how": "the new truck is a custom pumper; departments usually replace like with like"
   },
-  "rank": 19,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 16,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -937,7 +903,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "BP Refinery",
   "registry_name": "",
@@ -964,16 +930,22 @@
    "year_how": null,
    "type_how": "the new truck is an industrial aerial platform quint; departments usually replace like with like"
   },
-  "rank": 20,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-04",
+   "to": "2028-10",
+   "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 17,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1001,7 +973,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "BP Whiting Refinery",
   "registry_name": "",
@@ -1028,13 +1000,19 @@
    "year_how": null,
    "type_how": "the new truck is an industrial foam unit; departments usually replace like with like"
   },
-  "rank": 21,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-12",
+   "to": "2030-06",
+   "how": "new truck due Dec 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Batesville Fire & EMS",
   "registry_name": "Batesville Fire & EMS",
@@ -1061,16 +1039,22 @@
    "year_how": null,
    "type_how": "the new truck is a custom pumper; departments usually replace like with like"
   },
-  "rank": 22,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-05",
+   "to": "2029-11",
+   "how": "new truck due May 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1098,7 +1082,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Bedford Fire Department",
   "registry_name": "Bedford Fire Department",
@@ -1125,16 +1109,22 @@
    "year_how": null,
    "type_how": "the new truck is an aerial; departments usually replace like with like"
   },
-  "rank": 23,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2027-12",
+   "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1162,7 +1152,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Brownsburg Fire Territory",
   "registry_name": "Brownsburg Fire Territory",
@@ -1189,16 +1179,22 @@
    "year_how": null,
    "type_how": "the new truck is a tiller; departments usually replace like with like"
   },
-  "rank": 24,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-04",
+   "to": "2029-10",
+   "how": "new truck due Apr 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1226,7 +1222,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Carmel Fire Department",
   "registry_name": "Carmel Fire Department",
@@ -1253,16 +1249,22 @@
    "year_how": null,
    "type_how": "the new truck is a 107-foot steel tractor-drawn aerial; departments usually replace like with like"
   },
-  "rank": 25,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1290,7 +1292,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cass Township-Union Fire Protection Territory",
   "registry_name": "",
@@ -1317,16 +1319,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 26,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-05",
+   "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
+  },
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1354,7 +1362,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Corunna Fire Department",
   "registry_name": "Corunna Fire Department",
@@ -1381,16 +1389,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 27,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1418,7 +1432,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Crown Point Fire Department",
   "registry_name": "Crown Point Fire Department",
@@ -1445,16 +1459,22 @@
    "year_how": null,
    "type_how": "the new truck is a 107-foot Ascendant steel aerial ladder quint; departments usually replace like with like"
   },
-  "rank": 28,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-08",
+   "to": "2029-02",
+   "how": "new truck due Aug 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1482,7 +1502,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Danville Fire Department",
   "registry_name": "Danville Fire Department",
@@ -1509,16 +1529,22 @@
    "year_how": null,
    "type_how": "the new truck is an aerial ladder; departments usually replace like with like"
   },
-  "rank": 29,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1546,8 +1572,1836 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
+  "department": "Elkhart Fire Department",
+  "registry_name": "Elkhart Fire Department",
+  "city": "Elkhart",
+  "county": "Elkhart",
+  "type": "Career",
+  "website": "https://www.elkhartindiana.org/department/index.php?structureid=12",
+  "why_call": "New truck on order",
+  "detail": "New Sutphen tractor-drawn aerial on order (2026-05), delivery October 2027",
+  "signal_date": "2026-05-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/may-2026-recent-apparatus-orders/",
+  "proof_quote": "SUTPHEN—Elkhart Fire Department tractor-drawn aerial. Delivery in October 2027.",
+  "other_signals": "",
+  "named_in_source": "Elkhart Fire Department",
+  "name_match": "exact, ambiguous (2 same-name rows)",
+  "fdid": "20006",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tractor-drawn aerial; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 27,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Evansville Fire Department",
+  "registry_name": "Evansville Fire Department",
+  "city": "Evansville",
+  "county": "Vanderburgh",
+  "type": "Career",
+  "website": "https://www.evansville.in.gov/city/department/index.php?structureid=20",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Pierce aerial due Aug 2026 (ordered 2026-08)",
+  "signal_date": "2026-08-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/features/recent-apparatus-orders-august-2026/",
+  "proof_quote": "PIERCE—Evansville Fire Department aerial. Delivery in August.",
+  "other_signals": "",
+  "named_in_source": "Evansville Fire Department",
+  "name_match": "exact",
+  "fdid": "82001",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an aerial; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 28,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Fort Wayne Fire Department",
+  "registry_name": "Fort Wayne Fire Department",
+  "city": "Fort Wayne",
+  "county": "Allen",
+  "type": "Career",
+  "website": "https://www.fortwaynefiredepartment.org/",
+  "why_call": "New truck on order",
+  "detail": "New Pierce pumper on order (2025-11), delivery February 2028",
+  "signal_date": "2025-11-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
+  "proof_quote": "PIERCE—Fort Wayne (IN) Fire Department pumper. Delivery in February 2028.",
+  "other_signals": "",
+  "named_in_source": "Fort Wayne Fire Department",
+  "name_match": "exact",
+  "fdid": "02005",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 29,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Garrett Fire Department",
+  "registry_name": "Garrett Fire Department",
+  "city": "Garrett",
+  "county": "Dekalb",
+  "type": "Volunteer",
+  "website": "https://www.freewebs.com/garrettfiredepartment/",
+  "why_call": "New truck on order",
+  "detail": "New Pierce pumper on order (2025-08), delivery January 2029",
+  "signal_date": "2025-08-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-aug-2025/",
+  "proof_quote": "PIERCE—Garrett Fire Department pumper. Delivery in January 2029.",
+  "other_signals": "",
+  "named_in_source": "Garrett Fire Department",
+  "name_match": "exact",
+  "fdid": "17006",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-01",
+   "to": "2029-07",
+   "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 30,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Greensburg Fire Department",
+  "registry_name": "Greensburg Fire Department",
+  "city": "Greensburg",
+  "county": "Decatur",
+  "type": "Career",
+  "website": "https://www.cityofgreensburg.com/fire-department/",
+  "why_call": "New truck on order",
+  "detail": "New Rosenbauer rescue on order (2025-11), delivery July 2027",
+  "signal_date": "2025-11-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
+  "proof_quote": "ROSENBAUER—Greensburg (IN) Fire Department rescue. Delivery in July 2027.",
+  "other_signals": "",
+  "named_in_source": "Greensburg Fire Department",
+  "name_match": "exact",
+  "fdid": "16004",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 31,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 138,
+   "median": 7400,
+   "p25": 4325,
+   "p75": 15175,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    },
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Greenwood Fire Department",
+  "registry_name": "Greenwood Fire Department",
+  "city": "Greenwood",
+  "county": "Johnson",
+  "type": "Mostly career",
+  "website": "https://www.greenwood.in.gov/department/index.php?structureid=50",
+  "why_call": "New truck in service",
+  "detail": "New HME Trucks urban attack pumper (core 62) delivered (2026-01)",
+  "signal_date": "2026-01-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-january-2026/",
+  "proof_quote": "Department: GREENWOOD (IN) FIRE DEPARTMENT; Type: URBAN ATTACK PUMPER (CORE 62); Built by: HME TRUCKS",
+  "other_signals": "",
+  "named_in_source": "Greenwood Fire Department",
+  "name_match": "exact",
+  "fdid": "41004",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an urban attack pumper (core 62); departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-01",
+   "to": "2026-07",
+   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
+  },
+  "rank": 32,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Hamilton Township Volunteer Fire Company, Inc.",
+  "registry_name": "Hamilton Township Volunteer Fire Company, Inc.",
+  "city": "Muncie",
+  "county": "Delaware",
+  "type": "Volunteer",
+  "website": "https://www.htvfcin.org/",
+  "why_call": "New truck on order",
+  "detail": "New Rosenbauer pumper-tanker on order (2025-03), delivery November 2026",
+  "signal_date": "2025-03-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2025/",
+  "proof_quote": "ROSENBAUER—Hamilton Township Fire Company, Muncie, pumper-tanker. Delivery in November 2026.",
+  "other_signals": "",
+  "named_in_source": "Hamilton Township Fire Company",
+  "name_match": "exact",
+  "fdid": "18004",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 33,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Hartford City Fire Department",
+  "registry_name": "Hartford City Fire Department",
+  "city": "Hartford City",
+  "county": "Blackford",
+  "type": "Mostly volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Rosenbauer rescue on order (2025-05), delivery April 2027",
+  "signal_date": "2025-05-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-may-2025/",
+  "proof_quote": "ROSENBAUER—Hartford City Fire Department rescue. Delivery in April 2027.",
+  "other_signals": "",
+  "named_in_source": "Hartford City Fire Department",
+  "name_match": "exact",
+  "fdid": "05001",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2027-10",
+   "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 34,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 138,
+   "median": 7400,
+   "p25": 4325,
+   "p75": 15175,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    },
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Highland Fire Department",
+  "registry_name": "Highland Fire Department",
+  "city": "Highland",
+  "county": "Lake",
+  "type": "Mostly volunteer",
+  "website": "https://www.highland.in.gov",
+  "why_call": "New truck on order",
+  "detail": "New Pierce aerial tower on order (2026-08), delivery April 2027",
+  "signal_date": "2026-08-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/features/recent-apparatus-orders-august-2026/",
+  "proof_quote": "PIERCE—Highland Fire Department aerial tower. Delivery in April 2027.",
+  "other_signals": "",
+  "named_in_source": "Highland Fire Department",
+  "name_match": "exact, ambiguous (2 same-name rows)",
+  "fdid": "45011",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an aerial tower; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2027-10",
+   "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 35,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Indianapolis Fire Department",
+  "registry_name": "Indianapolis Fire Department",
+  "city": "Indianapolis",
+  "county": "Marion",
+  "type": "Career",
+  "website": "https://www.indygov.org/ifd",
+  "why_call": "New truck on order",
+  "detail": "New Rosenbauer two 100-foot aerial ladder trucks on order (2025-04), delivery February 2027",
+  "signal_date": "2025-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
+  "proof_quote": "ROSENBAUER—Indianapolis Fire Department two 100-foot aerial ladder trucks. Delivery in February 2027.",
+  "other_signals": "",
+  "named_in_source": "Indianapolis Fire Department",
+  "name_match": "exact",
+  "fdid": "49009",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new trucks are two 100-foot aerial ladder trucks; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2027-08",
+   "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 36,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Kokomo Fire Department",
+  "registry_name": "Kokomo Fire Department",
+  "city": "Kokomo",
+  "county": "Howard",
+  "type": "Career",
+  "website": "https://www.cityofkokomo.org/",
+  "why_call": "New truck on order",
+  "detail": "New Rosenbauer pumper on order (2026-04), delivery November 2027",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
+  "proof_quote": "ROSENBAUER—Kokomo Fire Department pumper. Delivery in November 2027.",
+  "other_signals": "",
+  "named_in_source": "Kokomo Fire Department",
+  "name_match": "exact",
+  "fdid": "34005",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-11",
+   "to": "2028-05",
+   "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 37,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Logansport Fire Department",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Rosenbauer top-mount pumper on order (2025-07), delivery April 2027",
+  "signal_date": "2025-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
+  "proof_quote": "ROSENBAUER—Logansport Fire Department top-mount pumper. Delivery in April 2027.",
+  "other_signals": "",
+  "named_in_source": "Logansport Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a top-mount pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2027-10",
+   "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 38,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "New Carlisle Fire Department",
+  "registry_name": "New Carlisle Fire Department",
+  "city": "New Carlisle",
+  "county": "St Joseph",
+  "type": "Mostly career",
+  "website": "https://newcarlislefire.com/",
+  "why_call": "New truck on order",
+  "detail": "New Pierce Ascendant 100-foot platform tower quint on order (2025-08), delivery April 2028",
+  "signal_date": "2025-08-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-aug-2025/",
+  "proof_quote": "PIERCE—New Carlisle Fire Department Ascendant 100-foot platform tower quint. Delivery in April 2028.",
+  "other_signals": "",
+  "named_in_source": "New Carlisle Fire Department",
+  "name_match": "exact",
+  "fdid": "71021",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an Ascendant 100-foot platform tower quint; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-04",
+   "to": "2028-10",
+   "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 39,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Noble Township Fire Department",
+  "registry_name": "Noble Township Fire Department",
+  "city": "Albion",
+  "county": "Noble",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Midwest Fire pumper on order (2026-03), delivery March 2020",
+  "signal_date": "2026-03-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2026/",
+  "proof_quote": "MIDWEST FIRE—Noble Township Fire Department, Wabash, pumper. Delivery in March 2020.",
+  "other_signals": "",
+  "named_in_source": "Noble Township Fire Department",
+  "name_match": "exact, ambiguous (2 same-name rows)",
+  "fdid": "57006",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
+  },
+  "rank": 40,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Portage Fire Department",
+  "registry_name": "Portage Fire Department",
+  "city": "Portage",
+  "county": "Porter",
+  "type": "Career",
+  "website": "https://www.ci.portage.in.us/department/index.php?structureid=4",
+  "why_call": "New truck on order",
+  "detail": "New Rosenbauer 100-foot aerial ladder quint on order (2025-06), delivery September 2027",
+  "signal_date": "2025-06-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
+  "proof_quote": "ROSENBAUER—Portage Fire Department 100-foot aerial ladder quint. Delivery in September 2027.",
+  "other_signals": "",
+  "named_in_source": "Portage Fire Department",
+  "name_match": "exact",
+  "fdid": "64011",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a 100-foot aerial ladder quint; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-03",
+   "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 41,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Roachdale Volunteer Fire Department",
+  "registry_name": "Roachdale Volunteer Fire Department",
+  "city": "Roachdale",
+  "county": "Putnam",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper on order (2026-07), delivery August 2028",
+  "signal_date": "2026-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/july-2026-recent-apparatus-orders/",
+  "proof_quote": "TOYNE—Roachdale Fire Protection District pumper. Delivery in August 2028.",
+  "other_signals": "",
+  "named_in_source": "Roachdale Fire Protection District",
+  "name_match": "exact",
+  "fdid": "67008",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-08",
+   "to": "2029-02",
+   "how": "new truck due Aug 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 42,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Seymour Fire Department",
+  "registry_name": "Seymour Fire Department",
+  "city": "Seymour",
+  "county": "Jackson",
+  "type": "Career",
+  "website": "https://seymourfiredepartment.org/",
+  "why_call": "New truck on order",
+  "detail": "New Pierce pumper on order (2025-11), delivery January 2028",
+  "signal_date": "2025-11-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
+  "proof_quote": "PIERCE—Seymour (IN) Fire Department pumper. Delivery in January 2028.",
+  "other_signals": "",
+  "named_in_source": "Seymour Fire Department",
+  "name_match": "exact",
+  "fdid": "36011",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 43,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "South Bend Fire Department",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Spencer Manufacturing pumper on order (2025-09), delivery January 2027",
+  "signal_date": "2025-09-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-sept-2025/",
+  "proof_quote": "SPENCER MANUFACTURING—South Bend Fire Department pumper. Delivery in January 2027.",
+  "other_signals": "",
+  "named_in_source": "South Bend Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 44,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Speedway Fire Department",
+  "registry_name": "Speedway Fire Department",
+  "city": "Speedway",
+  "county": "Marion",
+  "type": "Career",
+  "website": "https://www.speedwayin.gov/",
+  "why_call": "New truck on order",
+  "detail": "New Midwest Fire aerial on order (2026-03), delivery August 2029",
+  "signal_date": "2026-03-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2026/",
+  "proof_quote": "MIDWEST FIRE—Speedway Fire Department aerial. Delivery in August 2029.",
+  "other_signals": "",
+  "named_in_source": "Speedway Fire Department",
+  "name_match": "exact",
+  "fdid": "49018",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an aerial; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-08",
+   "to": "2030-02",
+   "how": "new truck due Aug 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 45,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "St. Anthony Volunteer Fire Department, Inc.",
+  "registry_name": "St. Anthony Volunteer Fire Department, Inc.",
+  "city": "Saint Anthony",
+  "county": "Dubois",
+  "type": "Volunteer",
+  "website": "http://www.stanthonyvfd.com/",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper on order (2026-08), delivery October 2028",
+  "signal_date": "2026-08-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/features/recent-apparatus-orders-august-2026/",
+  "proof_quote": "TOYNE—St. Anthony Volunteer Fire Department pumper. Delivery in October 2028.",
+  "other_signals": "",
+  "named_in_source": "St. Anthony Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "19010",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-10",
+   "to": "2029-04",
+   "how": "new truck due Oct 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 46,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Terre Haute Fire Department",
+  "registry_name": "Terre Haute Fire Department",
+  "city": "Terre Haute",
+  "county": "Vigo",
+  "type": "Career",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Pierce two pumpers on order (2025-07), delivery June 2028",
+  "signal_date": "2025-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
+  "proof_quote": "PIERCE—Terre Haute Fire Department two pumpers; Enforcer cabs and chassis; Cummins X10 450-hp engines; Waterous CSU 1,500-gpm pumps; UPF Poly 1,000-gallon water tanks; 20-gallon foam cells; Pierce Husky 3 Class A foam systems; low-hosebed designs. Delivery in June 2028.",
+  "other_signals": "",
+  "named_in_source": "Terre Haute Fire Department",
+  "name_match": "exact",
+  "fdid": "84016",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new trucks are two pumpers; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-06",
+   "to": "2028-12",
+   "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 47,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Wayne Township Fire Department",
+  "registry_name": "Wayne Township Fire Department",
+  "city": "Indianapolis",
+  "county": "Marion",
+  "type": "Career",
+  "website": "www.waynefire.org/Wayne_Township_Fire_Department/Home.html",
+  "why_call": "New truck on order",
+  "detail": "New Sutphen tiller aerial on order (2026-01), delivery October 2027",
+  "signal_date": "2026-01-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
+  "proof_quote": "SUTPHEN—Wayne Township Fire Department tiller aerial. Delivery in October 2027.",
+  "other_signals": "",
+  "named_in_source": "Wayne Township Fire Department",
+  "name_match": "exact, ambiguous (3 same-name rows)",
+  "fdid": "49022",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tiller aerial; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 48,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "West Lafayette Fire Department",
+  "registry_name": "West Lafayette Fire Department",
+  "city": "West Lafayette",
+  "county": "Tippecanoe",
+  "type": "Career",
+  "website": "https://www.westlafayette.in.gov/department/index.php?structureid=12",
+  "why_call": "New truck on order",
+  "detail": "New Sutphen pumper on order (2025-12), delivery December 2027",
+  "signal_date": "2025-12-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-december-2025/",
+  "proof_quote": "SUTPHEN—West Lafayette Fire Department pumper. Delivery in December 2027.",
+  "other_signals": "",
+  "named_in_source": "West Lafayette Fire Department",
+  "name_match": "exact",
+  "fdid": "79015",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2028-06",
+   "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 49,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Whitestown Fire Department",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Pierce aerial ladder on order (2026-06), delivery February 2027",
+  "signal_date": "2026-06-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/features/june-2026-recent-apparatus-orders/",
+  "proof_quote": "PIERCE—Whitestown Fire Department aerial ladder. Delivery in February 2027.",
+  "other_signals": "",
+  "named_in_source": "Whitestown Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an aerial ladder; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2027-08",
+   "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 50,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Abington Township Volunteer Fire Department, Inc.",
+  "registry_name": "Abington Township Volunteer Fire Department, Inc.",
+  "city": "Centerville",
+  "county": "Wayne",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $252,380, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Abington Twp Volunteer Fire Department Inc, Vehicle Acquisition, $252,380",
+  "other_signals": "",
+  "named_in_source": "Abington Twp Volunteer Fire Department Inc",
+  "name_match": "exact",
+  "fdid": "89001",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 51,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Arcola Volunteer Fire Department",
+  "registry_name": "Arcola Volunteer Fire Department",
+  "city": "Arcola",
+  "county": "Allen",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $357,142, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Arcola Volunteer Fire Department Inc, Vehicle Acquisition, $357,142",
+  "other_signals": "",
+  "named_in_source": "Arcola Volunteer Fire Department Inc",
+  "name_match": "exact",
+  "fdid": "02003",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 52,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "City of Lawrence Fire Department",
+  "registry_name": "City of Lawrence Fire Department",
+  "city": "Lawrence",
+  "county": "Marion",
+  "type": "Career",
+  "website": "https://www.cityoflawrence.org/fire-department",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Pierce 105- foot heavy-duty ladder due June 2025 (ordered 2025-10)",
+  "signal_date": "2025-06-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-oct-2025/",
+  "proof_quote": "PIERCE—Lawrence Fire Department 105- foot heavy-duty ladder. Delivery in June 2025.",
+  "other_signals": "",
+  "named_in_source": "Lawrence Fire Department",
+  "name_match": "exact, ambiguous (2 same-name rows)",
+  "fdid": "49012",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a 105- foot heavy-duty ladder; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-06",
+   "to": "2025-12",
+   "how": "new truck was due Jun 2025; the old one may already have sold quietly"
+  },
+  "rank": 53,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
   "department": "Decatur Fire Department",
   "registry_name": "Decatur Fire Department",
   "city": "Decatur",
@@ -1573,16 +3427,22 @@
    "year_how": null,
    "type_how": "the new truck is a midmount aerial; departments usually replace like with like"
   },
-  "rank": 30,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-03",
+   "to": "2026-09",
+   "how": "new truck was due Mar 2026; the old one may already have sold quietly"
+  },
+  "rank": 54,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1610,8 +3470,8 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
+  "checked": "trade_press",
+  "score": 1.0,
   "department": "Elizabeth Volunteer Fire Department",
   "registry_name": "Elizabeth Volunteer Fire Department",
   "city": "Elizabeth",
@@ -1637,15 +3497,21 @@
    "year_how": null,
    "type_how": "the new truck is a mini pumper; departments usually replace like with like"
   },
-  "rank": 31,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck was due Apr 2026; the old one may already have sold quietly"
+  },
+  "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [
@@ -1674,1543 +3540,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Elkhart Fire Department",
-  "registry_name": "Elkhart Fire Department",
-  "city": "Elkhart",
-  "county": "Elkhart",
-  "type": "Career",
-  "website": "https://www.elkhartindiana.org/department/index.php?structureid=12",
-  "why_call": "New truck on order",
-  "detail": "New Sutphen tractor-drawn aerial on order (2026-05), delivery October 2027",
-  "signal_date": "2026-05-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/may-2026-recent-apparatus-orders/",
-  "proof_quote": "SUTPHEN—Elkhart Fire Department tractor-drawn aerial. Delivery in October 2027.",
-  "other_signals": "",
-  "named_in_source": "Elkhart Fire Department",
-  "name_match": "exact, ambiguous (2 same-name rows)",
-  "fdid": "20006",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a tractor-drawn aerial; departments usually replace like with like"
-  },
-  "rank": 32,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Evansville Fire Department",
-  "registry_name": "Evansville Fire Department",
-  "city": "Evansville",
-  "county": "Vanderburgh",
-  "type": "Career",
-  "website": "https://www.evansville.in.gov/city/department/index.php?structureid=20",
-  "why_call": "New truck on order",
-  "detail": "New Pierce aerial on order (2026-08), delivery August",
-  "signal_date": "2026-08-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/features/recent-apparatus-orders-august-2026/",
-  "proof_quote": "PIERCE—Evansville Fire Department aerial. Delivery in August.",
-  "other_signals": "",
-  "named_in_source": "Evansville Fire Department",
-  "name_match": "exact",
-  "fdid": "82001",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an aerial; departments usually replace like with like"
-  },
-  "rank": 33,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Fort Wayne Fire Department",
-  "registry_name": "Fort Wayne Fire Department",
-  "city": "Fort Wayne",
-  "county": "Allen",
-  "type": "Career",
-  "website": "https://www.fortwaynefiredepartment.org/",
-  "why_call": "New truck on order",
-  "detail": "New Pierce pumper on order (2025-11), delivery February 2028",
-  "signal_date": "2025-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
-  "proof_quote": "PIERCE—Fort Wayne (IN) Fire Department pumper. Delivery in February 2028.",
-  "other_signals": "",
-  "named_in_source": "Fort Wayne Fire Department",
-  "name_match": "exact",
-  "fdid": "02005",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 34,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Garrett Fire Department",
-  "registry_name": "Garrett Fire Department",
-  "city": "Garrett",
-  "county": "Dekalb",
-  "type": "Volunteer",
-  "website": "https://www.freewebs.com/garrettfiredepartment/",
-  "why_call": "New truck on order",
-  "detail": "New Pierce pumper on order (2025-08), delivery January 2029",
-  "signal_date": "2025-08-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-aug-2025/",
-  "proof_quote": "PIERCE—Garrett Fire Department pumper. Delivery in January 2029.",
-  "other_signals": "",
-  "named_in_source": "Garrett Fire Department",
-  "name_match": "exact",
-  "fdid": "17006",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 35,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Greensburg Fire Department",
-  "registry_name": "Greensburg Fire Department",
-  "city": "Greensburg",
-  "county": "Decatur",
-  "type": "Career",
-  "website": "https://www.cityofgreensburg.com/fire-department/",
-  "why_call": "New truck on order",
-  "detail": "New Rosenbauer rescue on order (2025-11), delivery July 2027",
-  "signal_date": "2025-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
-  "proof_quote": "ROSENBAUER—Greensburg (IN) Fire Department rescue. Delivery in July 2027.",
-  "other_signals": "",
-  "named_in_source": "Greensburg Fire Department",
-  "name_match": "exact",
-  "fdid": "16004",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "rescue",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a rescue; departments usually replace like with like"
-  },
-  "rank": 36,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "rescue",
-   "band": "all ages",
-   "n": 141,
-   "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
-     "price": 9600.0,
-     "date": "2026-11-05",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
-    },
-    {
-     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
-     "price": 10200.0,
-     "date": "2026-10-15",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
-    },
-    {
-     "item": "1987 GMC 7000 Rescue Truck",
-     "price": 1575.0,
-     "date": "2026-08-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Hartford City Fire Department",
-  "registry_name": "Hartford City Fire Department",
-  "city": "Hartford City",
-  "county": "Blackford",
-  "type": "Mostly volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Rosenbauer rescue on order (2025-05), delivery April 2027",
-  "signal_date": "2025-05-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-may-2025/",
-  "proof_quote": "ROSENBAUER—Hartford City Fire Department rescue. Delivery in April 2027.",
-  "other_signals": "",
-  "named_in_source": "Hartford City Fire Department",
-  "name_match": "exact",
-  "fdid": "05001",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "rescue",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a rescue; departments usually replace like with like"
-  },
-  "rank": 37,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "rescue",
-   "band": "all ages",
-   "n": 141,
-   "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
-     "price": 9600.0,
-     "date": "2026-11-05",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
-    },
-    {
-     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
-     "price": 10200.0,
-     "date": "2026-10-15",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
-    },
-    {
-     "item": "1987 GMC 7000 Rescue Truck",
-     "price": 1575.0,
-     "date": "2026-08-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Highland Fire Department",
-  "registry_name": "Highland Fire Department",
-  "city": "Highland",
-  "county": "Lake",
-  "type": "Mostly volunteer",
-  "website": "https://www.highland.in.gov",
-  "why_call": "New truck on order",
-  "detail": "New Pierce aerial tower on order (2026-08), delivery April 2027",
-  "signal_date": "2026-08-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/features/recent-apparatus-orders-august-2026/",
-  "proof_quote": "PIERCE—Highland Fire Department aerial tower. Delivery in April 2027.",
-  "other_signals": "",
-  "named_in_source": "Highland Fire Department",
-  "name_match": "exact, ambiguous (2 same-name rows)",
-  "fdid": "45011",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an aerial tower; departments usually replace like with like"
-  },
-  "rank": 38,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Indianapolis Fire Department",
-  "registry_name": "Indianapolis Fire Department",
-  "city": "Indianapolis",
-  "county": "Marion",
-  "type": "Career",
-  "website": "https://www.indygov.org/ifd",
-  "why_call": "New truck on order",
-  "detail": "New Rosenbauer two 100-foot aerial ladder trucks on order (2025-04), delivery February 2027",
-  "signal_date": "2025-04-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
-  "proof_quote": "ROSENBAUER—Indianapolis Fire Department two 100-foot aerial ladder trucks. Delivery in February 2027.",
-  "other_signals": "",
-  "named_in_source": "Indianapolis Fire Department",
-  "name_match": "exact",
-  "fdid": "49009",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new trucks are two 100-foot aerial ladder trucks; departments usually replace like with like"
-  },
-  "rank": 39,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Kokomo Fire Department",
-  "registry_name": "Kokomo Fire Department",
-  "city": "Kokomo",
-  "county": "Howard",
-  "type": "Career",
-  "website": "https://www.cityofkokomo.org/",
-  "why_call": "New truck on order",
-  "detail": "New Rosenbauer pumper on order (2026-04), delivery November 2027",
-  "signal_date": "2026-04-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
-  "proof_quote": "ROSENBAUER—Kokomo Fire Department pumper. Delivery in November 2027.",
-  "other_signals": "",
-  "named_in_source": "Kokomo Fire Department",
-  "name_match": "exact",
-  "fdid": "34005",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 40,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Logansport Fire Department",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Rosenbauer top-mount pumper on order (2025-07), delivery April 2027",
-  "signal_date": "2025-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
-  "proof_quote": "ROSENBAUER—Logansport Fire Department top-mount pumper. Delivery in April 2027.",
-  "other_signals": "",
-  "named_in_source": "Logansport Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a top-mount pumper; departments usually replace like with like"
-  },
-  "rank": 41,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "New Carlisle Fire Department",
-  "registry_name": "New Carlisle Fire Department",
-  "city": "New Carlisle",
-  "county": "St Joseph",
-  "type": "Mostly career",
-  "website": "https://newcarlislefire.com/",
-  "why_call": "New truck on order",
-  "detail": "New Pierce Ascendant 100-foot platform tower quint on order (2025-08), delivery April 2028",
-  "signal_date": "2025-08-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-aug-2025/",
-  "proof_quote": "PIERCE—New Carlisle Fire Department Ascendant 100-foot platform tower quint. Delivery in April 2028.",
-  "other_signals": "",
-  "named_in_source": "New Carlisle Fire Department",
-  "name_match": "exact",
-  "fdid": "71021",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an Ascendant 100-foot platform tower quint; departments usually replace like with like"
-  },
-  "rank": 42,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Noble Township Fire Department",
-  "registry_name": "Noble Township Fire Department",
-  "city": "Albion",
-  "county": "Noble",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Midwest Fire pumper on order (2026-03), delivery March 2020",
-  "signal_date": "2026-03-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2026/",
-  "proof_quote": "MIDWEST FIRE—Noble Township Fire Department, Wabash, pumper. Delivery in March 2020.",
-  "other_signals": "",
-  "named_in_source": "Noble Township Fire Department",
-  "name_match": "exact, ambiguous (2 same-name rows)",
-  "fdid": "57006",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 43,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Portage Fire Department",
-  "registry_name": "Portage Fire Department",
-  "city": "Portage",
-  "county": "Porter",
-  "type": "Career",
-  "website": "https://www.ci.portage.in.us/department/index.php?structureid=4",
-  "why_call": "New truck on order",
-  "detail": "New Rosenbauer 100-foot aerial ladder quint on order (2025-06), delivery September 2027",
-  "signal_date": "2025-06-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
-  "proof_quote": "ROSENBAUER—Portage Fire Department 100-foot aerial ladder quint. Delivery in September 2027.",
-  "other_signals": "",
-  "named_in_source": "Portage Fire Department",
-  "name_match": "exact",
-  "fdid": "64011",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a 100-foot aerial ladder quint; departments usually replace like with like"
-  },
-  "rank": 44,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Roachdale Volunteer Fire Department",
-  "registry_name": "Roachdale Volunteer Fire Department",
-  "city": "Roachdale",
-  "county": "Putnam",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Toyne pumper on order (2026-07), delivery August 2028",
-  "signal_date": "2026-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/july-2026-recent-apparatus-orders/",
-  "proof_quote": "TOYNE—Roachdale Fire Protection District pumper. Delivery in August 2028.",
-  "other_signals": "",
-  "named_in_source": "Roachdale Fire Protection District",
-  "name_match": "exact",
-  "fdid": "67008",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 45,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Seymour Fire Department",
-  "registry_name": "Seymour Fire Department",
-  "city": "Seymour",
-  "county": "Jackson",
-  "type": "Career",
-  "website": "https://seymourfiredepartment.org/",
-  "why_call": "New truck on order",
-  "detail": "New Pierce pumper on order (2025-11), delivery January 2028",
-  "signal_date": "2025-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
-  "proof_quote": "PIERCE—Seymour (IN) Fire Department pumper. Delivery in January 2028.",
-  "other_signals": "",
-  "named_in_source": "Seymour Fire Department",
-  "name_match": "exact",
-  "fdid": "36011",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 46,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "South Bend Fire Department",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Spencer Manufacturing pumper on order (2025-09), delivery January 2027",
-  "signal_date": "2025-09-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-sept-2025/",
-  "proof_quote": "SPENCER MANUFACTURING—South Bend Fire Department pumper. Delivery in January 2027.",
-  "other_signals": "",
-  "named_in_source": "South Bend Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 47,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Speedway Fire Department",
-  "registry_name": "Speedway Fire Department",
-  "city": "Speedway",
-  "county": "Marion",
-  "type": "Career",
-  "website": "https://www.speedwayin.gov/",
-  "why_call": "New truck on order",
-  "detail": "New Midwest Fire aerial on order (2026-03), delivery August 2029",
-  "signal_date": "2026-03-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2026/",
-  "proof_quote": "MIDWEST FIRE—Speedway Fire Department aerial. Delivery in August 2029.",
-  "other_signals": "",
-  "named_in_source": "Speedway Fire Department",
-  "name_match": "exact",
-  "fdid": "49018",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an aerial; departments usually replace like with like"
-  },
-  "rank": 48,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "St. Anthony Volunteer Fire Department, Inc.",
-  "registry_name": "St. Anthony Volunteer Fire Department, Inc.",
-  "city": "Saint Anthony",
-  "county": "Dubois",
-  "type": "Volunteer",
-  "website": "http://www.stanthonyvfd.com/",
-  "why_call": "New truck on order",
-  "detail": "New Toyne pumper on order (2026-08), delivery October 2028",
-  "signal_date": "2026-08-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/features/recent-apparatus-orders-august-2026/",
-  "proof_quote": "TOYNE—St. Anthony Volunteer Fire Department pumper. Delivery in October 2028.",
-  "other_signals": "",
-  "named_in_source": "St. Anthony Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "19010",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 49,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Terre Haute Fire Department",
-  "registry_name": "Terre Haute Fire Department",
-  "city": "Terre Haute",
-  "county": "Vigo",
-  "type": "Career",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Pierce two pumpers on order (2025-07), delivery June 2028",
-  "signal_date": "2025-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
-  "proof_quote": "PIERCE—Terre Haute Fire Department two pumpers; Enforcer cabs and chassis; Cummins X10 450-hp engines; Waterous CSU 1,500-gpm pumps; UPF Poly 1,000-gallon water tanks; 20-gallon foam cells; Pierce Husky 3 Class A foam systems; low-hosebed designs. Delivery in June 2028.",
-  "other_signals": "",
-  "named_in_source": "Terre Haute Fire Department",
-  "name_match": "exact",
-  "fdid": "84016",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new trucks are two pumpers; departments usually replace like with like"
-  },
-  "rank": 50,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Tippecanoe Township Volunteer Fire Department",
-  "registry_name": "Tippecanoe Township Volunteer Fire Department",
-  "city": "Battle Ground",
-  "county": "Tippecanoe",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New SVI heavy rescue on order (2026-07), delivery October",
-  "signal_date": "2026-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/july-2026-recent-apparatus-orders/",
-  "proof_quote": "SVI—Tippecanoe Township Fire Department heavy rescue. Delivery in October.",
-  "other_signals": "",
-  "named_in_source": "Tippecanoe Township Fire Department",
-  "name_match": "exact",
-  "fdid": "79011",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "rescue",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
-  },
-  "rank": 51,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "rescue",
-   "band": "all ages",
-   "n": 141,
-   "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
-     "price": 9600.0,
-     "date": "2026-11-05",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
-    },
-    {
-     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
-     "price": 10200.0,
-     "date": "2026-10-15",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
-    },
-    {
-     "item": "1987 GMC 7000 Rescue Truck",
-     "price": 1575.0,
-     "date": "2026-08-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Wayne Township Fire Department",
-  "registry_name": "Wayne Township Fire Department",
-  "city": "Indianapolis",
-  "county": "Marion",
-  "type": "Career",
-  "website": "www.waynefire.org/Wayne_Township_Fire_Department/Home.html",
-  "why_call": "New truck on order",
-  "detail": "New Sutphen tiller aerial on order (2026-01), delivery October 2027",
-  "signal_date": "2026-01-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
-  "proof_quote": "SUTPHEN—Wayne Township Fire Department tiller aerial. Delivery in October 2027.",
-  "other_signals": "",
-  "named_in_source": "Wayne Township Fire Department",
-  "name_match": "exact, ambiguous (3 same-name rows)",
-  "fdid": "49022",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a tiller aerial; departments usually replace like with like"
-  },
-  "rank": 52,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "West Lafayette Fire Department",
-  "registry_name": "West Lafayette Fire Department",
-  "city": "West Lafayette",
-  "county": "Tippecanoe",
-  "type": "Career",
-  "website": "https://www.westlafayette.in.gov/department/index.php?structureid=12",
-  "why_call": "New truck on order",
-  "detail": "New Sutphen pumper on order (2025-12), delivery December 2027",
-  "signal_date": "2025-12-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-december-2025/",
-  "proof_quote": "SUTPHEN—West Lafayette Fire Department pumper. Delivery in December 2027.",
-  "other_signals": "",
-  "named_in_source": "West Lafayette Fire Department",
-  "name_match": "exact",
-  "fdid": "79015",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 53,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Whitestown Fire Department",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Pierce aerial ladder on order (2026-06), delivery February 2027",
-  "signal_date": "2026-06-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/features/june-2026-recent-apparatus-orders/",
-  "proof_quote": "PIERCE—Whitestown Fire Department aerial ladder. Delivery in February 2027.",
-  "other_signals": "",
-  "named_in_source": "Whitestown Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an aerial ladder; departments usually replace like with like"
-  },
-  "rank": 54,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 1.0,
-  "department": "City of Lawrence Fire Department",
-  "registry_name": "City of Lawrence Fire Department",
-  "city": "Lawrence",
-  "county": "Marion",
-  "type": "Career",
-  "website": "https://www.cityoflawrence.org/fire-department",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Pierce 105- foot heavy-duty ladder due June 2025 (ordered 2025-10)",
-  "signal_date": "2025-06-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-oct-2025/",
-  "proof_quote": "PIERCE—Lawrence Fire Department 105- foot heavy-duty ladder. Delivery in June 2025.",
-  "other_signals": "",
-  "named_in_source": "Lawrence Fire Department",
-  "name_match": "exact, ambiguous (2 same-name rows)",
-  "fdid": "49012",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a 105- foot heavy-duty ladder; departments usually replace like with like"
-  },
-  "rank": 55,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 104,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8600,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 1.0,
   "department": "Turkey Creek Fire Territory",
   "registry_name": "Turkey Creek Fire Territory",
@@ -3237,16 +3567,22 @@
    "year_how": null,
    "type_how": "the new truck is a stock 100-foot aerial ladder quint; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-10",
+   "to": "2026-04",
+   "how": "new truck was due Oct 2025; the old one may already have sold quietly"
+  },
   "rank": 56,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {

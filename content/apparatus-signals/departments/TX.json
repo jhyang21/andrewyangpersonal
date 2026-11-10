@@ -1,6 +1,6 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 6.0,
   "department": "Edcouch Fire Department",
   "registry_name": "Edcouch Fire Department",
@@ -9,7 +9,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "New US Fire Apparatus tanker on order (2026-10), delivery December",
+  "detail": "New US Fire Apparatus tanker on order (2026-10), delivery Dec 2026",
   "signal_date": "2026-10-01",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/october-2026-recent-apparatus-orders/",
   "proof_quote": "US FIRE APPARATUS—Edcouch Volunteer Fire Department tanker. Delivery in December.",
@@ -27,16 +27,22 @@
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -64,8 +70,382 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 5.0,
+  "department": "Dfw International Airport",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "New Oshkosh Airport Products arff delivered (2026-08)",
+  "signal_date": "2026-08-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-august-2026/",
+  "proof_quote": "Department: DFW INTERNATIONAL AIRPORT (TX); Type: ARFF; Built by: OSHKOSH AIRPORT PRODUCTS",
+  "other_signals": "",
+  "named_in_source": "Dfw International Airport",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "other",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an arff; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck in service Aug 2026; we allow six months for the old one to list"
+  },
+  "rank": 2,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 4.0,
+  "department": "DFW International Airport Fire Department",
+  "registry_name": "",
+  "city": "Dallas",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New SVI Trucks walk-in hazmat unit due October 2026 (ordered 2025-05)",
+  "signal_date": "2026-10-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-may-2025/",
+  "proof_quote": "SVI TRUCKS—DFW International Airport Fire Department, Dallas, walk-in hazmat unit. Delivery in October 2026.",
+  "other_signals": "",
+  "named_in_source": "DFW International Airport Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "other",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a walk-in hazmat unit; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 3,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 4.0,
+  "department": "Elm Mott Fire Rescue",
+  "registry_name": "Elm Mott Fire Rescue",
+  "city": "Elm Mott",
+  "county": "McLennan",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $704,761, awarded 9/22/26 (FY2025)",
+  "signal_date": "2026-09-22",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Elm Mott Volunteer Fire Department, Vehicle Acquisition, $704,761",
+  "other_signals": "",
+  "named_in_source": "Elm Mott Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "RN307",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 4,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 4.0,
+  "department": "Ennis Fire Department",
+  "registry_name": "Ennis Fire Department",
+  "city": "Ennis",
+  "county": "Ellis",
+  "type": "Mostly career",
+  "website": "https://www.ennistx.gov/departments/FireDepartment",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Spartan Emergency Response pumper due October 2026 (ordered 2025-02)",
+  "signal_date": "2026-10-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
+  "proof_quote": "SPARTAN EMERGENCY RESPONSE—Ennis Fire Department pumper. Delivery in October 2026.",
+  "other_signals": "",
+  "named_in_source": "Ennis Fire Department",
+  "name_match": "exact",
+  "fdid": "GC605",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 5,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "fema_table",
+  "score": 4.0,
+  "department": "Midland Fire Department",
+  "registry_name": "Midland Fire Department",
+  "city": "Midland",
+  "county": "Midland",
+  "type": "Career",
+  "website": "http://www.midlandtexas.gov/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $939,545, awarded 8/16/24 (FY2023)",
+  "signal_date": "2024-08-16",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Midland, Vehicle Acquisition, $939,545",
+  "other_signals": "",
+  "named_in_source": "City of Midland",
+  "name_match": "exact",
+  "fdid": "RV701",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 6,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 4.0,
+  "department": "North Richland Hills Fire Department",
+  "registry_name": "North Richland Hills Fire Department",
+  "city": "North Richland Hills",
+  "county": "Tarrant",
+  "type": "Career",
+  "website": "https://www.nrhtx.com/157/Fire-EMS",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $613,586, awarded 8/9/24 (FY2023)",
+  "signal_date": "2024-08-09",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of North Richland Hills, Vehicle Acquisition, $613,586",
+  "other_signals": "",
+  "named_in_source": "City of North Richland Hills",
+  "name_match": "exact",
+  "fdid": "WB625",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 7,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 4.0,
+  "department": "Valero Port Arthur",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New US Fire Apparatus industrial pumper on order (2026-10), delivery Dec 2026",
+  "signal_date": "2026-10-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/october-2026-recent-apparatus-orders/",
+  "proof_quote": "US FIRE APPARATUS—Valero Port Arthur industrial pumper. Delivery in December.",
+  "other_signals": "",
+  "named_in_source": "Valero Port Arthur",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an industrial pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 8,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "fema_table",
+  "score": 4.0,
+  "department": "Village of Pleak Fire Department",
+  "registry_name": "Village of Pleak Fire Department",
+  "city": "Richmond",
+  "county": "Fort Bend",
+  "type": "Mostly career",
+  "website": "http://pleakfd.com/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $261,904, awarded 8/16/24 (FY2023)",
+  "signal_date": "2024-08-16",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Village of Pleak Volunteer Fire Department, Inc, Vehicle Acquisition, $261,904",
+  "other_signals": "",
+  "named_in_source": "Village of Pleak Volunteer Fire Department, Inc",
+  "name_match": "exact",
+  "fdid": "GS303",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 9,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
   "department": "Bexar County Emergency Service District No. 8",
   "registry_name": "Bexar County Emergency Service District No. 8",
   "city": "Helotes",
@@ -91,16 +471,22 @@
    "year_how": null,
    "type_how": "the new truck is a tractor-drawn aerial quint; departments usually replace like with like"
   },
-  "rank": 2,
-  "tier": "2 Call this month",
+  "stage": "surplus",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
+  },
+  "rank": 10,
+  "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -128,333 +514,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 5.0,
-  "department": "Dfw International Airport",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Oshkosh Airport Products arff delivered (2026-08)",
-  "signal_date": "2026-08-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-august-2026/",
-  "proof_quote": "Department: DFW INTERNATIONAL AIRPORT (TX); Type: ARFF; Built by: OSHKOSH AIRPORT PRODUCTS",
-  "other_signals": "",
-  "named_in_source": "Dfw International Airport",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "other",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an arff; departments usually replace like with like"
-  },
-  "rank": 3,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "DFW International Airport Fire Department",
-  "registry_name": "",
-  "city": "Dallas",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New SVI Trucks walk-in hazmat unit due October 2026 (ordered 2025-05)",
-  "signal_date": "2026-10-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-may-2025/",
-  "proof_quote": "SVI TRUCKS—DFW International Airport Fire Department, Dallas, walk-in hazmat unit. Delivery in October 2026.",
-  "other_signals": "",
-  "named_in_source": "DFW International Airport Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "other",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a walk-in hazmat unit; departments usually replace like with like"
-  },
-  "rank": 4,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "from FEMA's awards table",
-  "score": 4.0,
-  "department": "Elm Mott Fire Rescue",
-  "registry_name": "Elm Mott Fire Rescue",
-  "city": "Elm Mott",
-  "county": "McLennan",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $704,761, awarded 9/22/26 (FY2025)",
-  "signal_date": "2026-09-22",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Elm Mott Volunteer Fire Department, Vehicle Acquisition, $704,761",
-  "other_signals": "",
-  "named_in_source": "Elm Mott Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "RN307",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 5,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Ennis Fire Department",
-  "registry_name": "Ennis Fire Department",
-  "city": "Ennis",
-  "county": "Ellis",
-  "type": "Mostly career",
-  "website": "https://www.ennistx.gov/departments/FireDepartment",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Spartan Emergency Response pumper due October 2026 (ordered 2025-02)",
-  "signal_date": "2026-10-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
-  "proof_quote": "SPARTAN EMERGENCY RESPONSE—Ennis Fire Department pumper. Delivery in October 2026.",
-  "other_signals": "",
-  "named_in_source": "Ennis Fire Department",
-  "name_match": "exact",
-  "fdid": "GC605",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 6,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "from FEMA's awards table",
-  "score": 4.0,
-  "department": "Midland Fire Department",
-  "registry_name": "Midland Fire Department",
-  "city": "Midland",
-  "county": "Midland",
-  "type": "Career",
-  "website": "http://www.midlandtexas.gov/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $939,545, awarded 8/16/24 (FY2023)",
-  "signal_date": "2024-08-16",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Midland, Vehicle Acquisition, $939,545",
-  "other_signals": "",
-  "named_in_source": "City of Midland",
-  "name_match": "exact",
-  "fdid": "RV701",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 7,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "from FEMA's awards table",
-  "score": 4.0,
-  "department": "North Richland Hills Fire Department",
-  "registry_name": "North Richland Hills Fire Department",
-  "city": "North Richland Hills",
-  "county": "Tarrant",
-  "type": "Career",
-  "website": "https://www.nrhtx.com/157/Fire-EMS",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $613,586, awarded 8/9/24 (FY2023)",
-  "signal_date": "2024-08-09",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of North Richland Hills, Vehicle Acquisition, $613,586",
-  "other_signals": "",
-  "named_in_source": "City of North Richland Hills",
-  "name_match": "exact",
-  "fdid": "WB625",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 8,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Valero Port Arthur",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New US Fire Apparatus industrial pumper on order (2026-10), delivery December",
-  "signal_date": "2026-10-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/october-2026-recent-apparatus-orders/",
-  "proof_quote": "US FIRE APPARATUS—Valero Port Arthur industrial pumper. Delivery in December.",
-  "other_signals": "",
-  "named_in_source": "Valero Port Arthur",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an industrial pumper; departments usually replace like with like"
-  },
-  "rank": 9,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "from FEMA's awards table",
-  "score": 4.0,
-  "department": "Village of Pleak Fire Department",
-  "registry_name": "Village of Pleak Fire Department",
-  "city": "Richmond",
-  "county": "Fort Bend",
-  "type": "Mostly career",
-  "website": "http://pleakfd.com/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $261,904, awarded 8/16/24 (FY2023)",
-  "signal_date": "2024-08-16",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Village of Pleak Volunteer Fire Department, Inc, Vehicle Acquisition, $261,904",
-  "other_signals": "",
-  "named_in_source": "Village of Pleak Volunteer Fire Department, Inc",
-  "name_match": "exact",
-  "fdid": "GS303",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 10,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cal Farley’s Boys Ranch",
   "registry_name": "",
@@ -480,6 +540,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a flatbed wildland unit; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-08",
+   "to": "2028-02",
+   "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 11,
   "tier": "3 Watch",
@@ -518,7 +584,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cross Plains Volunteer Fire Department, Inc.",
   "registry_name": "Cross Plains Volunteer Fire Department, Inc.",
@@ -545,16 +611,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2027-09",
+   "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
+  },
   "rank": 12,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -582,7 +654,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "DeSoto Fire Rescue",
   "registry_name": "DeSoto Fire Rescue",
@@ -609,16 +681,22 @@
    "year_how": null,
    "type_how": "the new truck is a 105-foot tractor drawn aerial quint; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2028-09",
+   "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
+  },
   "rank": 13,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -646,7 +724,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Deanville Volunteer Fire Department",
   "registry_name": "",
@@ -673,16 +751,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-03",
+   "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
+  },
   "rank": 14,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -710,40 +794,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Fort Worth Fire Department",
-  "registry_name": "Fort Worth Fire Department",
-  "city": "Fort Worth",
-  "county": "Tarrant",
-  "type": "Career",
-  "website": "http://fortworthtexas.gov/fire/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $1,380,570, awarded 9/20/23 (FY2022)",
-  "signal_date": "2023-09-20",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Fort Worth, City of, Vehicle Acquisition, $1,380,570",
-  "other_signals": "",
-  "named_in_source": "Fort Worth, City of",
-  "name_match": "exact",
-  "fdid": "WB901",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 15,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Hunt Volunteer Fire Department",
   "registry_name": "Hunt Volunteer Fire Department",
@@ -770,15 +821,21 @@
    "year_how": null,
    "type_how": "the new truck is a mini pumper; departments usually replace like with like"
   },
-  "rank": 16,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 15,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [
@@ -807,7 +864,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Kyle Fire Department",
   "registry_name": "Kyle Fire Department",
@@ -834,16 +891,22 @@
    "year_how": null,
    "type_how": "the new truck is a 107-foot rear-mount aerial ladder quint; departments usually replace like with like"
   },
-  "rank": 17,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-05",
+   "to": "2028-11",
+   "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 16,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -871,7 +934,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lake Dunlap Area Volunteer Fire Department",
   "registry_name": "Lake Dunlap Area Volunteer Fire Department",
@@ -898,16 +961,22 @@
    "year_how": null,
    "type_how": "the new truck is a tankerpumper; departments usually replace like with like"
   },
-  "rank": 18,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2027-09",
+   "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 17,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -935,7 +1004,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lakeside City Volunteer Fire Department",
   "registry_name": "Lakeside City Volunteer Fire Department",
@@ -962,16 +1031,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 19,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2027-09",
+   "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -999,7 +1074,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Medina Volunteer Fire Department, Inc.",
   "registry_name": "Medina Volunteer Fire Department, Inc.",
@@ -1026,16 +1101,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 20,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2027-08",
+   "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1063,7 +1144,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Mont Belvieu Fire Department",
   "registry_name": "Mont Belvieu Fire Department",
@@ -1090,16 +1171,22 @@
    "year_how": null,
    "type_how": "the new truck is a 110-foot midmount aerial quint; departments usually replace like with like"
   },
-  "rank": 21,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1127,7 +1214,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "North Liberty Volunteer Fire Department",
   "registry_name": "North Liberty Volunteer Fire Department",
@@ -1154,16 +1241,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 22,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1191,7 +1284,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Northeast Fort Bend County Fire Department",
   "registry_name": "",
@@ -1218,16 +1311,22 @@
    "year_how": null,
    "type_how": "the new truck is an ESDS heavy rescue; departments usually replace like with like"
   },
-  "rank": 23,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2027-09",
+   "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1255,7 +1354,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Odessa Fire Department",
   "registry_name": "Odessa Fire Department",
@@ -1282,16 +1381,22 @@
    "year_how": null,
    "type_how": "the new truck is a 107-foot rear- mount aerial ladder quint; departments usually replace like with like"
   },
-  "rank": 24,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1319,7 +1424,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Onalaska Volunteer Fire Department",
   "registry_name": "Onalaska Volunteer Fire Department",
@@ -1346,16 +1451,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
   },
-  "rank": 25,
+  "stage": "surplus",
+  "window": {
+   "from": "2025-08",
+   "to": "2026-02",
+   "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
+  },
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1383,7 +1494,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Parker County ESD 7",
   "registry_name": "",
@@ -1410,16 +1521,22 @@
    "year_how": null,
    "type_how": "the new trucks are three pumpers; departments usually replace like with like"
   },
-  "rank": 26,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1447,7 +1564,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Pharr Fire Rescue",
   "registry_name": "Pharr Fire Rescue",
@@ -1474,16 +1591,22 @@
    "year_how": null,
    "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
   },
-  "rank": 27,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1511,7 +1634,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Redwater Volunteer Fire Department",
   "registry_name": "Redwater Volunteer Fire Department",
@@ -1538,16 +1661,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 28,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 27,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1575,73 +1704,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Refugio Volunteer Fire department",
-  "registry_name": "Refugio Volunteer Fire department",
-  "city": "Refugio",
-  "county": "Refugio",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $668,095, awarded 8/11/23 (FY2022)",
-  "signal_date": "2023-08-11",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Refugio, Town of, Vehicle Acquisition, $668,095",
-  "other_signals": "",
-  "named_in_source": "Refugio, Town of",
-  "name_match": "exact",
-  "fdid": "TT403",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 29,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Texas A&M Engineering Extension Service",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $500,000, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Texas A&M Engineering Extension Service, Vehicle Acquisition, $500,000",
-  "other_signals": "",
-  "named_in_source": "Texas A&M Engineering Extension Service",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 30,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Tomball Fire Department",
   "registry_name": "Tomball Fire Department",
@@ -1668,16 +1731,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 31,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-05",
+   "to": "2026-11",
+   "how": "new truck was due May 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1705,7 +1774,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Tpc Group",
   "registry_name": "",
@@ -1732,16 +1801,22 @@
    "year_how": null,
    "type_how": "the new truck is an industrial pumper; departments usually replace like with like"
   },
-  "rank": 32,
+  "stage": "surplus",
+  "window": {
+   "from": "2025-06",
+   "to": "2025-12",
+   "how": "new truck arrived Jun 2025; the old one may already have sold quietly"
+  },
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1769,7 +1844,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Travis County Emergency Service District 4",
   "registry_name": "Travis County Emergency Service District 4",
@@ -1796,16 +1871,22 @@
    "year_how": null,
    "type_how": "the new truck is a Lago Vista pumper; departments usually replace like with like"
   },
-  "rank": 33,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-03",
+   "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 30,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1833,7 +1914,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Travis County Emergency Services District #1",
   "registry_name": "Travis County Emergency Services District #1",
@@ -1860,16 +1941,22 @@
    "year_how": null,
    "type_how": "the new truck is a custom pumper; departments usually replace like with like"
   },
-  "rank": 34,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-03",
+   "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 31,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1897,7 +1984,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Upshur County ESD 1",
   "registry_name": "",
@@ -1924,16 +2011,22 @@
    "year_how": null,
    "type_how": "the new trucks are three pumpers; departments usually replace like with like"
   },
-  "rank": 35,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2027-12",
+   "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1961,7 +2054,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Village Fire Department",
   "registry_name": "",
@@ -1988,16 +2081,22 @@
    "year_how": null,
    "type_how": "the new truck is a custom pumper; departments usually replace like with like"
   },
-  "rank": 36,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-05",
+   "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2025,7 +2124,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Wheelock Volunteer Fire Department",
   "registry_name": "",
@@ -2052,16 +2151,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 37,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2028-06",
+   "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -2087,5 +2192,122 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Fort Worth Fire Department",
+  "registry_name": "Fort Worth Fire Department",
+  "city": "Fort Worth",
+  "county": "Tarrant",
+  "type": "Career",
+  "website": "http://fortworthtexas.gov/fire/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $1,380,570, awarded 9/20/23 (FY2022)",
+  "signal_date": "2023-09-20",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Fort Worth, City of, Vehicle Acquisition, $1,380,570",
+  "other_signals": "",
+  "named_in_source": "Fort Worth, City of",
+  "name_match": "exact",
+  "fdid": "WB901",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-03",
+   "to": "2026-09",
+   "how": "grant awarded Sep 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 35,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Refugio Volunteer Fire department",
+  "registry_name": "Refugio Volunteer Fire department",
+  "city": "Refugio",
+  "county": "Refugio",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $668,095, awarded 8/11/23 (FY2022)",
+  "signal_date": "2023-08-11",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Refugio, Town of, Vehicle Acquisition, $668,095",
+  "other_signals": "",
+  "named_in_source": "Refugio, Town of",
+  "name_match": "exact",
+  "fdid": "TT403",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 36,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Texas A&M Engineering Extension Service",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $500,000, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Texas A&M Engineering Extension Service, Vehicle Acquisition, $500,000",
+  "other_signals": "",
+  "named_in_source": "Texas A&M Engineering Extension Service",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 37,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
  }
 ]

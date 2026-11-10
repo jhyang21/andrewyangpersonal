@@ -9,11 +9,18 @@ import {
   getState,
   getStates,
   leadsPer100,
+  runMonth,
   signalsFor,
 } from "@/apparatus-signals/lib/data";
 import { formatNumber, plural } from "@/apparatus-signals/lib/format";
 import { guideTotalLine } from "@/apparatus-signals/lib/trucks";
-import { COVERAGE, kindLabel } from "@/apparatus-signals/lib/words";
+import {
+  COVERAGE,
+  isDoneStage,
+  isOpenStage,
+  kindLabel,
+  likelyListed,
+} from "@/apparatus-signals/lib/words";
 import KindBars from "@/apparatus-signals/ui/KindBars";
 import LeadTable, { type KindOption, type LeadRow } from "@/apparatus-signals/ui/LeadTable";
 import { CoverageCard, RuleBox } from "@/apparatus-signals/ui/StateBits";
@@ -41,11 +48,12 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
   const method = getMethod();
   const departments = getDepartments(state.code);
   const rule = state.rule ?? method.rules[state.code] ?? null;
+  const month = runMonth();
 
   const rows: LeadRow[] = departments.map((d) => ({
     id: d.id,
     href: departmentHref(state.code, d),
-    rank: d.rank,
+    rank: d.openRank,
     tier: d.tier,
     score: d.score,
     department: d.department,
@@ -62,12 +70,14 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     proof_quote: d.proof_quote,
     checked: d.checked,
     ask_for: d.ask_for,
-    // Only registry websites reach the site; hand-found contacts stay in the pipeline.
+    // Only registry websites reach the site; contacts found by hand stay private.
     website: d.fdid ? d.website : "",
-    registered: Boolean(d.fdid),
     basis: d.basis,
     read_by: d.read_by,
     kinds: [...new Set([d.top_kind, ...signalsFor(state.code, d).map((s) => s.kind)])],
+    stage: d.stage,
+    top_kind: d.top_kind,
+    likely: likelyListed(d, month),
   }));
 
   const kindSet = new Set(rows.flatMap((r) => r.kinds));
@@ -82,7 +92,18 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
     count,
   }));
 
-  const { week, month, watch, total } = state.leads;
+  // Tier counts cover open leads only; gear and done leads are counted apart.
+  const total = departments.length;
+  const open = departments.filter((d) => isOpenStage(d.stage));
+  const tierCount = (n: string) => open.filter((d) => d.tier.startsWith(n)).length;
+  const gear = departments.filter((d) => d.stage === "gear").length;
+  const done = departments.filter((d) => isDoneStage(d.stage)).length;
+  const extra = [
+    gear ? `${plural(gear, "department")} selling gear, no truck named.` : "",
+    done ? `${formatNumber(done)} already at auction or sold.` : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <div className="space-y-8">
@@ -95,8 +116,8 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
         <h1 className="text-3xl font-semibold">{state.name}</h1>
         <p className="mt-2 text-lg text-as-ink-2">
           {total === 0
-            ? "No leads found in this run."
-            : `${plural(total, "lead")}: ${formatNumber(week)} to call this week, ${formatNumber(month)} this month, ${formatNumber(watch)} to watch.`}{" "}
+            ? "No leads this refresh."
+            : `${plural(total, "lead")}. Not yet listed: ${formatNumber(tierCount("1"))} to call this week, ${formatNumber(tierCount("2"))} this month, ${formatNumber(tierCount("3"))} to watch.${extra ? ` ${extra}` : ""}`}{" "}
           <span className="num">{leadsPer100(state).toFixed(1)}</span> per 100 departments.
         </p>
       </header>
@@ -117,8 +138,8 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
             No leads yet
           </h2>
           <p className="mt-1 max-w-3xl">
-            None of the sources read for {state.name} named a fire department here in this run. That
-            does not mean no truck is for sale; it means the layers above found nothing.
+            Nothing turned up for {state.name} this refresh. We have not read its minutes, so read
+            nothing into that.
           </p>
         </section>
       ) : (

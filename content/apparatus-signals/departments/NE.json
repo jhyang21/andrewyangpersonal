@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Hastings Fire & Rescue",
   "registry_name": "Hastings Fire & Rescue",
@@ -27,14 +27,160 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 5.0,
+  "checked": "trade_press",
+  "score": 4.0,
+  "department": "Columbus Rural Fire Protection District",
+  "registry_name": "Columbus Rural Fire Protection District",
+  "city": "Columbus",
+  "county": "Platte",
+  "type": "Mostly volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Pierce pumper on order (2026-09), delivery May 2027",
+  "signal_date": "2026-09-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/september-2026-recent-apparatus-orders/",
+  "proof_quote": "PIERCE—Columbus Fire Department pumper. Delivery in May 2027.",
+  "other_signals": "",
+  "named_in_source": "Columbus Fire Department",
+  "name_match": "exact",
+  "fdid": "10001",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 2,
+  "tier": "2 Call this month",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 4.0,
+  "department": "Greenwood Volunteer Fire & Rescue",
+  "registry_name": "Greenwood Volunteer Fire & Rescue",
+  "city": "Greenwood",
+  "county": "Cass",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Danko pumper due September 2026 (ordered 2025-11)",
+  "signal_date": "2026-09-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
+  "proof_quote": "DANKO—Greenwood Rural Fire District, Alvo, pumper. Delivery in September 2026.",
+  "other_signals": "",
+  "named_in_source": "Greenwood Rural Fire District",
+  "name_match": "exact",
+  "fdid": "20006",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 3,
+  "tier": "2 Call this month",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
   "department": "Adams Rural Fire Department",
   "registry_name": "Adams Rural Fire Department",
   "city": "Adams",
@@ -60,16 +206,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
   },
-  "rank": 2,
-  "tier": "2 Call this month",
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
+  },
+  "rank": 4,
+  "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -97,135 +249,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Columbus Rural Fire Protection District",
-  "registry_name": "Columbus Rural Fire Protection District",
-  "city": "Columbus",
-  "county": "Platte",
-  "type": "Mostly volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Pierce pumper on order (2026-09), delivery May 2027",
-  "signal_date": "2026-09-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/september-2026-recent-apparatus-orders/",
-  "proof_quote": "PIERCE—Columbus Fire Department pumper. Delivery in May 2027.",
-  "other_signals": "",
-  "named_in_source": "Columbus Fire Department",
-  "name_match": "exact",
-  "fdid": "10001",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 3,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Greenwood Volunteer Fire & Rescue",
-  "registry_name": "Greenwood Volunteer Fire & Rescue",
-  "city": "Greenwood",
-  "county": "Cass",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Danko pumper due September 2026 (ordered 2025-11)",
-  "signal_date": "2026-09-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
-  "proof_quote": "DANKO—Greenwood Rural Fire District, Alvo, pumper. Delivery in September 2026.",
-  "other_signals": "",
-  "named_in_source": "Greenwood Rural Fire District",
-  "name_match": "exact",
-  "fdid": "20006",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 4,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Beaver Crossing Municipal Fire Department",
   "registry_name": "",
@@ -252,16 +276,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
+  },
   "rank": 5,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -289,7 +319,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Bellevue Fire Department",
   "registry_name": "Bellevue Fire Department",
@@ -316,16 +346,22 @@
    "year_how": null,
    "type_how": "the new truck is a rescue; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-02",
+   "to": "2029-08",
+   "how": "new truck due Feb 2029; we allow six months after delivery for the old one to list"
+  },
   "rank": 6,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -353,7 +389,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Blair Volunteer Fire Department",
   "registry_name": "Blair Volunteer Fire Department",
@@ -380,16 +416,22 @@
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2028-06",
+   "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
+  },
   "rank": 7,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -417,7 +459,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cedar Rapids Volunteer Fire Department",
   "registry_name": "Cedar Rapids Volunteer Fire Department",
@@ -443,6 +485,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are wildland apparatus; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 8,
   "tier": "3 Watch",
@@ -481,7 +529,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "City of Scottsbluff Fire Department",
   "registry_name": "City of Scottsbluff Fire Department",
@@ -508,16 +556,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
+  },
   "rank": 9,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -545,7 +599,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cordova Volunteer Fire Department",
   "registry_name": "Cordova Volunteer Fire Department",
@@ -572,16 +626,22 @@
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2027-12",
+   "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
+  },
   "rank": 10,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -609,7 +669,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Dakota Covington Rural Fire and Rescue",
   "registry_name": "Dakota Covington Rural Fire and Rescue",
@@ -635,6 +695,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wildland unit; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2027-10",
+   "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 11,
   "tier": "3 Watch",
@@ -673,7 +739,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Dodge Volunteer Fire Department",
   "registry_name": "Dodge Volunteer Fire Department",
@@ -699,6 +765,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wildland unit; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 12,
   "tier": "3 Watch",
@@ -737,7 +809,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Gretna Suburban Fire Protection District",
   "registry_name": "",
@@ -764,16 +836,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2027-08",
+   "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
+  },
   "rank": 13,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -801,7 +879,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Herman Volunteer Fire Department",
   "registry_name": "Herman Volunteer Fire Department",
@@ -827,6 +905,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new trucks are wildland apparatus; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
   "rank": 14,
   "tier": "3 Watch",
@@ -865,7 +949,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Irvington Volunteer Fire Department",
   "registry_name": "Irvington Volunteer Fire Department",
@@ -892,16 +976,22 @@
    "year_how": null,
    "type_how": "the new truck is a custom pumper; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
   "rank": 15,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -929,7 +1019,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Kearney Volunteer Fire Department",
   "registry_name": "Kearney Volunteer Fire Department",
@@ -956,16 +1046,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2029-08",
+   "to": "2030-02",
+   "how": "new truck due Aug 2029; we allow six months after delivery for the old one to list"
+  },
   "rank": 16,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -993,7 +1089,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lincoln Fire & Rescue",
   "registry_name": "Lincoln Fire & Rescue",
@@ -1019,6 +1115,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wildland quick-attack unit; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
   "rank": 17,
   "tier": "3 Watch",
@@ -1057,71 +1159,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Linwood Volunteer Fire & Rescue",
-  "registry_name": "Linwood Volunteer Fire & Rescue",
-  "city": "Linwood",
-  "county": "Butler",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Danko pumper-tanker due February 2026 (ordered 2025-03)",
-  "signal_date": "2026-02-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2025/",
-  "proof_quote": "DANKO—Linwood Volunteer Fire Department pumper-tanker. Delivery in February 2026.",
-  "other_signals": "",
-  "named_in_source": "Linwood Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "25006",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
-  },
-  "rank": 18,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Neligh Volunteer Fire Department",
   "registry_name": "Neligh Volunteer Fire Department",
@@ -1148,16 +1186,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 19,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2028-06",
+   "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1185,7 +1229,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Plattsmouth Fire Department",
   "registry_name": "Plattsmouth Fire Department",
@@ -1212,16 +1256,22 @@
    "year_how": null,
    "type_how": "the new truck is an Ascendant 100-foot midmount aerial platform quint; departments usually replace like with like"
   },
-  "rank": 20,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-05",
+   "to": "2028-11",
+   "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1249,7 +1299,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Tamora Volunteer Fire Department, Inc.",
   "registry_name": "Tamora Volunteer Fire Department, Inc.",
@@ -1276,16 +1326,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 21,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-02",
+   "to": "2028-08",
+   "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1313,7 +1369,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Tilden Volunteer Fire Department",
   "registry_name": "",
@@ -1340,16 +1396,22 @@
    "year_how": null,
    "type_how": "the new truck is a top-mount pumper; departments usually replace like with like"
   },
-  "rank": 22,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1377,7 +1439,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Valley Fire Department",
   "registry_name": "",
@@ -1404,16 +1466,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 23,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-01",
+   "to": "2029-07",
+   "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1441,7 +1509,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Wood River Fire and Rescue",
   "registry_name": "Wood River Fire and Rescue",
@@ -1468,16 +1536,22 @@
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
   },
-  "rank": 24,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-01",
+   "to": "2029-07",
+   "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1505,7 +1579,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Yutan Volunteer Fire Department",
   "registry_name": "Yutan Volunteer Fire Department",
@@ -1532,16 +1606,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 25,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-05",
+   "to": "2028-11",
+   "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1569,7 +1649,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 1.0,
   "department": "Falls City Rural Fire Protection District",
   "registry_name": "Falls City Rural Fire Protection District",
@@ -1596,7 +1676,13 @@
    "year_how": null,
    "type_how": "the new truck is a wildland unit; departments usually replace like with like"
   },
-  "rank": 26,
+  "stage": "replacing",
+  "window": {
+   "from": "2025-10",
+   "to": "2026-04",
+   "how": "new truck was due Oct 2025; the old one may already have sold quietly"
+  },
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1628,6 +1714,76 @@
      "date": "2026-02-20",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Linwood Volunteer Fire & Rescue",
+  "registry_name": "Linwood Volunteer Fire & Rescue",
+  "city": "Linwood",
+  "county": "Butler",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Danko pumper-tanker due February 2026 (ordered 2025-03)",
+  "signal_date": "2026-02-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2025/",
+  "proof_quote": "DANKO—Linwood Volunteer Fire Department pumper-tanker. Delivery in February 2026.",
+  "other_signals": "",
+  "named_in_source": "Linwood Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "25006",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2026-08",
+   "how": "new truck was due Feb 2026; the old one may already have sold quietly"
+  },
+  "rank": 26,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
   }

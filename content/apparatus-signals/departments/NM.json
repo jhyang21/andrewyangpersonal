@@ -1,6 +1,6 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Upper Mimbres Volunteer Fire and Rescue",
   "registry_name": "Upper Mimbres Volunteer Fire and Rescue",
@@ -26,6 +26,12 @@
    "year": null,
    "year_how": null,
    "type_how": "the new truck is a wildland pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
   "rank": 1,
   "tier": "2 Call this month",
@@ -64,7 +70,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Farmington Fire Department",
   "registry_name": "Farmington Fire Department",
@@ -91,16 +97,22 @@
    "year_how": null,
    "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-02",
+   "to": "2027-08",
+   "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
+  },
   "rank": 2,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -128,7 +140,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 1.0,
   "department": "El Morro Valley Fire Department",
   "registry_name": "El Morro Valley Fire Department",
@@ -155,16 +167,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-06",
+   "to": "2025-12",
+   "how": "new truck was due Jun 2025; the old one may already have sold quietly"
+  },
   "rank": 3,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {

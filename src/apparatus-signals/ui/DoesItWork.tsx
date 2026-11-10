@@ -32,6 +32,11 @@ function bestFeedShare(bt: Backtest): string {
   return `${Math.round(best * 100)}%`;
 }
 
+/** One feed's share of sales it came before, e.g. "4%". */
+function feedShare(bt: Backtest, key: string): string {
+  return `${Math.round((bt.recall[key]?.rate ?? 0) * 100)}%`;
+}
+
 /** The one-line summary the home page links from. */
 export function testSummary(method: Method): string | null {
   const { backtest: bt, blind_read: br } = method;
@@ -54,7 +59,7 @@ function NyLift({ bt }: { bt: Backtest }) {
   return (
     <p className="max-w-3xl">
       In New York, departments that won a grant sold a truck at auction within two years at{" "}
-      {liftText} times the usual rate, but that rests on only {soldText} sales.
+      {liftText} times the usual rate, but that is {soldText} sales.
     </p>
   );
 }
@@ -102,11 +107,11 @@ function FeedTable({ bt }: { bt: Backtest }) {
       </table>
       <p className="max-w-3xl text-sm text-as-ink-2">
         Fire trucks only ({formatNumber(bt.meta.sale_events_apparatus)} sales); ambulances are
-        counted apart. A grant counts if it came 3 months to 5 years before the sale, an order up
-        to 30 months before. A sale counts only if the feed was printing during that span; trade
-        press is read only from 2025, so few sales could be checked against it. Only one auction
-        site is read, so a department that sold through a dealer or another site looks like a miss:
-        every share here is a floor.
+        counted separately. A grant counts if it came 3 months to 5 years before the sale, an order
+        up to 30 months before. A sale counts only if the feed was printing during that span; we
+        read the trade press only from 2025, so few sales could be checked against it. We read only
+        one auction site, so a department that sold through a dealer or another site looks like a
+        miss: every share here is a floor.
       </p>
     </div>
   );
@@ -170,7 +175,7 @@ function BlindTable({ br, method }: { br: BlindRead; method: Method }) {
         </ul>
       </div>
       <div className="max-w-3xl">
-        <h4 className="font-semibold">What to keep in mind</h4>
+        <h4 className="font-semibold">Where this could be wrong</h4>
         <ul className="mt-1 list-disc space-y-1 pl-5">
           {br.meta.caveats.map((c) => (
             <li key={c}>{c}</li>
@@ -213,15 +218,11 @@ export default function DoesItWork({ method }: { method: Method }) {
         Does it work?
       </h2>
       <p className="max-w-3xl">
-        Two tests asked whether these signs come before real sales. First, the automatic feeds
-        (federal grants and trade-press orders and deliveries) were checked against{" "}
-        {formatNumber(bt.meta.lots_used)} closed lots at Auctions International: a grant came
-        first for about {bestFeedShare(bt)} of fire-truck sales, and the trade press for fewer.
-        Second, people read public records for {sold.departments + control.departments} New York
-        departments without knowing which had sold. They found a sign within 18 months before the
-        sale for {percent(sold.sign_within_18_months, sold.departments)} of the departments that
-        sold and {percent(control.sign_within_18_months, control.departments)} of those that did
-        not{ahead(sold)}. The numbers are small, and the gap could still be chance.
+        We checked two ways. Against {formatNumber(bt.meta.lots_used)} closed lots, a grant came
+        first in about {feedShare(bt, "grant")} of sales. Then{" "}
+        {formatNumber(sold.departments + control.departments)} New York departments, blind: a prior
+        sign for {percent(sold.sign_within_18_months, sold.departments)} of sellers against{" "}
+        {percent(control.sign_within_18_months, control.departments)} of non-sellers. Small numbers.
       </p>
       <FeedTable bt={bt} />
       <NyLift bt={bt} />

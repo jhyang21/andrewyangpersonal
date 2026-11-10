@@ -7,18 +7,36 @@ import {
   getMethod,
   getStates,
   leadsPer100,
+  runMonth,
+  stageTotals,
 } from "@/apparatus-signals/lib/data";
-import { formatDate, formatNumber, formatScore, joinPlain, tierLabel } from "@/apparatus-signals/lib/format";
+import {
+  formatDate,
+  formatNumber,
+  formatScore,
+  joinPlain,
+  tierLabel,
+} from "@/apparatus-signals/lib/format";
 import { binLabel, buildScale } from "@/apparatus-signals/lib/scale";
 import { BASE, SITE_QUESTION } from "@/apparatus-signals/lib/site";
 import { guideTotalLine } from "@/apparatus-signals/lib/trucks";
-import { COVERAGE, COVERAGE_ORDER, WEEK_RULE } from "@/apparatus-signals/lib/words";
+import {
+  COVERAGE,
+  COVERAGE_ORDER,
+  READ_BY_LABEL,
+  WEEK_RULE,
+  isOpenStage,
+  likelyListed,
+} from "@/apparatus-signals/lib/words";
 import BasisBadge from "@/apparatus-signals/ui/Basis";
 import { testSummary } from "@/apparatus-signals/ui/DoesItWork";
 import UsMap, { type MapState } from "@/apparatus-signals/ui/UsMap";
 
 export default function HomePage() {
   const meta = getMeta();
+  const { totals } = meta;
+  const month = runMonth();
+  const stages = stageTotals();
   const summary = testSummary(getMethod());
   const states = getStates();
   const scale = buildScale(states.map(leadsPer100));
@@ -32,28 +50,32 @@ export default function HomePage() {
     deep: s.coverage === "deep",
     coverageName: COVERAGE[s.coverage].name,
   }));
-  const top = allLeads().sort(compareLeads).slice(0, 10);
+  // The Top 10 is for trucks not yet on a channel; gear, listed and sold leads stay on the state pages.
+  const top = allLeads()
+    .filter((d) => isOpenStage(d.stage))
+    .sort(compareLeads)
+    .slice(0, 10);
+  const topDeep = top.filter((d) => totals.deep_states.includes(d.stateCode)).length;
   const coverageCounts = COVERAGE_ORDER.map((c) => ({
     coverage: c,
     count: states.filter((s) => s.coverage === c).length,
   }));
 
-  const { totals } = meta;
   const headline = [
-    { value: totals.leads_week, label: "to call this week" },
-    { value: totals.hand_read_leads, label: "read by a person" },
-    { value: totals.states, label: "states" },
+    { value: stages.not_listed_soon, label: "to call before they list" },
+    { value: stages.listed, label: "at auction now" },
+    { value: stages.sold, label: "sold since May" },
   ];
   const stats = [
     {
       label: "Leads in all",
       value: formatNumber(totals.leads),
-      note: `${formatNumber(totals.leads - totals.observed_leads)} rest only on guesses: grants, orders, votes to buy or due dates`,
+      note: `${formatNumber(totals.leads - totals.observed_leads)} are inferred from a grant, an order or a vote to buy. No one has seen the old truck yet.`,
     },
-    { label: "Leads with a signal someone saw", value: formatNumber(totals.observed_leads) },
+    { label: "Seen, not inferred", value: formatNumber(totals.observed_leads) },
     { label: "Fire departments covered", value: formatNumber(totals.departments_in_registry) },
     {
-      label: "States read in depth",
+      label: "States read by hand",
       value: formatNumber(totals.deep_states.length),
       note: joinPlain(deepNames),
     },
@@ -66,9 +88,9 @@ export default function HomePage() {
           {SITE_QUESTION}
         </h1>
         <p className="mt-3 max-w-3xl text-lg text-as-ink-2">
-          A department that has won a grant, ordered a new truck or voted to sell an old one will
-          soon have a used truck to sell. This site lists those departments, state by state, with
-          the public record behind each one.
+          When a department wins a vehicle grant, orders a new truck or votes to sell an old one, a
+          used truck follows a few months to a few years later. This is the list, by state, with
+          the record behind each lead.
         </p>
         {summary ? (
           <p className="mt-2 max-w-3xl">
@@ -88,8 +110,8 @@ export default function HomePage() {
           ))}
         </p>
         <p className="text-sm text-as-ink-2">
-          {WEEK_RULE} &ldquo;Read by a person&rdquo; means the lead&rsquo;s strongest signal came
-          from an auction page or a notice someone opened, not from a grant or trade-press feed.
+          {WEEK_RULE} &ldquo;{READ_BY_LABEL.person}&rdquo; means we opened the page; it did not
+          come off the grant or trade-press feed.
         </p>
         <dl className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4">
           {stats.map((s) => (
@@ -101,7 +123,7 @@ export default function HomePage() {
           ))}
         </dl>
         <p className="text-sm text-as-ink-2">
-          {guideTotalLine(totals.guide_total, "on the lists in all states")}{" "}
+          {guideTotalLine(totals.guide_total)}{" "}
           <Link href={`${BASE}/method#price-guide`}>How the guide works</Link>
         </p>
       </section>
@@ -112,8 +134,7 @@ export default function HomePage() {
             Leads per 100 fire departments
           </h2>
           <p className="text-sm text-as-ink-2">
-            Darker means more leads for the number of departments in the federal registry. A thick
-            outline marks a state read in depth by hand. Pick a state to see its list.
+            Darker: more leads per department. Heavy outline: read by hand. Pick a state.
           </p>
         </div>
         <UsMap states={mapStates} />
@@ -203,8 +224,8 @@ export default function HomePage() {
         </h2>
         <p className="mb-3 text-sm text-as-ink-2">
           Ranked by score.
-          {deepNames.length
-            ? ` ${joinPlain(deepNames)} ${deepNames.length === 1 ? "is" : "are"} read in depth, so ${deepNames.length === 1 ? "its" : "their"} leads rest on more kinds of proof.`
+          {deepNames.length && topDeep > top.length / 2
+            ? ` ${joinPlain(deepNames)} ${deepNames.length === 1 ? "is" : "are"} read by hand, so ${deepNames.length === 1 ? "it fills" : "they fill"} most of the list.`
             : ""}
         </p>
         <table className="data-table">
@@ -216,6 +237,7 @@ export default function HomePage() {
               </th>
               <th scope="col">Department</th>
               <th scope="col">Why call</th>
+              <th scope="col">Likely listed</th>
               <th scope="col">When</th>
               <th scope="col" className="r">
                 Score
@@ -241,6 +263,9 @@ export default function HomePage() {
                   {d.why_call}
                   {d.detail ? <div className="text-sm text-as-ink-2">{d.detail}</div> : null}
                 </td>
+                <td className="whitespace-nowrap" data-label="Likely listed">
+                  {likelyListed(d, month)}
+                </td>
                 <td data-label="When">
                   {tierLabel(d.tier)} <BasisBadge basis={d.basis} />
                 </td>
@@ -254,6 +279,10 @@ export default function HomePage() {
             ))}
           </tbody>
         </table>
+        <p className="mt-3 text-sm text-as-ink-2">
+          {formatNumber(stages.listed)} more are at auction now and {formatNumber(stages.sold)} sold
+          since May; see each state.
+        </p>
       </section>
     </div>
   );

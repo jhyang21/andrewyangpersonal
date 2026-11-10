@@ -1,7 +1,7 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 5.0,
+  "checked": "trade_press",
+  "score": 3.0,
   "department": "Metropolitan Washington Airports Authority Fire & Rescue Department",
   "registry_name": "Metropolitan Washington Airports Authority Fire & Rescue Department",
   "city": "Dulles",
@@ -27,8 +27,14 @@
    "year_how": null,
    "type_how": "the new trucks are airport rescue and firefighting vehicle (stryker, 6x6) 3 units; departments usually replace like with like"
   },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-02",
+   "to": "2026-08",
+   "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
+  },
   "rank": 1,
-  "tier": "2 Call this month",
+  "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  }

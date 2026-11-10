@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Center Point Fire & Rescue, Inc.",
   "registry_name": "Center Point Fire & Rescue, Inc.",
@@ -27,13 +27,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "City of Loudon Fire Department",
   "registry_name": "City of Loudon Fire Department",
@@ -60,77 +66,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "East Sullivan County Volunteer Fire Department",
-  "registry_name": "East Sullivan County Volunteer Fire Department",
-  "city": "Bristol",
-  "county": "Sullivan",
-  "type": "Volunteer",
-  "website": "http://eastsullivancountyvfd.com/",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Toyne pumper due November 2026 (ordered 2025-04)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
-  "proof_quote": "TOYNE—East Sullivan Volunteer Fire Department, Bristol, TN, pumper. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "East Sullivan Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "82351",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 3,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Enville Volunteer Fire Department",
   "registry_name": "Enville Volunteer Fire Department",
@@ -157,13 +105,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 4,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Hardin County Fire Department",
   "registry_name": "Hardin County Fire Department",
@@ -190,13 +144,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 5,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Hornbeak Volunteer Fire Department",
   "registry_name": "Hornbeak Volunteer Fire Department",
@@ -223,13 +183,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 6,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Hornsby Fire Department",
   "registry_name": "Hornsby Fire Department",
@@ -256,13 +222,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 7,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Humboldt Fire Department",
   "registry_name": "Humboldt Fire Department",
@@ -289,13 +261,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 8,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Lauderdale County Ambulance",
   "registry_name": "",
@@ -322,13 +300,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 9,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Memphis Division of Fire Services",
   "registry_name": "Memphis Division of Fire Services",
@@ -355,13 +339,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 10,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Newmansville Volunteer Fire Department",
   "registry_name": "Newmansville Volunteer Fire Department",
@@ -388,13 +378,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 11,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Notchey Creek Volunteer Fire Department",
   "registry_name": "Notchey Creek Volunteer Fire Department",
@@ -421,13 +417,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 12,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Pillowville Volunteer Fire Department",
   "registry_name": "Pillowville Volunteer Fire Department",
@@ -454,13 +456,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 13,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Pleasant View Volunteer Fire Department",
   "registry_name": "Pleasant View Volunteer Fire Department",
@@ -487,13 +495,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 14,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Rock Island- Campaign Volunteer Fire Department",
   "registry_name": "",
@@ -520,13 +534,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 15,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Stewart County Volunteer Fire Service Inc.",
   "registry_name": "Stewart County Volunteer Fire Service Inc.",
@@ -553,13 +573,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 16,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Town of Surgoinsville Fire Department",
   "registry_name": "Town of Surgoinsville Fire Department",
@@ -586,13 +612,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 17,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Union City Fire Department",
   "registry_name": "Union City Fire Department",
@@ -619,13 +651,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 18,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "West Valley Fire Department",
   "registry_name": "West Valley Fire Department",
@@ -652,13 +690,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 19,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Chattanooga Fire Department",
   "registry_name": "Chattanooga Fire Department",
@@ -685,16 +729,22 @@
    "year_how": null,
    "type_how": "the new trucks are four S180 pumpers; departments usually replace like with like"
   },
-  "rank": 20,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -722,40 +772,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "City of Kenton Volunteer Fire Department",
-  "registry_name": "City of Kenton Volunteer Fire Department",
-  "city": "Kenton",
-  "county": "Gibson",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $304,761, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Kenton, City of, Vehicle Acquisition, $304,761",
-  "other_signals": "",
-  "named_in_source": "Kenton, City of",
-  "name_match": "exact",
-  "fdid": "66121",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 21,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Dickson County Emergency Management",
   "registry_name": "",
@@ -782,16 +799,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 22,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2027-10",
+   "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -819,40 +842,77 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "trade_press",
   "score": 3.0,
-  "department": "North Robertson Fire and Rescue",
-  "registry_name": "North Robertson Fire and Rescue",
-  "city": "Springfield",
-  "county": "Robertson",
+  "department": "East Sullivan County Volunteer Fire Department",
+  "registry_name": "East Sullivan County Volunteer Fire Department",
+  "city": "Bristol",
+  "county": "Sullivan",
   "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $433,333, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "North Robertson Fire & Rescue, Vehicle Acquisition, $433,333",
+  "website": "http://eastsullivancountyvfd.com/",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper on order (2025-04), delivery November 2026",
+  "signal_date": "2025-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
+  "proof_quote": "TOYNE—East Sullivan Volunteer Fire Department, Bristol, TN, pumper. Delivery in November 2026.",
   "other_signals": "",
-  "named_in_source": "North Robertson Fire & Rescue",
+  "named_in_source": "East Sullivan Volunteer Fire Department",
   "name_match": "exact",
-  "fdid": "74811",
-  "top_kind": "grant",
+  "fdid": "82351",
+  "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
-   "type": null,
+   "type": "pumper",
    "year": null,
    "year_how": null,
-   "type_how": null
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 23,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Putnam County Fire Department",
   "registry_name": "Putnam County Fire Department",
@@ -879,16 +939,22 @@
    "year_how": null,
    "type_how": "the new truck is a heavy rescue truck; departments usually replace like with like"
   },
-  "rank": 24,
+  "stage": "surplus",
+  "window": {
+   "from": "2025-08",
+   "to": "2026-02",
+   "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
+  },
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -916,7 +982,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Sullivan County Volunteer Fire Department No. 1",
   "registry_name": "Sullivan County Volunteer Fire Department No. 1",
@@ -943,16 +1009,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 25,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-11",
+   "to": "2028-05",
+   "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -980,7 +1052,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Tellico Village Volunteer Fire Department",
   "registry_name": "Tellico Village Volunteer Fire Department",
@@ -1007,16 +1079,22 @@
    "year_how": null,
    "type_how": "the new truck is an aerial ladder; departments usually replace like with like"
   },
-  "rank": 26,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-05",
+   "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -1042,5 +1120,83 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "City of Kenton Volunteer Fire Department",
+  "registry_name": "City of Kenton Volunteer Fire Department",
+  "city": "Kenton",
+  "county": "Gibson",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $304,761, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Kenton, City of, Vehicle Acquisition, $304,761",
+  "other_signals": "",
+  "named_in_source": "Kenton, City of",
+  "name_match": "exact",
+  "fdid": "66121",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 25,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "North Robertson Fire and Rescue",
+  "registry_name": "North Robertson Fire and Rescue",
+  "city": "Springfield",
+  "county": "Robertson",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $433,333, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "North Robertson Fire & Rescue, Vehicle Acquisition, $433,333",
+  "other_signals": "",
+  "named_in_source": "North Robertson Fire & Rescue",
+  "name_match": "exact",
+  "fdid": "74811",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 26,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
  }
 ]

@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { getMeta } from "@/apparatus-signals/lib/data";
+import { getMeta, stageTotals } from "@/apparatus-signals/lib/data";
 import { formatDate, formatNumber } from "@/apparatus-signals/lib/format";
 import { SITE_BYLINE, SITE_NAME, SITE_QUESTION } from "@/apparatus-signals/lib/site";
 
@@ -9,11 +9,11 @@ export const contentType = "image/png";
 
 export default function Image() {
   const meta = getMeta();
-  const t = meta.totals;
+  const t = stageTotals();
   const stats: [string, string][] = [
-    [formatNumber(t.leads), "leads"],
-    [formatNumber(t.leads_week), "to call this week"],
-    [formatNumber(t.departments_in_registry), "departments checked"],
+    [formatNumber(t.not_listed_soon), "to call before they list"],
+    [formatNumber(t.listed), "at auction now"],
+    [formatNumber(t.sold), "sold since May"],
   ];
   return new ImageResponse(
     (

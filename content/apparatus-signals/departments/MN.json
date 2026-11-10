@@ -1,6 +1,6 @@
 [
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Danvers Fire Department",
   "registry_name": "Danvers Fire Department",
@@ -27,13 +27,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Prinsburg Volunteer Fire Department",
   "registry_name": "Prinsburg Volunteer Fire Department",
@@ -60,13 +66,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 5.5,
   "department": "Virginia Fire Department",
   "registry_name": "Virginia Fire Department",
@@ -93,77 +105,19 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 5.0,
-  "department": "North Saint Paul Fire Department",
-  "registry_name": "North Saint Paul Fire Department",
-  "city": "North Saint Paul",
-  "county": "Ramsey",
-  "type": "Mostly volunteer",
-  "website": "http://www.northstpaul.org/",
-  "why_call": "New truck in service",
-  "detail": "New Custom Fire Apparatus pumper delivered (2026-04)",
-  "signal_date": "2026-04-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-april-2026/",
-  "proof_quote": "Department: NORTH ST. PAUL (MN) FIRE DEPARTMENT; Type: PUMPER; Built by: CUSTOM FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "North St. Paul Fire Department",
-  "name_match": "fuzzy",
-  "fdid": "55109",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 4,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "Moorhead Fire Department",
   "registry_name": "Moorhead Fire Department",
@@ -190,16 +144,22 @@
    "year_how": null,
    "type_how": "the new trucks are two RIV pumpers; departments usually replace like with like"
   },
-  "rank": 5,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -227,135 +187,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Battle Lake Area Fire Association",
-  "registry_name": "Battle Lake Area Fire Association",
-  "city": "Battle Lake",
-  "county": "Otter Tail",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Midwest Fire tanker due November 2026 (ordered 2025-07)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
-  "proof_quote": "MIDWEST FIRE—Battle Lake Area Fire & Rescue Association tanker. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "Battle Lake Area Fire & Rescue Association",
-  "name_match": "exact",
-  "fdid": "56101",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a tanker; departments usually replace like with like"
-  },
-  "rank": 6,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Braham Fire Department",
-  "registry_name": "Braham Fire Department",
-  "city": "Braham",
-  "county": "Isanti",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Customfire pumper due November 2026 (ordered 2026-03)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2026/",
-  "proof_quote": "CUSTOMFIRE—Braham Fire Department pumper. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "Braham Fire Department",
-  "name_match": "exact",
-  "fdid": "30105",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 7,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Carsonville Volunteer Fire-Rescue",
   "registry_name": "Carsonville Volunteer Fire-Rescue",
@@ -382,13 +214,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 8,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Cass Lake Volunteer Fire Department",
   "registry_name": "Cass Lake Volunteer Fire Department",
@@ -415,16 +253,22 @@
    "year_how": null,
    "type_how": "the new truck is a tanker; departments usually replace like with like"
   },
-  "rank": 9,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -452,7 +296,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "City of Barrett",
   "registry_name": "",
@@ -479,13 +323,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 10,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2028-09",
+   "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Currie Fire Department",
   "registry_name": "Currie Fire Department",
@@ -512,13 +362,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 11,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Golden Valley Fire Department",
   "registry_name": "Golden Valley Fire Department",
@@ -545,16 +401,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 12,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-08",
+   "to": "2029-02",
+   "how": "new truck due Aug 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -582,7 +444,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Isanti Fire District",
   "registry_name": "Isanti Fire District",
@@ -609,13 +471,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 13,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Maple Grove Fire Department",
   "registry_name": "Maple Grove Fire Department",
@@ -642,16 +510,22 @@
    "year_how": null,
    "type_how": "the new truck is an aerial tower; departments usually replace like with like"
   },
-  "rank": 14,
+  "stage": "replacing",
+  "window": {
+   "from": "2030-01",
+   "to": "2031-06",
+   "how": "new truck due in 2030; we allow six months after delivery for the old one to list"
+  },
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "aerial",
    "band": "all ages",
-   "n": 104,
+   "n": 103,
    "median": 6200,
    "p25": 4550,
-   "p75": 8600,
+   "p75": 8550,
    "thin": false,
    "comps": [
     {
@@ -679,7 +553,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Minneapolis Fire Department",
   "registry_name": "Minneapolis Fire Department",
@@ -706,16 +580,22 @@
    "year_how": null,
    "type_how": "the new trucks are three pumpers; departments usually replace like with like"
   },
-  "rank": 15,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -743,7 +623,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Morgan Fire Department and Ambulance Service",
   "registry_name": "Morgan Fire Department and Ambulance Service",
@@ -770,13 +650,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 16,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Ortonville Volunteer Fire Department",
   "registry_name": "Ortonville Volunteer Fire Department",
@@ -803,13 +689,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 17,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Sanborn Fire Department",
   "registry_name": "Sanborn Fire Department",
@@ -836,30 +728,153 @@
    "year_how": null,
    "type_how": null
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 15,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 4.0,
+  "department": "Wheaton Fire Department",
+  "registry_name": "Wheaton Fire Department",
+  "city": "Wheaton",
+  "county": "Traverse",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $457,142, awarded 8/16/24 (FY2023)",
+  "signal_date": "2024-08-16",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Wheaton, Vehicle Acquisition, $457,142",
+  "other_signals": "",
+  "named_in_source": "City of Wheaton",
+  "name_match": "exact",
+  "fdid": "78104",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 16,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 4.0,
+  "department": "Wood Lake Fire Department",
+  "registry_name": "Wood Lake Fire Department",
+  "city": "Wood Lake",
+  "county": "Yellow Medicine",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $393,178, awarded 8/16/24 (FY2023)",
+  "signal_date": "2024-08-16",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Wood Lake, Vehicle Acquisition, $393,178",
+  "other_signals": "",
+  "named_in_source": "City of Wood Lake",
+  "name_match": "exact",
+  "fdid": "87109",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 17,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 4.0,
+  "department": "Woodstock Fire Department",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $438,095, awarded 9/22/26 (FY2025)",
+  "signal_date": "2026-09-22",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Woodstock Fire Department, Vehicle Acquisition, $438,095",
+  "other_signals": "",
+  "named_in_source": "Woodstock Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
   "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "St. Clair Fire Department",
-  "registry_name": "St. Clair Fire Department",
-  "city": "Saint Clair",
-  "county": "Blue Earth",
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Annandale Fire Department",
+  "registry_name": "Annandale Fire Department",
+  "city": "Annandale",
+  "county": "Wright",
   "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Customfire pumper due November2026 (ordered 2026-04)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
-  "proof_quote": "CUSTOMFIRE—St. Clair Fire Department pumper. Delivery in November2026.",
+  "website": "https://www.annandale.mn.us/index.asp?SEC=2067E716-0BF5-4696-8C49-D9B7EAC794AD",
+  "why_call": "New truck on order",
+  "detail": "New Pierce PUC pumper on order (2025-02), delivery April 2028",
+  "signal_date": "2025-02-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
+  "proof_quote": "PIERCE—Annandale Fire Department PUC pumper. Delivery in April 2028.",
   "other_signals": "",
-  "named_in_source": "St. Clair Fire Department",
+  "named_in_source": "Annandale Fire Department",
   "name_match": "exact",
-  "fdid": "07109",
-  "top_kind": "delivery_due",
+  "fdid": "86102",
+  "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
@@ -867,18 +882,24 @@
    "type": "pumper",
    "year": null,
    "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
+   "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-04",
+   "to": "2028-10",
+   "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
   "rank": 19,
-  "tier": "2 Call this month",
+  "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -906,57 +927,94 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 4.0,
-  "department": "Wheaton Fire Department",
-  "registry_name": "Wheaton Fire Department",
-  "city": "Wheaton",
-  "county": "Traverse",
-  "type": "Volunteer",
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Baldwin Fire Department",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
   "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $457,142, awarded 8/16/24 (FY2023)",
-  "signal_date": "2024-08-16",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Wheaton, Vehicle Acquisition, $457,142",
+  "why_call": "New truck on order",
+  "detail": "New Pierce pumper on order (2025-04), delivery March 2028",
+  "signal_date": "2025-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
+  "proof_quote": "PIERCE—Baldwin Fire Department pumper. Delivery in March 2028.",
   "other_signals": "",
-  "named_in_source": "City of Wheaton",
-  "name_match": "exact",
-  "fdid": "78104",
-  "top_kind": "grant",
+  "named_in_source": "Baldwin Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
-   "type": null,
+   "type": "pumper",
    "year": null,
    "year_how": null,
-   "type_how": null
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2028-09",
+   "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
   "rank": 20,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Wolf Lake Fire Department",
-  "registry_name": "Wolf Lake Fire Department",
-  "city": "Wolf Lake",
-  "county": "Becker",
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Battle Lake Area Fire Association",
+  "registry_name": "Battle Lake Area Fire Association",
+  "city": "Battle Lake",
+  "county": "Otter Tail",
   "type": "Volunteer",
   "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Midwest Fire pumper-tanker due November 2026 (ordered 2025-06)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
-  "proof_quote": "MIDWEST FIRE—Wolf Lake Fire Department pumper-tanker. Delivery in November 2026.",
+  "why_call": "New truck on order",
+  "detail": "New Midwest Fire tanker on order (2025-07), delivery November 2026",
+  "signal_date": "2025-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
+  "proof_quote": "MIDWEST FIRE—Battle Lake Area Fire & Rescue Association tanker. Delivery in November 2026.",
   "other_signals": "",
-  "named_in_source": "Wolf Lake Fire Department",
+  "named_in_source": "Battle Lake Area Fire & Rescue Association",
   "name_match": "exact",
-  "fdid": "03107",
-  "top_kind": "delivery_due",
+  "fdid": "56101",
+  "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
@@ -964,18 +1022,24 @@
    "type": "tanker",
    "year": null,
    "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+   "type_how": "the new truck is a tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
   },
   "rank": 21,
-  "tier": "2 Call this month",
+  "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -1003,201 +1067,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 4.0,
-  "department": "Wood Lake Fire Department",
-  "registry_name": "Wood Lake Fire Department",
-  "city": "Wood Lake",
-  "county": "Yellow Medicine",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $393,178, awarded 8/16/24 (FY2023)",
-  "signal_date": "2024-08-16",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Wood Lake, Vehicle Acquisition, $393,178",
-  "other_signals": "",
-  "named_in_source": "City of Wood Lake",
-  "name_match": "exact",
-  "fdid": "87109",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 22,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "from FEMA's awards table",
-  "score": 4.0,
-  "department": "Woodstock Fire Department",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $438,095, awarded 9/22/26 (FY2025)",
-  "signal_date": "2026-09-22",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Woodstock Fire Department, Vehicle Acquisition, $438,095",
-  "other_signals": "",
-  "named_in_source": "Woodstock Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 23,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Annandale Fire Department",
-  "registry_name": "Annandale Fire Department",
-  "city": "Annandale",
-  "county": "Wright",
-  "type": "Volunteer",
-  "website": "https://www.annandale.mn.us/index.asp?SEC=2067E716-0BF5-4696-8C49-D9B7EAC794AD",
-  "why_call": "New truck on order",
-  "detail": "New Pierce PUC pumper on order (2025-02), delivery April 2028",
-  "signal_date": "2025-02-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
-  "proof_quote": "PIERCE—Annandale Fire Department PUC pumper. Delivery in April 2028.",
-  "other_signals": "",
-  "named_in_source": "Annandale Fire Department",
-  "name_match": "exact",
-  "fdid": "86102",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
-  },
-  "rank": 24,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Baldwin Fire Department",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Pierce pumper on order (2025-04), delivery March 2028",
-  "signal_date": "2025-04-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
-  "proof_quote": "PIERCE—Baldwin Fire Department pumper. Delivery in March 2028.",
-  "other_signals": "",
-  "named_in_source": "Baldwin Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "rank": 25,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Biwabik Fire Department",
   "registry_name": "Biwabik Fire Department",
@@ -1224,16 +1094,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 26,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-09",
+   "to": "2030-03",
+   "how": "new truck due Sep 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1261,7 +1137,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Blackduck Fire Department",
   "registry_name": "Blackduck Fire Department",
@@ -1288,16 +1164,22 @@
    "year_how": null,
    "type_how": "the new truck is a rescue-pumper; departments usually replace like with like"
   },
-  "rank": 27,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-03",
+   "to": "2029-09",
+   "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1325,7 +1207,77 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Braham Fire Department",
+  "registry_name": "Braham Fire Department",
+  "city": "Braham",
+  "county": "Isanti",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Customfire pumper on order (2026-03), delivery November 2026",
+  "signal_date": "2026-03-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2026/",
+  "proof_quote": "CUSTOMFIRE—Braham Fire Department pumper. Delivery in November 2026.",
+  "other_signals": "",
+  "named_in_source": "Braham Fire Department",
+  "name_match": "exact",
+  "fdid": "30105",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 24,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Brooklyn Park Fire Department",
   "registry_name": "Brooklyn Park Fire Department",
@@ -1352,16 +1304,22 @@
    "year_how": null,
    "type_how": "the new trucks are two pumpers; departments usually replace like with like"
   },
-  "rank": 28,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1389,7 +1347,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Burnsville Fire Department",
   "registry_name": "Burnsville Fire Department",
@@ -1416,16 +1374,22 @@
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
   },
-  "rank": 29,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-11",
+   "to": "2029-05",
+   "how": "new truck due Nov 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1453,7 +1417,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Chatfield Fire Department",
   "registry_name": "Chatfield Fire Department",
@@ -1480,16 +1444,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 30,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 27,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1517,7 +1487,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "City of Northfield Volunteer Fire Department",
   "registry_name": "City of Northfield Volunteer Fire Department",
@@ -1544,16 +1514,22 @@
    "year_how": null,
    "type_how": "the new truck is an enclosed top-mount pumper; departments usually replace like with like"
   },
-  "rank": 31,
+  "stage": "surplus",
+  "window": {
+   "from": "2025-09",
+   "to": "2026-03",
+   "how": "new truck arrived Sep 2025; the old one may already have sold quietly"
+  },
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1581,7 +1557,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cokato Fire Department",
   "registry_name": "Cokato Fire Department",
@@ -1608,16 +1584,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 32,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-07",
+   "to": "2027-01",
+   "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1645,40 +1627,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Darfur Fire Department",
-  "registry_name": "Darfur Fire Department",
-  "city": "Butterfield",
-  "county": "Watonwan",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $399,333, awarded 8/18/23 (FY2022)",
-  "signal_date": "2023-08-18",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Darfur, City of, Vehicle Acquisition, $399,333",
-  "other_signals": "",
-  "named_in_source": "Darfur, City of",
-  "name_match": "exact",
-  "fdid": "83102",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 33,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Deer River Fire Department",
   "registry_name": "Deer River Fire Department",
@@ -1705,16 +1654,22 @@
    "year_how": null,
    "type_how": "the new truck is a rescue; departments usually replace like with like"
   },
-  "rank": 34,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 30,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -1742,7 +1697,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Elk River Fire and Rescue",
   "registry_name": "Elk River Fire and Rescue",
@@ -1769,16 +1724,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 35,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 31,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1806,7 +1767,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Excelsior Fire District",
   "registry_name": "Excelsior Fire District",
@@ -1833,16 +1794,22 @@
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
   },
-  "rank": 36,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2028-09",
+   "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 32,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1870,7 +1837,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Farmington Fire Department",
   "registry_name": "Farmington Fire Department",
@@ -1897,7 +1864,13 @@
    "year_how": null,
    "type_how": "the new truck is a wildland urban interface pumper; departments usually replace like with like"
   },
-  "rank": 37,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-03",
+   "to": "2029-09",
+   "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1934,40 +1907,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
-  "score": 3.0,
-  "department": "Fulda Fire Department",
-  "registry_name": "Fulda Fire Department",
-  "city": "Fulda",
-  "county": "Murray",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $453,142, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Fulda, Vehicle Acquisition, $453,142",
-  "other_signals": "",
-  "named_in_source": "City of Fulda",
-  "name_match": "exact",
-  "fdid": "51105",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "rank": 38,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Gaylord Fire Department",
   "registry_name": "Gaylord Fire Department",
@@ -1994,16 +1934,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 39,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-05",
+   "to": "2028-11",
+   "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2031,7 +1977,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Granite Falls Fire Department",
   "registry_name": "Granite Falls Fire Department",
@@ -2058,16 +2004,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 40,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-08",
+   "to": "2029-02",
+   "how": "new truck due Aug 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 35,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -2095,7 +2047,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Hopkins Fire Department",
   "registry_name": "Hopkins Fire Department",
@@ -2122,16 +2074,22 @@
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
   },
-  "rank": 41,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2159,7 +2117,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Kiester Fire Department",
   "registry_name": "Kiester Fire Department",
@@ -2186,16 +2144,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 42,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -2223,7 +2187,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lake Benton Fire Department",
   "registry_name": "Lake Benton Fire Department",
@@ -2250,16 +2214,22 @@
    "year_how": null,
    "type_how": "the new truck is a top-mount pumper; departments usually replace like with like"
   },
-  "rank": 43,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2287,7 +2257,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lake City Fire Department",
   "registry_name": "Lake City Fire Department",
@@ -2314,16 +2284,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 44,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-03",
+   "to": "2029-09",
+   "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2351,7 +2327,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Little Canada Fire Department Inc.",
   "registry_name": "Little Canada Fire Department Inc.",
@@ -2378,16 +2354,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 45,
+  "stage": "replacing",
+  "window": {
+   "from": "2030-02",
+   "to": "2030-08",
+   "how": "new truck due Feb 2030; we allow six months after delivery for the old one to list"
+  },
+  "rank": 40,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2415,7 +2397,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Lonsdale Fire Department",
   "registry_name": "",
@@ -2442,16 +2424,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 46,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 41,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2479,7 +2467,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Marathon Refinery Fire Department",
   "registry_name": "",
@@ -2506,16 +2494,22 @@
    "year_how": null,
    "type_how": "the new truck is an industrial pumper; departments usually replace like with like"
   },
-  "rank": 47,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 42,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2543,7 +2537,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Nashwauk Fire Department",
   "registry_name": "Nashwauk Fire Department",
@@ -2570,16 +2564,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 48,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2027-12",
+   "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 43,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2607,7 +2607,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Nicollet Fire Department",
   "registry_name": "Nicollet Fire Department",
@@ -2634,16 +2634,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 49,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 44,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2671,7 +2677,77 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "North Saint Paul Fire Department",
+  "registry_name": "North Saint Paul Fire Department",
+  "city": "North Saint Paul",
+  "county": "Ramsey",
+  "type": "Mostly volunteer",
+  "website": "http://www.northstpaul.org/",
+  "why_call": "New truck in service",
+  "detail": "New Custom Fire Apparatus pumper delivered (2026-04)",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-april-2026/",
+  "proof_quote": "Department: NORTH ST. PAUL (MN) FIRE DEPARTMENT; Type: PUMPER; Built by: CUSTOM FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "North St. Paul Fire Department",
+  "name_match": "fuzzy",
+  "fdid": "55109",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
+  },
+  "rank": 45,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Osseo Fire Department Responder",
   "registry_name": "",
@@ -2698,16 +2774,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 50,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-05",
+   "to": "2027-11",
+   "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 46,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2735,7 +2817,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Park Rapids Volunteer Fire Department",
   "registry_name": "Park Rapids Volunteer Fire Department",
@@ -2762,16 +2844,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 51,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-07",
+   "to": "2028-01",
+   "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 47,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2799,7 +2887,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Rice Lake Volunteer Fire Department",
   "registry_name": "Rice Lake Volunteer Fire Department",
@@ -2826,16 +2914,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 52,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-05",
+   "to": "2028-11",
+   "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 48,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2863,7 +2957,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Richfield Fire Department",
   "registry_name": "Richfield Fire Department",
@@ -2890,16 +2984,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 53,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-06",
+   "to": "2029-12",
+   "how": "new truck due Jun 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 49,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2927,7 +3027,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Rochester Fire Department",
   "registry_name": "Rochester Fire Department",
@@ -2954,16 +3054,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 54,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2028-09",
+   "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 50,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -2991,7 +3097,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Rogers MN Fire Department",
   "registry_name": "Rogers MN Fire Department",
@@ -3018,15 +3124,21 @@
    "year_how": null,
    "type_how": "the new truck is a quick-attack unit; departments usually replace like with like"
   },
-  "rank": 55,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-08",
+   "to": "2027-02",
+   "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 51,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [
@@ -3055,7 +3167,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Shakopee Fire Department",
   "registry_name": "Shakopee Fire Department",
@@ -3082,16 +3194,22 @@
    "year_how": null,
    "type_how": "the new trucks are two pumpers; departments usually replace like with like"
   },
-  "rank": 56,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 52,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -3119,7 +3237,77 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "St. Clair Fire Department",
+  "registry_name": "St. Clair Fire Department",
+  "city": "Saint Clair",
+  "county": "Blue Earth",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Customfire pumper on order (2026-04), delivery November2026",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
+  "proof_quote": "CUSTOMFIRE—St. Clair Fire Department pumper. Delivery in November2026.",
+  "other_signals": "",
+  "named_in_source": "St. Clair Fire Department",
+  "name_match": "exact",
+  "fdid": "07109",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 53,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
   "score": 3.0,
   "department": "West Suburban Fire Department",
   "registry_name": "Loretto Fire Department",
@@ -3146,16 +3334,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 57,
+  "stage": "replacing",
+  "window": {
+   "from": "2029-03",
+   "to": "2029-09",
+   "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
+  },
+  "rank": 54,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -3183,7 +3377,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Winona Fire Department",
   "registry_name": "Winona Fire Department",
@@ -3210,16 +3404,22 @@
    "year_how": null,
    "type_how": "the new truck is a PUC pumper; departments usually replace like with like"
   },
-  "rank": 58,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2028-06",
+   "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -3245,5 +3445,153 @@
     }
    ]
   }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Wolf Lake Fire Department",
+  "registry_name": "Wolf Lake Fire Department",
+  "city": "Wolf Lake",
+  "county": "Becker",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Midwest Fire pumper-tanker on order (2025-06), delivery November 2026",
+  "signal_date": "2025-06-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
+  "proof_quote": "MIDWEST FIRE—Wolf Lake Fire Department pumper-tanker. Delivery in November 2026.",
+  "other_signals": "",
+  "named_in_source": "Wolf Lake Fire Department",
+  "name_match": "exact",
+  "fdid": "03107",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 56,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Darfur Fire Department",
+  "registry_name": "Darfur Fire Department",
+  "city": "Butterfield",
+  "county": "Watonwan",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $399,333, awarded 8/18/23 (FY2022)",
+  "signal_date": "2023-08-18",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Darfur, City of, Vehicle Acquisition, $399,333",
+  "other_signals": "",
+  "named_in_source": "Darfur, City of",
+  "name_match": "exact",
+  "fdid": "83102",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 57,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Fulda Fire Department",
+  "registry_name": "Fulda Fire Department",
+  "city": "Fulda",
+  "county": "Murray",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $453,142, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Fulda, Vehicle Acquisition, $453,142",
+  "other_signals": "",
+  "named_in_source": "City of Fulda",
+  "name_match": "exact",
+  "fdid": "51105",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 58,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  }
 ]

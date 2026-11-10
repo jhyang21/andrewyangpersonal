@@ -1,70 +1,6 @@
 [
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 5.0,
-  "department": "Cary Fire Department",
-  "registry_name": "Cary Fire Department",
-  "city": "Cary",
-  "county": "Wake",
-  "type": "Career",
-  "website": "https://www.carync.gov/services-publications/fire",
-  "why_call": "New truck in service",
-  "detail": "New Pierce Manufacturing volterra electric pumper delivered (2026-03)",
-  "signal_date": "2026-03-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-march-2026/",
-  "proof_quote": "Department: CARY (NC) FIRE DEPARTMENT; Type: VOLTERRA ELECTRIC PUMPER; Built by: PIERCE MANUFACTURING",
-  "other_signals": "",
-  "named_in_source": "Cary Fire Department",
-  "name_match": "exact",
-  "fdid": "09203",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a volterra electric pumper; departments usually replace like with like"
-  },
-  "rank": 1,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1999 Spartan Quality Fire Truck",
-     "price": 6700.0,
-     "date": "2026-09-03",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
-    },
-    {
-     "item": "1986 Pierce Dash Fire Truck",
-     "price": 2800.0,
-     "date": "2026-06-05",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
-    },
-    {
-     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
-     "price": 10800.0,
-     "date": "2026-05-05",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.5,
   "department": "Durham Fire Department",
   "registry_name": "Durham Fire Department",
@@ -91,16 +27,22 @@
    "year_how": null,
    "type_how": "the new truck is a walk-in heavy rescue; departments usually replace like with like"
   },
-  "rank": 2,
+  "stage": "surplus",
+  "window": {
+   "from": "2025-07",
+   "to": "2026-01",
+   "how": "new truck arrived Jul 2025; the old one may already have sold quietly"
+  },
+  "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -128,7 +70,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Carolina Beach Fire Department",
   "registry_name": "Carolina Beach Fire Department",
@@ -155,16 +97,22 @@
    "year_how": null,
    "type_how": "the new truck is a custom pumper; departments usually replace like with like"
   },
-  "rank": 3,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2028-11",
+   "how": "new truck due Spring 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -192,71 +140,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Clyde Fire Department",
-  "registry_name": "Clyde Fire Department",
-  "city": "Clyde",
-  "county": "Haywood",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Toyne pumper-tanker due November 2026 (ordered 2025-02)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
-  "proof_quote": "TOYNE—Clyde Volunteer Fire Department pumper-tanker. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "Clyde Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "04404",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
-  },
-  "rank": 4,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Darlington Volunteer Fire Department",
   "registry_name": "Darlington Volunteer Fire Department",
@@ -283,77 +167,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 5,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 4.0,
-  "department": "Ebbs Chapel Fire Department",
-  "registry_name": "Ebbs Chapel Fire Department",
-  "city": "Mars Hill",
-  "county": "Madison",
-  "type": "Mostly volunteer",
-  "website": "https://www.ebbschapelfire.com/",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Toyne pumper-tanker due November 2026 (ordered 2025-02)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
-  "proof_quote": "TOYNE—Ebbs Chapel Volunteer Fire Department, Mars Hill, pumper-tanker. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "Ebbs Chapel Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "05807",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
-  },
-  "rank": 6,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Lake Toxaway Fire Rescue, Inc.",
   "registry_name": "Lake Toxaway Fire Rescue, Inc.",
@@ -380,16 +206,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
   },
-  "rank": 7,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -417,7 +249,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Morehead City Fire-EMS",
   "registry_name": "Morehead City Fire-EMS",
@@ -444,13 +276,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 8,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Murphy Volunteer Fire Department",
   "registry_name": "Murphy Volunteer Fire Department",
@@ -477,13 +315,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 9,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Northside Volunteer Fire Department, Inc.",
   "registry_name": "Northside Volunteer Fire Department, Inc.",
@@ -510,16 +354,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 10,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -547,7 +397,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Roper Fire Department, Inc.",
   "registry_name": "Roper Fire Department, Inc.",
@@ -574,16 +424,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 11,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-09",
+   "to": "2027-03",
+   "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -611,7 +467,7 @@
   }
  },
  {
-  "checked": "from FEMA's awards table",
+  "checked": "fema_table",
   "score": 4.0,
   "department": "Warrenton Rural Voluntary Fire Association Inc",
   "registry_name": "",
@@ -638,13 +494,19 @@
    "year_how": null,
    "type_how": null
   },
-  "rank": 12,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2027-08",
+   "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 4.0,
   "department": "Weaverville Fire Department",
   "registry_name": "Weaverville Fire Department",
@@ -671,16 +533,22 @@
    "year_how": null,
    "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
   },
-  "rank": 13,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-04",
+   "to": "2027-10",
+   "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -708,7 +576,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Apex Fire Department",
   "registry_name": "Apex Fire Department",
@@ -735,16 +603,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 14,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-10",
+   "to": "2028-04",
+   "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 11,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -772,7 +646,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Carova Beach Volunteer Fire & Rescue",
   "registry_name": "",
@@ -799,16 +673,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 15,
+  "stage": "replacing",
+  "window": {
+   "from": "2028-01",
+   "to": "2028-07",
+   "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 12,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -836,7 +716,77 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Cary Fire Department",
+  "registry_name": "Cary Fire Department",
+  "city": "Cary",
+  "county": "Wake",
+  "type": "Career",
+  "website": "https://www.carync.gov/services-publications/fire",
+  "why_call": "New truck in service",
+  "detail": "New Pierce Manufacturing volterra electric pumper delivered (2026-03)",
+  "signal_date": "2026-03-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-march-2026/",
+  "proof_quote": "Department: CARY (NC) FIRE DEPARTMENT; Type: VOLTERRA ELECTRIC PUMPER; Built by: PIERCE MANUFACTURING",
+  "other_signals": "",
+  "named_in_source": "Cary Fire Department",
+  "name_match": "exact",
+  "fdid": "09203",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a volterra electric pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-03",
+   "to": "2026-09",
+   "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
+  },
+  "rank": 13,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cherokee Fire Department",
   "registry_name": "",
@@ -863,16 +813,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
   },
-  "rank": 16,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-06",
+   "to": "2027-12",
+   "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 14,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "tanker",
    "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
    "thin": false,
    "comps": [
     {
@@ -900,7 +856,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "City of Gastonia Fire Department",
   "registry_name": "City of Gastonia Fire Department",
@@ -927,16 +883,22 @@
    "year_how": null,
    "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
   },
-  "rank": 17,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-03",
+   "to": "2027-09",
+   "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 15,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
    "type": "rescue",
    "band": "all ages",
-   "n": 141,
+   "n": 138,
    "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
+   "p25": 4325,
+   "p75": 15175,
    "thin": false,
    "comps": [
     {
@@ -964,7 +926,77 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Clyde Fire Department",
+  "registry_name": "Clyde Fire Department",
+  "city": "Clyde",
+  "county": "Haywood",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper-tanker on order (2025-02), delivery November 2026",
+  "signal_date": "2025-02-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
+  "proof_quote": "TOYNE—Clyde Volunteer Fire Department pumper-tanker. Delivery in November 2026.",
+  "other_signals": "",
+  "named_in_source": "Clyde Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "04404",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 16,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cove Creek Volunteer Fire Department, Inc.",
   "registry_name": "Cove Creek Volunteer Fire Department, Inc.",
@@ -991,16 +1023,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 18,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2028-06",
+   "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 17,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1028,7 +1066,7 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
   "department": "Cullasaja Gorge Fire & Rescue",
   "registry_name": "Cullasaja Gorge Fire & Rescue",
@@ -1055,16 +1093,22 @@
    "year_how": null,
    "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
-  "rank": 19,
+  "stage": "replacing",
+  "window": {
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
-   "n": 446,
-   "median": 4350,
+   "n": 437,
+   "median": 4300,
    "p25": 2800,
-   "p75": 6300,
+   "p75": 6400,
    "thin": false,
    "comps": [
     {
@@ -1092,24 +1136,374 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
+  "checked": "trade_press",
   "score": 3.0,
-  "department": "Ellenboro Fire Department",
-  "registry_name": "Ellenboro Fire Department",
-  "city": "Ellenboro",
-  "county": "Rutherford",
+  "department": "Ebbs Chapel Fire Department",
+  "registry_name": "Ebbs Chapel Fire Department",
+  "city": "Mars Hill",
+  "county": "Madison",
   "type": "Mostly volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Alexis mini pumper due February 2026 (ordered 2025-05)",
-  "signal_date": "2026-02-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-may-2025/",
-  "proof_quote": "ALEXIS—Ellenboro Fire Department mini pumper. Delivery in February 2026.",
+  "website": "https://www.ebbschapelfire.com/",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper-tanker on order (2025-02), delivery November 2026",
+  "signal_date": "2025-02-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
+  "proof_quote": "TOYNE—Ebbs Chapel Volunteer Fire Department, Mars Hill, pumper-tanker. Delivery in November 2026.",
   "other_signals": "",
-  "named_in_source": "Ellenboro Fire Department",
+  "named_in_source": "Ebbs Chapel Volunteer Fire Department",
   "name_match": "exact",
-  "fdid": "08104",
+  "fdid": "05807",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 19,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Foscoe Fire Department",
+  "registry_name": "Foscoe Fire Department",
+  "city": "Banner Elk",
+  "county": "Watauga",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Toyne Banner Elk pumper on order (2025-11), delivery December 2027",
+  "signal_date": "2025-11-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
+  "proof_quote": "TOYNE—Foscoe Volunteer Fire Department, Banner Elk pumper. Delivery in December 2027.",
+  "other_signals": "",
+  "named_in_source": "Foscoe Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "09506",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a Banner Elk pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-12",
+   "to": "2028-06",
+   "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 20,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Franklin Community Volunteer Fire Department Inc.",
+  "registry_name": "Franklin Community Volunteer Fire Department Inc.",
+  "city": "Mount Airy",
+  "county": "Surry",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Toyne tanker on order (2026-07), delivery April 2028",
+  "signal_date": "2026-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/july-2026-recent-apparatus-orders/",
+  "proof_quote": "TOYNE—Franklin Fire Department tanker. Delivery in April 2028.",
+  "other_signals": "",
+  "named_in_source": "Franklin Fire Department",
+  "name_match": "exact, ambiguous (2 same-name rows)",
+  "fdid": "08671",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-04",
+   "to": "2028-10",
+   "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 21,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Kernersville Fire Rescue Department",
+  "registry_name": "Kernersville Fire Rescue Department",
+  "city": "Kernersville",
+  "county": "Forsyth",
+  "type": "Mostly career",
+  "website": "https://www.toknc.com/",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New SVI Trucks heavy rescue due June 2026 (ordered 2025-02)",
+  "signal_date": "2026-06-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
+  "proof_quote": "SVI TRUCKS—Kernersville Fire Rescue Department heavy rescue. Delivery in June 2026.",
+  "other_signals": "",
+  "named_in_source": "Kernersville Fire Rescue Department",
+  "name_match": "exact",
+  "fdid": "03408",
   "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 22,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 138,
+   "median": 7400,
+   "p25": 4325,
+   "p75": 15175,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1996 Pierce Rescue Fire Truck",
+     "price": 3600.0,
+     "date": "2026-05-20",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47337/item/lot-0004-1996-pierce-rescue-fire-truck-297303/"
+    },
+    {
+     "item": "2001 Spartan Advantage Rescue Truck",
+     "price": 5500.0,
+     "date": "2025-07-10",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/43095/item/lot-0003-2001-spartan-advantage-rescue-truck-268522/"
+    },
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Kinston Department of Fire & Rescue",
+  "registry_name": "Kinston Department of Fire & Rescue",
+  "city": "Kinston",
+  "county": "Lenoir",
+  "type": "Career",
+  "website": "http://nc-kinston.civicplus.com/167/Fire-Rescue",
+  "why_call": "New truck on order",
+  "detail": "New E-One custom pumper on order (2026-07), delivery July 2028",
+  "signal_date": "2026-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/july-2026-recent-apparatus-orders/",
+  "proof_quote": "E-ONE—Kinston Fire Department custom pumper. Delivery in July 2028.",
+  "other_signals": "",
+  "named_in_source": "Kinston Fire Department",
+  "name_match": "exact",
+  "fdid": "05402",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a custom pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-07",
+   "to": "2029-01",
+   "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 23,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1999 Spartan Quality Fire Truck",
+     "price": 6700.0,
+     "date": "2026-09-03",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
+    },
+    {
+     "item": "1986 Pierce Dash Fire Truck",
+     "price": 2800.0,
+     "date": "2026-06-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
+    },
+    {
+     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
+     "price": 10800.0,
+     "date": "2026-05-05",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Warrensville Volunteer Fire & Rescue",
+  "registry_name": "Warrensville Volunteer Fire & Rescue",
+  "city": "Warrensville",
+  "county": "Ashe",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Toyne mini pumper on order (2025-08), delivery September 2027",
+  "signal_date": "2025-08-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-aug-2025/",
+  "proof_quote": "TOYNE—Warrensville Volunteer Fire & Rescue Department mini pumper. Delivery in September 2027.",
+  "other_signals": "",
+  "named_in_source": "Warrensville Volunteer Fire & Rescue Department",
+  "name_match": "exact",
+  "fdid": "00504",
+  "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
@@ -1119,15 +1513,21 @@
    "year_how": null,
    "type_how": "the new truck is a mini pumper; departments usually replace like with like"
   },
-  "rank": 20,
+  "stage": "replacing",
+  "window": {
+   "from": "2027-09",
+   "to": "2028-03",
+   "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [
@@ -1156,280 +1556,24 @@
   }
  },
  {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Foscoe Fire Department",
-  "registry_name": "Foscoe Fire Department",
-  "city": "Banner Elk",
-  "county": "Watauga",
-  "type": "Volunteer",
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Ellenboro Fire Department",
+  "registry_name": "Ellenboro Fire Department",
+  "city": "Ellenboro",
+  "county": "Rutherford",
+  "type": "Mostly volunteer",
   "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Toyne Banner Elk pumper on order (2025-11), delivery December 2027",
-  "signal_date": "2025-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
-  "proof_quote": "TOYNE—Foscoe Volunteer Fire Department, Banner Elk pumper. Delivery in December 2027.",
-  "other_signals": "",
-  "named_in_source": "Foscoe Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "09506",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a Banner Elk pumper; departments usually replace like with like"
-  },
-  "rank": 21,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1999 Spartan Quality Fire Truck",
-     "price": 6700.0,
-     "date": "2026-09-03",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
-    },
-    {
-     "item": "1986 Pierce Dash Fire Truck",
-     "price": 2800.0,
-     "date": "2026-06-05",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
-    },
-    {
-     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
-     "price": 10800.0,
-     "date": "2026-05-05",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Franklin Community Volunteer Fire Department Inc.",
-  "registry_name": "Franklin Community Volunteer Fire Department Inc.",
-  "city": "Mount Airy",
-  "county": "Surry",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Toyne tanker on order (2026-07), delivery April 2028",
-  "signal_date": "2026-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/july-2026-recent-apparatus-orders/",
-  "proof_quote": "TOYNE—Franklin Fire Department tanker. Delivery in April 2028.",
-  "other_signals": "",
-  "named_in_source": "Franklin Fire Department",
-  "name_match": "exact, ambiguous (2 same-name rows)",
-  "fdid": "08671",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a tanker; departments usually replace like with like"
-  },
-  "rank": 22,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 86,
-   "median": 7850,
-   "p25": 4525,
-   "p75": 16075,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Kernersville Fire Rescue Department",
-  "registry_name": "Kernersville Fire Rescue Department",
-  "city": "Kernersville",
-  "county": "Forsyth",
-  "type": "Mostly career",
-  "website": "https://www.toknc.com/",
   "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New SVI Trucks heavy rescue due June 2026 (ordered 2025-02)",
-  "signal_date": "2026-06-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2025/",
-  "proof_quote": "SVI TRUCKS—Kernersville Fire Rescue Department heavy rescue. Delivery in June 2026.",
+  "detail": "New Alexis mini pumper due February 2026 (ordered 2025-05)",
+  "signal_date": "2026-02-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-may-2025/",
+  "proof_quote": "ALEXIS—Ellenboro Fire Department mini pumper. Delivery in February 2026.",
   "other_signals": "",
-  "named_in_source": "Kernersville Fire Rescue Department",
+  "named_in_source": "Ellenboro Fire Department",
   "name_match": "exact",
-  "fdid": "03408",
+  "fdid": "08104",
   "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "rescue",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a heavy rescue; departments usually replace like with like"
-  },
-  "rank": 23,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "rescue",
-   "band": "all ages",
-   "n": 141,
-   "median": 7400,
-   "p25": 4400,
-   "p75": 15100,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1996 Pierce Rescue Fire Truck",
-     "price": 3600.0,
-     "date": "2026-05-20",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/47337/item/lot-0004-1996-pierce-rescue-fire-truck-297303/"
-    },
-    {
-     "item": "2001 Spartan Advantage Rescue Truck",
-     "price": 5500.0,
-     "date": "2025-07-10",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/43095/item/lot-0003-2001-spartan-advantage-rescue-truck-268522/"
-    },
-    {
-     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
-     "price": 9600.0,
-     "date": "2026-11-05",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Kinston Department of Fire & Rescue",
-  "registry_name": "Kinston Department of Fire & Rescue",
-  "city": "Kinston",
-  "county": "Lenoir",
-  "type": "Career",
-  "website": "http://nc-kinston.civicplus.com/167/Fire-Rescue",
-  "why_call": "New truck on order",
-  "detail": "New E-One custom pumper on order (2026-07), delivery July 2028",
-  "signal_date": "2026-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/july-2026-recent-apparatus-orders/",
-  "proof_quote": "E-ONE—Kinston Fire Department custom pumper. Delivery in July 2028.",
-  "other_signals": "",
-  "named_in_source": "Kinston Fire Department",
-  "name_match": "exact",
-  "fdid": "05402",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a custom pumper; departments usually replace like with like"
-  },
-  "rank": 24,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 446,
-   "median": 4350,
-   "p25": 2800,
-   "p75": 6300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1999 Spartan Quality Fire Truck",
-     "price": 6700.0,
-     "date": "2026-09-03",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48725/item/lot-0005-1999-spartan-quality-fire-truck-307539/"
-    },
-    {
-     "item": "1986 Pierce Dash Fire Truck",
-     "price": 2800.0,
-     "date": "2026-06-05",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/47493/item/lot-0002-1986-pierce-dash-fire-truck-298465/"
-    },
-    {
-     "item": "2006 Pierce Custom Contender Cab Over Engine Pumper",
-     "price": 10800.0,
-     "date": "2026-05-05",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/47011/item/lot-0008-2006-pierce-custom-contender-cab-over-engine-pumper-294817/"
-    }
-   ]
-  }
- },
- {
-  "checked": "listed in a trade-press delivery column",
-  "score": 3.0,
-  "department": "Warrensville Volunteer Fire & Rescue",
-  "registry_name": "Warrensville Volunteer Fire & Rescue",
-  "city": "Warrensville",
-  "county": "Ashe",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "New Toyne mini pumper on order (2025-08), delivery September 2027",
-  "signal_date": "2025-08-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-aug-2025/",
-  "proof_quote": "TOYNE—Warrensville Volunteer Fire & Rescue Department mini pumper. Delivery in September 2027.",
-  "other_signals": "",
-  "named_in_source": "Warrensville Volunteer Fire & Rescue Department",
-  "name_match": "exact",
-  "fdid": "00504",
-  "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
@@ -1439,15 +1583,21 @@
    "year_how": null,
    "type_how": "the new truck is a mini pumper; departments usually replace like with like"
   },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2026-08",
+   "how": "new truck was due Feb 2026; the old one may already have sold quietly"
+  },
   "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
    "band": "all ages",
-   "n": 16,
-   "median": 8600,
-   "p25": 6675,
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
    "p75": 12300,
    "thin": false,
    "comps": [

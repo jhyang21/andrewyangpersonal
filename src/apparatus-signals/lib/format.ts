@@ -14,6 +14,26 @@ export function formatDate(value: string | null | undefined): string {
   return m[3] ? `${Number(m[3])} ${month} ${m[1]}` : `${month} ${m[1]}`;
 }
 
+/** "2027-04", "2027-07" -> "Apr–Jul 2027"; across a year end -> "Nov 2026–Mar 2027". */
+export function formatWindow(w: { from: string; to: string }): string {
+  const [fy, fm] = w.from.split("-");
+  const [ty, tm] = w.to.split("-");
+  const from = MONTHS[Number(fm) - 1];
+  const to = MONTHS[Number(tm) - 1];
+  if (!from || !to) return `${w.from}–${w.to}`;
+  if (w.from === w.to) return `${from} ${fy}`;
+  return fy === ty ? `${from}–${to} ${ty}` : `${from} ${fy}–${to} ${ty}`;
+}
+
+export function capitalize(s: string): string {
+  return s ? s[0].toUpperCase() + s.slice(1) : s;
+}
+
+/** "From FEMA’s table" -> "from FEMA’s table": lowers only a capital followed by a small letter. */
+export function lowerFirst(s: string): string {
+  return /^[A-Z][a-z]/.test(s) ? s[0].toLowerCase() + s.slice(1) : s;
+}
+
 const intFmt = new Intl.NumberFormat("en-US");
 const moneyFmt = new Intl.NumberFormat("en-US", {
   style: "currency",
