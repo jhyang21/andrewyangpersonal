@@ -132,9 +132,9 @@
   "fdid": "03101"
  },
  {
-  "kind": "delivery_due",
-  "date": "2026-11-01",
-  "detail": "New Midwest Fire tanker-pumper due November 2026 (ordered 2026-01)",
+  "kind": "new_truck_ordered",
+  "date": "2026-01-01",
+  "detail": "New Midwest Fire tanker-pumper on order (2026-01), delivery November 2026",
   "old_truck": null,
   "where": "trade press",
   "quote": "MIDWEST FIRE—Gettysburg Fire Department tanker-pumper. Delivery in November 2026.",
@@ -143,7 +143,7 @@
   "expected": "2026-11",
   "expected_precision": "month",
   "expected_words": "November 2026",
-  "points": 4,
+  "points": 3,
   "read_by": "feed",
   "source_name": "Gettysburg Fire Department",
   "source_city": "",

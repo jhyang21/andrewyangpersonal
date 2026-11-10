@@ -118,9 +118,9 @@
   "fdid": "09205"
  },
  {
-  "kind": "delivery_due",
-  "date": "2026-11-01",
-  "detail": "New Toyne pumper-tanker due November 2026 (ordered 2025-02)",
+  "kind": "new_truck_ordered",
+  "date": "2025-02-01",
+  "detail": "New Toyne pumper-tanker on order (2025-02), delivery November 2026",
   "old_truck": null,
   "where": "trade press",
   "quote": "TOYNE—Clyde Volunteer Fire Department pumper-tanker. Delivery in November 2026.",
@@ -129,7 +129,7 @@
   "expected": "2026-11",
   "expected_precision": "month",
   "expected_words": "November 2026",
-  "points": 4,
+  "points": 3,
   "read_by": "feed",
   "source_name": "Clyde Volunteer Fire Department",
   "source_city": "",
@@ -178,9 +178,9 @@
   "fdid": "03408"
  },
  {
-  "kind": "delivery_due",
-  "date": "2026-11-01",
-  "detail": "New Toyne pumper-tanker due November 2026 (ordered 2025-02)",
+  "kind": "new_truck_ordered",
+  "date": "2025-02-01",
+  "detail": "New Toyne pumper-tanker on order (2025-02), delivery November 2026",
   "old_truck": null,
   "where": "trade press",
   "quote": "TOYNE—Ebbs Chapel Volunteer Fire Department, Mars Hill, pumper-tanker. Delivery in November 2026.",
@@ -189,7 +189,7 @@
   "expected": "2026-11",
   "expected_precision": "month",
   "expected_words": "November 2026",
-  "points": 4,
+  "points": 3,
   "read_by": "feed",
   "source_name": "Ebbs Chapel Volunteer Fire Department",
   "source_city": "Mars Hill",

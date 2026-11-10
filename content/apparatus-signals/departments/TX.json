@@ -9,7 +9,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "New US Fire Apparatus tanker on order (2026-10), delivery December",
+  "detail": "New US Fire Apparatus tanker on order (2026-10), delivery Dec 2026",
   "signal_date": "2026-10-01",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/october-2026-recent-apparatus-orders/",
   "proof_quote": "US FIRE APPARATUS—Edcouch Volunteer Fire Department tanker. Delivery in December.",
@@ -29,9 +29,9 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-02",
-   "to": "2027-10",
-   "how": "ordered Oct 2026; builds have taken four to twelve months in the back-test"
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
   "rank": 1,
   "tier": "2 Call this month",
@@ -72,76 +72,6 @@
  {
   "checked": "trade_press",
   "score": 5.0,
-  "department": "Bexar County Emergency Service District No. 8",
-  "registry_name": "Bexar County Emergency Service District No. 8",
-  "city": "Helotes",
-  "county": "Bexar",
-  "type": "Mostly volunteer",
-  "website": "http://www.esd8.org/",
-  "why_call": "New truck in service",
-  "detail": "New Pierce Manufacturing tractor-drawn aerial quint delivered (2025-12)",
-  "signal_date": "2025-12-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-december-2025/",
-  "proof_quote": "Department: BEXAR COUNTY (TX) EMERGENCY SERVICE DEPARTMENT DISTRICT 2; Type: TRACTOR-DRAWN AERIAL QUINT; Built by: PIERCE MANUFACTURING",
-  "other_signals": "",
-  "named_in_source": "Bexar County Emergency Service Department District 2",
-  "name_match": "exact, ambiguous (3 same-name rows)",
-  "fdid": "AW308",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a tractor-drawn aerial quint; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2025-12",
-   "to": "2026-06",
-   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
-  },
-  "rank": 2,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 103,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8550,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 5.0,
   "department": "Dfw International Airport",
   "registry_name": "",
   "city": "",
@@ -173,7 +103,7 @@
    "to": "2027-02",
    "how": "new truck in service Aug 2026; we allow six months for the old one to list"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -212,7 +142,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -251,7 +181,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -290,7 +220,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -360,7 +290,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -399,7 +329,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -414,7 +344,7 @@
   "type": "",
   "website": "",
   "why_call": "New truck on order",
-  "detail": "New US Fire Apparatus industrial pumper on order (2026-10), delivery December",
+  "detail": "New US Fire Apparatus industrial pumper on order (2026-10), delivery Dec 2026",
   "signal_date": "2026-10-01",
   "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/october-2026-recent-apparatus-orders/",
   "proof_quote": "US FIRE APPARATUS—Valero Port Arthur industrial pumper. Delivery in December.",
@@ -434,11 +364,11 @@
   },
   "stage": "replacing",
   "window": {
-   "from": "2027-02",
-   "to": "2027-10",
-   "how": "ordered Oct 2026; builds have taken four to twelve months in the back-test"
+   "from": "2026-12",
+   "to": "2027-06",
+   "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 9,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -508,10 +438,80 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Bexar County Emergency Service District No. 8",
+  "registry_name": "Bexar County Emergency Service District No. 8",
+  "city": "Helotes",
+  "county": "Bexar",
+  "type": "Mostly volunteer",
+  "website": "http://www.esd8.org/",
+  "why_call": "New truck in service",
+  "detail": "New Pierce Manufacturing tractor-drawn aerial quint delivered (2025-12)",
+  "signal_date": "2025-12-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-december-2025/",
+  "proof_quote": "Department: BEXAR COUNTY (TX) EMERGENCY SERVICE DEPARTMENT DISTRICT 2; Type: TRACTOR-DRAWN AERIAL QUINT; Built by: PIERCE MANUFACTURING",
+  "other_signals": "",
+  "named_in_source": "Bexar County Emergency Service Department District 2",
+  "name_match": "exact, ambiguous (3 same-name rows)",
+  "fdid": "AW308",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tractor-drawn aerial quint; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
+  },
+  "rank": 10,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
  },
  {
   "checked": "trade_press",
@@ -794,45 +794,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Fort Worth Fire Department",
-  "registry_name": "Fort Worth Fire Department",
-  "city": "Fort Worth",
-  "county": "Tarrant",
-  "type": "Career",
-  "website": "http://fortworthtexas.gov/fire/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $1,380,570, awarded 9/20/23 (FY2022)",
-  "signal_date": "2023-09-20",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Fort Worth, City of, Vehicle Acquisition, $1,380,570",
-  "other_signals": "",
-  "named_in_source": "Fort Worth, City of",
-  "name_match": "exact",
-  "fdid": "WB901",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-03",
-   "to": "2026-09",
-   "how": "grant awarded Sep 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 15,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Hunt Volunteer Fire Department",
@@ -866,7 +827,7 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 16,
+  "rank": 15,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -936,7 +897,7 @@
    "to": "2028-11",
    "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 17,
+  "rank": 16,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1006,7 +967,7 @@
    "to": "2027-09",
    "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 18,
+  "rank": 17,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1076,7 +1037,7 @@
    "to": "2027-09",
    "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 19,
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1146,7 +1107,7 @@
    "to": "2027-08",
    "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 20,
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1216,7 +1177,7 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1286,7 +1247,7 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 22,
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1356,7 +1317,7 @@
    "to": "2027-09",
    "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 23,
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1426,7 +1387,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1496,7 +1457,7 @@
    "to": "2026-02",
    "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
   },
-  "rank": 25,
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1566,7 +1527,7 @@
    "to": "2028-01",
    "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 26,
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1636,7 +1597,7 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 27,
+  "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1706,7 +1667,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 28,
+  "rank": 27,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1743,84 +1704,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Refugio Volunteer Fire department",
-  "registry_name": "Refugio Volunteer Fire department",
-  "city": "Refugio",
-  "county": "Refugio",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $668,095, awarded 8/11/23 (FY2022)",
-  "signal_date": "2023-08-11",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Refugio, Town of, Vehicle Acquisition, $668,095",
-  "other_signals": "",
-  "named_in_source": "Refugio, Town of",
-  "name_match": "exact",
-  "fdid": "TT403",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-02",
-   "to": "2026-08",
-   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 29,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Texas A&M Engineering Extension Service",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $500,000, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Texas A&M Engineering Extension Service, Vehicle Acquisition, $500,000",
-  "other_signals": "",
-  "named_in_source": "Texas A&M Engineering Extension Service",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 30,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Tomball Fire Department",
@@ -1854,7 +1737,7 @@
    "to": "2026-11",
    "how": "new truck was due May 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 31,
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1924,7 +1807,7 @@
    "to": "2025-12",
    "how": "new truck arrived Jun 2025; the old one may already have sold quietly"
   },
-  "rank": 32,
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1994,7 +1877,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 33,
+  "rank": 30,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2064,7 +1947,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 34,
+  "rank": 31,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2134,7 +2017,7 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 35,
+  "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2204,7 +2087,7 @@
    "to": "2028-05",
    "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 36,
+  "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2274,7 +2157,7 @@
    "to": "2028-06",
    "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 37,
+  "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2309,5 +2192,122 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Fort Worth Fire Department",
+  "registry_name": "Fort Worth Fire Department",
+  "city": "Fort Worth",
+  "county": "Tarrant",
+  "type": "Career",
+  "website": "http://fortworthtexas.gov/fire/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $1,380,570, awarded 9/20/23 (FY2022)",
+  "signal_date": "2023-09-20",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Fort Worth, City of, Vehicle Acquisition, $1,380,570",
+  "other_signals": "",
+  "named_in_source": "Fort Worth, City of",
+  "name_match": "exact",
+  "fdid": "WB901",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-03",
+   "to": "2026-09",
+   "how": "grant awarded Sep 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 35,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Refugio Volunteer Fire department",
+  "registry_name": "Refugio Volunteer Fire department",
+  "city": "Refugio",
+  "county": "Refugio",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $668,095, awarded 8/11/23 (FY2022)",
+  "signal_date": "2023-08-11",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Refugio, Town of, Vehicle Acquisition, $668,095",
+  "other_signals": "",
+  "named_in_source": "Refugio, Town of",
+  "name_match": "exact",
+  "fdid": "TT403",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 36,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Texas A&M Engineering Extension Service",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $500,000, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Texas A&M Engineering Extension Service, Vehicle Acquisition, $500,000",
+  "other_signals": "",
+  "named_in_source": "Texas A&M Engineering Extension Service",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 37,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
  }
 ]

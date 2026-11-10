@@ -444,115 +444,6 @@
   "guide": null
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Fire Department Administrators Service",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $354,545, awarded 8/11/23 (FY2022)",
-  "signal_date": "2023-08-11",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Fire Department Administrators Service, Vehicle Acquisition, $354,545",
-  "other_signals": "",
-  "named_in_source": "Fire Department Administrators Service",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-02",
-   "to": "2026-08",
-   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 10,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
-  "department": "Howard County Fire and Rescue",
-  "registry_name": "Howard County Fire and Rescue",
-  "city": "Marriottsville",
-  "county": "Howard",
-  "type": "Mostly career",
-  "website": "https://www.howardcountymd.gov/fire-and-rescue-services",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Alexis pumper-tanker due December 2025 (ordered 2025-08)",
-  "signal_date": "2025-12-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-aug-2025/",
-  "proof_quote": "ALEXIS—Howard County Fire Department, Columbia, pumper-tanker. Delivery in December 2025.",
-  "other_signals": "",
-  "named_in_source": "Howard County Fire Department",
-  "name_match": "exact",
-  "fdid": "13011",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-12",
-   "to": "2026-06",
-   "how": "new truck was due Dec 2025; the old one may already have sold quietly"
-  },
-  "rank": 11,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Montgomery County Fire & Rescue Service",
@@ -586,7 +477,7 @@
    "to": "2028-02",
    "how": "new truck due Summer 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 12,
+  "rank": 10,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -655,6 +546,115 @@
    "from": "2028-08",
    "to": "2029-02",
    "how": "new truck due Aug 2028; we allow six months after delivery for the old one to list"
+  },
+  "rank": 11,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Fire Department Administrators Service",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $354,545, awarded 8/11/23 (FY2022)",
+  "signal_date": "2023-08-11",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Fire Department Administrators Service, Vehicle Acquisition, $354,545",
+  "other_signals": "",
+  "named_in_source": "Fire Department Administrators Service",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 12,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Howard County Fire and Rescue",
+  "registry_name": "Howard County Fire and Rescue",
+  "city": "Marriottsville",
+  "county": "Howard",
+  "type": "Mostly career",
+  "website": "https://www.howardcountymd.gov/fire-and-rescue-services",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Alexis pumper-tanker due December 2025 (ordered 2025-08)",
+  "signal_date": "2025-12-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-aug-2025/",
+  "proof_quote": "ALEXIS—Howard County Fire Department, Columbia, pumper-tanker. Delivery in December 2025.",
+  "other_signals": "",
+  "named_in_source": "Howard County Fire Department",
+  "name_match": "exact",
+  "fdid": "13011",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck was due Dec 2025; the old one may already have sold quietly"
   },
   "rank": 13,
   "tier": "3 Watch",

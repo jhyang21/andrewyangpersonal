@@ -351,45 +351,6 @@
   "guide": null
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Carter City Volunteer Fire Department",
-  "registry_name": "Carter City Volunteer Fire Department",
-  "city": "Carter",
-  "county": "Carter",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $154,463, awarded 9/1/23 (FY2022)",
-  "signal_date": "2023-09-01",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Carter County Emergency Ambulance Service, Vehicle Acquisition, $154,463",
-  "other_signals": "",
-  "named_in_source": "Carter County Emergency Ambulance Service",
-  "name_match": "exact",
-  "fdid": "22873",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-03",
-   "to": "2026-09",
-   "how": "grant awarded Sep 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 10,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Daviess County Fiscal Court/Airport Sorgho",
@@ -423,7 +384,7 @@
    "to": "2027-09",
    "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -493,7 +454,7 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 12,
+  "rank": 11,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -531,7 +492,46 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
+  "department": "Carter City Volunteer Fire Department",
+  "registry_name": "Carter City Volunteer Fire Department",
+  "city": "Carter",
+  "county": "Carter",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $154,463, awarded 9/1/23 (FY2022)",
+  "signal_date": "2023-09-01",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Carter County Emergency Ambulance Service, Vehicle Acquisition, $154,463",
+  "other_signals": "",
+  "named_in_source": "Carter County Emergency Ambulance Service",
+  "name_match": "exact",
+  "fdid": "22873",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-03",
+   "to": "2026-09",
+   "how": "grant awarded Sep 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 12,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
   "department": "Gracey Fire Department",
   "registry_name": "Gracey Fire Department",
   "city": "Gracey",
@@ -570,7 +570,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Haywood Volunteer Fire Department",
   "registry_name": "Haywood Volunteer Fire Department",
   "city": "Glasgow",
@@ -609,7 +609,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Laurel County Fire Department",
   "registry_name": "Laurel County Fire Department",
   "city": "London",

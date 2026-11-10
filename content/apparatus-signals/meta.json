@@ -1,12 +1,12 @@
 {
  "updated": "2026-11-09",
- "generated_at": "2026-11-10T01:50:24Z",
+ "generated_at": "2026-11-10T03:08:16Z",
  "totals": {
   "states": 51,
   "departments_in_registry": 27102,
   "leads": 1112,
-  "leads_week": 26,
-  "hand_read_leads": 162,
+  "leads_week": 23,
+  "hand_read_leads": 161,
   "observed_leads": 133,
   "signals": 1262,
   "deep_states": [
@@ -19,7 +19,7 @@
   "sales": 1231,
   "guide_total": {
    "trucks": 615,
-   "median_sum": 3660875
+   "median_sum": 3659075
   }
  },
  "sources": [

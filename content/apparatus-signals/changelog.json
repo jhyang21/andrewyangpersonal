@@ -3,13 +3,12 @@
   "date": "2026-11-09",
   "states": 51,
   "leads": 1112,
-  "leads_week": 26,
-  "hand_read_leads": 162,
+  "leads_week": 23,
+  "hand_read_leads": 161,
   "observed_leads": 133,
   "signals": 1262,
   "new_leads": [
    "CT: Norfolk Volunteer Fire Department, Inc. (Money approved for a new truck)",
-   "CT: Litchfield Fire Company, Inc. (New truck on order)",
    "CT: Simsbury Volunteer Fire Department (New truck on order)",
    "CT: Torrington Fire Department (Board approved buying a new truck)",
    "CT: Ansonia Fire Department (Plans to sell a truck)",
@@ -23,21 +22,22 @@
    "CT: Cornwall Volunteer Fire Department (New truck on order)",
    "CT: East Haddam Volunteer Fire Department (New truck on order)",
    "CT: Guilford Fire Department (New truck on order)",
-   "CT: Hawleyville Volunteer Fire Company #1, Inc. (New truck on order)",
-   "CT: Hazardville Fire Department (New truck on order)",
-   "CT: Mystic Fire Department (New truck on order)",
+   "CT: Litchfield Fire Company, Inc. (New truck on order)",
    "CT: New Hartford Fire Department (Sold its old truck direct)",
    "CT: New Haven Fire Department (New truck on order)",
    "CT: Noroton Heights Fire Department, Inc. (Took bids on a truck; result not found)",
    "CT: North Branford Fire Department (New truck on order)",
-   "CT: Plainfield Fire Company (New truck on order)",
    "CT: Plainville Fire Department (New truck on order)",
-   "CT: Seymour Fire Department (New truck on order)",
    "CT: Southbury Volunteer Firemen's Association (New truck on order)",
-   "CT: Stamford Fire Department (New truck on order)",
    "CT: Westfield Volunteer Fire Department (New truck on order)",
    "CT: Westport Fire Department (New truck on order)",
    "CT: Columbia Volunteer Fire Department, Inc. (Sold its old truck direct)",
+   "CT: Hawleyville Volunteer Fire Company #1, Inc. (New truck on order)",
+   "CT: Hazardville Fire Department (New truck on order)",
+   "CT: Mystic Fire Department (New truck on order)",
+   "CT: Plainfield Fire Company (New truck on order)",
+   "CT: Seymour Fire Department (New truck on order)",
+   "CT: Stamford Fire Department (New truck on order)",
    "NJ: Township of South Brunswick (Board voted to sell a truck)",
    "NJ: Cherry Hill Fire Department (Board voted to sell a truck)",
    "NJ: Alloway Township Fire Company (New truck in service)",
@@ -46,10 +46,8 @@
    "NJ: Barnegat Light Volunteer Fire Company #1 (Money approved for a new truck)",
    "NJ: Hamilton Township (Won a grant for a new truck)",
    "NJ: Lambertville Fire Department (Money approved for a new truck)",
-   "NJ: West Milford Fire Department (New truck was due; delivery not confirmed)",
    "NJ: Borough of Bernardsville / Bernardsville Fire Company (Money approved for a new truck)",
    "NJ: Centerton Fire Company (Pittsgrove Fire District 3) (Money approved for a new truck)",
-   "NJ: City of Camden Fire Department (New truck was due; delivery not confirmed)",
    "NJ: Gibbsboro Fire Company #1 (Money approved for a new truck)",
    "NJ: Jamesburg Volunteer Fire Department (Money approved for a new truck)",
    "NJ: Jefferson Township Fire Department (Board approved buying a new truck)",
@@ -57,18 +55,20 @@
    "NJ: Paramus Fire Department (Board approved buying a new truck)",
    "NJ: Pennsauken Fire Department (New truck on order)",
    "NJ: Pennsville Fire and Rescue Company 1 (Board approved buying a new truck)",
-   "NJ: Ventnor City Fire Department (Money approved for a new truck)"
+   "NJ: Ventnor City Fire Department (Money approved for a new truck)",
+   "NJ: Washington Township (Money approved for a new truck)",
+   "NJ: Far Hills-Bedminster Fire Department (New truck was due; delivery not confirmed)"
   ],
   "new_lead_count": 659,
   "new_from_feeds": [
    {
     "kind": "new_truck_ordered",
-    "count": 383,
+    "count": 392,
     "source": "trade press"
    },
    {
     "kind": "delivery_due",
-    "count": 129,
+    "count": 120,
     "source": "trade press"
    },
    {
@@ -83,7 +83,7 @@
    }
   ],
   "dropped": [
-   "PA: 17007"
+   "PA: Lawrence Township #3 Station 7 (17007)"
   ],
   "dropped_count": 1,
   "compared_with": "2026-11-06"

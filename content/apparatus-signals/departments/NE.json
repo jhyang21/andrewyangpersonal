@@ -40,76 +40,6 @@
  },
  {
   "checked": "trade_press",
-  "score": 5.0,
-  "department": "Adams Rural Fire Department",
-  "registry_name": "Adams Rural Fire Department",
-  "city": "Adams",
-  "county": "Gage",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Danko Emergency Equipment pumper/tanker delivered (2026-04)",
-  "signal_date": "2026-04-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-april-2026/",
-  "proof_quote": "Department: ADAMS (NE) RURAL FIRE PROTECTION DISTRICT; Type: PUMPER/TANKER; Built by: DANKO EMERGENCY EQUIPMENT",
-  "other_signals": "",
-  "named_in_source": "Adams Rural Fire Protection District",
-  "name_match": "exact",
-  "fdid": "03001",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-04",
-   "to": "2026-10",
-   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
-  },
-  "rank": 2,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
   "score": 4.0,
   "department": "Columbus Rural Fire Protection District",
   "registry_name": "Columbus Rural Fire Protection District",
@@ -142,7 +72,7 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -212,7 +142,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -244,6 +174,76 @@
      "date": "2026-10-23",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Adams Rural Fire Department",
+  "registry_name": "Adams Rural Fire Department",
+  "city": "Adams",
+  "county": "Gage",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "New Danko Emergency Equipment pumper/tanker delivered (2026-04)",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-april-2026/",
+  "proof_quote": "Department: ADAMS (NE) RURAL FIRE PROTECTION DISTRICT; Type: PUMPER/TANKER; Built by: DANKO EMERGENCY EQUIPMENT",
+  "other_signals": "",
+  "named_in_source": "Adams Rural Fire Protection District",
+  "name_match": "exact",
+  "fdid": "03001",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
+  },
+  "rank": 4,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
   }
@@ -1161,76 +1161,6 @@
  {
   "checked": "trade_press",
   "score": 3.0,
-  "department": "Linwood Volunteer Fire & Rescue",
-  "registry_name": "Linwood Volunteer Fire & Rescue",
-  "city": "Linwood",
-  "county": "Butler",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Danko pumper-tanker due February 2026 (ordered 2025-03)",
-  "signal_date": "2026-02-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2025/",
-  "proof_quote": "DANKO—Linwood Volunteer Fire Department pumper-tanker. Delivery in February 2026.",
-  "other_signals": "",
-  "named_in_source": "Linwood Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "25006",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-02",
-   "to": "2026-08",
-   "how": "new truck was due Feb 2026; the old one may already have sold quietly"
-  },
-  "rank": 18,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
   "department": "Neligh Volunteer Fire Department",
   "registry_name": "Neligh Volunteer Fire Department",
   "city": "Neligh",
@@ -1262,7 +1192,7 @@
    "to": "2028-06",
    "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 19,
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1332,7 +1262,7 @@
    "to": "2028-11",
    "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 20,
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1402,7 +1332,7 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1472,7 +1402,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 22,
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1542,7 +1472,7 @@
    "to": "2029-07",
    "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 23,
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1612,7 +1542,7 @@
    "to": "2029-07",
    "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1682,7 +1612,7 @@
    "to": "2028-11",
    "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 25,
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1752,7 +1682,7 @@
    "to": "2026-04",
    "how": "new truck was due Oct 2025; the old one may already have sold quietly"
   },
-  "rank": 26,
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1784,6 +1714,76 @@
      "date": "2026-02-20",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Linwood Volunteer Fire & Rescue",
+  "registry_name": "Linwood Volunteer Fire & Rescue",
+  "city": "Linwood",
+  "county": "Butler",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Danko pumper-tanker due February 2026 (ordered 2025-03)",
+  "signal_date": "2026-02-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2025/",
+  "proof_quote": "DANKO—Linwood Volunteer Fire Department pumper-tanker. Delivery in February 2026.",
+  "other_signals": "",
+  "named_in_source": "Linwood Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "25006",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-02",
+   "to": "2026-08",
+   "how": "new truck was due Feb 2026; the old one may already have sold quietly"
+  },
+  "rank": 26,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
     }
    ]
   }

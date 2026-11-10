@@ -8,12 +8,12 @@
   "county": "Otsego",
   "type": "Volunteer",
   "website": "mountvisionfd.com",
-  "why_call": "Fire truck at auction now",
+  "why_call": "Fire truck or ambulance at auction now",
   "detail": "2009 GMC TopKick C4500 Ambulance (current bid $710)",
   "signal_date": "2026-11-10",
   "proof_url": "https://www.auctionsinternational.com/auction/laurens-fire-district-ny-49585-49585/bidgallery/",
   "proof_quote": "LAURENS FIRE DISTRICT-NY #49585 (2 lots) / Lot # 0001 2009 GMC TopKick C4500 Ambulance",
-  "other_signals": "Money approved for a new truck: New 2026 ambulance and new 2026 pumper (special vote 19 May 2026; result not posted) | Gear at auction now (no truck): 2022 Big Tex 70PI-18XBK 18 Foot Trailer (current bid $2,350)",
+  "other_signals": "Money approved for a new truck: New 2026 ambulance and new 2026 pumper (put to a special vote on 19 May 2026) | Gear at auction now (no truck): 2022 Big Tex 70PI-18XBK 18 Foot Trailer (current bid $2,350)",
   "named_in_source": "Laurens Fire District",
   "name_match": "hand-checked alias",
   "fdid": "39014",
@@ -144,12 +144,12 @@
   "county": "Chenango",
   "type": "Volunteer",
   "website": "www.oxfordfd.com",
-  "why_call": "Fire truck at auction now",
+  "why_call": "Fire truck or ambulance at auction now",
   "detail": "2001 HME Central States Fire Truck (current bid $105)",
   "signal_date": "2026-11-13",
   "proof_url": "https://www.auctionsinternational.com/auction/village-of-oxford-ny-48402-48402/item/2001-hme-central-states-fire-truck-305469/",
   "proof_quote": "VILLAGE OF OXFORD-NY #48402 (1 lots) / Lot # 0001: 2001 HME Central States Fire Truck",
-  "other_signals": "Board voted to sell a truck: Selling: 2001 KME aerial platform (EP-267). Public auction planned (minutes not opened)",
+  "other_signals": "Board voted to sell a truck: Selling: 2001 KME aerial platform (EP-267). Public auction planned",
   "named_in_source": "Village of Oxford",
   "name_match": "exact",
   "fdid": "09014",
@@ -210,7 +210,7 @@
   "county": "Nassau",
   "type": "Volunteer",
   "website": "https://www.seacliff-ny.gov/about-village/pages/services-schools",
-  "why_call": "Fire truck at auction now",
+  "why_call": "Fire truck or ambulance at auction now",
   "detail": "1998 Freightliner ALF/American LaFrance Eagle Fire Pumper (current bid $1,375)",
   "signal_date": "2026-11-17",
   "proof_url": "https://www.auctionsinternational.com/auction/village-of-sea-cliff-long-island-ny-49915-49915/item/1998-freightliner-alfamerican-lafrance-eagle-fire-pumper-314860/",
@@ -296,11 +296,7 @@
    "type_how": null
   },
   "stage": "sold",
-  "window": {
-   "from": "2026-01",
-   "to": "2026-07",
-   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
-  },
+  "window": null,
   "rank": 5,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
@@ -385,7 +381,7 @@
   "county": "Westchester",
   "type": "Mostly career",
   "website": "https://villageoflarchmont.org/fire/",
-  "why_call": "Fire truck at auction now",
+  "why_call": "Fire truck or ambulance at auction now",
   "detail": "1992 Pierce Arrow Crew Cab Fire Truck (current bid $105)",
   "signal_date": "2026-11-18",
   "proof_url": "https://www.auctionsinternational.com/auction/village-of-larchmont-ny-49548-49548/item/1992-pierce-arrow-crew-cab-fire-truck-312884/",
@@ -451,7 +447,7 @@
   "county": "Nassau",
   "type": "Mostly volunteer",
   "website": "",
-  "why_call": "Fire truck at auction now",
+  "why_call": "Fire truck or ambulance at auction now",
   "detail": "2008 Ferrara Inferno Rear Mount Aerial Truck (current bid $14,100)",
   "signal_date": "2026-11-10",
   "proof_url": "https://www.auctionsinternational.com/auction/city-of-long-beach-fd-long-island-ny-49831-49831/bidgallery/",
@@ -517,7 +513,7 @@
   "county": "Nassau",
   "type": "Volunteer",
   "website": "",
-  "why_call": "Fire truck at auction now",
+  "why_call": "Fire truck or ambulance at auction now",
   "detail": "2002 Spartan Gladiator 95 Foot Tower Ladder Truck (current bid $15,100)",
   "signal_date": "2026-11-13",
   "proof_url": "https://www.auctionsinternational.com/auction/roosevelt-fire-district-long-island-ny-49166-49166/item/2002-spartan-gladiator-95-foot-tower-ladder-truck-309972/",
@@ -576,45 +572,6 @@
  },
  {
   "checked": "confirmed",
-  "score": 6.5,
-  "department": "Pine Hill Hose Company 5",
-  "registry_name": "Pine Hill Hose Company 5",
-  "city": "Cheektowaga",
-  "county": "Erie",
-  "type": "Volunteer",
-  "website": "https://www.pinehillhosecompany.org/",
-  "why_call": "New truck in service",
-  "detail": "Sutphen pumper, delivery February 2026 (delivered)",
-  "signal_date": "2026-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
-  "proof_quote": "SUTPHEN—Pine Hill Fire District No. 5, Cheektowaga, pumper.",
-  "other_signals": "New truck was due; delivery not confirmed: New Sutphen pumper due February 2026 (ordered 2026-01)",
-  "named_in_source": "Pine Hill Fire District No. 5",
-  "name_match": "exact",
-  "fdid": "15070",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-01",
-   "to": "2026-07",
-   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
-  },
-  "rank": 10,
-  "tier": "1 Call this week",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
- },
- {
-  "checked": "confirmed",
   "score": 6.0,
   "department": "Montauk Fire Department",
   "registry_name": "Montauk Fire Department",
@@ -647,80 +604,10 @@
    "to": "2027-03",
    "how": "new truck in service Sep 2026; we allow six months for the old one to list"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "1 Call this week",
   "ask_for": "Fire chief or company president",
   "guide": null
- },
- {
-  "checked": "partly",
-  "score": 6.0,
-  "department": "Parishville Volunteer Fire Company",
-  "registry_name": "Parishville Volunteer Fire Company",
-  "city": "Parishville",
-  "county": "Saint Lawrence",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "Replacement ambulance, in service; replaces 2009 ambulance",
-  "signal_date": "2026-02",
-  "proof_url": "https://dailydispatch.com/fire-news/new-york/parishville-fire-department-gets-new-ambulance",
-  "proof_quote": "has put a new ambulance into service, replacing a 2009 model",
-  "other_signals": "",
-  "named_in_source": "Parishville Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "45033",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": "2009 ambulance",
-   "type": "ambulance",
-   "year": 2009,
-   "year_how": "stated",
-   "type_how": "named in the record"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-02",
-   "to": "2026-08",
-   "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
-  },
-  "rank": 12,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "ambulance",
-   "band": "16-20",
-   "n": 67,
-   "median": 3800,
-   "p25": 2312,
-   "p75": 5850,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2009 Ford E450 Ambulance",
-     "price": 6200.0,
-     "date": "2026-01-06",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/45665/item/lot-0001-2009-ford-e450-ambulance-285381/"
-    },
-    {
-     "item": "2001 Ford E450 Ambulance",
-     "price": 5100.0,
-     "date": "2018-06-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/14026/item/lot-0002-2001-ford-e450-ambulance-85500/"
-    },
-    {
-     "item": "2001 Ford E450 Type III Ambulance",
-     "price": 5300.0,
-     "date": "2018-04-13",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/13728/item/lot-0001-2001-ford-e450-type-iii-ambulance-83793/"
-    }
-   ]
-  }
  },
  {
   "checked": "confirmed",
@@ -736,7 +623,7 @@
   "signal_date": "2026-04-22",
   "proof_url": "https://www.townofspaffordny.gov/firecommissioners",
   "proof_quote": "to sell at a price of $30,000.00 or greater, or otherwise dispose of the personal property",
-  "other_signals": "New truck on order: New truck (type not stated); final inspection set for May 26; replaces 2003 E-One/Saulsbury pumper (declared surplus)",
+  "other_signals": "New truck on order: New truck; final inspection set for May 26; replaces 2003 E-One/Saulsbury pumper (declared surplus)",
   "named_in_source": "Spafford Fire District",
   "name_match": "not in registry",
   "fdid": "",
@@ -756,7 +643,7 @@
    "to": "2026-10",
    "how": "voted to sell Apr 2026; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 13,
+  "rank": 11,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -826,7 +713,7 @@
    "to": "2027-01",
    "how": "voted to sell Jul 2026"
   },
-  "rank": 14,
+  "rank": 12,
   "tier": "1 Call this week",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -896,9 +783,79 @@
    "to": "2027-05",
    "how": "sale announced"
   },
-  "rank": 15,
+  "rank": 13,
   "tier": "1 Call this week",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1996 AH-75 75' Simon-LTI Ladder Truck",
+     "price": 8700.0,
+     "date": "2026-01-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 5.5,
+  "department": "North West Fire District",
+  "registry_name": "",
+  "city": "Baldwinsville",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Sutphen aerial platform due Oct 2026 (ordered 2026-07)",
+  "signal_date": "2026-10-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/july-2026-recent-apparatus-orders/",
+  "proof_quote": "SUTPHEN—North West Fire District, Baldwinsville, aerial platform. Delivery in October.",
+  "other_signals": "New truck on order: Sutphen aerial platform",
+  "named_in_source": "North West Fire District",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an aerial platform; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-10",
+   "to": "2027-04",
+   "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 14,
+  "tier": "2 Call this month",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "aerial",
    "band": "all ages",
@@ -966,7 +923,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 16,
+  "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1005,7 +962,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 17,
+  "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1044,7 +1001,7 @@
    "to": "2027-01",
    "how": "new truck in service Jul 2026; we allow six months for the old one to list"
   },
-  "rank": 18,
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1110,7 +1067,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 19,
+  "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -1145,80 +1102,45 @@
   },
   "stage": "surplus",
   "window": null,
-  "rank": 20,
+  "rank": 19,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
-  "checked": "trade_press",
+  "checked": "auction_site",
   "score": 5.0,
-  "department": "Stony Brook Volunteer Fire Department",
-  "registry_name": "Stony Brook Volunteer Fire Department",
-  "city": "Stony Brook",
-  "county": "Suffolk",
+  "department": "Uniondale Fire Department",
+  "registry_name": "Uniondale Fire Department",
+  "city": "Uniondale",
+  "county": "Nassau",
   "type": "Volunteer",
-  "website": "https://www.sbfd.org/",
-  "why_call": "New truck in service",
-  "detail": "New Smeal Fire Apparatus rear-mount quint delivered (2026-01)",
-  "signal_date": "2026-01-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-january-2026/",
-  "proof_quote": "Department: STONY BROOK (NY) FIRE DEPARTMENT; Type: REAR-MOUNT QUINT; Built by: SMEAL FIRE APPARATUS",
+  "website": "",
+  "why_call": "Sold a truck at auction since May",
+  "detail": "2001 Ford F-450 Super Duty Utility Truck (high bid $8,100) (and 1 more sold since May)",
+  "signal_date": "2026-11-06",
+  "proof_url": "https://www.auctionsinternational.com/auction/uniondale-fire-district-long-island-ny-49772-49772/bidgallery/",
+  "proof_quote": "UNIONDALE FIRE DISTRICT, LONG ISLAND-NY #49772 (2 lots) All items closed / Lot # 0001 2001 Ford F-450 Super Duty Utility Truck / Current Bid: $8,100.00 (bids: 107) / Time Remaining: Closed",
   "other_signals": "",
-  "named_in_source": "Stony Brook Fire Department",
+  "named_in_source": "Uniondale Fire District",
   "name_match": "exact",
-  "fdid": "52107",
-  "top_kind": "new_truck_arrived",
+  "fdid": "30065",
+  "top_kind": "auction_closed",
   "basis": "observed",
-  "read_by": "feed",
+  "read_by": "person",
   "truck": {
    "description": null,
-   "type": "aerial",
+   "type": null,
    "year": null,
    "year_how": null,
-   "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
+   "type_how": null
   },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-01",
-   "to": "2026-07",
-   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
-  },
-  "rank": 21,
+  "stage": "sold",
+  "window": null,
+  "rank": 20,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 103,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8550,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1996 AH-75 75' Simon-LTI Ladder Truck",
-     "price": 8700.0,
-     "date": "2026-01-21",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
-    }
-   ]
-  }
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "auction_site",
@@ -1250,7 +1172,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 22,
+  "rank": 21,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -1289,7 +1211,7 @@
    "to": "2025-09",
    "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
   },
-  "rank": 23,
+  "rank": 22,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1359,7 +1281,7 @@
    "to": "2028-02",
    "how": "new truck due Summer 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
+  "rank": 23,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1394,6 +1316,45 @@
     }
    ]
   }
+ },
+ {
+  "checked": "confirmed",
+  "score": 4.5,
+  "department": "Pine Hill Hose Company 5",
+  "registry_name": "Pine Hill Hose Company 5",
+  "city": "Cheektowaga",
+  "county": "Erie",
+  "type": "Volunteer",
+  "website": "https://www.pinehillhosecompany.org/",
+  "why_call": "New truck in service",
+  "detail": "Sutphen pumper, delivery February 2026 (delivered)",
+  "signal_date": "2026-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
+  "proof_quote": "SUTPHEN—Pine Hill Fire District No. 5, Cheektowaga, pumper.",
+  "other_signals": "New truck was due; delivery not confirmed: New Sutphen pumper due February 2026 (ordered 2026-01)",
+  "named_in_source": "Pine Hill Fire District No. 5",
+  "name_match": "exact",
+  "fdid": "15070",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-01",
+   "to": "2026-07",
+   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
+  },
+  "rank": 24,
+  "tier": "2 Call this month",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  },
  {
   "checked": "confirmed",
@@ -1631,7 +1592,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "Board approved buying a new truck",
-  "detail": "Ambulance from Kolaja Fire Equipment Sales; replaces Current village ambulance (model not stated)",
+  "detail": "Ambulance from Kolaja Fire Equipment Sales; replaces Current village ambulance",
   "signal_date": "2025-11-07",
   "proof_url": "https://www.post-journal.com/news/local-news/2025/11/cassadaga-approves-ambulance-purchase",
   "proof_quote": "The Village Board unanimously approved an agreement to purchase the ambulance from Kolaja.",
@@ -1643,7 +1604,7 @@
   "basis": "expected",
   "read_by": "person",
   "truck": {
-   "description": "Current village ambulance (model not stated)",
+   "description": "Current village ambulance",
    "type": "ambulance",
    "year": null,
    "year_how": null,
@@ -2176,7 +2137,7 @@
   "type": "Volunteer",
   "website": "",
   "why_call": "Board voted to sell a truck",
-  "detail": "Selling: Engine 8756 (year/make not stated). To be sold at best price obtainable",
+  "detail": "Selling: Engine 8756. To be sold at best price obtainable",
   "signal_date": "2026-02-03",
   "proof_url": "https://mail.mlwd.net/pdf/Minutes/Fire%20Minutes%20Meeting%2006%20%2002-03-26.pdf",
   "proof_quote": "the District's Engine 8756 is hereby declared to be surplus equipment of the District and is determined to be obsolete",
@@ -2188,7 +2149,7 @@
   "basis": "observed",
   "read_by": "person",
   "truck": {
-   "description": "Engine 8756 (year/make not stated)",
+   "description": "Engine 8756",
    "type": "pumper",
    "year": null,
    "year_how": null,
@@ -2395,41 +2356,72 @@
  {
   "checked": "partly",
   "score": 4.0,
-  "department": "Painted Post Fire Department",
-  "registry_name": "Painted Post Fire Department",
-  "city": "Painted Post",
-  "county": "Steuben",
+  "department": "Parishville Volunteer Fire Company",
+  "registry_name": "Parishville Volunteer Fire Company",
+  "city": "Parishville",
+  "county": "Saint Lawrence",
   "type": "Volunteer",
   "website": "",
   "why_call": "New truck in service",
-  "detail": "2025 Pierce pumper/rescue (delivered)",
-  "signal_date": "2026-04-06",
-  "proof_url": "https://www.villageofpaintedpost.gov/wp-content/uploads/2026/04/Village-of-Painted-Post-Agenda-April-6-2026.pdf",
-  "proof_quote": "approval of about $985,000 in bonded debt for a 2025 Pierce Pumper/Rescue",
+  "detail": "Replacement ambulance, in service; replaces 2009 ambulance",
+  "signal_date": "2026-02",
+  "proof_url": "https://dailydispatch.com/fire-news/new-york/parishville-fire-department-gets-new-ambulance",
+  "proof_quote": "has put a new ambulance into service, replacing a 2009 model",
   "other_signals": "",
-  "named_in_source": "Village of Painted Post Fire Department",
+  "named_in_source": "Parishville Volunteer Fire Department",
   "name_match": "exact",
-  "fdid": "51028",
+  "fdid": "45033",
   "top_kind": "new_truck_arrived",
   "basis": "observed",
   "read_by": "person",
   "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
+   "description": "2009 ambulance",
+   "type": "ambulance",
+   "year": 2009,
+   "year_how": "stated",
+   "type_how": "named in the record"
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-04",
-   "to": "2026-10",
-   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
+   "from": "2026-02",
+   "to": "2026-08",
+   "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
   },
   "rank": 45,
   "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "ambulance",
+   "band": "16-20",
+   "n": 67,
+   "median": 3800,
+   "p25": 2312,
+   "p75": 5850,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2009 Ford E450 Ambulance",
+     "price": 6200.0,
+     "date": "2026-01-06",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45665/item/lot-0001-2009-ford-e450-ambulance-285381/"
+    },
+    {
+     "item": "2001 Ford E450 Ambulance",
+     "price": 5100.0,
+     "date": "2018-06-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/14026/item/lot-0002-2001-ford-e450-ambulance-85500/"
+    },
+    {
+     "item": "2001 Ford E450 Type III Ambulance",
+     "price": 5300.0,
+     "date": "2018-04-13",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/13728/item/lot-0001-2001-ford-e450-type-iii-ambulance-83793/"
+    }
+   ]
+  }
  },
  {
   "checked": "trade_press",
@@ -2829,45 +2821,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Atlantic Steamer Fire Company 1",
-  "registry_name": "Atlantic Steamer Fire Company 1",
-  "city": "Oyster Bay",
-  "county": "Nassau",
-  "type": "Volunteer",
-  "website": "https://www.atlanticsteamer.com/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $549,047, awarded 7/28/23 (FY2022)",
-  "signal_date": "2023-07-28",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Atlantic Steamer Fire Company Number One, Vehicle Acquisition, $549,047",
-  "other_signals": "",
-  "named_in_source": "Atlantic Steamer Fire Company Number One",
-  "name_match": "fuzzy",
-  "fdid": "noid-atlantic-steamer",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 53,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
   "checked": "auction_site",
   "score": 3.0,
   "department": "Attica Fire Department",
@@ -2897,7 +2850,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 54,
+  "rank": 53,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -2932,7 +2885,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 55,
+  "rank": 54,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -2971,7 +2924,7 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 56,
+  "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3041,7 +2994,7 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 57,
+  "rank": 56,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3107,7 +3060,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 58,
+  "rank": 57,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3146,7 +3099,7 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 59,
+  "rank": 58,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3185,7 +3138,7 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 60,
+  "rank": 59,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -3224,7 +3177,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 61,
+  "rank": 60,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3294,7 +3247,7 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 62,
+  "rank": 61,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -3364,7 +3317,7 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 63,
+  "rank": 62,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -3403,7 +3356,7 @@
    "to": "2027-07",
    "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 64,
+  "rank": 63,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3442,7 +3395,7 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 65,
+  "rank": 64,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -3481,7 +3434,7 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 66,
+  "rank": 65,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -3551,7 +3504,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 67,
+  "rank": 66,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3617,7 +3570,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 68,
+  "rank": 67,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -3652,7 +3605,7 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 69,
+  "rank": 68,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -3691,7 +3644,7 @@
    "to": "2028-08",
    "how": "money approved Aug 2026; order, build, then sale"
   },
-  "rank": 70,
+  "rank": 69,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -3726,7 +3679,7 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 71,
+  "rank": 70,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -3765,7 +3718,7 @@
    "to": "2027-01",
    "how": "ordered Jan 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 72,
+  "rank": 71,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -3804,7 +3757,7 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 73,
+  "rank": 72,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3843,7 +3796,7 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 74,
+  "rank": 73,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -3878,7 +3831,7 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 75,
+  "rank": 74,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -3917,7 +3870,7 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 76,
+  "rank": 75,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -3956,7 +3909,7 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 77,
+  "rank": 76,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -3995,7 +3948,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 78,
+  "rank": 77,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -4065,7 +4018,7 @@
    "to": "2026-12",
    "how": "ordered Dec 2025; builds have taken four to twelve months in the back-test"
   },
-  "rank": 79,
+  "rank": 78,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -4104,7 +4057,7 @@
    "to": "2028-04",
    "how": "money approved Apr 2026; order, build, then sale"
   },
-  "rank": 80,
+  "rank": 79,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -4139,46 +4092,7 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 81,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
- },
- {
-  "checked": "confirmed",
-  "score": 3.0,
-  "department": "North West Fire District",
-  "registry_name": "",
-  "city": "Baldwinsville",
-  "county": "Onondaga",
-  "type": "",
-  "website": "",
-  "why_call": "New truck on order",
-  "detail": "Sutphen aerial platform",
-  "signal_date": "2026-07",
-  "proof_url": "https://www.fireapparatusmagazine.com/?p=210975",
-  "proof_quote": "Monarch cab and chassis with 10.5-inch raised roof",
-  "other_signals": "",
-  "named_in_source": "North West Fire District",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-07",
-   "how": "ordered Jul 2026; builds have taken four to twelve months in the back-test"
-  },
-  "rank": 82,
+  "rank": 80,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -4217,7 +4131,7 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 83,
+  "rank": 81,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -4252,7 +4166,7 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 84,
+  "rank": 82,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -4291,7 +4205,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 85,
+  "rank": 83,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -4361,7 +4275,7 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 86,
+  "rank": 84,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -4400,7 +4314,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 87,
+  "rank": 85,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -4466,7 +4380,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 88,
+  "rank": 86,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -4501,7 +4415,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 89,
+  "rank": 87,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -4540,7 +4454,7 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 90,
+  "rank": 88,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -4579,10 +4493,80 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 91,
+  "rank": 89,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Stony Brook Volunteer Fire Department",
+  "registry_name": "Stony Brook Volunteer Fire Department",
+  "city": "Stony Brook",
+  "county": "Suffolk",
+  "type": "Volunteer",
+  "website": "https://www.sbfd.org/",
+  "why_call": "New truck in service",
+  "detail": "New Smeal Fire Apparatus rear-mount quint delivered (2026-01)",
+  "signal_date": "2026-01-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-january-2026/",
+  "proof_quote": "Department: STONY BROOK (NY) FIRE DEPARTMENT; Type: REAR-MOUNT QUINT; Built by: SMEAL FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "Stony Brook Fire Department",
+  "name_match": "exact",
+  "fdid": "52107",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-01",
+   "to": "2026-07",
+   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
+  },
+  "rank": 90,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1996 AH-75 75' Simon-LTI Ladder Truck",
+     "price": 8700.0,
+     "date": "2026-01-21",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/45544/item/lot-0007-1996-ah-75-75-simon-lti-ladder-truck-285839/"
+    }
+   ]
+  }
  },
  {
   "checked": "confirmed",
@@ -4618,7 +4602,7 @@
    "to": "2027-08",
    "how": "ordered Aug 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 92,
+  "rank": 91,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -4657,7 +4641,7 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 93,
+  "rank": 92,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -4723,7 +4707,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 94,
+  "rank": 93,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -4762,7 +4746,7 @@
    "to": "2028-03",
    "how": "money approved Mar 2026; order, build, then sale"
   },
-  "rank": 95,
+  "rank": 94,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -4797,7 +4781,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 96,
+  "rank": 95,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -4832,44 +4816,9 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 97,
+  "rank": 96,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "auction_site",
-  "score": 3.0,
-  "department": "Uniondale Fire Department",
-  "registry_name": "Uniondale Fire Department",
-  "city": "Uniondale",
-  "county": "Nassau",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Gear at auction now (no truck)",
-  "detail": "2001 Ford F-450 Super Duty Utility Truck (high bid $8,100)",
-  "signal_date": "2026-11-06",
-  "proof_url": "https://www.auctionsinternational.com/auction/uniondale-fire-district-long-island-ny-49772-49772/bidgallery/",
-  "proof_quote": "UNIONDALE FIRE DISTRICT, LONG ISLAND-NY #49772 (2 lots) All items closed / Lot # 0001 2001 Ford F-450 Super Duty Utility Truck / Current Bid: $8,100.00 (bids: 107) / Time Remaining: Closed",
-  "other_signals": "",
-  "named_in_source": "Uniondale Fire District",
-  "name_match": "exact",
-  "fdid": "30065",
-  "top_kind": "auction_equipment",
-  "basis": "observed",
-  "read_by": "person",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "gear",
-  "window": null,
-  "rank": 98,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
  },
  {
@@ -4906,7 +4855,7 @@
    "to": "2028-01",
    "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 99,
+  "rank": 97,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -4976,7 +4925,7 @@
    "to": "2027-03",
    "how": "ordered Mar 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 100,
+  "rank": 98,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -5015,7 +4964,7 @@
    "to": "2027-04",
    "how": "ordered Apr 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 101,
+  "rank": 99,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -5050,7 +4999,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 102,
+  "rank": 100,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -5085,7 +5034,7 @@
   },
   "stage": "gear",
   "window": null,
-  "rank": 103,
+  "rank": 101,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -5120,7 +5069,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 104,
+  "rank": 102,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -5155,7 +5104,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 105,
+  "rank": 103,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -5190,7 +5139,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 106,
+  "rank": 104,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -5225,9 +5174,48 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 107,
+  "rank": 105,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "partly",
+  "score": 2.0,
+  "department": "Painted Post Fire Department",
+  "registry_name": "Painted Post Fire Department",
+  "city": "Painted Post",
+  "county": "Steuben",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "2025 Pierce pumper/rescue (delivered)",
+  "signal_date": "2026-04-06",
+  "proof_url": "https://www.villageofpaintedpost.gov/wp-content/uploads/2026/04/Village-of-Painted-Post-Agenda-April-6-2026.pdf",
+  "proof_quote": "approval of about $985,000 in bonded debt for a 2025 Pierce Pumper/Rescue",
+  "other_signals": "",
+  "named_in_source": "Village of Painted Post Fire Department",
+  "name_match": "exact",
+  "fdid": "51028",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "person",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
+  },
+  "rank": 106,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
  },
  {
@@ -5260,7 +5248,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 108,
+  "rank": 107,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -5295,7 +5283,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 109,
+  "rank": 108,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -5330,7 +5318,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 110,
+  "rank": 109,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -5365,7 +5353,7 @@
   },
   "stage": "sold",
   "window": null,
-  "rank": 111,
+  "rank": 110,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -5400,6 +5388,45 @@
   },
   "stage": "sold",
   "window": null,
+  "rank": 111,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Atlantic Steamer Fire Company 1",
+  "registry_name": "Atlantic Steamer Fire Company 1",
+  "city": "Oyster Bay",
+  "county": "Nassau",
+  "type": "Volunteer",
+  "website": "https://www.atlanticsteamer.com/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $549,047, awarded 7/28/23 (FY2022)",
+  "signal_date": "2023-07-28",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Atlantic Steamer Fire Company Number One, Vehicle Acquisition, $549,047",
+  "other_signals": "",
+  "named_in_source": "Atlantic Steamer Fire Company Number One",
+  "name_match": "fuzzy",
+  "fdid": "noid-atlantic-steamer",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
   "rank": 112,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
@@ -5415,7 +5442,7 @@
   "type": "Volunteer",
   "website": "https://bsfd.org/",
   "why_call": "Sold its old truck direct",
-  "detail": "Selling: 1990 Spartan engine/tanker (ETA 13-3). Sold for $35,000 to Goshen New Energy (Illinois)",
+  "detail": "Sold: 1990 Spartan engine/tanker (ETA 13-3). Sold for $35,000 to Goshen New Energy (Illinois)",
   "signal_date": "2025-12",
   "proof_url": "https://cpo.soar.com/articles/7194780/Ballston-Spa/Saratoga-County/New-York/Ballston-Spa-trustees-approve-sale-of-1990-engine-tanker-ice-rink-agreement-and-library-purchases",
   "proof_quote": "declare fire department apparatus ETA 13-3 (a 1990 Spartan engine/tanker) surplus and then voted to sell it to Goshen New Energy (Illinois) for $35,000",

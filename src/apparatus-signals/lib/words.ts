@@ -244,6 +244,7 @@ const MODIFIER_LABELS: Record<string, string> = {
   snippet_only: "Seen only in a search summary; page not opened",
   arrived_last_year: "New truck arrived or was due 12 to 24 months ago, so the old one may be listed or gone",
   arrived_long_ago: "New truck arrived or was due over two years ago; the old one is likely gone",
+  window_passed: "Listing window ended, no listing found; it may have sold quietly",
 };
 
 /** Short badge text for a lead's basis. */

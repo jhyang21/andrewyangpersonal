@@ -414,7 +414,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Mohave Valley Fire Department",
   "registry_name": "Mohave Valley Fire Department",
   "city": "Mohave Valley",
@@ -453,7 +453,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Picture Rocks Fire District",
   "registry_name": "Picture Rocks Fire District",
   "city": "Tucson",
@@ -492,7 +492,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Tubac Fire District",
   "registry_name": "Tubac Fire District",
   "city": "Tubac",

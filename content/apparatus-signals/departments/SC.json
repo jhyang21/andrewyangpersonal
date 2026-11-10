@@ -70,45 +70,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Gaffney Fire Department",
-  "registry_name": "Gaffney Fire Department",
-  "city": "Gaffney",
-  "county": "Cherokee",
-  "type": "Career",
-  "website": "http://gaffneyfire.com/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $690,909, awarded 8/18/23 (FY2022)",
-  "signal_date": "2023-08-18",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Gaffney, Vehicle Acquisition, $690,909",
-  "other_signals": "",
-  "named_in_source": "City of Gaffney",
-  "name_match": "exact",
-  "fdid": "11106",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-02",
-   "to": "2026-08",
-   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 2,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Sumter County Fire Department",
@@ -142,7 +103,7 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -177,5 +138,44 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Gaffney Fire Department",
+  "registry_name": "Gaffney Fire Department",
+  "city": "Gaffney",
+  "county": "Cherokee",
+  "type": "Career",
+  "website": "http://gaffneyfire.com/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $690,909, awarded 8/18/23 (FY2022)",
+  "signal_date": "2023-08-18",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Gaffney, Vehicle Acquisition, $690,909",
+  "other_signals": "",
+  "named_in_source": "City of Gaffney",
+  "name_match": "exact",
+  "fdid": "11106",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 3,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  }
 ]

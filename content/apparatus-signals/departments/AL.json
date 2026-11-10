@@ -1053,45 +1053,6 @@
   "guide": null
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Birmingham Fire and Rescue Service Department",
-  "registry_name": "Birmingham Fire and Rescue Service Department",
-  "city": "Birmingham",
-  "county": "Jefferson",
-  "type": "Career",
-  "website": "https://www.birminghamal.gov/fire/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $318,181, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Birmingham, Vehicle Acquisition, $318,181",
-  "other_signals": "",
-  "named_in_source": "City of Birmingham",
-  "name_match": "exact",
-  "fdid": "00102",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 28,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Booth Volunteer Fire Department",
@@ -1125,7 +1086,7 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 29,
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1163,7 +1124,46 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
+  "department": "Birmingham Fire and Rescue Service Department",
+  "registry_name": "Birmingham Fire and Rescue Service Department",
+  "city": "Birmingham",
+  "county": "Jefferson",
+  "type": "Career",
+  "website": "https://www.birminghamal.gov/fire/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $318,181, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Birmingham, Vehicle Acquisition, $318,181",
+  "other_signals": "",
+  "named_in_source": "City of Birmingham",
+  "name_match": "exact",
+  "fdid": "00102",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 29,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
   "department": "Craft Volunteer Fire Department Inc",
   "registry_name": "",
   "city": "",
@@ -1202,7 +1202,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Faunsdale Volunteer Fire Department",
   "registry_name": "Faunsdale Volunteer Fire Department",
   "city": "Faunsdale",
@@ -1241,7 +1241,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Owassa-Brownville Volunteer Fire Department",
   "registry_name": "Owassa-Brownville Volunteer Fire Department",
   "city": "Evergreen",
@@ -1280,7 +1280,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Russellville Fire Department",
   "registry_name": "Russellville Fire Department",
   "city": "Russellville",
@@ -1319,7 +1319,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Spring Hill Volunteer Fire Department, Inc.",
   "registry_name": "Spring Hill Volunteer Fire Department, Inc.",
   "city": "Troy",
@@ -1358,7 +1358,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Tallassee Fire Department",
   "registry_name": "Tallassee Fire Department",
   "city": "Tallassee",
@@ -1397,7 +1397,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Westover Volunteer Fire and Rescue",
   "registry_name": "Westover Volunteer Fire and Rescue",
   "city": "Westover",

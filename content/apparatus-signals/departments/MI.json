@@ -1,76 +1,6 @@
 [
  {
   "checked": "trade_press",
-  "score": 5.0,
-  "department": "Howell Area Fire Department",
-  "registry_name": "Howell Area Fire Department",
-  "city": "Howell",
-  "county": "Livingston",
-  "type": "Mostly volunteer",
-  "website": "https://www.howellfire.net/",
-  "why_call": "New truck in service",
-  "detail": "New Sutphen Fire Apparatus aerial ladder quint delivered (2026-03)",
-  "signal_date": "2026-03-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-march-2026/",
-  "proof_quote": "Department: HOWELL AREA (MI) FIRE DEPARTMENT; Type: AERIAL LADDER QUINT; Built by: SUTPHEN FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "Howell Area Fire Department",
-  "name_match": "exact",
-  "fdid": "04706",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an aerial ladder quint; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-03",
-   "to": "2026-09",
-   "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
-  },
-  "rank": 1,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 103,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8550,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
   "score": 4.5,
   "department": "Warren Fire Department",
   "registry_name": "Warren Fire Department",
@@ -103,7 +33,7 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 2,
+  "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -173,7 +103,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -243,7 +173,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -282,7 +212,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -321,7 +251,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -360,7 +290,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -399,7 +329,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -438,7 +368,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 9,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -477,7 +407,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -516,7 +446,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -555,7 +485,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 12,
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -594,7 +524,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 13,
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -664,7 +594,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 14,
+  "rank": 13,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -734,7 +664,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 15,
+  "rank": 14,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -804,7 +734,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 16,
+  "rank": 15,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -874,7 +804,7 @@
    "to": "2028-01",
    "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 17,
+  "rank": 16,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -944,7 +874,7 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 18,
+  "rank": 17,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1014,7 +944,7 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 19,
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1051,43 +981,74 @@
   }
  },
  {
-  "checked": "fema_table",
+  "checked": "trade_press",
   "score": 3.0,
-  "department": "Home Township office",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $372,844, awarded 7/28/23 (FY2022)",
-  "signal_date": "2023-07-28",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Home Township office, Vehicle Acquisition, $372,844",
+  "department": "Howell Area Fire Department",
+  "registry_name": "Howell Area Fire Department",
+  "city": "Howell",
+  "county": "Livingston",
+  "type": "Mostly volunteer",
+  "website": "https://www.howellfire.net/",
+  "why_call": "New truck in service",
+  "detail": "New Sutphen Fire Apparatus aerial ladder quint delivered (2026-03)",
+  "signal_date": "2026-03-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-march-2026/",
+  "proof_quote": "Department: HOWELL AREA (MI) FIRE DEPARTMENT; Type: AERIAL LADDER QUINT; Built by: SUTPHEN FIRE APPARATUS",
   "other_signals": "",
-  "named_in_source": "Home Township office",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "grant",
-  "basis": "expected",
+  "named_in_source": "Howell Area Fire Department",
+  "name_match": "exact",
+  "fdid": "04706",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
   "read_by": "feed",
   "truck": {
    "description": null,
-   "type": null,
+   "type": "aerial",
    "year": null,
    "year_how": null,
-   "type_how": null
+   "type_how": "the new truck is an aerial ladder quint; departments usually replace like with like"
   },
-  "stage": "replacing",
+  "stage": "surplus",
   "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+   "from": "2026-03",
+   "to": "2026-09",
+   "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
   },
-  "rank": 20,
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
  },
  {
   "checked": "trade_press",
@@ -1123,7 +1084,7 @@
    "to": "2029-04",
    "how": "new truck due Oct 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1155,76 +1116,6 @@
      "date": "2026-05-27",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
-  "department": "Laurium Fire Department",
-  "registry_name": "Laurium Fire Department",
-  "city": "Laurium",
-  "county": "Houghton",
-  "type": "Volunteer",
-  "website": "https://www.fire-ems.net/firedept/view/lauriumMI",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Danko light rescue due December 2025 (ordered 2025-01)",
-  "signal_date": "2025-12-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2025/",
-  "proof_quote": "DANKO—Village of Larium Fire Department light rescue. Delivery in December 2025.",
-  "other_signals": "",
-  "named_in_source": "Village of Larium Fire Department",
-  "name_match": "fuzzy",
-  "fdid": "03112",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "rescue",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a light rescue; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-12",
-   "to": "2026-06",
-   "how": "new truck was due Dec 2025; the old one may already have sold quietly"
-  },
-  "rank": 22,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "rescue",
-   "band": "all ages",
-   "n": 138,
-   "median": 7400,
-   "p25": 4325,
-   "p75": 15175,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
-     "price": 9600.0,
-     "date": "2026-11-05",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
-    },
-    {
-     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
-     "price": 10200.0,
-     "date": "2026-10-15",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
-    },
-    {
-     "item": "1987 GMC 7000 Rescue Truck",
-     "price": 1575.0,
-     "date": "2026-08-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
   }
@@ -1263,7 +1154,7 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 23,
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1333,7 +1224,7 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1370,45 +1261,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Pinconning & Fraser Fire Department",
-  "registry_name": "Pinconning & Fraser Fire Department",
-  "city": "Pinconning",
-  "county": "Bay",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $957,857, awarded 8/18/23 (FY2022)",
-  "signal_date": "2023-08-18",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Pinconning Fraser Fire Dept, Vehicle Acquisition, $957,857",
-  "other_signals": "",
-  "named_in_source": "Pinconning Fraser Fire Dept",
-  "name_match": "exact",
-  "fdid": "00910",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-02",
-   "to": "2026-08",
-   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 25,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Stanton Community Fire Department",
@@ -1442,7 +1294,7 @@
    "to": "2027-09",
    "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 26,
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1512,7 +1364,7 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 27,
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1582,7 +1434,7 @@
    "to": "2028-12",
    "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 28,
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1652,7 +1504,7 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 29,
+  "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1689,45 +1541,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Utica Fire Department",
-  "registry_name": "Utica Fire Department",
-  "city": "Utica",
-  "county": "Macomb",
-  "type": "Mostly volunteer",
-  "website": "https://cityofutica.org/departments/utica_fire/index.php",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $785,714, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Utica, Vehicle Acquisition, $785,714",
-  "other_signals": "",
-  "named_in_source": "City of Utica",
-  "name_match": "exact",
-  "fdid": "05020",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 30,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Waterford Regional Fire Department",
@@ -1761,7 +1574,7 @@
    "to": "2027-01",
    "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 31,
+  "rank": 27,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1796,5 +1609,192 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Home Township office",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $372,844, awarded 7/28/23 (FY2022)",
+  "signal_date": "2023-07-28",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Home Township office, Vehicle Acquisition, $372,844",
+  "other_signals": "",
+  "named_in_source": "Home Township office",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 28,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Laurium Fire Department",
+  "registry_name": "Laurium Fire Department",
+  "city": "Laurium",
+  "county": "Houghton",
+  "type": "Volunteer",
+  "website": "https://www.fire-ems.net/firedept/view/lauriumMI",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Danko light rescue due December 2025 (ordered 2025-01)",
+  "signal_date": "2025-12-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2025/",
+  "proof_quote": "DANKO—Village of Larium Fire Department light rescue. Delivery in December 2025.",
+  "other_signals": "",
+  "named_in_source": "Village of Larium Fire Department",
+  "name_match": "fuzzy",
+  "fdid": "03112",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a light rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck was due Dec 2025; the old one may already have sold quietly"
+  },
+  "rank": 29,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 138,
+   "median": 7400,
+   "p25": 4325,
+   "p75": 15175,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    },
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Pinconning & Fraser Fire Department",
+  "registry_name": "Pinconning & Fraser Fire Department",
+  "city": "Pinconning",
+  "county": "Bay",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $957,857, awarded 8/18/23 (FY2022)",
+  "signal_date": "2023-08-18",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Pinconning Fraser Fire Dept, Vehicle Acquisition, $957,857",
+  "other_signals": "",
+  "named_in_source": "Pinconning Fraser Fire Dept",
+  "name_match": "exact",
+  "fdid": "00910",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 30,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Utica Fire Department",
+  "registry_name": "Utica Fire Department",
+  "city": "Utica",
+  "county": "Macomb",
+  "type": "Mostly volunteer",
+  "website": "https://cityofutica.org/departments/utica_fire/index.php",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $785,714, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Utica, Vehicle Acquisition, $785,714",
+  "other_signals": "",
+  "named_in_source": "City of Utica",
+  "name_match": "exact",
+  "fdid": "05020",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 31,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  }
 ]

@@ -71,76 +71,6 @@
  },
  {
   "checked": "trade_press",
-  "score": 5.0,
-  "department": "Congerville Rural Fire Protection District",
-  "registry_name": "Congerville Rural Fire Protection District",
-  "city": "Congerville",
-  "county": "Woodford",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New 4 Guys Fire Trucks tanker delivered (2025-12)",
-  "signal_date": "2025-12-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-december-2025/",
-  "proof_quote": "Department: CONGERVILLE (IL) RURAL FIRE PROTECTION DISTRICT; Type: TANKER; Built by: 4 GUYS FIRE TRUCKS",
-  "other_signals": "",
-  "named_in_source": "Congerville Rural Fire Protection District",
-  "name_match": "exact",
-  "fdid": "WK123",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a tanker; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2025-12",
-   "to": "2026-06",
-   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
-  },
-  "rank": 2,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
   "score": 4.5,
   "department": "Niles Fire Department",
   "registry_name": "Niles Fire Department",
@@ -173,7 +103,7 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -243,7 +173,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -313,7 +243,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -383,7 +313,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -453,7 +383,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -523,7 +453,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -562,7 +492,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 9,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -601,7 +531,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 10,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -671,7 +601,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -741,7 +671,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 12,
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -811,7 +741,7 @@
    "to": "2029-03",
    "how": "new truck due Sep 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 13,
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -881,7 +811,7 @@
    "to": "2028-12",
    "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 14,
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -951,7 +881,7 @@
    "to": "2028-12",
    "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 15,
+  "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1021,7 +951,7 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 16,
+  "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1091,7 +1021,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 17,
+  "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1161,7 +1091,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 18,
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1200,7 +1130,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 19,
+  "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1270,7 +1200,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 20,
+  "rank": 19,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1309,7 +1239,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
+  "rank": 20,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1379,7 +1309,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 22,
+  "rank": 21,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1449,7 +1379,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 23,
+  "rank": 22,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1519,7 +1449,7 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
+  "rank": 23,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1589,7 +1519,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 25,
+  "rank": 24,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1628,7 +1558,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 26,
+  "rank": 25,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1667,7 +1597,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 27,
+  "rank": 26,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -1706,7 +1636,7 @@
    "to": "2025-09",
    "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
   },
-  "rank": 28,
+  "rank": 27,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1776,7 +1706,7 @@
    "to": "2028-06",
    "how": "new truck due in 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 29,
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1846,7 +1776,7 @@
    "to": "2030-03",
    "how": "new truck due Sep 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 30,
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1916,7 +1846,7 @@
    "to": "2028-11",
    "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 31,
+  "rank": 30,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1986,7 +1916,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 32,
+  "rank": 31,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2025,76 +1955,6 @@
  {
   "checked": "trade_press",
   "score": 3.0,
-  "department": "Beecher Fire Protection District",
-  "registry_name": "Beecher Fire Protection District",
-  "city": "Beecher",
-  "county": "Will",
-  "type": "Mostly volunteer",
-  "website": "www.beecherfire.org",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Danko wildland unit due December2025 (ordered 2025-01)",
-  "signal_date": "2025-12-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2025/",
-  "proof_quote": "DANKO—Beecher Fire Protection District wildland unit. Delivery in December2025.",
-  "other_signals": "",
-  "named_in_source": "Beecher Fire Protection District",
-  "name_match": "exact",
-  "fdid": "WG113",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "brush",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a wildland unit; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-12",
-   "to": "2026-06",
-   "how": "new truck was due Dec 2025; the old one may already have sold quietly"
-  },
-  "rank": 33,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "brush",
-   "band": "all ages",
-   "n": 14,
-   "median": 6825,
-   "p25": 5175,
-   "p75": 10350,
-   "thin": false,
-   "comps": [
-    {
-     "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
-     "price": 3150.0,
-     "date": "2026-07-17",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48054/item/lot-0001-listing-updated-1986-ford-f-350-brush-fire-truck-302769/"
-    },
-    {
-     "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
-     "price": 33300.0,
-     "date": "2026-06-24",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47593/item/lot-0001-2006-ford-f550-crew-cab-dually-rescue-brush-fire-truck-299118/"
-    },
-    {
-     "item": "1963 Mercedes Unimog-S Fire/Brush Truck",
-     "price": 9900.0,
-     "date": "2026-02-20",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
   "department": "Benton Fire Department",
   "registry_name": "Benton Fire Department",
   "city": "Benton",
@@ -2126,7 +1986,7 @@
    "to": "2027-08",
    "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 34,
+  "rank": 32,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2196,7 +2056,7 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 35,
+  "rank": 33,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2266,7 +2126,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 36,
+  "rank": 34,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2336,7 +2196,7 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 37,
+  "rank": 35,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2406,7 +2266,7 @@
    "to": "2030-05",
    "how": "new truck due Nov 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 38,
+  "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2476,7 +2336,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 39,
+  "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2546,7 +2406,7 @@
    "to": "2030-01",
    "how": "new truck due Jul 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 40,
+  "rank": 38,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2616,7 +2476,7 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 41,
+  "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2686,7 +2546,7 @@
    "to": "2029-11",
    "how": "new truck due May 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 42,
+  "rank": 40,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2725,76 +2585,6 @@
  {
   "checked": "trade_press",
   "score": 3.0,
-  "department": "City of Champaign Fire Department",
-  "registry_name": "City of Champaign Fire Department",
-  "city": "Champaign",
-  "county": "Champaign",
-  "type": "Career",
-  "website": "https://ci.champaign.il.us/departments/fire/",
-  "why_call": "New truck on order",
-  "detail": "New Pierce 100- foot Ascendant steel aerial platform quint on order (2025-05), delivery July 2018",
-  "signal_date": "2025-05-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-may-2025/",
-  "proof_quote": "PIERCE—Champaign Fire Department 100- foot Ascendant steel aerial platform quint. Delivery in July 2018.",
-  "other_signals": "",
-  "named_in_source": "Champaign Fire Department",
-  "name_match": "exact",
-  "fdid": "CD131",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a 100- foot Ascendant steel aerial platform quint; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-09",
-   "to": "2026-05",
-   "how": "ordered May 2025; the usual build time has passed"
-  },
-  "rank": 43,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 103,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8550,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
   "department": "City of Rolling Meadows Fire Department",
   "registry_name": "City of Rolling Meadows Fire Department",
   "city": "Rolling Meadows",
@@ -2826,7 +2616,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 44,
+  "rank": 41,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2896,7 +2686,7 @@
    "to": "2029-08",
    "how": "new truck due Feb 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 45,
+  "rank": 42,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -2966,7 +2756,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 46,
+  "rank": 43,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3005,6 +2795,76 @@
  {
   "checked": "trade_press",
   "score": 3.0,
+  "department": "Congerville Rural Fire Protection District",
+  "registry_name": "Congerville Rural Fire Protection District",
+  "city": "Congerville",
+  "county": "Woodford",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "New 4 Guys Fire Trucks tanker delivered (2025-12)",
+  "signal_date": "2025-12-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-december-2025/",
+  "proof_quote": "Department: CONGERVILLE (IL) RURAL FIRE PROTECTION DISTRICT; Type: TANKER; Built by: 4 GUYS FIRE TRUCKS",
+  "other_signals": "",
+  "named_in_source": "Congerville Rural Fire Protection District",
+  "name_match": "exact",
+  "fdid": "WK123",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
+  },
+  "rank": 44,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
   "department": "Cornbelt Fire Protection District",
   "registry_name": "Cornbelt Fire Protection District",
   "city": "Mahomet",
@@ -3036,7 +2896,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 47,
+  "rank": 45,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -3106,7 +2966,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 48,
+  "rank": 46,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -3176,7 +3036,7 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 49,
+  "rank": 47,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3246,7 +3106,7 @@
    "to": "2029-06",
    "how": "new truck due Dec 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 50,
+  "rank": 48,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -3316,7 +3176,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 51,
+  "rank": 49,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3386,7 +3246,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 52,
+  "rank": 50,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3456,7 +3316,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 53,
+  "rank": 51,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3526,7 +3386,7 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 54,
+  "rank": 52,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3596,7 +3456,7 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 55,
+  "rank": 53,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -3666,7 +3526,7 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 56,
+  "rank": 54,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3736,7 +3596,7 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 57,
+  "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3806,7 +3666,7 @@
    "to": "2029-07",
    "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 58,
+  "rank": 56,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3876,7 +3736,7 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 59,
+  "rank": 57,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3946,7 +3806,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 60,
+  "rank": 58,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -4016,7 +3876,7 @@
    "to": "2029-05",
    "how": "new truck due Nov 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 61,
+  "rank": 59,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -4086,7 +3946,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 62,
+  "rank": 60,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -4156,7 +4016,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 63,
+  "rank": 61,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -4226,7 +4086,7 @@
    "to": "2029-11",
    "how": "new truck due May 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 64,
+  "rank": 62,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -4263,45 +4123,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Huey-Ferrin-Boulder Fire Protection District",
-  "registry_name": "Huey-Ferrin-Boulder Fire Protection District",
-  "city": "Huey",
-  "county": "Clinton",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $495,238, awarded 7/28/23 (FY2022)",
-  "signal_date": "2023-07-28",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Huey Ferrin And Boulder Fire Protection District, Vehicle Acquisition, $495,238",
-  "other_signals": "",
-  "named_in_source": "Huey Ferrin And Boulder Fire Protection District",
-  "name_match": "exact",
-  "fdid": "CH183",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 65,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Joliet Fire Department",
@@ -4335,7 +4156,7 @@
    "to": "2029-02",
    "how": "new truck due Summer 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 66,
+  "rank": 63,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -4372,84 +4193,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Kankakee Fire Department",
-  "registry_name": "Kankakee Fire Department",
-  "city": "Kankakee",
-  "county": "Kankakee",
-  "type": "Career",
-  "website": "https://www.kankakeefire.org/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $727,272, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Kankakee Fire Department, Vehicle Acquisition, $727,272",
-  "other_signals": "",
-  "named_in_source": "Kankakee Fire Department",
-  "name_match": "exact, ambiguous (2 same-name rows)",
-  "fdid": "KB211",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 67,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Kewanee Fire Department",
-  "registry_name": "Kewanee Fire Department",
-  "city": "Kewanee",
-  "county": "Henry",
-  "type": "Career",
-  "website": "http://www.cityofkewanee.com/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $672,785, awarded 8/25/23 (FY2022)",
-  "signal_date": "2023-08-25",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Kewanee, Vehicle Acquisition, $672,785",
-  "other_signals": "",
-  "named_in_source": "City of Kewanee",
-  "name_match": "exact",
-  "fdid": "HE211",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-02",
-   "to": "2026-08",
-   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 68,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Lasalle Fire And Emergency Services",
@@ -4483,7 +4226,7 @@
    "to": "2028-12",
    "how": "new truck due Jun 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 69,
+  "rank": 64,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -4553,7 +4296,7 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 70,
+  "rank": 65,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -4623,7 +4366,7 @@
    "to": "2028-11",
    "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 71,
+  "rank": 66,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -4693,7 +4436,7 @@
    "to": "2030-03",
    "how": "new truck due Sep 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 72,
+  "rank": 67,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -4763,7 +4506,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 73,
+  "rank": 68,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -4833,7 +4576,7 @@
    "to": "2029-09",
    "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 74,
+  "rank": 69,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -4903,7 +4646,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 75,
+  "rank": 70,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -4973,7 +4716,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 76,
+  "rank": 71,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -5043,7 +4786,7 @@
    "to": "2030-03",
    "how": "new truck due Sep 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 77,
+  "rank": 72,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -5113,7 +4856,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 78,
+  "rank": 73,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -5183,7 +4926,7 @@
    "to": "2030-01",
    "how": "new truck due Jul 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 79,
+  "rank": 74,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -5253,7 +4996,7 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 80,
+  "rank": 75,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -5323,7 +5066,7 @@
    "to": "2030-02",
    "how": "new truck due Aug 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 81,
+  "rank": 76,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -5393,7 +5136,7 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 82,
+  "rank": 77,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -5463,7 +5206,7 @@
    "to": "2029-09",
    "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 83,
+  "rank": 78,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -5533,7 +5276,7 @@
    "to": "2030-02",
    "how": "new truck due Aug 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 84,
+  "rank": 79,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -5603,7 +5346,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 85,
+  "rank": 80,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -5673,7 +5416,7 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 86,
+  "rank": 81,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -5710,45 +5453,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Pleasant Hill Fire Protection District",
-  "registry_name": "Pleasant Hill Fire Protection District",
-  "city": "Pleasant Hill",
-  "county": "Pike",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $472,595, awarded 7/28/23 (FY2022)",
-  "signal_date": "2023-07-28",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Pleasant Hill Fire Protection District, Vehicle Acquisition, $472,595",
-  "other_signals": "",
-  "named_in_source": "Pleasant Hill Fire Protection District",
-  "name_match": "exact",
-  "fdid": "PD223",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 87,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Pleasantview Fire Protection District",
@@ -5782,7 +5486,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 88,
+  "rank": 82,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -5852,7 +5556,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 89,
+  "rank": 83,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -5922,7 +5626,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 90,
+  "rank": 84,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -5992,7 +5696,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 91,
+  "rank": 85,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -6062,7 +5766,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 92,
+  "rank": 86,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -6132,7 +5836,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 93,
+  "rank": 87,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -6171,45 +5875,6 @@
  {
   "checked": "trade_press",
   "score": 3.0,
-  "department": "Skokie Fire Department",
-  "registry_name": "Skokie Fire Department",
-  "city": "Skokie",
-  "county": "Cook",
-  "type": "Career",
-  "website": "https://www.skokie.org/303/Fire",
-  "why_call": "New truck on order",
-  "detail": "New Pierce 100-foot steel on order (2025-07)",
-  "signal_date": "2025-07-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
-  "proof_quote": "PIERCE—Skokie Fire Department 100-foot steel.",
-  "other_signals": "",
-  "named_in_source": "Skokie Fire Department",
-  "name_match": "exact",
-  "fdid": "CN121",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-11",
-   "to": "2026-07",
-   "how": "ordered Jul 2025; the usual build time has passed"
-  },
-  "rank": 94,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
   "department": "Springfield Fire Department",
   "registry_name": "Springfield Fire Department",
   "city": "Springfield",
@@ -6241,7 +5906,7 @@
    "to": "2029-07",
    "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 95,
+  "rank": 88,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -6311,7 +5976,7 @@
    "to": "2028-02",
    "how": "new truck due Aug 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 96,
+  "rank": 89,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -6381,7 +6046,7 @@
    "to": "2030-01",
    "how": "new truck due Jul 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 97,
+  "rank": 90,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -6451,7 +6116,7 @@
    "to": "2029-05",
    "how": "new truck due Nov 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 98,
+  "rank": 91,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -6521,7 +6186,7 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 99,
+  "rank": 92,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -6591,7 +6256,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 100,
+  "rank": 93,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -6661,7 +6326,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 101,
+  "rank": 94,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -6731,7 +6396,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 102,
+  "rank": 95,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -6770,6 +6435,146 @@
  {
   "checked": "trade_press",
   "score": 1.0,
+  "department": "Beecher Fire Protection District",
+  "registry_name": "Beecher Fire Protection District",
+  "city": "Beecher",
+  "county": "Will",
+  "type": "Mostly volunteer",
+  "website": "www.beecherfire.org",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Danko wildland unit due December2025 (ordered 2025-01)",
+  "signal_date": "2025-12-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2025/",
+  "proof_quote": "DANKO—Beecher Fire Protection District wildland unit. Delivery in December2025.",
+  "other_signals": "",
+  "named_in_source": "Beecher Fire Protection District",
+  "name_match": "exact",
+  "fdid": "WG113",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "brush",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a wildland unit; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck was due Dec 2025; the old one may already have sold quietly"
+  },
+  "rank": 96,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "brush",
+   "band": "all ages",
+   "n": 14,
+   "median": 6825,
+   "p25": 5175,
+   "p75": 10350,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
+     "price": 3150.0,
+     "date": "2026-07-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48054/item/lot-0001-listing-updated-1986-ford-f-350-brush-fire-truck-302769/"
+    },
+    {
+     "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
+     "price": 33300.0,
+     "date": "2026-06-24",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47593/item/lot-0001-2006-ford-f550-crew-cab-dually-rescue-brush-fire-truck-299118/"
+    },
+    {
+     "item": "1963 Mercedes Unimog-S Fire/Brush Truck",
+     "price": 9900.0,
+     "date": "2026-02-20",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "City of Champaign Fire Department",
+  "registry_name": "City of Champaign Fire Department",
+  "city": "Champaign",
+  "county": "Champaign",
+  "type": "Career",
+  "website": "https://ci.champaign.il.us/departments/fire/",
+  "why_call": "New truck on order",
+  "detail": "New Pierce 100- foot Ascendant steel aerial platform quint on order (2025-05), delivery July 2018",
+  "signal_date": "2025-05-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-may-2025/",
+  "proof_quote": "PIERCE—Champaign Fire Department 100- foot Ascendant steel aerial platform quint. Delivery in July 2018.",
+  "other_signals": "",
+  "named_in_source": "Champaign Fire Department",
+  "name_match": "exact",
+  "fdid": "CD131",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a 100- foot Ascendant steel aerial platform quint; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-09",
+   "to": "2026-05",
+   "how": "ordered May 2025; the usual build time has passed"
+  },
+  "rank": 97,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
   "department": "Gurnee Fire Department",
   "registry_name": "Gurnee Fire Department",
   "city": "Gurnee",
@@ -6801,7 +6606,7 @@
    "to": "2026-01",
    "how": "new truck was due Jul 2025; the old one may already have sold quietly"
   },
-  "rank": 103,
+  "rank": 98,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -6836,6 +6641,201 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Huey-Ferrin-Boulder Fire Protection District",
+  "registry_name": "Huey-Ferrin-Boulder Fire Protection District",
+  "city": "Huey",
+  "county": "Clinton",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $495,238, awarded 7/28/23 (FY2022)",
+  "signal_date": "2023-07-28",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Huey Ferrin And Boulder Fire Protection District, Vehicle Acquisition, $495,238",
+  "other_signals": "",
+  "named_in_source": "Huey Ferrin And Boulder Fire Protection District",
+  "name_match": "exact",
+  "fdid": "CH183",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 99,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Kankakee Fire Department",
+  "registry_name": "Kankakee Fire Department",
+  "city": "Kankakee",
+  "county": "Kankakee",
+  "type": "Career",
+  "website": "https://www.kankakeefire.org/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $727,272, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Kankakee Fire Department, Vehicle Acquisition, $727,272",
+  "other_signals": "",
+  "named_in_source": "Kankakee Fire Department",
+  "name_match": "exact, ambiguous (2 same-name rows)",
+  "fdid": "KB211",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 100,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Kewanee Fire Department",
+  "registry_name": "Kewanee Fire Department",
+  "city": "Kewanee",
+  "county": "Henry",
+  "type": "Career",
+  "website": "http://www.cityofkewanee.com/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $672,785, awarded 8/25/23 (FY2022)",
+  "signal_date": "2023-08-25",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Kewanee, Vehicle Acquisition, $672,785",
+  "other_signals": "",
+  "named_in_source": "City of Kewanee",
+  "name_match": "exact",
+  "fdid": "HE211",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 101,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Pleasant Hill Fire Protection District",
+  "registry_name": "Pleasant Hill Fire Protection District",
+  "city": "Pleasant Hill",
+  "county": "Pike",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $472,595, awarded 7/28/23 (FY2022)",
+  "signal_date": "2023-07-28",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Pleasant Hill Fire Protection District, Vehicle Acquisition, $472,595",
+  "other_signals": "",
+  "named_in_source": "Pleasant Hill Fire Protection District",
+  "name_match": "exact",
+  "fdid": "PD223",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 102,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Skokie Fire Department",
+  "registry_name": "Skokie Fire Department",
+  "city": "Skokie",
+  "county": "Cook",
+  "type": "Career",
+  "website": "https://www.skokie.org/303/Fire",
+  "why_call": "New truck on order",
+  "detail": "New Pierce 100-foot steel on order (2025-07)",
+  "signal_date": "2025-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
+  "proof_quote": "PIERCE—Skokie Fire Department 100-foot steel.",
+  "other_signals": "",
+  "named_in_source": "Skokie Fire Department",
+  "name_match": "exact",
+  "fdid": "CN121",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-11",
+   "to": "2026-07",
+   "how": "ordered Jul 2025; the usual build time has passed"
+  },
+  "rank": 103,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  },
  {
   "checked": "trade_press",

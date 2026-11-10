@@ -78,76 +78,6 @@
   "guide": null
  },
  {
-  "checked": "trade_press",
-  "score": 4.0,
-  "department": "East Sullivan County Volunteer Fire Department",
-  "registry_name": "East Sullivan County Volunteer Fire Department",
-  "city": "Bristol",
-  "county": "Sullivan",
-  "type": "Volunteer",
-  "website": "http://eastsullivancountyvfd.com/",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Toyne pumper due November 2026 (ordered 2025-04)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
-  "proof_quote": "TOYNE—East Sullivan Volunteer Fire Department, Bristol, TN, pumper. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "East Sullivan Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "82351",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-05",
-   "how": "new truck was due Nov 2026; we allow six months after delivery for the old one to list"
-  },
-  "rank": 3,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 437,
-   "median": 4300,
-   "p25": 2800,
-   "p75": 6400,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
   "checked": "fema_table",
   "score": 4.0,
   "department": "Enville Volunteer Fire Department",
@@ -181,7 +111,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -220,7 +150,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -259,7 +189,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -298,7 +228,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -337,7 +267,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -376,7 +306,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 9,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -415,7 +345,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -454,7 +384,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -493,7 +423,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 12,
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -532,7 +462,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 13,
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -571,7 +501,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 14,
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -610,7 +540,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 15,
+  "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -649,7 +579,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 16,
+  "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -688,7 +618,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 17,
+  "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -727,7 +657,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 18,
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -766,7 +696,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 19,
+  "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -805,7 +735,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 20,
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -842,45 +772,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "City of Kenton Volunteer Fire Department",
-  "registry_name": "City of Kenton Volunteer Fire Department",
-  "city": "Kenton",
-  "county": "Gibson",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $304,761, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Kenton, City of, Vehicle Acquisition, $304,761",
-  "other_signals": "",
-  "named_in_source": "Kenton, City of",
-  "name_match": "exact",
-  "fdid": "66121",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 21,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Dickson County Emergency Management",
@@ -914,7 +805,7 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 22,
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -951,43 +842,74 @@
   }
  },
  {
-  "checked": "fema_table",
+  "checked": "trade_press",
   "score": 3.0,
-  "department": "North Robertson Fire and Rescue",
-  "registry_name": "North Robertson Fire and Rescue",
-  "city": "Springfield",
-  "county": "Robertson",
+  "department": "East Sullivan County Volunteer Fire Department",
+  "registry_name": "East Sullivan County Volunteer Fire Department",
+  "city": "Bristol",
+  "county": "Sullivan",
   "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $433,333, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "North Robertson Fire & Rescue, Vehicle Acquisition, $433,333",
+  "website": "http://eastsullivancountyvfd.com/",
+  "why_call": "New truck on order",
+  "detail": "New Toyne pumper on order (2025-04), delivery November 2026",
+  "signal_date": "2025-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-april-2025/",
+  "proof_quote": "TOYNE—East Sullivan Volunteer Fire Department, Bristol, TN, pumper. Delivery in November 2026.",
   "other_signals": "",
-  "named_in_source": "North Robertson Fire & Rescue",
+  "named_in_source": "East Sullivan Volunteer Fire Department",
   "name_match": "exact",
-  "fdid": "74811",
-  "top_kind": "grant",
+  "fdid": "82351",
+  "top_kind": "new_truck_ordered",
   "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
-   "type": null,
+   "type": "pumper",
    "year": null,
    "year_how": null,
-   "type_how": null
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
   },
   "stage": "replacing",
   "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 23,
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
-  "guide": null
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
  },
  {
   "checked": "trade_press",
@@ -1023,7 +945,7 @@
    "to": "2026-02",
    "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
   },
-  "rank": 24,
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1093,7 +1015,7 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 25,
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1163,7 +1085,7 @@
    "to": "2028-05",
    "how": "new truck due Fall 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 26,
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1198,5 +1120,83 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "City of Kenton Volunteer Fire Department",
+  "registry_name": "City of Kenton Volunteer Fire Department",
+  "city": "Kenton",
+  "county": "Gibson",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $304,761, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Kenton, City of, Vehicle Acquisition, $304,761",
+  "other_signals": "",
+  "named_in_source": "Kenton, City of",
+  "name_match": "exact",
+  "fdid": "66121",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 25,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "North Robertson Fire and Rescue",
+  "registry_name": "North Robertson Fire and Rescue",
+  "city": "Springfield",
+  "county": "Robertson",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $433,333, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "North Robertson Fire & Rescue, Vehicle Acquisition, $433,333",
+  "other_signals": "",
+  "named_in_source": "North Robertson Fire & Rescue",
+  "name_match": "exact",
+  "fdid": "74811",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 26,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
  }
 ]

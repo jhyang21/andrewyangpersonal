@@ -486,9 +486,9 @@
   "fdid": "02604"
  },
  {
-  "kind": "delivery_due",
-  "date": "2026-11-01",
-  "detail": "New Rosenbauer pumper-tanker due November 2026 (ordered 2025-05)",
+  "kind": "new_truck_ordered",
+  "date": "2025-05-01",
+  "detail": "New Rosenbauer pumper-tanker on order (2025-05), delivery November 2026",
   "old_truck": null,
   "where": "trade press",
   "quote": "ROSENBAUER—Central Crossing Fire Protection District, Shell Knob, pumper-tanker. Delivery in November 2026.",
@@ -497,7 +497,7 @@
   "expected": "2026-11",
   "expected_precision": "month",
   "expected_words": "November 2026",
-  "points": 4,
+  "points": 3,
   "read_by": "feed",
   "source_name": "Central Crossing Fire Protection District",
   "source_city": "Shell Knob",

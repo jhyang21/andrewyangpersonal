@@ -375,7 +375,7 @@
  },
  {
   "kind": "sale_planned",
-  "detail": "Selling: two current fire trucks. potential sale; fire department keeps $13,000 of proceeds",
+  "detail": "Selling: two current fire trucks. may sell; fire department keeps $13,000 of proceeds",
   "date": "2026-06-08",
   "quote": "the Fire Department can retain $13,000 from the potential sale of the two (2) current fire trucks",
   "old_truck": "two current fire trucks",
@@ -392,7 +392,7 @@
  },
  {
   "kind": "already_sold",
-  "detail": "Selling: 1997 Seagrave pumper. sold to Highspire Borough for Citizens Fire Company #1 (Highspire Resolution 13 of 2025)",
+  "detail": "Sold: 1997 Seagrave pumper. sold to Highspire Borough for Citizens Fire Company #1 (Highspire Resolution 13 of 2025)",
   "date": "2025-04-15",
   "quote": "has received an offer for the purchase of one (1) used 1997 Seagrave pumper truck",
   "old_truck": "1997 Seagrave pumper",
@@ -426,7 +426,7 @@
  },
  {
   "kind": "sale_planned",
-  "detail": "Selling: borough-owned brush truck. chief proposed selling it, possibly on an online auction site; item to go on December agenda",
+  "detail": "Selling: borough-owned brush truck. the chief proposed selling it online; on the December agenda",
   "date": "2024-11-19",
   "quote": "possibly sell the Brush Truck that is owned by the Borough and use proceeds towards the New Tanker",
   "old_truck": "borough-owned brush truck",

@@ -187,45 +187,6 @@
   "guide": null
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Snohomish County Fire District # 19",
-  "registry_name": "Snohomish County Fire District # 19",
-  "city": "Stanwood",
-  "county": "Snohomish",
-  "type": "Mostly volunteer",
-  "website": "http://www.firedistrict19.com/",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $676,000, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Snohomish County Fire District 21, Vehicle Acquisition, $676,000",
-  "other_signals": "",
-  "named_in_source": "Snohomish County Fire District 21",
-  "name_match": "exact, ambiguous (10 same-name rows)",
-  "fdid": "31D19",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 5,
-  "tier": "3 Watch",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Snohomish County Fire District 7",
@@ -259,7 +220,7 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -329,7 +290,7 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -364,5 +325,44 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Snohomish County Fire District # 19",
+  "registry_name": "Snohomish County Fire District # 19",
+  "city": "Stanwood",
+  "county": "Snohomish",
+  "type": "Mostly volunteer",
+  "website": "http://www.firedistrict19.com/",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $676,000, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Snohomish County Fire District 21, Vehicle Acquisition, $676,000",
+  "other_signals": "",
+  "named_in_source": "Snohomish County Fire District 21",
+  "name_match": "exact, ambiguous (10 same-name rows)",
+  "fdid": "31D19",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 7,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": null
  }
 ]

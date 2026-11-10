@@ -140,146 +140,6 @@
   }
  },
  {
-  "checked": "trade_press",
-  "score": 5.0,
-  "department": "Pueblo Fire Department",
-  "registry_name": "Pueblo Fire Department",
-  "city": "Pueblo",
-  "county": "Pueblo",
-  "type": "Career",
-  "website": "pueblo.us/fire",
-  "why_call": "New truck in service",
-  "detail": "New Sutphen Fire Apparatus pumper/tanker delivered (2025-12)",
-  "signal_date": "2025-12-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-december-2025/",
-  "proof_quote": "Department: PUEBLO (CO) RURAL FIRE PROTECTION DISTRICT; Type: PUMPER/TANKER; Built by: SUTPHEN FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "Pueblo Rural Fire Protection District",
-  "name_match": "exact, ambiguous (2 same-name rows)",
-  "fdid": "10145",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2025-12",
-   "to": "2026-06",
-   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
-  },
-  "rank": 3,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 4.5,
-  "department": "Stratmoor Hills Fire Protection District",
-  "registry_name": "Stratmoor Hills Fire Protection District",
-  "city": "Colorado Springs",
-  "county": "El Paso",
-  "type": "Mostly volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Danko Danko tanker due April 2026 (ordered 2025-11)",
-  "signal_date": "2026-04-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
-  "proof_quote": "DANKO—Stratmoor Hills Fire Protection District, Colorado Springs, CO, Danko tanker. Delivery in April 2026.",
-  "other_signals": "New truck on order: New Danko tanker on order (2025-12), delivery December 2026",
-  "named_in_source": "Stratmoor Hills Fire Protection District",
-  "name_match": "exact",
-  "fdid": "04175",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a Danko tanker; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-04",
-   "to": "2026-10",
-   "how": "new truck was due Apr 2026; the old one may already have sold quietly"
-  },
-  "rank": 4,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
   "checked": "fema_table",
   "score": 4.0,
   "department": "Colorado Department of Public Safety",
@@ -313,7 +173,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -352,7 +212,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -391,6 +251,146 @@
  {
   "checked": "trade_press",
   "score": 3.0,
+  "department": "Pueblo Fire Department",
+  "registry_name": "Pueblo Fire Department",
+  "city": "Pueblo",
+  "county": "Pueblo",
+  "type": "Career",
+  "website": "pueblo.us/fire",
+  "why_call": "New truck in service",
+  "detail": "New Sutphen Fire Apparatus pumper/tanker delivered (2025-12)",
+  "signal_date": "2025-12-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-december-2025/",
+  "proof_quote": "Department: PUEBLO (CO) RURAL FIRE PROTECTION DISTRICT; Type: PUMPER/TANKER; Built by: SUTPHEN FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "Pueblo Rural Fire Protection District",
+  "name_match": "exact, ambiguous (2 same-name rows)",
+  "fdid": "10145",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
+  },
+  "rank": 5,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 2.5,
+  "department": "Stratmoor Hills Fire Protection District",
+  "registry_name": "Stratmoor Hills Fire Protection District",
+  "city": "Colorado Springs",
+  "county": "El Paso",
+  "type": "Mostly volunteer",
+  "website": "",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Danko Danko tanker due April 2026 (ordered 2025-11)",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-november-2025/",
+  "proof_quote": "DANKO—Stratmoor Hills Fire Protection District, Colorado Springs, CO, Danko tanker. Delivery in April 2026.",
+  "other_signals": "New truck on order: New Danko tanker on order (2025-12), delivery December 2026",
+  "named_in_source": "Stratmoor Hills Fire Protection District",
+  "name_match": "exact",
+  "fdid": "04175",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a Danko tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck was due Apr 2026; the old one may already have sold quietly"
+  },
+  "rank": 6,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
   "department": "Colorado River Fire Rescue",
   "registry_name": "Colorado River Fire Rescue",
   "city": "Rifle",

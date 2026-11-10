@@ -963,7 +963,7 @@
   "afg_large": 1
  },
  "labels": {
-  "auction_open": "Fire truck at auction now",
+  "auction_open": "Fire truck or ambulance at auction now",
   "surplus_declared": "Board voted to sell a truck",
   "sale_planned": "Plans to sell a truck",
   "new_truck_arrived": "New truck in service",
@@ -987,7 +987,8 @@
   "grant_due": 1,
   "snippet_only": -1,
   "arrived_last_year": -2,
-  "arrived_long_ago": -4
+  "arrived_long_ago": -4,
+  "window_passed": -2
  },
  "observed": [
   "auction_open",

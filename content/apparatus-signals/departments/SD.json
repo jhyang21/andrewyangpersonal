@@ -1,75 +1,5 @@
 [
  {
-  "checked": "trade_press",
-  "score": 4.0,
-  "department": "Gettysburg Volunteer Fire Department",
-  "registry_name": "Gettysburg Volunteer Fire Department",
-  "city": "Gettysburg",
-  "county": "Potter",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Midwest Fire tanker-pumper due November 2026 (ordered 2026-01)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
-  "proof_quote": "MIDWEST FIRE—Gettysburg Fire Department tanker-pumper. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "Gettysburg Fire Department",
-  "name_match": "exact",
-  "fdid": "54001",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a tanker-pumper; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-05",
-   "how": "new truck was due Nov 2026; we allow six months after delivery for the old one to list"
-  },
-  "rank": 1,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
   "checked": "fema_table",
   "score": 4.0,
   "department": "Ludlow Volunteer Fire Department",
@@ -103,7 +33,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 2,
+  "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -142,80 +72,10 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
-  "department": "Aberdeen Fire Rescue",
-  "registry_name": "Aberdeen Fire Rescue",
-  "city": "Aberdeen",
-  "county": "Brown",
-  "type": "Career",
-  "website": "https://www.aberdeen.sd.us/25/Fire-Rescue",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Midwest Fire brush truck due April 2026 (ordered 2025-12)",
-  "signal_date": "2026-04-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-december-2025/",
-  "proof_quote": "MIDWEST FIRE—Aberdeen Fire & Rescue brush truck. Delivery in April 2026.",
-  "other_signals": "",
-  "named_in_source": "Aberdeen Fire & Rescue",
-  "name_match": "exact, ambiguous (2 same-name rows)",
-  "fdid": "03101",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "brush",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a brush truck; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-04",
-   "to": "2026-10",
-   "how": "new truck was due Apr 2026; the old one may already have sold quietly"
-  },
-  "rank": 4,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "brush",
-   "band": "all ages",
-   "n": 14,
-   "median": 6825,
-   "p25": 5175,
-   "p75": 10350,
-   "thin": false,
-   "comps": [
-    {
-     "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
-     "price": 3150.0,
-     "date": "2026-07-17",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48054/item/lot-0001-listing-updated-1986-ford-f-350-brush-fire-truck-302769/"
-    },
-    {
-     "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
-     "price": 33300.0,
-     "date": "2026-06-24",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47593/item/lot-0001-2006-ford-f550-crew-cab-dually-rescue-brush-fire-truck-299118/"
-    },
-    {
-     "item": "1963 Mercedes Unimog-S Fire/Brush Truck",
-     "price": 9900.0,
-     "date": "2026-02-20",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
-    }
-   ]
-  }
  },
  {
   "checked": "trade_press",
@@ -251,7 +111,7 @@
    "to": "2028-08",
    "how": "new truck due Feb 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 5,
+  "rank": 3,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -321,7 +181,7 @@
    "to": "2029-09",
    "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
+  "rank": 4,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -360,6 +220,76 @@
  {
   "checked": "trade_press",
   "score": 3.0,
+  "department": "Gettysburg Volunteer Fire Department",
+  "registry_name": "Gettysburg Volunteer Fire Department",
+  "city": "Gettysburg",
+  "county": "Potter",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Midwest Fire tanker-pumper on order (2026-01), delivery November 2026",
+  "signal_date": "2026-01-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-january-2026/",
+  "proof_quote": "MIDWEST FIRE—Gettysburg Fire Department tanker-pumper. Delivery in November 2026.",
+  "other_signals": "",
+  "named_in_source": "Gettysburg Fire Department",
+  "name_match": "exact",
+  "fdid": "54001",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tanker-pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 5,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
   "department": "Hill City Fire Department",
   "registry_name": "Hill City Fire Department",
   "city": "Hill City",
@@ -391,7 +321,7 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -461,7 +391,7 @@
    "to": "2028-01",
    "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -531,7 +461,7 @@
    "to": "2027-10",
    "how": "new truck due Apr 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 9,
+  "rank": 8,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -601,7 +531,7 @@
    "to": "2027-09",
    "how": "new truck due Mar 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 10,
+  "rank": 9,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -633,6 +563,76 @@
      "date": "2026-10-23",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
+  "department": "Aberdeen Fire Rescue",
+  "registry_name": "Aberdeen Fire Rescue",
+  "city": "Aberdeen",
+  "county": "Brown",
+  "type": "Career",
+  "website": "https://www.aberdeen.sd.us/25/Fire-Rescue",
+  "why_call": "New truck was due; delivery not confirmed",
+  "detail": "New Midwest Fire brush truck due April 2026 (ordered 2025-12)",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-december-2025/",
+  "proof_quote": "MIDWEST FIRE—Aberdeen Fire & Rescue brush truck. Delivery in April 2026.",
+  "other_signals": "",
+  "named_in_source": "Aberdeen Fire & Rescue",
+  "name_match": "exact, ambiguous (2 same-name rows)",
+  "fdid": "03101",
+  "top_kind": "delivery_due",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "brush",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a brush truck; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck was due Apr 2026; the old one may already have sold quietly"
+  },
+  "rank": 10,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "brush",
+   "band": "all ages",
+   "n": 14,
+   "median": 6825,
+   "p25": 5175,
+   "p75": 10350,
+   "thin": false,
+   "comps": [
+    {
+     "item": "*Listing updated 1986 Ford F-350 Brush Fire Truck",
+     "price": 3150.0,
+     "date": "2026-07-17",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48054/item/lot-0001-listing-updated-1986-ford-f-350-brush-fire-truck-302769/"
+    },
+    {
+     "item": "2006 Ford F550 Crew Cab Dually Rescue Brush Fire Truck",
+     "price": 33300.0,
+     "date": "2026-06-24",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47593/item/lot-0001-2006-ford-f550-crew-cab-dually-rescue-brush-fire-truck-299118/"
+    },
+    {
+     "item": "1963 Mercedes Unimog-S Fire/Brush Truck",
+     "price": 9900.0,
+     "date": "2026-02-20",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46090/item/lot-0001-1963-mercedes-unimog-s-firebrush-truck-287948/"
     }
    ]
   }

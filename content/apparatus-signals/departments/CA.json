@@ -981,45 +981,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Junction City Volunteer Fire Department",
-  "registry_name": "Junction City Volunteer Fire Department",
-  "city": "Junction City",
-  "county": "Trinity",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $485,182, awarded 7/28/23 (FY2022)",
-  "signal_date": "2023-07-28",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Junction City Fire Department, Vehicle Acquisition, $485,182",
-  "other_signals": "",
-  "named_in_source": "Junction City Fire Department",
-  "name_match": "exact",
-  "fdid": "53025",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 19,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Los Angeles County Fire Department",
@@ -1053,7 +1014,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 20,
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -1092,7 +1053,7 @@
    "to": "2025-09",
    "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
   },
-  "rank": 21,
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1162,7 +1123,7 @@
    "to": "2026-02",
    "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
   },
-  "rank": 22,
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1232,7 +1193,7 @@
    "to": "2025-10",
    "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
   },
-  "rank": 23,
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1302,7 +1263,7 @@
    "to": "2029-05",
    "how": "new truck due Fall 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1372,7 +1333,7 @@
    "to": "2027-01",
    "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 25,
+  "rank": 24,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1442,7 +1403,7 @@
    "to": "2026-11",
    "how": "new truck was due May 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 26,
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1512,7 +1473,7 @@
    "to": "2026-11",
    "how": "new truck was due May 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 27,
+  "rank": 26,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1582,7 +1543,7 @@
    "to": "2025-12",
    "how": "new truck arrived Jun 2025; the old one may already have sold quietly"
   },
-  "rank": 28,
+  "rank": 27,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1652,7 +1613,7 @@
    "to": "2028-11",
    "how": "new truck due Spring 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 29,
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1722,7 +1683,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 30,
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1757,5 +1718,44 @@
     }
    ]
   }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Junction City Volunteer Fire Department",
+  "registry_name": "Junction City Volunteer Fire Department",
+  "city": "Junction City",
+  "county": "Trinity",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $485,182, awarded 7/28/23 (FY2022)",
+  "signal_date": "2023-07-28",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Junction City Fire Department, Vehicle Acquisition, $485,182",
+  "other_signals": "",
+  "named_in_source": "Junction City Fire Department",
+  "name_match": "exact",
+  "fdid": "53025",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 30,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": null
  }
 ]

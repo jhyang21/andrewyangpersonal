@@ -71,76 +71,6 @@
  },
  {
   "checked": "trade_press",
-  "score": 5.0,
-  "department": "Leeds Fire Protection District",
-  "registry_name": "Leeds Fire Protection District",
-  "city": "Leeds",
-  "county": "Benson",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Midwest Fire Tanker mini pumper delivered (2026-01)",
-  "signal_date": "2026-01-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-january-2026/",
-  "proof_quote": "Department: LEEDS (ND) RURAL FIRE PROTECTION DISTRICT; Type: MINI PUMPER; Built by: MIDWEST FIRE TANKER",
-  "other_signals": "",
-  "named_in_source": "Leeds Rural Fire Protection District",
-  "name_match": "exact",
-  "fdid": "03201",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "mini pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a mini pumper; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-01",
-   "to": "2026-07",
-   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
-  },
-  "rank": 2,
-  "tier": "2 Call this month",
-  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
-  "guide": {
-   "type": "mini pumper",
-   "band": "all ages",
-   "n": 15,
-   "median": 8400,
-   "p25": 6650,
-   "p75": 12300,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1992 Ford F350 Mini Pumper Truck",
-     "price": 10500.0,
-     "date": "2026-03-09",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/46229/item/lot-0001-1992-ford-f350-mini-pumper-truck-288762/"
-    },
-    {
-     "item": "1995 Ford SD KME Mini Pumper 4x4 Truck",
-     "price": 12300.0,
-     "date": "2025-11-25",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/44510/item/lot-0003-1995-ford-sd-kme-mini-pumper-4x4-truck-281113/"
-    },
-    {
-     "item": "(Brush Truck) 1985 Chevy C/K30 Mini Pumper Truck",
-     "price": 7000.0,
-     "date": "2025-06-19",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
   "score": 4.0,
   "department": "Dickinson Fire Department",
   "registry_name": "Dickinson Fire Department",
@@ -173,7 +103,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -243,7 +173,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -282,7 +212,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -321,7 +251,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -360,7 +290,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -399,7 +329,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -438,7 +368,7 @@
    "to": "2028-05",
    "how": "new truck due Nov 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 9,
+  "rank": 8,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -508,7 +438,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 10,
+  "rank": 9,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -578,7 +508,7 @@
    "to": "2028-01",
    "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -610,6 +540,76 @@
      "date": "2026-05-27",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Leeds Fire Protection District",
+  "registry_name": "Leeds Fire Protection District",
+  "city": "Leeds",
+  "county": "Benson",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "New Midwest Fire Tanker mini pumper delivered (2026-01)",
+  "signal_date": "2026-01-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-january-2026/",
+  "proof_quote": "Department: LEEDS (ND) RURAL FIRE PROTECTION DISTRICT; Type: MINI PUMPER; Built by: MIDWEST FIRE TANKER",
+  "other_signals": "",
+  "named_in_source": "Leeds Rural Fire Protection District",
+  "name_match": "exact",
+  "fdid": "03201",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "mini pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a mini pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-01",
+   "to": "2026-07",
+   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
+  },
+  "rank": 11,
+  "tier": "3 Watch",
+  "ask_for": "District secretary or chair of the Board of Fire Commissioners",
+  "guide": {
+   "type": "mini pumper",
+   "band": "all ages",
+   "n": 15,
+   "median": 8400,
+   "p25": 6650,
+   "p75": 12300,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1992 Ford F350 Mini Pumper Truck",
+     "price": 10500.0,
+     "date": "2026-03-09",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/46229/item/lot-0001-1992-ford-f350-mini-pumper-truck-288762/"
+    },
+    {
+     "item": "1995 Ford SD KME Mini Pumper 4x4 Truck",
+     "price": 12300.0,
+     "date": "2025-11-25",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/44510/item/lot-0003-1995-ford-sd-kme-mini-pumper-4x4-truck-281113/"
+    },
+    {
+     "item": "(Brush Truck) 1985 Chevy C/K30 Mini Pumper Truck",
+     "price": 7000.0,
+     "date": "2025-06-19",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/42655/item/lot-0021-21brush-truck-1985-chevy-ck30-mini-pumper-truck-265934/"
     }
    ]
   }

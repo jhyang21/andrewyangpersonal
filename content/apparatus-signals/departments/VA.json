@@ -228,6 +228,76 @@
  {
   "checked": "trade_press",
   "score": 3.0,
+  "department": "Standardsville Volunteer Fire Department",
+  "registry_name": "Standardsville Volunteer Fire Department",
+  "city": "Standardsville",
+  "county": "Greene",
+  "type": "Volunteer",
+  "website": "https://www.sv1fd.com",
+  "why_call": "New truck on order",
+  "detail": "New SVI Trucks walk-in heavy rescue on order (2026-02), delivery January 2027",
+  "signal_date": "2026-02-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2026/",
+  "proof_quote": "SVI TRUCKS—Stanardsville Volunteer Fire Department walk-in heavy rescue. Delivery in January 2027.",
+  "other_signals": "",
+  "named_in_source": "Stanardsville Volunteer Fire Department",
+  "name_match": "fuzzy",
+  "fdid": "07902",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "rescue",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a walk-in heavy rescue; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2027-01",
+   "to": "2027-07",
+   "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
+  },
+  "rank": 6,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "rescue",
+   "band": "all ages",
+   "n": 138,
+   "median": 7400,
+   "p25": 4325,
+   "p75": 15175,
+   "thin": false,
+   "comps": [
+    {
+     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
+     "price": 9600.0,
+     "date": "2026-11-05",
+     "state": "MA",
+     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
+    },
+    {
+     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
+     "price": 10200.0,
+     "date": "2026-10-15",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
+    },
+    {
+     "item": "1987 GMC 7000 Rescue Truck",
+     "price": 1575.0,
+     "date": "2026-08-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 1.0,
   "department": "Bumpass Volunteer Fire Department",
   "registry_name": "",
   "city": "",
@@ -259,7 +329,7 @@
    "to": "2026-07",
    "how": "new truck was due Jan 2026; the old one may already have sold quietly"
   },
-  "rank": 6,
+  "rank": 7,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -297,7 +367,7 @@
  },
  {
   "checked": "trade_press",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Christiansburg Fire Department",
   "registry_name": "Christiansburg Fire Department",
   "city": "Christiansburg",
@@ -329,7 +399,7 @@
    "to": "2026-08",
    "how": "new truck was due Feb 2026; the old one may already have sold quietly"
   },
-  "rank": 7,
+  "rank": 8,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -361,76 +431,6 @@
      "date": "2026-10-23",
      "state": "NY",
      "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 3.0,
-  "department": "Standardsville Volunteer Fire Department",
-  "registry_name": "Standardsville Volunteer Fire Department",
-  "city": "Standardsville",
-  "county": "Greene",
-  "type": "Volunteer",
-  "website": "https://www.sv1fd.com",
-  "why_call": "New truck on order",
-  "detail": "New SVI Trucks walk-in heavy rescue on order (2026-02), delivery January 2027",
-  "signal_date": "2026-02-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-february-2026/",
-  "proof_quote": "SVI TRUCKS—Stanardsville Volunteer Fire Department walk-in heavy rescue. Delivery in January 2027.",
-  "other_signals": "",
-  "named_in_source": "Stanardsville Volunteer Fire Department",
-  "name_match": "fuzzy",
-  "fdid": "07902",
-  "top_kind": "new_truck_ordered",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "rescue",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a walk-in heavy rescue; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2027-01",
-   "to": "2027-07",
-   "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
-  },
-  "rank": 8,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "rescue",
-   "band": "all ages",
-   "n": 138,
-   "median": 7400,
-   "p25": 4325,
-   "p75": 15175,
-   "thin": false,
-   "comps": [
-    {
-     "item": "2014 Ford F-350 Super Duty Extended Cab Rescue Truck",
-     "price": 9600.0,
-     "date": "2026-11-05",
-     "state": "MA",
-     "url": "https://www.auctionsinternational.com/auction/49636/item/lot-0001-2014-ford-f-350-super-duty-extended-cab-rescue-truck-313104/"
-    },
-    {
-     "item": "*Lot Updated* 1998 Freightliner FL70 Rescue Truck",
-     "price": 10200.0,
-     "date": "2026-10-15",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49377/item/lot-0001-lot-updated-1998-freightliner-fl70-rescue-truck-311395/"
-    },
-    {
-     "item": "1987 GMC 7000 Rescue Truck",
-     "price": 1575.0,
-     "date": "2026-08-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/48586/item/lot-0001-1987-gmc-7000-rescue-truck-306688/"
     }
    ]
   }

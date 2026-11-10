@@ -227,7 +227,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Chattanooga Fire - Rescue",
   "registry_name": "Chattanooga Fire - Rescue",
   "city": "Chattanooga",
@@ -266,7 +266,7 @@
  },
  {
   "checked": "fema_table",
-  "score": 3.0,
+  "score": 1.0,
   "department": "Vinita Fire Department",
   "registry_name": "Vinita Fire Department",
   "city": "Vinita",

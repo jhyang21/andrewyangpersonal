@@ -328,9 +328,9 @@
   "fdid": ""
  },
  {
-  "kind": "delivery_due",
-  "date": "2026-11-01",
-  "detail": "New Midwest Fire pumper-tanker due November 2026 (ordered 2025-06)",
+  "kind": "new_truck_ordered",
+  "date": "2025-06-01",
+  "detail": "New Midwest Fire pumper-tanker on order (2025-06), delivery November 2026",
   "old_truck": null,
   "where": "trade press",
   "quote": "MIDWEST FIRE—Ogden Fire Department pumper-tanker. Delivery in November 2026.",
@@ -339,7 +339,7 @@
   "expected": "2026-11",
   "expected_precision": "month",
   "expected_words": "November 2026",
-  "points": 4,
+  "points": 3,
   "read_by": "feed",
   "source_name": "Ogden Fire Department",
   "source_city": "",

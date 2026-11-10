@@ -118,76 +118,6 @@
  },
  {
   "checked": "trade_press",
-  "score": 5.0,
-  "department": "North Saint Paul Fire Department",
-  "registry_name": "North Saint Paul Fire Department",
-  "city": "North Saint Paul",
-  "county": "Ramsey",
-  "type": "Mostly volunteer",
-  "website": "http://www.northstpaul.org/",
-  "why_call": "New truck in service",
-  "detail": "New Custom Fire Apparatus pumper delivered (2026-04)",
-  "signal_date": "2026-04-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-april-2026/",
-  "proof_quote": "Department: NORTH ST. PAUL (MN) FIRE DEPARTMENT; Type: PUMPER; Built by: CUSTOM FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "North St. Paul Fire Department",
-  "name_match": "fuzzy",
-  "fdid": "55109",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-04",
-   "to": "2026-10",
-   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
-  },
-  "rank": 4,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 437,
-   "median": 4300,
-   "p25": 2800,
-   "p75": 6400,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
   "score": 4.5,
   "department": "Moorhead Fire Department",
   "registry_name": "Moorhead Fire Department",
@@ -220,149 +150,9 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 437,
-   "median": 4300,
-   "p25": 2800,
-   "p75": 6400,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 4.0,
-  "department": "Battle Lake Area Fire Association",
-  "registry_name": "Battle Lake Area Fire Association",
-  "city": "Battle Lake",
-  "county": "Otter Tail",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Midwest Fire tanker due November 2026 (ordered 2025-07)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
-  "proof_quote": "MIDWEST FIRE—Battle Lake Area Fire & Rescue Association tanker. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "Battle Lake Area Fire & Rescue Association",
-  "name_match": "exact",
-  "fdid": "56101",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a tanker; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-05",
-   "how": "new truck was due Nov 2026; we allow six months after delivery for the old one to list"
-  },
-  "rank": 6,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
- },
- {
-  "checked": "trade_press",
-  "score": 4.0,
-  "department": "Braham Fire Department",
-  "registry_name": "Braham Fire Department",
-  "city": "Braham",
-  "county": "Isanti",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Customfire pumper due November 2026 (ordered 2026-03)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2026/",
-  "proof_quote": "CUSTOMFIRE—Braham Fire Department pumper. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "Braham Fire Department",
-  "name_match": "exact",
-  "fdid": "30105",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-05",
-   "how": "new truck was due Nov 2026; we allow six months after delivery for the old one to list"
-  },
-  "rank": 7,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
    "band": "all ages",
@@ -430,7 +220,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -469,7 +259,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 9,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -539,7 +329,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -578,7 +368,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -617,7 +407,7 @@
    "to": "2029-02",
    "how": "new truck due Aug 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 12,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -687,7 +477,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 13,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null
@@ -726,7 +516,7 @@
    "to": "2031-06",
    "how": "new truck due in 2030; we allow six months after delivery for the old one to list"
   },
-  "rank": 14,
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -796,7 +586,7 @@
    "to": "2027-03",
    "how": "new truck was due Sep 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 15,
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -866,7 +656,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 16,
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -905,7 +695,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 17,
+  "rank": 14,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -944,80 +734,10 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 18,
+  "rank": 15,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
- },
- {
-  "checked": "trade_press",
-  "score": 4.0,
-  "department": "St. Clair Fire Department",
-  "registry_name": "St. Clair Fire Department",
-  "city": "Saint Clair",
-  "county": "Blue Earth",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Customfire pumper due November2026 (ordered 2026-04)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
-  "proof_quote": "CUSTOMFIRE—St. Clair Fire Department pumper. Delivery in November2026.",
-  "other_signals": "",
-  "named_in_source": "St. Clair Fire Department",
-  "name_match": "exact",
-  "fdid": "07109",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-05",
-   "how": "new truck was due Nov 2026; we allow six months after delivery for the old one to list"
-  },
-  "rank": 19,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 437,
-   "median": 4300,
-   "p25": 2800,
-   "p75": 6400,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  }
  },
  {
   "checked": "fema_table",
@@ -1053,80 +773,10 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 20,
+  "rank": 16,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
- },
- {
-  "checked": "trade_press",
-  "score": 4.0,
-  "department": "Wolf Lake Fire Department",
-  "registry_name": "Wolf Lake Fire Department",
-  "city": "Wolf Lake",
-  "county": "Becker",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "New truck was due; delivery not confirmed",
-  "detail": "New Midwest Fire pumper-tanker due November 2026 (ordered 2025-06)",
-  "signal_date": "2026-11-01",
-  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
-  "proof_quote": "MIDWEST FIRE—Wolf Lake Fire Department pumper-tanker. Delivery in November 2026.",
-  "other_signals": "",
-  "named_in_source": "Wolf Lake Fire Department",
-  "name_match": "exact",
-  "fdid": "03107",
-  "top_kind": "delivery_due",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2026-11",
-   "to": "2027-05",
-   "how": "new truck was due Nov 2026; we allow six months after delivery for the old one to list"
-  },
-  "rank": 21,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  }
  },
  {
   "checked": "fema_table",
@@ -1162,7 +812,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 22,
+  "rank": 17,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null
@@ -1201,7 +851,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 23,
+  "rank": 18,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null
@@ -1240,7 +890,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1310,7 +960,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 25,
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1349,6 +999,76 @@
  {
   "checked": "trade_press",
   "score": 3.0,
+  "department": "Battle Lake Area Fire Association",
+  "registry_name": "Battle Lake Area Fire Association",
+  "city": "Battle Lake",
+  "county": "Otter Tail",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Midwest Fire tanker on order (2025-07), delivery November 2026",
+  "signal_date": "2025-07-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders-july-2025/",
+  "proof_quote": "MIDWEST FIRE—Battle Lake Area Fire & Rescue Association tanker. Delivery in November 2026.",
+  "other_signals": "",
+  "named_in_source": "Battle Lake Area Fire & Rescue Association",
+  "name_match": "exact",
+  "fdid": "56101",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 21,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
   "department": "Biwabik Fire Department",
   "registry_name": "Biwabik Fire Department",
   "city": "Biwabik",
@@ -1380,7 +1100,7 @@
    "to": "2030-03",
    "how": "new truck due Sep 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 26,
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1450,7 +1170,7 @@
    "to": "2029-09",
    "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 27,
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1489,6 +1209,76 @@
  {
   "checked": "trade_press",
   "score": 3.0,
+  "department": "Braham Fire Department",
+  "registry_name": "Braham Fire Department",
+  "city": "Braham",
+  "county": "Isanti",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Customfire pumper on order (2026-03), delivery November 2026",
+  "signal_date": "2026-03-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-march-2026/",
+  "proof_quote": "CUSTOMFIRE—Braham Fire Department pumper. Delivery in November 2026.",
+  "other_signals": "",
+  "named_in_source": "Braham Fire Department",
+  "name_match": "exact",
+  "fdid": "30105",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 24,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
   "department": "Brooklyn Park Fire Department",
   "registry_name": "Brooklyn Park Fire Department",
   "city": "Brooklyn Park",
@@ -1520,7 +1310,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 28,
+  "rank": 25,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1590,7 +1380,7 @@
    "to": "2029-05",
    "how": "new truck due Nov 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 29,
+  "rank": 26,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1660,7 +1450,7 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 30,
+  "rank": 27,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1730,7 +1520,7 @@
    "to": "2026-03",
    "how": "new truck arrived Sep 2025; the old one may already have sold quietly"
   },
-  "rank": 31,
+  "rank": 28,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1800,7 +1590,7 @@
    "to": "2027-01",
    "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 32,
+  "rank": 29,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1837,45 +1627,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Darfur Fire Department",
-  "registry_name": "Darfur Fire Department",
-  "city": "Butterfield",
-  "county": "Watonwan",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $399,333, awarded 8/18/23 (FY2022)",
-  "signal_date": "2023-08-18",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Darfur, City of, Vehicle Acquisition, $399,333",
-  "other_signals": "",
-  "named_in_source": "Darfur, City of",
-  "name_match": "exact",
-  "fdid": "83102",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-02",
-   "to": "2026-08",
-   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 33,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Deer River Fire Department",
@@ -1909,7 +1660,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 34,
+  "rank": 30,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1979,7 +1730,7 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 35,
+  "rank": 31,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2049,7 +1800,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 36,
+  "rank": 32,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -2119,7 +1870,7 @@
    "to": "2029-09",
    "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 37,
+  "rank": 33,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2156,45 +1907,6 @@
   }
  },
  {
-  "checked": "fema_table",
-  "score": 3.0,
-  "department": "Fulda Fire Department",
-  "registry_name": "Fulda Fire Department",
-  "city": "Fulda",
-  "county": "Murray",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $453,142, awarded 7/21/23 (FY2022)",
-  "signal_date": "2023-07-21",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "City of Fulda, Vehicle Acquisition, $453,142",
-  "other_signals": "",
-  "named_in_source": "City of Fulda",
-  "name_match": "exact",
-  "fdid": "51105",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2025-01",
-   "to": "2026-07",
-   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
-  },
-  "rank": 38,
-  "tier": "3 Watch",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": null
- },
- {
   "checked": "trade_press",
   "score": 3.0,
   "department": "Gaylord Fire Department",
@@ -2228,7 +1940,7 @@
    "to": "2028-11",
    "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 39,
+  "rank": 34,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2298,7 +2010,7 @@
    "to": "2029-02",
    "how": "new truck due Aug 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 40,
+  "rank": 35,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2368,7 +2080,7 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 41,
+  "rank": 36,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2438,7 +2150,7 @@
    "to": "2027-06",
    "how": "new truck due Dec 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 42,
+  "rank": 37,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2508,7 +2220,7 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 43,
+  "rank": 38,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2578,7 +2290,7 @@
    "to": "2029-09",
    "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 44,
+  "rank": 39,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2648,7 +2360,7 @@
    "to": "2030-08",
    "how": "new truck due Feb 2030; we allow six months after delivery for the old one to list"
   },
-  "rank": 45,
+  "rank": 40,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2718,7 +2430,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 46,
+  "rank": 41,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2788,7 +2500,7 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 47,
+  "rank": 42,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2858,7 +2570,7 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 48,
+  "rank": 43,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2928,7 +2640,77 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 49,
+  "rank": 44,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "North Saint Paul Fire Department",
+  "registry_name": "North Saint Paul Fire Department",
+  "city": "North Saint Paul",
+  "county": "Ramsey",
+  "type": "Mostly volunteer",
+  "website": "http://www.northstpaul.org/",
+  "why_call": "New truck in service",
+  "detail": "New Custom Fire Apparatus pumper delivered (2026-04)",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-april-2026/",
+  "proof_quote": "Department: NORTH ST. PAUL (MN) FIRE DEPARTMENT; Type: PUMPER; Built by: CUSTOM FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "North St. Paul Fire Department",
+  "name_match": "fuzzy",
+  "fdid": "55109",
+  "top_kind": "new_truck_arrived",
+  "basis": "observed",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "new truck arrived Apr 2026; the old one may already have sold quietly"
+  },
+  "rank": 45,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -2998,7 +2780,7 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 50,
+  "rank": 46,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3068,7 +2850,7 @@
    "to": "2028-01",
    "how": "new truck due Jul 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 51,
+  "rank": 47,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3138,7 +2920,7 @@
    "to": "2028-11",
    "how": "new truck due May 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 52,
+  "rank": 48,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3208,7 +2990,7 @@
    "to": "2029-12",
    "how": "new truck due Jun 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 53,
+  "rank": 49,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3278,7 +3060,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 54,
+  "rank": 50,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -3348,7 +3130,7 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 55,
+  "rank": 51,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3418,7 +3200,77 @@
    "to": "2026-12",
    "how": "new truck was due Jun 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 56,
+  "rank": 52,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "St. Clair Fire Department",
+  "registry_name": "St. Clair Fire Department",
+  "city": "Saint Clair",
+  "county": "Blue Earth",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Customfire pumper on order (2026-04), delivery November2026",
+  "signal_date": "2026-04-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-apparatus-orders-4/",
+  "proof_quote": "CUSTOMFIRE—St. Clair Fire Department pumper. Delivery in November2026.",
+  "other_signals": "",
+  "named_in_source": "St. Clair Fire Department",
+  "name_match": "exact",
+  "fdid": "07109",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 53,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3488,7 +3340,7 @@
    "to": "2029-09",
    "how": "new truck due Mar 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 57,
+  "rank": 54,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3558,7 +3410,7 @@
    "to": "2028-06",
    "how": "new truck due Dec 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 58,
+  "rank": 55,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -3593,5 +3445,153 @@
     }
    ]
   }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Wolf Lake Fire Department",
+  "registry_name": "Wolf Lake Fire Department",
+  "city": "Wolf Lake",
+  "county": "Becker",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "New truck on order",
+  "detail": "New Midwest Fire pumper-tanker on order (2025-06), delivery November 2026",
+  "signal_date": "2025-06-01",
+  "proof_url": "https://www.fireapparatusmagazine.com/fire-apparatus/recent-fire-apparatus-orders/",
+  "proof_quote": "MIDWEST FIRE—Wolf Lake Fire Department pumper-tanker. Delivery in November 2026.",
+  "other_signals": "",
+  "named_in_source": "Wolf Lake Fire Department",
+  "name_match": "exact",
+  "fdid": "03107",
+  "top_kind": "new_truck_ordered",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper-tanker; departments usually replace like with like"
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2026-11",
+   "to": "2027-05",
+   "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
+  },
+  "rank": 56,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  }
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Darfur Fire Department",
+  "registry_name": "Darfur Fire Department",
+  "city": "Butterfield",
+  "county": "Watonwan",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $399,333, awarded 8/18/23 (FY2022)",
+  "signal_date": "2023-08-18",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Darfur, City of, Vehicle Acquisition, $399,333",
+  "other_signals": "",
+  "named_in_source": "Darfur, City of",
+  "name_match": "exact",
+  "fdid": "83102",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-02",
+   "to": "2026-08",
+   "how": "grant awarded Aug 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 57,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
+ },
+ {
+  "checked": "fema_table",
+  "score": 1.0,
+  "department": "Fulda Fire Department",
+  "registry_name": "Fulda Fire Department",
+  "city": "Fulda",
+  "county": "Murray",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $453,142, awarded 7/21/23 (FY2022)",
+  "signal_date": "2023-07-21",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "City of Fulda, Vehicle Acquisition, $453,142",
+  "other_signals": "",
+  "named_in_source": "City of Fulda",
+  "name_match": "exact",
+  "fdid": "51105",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2025-01",
+   "to": "2026-07",
+   "how": "grant awarded Jul 2023; the usual gap has passed, so the old truck may be gone"
+  },
+  "rank": 58,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": null
  }
 ]
