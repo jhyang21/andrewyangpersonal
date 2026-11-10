@@ -16,7 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: memo.date ? new Date(memo.date) : undefined,
   }));
 
-  // Entries that link elsewhere (the Apparatus Signals microsite) are listed by their own section.
+  // Entries with their own href are not /projects pages, so they are left out here; the Apparatus
+  // Signals microsite has its own section below.
   const projects = getAllProjects()
     .filter((project) => !project.href)
     .map((project) => ({

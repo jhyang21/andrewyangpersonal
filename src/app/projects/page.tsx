@@ -16,8 +16,8 @@ export default function ProjectsPage() {
       <main className="mx-auto w-full max-w-2xl px-6 pb-20">
         <h1 className="font-serif text-4xl text-[var(--color-ink)]">Projects</h1>
         <p className="mt-3 text-base text-[var(--color-muted)]">
-          Things I built to answer a question I had. Most of them are a chart and
-          the reasoning behind it.
+          Things I built to answer a question I had, and the reasoning behind
+          each.
         </p>
 
         {projects.length === 0 ? (
@@ -31,7 +31,7 @@ export default function ProjectsPage() {
                 key={p.slug}
                 className="border-b border-[var(--color-border-warm)] pb-8 last:border-0"
               >
-                <Link href={p.href ?? `/projects/${p.slug}`}className="group block">
+                <Link href={p.href ?? `/projects/${p.slug}`} className="group block">
                   <p className="text-xs text-[var(--color-muted)]">{p.date}</p>
                   <h2 className="mt-1 font-serif text-xl text-[var(--color-ink)] group-hover:text-[var(--color-accent)]">
                     {p.title}
