@@ -41,85 +41,6 @@
  },
  {
   "checked": "trade_press",
-  "score": 5.0,
-  "department": "Cowan Volunteer Fire Department",
-  "registry_name": "",
-  "city": "",
-  "county": "",
-  "type": "",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New US Fire Apparatus pumper/tanker delivered (2026-06)",
-  "signal_date": "2026-06-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-june-2026/",
-  "proof_quote": "Department: COWAN (IN) VOLUNTEER FIRE DEPARTMENT; Type: PUMPER/TANKER; Built by: US FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "Cowan Volunteer Fire Department",
-  "name_match": "not in registry",
-  "fdid": "",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "tanker",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-06",
-   "to": "2026-12",
-   "how": "new truck in service Jun 2026; we allow six months for the old one to list"
-  },
-  "rank": 2,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "tanker",
-   "band": "all ages",
-   "n": 85,
-   "median": 8000,
-   "p25": 4600,
-   "p75": 16200,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1994 Ford F-Super Duty Tanker Truck",
-     "price": 5600.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
-    },
-    {
-     "item": "2001 Freightliner FL70 Tanker Truck",
-     "price": 6400.0,
-     "date": "2026-07-31",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
-    },
-    {
-     "item": "1989 Unknown Tanker",
-     "price": 800.0,
-     "date": "2026-05-27",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
-    }
-   ]
-  },
-  "ask": {
-   "band": "31+",
-   "usual_age": 32,
-   "n": 18,
-   "median": 42250,
-   "p25": 20375,
-   "p75": 61750,
-   "thin": false
-  }
- },
- {
-  "checked": "trade_press",
   "score": 4.5,
   "department": "Ellettsville Fire Department",
   "registry_name": "Ellettsville Fire Department",
@@ -152,7 +73,7 @@
    "to": "2027-01",
    "how": "new truck was due Jul 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -231,7 +152,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
@@ -271,7 +192,7 @@
    "to": "2028-09",
    "how": "new truck due Mar 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -350,7 +271,7 @@
    "to": "2027-05",
    "how": "new truck due Nov 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -429,7 +350,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -469,7 +390,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
@@ -509,7 +430,7 @@
    "to": "2028-03",
    "how": "new truck due Sep 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 9,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -588,7 +509,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -628,7 +549,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -668,7 +589,7 @@
    "to": "2028-04",
    "how": "new truck due Oct 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 12,
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -747,7 +668,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 13,
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -787,7 +708,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 14,
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -866,7 +787,7 @@
    "to": "2027-08",
    "how": "new truck due Feb 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 15,
+  "rank": 14,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -945,7 +866,7 @@
    "to": "2028-07",
    "how": "new truck due Jan 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 16,
+  "rank": 15,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1024,7 +945,7 @@
    "to": "2028-10",
    "how": "new truck due Apr 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 17,
+  "rank": 16,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1103,7 +1024,7 @@
    "to": "2030-06",
    "how": "new truck due Dec 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 18,
+  "rank": 17,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -1143,7 +1064,7 @@
    "to": "2029-11",
    "how": "new truck due May 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 19,
+  "rank": 18,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1222,7 +1143,7 @@
    "to": "2027-12",
    "how": "new truck due Jun 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 20,
+  "rank": 19,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1301,7 +1222,7 @@
    "to": "2029-10",
    "how": "new truck due Apr 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 21,
+  "rank": 20,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1380,7 +1301,7 @@
    "to": "2029-01",
    "how": "new truck due Jul 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 22,
+  "rank": 21,
   "tier": "3 Watch",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -1459,7 +1380,7 @@
    "to": "2027-05",
    "how": "ordered May 2026; builds have taken four to twelve months in the back-test"
   },
-  "rank": 23,
+  "rank": 22,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1538,7 +1459,7 @@
    "to": "2027-11",
    "how": "new truck due May 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 24,
+  "rank": 23,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -1580,6 +1501,85 @@
    "median": 39900,
    "p25": 29875,
    "p75": 56000,
+   "thin": false
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Cowan Volunteer Fire Department",
+  "registry_name": "",
+  "city": "",
+  "county": "",
+  "type": "",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "New US Fire Apparatus pumper/tanker delivered (2026-06)",
+  "signal_date": "2026-06-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-june-2026/",
+  "proof_quote": "Department: COWAN (IN) VOLUNTEER FIRE DEPARTMENT; Type: PUMPER/TANKER; Built by: US FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "Cowan Volunteer Fire Department",
+  "name_match": "not in registry",
+  "fdid": "",
+  "top_kind": "new_truck_arrived",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "tanker",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a pumper/tanker; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-03",
+   "to": "2026-09",
+   "how": "in a delivery column dated Jun 2026; the old one may already have sold quietly"
+  },
+  "rank": 24,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "tanker",
+   "band": "all ages",
+   "n": 85,
+   "median": 8000,
+   "p25": 4600,
+   "p75": 16200,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1994 Ford F-Super Duty Tanker Truck",
+     "price": 5600.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0001-1994-ford-f-super-duty-tanker-truck-304046/"
+    },
+    {
+     "item": "2001 Freightliner FL70 Tanker Truck",
+     "price": 6400.0,
+     "date": "2026-07-31",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48205/item/lot-0018-2001-freightliner-fl70-tanker-truck-304062/"
+    },
+    {
+     "item": "1989 Unknown Tanker",
+     "price": 800.0,
+     "date": "2026-05-27",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/47298/item/lot-0015-1989-unknown-tanker-297025/"
+    }
+   ]
+  },
+  "ask": {
+   "band": "31+",
+   "usual_age": 32,
+   "n": 18,
+   "median": 42250,
+   "p25": 20375,
+   "p75": 61750,
    "thin": false
   }
  },
@@ -2155,7 +2155,7 @@
   "name_match": "exact",
   "fdid": "41004",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -2166,9 +2166,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-01",
-   "to": "2026-07",
-   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
+   "from": "2025-10",
+   "to": "2026-04",
+   "how": "in a delivery column dated Jan 2026; the old one may already have sold quietly"
   },
   "rank": 32,
   "tier": "3 Watch",

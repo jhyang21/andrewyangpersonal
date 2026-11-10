@@ -18,7 +18,7 @@
   "name_match": "exact",
   "fdid": "03203",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -29,9 +29,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-07",
-   "to": "2026-01",
-   "how": "new truck arrived Jul 2025; the old one may already have sold quietly"
+   "from": "2025-04",
+   "to": "2025-10",
+   "how": "in a delivery column dated Jul 2025; the old one may already have sold quietly"
   },
   "rank": 1,
   "tier": "2 Call this month",
@@ -810,7 +810,7 @@
   "name_match": "exact",
   "fdid": "09203",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -821,9 +821,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-03",
-   "to": "2026-09",
-   "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "in a delivery column dated Mar 2026; the old one may already have sold quietly"
   },
   "rank": 13,
   "tier": "3 Watch",

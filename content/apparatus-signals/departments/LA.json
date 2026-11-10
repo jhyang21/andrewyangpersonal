@@ -257,7 +257,7 @@
   "name_match": "by town (only department there)",
   "fdid": "26045",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -268,9 +268,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-02",
-   "to": "2025-08",
-   "how": "new truck arrived Feb 2025; the old one may already have sold quietly"
+   "from": "2024-11",
+   "to": "2025-05",
+   "how": "in a delivery column dated Feb 2025; the old one may already have sold quietly"
   },
   "rank": 6,
   "tier": "3 Watch",

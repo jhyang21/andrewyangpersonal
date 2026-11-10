@@ -1,7 +1,7 @@
 [
  {
   "checked": "trade_press",
-  "score": 6.0,
+  "score": 5.0,
   "department": "Wood Dale Fire Protection District #1",
   "registry_name": "Wood Dale Fire Protection District #1",
   "city": "Wood Dale",
@@ -18,7 +18,7 @@
   "name_match": "exact",
   "fdid": "DD392",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -29,12 +29,12 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-09",
-   "to": "2027-03",
-   "how": "new truck in service Sep 2026; we allow six months for the old one to list"
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "in a delivery column dated Sep 2026; columns run months behind the delivery, so the old truck may list any time now"
   },
   "rank": 1,
-  "tier": "1 Call this week",
+  "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
    "type": "pumper",
@@ -1799,7 +1799,7 @@
   "name_match": "exact",
   "fdid": "WB113",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1810,9 +1810,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-03",
-   "to": "2025-09",
-   "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
+   "from": "2024-12",
+   "to": "2025-06",
+   "how": "in a delivery column dated Mar 2025; the old one may already have sold quietly"
   },
   "rank": 27,
   "tier": "3 Watch",
@@ -3142,7 +3142,7 @@
   "name_match": "exact",
   "fdid": "WK123",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -3153,9 +3153,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-12",
-   "to": "2026-06",
-   "how": "new truck arrived Dec 2025; the old one may already have sold quietly"
+   "from": "2025-09",
+   "to": "2026-03",
+   "how": "in a delivery column dated Dec 2025; the old one may already have sold quietly"
   },
   "rank": 44,
   "tier": "3 Watch",

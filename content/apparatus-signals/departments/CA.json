@@ -1,85 +1,6 @@
 [
  {
   "checked": "trade_press",
-  "score": 5.0,
-  "department": "Hayward Fire Department",
-  "registry_name": "Hayward Fire Department",
-  "city": "Hayward",
-  "county": "Alameda",
-  "type": "Career",
-  "website": "https://www.hayward-ca.gov/",
-  "why_call": "New truck in service",
-  "detail": "New Seagrave Fire Apparatus tractor drawn aerial ladder delivered (2026-07)",
-  "signal_date": "2026-07-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-july-2026/",
-  "proof_quote": "Department: HAYWARD (CA) FIRE DEPARTMENT; Type: TRACTOR DRAWN AERIAL LADDER; Built by: SEAGRAVE FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "Hayward Fire Department",
-  "name_match": "exact",
-  "fdid": "01045",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a tractor drawn aerial ladder; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-07",
-   "to": "2027-01",
-   "how": "new truck in service Jul 2026; we allow six months for the old one to list"
-  },
-  "rank": 1,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 103,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8550,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    },
-    {
-     "item": "1989 Sutphen Aerial Tower Firetruck",
-     "price": 6200.0,
-     "date": "2026-08-11",
-     "state": "NC",
-     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
-    }
-   ]
-  },
-  "ask": {
-   "band": "26-30",
-   "usual_age": 27,
-   "n": 19,
-   "median": 75000,
-   "p25": 57500,
-   "p75": 137500,
-   "thin": false
-  }
- },
- {
-  "checked": "trade_press",
   "score": 4.5,
   "department": "San Francisco Fire Department",
   "registry_name": "San Francisco Fire Department",
@@ -97,7 +18,7 @@
   "name_match": "exact",
   "fdid": "38005",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -108,11 +29,11 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-07",
-   "to": "2026-01",
-   "how": "new truck arrived Jul 2025; the old one may already have sold quietly"
+   "from": "2025-04",
+   "to": "2025-10",
+   "how": "in a delivery column dated Jul 2025; the old one may already have sold quietly"
   },
-  "rank": 2,
+  "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": {
@@ -191,7 +112,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -231,7 +152,7 @@
    "to": "2027-09",
    "how": "grant awarded Sep 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
@@ -271,7 +192,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
@@ -311,7 +232,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -390,7 +311,7 @@
    "to": "2029-05",
    "how": "new truck due Nov 2028; we allow six months after delivery for the old one to list"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -469,7 +390,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
@@ -509,7 +430,7 @@
    "to": "2027-04",
    "how": "new truck was due Oct 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 9,
+  "rank": 8,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -588,7 +509,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 10,
+  "rank": 9,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -628,7 +549,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 11,
+  "rank": 10,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
@@ -668,7 +589,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 12,
+  "rank": 11,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -708,7 +629,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 13,
+  "rank": 12,
   "tier": "2 Call this month",
   "ask_for": "Fire chief; the village or city clerk handles the sale",
   "guide": null,
@@ -748,7 +669,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 14,
+  "rank": 13,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": null,
@@ -788,7 +709,7 @@
    "to": "2026-11",
    "how": "new truck was due May 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 15,
+  "rank": 14,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -867,7 +788,7 @@
    "to": "2027-02",
    "how": "new truck was due Aug 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 16,
+  "rank": 15,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -946,7 +867,7 @@
    "to": "2027-07",
    "how": "new truck due Jan 2027; we allow six months after delivery for the old one to list"
   },
-  "rank": 17,
+  "rank": 16,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1025,7 +946,7 @@
    "to": "2026-11",
    "how": "new truck was due May 2026; we allow six months after delivery for the old one to list"
   },
-  "rank": 18,
+  "rank": 17,
   "tier": "3 Watch",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -1068,6 +989,85 @@
    "p25": 6000,
    "p75": 6000,
    "thin": true
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
+  "department": "Hayward Fire Department",
+  "registry_name": "Hayward Fire Department",
+  "city": "Hayward",
+  "county": "Alameda",
+  "type": "Career",
+  "website": "https://www.hayward-ca.gov/",
+  "why_call": "New truck in service",
+  "detail": "New Seagrave Fire Apparatus tractor drawn aerial ladder delivered (2026-07)",
+  "signal_date": "2026-07-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/apparatus-deliveries-july-2026/",
+  "proof_quote": "Department: HAYWARD (CA) FIRE DEPARTMENT; Type: TRACTOR DRAWN AERIAL LADDER; Built by: SEAGRAVE FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "Hayward Fire Department",
+  "name_match": "exact",
+  "fdid": "01045",
+  "top_kind": "new_truck_arrived",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a tractor drawn aerial ladder; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "in a delivery column dated Jul 2026; the old one may already have sold quietly"
+  },
+  "rank": 18,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    },
+    {
+     "item": "1989 Sutphen Aerial Tower Firetruck",
+     "price": 6200.0,
+     "date": "2026-08-11",
+     "state": "NC",
+     "url": "https://www.auctionsinternational.com/auction/48363/item/lot-0002-1989-sutphen-aerial-tower-firetruck-305149/"
+    }
+   ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 27,
+   "n": 19,
+   "median": 75000,
+   "p25": 57500,
+   "p75": 137500,
+   "thin": false
   }
  },
  {
@@ -1129,7 +1129,7 @@
   "name_match": "not in registry",
   "fdid": "",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1140,9 +1140,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-03",
-   "to": "2025-09",
-   "how": "new truck arrived Mar 2025; the old one may already have sold quietly"
+   "from": "2024-12",
+   "to": "2025-06",
+   "how": "in a delivery column dated Mar 2025; the old one may already have sold quietly"
   },
   "rank": 20,
   "tier": "3 Watch",
@@ -1208,7 +1208,7 @@
   "name_match": "exact, ambiguous (2 same-name rows)",
   "fdid": "30065",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1219,9 +1219,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-08",
-   "to": "2026-02",
-   "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
+   "from": "2025-05",
+   "to": "2025-11",
+   "how": "in a delivery column dated Aug 2025; the old one may already have sold quietly"
   },
   "rank": 21,
   "tier": "3 Watch",
@@ -1287,7 +1287,7 @@
   "name_match": "exact",
   "fdid": "19155",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1298,9 +1298,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-04",
-   "to": "2025-10",
-   "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
+   "from": "2025-01",
+   "to": "2025-07",
+   "how": "in a delivery column dated Apr 2025; the old one may already have sold quietly"
   },
   "rank": 22,
   "tier": "3 Watch",
@@ -1682,7 +1682,7 @@
   "name_match": "exact",
   "fdid": "39065",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1693,9 +1693,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-06",
-   "to": "2025-12",
-   "how": "new truck arrived Jun 2025; the old one may already have sold quietly"
+   "from": "2025-03",
+   "to": "2025-09",
+   "how": "in a delivery column dated Jun 2025; the old one may already have sold quietly"
   },
   "rank": 27,
   "tier": "3 Watch",

@@ -1,13 +1,13 @@
 {
  "updated": "2026-11-10",
- "generated_at": "2026-11-10T09:25:13Z",
+ "generated_at": "2026-11-10T10:25:33Z",
  "totals": {
   "states": 51,
   "departments_in_registry": 27102,
   "leads": 1111,
-  "leads_week": 22,
+  "leads_week": 13,
   "hand_read_leads": 161,
-  "observed_leads": 133,
+  "observed_leads": 70,
   "signals": 1259,
   "deep_states": [
    "CT",

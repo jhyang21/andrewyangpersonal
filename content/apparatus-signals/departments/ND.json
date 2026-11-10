@@ -1,7 +1,7 @@
 [
  {
   "checked": "trade_press",
-  "score": 6.0,
+  "score": 5.0,
   "department": "Wahpeton Volunteer Fire Department",
   "registry_name": "Wahpeton Volunteer Fire Department",
   "city": "Wahpeton",
@@ -18,7 +18,7 @@
   "name_match": "exact",
   "fdid": "39362",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -29,12 +29,12 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-10",
-   "to": "2027-04",
-   "how": "new truck in service Oct 2026; we allow six months for the old one to list"
+   "from": "2026-07",
+   "to": "2027-01",
+   "how": "in a delivery column dated Oct 2026; columns run months behind the delivery, so the old truck may list any time now"
   },
   "rank": 1,
-  "tier": "1 Call this week",
+  "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -613,7 +613,7 @@
   "name_match": "exact",
   "fdid": "03201",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -624,9 +624,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-01",
-   "to": "2026-07",
-   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
+   "from": "2025-10",
+   "to": "2026-04",
+   "how": "in a delivery column dated Jan 2026; the old one may already have sold quietly"
   },
   "rank": 11,
   "tier": "3 Watch",

@@ -3,16 +3,17 @@
   "date": "2026-11-10",
   "states": 51,
   "leads": 1111,
-  "leads_week": 22,
+  "leads_week": 13,
   "hand_read_leads": 161,
-  "observed_leads": 133,
+  "observed_leads": 70,
   "signals": 1259,
   "new_leads": [],
   "new_lead_count": 0,
   "new_from_feeds": [],
   "dropped": [],
   "dropped_count": 0,
-  "compared_with": "2026-11-09"
+  "compared_with": "2026-11-09",
+  "note": "Trade-press delivery columns now count as expected, not seen: they run months behind the delivery and preceded none of 115 sales in the back-test. “Call this week” fell from 21 to 13."
  },
  {
   "date": "2026-11-09",

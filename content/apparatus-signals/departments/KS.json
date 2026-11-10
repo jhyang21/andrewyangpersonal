@@ -177,7 +177,7 @@
   "name_match": "exact, ambiguous (8 same-name rows)",
   "fdid": "BU412",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -188,9 +188,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-06",
-   "to": "2025-12",
-   "how": "new truck arrived Jun 2025; the old one may already have sold quietly"
+   "from": "2025-03",
+   "to": "2025-09",
+   "how": "in a delivery column dated Jun 2025; the old one may already have sold quietly"
   },
   "rank": 4,
   "tier": "3 Watch",

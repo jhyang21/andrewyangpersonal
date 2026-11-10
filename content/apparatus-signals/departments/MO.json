@@ -929,7 +929,7 @@
   "name_match": "exact",
   "fdid": "01903",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -940,9 +940,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-05",
-   "to": "2025-11",
-   "how": "new truck arrived May 2025; the old one may already have sold quietly"
+   "from": "2025-02",
+   "to": "2025-08",
+   "how": "in a delivery column dated May 2025; the old one may already have sold quietly"
   },
   "rank": 15,
   "tier": "3 Watch",
@@ -2430,7 +2430,7 @@
   "name_match": "not in registry",
   "fdid": "",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -2441,9 +2441,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-09",
-   "to": "2026-03",
-   "how": "new truck arrived Sep 2025; the old one may already have sold quietly"
+   "from": "2025-06",
+   "to": "2025-12",
+   "how": "in a delivery column dated Sep 2025; the old one may already have sold quietly"
   },
   "rank": 34,
   "tier": "3 Watch",

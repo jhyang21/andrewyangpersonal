@@ -233,7 +233,7 @@ export default function HomePage() {
           Top 10 leads in all states
         </h2>
         <p className="mb-3 text-sm text-as-ink-2">
-          Ranked by score.
+          Ranked by tier, then score.
           {deepNames.length && topDeep > top.length / 2
             ? ` ${joinPlain(deepNames)} ${deepNames.length === 1 ? "is" : "are"} read by hand, so ${deepNames.length === 1 ? "it fills" : "they fill"} most of the list.`
             : ""}

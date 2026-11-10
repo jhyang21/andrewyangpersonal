@@ -109,6 +109,7 @@ export default function ChangelogPage() {
           <h2 id={`run-${run.date}`} className="text-xl font-semibold">
             <time dateTime={run.date}>{formatDate(run.date)}</time>
           </h2>
+          {run.note ? <p className="max-w-3xl">{run.note}</p> : null}
           <dl className="grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 lg:grid-cols-6">
             {(
               [

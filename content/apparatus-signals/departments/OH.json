@@ -1,7 +1,47 @@
 [
  {
+  "checked": "fema_table",
+  "score": 5.5,
+  "department": "Danbury Township Fire Department",
+  "registry_name": "Lakeside Volunteer Fire Protective Association, Inc",
+  "city": "Lakeside",
+  "county": "Ottawa",
+  "type": "Volunteer",
+  "website": "",
+  "why_call": "Won a grant for a new truck",
+  "detail": "FEMA vehicle grant $264,761, awarded 9/22/26 (FY2025)",
+  "signal_date": "2026-09-22",
+  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
+  "proof_quote": "Danbury Township Fire Department, Vehicle Acquisition, $264,761",
+  "other_signals": "New truck on order: New Sutphen pumper-tanker on order (2025-09), delivery December 2027",
+  "named_in_source": "Danbury Township Fire Department",
+  "name_match": "hand-checked alias",
+  "fdid": "62017",
+  "top_kind": "grant",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": null,
+   "year": null,
+   "year_how": null,
+   "type_how": null
+  },
+  "stage": "replacing",
+  "window": {
+   "from": "2028-03",
+   "to": "2029-09",
+   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
+  },
+  "rank": 1,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief or company president",
+  "guide": null,
+  "ask": null
+ },
+ {
   "checked": "trade_press",
-  "score": 6.5,
+  "score": 4.5,
   "department": "Bethesda Fire Department",
   "registry_name": "Bethesda Fire Department",
   "city": "Bethesda",
@@ -18,7 +58,7 @@
   "name_match": "exact",
   "fdid": "07009",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -29,12 +69,12 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-07",
-   "to": "2027-01",
-   "how": "new truck in service Jul 2026; we allow six months for the old one to list"
+   "from": "2026-04",
+   "to": "2026-10",
+   "how": "in a delivery column dated Jul 2026; the old one may already have sold quietly"
   },
-  "rank": 1,
-  "tier": "1 Call this week",
+  "rank": 2,
+  "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "mini pumper",
@@ -77,46 +117,6 @@
    "p75": 6000,
    "thin": true
   }
- },
- {
-  "checked": "fema_table",
-  "score": 5.5,
-  "department": "Danbury Township Fire Department",
-  "registry_name": "Lakeside Volunteer Fire Protective Association, Inc",
-  "city": "Lakeside",
-  "county": "Ottawa",
-  "type": "Volunteer",
-  "website": "",
-  "why_call": "Won a grant for a new truck",
-  "detail": "FEMA vehicle grant $264,761, awarded 9/22/26 (FY2025)",
-  "signal_date": "2026-09-22",
-  "proof_url": "https://www.fema.gov/grants/preparedness/firefighters/assistance-grants#awards",
-  "proof_quote": "Danbury Township Fire Department, Vehicle Acquisition, $264,761",
-  "other_signals": "New truck on order: New Sutphen pumper-tanker on order (2025-09), delivery December 2027",
-  "named_in_source": "Danbury Township Fire Department",
-  "name_match": "hand-checked alias",
-  "fdid": "62017",
-  "top_kind": "grant",
-  "basis": "expected",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": null,
-   "year": null,
-   "year_how": null,
-   "type_how": null
-  },
-  "stage": "replacing",
-  "window": {
-   "from": "2028-03",
-   "to": "2029-09",
-   "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
-  },
-  "rank": 2,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": null,
-  "ask": null
  },
  {
   "checked": "fema_table",

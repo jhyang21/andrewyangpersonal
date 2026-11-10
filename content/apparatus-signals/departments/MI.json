@@ -1089,7 +1089,7 @@
   "name_match": "exact",
   "fdid": "04706",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1100,9 +1100,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-03",
-   "to": "2026-09",
-   "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "in a delivery column dated Mar 2026; the old one may already have sold quietly"
   },
   "rank": 19,
   "tier": "3 Watch",

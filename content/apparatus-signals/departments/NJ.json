@@ -1,84 +1,5 @@
 [
  {
-  "checked": "trade_press",
-  "score": 6.0,
-  "department": "Belleville Fire Department",
-  "registry_name": "Belleville Fire Department",
-  "city": "Belleville",
-  "county": "Essex",
-  "type": "Career",
-  "website": "",
-  "why_call": "New truck in service",
-  "detail": "New Ferrara Fire Apparatus rear-mount quint delivered (2026-09)",
-  "signal_date": "2026-09-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-september-2026/",
-  "proof_quote": "Department: BELLEVILLE (NJ) FIRE DEPARTMENT; Type: REAR-MOUNT QUINT; Built by: FERRARA FIRE APPARATUS",
-  "other_signals": "",
-  "named_in_source": "Belleville Fire Department",
-  "name_match": "exact",
-  "fdid": "07010",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "aerial",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-09",
-   "to": "2027-03",
-   "how": "new truck in service Sep 2026; we allow six months for the old one to list"
-  },
-  "rank": 1,
-  "tier": "1 Call this week",
-  "ask_for": "Fire chief; the village or city clerk handles the sale",
-  "guide": {
-   "type": "aerial",
-   "band": "all ages",
-   "n": 103,
-   "median": 6200,
-   "p25": 4550,
-   "p75": 8550,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Seagrave Ladder Fire Truck",
-     "price": 7700.0,
-     "date": "2023-11-08",
-     "state": "NJ",
-     "url": "https://www.auctionsinternational.com/auction/35052/item/lot-0004-1993-seagrave-ladder-fire-truck-218010/"
-    },
-    {
-     "item": "1986 E-One 95FT Aerial Ladder Truck",
-     "price": 5700.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
-    },
-    {
-     "item": "(#20-17) 1986 Sutphen Ladder Truck",
-     "price": 4150.0,
-     "date": "2026-10-12",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
-    }
-   ]
-  },
-  "ask": {
-   "band": "26-30",
-   "usual_age": 27,
-   "n": 19,
-   "median": 75000,
-   "p25": 57500,
-   "p75": 137500,
-   "thin": false
-  }
- },
- {
   "checked": "confirmed",
   "score": 5.5,
   "department": "Cherry Hill Fire Department",
@@ -112,7 +33,7 @@
    "to": "2026-03",
    "how": "voted to sell Sep 2025; six months with no listing found, so it may have sold quietly"
   },
-  "rank": 2,
+  "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "District secretary or chair of the Board of Fire Commissioners",
   "guide": {
@@ -191,11 +112,90 @@
    "to": "2026-11",
    "how": "new truck in service May 2026; we allow six months for the old one to list"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
   "ask": null
+ },
+ {
+  "checked": "trade_press",
+  "score": 5.0,
+  "department": "Belleville Fire Department",
+  "registry_name": "Belleville Fire Department",
+  "city": "Belleville",
+  "county": "Essex",
+  "type": "Career",
+  "website": "",
+  "why_call": "New truck in service",
+  "detail": "New Ferrara Fire Apparatus rear-mount quint delivered (2026-09)",
+  "signal_date": "2026-09-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-september-2026/",
+  "proof_quote": "Department: BELLEVILLE (NJ) FIRE DEPARTMENT; Type: REAR-MOUNT QUINT; Built by: FERRARA FIRE APPARATUS",
+  "other_signals": "",
+  "named_in_source": "Belleville Fire Department",
+  "name_match": "exact",
+  "fdid": "07010",
+  "top_kind": "new_truck_arrived",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "aerial",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is a rear-mount quint; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "in a delivery column dated Sep 2026; columns run months behind the delivery, so the old truck may list any time now"
+  },
+  "rank": 3,
+  "tier": "2 Call this month",
+  "ask_for": "Fire chief; the village or city clerk handles the sale",
+  "guide": {
+   "type": "aerial",
+   "band": "all ages",
+   "n": 103,
+   "median": 6200,
+   "p25": 4550,
+   "p75": 8550,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Seagrave Ladder Fire Truck",
+     "price": 7700.0,
+     "date": "2023-11-08",
+     "state": "NJ",
+     "url": "https://www.auctionsinternational.com/auction/35052/item/lot-0004-1993-seagrave-ladder-fire-truck-218010/"
+    },
+    {
+     "item": "1986 E-One 95FT Aerial Ladder Truck",
+     "price": 5700.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0007-1986-e-one-95ft-aerial-ladder-truck-312899/"
+    },
+    {
+     "item": "(#20-17) 1986 Sutphen Ladder Truck",
+     "price": 4150.0,
+     "date": "2026-10-12",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49010/item/lot-0020-20-17-1986-sutphen-ladder-truck-310069/"
+    }
+   ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 27,
+   "n": 19,
+   "median": 75000,
+   "p25": 57500,
+   "p75": 137500,
+   "thin": false
+  }
  },
  {
   "checked": "confirmed",
@@ -374,7 +374,7 @@
   "name_match": "exact",
   "fdid": "07160",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -385,9 +385,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-02",
-   "to": "2026-08",
-   "how": "new truck arrived Feb 2026; the old one may already have sold quietly"
+   "from": "2025-11",
+   "to": "2026-05",
+   "how": "in a delivery column dated Feb 2026; the old one may already have sold quietly"
   },
   "rank": 6,
   "tier": "2 Call this month",
@@ -1209,7 +1209,7 @@
   "name_match": "exact",
   "fdid": "14080",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1220,9 +1220,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-04",
-   "to": "2025-10",
-   "how": "new truck arrived Apr 2025; the old one may already have sold quietly"
+   "from": "2025-01",
+   "to": "2025-07",
+   "how": "in a delivery column dated Apr 2025; the old one may already have sold quietly"
   },
   "rank": 22,
   "tier": "3 Watch",
@@ -1724,7 +1724,7 @@
   "name_match": "exact",
   "fdid": "19151",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -1735,9 +1735,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-05",
-   "to": "2025-11",
-   "how": "new truck arrived May 2025; the old one may already have sold quietly"
+   "from": "2025-02",
+   "to": "2025-08",
+   "how": "in a delivery column dated May 2025; the old one may already have sold quietly"
   },
   "rank": 30,
   "tier": "3 Watch",
@@ -2002,7 +2002,7 @@
   "name_match": "not in registry",
   "fdid": "",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -2013,9 +2013,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-08",
-   "to": "2026-02",
-   "how": "new truck arrived Aug 2025; the old one may already have sold quietly"
+   "from": "2025-05",
+   "to": "2025-11",
+   "how": "in a delivery column dated Aug 2025; the old one may already have sold quietly"
   },
   "rank": 35,
   "tier": "3 Watch",
@@ -2161,7 +2161,7 @@
   "name_match": "not in registry",
   "fdid": "",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -2172,9 +2172,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-03",
-   "to": "2026-09",
-   "how": "new truck arrived Mar 2026; the old one may already have sold quietly"
+   "from": "2025-12",
+   "to": "2026-06",
+   "how": "in a delivery column dated Mar 2026; the old one may already have sold quietly"
   },
   "rank": 38,
   "tier": "3 Watch",

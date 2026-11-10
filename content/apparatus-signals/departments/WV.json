@@ -1,84 +1,5 @@
 [
  {
-  "checked": "trade_press",
-  "score": 5.0,
-  "department": "Kingwood Volunteer Fire Department",
-  "registry_name": "Kingwood Volunteer Fire Department",
-  "city": "Kingwood",
-  "county": "Preston",
-  "type": "Volunteer",
-  "website": "https://kingwoodvfd.com/",
-  "why_call": "New truck in service",
-  "detail": "New Marco Equipment Sales initial attack pumper delivered (2026-06)",
-  "signal_date": "2026-06-01",
-  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-june-2026/",
-  "proof_quote": "Department: KINGWOOD (WV) VOLUNTEER FIRE DEPARTMENT; Type: INITIAL ATTACK PUMPER; Built by: MARCO EQUIPMENT SALES",
-  "other_signals": "",
-  "named_in_source": "Kingwood Volunteer Fire Department",
-  "name_match": "exact",
-  "fdid": "39105",
-  "top_kind": "new_truck_arrived",
-  "basis": "observed",
-  "read_by": "feed",
-  "truck": {
-   "description": null,
-   "type": "pumper",
-   "year": null,
-   "year_how": null,
-   "type_how": "the new truck is an initial attack pumper; departments usually replace like with like"
-  },
-  "stage": "surplus",
-  "window": {
-   "from": "2026-06",
-   "to": "2026-12",
-   "how": "new truck in service Jun 2026; we allow six months for the old one to list"
-  },
-  "rank": 1,
-  "tier": "2 Call this month",
-  "ask_for": "Fire chief or company president",
-  "guide": {
-   "type": "pumper",
-   "band": "all ages",
-   "n": 437,
-   "median": 4300,
-   "p25": 2800,
-   "p75": 6400,
-   "thin": false,
-   "comps": [
-    {
-     "item": "1993 Ford CFT8000 Fire Truck",
-     "price": 4200.0,
-     "date": "2026-11-04",
-     "state": "ME",
-     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
-    },
-    {
-     "item": "1996 Ferrara Pumper",
-     "price": 4500.0,
-     "date": "2026-10-30",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
-    },
-    {
-     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
-     "price": 10800.0,
-     "date": "2026-10-23",
-     "state": "NY",
-     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
-    }
-   ]
-  },
-  "ask": {
-   "band": "26-30",
-   "usual_age": 29,
-   "n": 72,
-   "median": 39900,
-   "p25": 29875,
-   "p75": 56000,
-   "thin": false
-  }
- },
- {
   "checked": "fema_table",
   "score": 4.0,
   "department": "Boone County Ambulance Authority",
@@ -112,7 +33,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 2,
+  "rank": 1,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -152,7 +73,7 @@
    "to": "2028-09",
    "how": "grant awarded Sep 2025; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 3,
+  "rank": 2,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -192,7 +113,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 4,
+  "rank": 3,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -232,7 +153,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 5,
+  "rank": 4,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -272,7 +193,7 @@
    "to": "2027-08",
    "how": "grant awarded Aug 2024; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 6,
+  "rank": 5,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -312,7 +233,7 @@
    "to": "2029-09",
    "how": "grant awarded Sep 2026; in the back-test the median gap from award to sale was 28 months"
   },
-  "rank": 7,
+  "rank": 6,
   "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": null,
@@ -352,7 +273,7 @@
    "to": "2029-07",
    "how": "new truck due Jan 2029; we allow six months after delivery for the old one to list"
   },
-  "rank": 8,
+  "rank": 7,
   "tier": "3 Watch",
   "ask_for": "Fire chief or company president",
   "guide": {
@@ -400,6 +321,85 @@
  {
   "checked": "trade_press",
   "score": 3.0,
+  "department": "Kingwood Volunteer Fire Department",
+  "registry_name": "Kingwood Volunteer Fire Department",
+  "city": "Kingwood",
+  "county": "Preston",
+  "type": "Volunteer",
+  "website": "https://kingwoodvfd.com/",
+  "why_call": "New truck in service",
+  "detail": "New Marco Equipment Sales initial attack pumper delivered (2026-06)",
+  "signal_date": "2026-06-01",
+  "proof_url": "https://www.fireengineering.com/fire-apparatus/fire-apparatus-deliveries-june-2026/",
+  "proof_quote": "Department: KINGWOOD (WV) VOLUNTEER FIRE DEPARTMENT; Type: INITIAL ATTACK PUMPER; Built by: MARCO EQUIPMENT SALES",
+  "other_signals": "",
+  "named_in_source": "Kingwood Volunteer Fire Department",
+  "name_match": "exact",
+  "fdid": "39105",
+  "top_kind": "new_truck_arrived",
+  "basis": "expected",
+  "read_by": "feed",
+  "truck": {
+   "description": null,
+   "type": "pumper",
+   "year": null,
+   "year_how": null,
+   "type_how": "the new truck is an initial attack pumper; departments usually replace like with like"
+  },
+  "stage": "surplus",
+  "window": {
+   "from": "2026-03",
+   "to": "2026-09",
+   "how": "in a delivery column dated Jun 2026; the old one may already have sold quietly"
+  },
+  "rank": 8,
+  "tier": "3 Watch",
+  "ask_for": "Fire chief or company president",
+  "guide": {
+   "type": "pumper",
+   "band": "all ages",
+   "n": 437,
+   "median": 4300,
+   "p25": 2800,
+   "p75": 6400,
+   "thin": false,
+   "comps": [
+    {
+     "item": "1993 Ford CFT8000 Fire Truck",
+     "price": 4200.0,
+     "date": "2026-11-04",
+     "state": "ME",
+     "url": "https://www.auctionsinternational.com/auction/49592/item/lot-0001-1993-ford-cft8000-fire-truck-312900/"
+    },
+    {
+     "item": "1996 Ferrara Pumper",
+     "price": 4500.0,
+     "date": "2026-10-30",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49591/item/lot-0008-1996-ferrara-pumper-312901/"
+    },
+    {
+     "item": "2010 Freightliner M2 106 Pumper Fire Truck",
+     "price": 10800.0,
+     "date": "2026-10-23",
+     "state": "NY",
+     "url": "https://www.auctionsinternational.com/auction/49467/item/lot-0016-2010-freightliner-m2-106-pumper-fire-truck-311893/"
+    }
+   ]
+  },
+  "ask": {
+   "band": "26-30",
+   "usual_age": 29,
+   "n": 72,
+   "median": 39900,
+   "p25": 29875,
+   "p75": 56000,
+   "thin": false
+  }
+ },
+ {
+  "checked": "trade_press",
+  "score": 3.0,
   "department": "Rainelle Fire Department",
   "registry_name": "Rainelle Fire Department",
   "city": "Rainelle",
@@ -416,7 +416,7 @@
   "name_match": "exact",
   "fdid": "13160",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -427,9 +427,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-07",
-   "to": "2026-01",
-   "how": "new truck arrived Jul 2025; the old one may already have sold quietly"
+   "from": "2025-04",
+   "to": "2025-10",
+   "how": "in a delivery column dated Jul 2025; the old one may already have sold quietly"
   },
   "rank": 9,
   "tier": "3 Watch",

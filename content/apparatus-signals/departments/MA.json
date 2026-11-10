@@ -18,7 +18,7 @@
   "name_match": "not in registry",
   "fdid": "",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -29,9 +29,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-08",
-   "to": "2027-02",
-   "how": "new truck in service Aug 2026; we allow six months for the old one to list"
+   "from": "2026-05",
+   "to": "2026-11",
+   "how": "in a delivery column dated Aug 2026; columns run months behind the delivery, so the old truck may list any time now"
   },
   "rank": 1,
   "tier": "2 Call this month",

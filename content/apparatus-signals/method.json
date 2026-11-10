@@ -60,6 +60,18 @@
     "new_truck_arrived"
    ],
    "anchor": "date",
+   "from_months": -3,
+   "to_months": 3,
+   "how_template": "in a delivery column dated {month}; columns run months behind the delivery, so the old truck may list any time now",
+   "n_cases": 0,
+   "how_past_template": "in a delivery column dated {month}; the old one may already have sold quietly",
+   "where": "trade press"
+  },
+  {
+   "kinds": [
+    "new_truck_arrived"
+   ],
+   "anchor": "date",
    "from_months": 0,
    "to_months": 6,
    "how_template": "new truck in service {month}; we allow six months for the old one to list",

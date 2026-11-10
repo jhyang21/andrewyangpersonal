@@ -1,7 +1,7 @@
 [
  {
   "checked": "trade_press",
-  "score": 7.5,
+  "score": 6.5,
   "department": "Spalding County Fire Department",
   "registry_name": "Spalding County Fire Department",
   "city": "Griffin",
@@ -18,7 +18,7 @@
   "name_match": "exact",
   "fdid": "12610",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -29,12 +29,12 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-09",
-   "to": "2027-03",
-   "how": "new truck in service Sep 2026; we allow six months for the old one to list"
+   "from": "2026-06",
+   "to": "2026-12",
+   "how": "in a delivery column dated Sep 2026; columns run months behind the delivery, so the old truck may list any time now"
   },
   "rank": 1,
-  "tier": "1 Call this week",
+  "tier": "2 Call this month",
   "ask_for": "Fire chief or company president",
   "guide": {
    "type": "pumper",
@@ -697,7 +697,7 @@
   "name_match": "exact",
   "fdid": "04902",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -708,9 +708,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2025-02",
-   "to": "2025-08",
-   "how": "new truck arrived Feb 2025; the old one may already have sold quietly"
+   "from": "2024-11",
+   "to": "2025-05",
+   "how": "in a delivery column dated Feb 2025; the old one may already have sold quietly"
   },
   "rank": 17,
   "tier": "3 Watch",

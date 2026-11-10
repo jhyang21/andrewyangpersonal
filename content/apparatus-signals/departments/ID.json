@@ -58,7 +58,7 @@
   "name_match": "not in registry",
   "fdid": "",
   "top_kind": "new_truck_arrived",
-  "basis": "observed",
+  "basis": "expected",
   "read_by": "feed",
   "truck": {
    "description": null,
@@ -69,9 +69,9 @@
   },
   "stage": "surplus",
   "window": {
-   "from": "2026-01",
-   "to": "2026-07",
-   "how": "new truck arrived Jan 2026; the old one may already have sold quietly"
+   "from": "2025-10",
+   "to": "2026-04",
+   "how": "in a delivery column dated Jan 2026; the old one may already have sold quietly"
   },
   "rank": 2,
   "tier": "3 Watch",
