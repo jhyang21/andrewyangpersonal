@@ -21,7 +21,7 @@ export const SOURCES = [
  * Open Graph fields for a page below the home. A page's openGraph replaces the layout's whole
  * object, file-based image included, so siteName, type and the home's image are repeated here.
  */
-export function pageOpenGraph(title: string, path: string, description?: string) {
+export function pageOpenGraph(title: string, path: string, description: string) {
   return {
     title: `${title} · ${SITE_NAME}`,
     description,

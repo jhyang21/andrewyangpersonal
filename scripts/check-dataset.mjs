@@ -104,7 +104,6 @@ const guarded = [
   dataDir,
   path.join(root, "src", "cup-notes"),
   path.join(root, "src", "app", "projects", "cup-notes"),
-  // The method page prints the prompts and the memo text from here word for word.
   path.join(root, "simulation", "config"),
 ];
 function* files(p) {

@@ -71,9 +71,8 @@ export function ManagerCard({ store, manager, order, t }: Props) {
 
           {/*
             The message and the private thought share one grid cell, so the card is always as tall
-            as the longer of the two and swapping them never moves the layout. The button stretches
-            over the card: a tap or click anywhere on it swaps them, which hover alone cannot do on
-            a phone.
+            as the longer of the two and swapping them never moves the layout. Tapping anywhere on
+            the card swaps them (see .cn-mgr-voice in styles.css).
           */}
           <button
             type="button"
