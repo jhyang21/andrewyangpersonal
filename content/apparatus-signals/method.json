@@ -977,7 +977,7 @@
   "council_approval": "Board approved buying a new truck",
   "grant": "Won a grant for a new truck",
   "already_sold": "Sold its old truck direct",
-  "direct_sale": "Sale to a named buyer; will not list",
+  "direct_sale": "Sale to a chosen buyer; will not list",
   "auction_equipment": "Gear at auction now (no truck)",
   "afg_large": "Large federal fire grant (purpose to confirm)"
  },
