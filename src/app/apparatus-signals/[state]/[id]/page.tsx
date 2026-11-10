@@ -71,9 +71,9 @@ const LIKE_FOR_LIKE = /;\s*departments usually replace like with like\.?$/;
 /** The "When it should list" line, from the lead's stage and window, against the run month. */
 function whenLine(dept: Department, signals: Signal[], month: string): string {
   if (dept.stage === "sold") {
-    return dept.top_kind === "bids_closed"
-      ? "Bids closed; we have not found the result."
-      : "Already sold.";
+    if (dept.top_kind === "bids_closed") return "Bids closed; we have not found the result.";
+    if (dept.top_kind === "direct_sale") return "Going to a named buyer; it will not list.";
+    return "Already sold.";
   }
   if (dept.stage === "gear") return "No truck to list: it is selling gear.";
   if (dept.stage === "listed") {

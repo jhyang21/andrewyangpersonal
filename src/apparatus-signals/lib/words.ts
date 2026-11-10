@@ -73,13 +73,19 @@ export const STAGE_LABEL: Record<Stage, string> = {
 };
 
 /**
- * A stage group's heading. The sold group names closed bids only when one of
- * its leads (`topKinds`, all of the group, not the filtered view) is one.
+ * A stage group's heading. The sold group names closed bids and named-buyer
+ * sales only when one of its leads (`topKinds`, all of the group, not the
+ * filtered view) is one.
  */
 export function stageHeading(stage: Stage, topKinds: string[]): string {
-  return stage === "sold" && topKinds.includes("bids_closed")
-    ? "Sold, or bids closed"
-    : STAGE_LABEL[stage];
+  if (stage !== "sold") return STAGE_LABEL[stage];
+  const extra = [
+    topKinds.includes("bids_closed") ? "bids closed" : "",
+    topKinds.includes("direct_sale") ? "going to a named buyer" : "",
+  ].filter(Boolean);
+  if (!extra.length) return STAGE_LABEL.sold;
+  // "Sold, or bids closed"; with both, "Sold, bids closed, or going to a named buyer".
+  return `Sold, ${extra.slice(0, -1).map((e) => `${e}, `).join("")}or ${extra[extra.length - 1]}`;
 }
 
 /** Not yet at auction or sold: the leads worth a call, and the only ones ranked. */
@@ -96,7 +102,10 @@ export function isDoneStage(stage: Stage): boolean {
 export function shortWhen(stage: Stage, topKind: string): string | null {
   if (stage === "gear") return "Gear only";
   if (stage === "listed") return "At auction";
-  if (stage === "sold") return topKind === "bids_closed" ? "Bids closed" : "Sold";
+  if (stage === "sold") {
+    if (topKind === "bids_closed") return "Bids closed";
+    return topKind === "direct_sale" ? "Named buyer" : "Sold";
+  }
   return null;
 }
 
