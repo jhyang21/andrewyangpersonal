@@ -11,11 +11,6 @@ export type Project = {
   href?: string;
 };
 
-/** The entry's link: its own page under /projects unless it names another one. */
-export function projectHref(p: Project): string {
-  return p.href ?? `/projects/${p.slug}`;
-}
-
 /**
  * The Brent–WTI dataset, stored as parallel arrays rather than a row per day.
  *
