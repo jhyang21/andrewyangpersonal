@@ -6,6 +6,16 @@
 export const PICA_MODEL_ID = "gpt-6-luna";
 
 /**
+ * The request header that carries the visitor's OpenAI key to `/api/chat`.
+ * The browser sets it from the key kept in its tab; the server reads it per
+ * request and keeps nothing.
+ */
+export const OPENAI_KEY_HEADER = "x-openai-key";
+
+/** An OpenAI key's shape: sk-, then 17 to 197 more characters, no spaces. */
+export const OPENAI_KEY_SHAPE = /^sk-\S{17,197}$/;
+
+/**
  * Pica asks at most this many questions before each shortlist. The count
  * starts again after every shortlist it shows.
  */
@@ -82,6 +92,8 @@ export const CHAT_RATE_LIMIT = {
  */
 export const PICA_MESSAGES = {
   missingKey: "Pica isn't set up yet. Add your OpenAI key on Home, or try the demo.",
+  /** OpenAI turned down the key the visitor's tab sent. */
+  badKey: "Pica can't reply. OpenAI didn't accept your key. Add it again on Home.",
   tooLong:
     "This conversation is too long for Pica to read. Start a new one to keep going.",
   /** One buyer message over the length cap. */

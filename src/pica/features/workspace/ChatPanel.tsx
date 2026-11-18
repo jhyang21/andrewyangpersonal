@@ -339,7 +339,8 @@ export function ChatPanel({ ws, onOpenNeeds, blurOnSubmit, bar, composerFocus = 
   // while a reply comes, else on Pica's newest reply, else on the composer;
   // when Pica can't chat, on that heading. The row scrolls to the top, below
   // the strip (its scroll margin), as the composer and the bar cover the foot.
-  const notSetUp = error?.code === "missing_key";
+  // No key in this tab, or one OpenAI turned down: either way the fix is on Home.
+  const notSetUp = error?.code === "missing_key" || error?.code === "bad_key";
   useEffect(() => {
     if (shape !== "column" || !focusOnArrival.current) return;
     focusOnArrival.current = false;

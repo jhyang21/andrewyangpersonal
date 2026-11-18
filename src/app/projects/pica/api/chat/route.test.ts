@@ -1,16 +1,19 @@
 /**
- * Route-level test with the AI SDK mock model. No API key and no network:
- * `@ai-sdk/openai` and `@/pica/lib/shopify` are mocked, and the key is a stub.
+ * Route-level test with the AI SDK mock model. No real key and no network:
+ * `@ai-sdk/openai` and `@/pica/lib/shopify` are mocked, and the key in the
+ * request header is an obvious fake.
  */
+import { APICallError, RetryError } from "ai";
 import { MockLanguageModelV4, simulateReadableStream } from "ai/test";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { searchCatalog } from "@/pica/lib/shopify";
-import { CHAT_LIMITS, CHAT_RATE_LIMIT, PICA_MESSAGES } from "@/pica/lib/pica/constants";
+import { failureText } from "@/pica/lib/pica/chat";
+import { CHAT_LIMITS, CHAT_RATE_LIMIT, OPENAI_KEY_HEADER, PICA_MESSAGES } from "@/pica/lib/pica/constants";
 import { chatRateLimiter } from "@/pica/lib/pica/rate-limit";
 import { makeProduct, makeSession } from "@/pica/lib/pica/test-helpers";
 import { POST } from "./route";
 
-const holder = vi.hoisted(() => ({ model: null as unknown }));
+const holder = vi.hoisted(() => ({ model: null as unknown, keys: [] as unknown[] }));
 
 vi.mock("@ai-sdk/openai", () => {
   const openai = Object.assign(() => holder.model, {
@@ -25,7 +28,13 @@ vi.mock("@ai-sdk/openai", () => {
       },
     }),
   });
-  return { createOpenAI: () => openai };
+  // Record the key each provider is built with.
+  return {
+    createOpenAI: (options: { apiKey?: unknown }) => {
+      holder.keys.push(options.apiKey);
+      return openai;
+    },
+  };
 });
 
 vi.mock("@/pica/lib/shopify", async (importOriginal) => ({
@@ -48,11 +57,42 @@ function streamOf(chunks: LanguageModelV4StreamPart[]) {
 
 const product = makeProduct({ id: "gid://shopify/p/abc" });
 
-function chatRequest(body: unknown): Request {
+const FAKE_KEY = "sk-test-not-real-0000000000";
+
+function chatRequest(body: unknown, key: string | null = FAKE_KEY): Request {
+  const headers: Record<string, string> = { "content-type": "application/json" };
+  if (key !== null) headers[OPENAI_KEY_HEADER] = key;
   return new Request("http://localhost/api/chat", {
     method: "POST",
-    headers: { "content-type": "application/json" },
+    headers,
     body: JSON.stringify(body),
+  });
+}
+
+const CONSOLE_LEVELS = ["error", "warn", "log", "info", "debug"] as const;
+
+/** Silence the console and return a reader for everything written to it, as one string. */
+function captureLogs(): () => string {
+  const spies = CONSOLE_LEVELS.map((level) => vi.spyOn(console, level).mockImplementation(() => {}));
+  const asText = (value: unknown) =>
+    value instanceof Error ? `${value.message} ${value.stack}` : typeof value === "string" ? value : JSON.stringify(value);
+  return () =>
+    spies
+      .flatMap((spy) => spy.mock.calls.flat())
+      .map(asText)
+      .join(" ");
+}
+
+/** A 401 the way the AI SDK reports one from OpenAI: its message quotes part of the key. */
+function keyRefused(): APICallError {
+  return new APICallError({
+    message: `Incorrect API key provided: ${FAKE_KEY.slice(0, 8)}****0000.`,
+    url: "https://api.openai.com/v1/responses",
+    requestBodyValues: { model: "gpt-6-luna" },
+    statusCode: 401,
+    responseHeaders: {},
+    responseBody: JSON.stringify({ error: { message: `Incorrect API key provided: ${FAKE_KEY}` } }),
+    isRetryable: false,
   });
 }
 
@@ -65,7 +105,7 @@ const userMessage = {
 beforeEach(() => {
   // Every test calls from the same address; start each with a fresh allowance.
   chatRateLimiter.reset();
-  vi.stubEnv("OPENAI_API_KEY", "test-key-not-real");
+  holder.keys = [];
   vi.mocked(searchCatalog).mockResolvedValue({ products: [product], totalCount: 1, nextCursor: null });
 });
 
@@ -76,12 +116,64 @@ afterEach(() => {
 
 describe("POST /api/chat", () => {
   it("answers 503 missing_key without a key", async () => {
-    vi.stubEnv("OPENAI_API_KEY", "");
-    const response = await POST(chatRequest({ messages: [userMessage], session: makeSession() }));
+    const response = await POST(chatRequest({ messages: [userMessage], session: makeSession() }, null));
     expect(response.status).toBe(503);
     expect(await response.json()).toEqual({
       error: { code: "missing_key", message: PICA_MESSAGES.missingKey },
     });
+    expect(holder.keys).toEqual([]);
+  });
+
+  it("answers 503 missing_key for a header that isn't shaped like a key", async () => {
+    const response = await POST(chatRequest({ messages: [userMessage], session: makeSession() }, "sk-short"));
+    expect(response.status).toBe(503);
+    expect(holder.keys).toEqual([]);
+  });
+
+  it("ignores OPENAI_API_KEY in the env", async () => {
+    vi.stubEnv("OPENAI_API_KEY", "sk-test-env-not-real-1111111111");
+    const response = await POST(chatRequest({ messages: [userMessage], session: makeSession() }, null));
+    expect(response.status).toBe(503);
+    expect((await response.json()).error.code).toBe("missing_key");
+    expect(holder.keys).toEqual([]);
+  });
+
+  it("builds the provider from the key in the request header, once per request", async () => {
+    holder.model = new MockLanguageModelV4({
+      doStream: [
+        streamOf([
+          { type: "text-start", id: "t1" },
+          { type: "text-delta", id: "t1", delta: "What is the bag for?" },
+          { type: "text-end", id: "t1" },
+          { type: "finish", finishReason: { unified: "stop", raw: undefined }, usage },
+        ]),
+      ],
+    });
+    vi.stubEnv("OPENAI_API_KEY", "sk-test-env-not-real-1111111111");
+    const response = await POST(chatRequest({ messages: [userMessage], session: makeSession() }, `  ${FAKE_KEY} `));
+    expect(response.status).toBe(200);
+    const body = await response.text();
+    expect(holder.keys).toEqual([FAKE_KEY]);
+    expect(body).not.toContain(FAKE_KEY);
+  });
+
+  it("tells the buyer to add the key again when OpenAI refuses it, and logs no key", async () => {
+    holder.model = new MockLanguageModelV4({
+      doStream: async () => {
+        throw keyRefused();
+      },
+    });
+    const logs = captureLogs();
+    const response = await POST(chatRequest({ messages: [userMessage], session: makeSession() }));
+    const body = await response.text();
+    expect(body).toContain(PICA_MESSAGES.badKey);
+    expect(body).not.toContain(FAKE_KEY.slice(0, 8));
+    expect(body).not.toContain("Incorrect API key");
+    const written = logs();
+    expect(written).toContain("[pica] model stream failed: OpenAI refused the key (401)");
+    expect(written).not.toContain(FAKE_KEY.slice(0, 8));
+    expect(written).not.toContain("Incorrect API key");
+    expect(written).not.toContain(OPENAI_KEY_HEADER);
   });
 
   it("answers 400 bad_request for a malformed body", async () => {
@@ -89,7 +181,11 @@ describe("POST /api/chat", () => {
     expect(response.status).toBe(400);
     expect((await response.json()).error.code).toBe("bad_request");
 
-    const notJson = new Request("http://localhost/api/chat", { method: "POST", body: "{nope" });
+    const notJson = new Request("http://localhost/api/chat", {
+      method: "POST",
+      headers: { [OPENAI_KEY_HEADER]: FAKE_KEY },
+      body: "{nope",
+    });
     expect((await POST(notJson)).status).toBe(400);
   });
 
@@ -499,7 +595,11 @@ describe("POST /api/chat", () => {
     const fromIp = () =>
       new Request("http://localhost/api/chat", {
         method: "POST",
-        headers: { "content-type": "application/json", "x-forwarded-for": "203.0.113.7, 10.0.0.1" },
+        headers: {
+          "content-type": "application/json",
+          "x-forwarded-for": "203.0.113.7, 10.0.0.1",
+          [OPENAI_KEY_HEADER]: FAKE_KEY,
+        },
         body: "{}",
       });
     for (let i = 0; i < CHAT_RATE_LIMIT.requests; i++) {
@@ -516,7 +616,7 @@ describe("POST /api/chat", () => {
     // Another client is not affected.
     const other = new Request("http://localhost/api/chat", {
       method: "POST",
-      headers: { "x-forwarded-for": "198.51.100.2" },
+      headers: { "x-forwarded-for": "198.51.100.2", [OPENAI_KEY_HEADER]: FAKE_KEY },
       body: "{}",
     });
     expect((await POST(other)).status).toBe(400);
@@ -691,5 +791,36 @@ describe("POST /api/chat: fourth review", () => {
     const bodyN = await (await POST(chatRequest({ messages: [first], session: makeSession() }))).text();
     const stored = events(bodyN).find((event) => event.type === "tool-output-available")?.output.canvas;
     expect(stored.budget).toEqual({ maxUsd: 150, source: "stated" });
+  });
+});
+
+describe("failureText", () => {
+  it("gives badKey for an OpenAI 401, bare or after a retry, and logs only a fixed line", () => {
+    const logs = captureLogs();
+    expect(failureText(keyRefused(), "chat failed to start")).toBe(PICA_MESSAGES.badKey);
+    const retried = new RetryError({
+      message: `Failed after 2 attempts. Last error: ${keyRefused().message}`,
+      reason: "maxRetriesExceeded",
+      errors: [keyRefused(), keyRefused()],
+    });
+    expect(failureText(retried, "model stream failed")).toBe(PICA_MESSAGES.badKey);
+    const written = logs();
+    expect(written).toContain("[pica] chat failed to start: OpenAI refused the key (401)");
+    expect(written).toContain("[pica] model stream failed: OpenAI refused the key (401)");
+    expect(written).not.toContain(FAKE_KEY.slice(0, 8));
+    expect(written).not.toContain("Incorrect API key");
+  });
+
+  it("logs only the status for any other OpenAI error", () => {
+    const logs = captureLogs();
+    const error = new APICallError({
+      message: `Rate limit reached for ${FAKE_KEY.slice(0, 8)}`,
+      url: "https://api.openai.com/v1/responses",
+      requestBodyValues: {},
+      statusCode: 429,
+    });
+    expect(failureText(error, "model stream failed")).toBe(PICA_MESSAGES.modelUnavailable);
+    expect(logs()).toContain("[pica] model stream failed: OpenAI answered 429");
+    expect(logs()).not.toContain(FAKE_KEY.slice(0, 8));
   });
 });

@@ -19,9 +19,8 @@ vi.mock("@/pica/lib/shopify", async (importOriginal) => ({
 
 const searchMock = vi.mocked(searchCatalog);
 
-// Keep the Decisions helper out of these tests: no key, so it never calls out.
+// Keep the Decisions helper out of these tests: no model is passed, so it never calls out.
 beforeEach(() => {
-  vi.stubEnv("OPENAI_API_KEY", "");
   searchMock.mockReset();
 });
 

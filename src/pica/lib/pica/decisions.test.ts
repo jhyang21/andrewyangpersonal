@@ -5,7 +5,8 @@ import { EMPTY_CANVAS, type Canvas } from "@/pica/lib/types";
 import { NO_TURN_READ, readTurn, screenCandidates } from "./decisions";
 import { makeProduct } from "./test-helpers";
 
-// The default model. Any call to it lands in this spy, never on the network.
+// The OpenAI provider, mocked. decisions.ts has no default model, so nothing
+// should reach it; any call would land in these spies, never on the network.
 const provider = vi.hoisted(() => ({
   doDecide: vi.fn<DoDecide>(async () => ({
     answers: {
@@ -75,17 +76,16 @@ describe("readTurn", () => {
     expect(await readTurn(turn, { model })).toEqual({ scope: "out_of_scope", ready: null });
   });
 
-  it("uses the default model when a key is set", async () => {
-    // Shows the spies below are wired: with a key, the call does reach them.
-    vi.stubEnv("OPENAI_API_KEY", "test-key-not-real");
-    expect(await readTurn(turn)).toEqual({ scope: "backpack", ready: true });
-    expect(openai.decisionModel).toHaveBeenCalledTimes(1);
+  it("asks the model it is given", async () => {
+    // Shows the spy below is wired: with a model, the call does reach it.
+    expect(await readTurn(turn, { model: mockModel(provider.doDecide) })).toEqual({ scope: "backpack", ready: true });
     expect(provider.doDecide).toHaveBeenCalledTimes(1);
   });
 
-  it("returns no answer without a key and never calls out", async () => {
-    vi.stubEnv("OPENAI_API_KEY", "");
+  it("returns no answer without a model and never calls out, even with OPENAI_API_KEY set", async () => {
+    vi.stubEnv("OPENAI_API_KEY", "sk-test-env-not-real-1111111111");
     expect(await readTurn(turn)).toEqual(NO_TURN_READ);
+    expect(await readTurn(turn, {})).toEqual(NO_TURN_READ);
     expect(openai.decisionModel).not.toHaveBeenCalled();
     expect(provider.doDecide).not.toHaveBeenCalled();
   });
@@ -154,12 +154,11 @@ describe("screenCandidates", () => {
     expect(doDecide).not.toHaveBeenCalled();
   });
 
-  it("returns the input unchanged when the helper fails or has no key", async () => {
+  it("returns the input unchanged when the helper fails or has no model", async () => {
     const model = mockModel(async () => {
       throw new Error("Decisions API down");
     });
     expect(await screenCandidates(products, canvas, { model })).toEqual(products);
-    vi.stubEnv("OPENAI_API_KEY", "");
     expect(await screenCandidates(products, canvas)).toEqual(products);
     expect(openai.decisionModel).not.toHaveBeenCalled();
     expect(provider.doDecide).not.toHaveBeenCalled();

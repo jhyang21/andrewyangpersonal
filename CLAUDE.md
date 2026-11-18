@@ -59,7 +59,7 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 ### Pica microsite
 
 - `/projects/pica` is Pica, a shopping helper built for a Shopify take-home and copied here whole. Routes in `src/app/projects/pica/` (Home, Browse, Saved, the decision pages `d/[id]`, the design kit under `kit/`, and `api/`), code in `src/pica/` (`components/`, `features/`, `lib/`, `styles.css`), design docs in `docs/pica/`. Every internal link and API call starts with `BASE` from `src/pica/lib/base.ts`.
-- It runs demo-only here: Vercel has no `OPENAI_API_KEY`, and `/api/setup` takes no key in production, so Home offers only the set demo (goal to Compare, no AI calls). Adding the key to Vercel would turn on live chat for every visitor, at Andrew's cost.
+- Visitors can paste their own OpenAI key on Home, or pick the set demo (goal to Compare, no AI calls). `/api/setup` checks a pasted key with OpenAI once and stores nothing. The browser keeps the key in that tab's `sessionStorage` only and sends it with each chat request in the `x-openai-key` header. The server uses it for that request and never stores, logs or sends it back. Pica never reads `OPENAI_API_KEY`, so live chat never runs at Andrew's cost.
 - It runs its own Tailwind build from its own tokens: `src/pica/styles.css` imports Tailwind with `source(none)` and scans only Pica's folders, and `globals.css` keeps Pica's folders out of the site's build with `@source not`. Its html and body rules apply only while the `.pica` wrapper is on the page, `:root:has(.pica)` restores the four tokens `globals.css` also sets (`--color-ink`, `--color-surface`, `--radius-card`, `--shadow-card`), and the site's focus ring skips anything inside `.pica`.
 - Its entry in `content/projects.json` has no `href`, so the Projects list links `/projects/pica`.
 - Its tests are the vitest suite (`npm test`); some read files by repo path, so run them from the root.
@@ -79,6 +79,6 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 
 ## Gotchas
 
-- **There is no `.env` and no secrets.** `.env.local` holds only Vercel's OIDC token from `vercel env pull`. `.gitignore` covers `.env*`. Pica reads `OPENAI_API_KEY` if it is ever set; keep it unset on Vercel.
+- **There is no `.env` and no secrets.** `.env.local` holds only Vercel's OIDC token from `vercel env pull`. `.gitignore` covers `.env*`. Pica never reads `OPENAI_API_KEY`; each visitor brings their own key.
 - **README and PROGRESS.md are stale** — they describe the old Relora waitlist site, not the current personal portfolio
 - Dynamic route `params` are `Promise<{ slug: string }>` — `await` them (Next.js 15+)

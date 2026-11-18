@@ -4,66 +4,43 @@ import { BASE } from "@/pica/lib/base";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { DEMO } from "@/pica/features/demo/demo-script";
-import { postJson, requestJson } from "@/pica/features/shared/api";
+import { postJson } from "@/pica/features/shared/api";
 import { startDemo } from "@/pica/features/shared/startDecision";
-import { setupStatusFrom, type SetupStatus } from "./setup-model";
-
-interface SetupReply {
-  hasKey: boolean;
-  /** The key is the server's env key, which Home can't forget. */
-  fromEnv: boolean;
-  /** This server takes a pasted key: false on a hosted copy. */
-  canAdd: boolean;
-}
+import { forgetVisitorKey, readVisitorKey, saveVisitorKey } from "@/pica/features/shared/visitor-key";
+import { SETUP, type SetupStatus } from "./setup-model";
 
 /**
- * Home's first-run state. Asks the local server whether it holds an OpenAI
- * key; with none, Home shows the choice. Where a key can't be added (not
- * local, or a production build), the choice is the demo alone. If the route
- * fails, Home stays as it was and offers no change.
+ * Home's first-run state. A key kept in this tab means Pica can chat; with
+ * none, Home shows the choice. A pasted key is checked once by `/api/setup`,
+ * which stores nothing, then kept in this tab only.
  */
 export function useSetup() {
   const router = useRouter();
+  // "checking" until the tab is read after mount: the server render can't see the tab.
   const [status, setStatus] = useState<SetupStatus>("checking");
-  const [hasKey, setHasKey] = useState(false);
-  const [fromEnv, setFromEnv] = useState(false);
-  // The server takes a key, so the choice can be opened again later.
-  const [canAdd, setCanAdd] = useState(false);
   // "Change setup" opened the choice while a key is kept.
   const [choosing, setChoosing] = useState(false);
 
   useEffect(() => {
-    let live = true;
-    void requestJson<SetupReply>(`${BASE}/api/setup`, { cache: "no-store" }).then((result) => {
-      if (!live) return;
-      setStatus(setupStatusFrom(result));
-      setCanAdd(result.ok && result.data?.canAdd === true);
-      setHasKey(result.ok && result.data?.hasKey === true);
-      setFromEnv(result.ok && result.data?.fromEnv === true);
-    });
-    return () => {
-      live = false;
-    };
+    // Reading the tab's storage has to wait for the browser, so the first
+    // render matches the server's. One read, once, on mount.
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- tab storage exists only after hydration
+    setStatus(readVisitorKey() ? "ready" : "needed");
   }, []);
 
-  /** Resolves to an error to show, or null once the server keeps the key. */
+  /** Resolves to an error to show, or null once the tab keeps the key. */
   async function saveKey(apiKey: string): Promise<string | null> {
-    const result = await postJson<SetupReply>(`${BASE}/api/setup`, { apiKey });
+    const result = await postJson<{ ok: true }>(`${BASE}/api/setup`, { apiKey });
     if (!result.ok) return result.error.message;
-    setHasKey(true);
-    setFromEnv(result.data?.fromEnv === true);
+    if (!saveVisitorKey(apiKey)) return SETUP.noStorage;
     setStatus("ready");
     setChoosing(false);
     return null;
   }
 
-  async function forgetKey() {
-    const result = await requestJson<SetupReply>(`${BASE}/api/setup`, { method: "DELETE" });
-    if (!result.ok) return;
-    // A key from the environment stays; only the pasted one goes.
-    const kept = result.data?.hasKey === true;
-    setHasKey(kept);
-    setStatus(kept ? "ready" : "needed");
+  function forgetKey() {
+    forgetVisitorKey();
+    setStatus("needed");
     setChoosing(false);
   }
 
@@ -72,16 +49,14 @@ export function useSetup() {
     router.push(`${BASE}/d/${id}`);
   }
 
+  const hasKey = status === "ready";
   return {
     status,
     hasKey,
-    canAdd,
-    /** A pasted key is in use, so "Forget my key" can do something. */
-    canForget: hasKey && !fromEnv,
     /** Show the choice in place of the goal box. */
     showChoice: status === "needed" || choosing,
     /** Offer "Change setup" at the foot. */
-    canChange: canAdd && status === "ready" && !choosing,
+    canChange: hasKey && !choosing,
     change: () => setChoosing(true),
     keep: () => setChoosing(false),
     saveKey,

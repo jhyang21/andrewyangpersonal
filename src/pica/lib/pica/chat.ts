@@ -1,11 +1,15 @@
 /**
  * The `POST /api/chat` handler. Server-only.
  *
- * Body: `{ messages: PicaUIMessage[], session: ChatSessionContext }`.
+ * Body: `{ messages: PicaUIMessage[], session: ChatSessionContext }`, with the
+ * visitor's OpenAI key in the `OPENAI_KEY_HEADER` header. The key serves this
+ * request only: it is never stored, logged or sent back.
  * Answers with an AI SDK UI message stream, or `{ error: ApiError }` with a
  * 4xx/5xx status when it can't start.
  */
 import {
+  APICallError,
+  RetryError,
   convertToModelMessages,
   createUIMessageStreamResponse,
   isStepCount,
@@ -20,7 +24,7 @@ import { CHAT_LIMITS, MAX_QUESTIONS, MAX_STEPS, PICA_MESSAGES, PICA_MODEL_ID } f
 import { parseChatBody, readBodyText } from "./chat-request";
 import type { PicaUIMessage } from "./client";
 import { readTurn } from "./decisions";
-import { picaProvider } from "./openai-key";
+import { keyFromRequest, picaProvider } from "./openai-key";
 import { buildInstructions } from "./prompt";
 import { countQuestionsAsked } from "./questions";
 import { chatRateLimiter, clientKey } from "./rate-limit";
@@ -69,9 +73,29 @@ function buyerAmounts(messages: PicaUIMessage[], canvas: Canvas): number[] {
   return amounts;
 }
 
-/** Buyer-facing text for a failure after the stream started. */
-function streamErrorText(error: unknown): string {
-  console.error("[pica] model stream failed:", error instanceof Error ? error.message : error);
+/** The OpenAI call failure behind an error: the error itself, or the last try of a retry. */
+function apiCallErrorIn(error: unknown): APICallError | null {
+  if (APICallError.isInstance(error)) return error;
+  if (RetryError.isInstance(error)) return apiCallErrorIn(error.lastError);
+  return null;
+}
+
+/**
+ * Log a failure and pick the buyer's message for it. OpenAI's error message
+ * can quote part of the key, so for an OpenAI error the log holds only the
+ * status, never the message, the request or its headers.
+ */
+export function failureText(error: unknown, where: string): string {
+  const apiError = apiCallErrorIn(error);
+  if (apiError?.statusCode === 401) {
+    console.error(`[pica] ${where}: OpenAI refused the key (401)`);
+    return PICA_MESSAGES.badKey;
+  }
+  if (apiError) {
+    console.error(`[pica] ${where}: OpenAI answered ${apiError.statusCode ?? "with no status"}`);
+  } else {
+    console.error(`[pica] ${where}:`, error instanceof Error ? error.message : typeof error);
+  }
   return PICA_MESSAGES.modelUnavailable;
 }
 
@@ -86,7 +110,7 @@ function questionShown<TOOLS extends ToolSet>(): StopCondition<TOOLS> {
 }
 
 export async function handleChat(request: Request): Promise<Response> {
-  const openai = picaProvider();
+  const openai = picaProvider(keyFromRequest(request));
   if (!openai) {
     return errorResponse(503, { code: "missing_key", message: PICA_MESSAGES.missingKey });
   }
@@ -125,18 +149,23 @@ export async function handleChat(request: Request): Promise<Response> {
   const allowedAmounts = createAmountAllowList(buyerAmounts(messages, session.canvas));
   // Shared with the tools, which add the prices of products search finds.
   const knownPrices = createKnownPrices(session.products);
-  const { tools } = createPicaTools({ session, questionsAsked, allowedAmounts, knownPrices });
+  // The Decisions helper runs on the same key as the chat.
+  const decisions = { model: openai.decisionModel(PICA_MODEL_ID) };
+  const { tools } = createPicaTools({ session, questionsAsked, allowedAmounts, knownPrices, decisions });
 
   const lastUser = [...messages].reverse().find((message) => message.role === "user");
 
   try {
     const [modelMessages, turnRead] = await Promise.all([
       convertToModelMessages(messages, { tools, ignoreIncompleteToolCalls: true }),
-      readTurn({
-        latestUserText: lastUser ? textOf(lastUser) : "",
-        canvas: session.canvas,
-        recentTurns: recentTurns(messages),
-      }),
+      readTurn(
+        {
+          latestUserText: lastUser ? textOf(lastUser) : "",
+          canvas: session.canvas,
+          recentTurns: recentTurns(messages),
+        },
+        decisions,
+      ),
     ]);
 
     const toolNames = Object.keys(tools) as (keyof typeof tools)[];
@@ -151,6 +180,10 @@ export async function handleChat(request: Request): Promise<Response> {
       experimental_transform: guardReplyText({ allowedAmounts, knownPrices }),
       maxRetries: 1,
       abortSignal: request.signal,
+      // The UI stream's onError below logs each failure safely. The default
+      // here would print the whole error, and OpenAI's message can quote part
+      // of the key.
+      onError: () => {},
     });
 
     return createUIMessageStreamResponse({
@@ -158,7 +191,7 @@ export async function handleChat(request: Request): Promise<Response> {
         stream: result.stream,
         tools,
         originalMessages: messages,
-        onError: streamErrorText,
+        onError: (error) => failureText(error, "model stream failed"),
         // Reasoning is never checked by the reply guard, so it stays on the server.
         sendReasoning: false,
         // Keep tool errors as written: they are notes to the model, and the
@@ -169,7 +202,8 @@ export async function handleChat(request: Request): Promise<Response> {
       }),
     });
   } catch (error) {
-    console.error("[pica] chat failed to start:", error instanceof Error ? error.message : error);
-    return errorResponse(502, { code: "model_unavailable", message: PICA_MESSAGES.modelUnavailable });
+    const message = failureText(error, "chat failed to start");
+    if (message === PICA_MESSAGES.badKey) return errorResponse(401, { code: "bad_key", message });
+    return errorResponse(502, { code: "model_unavailable", message });
   }
 }

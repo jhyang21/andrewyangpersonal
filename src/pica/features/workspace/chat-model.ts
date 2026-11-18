@@ -57,6 +57,8 @@ export function chatErrorFrom(error: Error | undefined): ApiError | null {
   } catch {
     // Not JSON: fall through.
   }
+  // OpenAI turned down the tab's key mid-stream: sending again won't help.
+  if (error.message === PICA_MESSAGES.badKey) return { code: "bad_key", message: error.message };
   if (KNOWN_MESSAGES.has(error.message)) return { code: "model_unavailable", message: error.message };
   if (/fetch|network|load failed/i.test(error.message)) return { code: "unknown", message: OFFLINE_MESSAGE };
   return { code: "model_unavailable", message: PICA_MESSAGES.modelUnavailable };

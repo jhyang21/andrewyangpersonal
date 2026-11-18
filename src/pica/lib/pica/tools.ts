@@ -68,6 +68,7 @@ export interface PicaToolsContext {
    * to the reply guard so a reply can't state a price as a bare number.
    */
   knownPrices?: KnownPrices;
+  /** The Decisions model that screens search results. Without one, search skips screening. */
   decisions?: DecisionOptions;
   now?: () => number;
   makeId?: () => string;

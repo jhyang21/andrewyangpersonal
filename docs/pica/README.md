@@ -13,8 +13,9 @@ pnpm dev
 
 The app reads its settings from environment variables:
 
-- `OPENAI_API_KEY` is needed for Pica's chat (model `gpt-6-luna`). If it is already set as a system or user variable on your machine, there is nothing to do: the server picks it up. A system variable wins over an env file. With no such variable, copy `.env.example` to `.env.local` and fill it in.
-- No key at all? Home asks on first run. Paste a key there and the dev server keeps it in memory only (never on disk; paste it again after a restart), or pick the demo and press Next to step through a scripted decision from goal to Compare with no AI calls. The setup route answers only on localhost and is off in production builds.
+- Pica's chat (model `gpt-6-luna`) runs on each visitor's own OpenAI key. Pica never reads `OPENAI_API_KEY` from the env, so there is no key to set.
+- Home asks on first run. A visitor pastes a key, `/api/setup` checks it with OpenAI once and stores nothing, and the browser keeps it in that tab's `sessionStorage`. Each chat request carries it in the `x-openai-key` header. The server uses it for that request only and never stores, logs or sends it back. Closing the tab, or "Forget my key", drops it.
+- No key? Pick the demo and press Next to step through a scripted decision from goal to Compare with no AI calls.
 - Shopify Catalog credentials are optional. Without them, search runs keyless and checkout uses the merchant's direct checkout link.
 
 ## Checks
@@ -32,7 +33,7 @@ The live Shopify tests are skipped unless `SHOPIFY_LIVE=1` is set.
 | Path | What |
 |---|---|
 | `src/app/(site)` | Pages: home, browse, workspace (`/d/[id]`), decide, saved |
-| `src/app/api` | Server routes: chat, catalog, checkout, events, setup (the local key) |
+| `src/app/api` | Server routes: chat, catalog, checkout, events, setup (checks a pasted key) |
 | `src/features` | The screens, one folder each: home, workspace (chat, Options, Compare), decide, decision (Done), saved, browse, shell (header), and demo (the scripted demo) |
 | `src/features/parts` | Parts more than one screen shares (path, menus, sheets, notices); preview at `/kit/parts` |
 | `src/features/shared` | Helpers the screens share: fetch, errors, formats, the journey facts |

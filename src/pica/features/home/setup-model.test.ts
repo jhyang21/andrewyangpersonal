@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { SETUP, keyProblem, setupStatusFrom } from "./setup-model";
+import { SETUP, keyProblem } from "./setup-model";
 
 describe("keyProblem", () => {
   it("asks for a key when the field is empty", () => {
@@ -20,14 +20,12 @@ describe("keyProblem", () => {
   });
 });
 
-describe("setupStatusFrom", () => {
-  it("asks for a choice only when the server says it has no key", () => {
-    expect(setupStatusFrom({ ok: true, data: { hasKey: false } })).toBe("needed");
-    expect(setupStatusFrom({ ok: true, data: { hasKey: true } })).toBe("ready");
-  });
-
-  it("leaves Home as it was when the route refuses or answers oddly", () => {
-    expect(setupStatusFrom({ ok: false })).toBe("ready");
-    expect(setupStatusFrom({ ok: true, data: null })).toBe("ready");
+describe("the key hint", () => {
+  it("says where the key goes, that nothing saves it, and how to limit the risk", () => {
+    expect(SETUP.keyHint).toMatch(/stays in this tab/);
+    expect(SETUP.keyHint).toMatch(/only to OpenAI, through this site's server/);
+    expect(SETUP.keyHint).toMatch(/Nothing saves it/);
+    expect(SETUP.keyHint).toMatch(/low spending limit/);
+    expect(SETUP.keyHint).toMatch(/revoke it/);
   });
 });

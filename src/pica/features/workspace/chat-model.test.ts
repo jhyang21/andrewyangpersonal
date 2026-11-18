@@ -82,6 +82,10 @@ describe("errors", () => {
     });
   });
 
+  it("reads a refused key mid-stream as bad_key, which a retry can't fix", () => {
+    expect(chatErrorFrom(new Error(PICA_MESSAGES.badKey))).toEqual({ code: "bad_key", message: PICA_MESSAGES.badKey });
+  });
+
   it("reads a dropped connection as offline, and anything else as Pica unable to reply", () => {
     expect(chatErrorFrom(new Error("Failed to fetch"))?.message).toBe(OFFLINE_MESSAGE);
     expect(chatErrorFrom(new Error("boom"))?.message).toBe(PICA_MESSAGES.modelUnavailable);

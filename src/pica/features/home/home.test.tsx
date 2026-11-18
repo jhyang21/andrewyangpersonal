@@ -107,7 +107,7 @@ describe("SetupCard", () => {
     expect(out).toMatch(/<input[^>]*type="password"/);
     expect(out).toMatch(/<input[^>]*type="password"[^>]*autoComplete="off"|autoComplete="off"[^>]*type="password"/i);
     expect(out).toContain(SETUP.keyField);
-    expect(out).toContain(SETUP.keyHint.replace("'", "&#x27;"));
+    expect(out).toContain(SETUP.keyHint.replace(/'/g, "&#x27;"));
   });
 
   it("offers the demo and one Next, the only purple button", () => {
@@ -125,17 +125,21 @@ describe("SetupCard", () => {
     expect(kept).toContain(SETUP.keep);
   });
 
-  it("offers no Forget for the server's env key, which it can't forget", () => {
-    const env = renderToStaticMarkup(<SetupCard onKey={async () => null} onDemo={noop} hasKey onKeep={noop} />);
-    expect(env).not.toContain(SETUP.forget);
-    expect(env).toContain(SETUP.keep);
+  it("offers Keep without Forget when no forget handler is given", () => {
+    const kept = renderToStaticMarkup(<SetupCard onKey={async () => null} onDemo={noop} hasKey onKeep={noop} />);
+    expect(kept).not.toContain(SETUP.forget);
+    expect(kept).toContain(SETUP.keep);
   });
-  it("offers only the demo, already chosen, where the server won't take a key", () => {
-    const hosted = renderToStaticMarkup(<SetupCard onKey={async () => null} onDemo={noop} canAdd={false} />);
-    expect(hosted).not.toMatch(/type="password"/);
-    expect(hosted).not.toContain(SETUP.keyLabel);
-    expect(hosted).toContain(SETUP.demoOnlyLine.replace("'", "&#x27;"));
-    expect(hosted).toMatch(/<input[^>]*type="radio"[^>]*checked=""[^>]*value="demo"/);
-    expect(hosted).toContain(`>${SETUP.next}<`);
+
+  it("always offers the key option beside the demo, with no demo-only mode", () => {
+    for (const markup of [
+      out,
+      renderToStaticMarkup(<SetupCard onKey={async () => null} onDemo={noop} hasKey onForget={noop} onKeep={noop} />),
+    ]) {
+      expect(markup).toContain(SETUP.keyLabel);
+      expect(markup).toContain(SETUP.demoLabel);
+      expect(markup).toContain(SETUP.line);
+      expect(markup).toMatch(/<input[^>]*type="radio"[^>]*value="key"/);
+    }
   });
 });

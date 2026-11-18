@@ -5,26 +5,24 @@ import { Button, Card, TextInput, cn } from "@/pica/components/kit";
 import { SETUP, keyProblem, type SetupChoice } from "./setup-model";
 
 export interface SetupCardProps {
-  /** Sends the key to the local server. Resolves to an error to show, or null once it is kept. */
+  /** Has the key checked, then keeps it in this tab. Resolves to an error to show, or null once it is kept. */
   onKey: (key: string) => Promise<string | null>;
   /** Starts the demo. */
   onDemo: () => void;
-  /** False where the server won't take a key (a hosted copy): only the demo shows. */
-  canAdd?: boolean;
   /** A key is already in use: offer to leave things as they are. */
   hasKey?: boolean;
-  /** Only for a pasted key; the server can't forget a key from its env. */
+  /** Drops the key kept in this tab. */
   onForget?: () => void;
   onKeep?: () => void;
 }
 
 /**
  * Home's first-run choice (brief 6.1). Two options in one form, one Next.
- * The key field is a password field: never shown, never saved by the browser,
- * cleared after each send.
+ * The key field is a password field: never shown, with autocomplete off, and
+ * cleared after each send. A checked key is kept in this tab only.
  */
-export function SetupCard({ onKey, onDemo, canAdd = true, hasKey = false, onForget, onKeep }: SetupCardProps) {
-  const [choice, setChoice] = useState<SetupChoice>(canAdd ? "key" : "demo");
+export function SetupCard({ onKey, onDemo, hasKey = false, onForget, onKeep }: SetupCardProps) {
+  const [choice, setChoice] = useState<SetupChoice>("key");
   const [key, setKey] = useState("");
   const [error, setError] = useState<string | undefined>();
   const [checking, setChecking] = useState(false);
@@ -52,38 +50,36 @@ export function SetupCard({ onKey, onDemo, canAdd = true, hasKey = false, onForg
         <h2 id={headingId} className="text-body-lg font-semibold text-ink">
           {SETUP.heading}
         </h2>
-        <p className="text-body text-ink-soft">{canAdd ? SETUP.line : SETUP.demoOnlyLine}</p>
+        <p className="text-body text-ink-soft">{SETUP.line}</p>
       </div>
       <form onSubmit={submit} className="flex flex-col gap-4" noValidate>
         <fieldset className="flex flex-col gap-3">
           <legend className="sr-only">{SETUP.heading}</legend>
-          {canAdd ? (
-            <Option
-              name={name}
-              value="key"
-              checked={choice === "key"}
-              onChoose={setChoice}
-              label={SETUP.keyLabel}
-              hint={SETUP.keyHint}
-            >
-              {choice === "key" ? (
-                <TextInput
-                  label={SETUP.keyField}
-                  type="password"
-                  autoComplete="off"
-                  spellCheck={false}
-                  autoCapitalize="off"
-                  value={key}
-                  onChange={(e) => {
-                    setKey(e.target.value);
-                    if (error) setError(undefined);
-                  }}
-                  error={error}
-                  disabled={checking}
-                />
-              ) : null}
-            </Option>
-          ) : null}
+          <Option
+            name={name}
+            value="key"
+            checked={choice === "key"}
+            onChoose={setChoice}
+            label={SETUP.keyLabel}
+            hint={SETUP.keyHint}
+          >
+            {choice === "key" ? (
+              <TextInput
+                label={SETUP.keyField}
+                type="password"
+                autoComplete="off"
+                spellCheck={false}
+                autoCapitalize="off"
+                value={key}
+                onChange={(e) => {
+                  setKey(e.target.value);
+                  if (error) setError(undefined);
+                }}
+                error={error}
+                disabled={checking}
+              />
+            ) : null}
+          </Option>
           <Option
             name={name}
             value="demo"

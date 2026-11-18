@@ -4,6 +4,7 @@ import { BASE } from "@/pica/lib/base";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport, type ChatTransport } from "ai";
 import { DemoChatTransport } from "@/pica/features/demo/DemoChatTransport";
+import { visitorKeyHeaders } from "@/pica/features/shared/visitor-key";
 import { useEffect, useState } from "react";
 import type { PicaUIMessage } from "@/pica/lib/pica/client";
 import { CHAT_LIMITS } from "@/pica/lib/pica/constants";
@@ -67,6 +68,34 @@ function applyToolOutputs(sessionId: string, messages: PicaUIMessage[]) {
   }
 }
 
+/**
+ * The transport for a live decision: posts to `/api/chat` with the tab's key.
+ * Exported for tests.
+ */
+export function liveChatTransport(id: string): DefaultChatTransport<PicaUIMessage> {
+  return new DefaultChatTransport<PicaUIMessage>({
+    api: `${BASE}/api/chat`,
+    // Read the tab's key fresh on every send, and send its header only when there is one.
+    headers: visitorKeyHeaders,
+    // Read the session fresh on every send: the server keeps no state.
+    // Send only the newest turns, so a long chat stays under the server's limit.
+    prepareSendMessagesRequest: ({ id: chatId, messages, body, trigger, messageId }) => {
+      const current = getSession(id) ?? createSession({ id, at: 0, title: "" });
+      sentRequests.set(id, { at: Date.now(), canvas: current.canvas });
+      return {
+        body: {
+          ...body,
+          id: chatId,
+          messages: recentTurns(messages, CHAT_LIMITS.messages),
+          trigger,
+          messageId,
+          session: buildChatContext(current),
+        },
+      };
+    },
+  });
+}
+
 export function usePicaChat(session: DecisionSession) {
   const id = session.id;
   const [transport] = useState<ChatTransport<PicaUIMessage>>(() =>
@@ -76,25 +105,7 @@ export function usePicaChat(session: DecisionSession) {
           const current = getSession(id) ?? session;
           return { canvas: current.canvas, products: current.products };
         })
-      : new DefaultChatTransport<PicaUIMessage>({
-        api: `${BASE}/api/chat`,
-        // Read the session fresh on every send: the server keeps no state.
-        // Send only the newest turns, so a long chat stays under the server's limit.
-        prepareSendMessagesRequest: ({ id: chatId, messages, body, trigger, messageId }) => {
-          const current = getSession(id) ?? createSession({ id, at: 0, title: "" });
-          sentRequests.set(id, { at: Date.now(), canvas: current.canvas });
-          return {
-            body: {
-              ...body,
-              id: chatId,
-              messages: recentTurns(messages, CHAT_LIMITS.messages),
-              trigger,
-              messageId,
-              session: buildChatContext(current),
-            },
-          };
-        },
-      }),
+      : liveChatTransport(id),
   );
   const [announcement, setAnnouncement] = useState("");
 

@@ -1,50 +1,24 @@
 /**
- * The OpenAI key Pica uses. Server-only: never import it from a client component.
+ * The visitor's OpenAI key, read per request. Server-only: never import it
+ * from a client component.
  *
- * `OPENAI_API_KEY` in the server's env wins. Without it, a key pasted on Home
- * (through `/api/setup`) is held in this process's memory only: it is never
- * written to disk and is gone when the server stops.
- *
- * The pasted key lives on `globalThis`, not in a module variable, because each
- * route bundle and each hot reload gets its own copy of this module.
+ * Each visitor keeps their own key in their browser tab, and the browser sends
+ * it with every chat request in the `OPENAI_KEY_HEADER` header. The server uses
+ * it for that request only: it never stores, logs or sends it back. Pica never
+ * reads `OPENAI_API_KEY` from the env, so a key set there is never used.
  */
 import { createOpenAI, type OpenAIProvider } from "@ai-sdk/openai";
+import { OPENAI_KEY_HEADER, OPENAI_KEY_SHAPE } from "./constants";
 import { createRateLimiter } from "./rate-limit";
 
-const KEY_SLOT = Symbol.for("pica.openaiKey");
-
-type KeyHolder = { [KEY_SLOT]?: string };
-
-function holder(): KeyHolder {
-  return globalThis as KeyHolder;
+/** The key in this request's header, trimmed, or null when it is missing or not shaped like a key. */
+export function keyFromRequest(request: Request): string | null {
+  const key = request.headers.get(OPENAI_KEY_HEADER)?.trim();
+  return key && OPENAI_KEY_SHAPE.test(key) ? key : null;
 }
 
-/** Hold a pasted key in memory. The caller checks it first. */
-export function setRuntimeKey(key: string): void {
-  holder()[KEY_SLOT] = key;
-}
-
-/** Forget the pasted key. An env key, if set, stays in use. */
-export function clearRuntimeKey(): void {
-  delete holder()[KEY_SLOT];
-}
-
-/** The key to use: the env key, else the pasted key, else null. */
-export function openaiKey(): string | null {
-  const fromEnv = process.env.OPENAI_API_KEY;
-  if (fromEnv) return fromEnv;
-  return holder()[KEY_SLOT] || null;
-}
-
-/** What `/api/setup` may tell the browser: whether a key is in use, and whether it is the env's (which Home can't forget). */
-export function keyStatus(): { hasKey: boolean; fromEnv: boolean } {
-  const fromEnv = Boolean(process.env.OPENAI_API_KEY);
-  return { hasKey: openaiKey() !== null, fromEnv };
-}
-
-/** An OpenAI provider for the current key, or null when there is none. */
-export function picaProvider(): OpenAIProvider | null {
-  const apiKey = openaiKey();
+/** An OpenAI provider for this key, or null when there is none. */
+export function picaProvider(apiKey: string | null): OpenAIProvider | null {
   return apiKey ? createOpenAI({ apiKey }) : null;
 }
 

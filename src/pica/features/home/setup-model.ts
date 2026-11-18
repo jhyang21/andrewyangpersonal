@@ -1,20 +1,22 @@
 /**
- * Home's first-run choice: the buyer's own OpenAI key, held in the local
- * server's memory, or the scripted demo. Words and pure rules only.
+ * Home's first-run choice: the visitor's own OpenAI key, or the scripted demo.
+ * The key is checked once by `/api/setup`, then kept in this browser tab only
+ * (see `@/pica/features/shared/visitor-key`) and sent with each chat request.
+ * Words and pure rules only.
  */
+import { OPENAI_KEY_SHAPE } from "@/pica/lib/pica/constants";
 
 export type SetupChoice = "key" | "demo";
 
-/** Where Home stands: asking the server, needs a choice, or ready to chat. */
+/** Where Home stands: reading the tab, needs a choice, or ready to chat. */
 export type SetupStatus = "checking" | "needed" | "ready";
 
 export const SETUP = {
   heading: "How do you want to start?",
   line: "Pica needs an OpenAI key to chat. Without one, you can watch a set example.",
-  /** Where a key can't be added: a hosted copy, not one on the buyer's own computer. */
-  demoOnlyLine: "This copy of Pica runs without an OpenAI key, so it can't chat. You can watch a set example of how it works.",
   keyLabel: "Use my OpenAI key",
-  keyHint: "Kept in this computer's server memory only, never saved to disk. Paste it again after a restart.",
+  keyHint:
+    "Your key stays in this tab and goes only to OpenAI, through this site's server. Nothing saves it. Use a key with a low spending limit, and revoke it when you're done.",
   keyField: "OpenAI API key",
   demoLabel: "Try the demo",
   demoHint: "Press Next to step from a goal to a comparison. It follows a script and makes no AI calls.",
@@ -22,24 +24,16 @@ export const SETUP = {
   checking: "Checking your key",
   emptyKey: "Paste your OpenAI key. It starts with sk-.",
   badShape: "That doesn't look like an OpenAI key. It starts with sk- and has no spaces.",
+  /** The key passed OpenAI's check, but this browser won't keep it in the tab. */
+  noStorage: "This browser won't keep your key in this tab. Allow site data for this page, or try the demo.",
   change: "Change setup",
   forget: "Forget my key",
   keep: "Keep my key",
 } as const;
 
-/** The same shape the server checks: sk-, then 17 to 197 more characters, no spaces. */
-const KEY_SHAPE = /^sk-\S{17,197}$/;
-
 /** What is wrong with the pasted key before it is sent, or null. */
 export function keyProblem(raw: string): string | null {
   const key = raw.trim();
   if (!key) return SETUP.emptyKey;
-  return KEY_SHAPE.test(key) ? null : SETUP.badShape;
-}
-
-/** Home's status from `GET /api/setup`. Anything but a clear "no key" leaves Home as it was. */
-export function setupStatusFrom(result: { ok: true; data: unknown } | { ok: false }): SetupStatus {
-  if (!result.ok) return "ready";
-  const data = result.data as { hasKey?: unknown } | null;
-  return data?.hasKey === false ? "needed" : "ready";
+  return OPENAI_KEY_SHAPE.test(key) ? null : SETUP.badShape;
 }

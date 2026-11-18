@@ -1,29 +1,23 @@
 /**
  * Cheap side judgments through the OpenAI Decisions API.
  *
- * Every call here is optional. Any error, timeout, refusal or missing key
- * returns the "no answer" value and Pica carries on without it. Nothing here
- * ever throws, and no score reaches the buyer.
+ * Every call here is optional. The caller passes the model, built on the
+ * visitor's key (see `handleChat`); with no model, or on any error, timeout or
+ * refusal, a call returns the "no answer" value and Pica carries on without it.
+ * Nothing here ever throws, and no score reaches the buyer.
  */
 import { experimental_decide as decide } from "ai";
 import type { Canvas, CatalogProduct, Category } from "@/pica/lib/types";
-import { DECISION_TIMEOUT_MS, PICA_MODEL_ID } from "./constants";
+import { DECISION_TIMEOUT_MS } from "./constants";
 import { digestProduct } from "./digest";
 import { mustHaves } from "./canvas";
-import { picaProvider } from "./openai-key";
 
 type DecisionModel = Parameters<typeof decide>[0]["model"];
 
 export interface DecisionOptions {
-  /** Override the model, for tests. Default: OpenAI, only when a key is set. */
+  /** The model to ask. Without one, every call gives no answer. */
   model?: DecisionModel;
   timeoutMs?: number;
-}
-
-function resolveModel(options: DecisionOptions): DecisionModel | null {
-  if (options.model) return options.model;
-  const openai = picaProvider();
-  return openai ? openai.decisionModel(PICA_MODEL_ID) : null;
 }
 
 /* ------------------------------------------------------------------ */
@@ -45,7 +39,7 @@ export async function readTurn(
   input: { latestUserText: string; canvas: Canvas; recentTurns: string[] },
   options: DecisionOptions = {},
 ): Promise<TurnRead> {
-  const model = resolveModel(options);
+  const { model } = options;
   if (!model || !input.latestUserText.trim()) return NO_TURN_READ;
 
   try {
@@ -117,7 +111,7 @@ export async function screenCandidates(
 ): Promise<CatalogProduct[]> {
   const musts = mustHaves(canvas);
   if (products.length < 2 || musts.length === 0) return products;
-  const model = resolveModel(options);
+  const { model } = options;
   if (!model) return products;
 
   const keys = products.map((_, index) => `p${index}`);

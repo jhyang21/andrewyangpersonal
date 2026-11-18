@@ -181,9 +181,8 @@ export function HomeScreen() {
           <SetupCard
             onKey={setup.saveKey}
             onDemo={setup.demo}
-            canAdd={setup.canAdd}
             hasKey={setup.hasKey}
-            onForget={setup.canForget ? setup.forgetKey : undefined}
+            onForget={setup.hasKey ? setup.forgetKey : undefined}
             onKeep={setup.keep}
           />
         ) : undefined

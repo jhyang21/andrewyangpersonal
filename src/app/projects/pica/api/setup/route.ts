@@ -1,28 +1,26 @@
 /**
- * /api/setup: the OpenAI key pasted on Home, for local runs only.
+ * /api/setup: checks an OpenAI key pasted on Home. It stores nothing.
  *
- * GET → `{ hasKey, fromEnv, canAdd }`. POST `{ apiKey }` checks the key with
- * OpenAI, then holds it in memory. DELETE forgets it. A good POST and a DELETE
- * answer as GET does. The key is never sent back, logged or written to disk
- * (see `@/pica/lib/pica/openai-key`).
+ * POST `{ apiKey }` asks OpenAI whether it takes the key and answers
+ * `{ ok: true }` when it does. The browser then keeps the key in its own tab
+ * and sends it with each chat request (see `@/pica/lib/pica/openai-key`). The
+ * key is never stored, logged or sent back.
  *
- * GET answers everywhere, with `canAdd: false` where a key may not be added,
- * so a hosted copy offers only the demo. POST and DELETE answer 403 in
- * production, when the Host isn't this computer, and when the Origin names
- * another site.
+ * A POST whose Origin header names another site answers 403, so another page
+ * can't use this route to test keys.
  */
 import { z } from "zod";
 import type { ApiError } from "@/pica/lib/types";
 import { readBodyText } from "@/pica/lib/pica/chat-request";
-import { clearRuntimeKey, keyStatus, setRuntimeKey, setupRateLimiter } from "@/pica/lib/pica/openai-key";
+import { OPENAI_KEY_SHAPE } from "@/pica/lib/pica/constants";
+import { setupRateLimiter } from "@/pica/lib/pica/openai-key";
 import { clientKey } from "@/pica/lib/pica/rate-limit";
 
 const BODY_BYTES = 1_024;
 const CHECK_TIMEOUT_MS = 10_000;
-const LOCAL_HOSTNAMES = new Set(["localhost", "127.0.0.1", "[::1]"]);
 
 const MESSAGES = {
-  forbidden: "You can only add a key while Pica runs on your own computer.",
+  otherSite: "You can only add a key from Pica's own page. Open Pica and try again.",
   badShape: "That doesn't look like an OpenAI key. Keys start with sk- and have no spaces.",
   badKey: "OpenAI didn't accept that key.",
   unreachable: "Couldn't reach OpenAI to check the key. Check your connection, then try again.",
@@ -31,13 +29,7 @@ const MESSAGES = {
 } as const;
 
 const bodySchema = z.object({
-  apiKey: z
-    .string()
-    .trim()
-    .min(20)
-    .max(200)
-    .startsWith("sk-")
-    .regex(/^\S+$/),
+  apiKey: z.string().trim().regex(OPENAI_KEY_SHAPE),
 });
 
 function json(body: unknown, status = 200, headers: Record<string, string> = {}): Response {
@@ -50,8 +42,6 @@ function fail(status: number, error: ApiError): Response {
     : {};
   return json({ error }, status, headers);
 }
-
-const forbidden = () => fail(403, { code: "bad_request", message: MESSAGES.forbidden });
 
 function hostOf(value: string): string | null {
   try {
@@ -72,26 +62,17 @@ function requestHost(request: Request): string | null {
   }
 }
 
-/** A 403 response when this request may not touch the key, else null. */
-function guard(request: Request, checkOrigin: boolean): Response | null {
-  if (process.env.NODE_ENV === "production") return forbidden();
-  const host = requestHost(request);
-  if (!host) return forbidden();
-  const hostname = new URL(`http://${host}`).hostname;
-  if (!LOCAL_HOSTNAMES.has(hostname)) return forbidden();
-  if (checkOrigin) {
-    const origin = request.headers.get("origin");
-    if (origin !== null) {
-      let originHost: string | null;
-      try {
-        originHost = new URL(origin).host.toLowerCase();
-      } catch {
-        originHost = null;
-      }
-      if (originHost !== host) return forbidden();
-    }
+/** True when the request names an Origin whose host is not this request's host. */
+function fromOtherSite(request: Request): boolean {
+  const origin = request.headers.get("origin");
+  if (origin === null) return false;
+  let originHost: string | null;
+  try {
+    originHost = new URL(origin).host.toLowerCase();
+  } catch {
+    originHost = null;
   }
-  return null;
+  return originHost === null || originHost !== requestHost(request);
 }
 
 type KeyCheck = "ok" | "rejected" | "unreachable" | "not_checked";
@@ -118,14 +99,8 @@ async function checkKey(apiKey: string): Promise<KeyCheck> {
   return "not_checked";
 }
 
-export async function GET(request: Request): Promise<Response> {
-  // Two booleans and whether this request could add a key; never the key.
-  return json({ ...keyStatus(), canAdd: guard(request, false) === null });
-}
-
 export async function POST(request: Request): Promise<Response> {
-  const blocked = guard(request, true);
-  if (blocked) return blocked;
+  if (fromOtherSite(request)) return fail(403, { code: "bad_request", message: MESSAGES.otherSite });
 
   const limit = setupRateLimiter.check(clientKey(request));
   if (!limit.ok) {
@@ -150,11 +125,9 @@ export async function POST(request: Request): Promise<Response> {
   const parsed = bodySchema.safeParse(raw);
   if (!parsed.success) return fail(400, { code: "bad_request", message: MESSAGES.badShape });
 
-  const apiKey = parsed.data.apiKey;
-  switch (await checkKey(apiKey)) {
+  switch (await checkKey(parsed.data.apiKey)) {
     case "ok":
-      setRuntimeKey(apiKey);
-      return json({ ...keyStatus(), canAdd: true });
+      return json({ ok: true });
     case "rejected":
       return fail(400, { code: "bad_key", message: MESSAGES.badKey });
     case "unreachable":
@@ -162,11 +135,4 @@ export async function POST(request: Request): Promise<Response> {
     case "not_checked":
       return fail(502, { code: "model_unavailable", message: MESSAGES.notChecked });
   }
-}
-
-export async function DELETE(request: Request): Promise<Response> {
-  const blocked = guard(request, true);
-  if (blocked) return blocked;
-  clearRuntimeKey();
-  return json({ ...keyStatus(), canAdd: true });
 }
