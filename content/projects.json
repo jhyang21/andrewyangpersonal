@@ -1,5 +1,11 @@
 [
   {
+    "title": "Bazaar Live",
+    "slug": "bazaar-live",
+    "date": "2026-11-18",
+    "summary": "A click-through prototype I built for a Shopify take-home: a live market where small shops open stalls, shoppers walk around together, and the owner is there to talk. Everything in it is scripted and made up."
+  },
+  {
     "title": "Pica",
     "slug": "pica",
     "date": "2026-11-18",

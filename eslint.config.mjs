@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Built bundle of the Bazaar Live demo, copied in from its own repo.
+    "public/bazaar-live-app/**",
   ]),
 ]);
 
