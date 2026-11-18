@@ -1,0 +1,143 @@
+/*
+ * Pica's styles. Imported only by src/app/projects/pica/layout.tsx.
+ *
+ * Pica runs its own Tailwind build over its own files, with its own tokens,
+ * apart from the personal site's globals.css. Rules that reach past Pica's
+ * own classes (html, body, focus, reduced motion) apply only while the
+ * .pica wrapper is on the page, so the rest of the site is not touched.
+ */
+@import "tailwindcss" source(none);
+@source "./";
+@source "../app/projects/pica";
+
+/*
+ * Design tokens from DESIGN.md (Shop). Use these names; do not hardcode hex
+ * values in components. Purple marks the one main action on a screen.
+ */
+@theme {
+  --color-shop-purple: #5433eb;
+  --color-shop-purple-pressed: #4524db;
+  --color-ink: #000000;
+  --color-ink-muted: #787574;
+  --color-canvas: #f2f4f5;
+  --color-surface: #ffffff;
+  --color-hairline: #ebebeb;
+  --color-disabled: #cccccc;
+  --color-ink-inverse: #121212;
+  --color-purple-soft: #dbd1ff;
+  --color-purple-tint: #eeeaff;
+  --color-success: #008552;
+  --color-critical: #d92a0f;
+  --color-caution-bg: #fff9e2;
+  --color-star: #e3be2b;
+
+  /* GT Standard is a paid face; Inter is the brief's fallback. */
+  --font-sans: var(--font-inter), Inter, system-ui, -apple-system, sans-serif;
+
+  /* Type roles: size / line-height / tracking. Semibold is the heaviest grade.
+     These are the brief's phone sizes (DESIGN.md section 3: body at 16, headings
+     up to 24 to 28), so the names do not match its web table one to one:
+     text-display is 24/28 for screen titles; text-heading is the table's
+     "display" (20/22); "title-sm" is text-body with font-semibold; "micro" is
+     left out because no dense tiles are used. */
+  --text-display: 1.5rem;
+  --text-display--line-height: 1.75rem;
+  --text-display--letter-spacing: -0.04em;
+  --text-heading: 1.25rem;
+  --text-heading--line-height: 1.375rem;
+  --text-heading--letter-spacing: -0.05em;
+  --text-body-lg: 1rem;
+  --text-body-lg--line-height: 1.375rem;
+  --text-body-lg--letter-spacing: -0.03em;
+  --text-body: 0.875rem;
+  --text-body--line-height: 1.125rem;
+  --text-body--letter-spacing: -0.014em;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1rem;
+  --text-caption--letter-spacing: -0.017em;
+
+  --radius-card: 28px;
+  --radius-image: 20px;
+  --radius-thumb: 12px;
+  --radius-pill: 9999px;
+
+  --shadow-pill: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-float: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+/*
+ * Pica additions (docs/PICA-DESIGN.md section 3). Added, not renamed: the
+ * Shop tokens above stay as they are.
+ *
+ * ink-soft: secondary text on any background but white. On canvas it is
+ * 5.40:1 (src/pica/components/kit/contrast.test.ts works the sum); ink-muted on
+ * canvas is 4.1:1 and fails AA.
+ */
+@theme {
+  --color-ink-soft: #666362;
+}
+
+/*
+ * Motion. `static` keeps these on :root even when no utility uses them, so
+ * plain CSS (the kit's kit.css) can read them. The ease tokens also make the
+ * `ease-out-soft` and `ease-settle` utilities.
+ */
+@theme static {
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+  --ease-out-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-settle: cubic-bezier(0.3, 1.3, 0.5, 1);
+}
+
+/* Under reduced motion every change is instant. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}
+
+/*
+ * The site's globals.css sets these four on :root, outside any layer, which
+ * beats the theme above. Pica's values win here; keep them equal to the theme's.
+ */
+:root:has(.pica) {
+  --color-ink: #000000;
+  --color-surface: #ffffff;
+  --radius-card: 28px;
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+html:has(.pica) {
+  background: var(--color-canvas);
+}
+
+body:has(.pica) {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.03em;
+}
+
+/* In the base layer so a component can override it with a utility. */
+@layer base {
+  .pica :focus-visible {
+    outline: 2px solid var(--color-shop-purple);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pica *,
+  .pica *::before,
+  .pica *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

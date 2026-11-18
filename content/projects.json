@@ -1,5 +1,11 @@
 [
   {
+    "title": "Pica",
+    "slug": "pica",
+    "date": "2026-11-18",
+    "summary": "A shopping helper I built for a Shopify take-home. Tell it what a bag is for and it asks what matters, finds options in real stores, and lines them up to compare. This copy plays a set demo, with no live AI."
+  },
+  {
     "title": "Apparatus Signals",
     "slug": "apparatus-signals",
     "href": "/apparatus-signals",

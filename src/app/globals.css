@@ -1,4 +1,7 @@
 @import "tailwindcss";
+/* Pica (/projects/pica) builds its own Tailwind sheet from its own tokens; see src/pica/styles.css. */
+@source not "../pica";
+@source not "./projects/pica";
 
 :root {
   --color-ink: #101418;
@@ -41,10 +44,11 @@ body {
   font-family: var(--font-inter), Arial, sans-serif;
 }
 
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
+/* Not inside Pica, which draws its own focus outline (src/pica/styles.css). */
+a:focus-visible:not(.pica *),
+button:focus-visible:not(.pica *),
+input:focus-visible:not(.pica *),
+textarea:focus-visible:not(.pica *) {
   outline: 2px solid transparent;
   box-shadow: 0 0 0 4px var(--color-primary-tint);
 }
