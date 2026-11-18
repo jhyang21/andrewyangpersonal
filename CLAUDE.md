@@ -2,7 +2,7 @@
 
 Personal portfolio/blog with memos. Next.js 16 App Router, Tailwind v4, filesystem-based content.
 
-The site is static. It has no database, no API routes and no secrets. The only client components are the Shape Lab (`src/components/shape-lab/`), the projects chart, the cup-notes run chain and chart (`src/cup-notes/ui/`) and the Apparatus Signals map and lead table (`src/apparatus-signals/ui/`).
+The site is static apart from Pica (`/projects/pica`), which has its own API routes and runs on demand. It has no database and no secrets. Outside Pica, the only client components are the Shape Lab (`src/components/shape-lab/`), the projects chart, the cup-notes run chain and chart (`src/cup-notes/ui/`) and the Apparatus Signals map and lead table (`src/apparatus-signals/ui/`).
 
 ---
 
@@ -13,6 +13,8 @@ npm install
 npm run dev    # localhost:3000
 npm run build
 npm run lint
+npm run typecheck
+npm test       # Pica's tests (vitest); run from the repo root
 ```
 
 ---
@@ -23,7 +25,7 @@ npm run lint
 - **Next.js 16** App Router (`src/app/`)
 - **Tailwind v4** — CSS-first config in `globals.css` (`@theme inline`), no `tailwind.config.*`
 - **TypeScript** strict, path alias `@/*` → `src/*`
-- **Runtime dependencies** beyond Next/React: `katex`, for math in memos; `@vercel/analytics`, whose `<Analytics />` in the root layout counts page views; and `motion`, `recharts` and `lucide-react`, imported only by the cup-notes microsite. No markdown libraries, no CMS.
+- **Runtime dependencies** beyond Next/React: `katex`, for math in memos; `@vercel/analytics`, whose `<Analytics />` in the root layout counts page views; and `motion`, `recharts` and `lucide-react`, imported only by the cup-notes microsite (Pica also uses `lucide-react`); and `ai`, `@ai-sdk/openai`, `@ai-sdk/react` and `zod`, imported only by Pica. No markdown libraries, no CMS.
 
 ---
 
@@ -54,6 +56,14 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 - Its data comes from the pipeline in `~/Documents/projects/apparatus-signals/`. To refresh it, rerun `python export_site.py` in that repo's `pipeline/` (it writes straight into `content/apparatus-signals/`), then build and commit here. The build fails if the data carries a phone, an outreach field or a forbidden word (`lib/data.ts`).
 - It has its own tokens, font (Geist) and nav on purpose; it does not use `SiteNav`. Its entry in `content/projects.json` carries `href: "/apparatus-signals"`, so the Projects list links to the microsite instead of a `/projects/<slug>` page, and the sitemap skips it there (its own section lists every page). Its tokens are scoped to the `.apparatus-signals` wrapper and prefixed `--as-*`; the only trace in `globals.css` is the `--color-as-*` lines in `@theme inline`, which give it utilities like `text-as-muted`.
 
+### Pica microsite
+
+- `/projects/pica` is Pica, a shopping helper built for a Shopify take-home and copied here whole. Routes in `src/app/projects/pica/` (Home, Browse, Saved, the decision pages `d/[id]`, the design kit under `kit/`, and `api/`), code in `src/pica/` (`components/`, `features/`, `lib/`, `styles.css`), design docs in `docs/pica/`. Every internal link and API call starts with `BASE` from `src/pica/lib/base.ts`.
+- It runs demo-only here: Vercel has no `OPENAI_API_KEY`, and `/api/setup` takes no key in production, so Home offers only the set demo (goal to Compare, no AI calls). Adding the key to Vercel would turn on live chat for every visitor, at Andrew's cost.
+- It runs its own Tailwind build from its own tokens: `src/pica/styles.css` imports Tailwind with `source(none)` and scans only Pica's folders, and `globals.css` keeps Pica's folders out of the site's build with `@source not`. Its html and body rules apply only while the `.pica` wrapper is on the page, `:root:has(.pica)` restores the four tokens `globals.css` also sets (`--color-ink`, `--color-surface`, `--radius-card`, `--shadow-card`), and the site's focus ring skips anything inside `.pica`.
+- Its entry in `content/projects.json` has no `href`, so the Projects list links `/projects/pica`.
+- Its tests are the vitest suite (`npm test`); some read files by repo path, so run them from the root.
+
 ---
 
 ## Key Patterns
@@ -69,6 +79,6 @@ All content is filesystem-based, read with `fs.readFileSync` (server-only).
 
 ## Gotchas
 
-- **There is no `.env` and no secrets.** `.env.local` holds only Vercel's OIDC token from `vercel env pull`. `.gitignore` covers `.env*`.
+- **There is no `.env` and no secrets.** `.env.local` holds only Vercel's OIDC token from `vercel env pull`. `.gitignore` covers `.env*`. Pica reads `OPENAI_API_KEY` if it is ever set; keep it unset on Vercel.
 - **README and PROGRESS.md are stale** — they describe the old Relora waitlist site, not the current personal portfolio
 - Dynamic route `params` are `Promise<{ slug: string }>` — `await` them (Next.js 15+)

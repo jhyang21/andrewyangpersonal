@@ -1,0 +1,68 @@
+/*
+ * The kit's "lands" motion (docs/PICA-DESIGN.md section 3): a slight
+ * overshoot when a count changes. It plays once per change and never loops.
+ *
+ * Plain CSS with a `kit-` prefix, so its names can't clash with the site's.
+ * The duration and curve come from the tokens in src/pica/styles.css, which drop to
+ * 0ms under reduced motion; the rule below also turns the animation off.
+ */
+
+@keyframes kit-land {
+  from {
+    transform: translateY(-4px) scale(1.04);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes kit-lift {
+  0% {
+    transform: none;
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.kit-land {
+  animation: kit-land var(--duration-slow) var(--ease-settle);
+}
+
+.kit-lift {
+  animation: kit-lift var(--duration-slow) var(--ease-settle);
+}
+
+/*
+ * The phone's bottom bar steps aside while a text field has focus, which
+ * covers the open keyboard (brief section 6.2). CSS only, so nothing jumps.
+ * Only fields that open a keyboard count: a focused checkbox, radio, range,
+ * button or select leaves the bar where it is.
+ */
+html:has(
+    :is(
+        textarea,
+        [contenteditable]:not([contenteditable="false"]),
+        input:not([type]),
+        input[type="text"],
+        input[type="search"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="number"],
+        input[type="password"]
+      ):focus
+  )
+  .kit-bottom-bar[data-hide-while-typing] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kit-land,
+  .kit-lift {
+    animation: none;
+  }
+}

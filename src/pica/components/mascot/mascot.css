@@ -1,0 +1,108 @@
+/*
+ * Pica's drawing and motion rules.
+ *
+ * Plain CSS with a `pica-mascot-` prefix, so its names can't clash with the
+ * site's. The longer prefix keeps every class and keyframe name apart from the
+ * old mascot's pica.css, which is loaded on the same pages.
+ *
+ * Each part of the bird is placed with a CSS transform in grid units.
+ * transform-box is the SVG's view box and the origin is 0 0, so each part
+ * turns about its own local 0,0 (the hip, the neck, the tail root).
+ *
+ * Motion, per docs/PICA-DESIGN.md section 3:
+ * - a pose change slides each part to its new place (--duration-slow);
+ * - the thinking pose tilts its head and blinks, the only loop;
+ * - under reduced motion, every change is instant and Pica holds still.
+ * The tokens live in src/pica/styles.css; the fallbacks match their values.
+ */
+
+.pica-mascot .pica-mascot-part,
+.pica-mascot .pica-mascot-flip,
+.pica-mascot .pica-mascot-tilt {
+  transform-box: view-box;
+  transform-origin: 0 0;
+}
+
+/* The legs also fade as they fold, when Pica sits or stands. */
+.pica-mascot .pica-mascot-part {
+  transition:
+    transform var(--duration-slow, 320ms) var(--ease-out-soft, cubic-bezier(0.2, 0.8, 0.2, 1)),
+    opacity var(--duration-slow, 320ms) var(--ease-out-soft, cubic-bezier(0.2, 0.8, 0.2, 1));
+}
+
+/*
+ * Looking back mirrors the head at once. A slide here would squeeze the head
+ * flat halfway, so this group never moves; the part around it still slides.
+ */
+.pica-mascot .pica-mascot-flip {
+  transition: none;
+}
+
+/* The eye blinks about its own centre. */
+.pica-mascot .pica-mascot-eye {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* One loop is ten slow beats: tilt over, hold, tilt back, hold. */
+.pica-mascot.pica-mascot-pose-thinking .pica-mascot-tilt {
+  animation: pica-mascot-tilt calc(var(--duration-slow, 320ms) * 10) var(--ease-out-soft, cubic-bezier(0.2, 0.8, 0.2, 1))
+    infinite;
+}
+
+/* The blink falls while the head is tilted over. */
+.pica-mascot.pica-mascot-pose-thinking .pica-mascot-eye {
+  animation: pica-mascot-blink calc(var(--duration-slow, 320ms) * 10) linear infinite;
+}
+
+/* A still bird holds its thinking pose without the loop. Same weight, later, so it wins. */
+.pica-mascot.pica-mascot-still .pica-mascot-tilt,
+.pica-mascot.pica-mascot-still .pica-mascot-eye {
+  animation: none;
+}
+
+/*
+ * In an avatar, the bird moves so its ink sits in the middle of the circle.
+ * Each pose's ink sits in a different place, so the move slides with the pose.
+ */
+.pica-mascot-avatar .pica-mascot-avatar-bird {
+  transition: transform var(--duration-slow, 320ms) var(--ease-out-soft, cubic-bezier(0.2, 0.8, 0.2, 1));
+}
+
+@keyframes pica-mascot-tilt {
+  0%,
+  10% {
+    transform: rotate(0deg);
+  }
+  35%,
+  65% {
+    transform: rotate(-9deg);
+  }
+  90%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pica-mascot-blink {
+  0%,
+  46%,
+  54%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.1);
+  }
+}
+
+/* Same selectors as the rules above, and later, so these win. */
+@media (prefers-reduced-motion: reduce) {
+  .pica-mascot .pica-mascot-part,
+  .pica-mascot-avatar .pica-mascot-avatar-bird,
+  .pica-mascot.pica-mascot-pose-thinking .pica-mascot-tilt,
+  .pica-mascot.pica-mascot-pose-thinking .pica-mascot-eye {
+    transition: none;
+    animation: none;
+  }
+}
